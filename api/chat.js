@@ -22,101 +22,29 @@ function stripImages(data) {
 function buildScrapedSection(category) {
   const s = scrapedContent;
   if (!s) return '';
-
   const lines = [];
   const ts = s.meta?.zadnje_azuriranje?.substring(0, 10) || '';
 
-  // Dokumenti TZ — samo za izravne upite o strategijama/dokumentima
-  if (category === 'dokumenti') {
-    if (s.dokumenti_strategije?.length) {
-      lines.push(`\nStrategije i planovi razvoja turizma — Slavonski Brod-Posavina (${s.dokumenti_strategije.length} dokumenata):`);
-      s.dokumenti_strategije.forEach(d => {
-        lines.push(`• ${d.naslov}`);
-        lines.push(`  ${d.url}`);
-      });
-    }
-    if (s.dokumenti_ostali?.length) {
-      lines.push(`\nOstali dokumenti TZ (statut, pravilnici, izvješća, odluke o pristojbi) — ${s.dokumenti_ostali.length} dokumenata:`);
-      s.dokumenti_ostali.slice(0, 15).forEach(d => {
-        lines.push(`• ${d.naslov}`);
-        lines.push(`  ${d.url}`);
-      });
-      if (s.dokumenti_ostali.length > 15) {
-        lines.push(`  ... i još ${s.dokumenti_ostali.length - 15} dokumenata: https://www.tzgsb.hr/index.php?page=opceinformacije`);
-      }
+  function poiLines(lista, max = 30) {
+    return (lista || []).slice(0, max).map(x => {
+      const adr = x.adresa ? ` — ${x.adresa}` : '';
+      const tel = x.telefon ? ` | ${x.telefon}` : '';
+      const rw  = x.radno_vrijeme ? ` | ${x.radno_vrijeme}` : '';
+      return `• **${x.naziv}**${adr}${tel}${rw}`;
+    });
+  }
+
+  if (category === 'opcenito') {
+    const o = s.o_nama || {};
+    if (o.grad_opis) lines.push(`\nO gradu:\n${o.grad_opis.substring(0, 600)}`);
+    if (o.rijec_gradonacelnika) lines.push(`\nRijec gradonacelnika:\n${o.rijec_gradonacelnika.substring(0, 400)}`);
+    if (s.novosti_grad?.length) {
+      lines.push(`\nNajnovije vijesti (${ts}):`);
+      s.novosti_grad.slice(0, 5).forEach(n => lines.push(`• [${n.datum}] ${n.naslov}`));
     }
   }
 
-  // O nama — opis grada, županija, gradonačelnik, TIC, agencije
-  if (s.o_nama) {
-    const o = s.o_nama;
-    if (!category || category === 'opcenito') {
-      if (o.grad_opis) lines.push(`\nO gradu Slavonski Brod:\n${o.grad_opis.substring(0, 800)}`);
-      if (o.zupanija) lines.push(`\nBrodsko-posavska županija:\n${o.zupanija.substring(0, 500)}`);
-      if (o.rijec_gradonacelnika) lines.push(`\nRiječ gradonačelnika:\n${o.rijec_gradonacelnika.substring(0, 600)}`);
-    }
-    if (!category || category === 'usluge' || category === 'opcenito') {
-      if (o.kontakti) lines.push(`\nKontakti i važni brojevi:\n${o.kontakti.substring(0, 800)}`);
-      if (o.tic) lines.push(`\nTurističko-informativni centar:\n${o.tic.substring(0, 400)}`);
-      if (o.turisticke_agencije) lines.push(`\nTurističke agencije u Slavonskom Brodu:\n${o.turisticke_agencije.substring(0, 600)}`);
-    }
-  }
-
-  // Vijesti — uvijek u kontekstu vijesti/novosti
-  if (s.novosti_grad?.length && (!category || category === 'opcenito')) {
-    lines.push(`\nNajnovije vijesti — Grad Slavonski Brod (${ts}):`);
-    s.novosti_grad.slice(0, 6).forEach(n => {
-      lines.push(`• [${n.datum}] ${n.naslov}`);
-    });
-  }
-
-  // Manifestacije — za upite o događanjima
-  if (s.manifestacije_aktualne?.length && (!category || category === 'dogadanja')) {
-    lines.push('\nAktualne manifestacije:');
-    s.manifestacije_aktualne.forEach(m => {
-      lines.push(`• ${m.naziv} (${m.datum})`);
-      if (m.opis) lines.push(`  ${m.opis.substring(0, 200)}`);
-    });
-  }
-
-  // Restorani — za gastronomiju
-  if (s.restorani_tz?.length && (!category || category === 'gastronomija')) {
-    lines.push(`\nRestorani registrirani pri TZ Slavonski Brod (${s.restorani_tz.length} ukupno):`);
-    s.restorani_tz.forEach(r => {
-      const tel = r.telefon ? ` | Tel: ${r.telefon}` : '';
-      const web = r.web ? ` | ${r.web}` : '';
-      lines.push(`• **${r.naziv}** — ${r.adresa}${tel}${web}`);
-    });
-  }
-
-  // Kulturna baština — za znamenitosti upite
-  if (s.kulturna_bastina?.length && (!category || category === 'znamenitosti')) {
-    lines.push(`\nKulturna baština i znamenitosti Slavonskog Broda (${s.kulturna_bastina.length} lokacija):`);
-    s.kulturna_bastina.forEach(b => {
-      const adresa = b.adresa ? ` | ${b.adresa}` : '';
-      const tel = b.telefon ? ` | Tel: ${b.telefon}` : '';
-      const web = b.web ? ` | ${b.web}` : '';
-      const link = b.link && !b.link.includes(b.web || '') ? ` | Više: ${b.link}` : '';
-      lines.push(`• **${b.naziv}** [${b.tip}]${adresa}${tel}${web}${link}`);
-      if (b.opis && b.opis.length > 30) {
-        lines.push(`  ${b.opis.substring(0, 300)}`);
-      }
-    });
-  }
-
-  // Turističke atrakcije — za priroda, sport, opcenito
-  const atrakcijeCategories = ['priroda', 'sport', 'opcenito', 'znamenitosti'];
-  if (s.atrakcije_tz?.length && (!category || atrakcijeCategories.includes(category))) {
-    lines.push(`\nTurističke atrakcije i rekreacija (${s.atrakcije_tz.length}):`);
-    s.atrakcije_tz.forEach(a => {
-      const lok = a.lokacija ? ` | ${a.lokacija}` : (a.adresa ? ` | ${a.adresa}` : '');
-      lines.push(`• **${a.naziv}** [${a.tip}]${lok}`);
-      if (a.opis) lines.push(`  ${a.opis.substring(0, 200)}`);
-    });
-  }
-
-  // Smještaj — za upite o smještaju
-  if (category === 'smjestaj' || !category) {
+  if (category === 'smjestaj') {
     if (s.smjestaj_hoteli?.length) {
       lines.push(`\nHoteli, hosteli i pansioni (${s.smjestaj_hoteli.length}):`);
       s.smjestaj_hoteli.forEach(h => {
@@ -126,55 +54,128 @@ function buildScrapedSection(category) {
       });
     }
     if (s.smjestaj_apartmani?.length) {
-      lines.push(`\nApartmani, sobe i vile (${s.smjestaj_apartmani.length} ukupno — prikazujem prvih 30):`);
+      lines.push(`\nApartmani, sobe i vile (${s.smjestaj_apartmani.length} ukupno — prvih 30):`);
       s.smjestaj_apartmani.slice(0, 30).forEach(a => {
         const tel = a.telefon ? ` | Tel: ${a.telefon}` : '';
         const web = a.web ? ` | ${a.web}` : '';
         lines.push(`• **${a.naziv}** [${a.tip}] — ${a.adresa}${tel}${web}`);
       });
-      if (s.smjestaj_apartmani.length > 30) {
-        lines.push(`  ... i još ${s.smjestaj_apartmani.length - 30} objekata. Puni popis: https://www.tzgsb.hr/index.php?page=smjestaj`);
+      if (s.smjestaj_apartmani.length > 30)
+        lines.push(`  ... i jos ${s.smjestaj_apartmani.length - 30} objekata: https://www.tzgsb.hr/index.php?page=smjestaj`);
+    }
+  }
+
+  if (category === 'gastronomija') {
+    if (s.restorani_tz?.length) {
+      lines.push(`\nRestorani registrirani pri TZ (${s.restorani_tz.length}):`);
+      s.restorani_tz.forEach(r => {
+        const tel = r.telefon ? ` | Tel: ${r.telefon}` : '';
+        const web = r.web ? ` | ${r.web}` : '';
+        lines.push(`• **${r.naziv}** — ${r.adresa}${tel}${web}`);
+      });
+    }
+    if (s.poi?.caffe_barovi?.length) {
+      lines.push(`\nCaffe barovi i kafici (${s.poi.caffe_barovi.length}):`);
+      lines.push(...poiLines(s.poi.caffe_barovi, 25));
+    }
+  }
+
+  if (category === 'dogadanja') {
+    if (s.manifestacije_aktualne?.length) {
+      lines.push('\nAktualne manifestacije:');
+      s.manifestacije_aktualne.forEach(m => {
+        lines.push(`• ${m.naziv} (${m.datum})`);
+        if (m.opis) lines.push(`  ${m.opis.substring(0, 200)}`);
+      });
+    }
+  }
+
+  if (category === 'znamenitosti') {
+    if (s.kulturna_bastina?.length) {
+      lines.push(`\nKulturna bastina (${s.kulturna_bastina.length} lokacija):`);
+      s.kulturna_bastina.forEach(b => {
+        const adr = b.adresa ? ` | ${b.adresa}` : '';
+        const tel = b.telefon ? ` | Tel: ${b.telefon}` : '';
+        const web = b.web ? ` | ${b.web}` : '';
+        lines.push(`• **${b.naziv}** [${b.tip}]${adr}${tel}${web}`);
+        if (b.opis) lines.push(`  ${b.opis.substring(0, 250)}`);
+      });
+    }
+    if (s.poi?.muzeji?.length) {
+      lines.push(`\nMuzeji (OSM):`);
+      lines.push(...poiLines(s.poi.muzeji));
+    }
+  }
+
+  if (category === 'priroda' || category === 'sport') {
+    if (s.atrakcije_tz?.length) {
+      lines.push(`\nTuristicke atrakcije i rekreacija:`);
+      s.atrakcije_tz.forEach(a => {
+        const lok = a.lokacija ? ` | ${a.lokacija}` : (a.adresa ? ` | ${a.adresa}` : '');
+        lines.push(`• **${a.naziv}** [${a.tip}]${lok}`);
+        if (a.opis) lines.push(`  ${a.opis.substring(0, 180)}`);
+      });
+    }
+  }
+
+  if (category === 'usluge') {
+    const o = s.o_nama || {};
+    if (o.kontakti) lines.push(`\nKontakti i vazni brojevi:\n${o.kontakti.substring(0, 700)}`);
+    if (o.tic) lines.push(`\nTuristicko-informativni centar:\n${o.tic.substring(0, 350)}`);
+    if (o.turisticke_agencije) lines.push(`\nTuristicke agencije:\n${o.turisticke_agencije.substring(0, 500)}`);
+    const p = s.poi || {};
+    if (p.ljekarne?.length)        { lines.push(`\nLjekarne (${p.ljekarne.length}):`);          lines.push(...poiLines(p.ljekarne)); }
+    if (p.lijecnici?.length)       { lines.push(`\nLijecnici/klinike (${p.lijecnici.length}):`); lines.push(...poiLines(p.lijecnici)); }
+    if (p.banke_bankomati?.length) { lines.push(`\nBanke i bankomati (${p.banke_bankomati.length}):`); lines.push(...poiLines(p.banke_bankomati, 20)); }
+    if (p.posta?.length)           { lines.push(`\nPosta (${p.posta.length}):`);               lines.push(...poiLines(p.posta)); }
+    if (p.auto_servisi?.length)    { lines.push(`\nAuto servisi (${p.auto_servisi.length}):`);  lines.push(...poiLines(p.auto_servisi)); }
+    if (p.javni_prijevoz?.length)  { lines.push(`\nStanice javnog prijevoza (${p.javni_prijevoz.length}):`); lines.push(...poiLines(p.javni_prijevoz, 20)); }
+  }
+
+  if (category === 'benzinske') {
+    if (s.poi?.benzinske?.length) {
+      lines.push(`\nBenzinske postaje (${s.poi.benzinske.length}):`);
+      lines.push(...poiLines(s.poi.benzinske));
+    }
+  }
+
+  if (category === 'parking') {
+    if (s.poi?.parkinzi?.length) {
+      lines.push(`\nParkiralista (${s.poi.parkinzi.length}):`);
+      lines.push(...poiLines(s.poi.parkinzi));
+    }
+  }
+
+  if (category === 'kupovina') {
+    const p = s.poi || {};
+    if (p.trgovacki_centri?.length) { lines.push(`\nTrgvacki centri i supermarketi (${p.trgovacki_centri.length}):`); lines.push(...poiLines(p.trgovacki_centri)); }
+    if (p.frizerski_saloni?.length) { lines.push(`\nFrizerski saloni (${p.frizerski_saloni.length}):`); lines.push(...poiLines(p.frizerski_saloni, 20)); }
+  }
+
+  if (category === 'okolica') {
+    if (s.atrakcije_tz?.length) {
+      const prirodne = s.atrakcije_tz.filter(a => a.tip?.includes('Priroda') || a.tip?.includes('Izletiste') || a.lokacija);
+      if (prirodne.length) {
+        lines.push(`\nIzletista i priroda u okolici:`);
+        prirodne.forEach(a => {
+          const lok = a.lokacija ? ` | ${a.lokacija}` : '';
+          lines.push(`• **${a.naziv}** [${a.tip}]${lok}`);
+          if (a.opis) lines.push(`  ${a.opis.substring(0, 150)}`);
+        });
       }
     }
   }
 
-  // OSM točke od interesa
-  if (s.poi) {
-    const p = s.poi;
-    function poiLines(lista, max = 30) {
-      return (lista || []).slice(0, max).map(x => {
-        const adr = x.adresa ? ` — ${x.adresa}` : '';
-        const tel = x.telefon ? ` | ${x.telefon}` : '';
-        const rw  = x.radno_vrijeme ? ` | ${x.radno_vrijeme}` : '';
-        return `• **${x.naziv}**${adr}${tel}${rw}`;
-      });
+  if (category === 'dokumenti') {
+    if (s.dokumenti_strategije?.length) {
+      lines.push(`\nStrategije i planovi razvoja turizma (${s.dokumenti_strategije.length}):`);
+      s.dokumenti_strategije.forEach(d => { lines.push(`• ${d.naslov}`); lines.push(`  ${d.url}`); });
     }
-
-    if (category === 'usluge' || !category) {
-      if (p.ljekarne?.length)       { lines.push(`\nLjekarne (${p.ljekarne.length}):`);         lines.push(...poiLines(p.ljekarne)); }
-      if (p.lijecnici?.length)      { lines.push(`\nLiječnici/klinike (${p.lijecnici.length}):`); lines.push(...poiLines(p.lijecnici)); }
-      if (p.banke_bankomati?.length){ lines.push(`\nBanke i bankomati (${p.banke_bankomati.length}):`); lines.push(...poiLines(p.banke_bankomati, 20)); }
-      if (p.posta?.length)          { lines.push(`\nPoštanski uredi (${p.posta.length}):`);     lines.push(...poiLines(p.posta)); }
-      if (p.auto_servisi?.length)   { lines.push(`\nAuto servisi (${p.auto_servisi.length}):`); lines.push(...poiLines(p.auto_servisi)); }
-    }
-    if (category === 'benzinske' || category === 'usluge') {
-      if (p.benzinske?.length)      { lines.push(`\nBenzinske postaje (${p.benzinske.length}):`); lines.push(...poiLines(p.benzinske)); }
-    }
-    if (category === 'parking' || category === 'usluge') {
-      if (p.parkinzi?.length)       { lines.push(`\nParkirališta (${p.parkinzi.length}):`);     lines.push(...poiLines(p.parkinzi, 25)); }
-    }
-    if (category === 'kupovina' || !category) {
-      if (p.trgovacki_centri?.length){ lines.push(`\nTrgovački centri i supermarketi (${p.trgovacki_centri.length}):`); lines.push(...poiLines(p.trgovacki_centri)); }
-      if (p.frizerski_saloni?.length){ lines.push(`\nFrizerski saloni (${p.frizerski_saloni.length}):`); lines.push(...poiLines(p.frizerski_saloni, 20)); }
-    }
-    if (category === 'gastronomija' || !category) {
-      if (p.caffe_barovi?.length)   { lines.push(`\nCaffe barovi i kafići (${p.caffe_barovi.length}):`); lines.push(...poiLines(p.caffe_barovi, 30)); }
-    }
-    if (category === 'usluge' || category === 'opcenito') {
-      if (p.javni_prijevoz?.length) { lines.push(`\nStanice javnog prijevoza (${p.javni_prijevoz.length}):`); lines.push(...poiLines(p.javni_prijevoz, 20)); }
-    }
-    if (category === 'znamenitosti' || !category) {
-      if (p.muzeji?.length)         { lines.push(`\nMuzeji (${p.muzeji.length}):`);             lines.push(...poiLines(p.muzeji)); }
+    if (s.dokumenti_ostali?.length) {
+      lines.push(`\nOstali dokumenti TZ (${s.dokumenti_ostali.length}):`);
+      s.dokumenti_ostali.slice(0, 15).forEach(d => { lines.push(`• ${d.naslov}`); lines.push(`  ${d.url}`); });
+      if (s.dokumenti_ostali.length > 15)
+        lines.push(`  ... i jos ${s.dokumenti_ostali.length - 15}: https://www.tzgsb.hr/index.php?page=opceinformacije`);
     }
   }
 
@@ -329,17 +330,17 @@ function getRelevantContext(message, db, lastCategory) {
 
   if (msg.includes('znamenitost') || msg.includes('tvrđava') || msg.includes('tvrdava') || msg.includes('muzej') || msg.includes('crkv') || msg.includes('posjet') || msg.includes('vidjeti') || msg.includes('vidjet') || msg.includes('razgled') || msg.includes('što ima') || msg.includes('sto ima') || msg.includes('galerij') || msg.includes('ivana brlić') || msg.includes('ivana brlic') || msg.includes('ivo andrić') || msg.includes('ivo andric') || msg.includes('spomen') || msg.includes('šetalište') || msg.includes('setaliste')
     || msg.includes('attraction') || msg.includes('sightseeing') || msg.includes('castle') || msg.includes('fortress') || msg.includes('museum') || msg.includes('monument') || msg.includes('visit') || msg.includes('landmark') || msg.includes('what to see')
-    || msg.includes('sehenswürdigkeit') || msg.includes('burg') || msg.includes('festung') || msg.includes('museum') || msg.includes('besichtigung'))
+    || msg.includes('sehenswürdigkeit') || msg.includes('burg') || msg.includes('festung') || msg.includes('besichtigung'))
     return { context: CATEGORY_CONTEXTS.znamenitosti(db), category: 'znamenitosti' };
 
   if (msg.includes('sport') || msg.includes('tenis') || msg.includes('nogomet') || msg.includes('rukomet') || msg.includes('košark') || msg.includes('veslanje') || msg.includes('fitness') || msg.includes('teretana') || msg.includes('stadion') || msg.includes('klub') || msg.includes('bazen') || msg.includes('bicikl') || msg.includes('ribolov') || msg.includes('trčan') || msg.includes('rekreacij')
     || msg.includes('tennis') || msg.includes('football') || msg.includes('soccer') || msg.includes('handball') || msg.includes('gym') || msg.includes('stadium') || msg.includes('swimming') || msg.includes('cycling') || msg.includes('fishing')
-    || msg.includes('fußball') || msg.includes('handball') || msg.includes('fitnessstudio') || msg.includes('angeln'))
+    || msg.includes('fußball') || msg.includes('fitnessstudio') || msg.includes('angeln'))
     return { context: CATEGORY_CONTEXTS.sport(db), category: 'sport' };
 
   if (msg.includes('kupin') || msg.includes('kupovat') || msg.includes('shopping') || msg.includes('trgovin') || msg.includes('supermarket') || msg.includes('dućan') || msg.includes('suveniri') || msg.includes('tržnic') || msg.includes('avenue mall')
     || msg.includes('shop') || msg.includes('store') || msg.includes('buy') || msg.includes('souvenir') || msg.includes('market') || msg.includes('mall') || msg.includes('grocery')
-    || msg.includes('einkaufen') || msg.includes('laden') || msg.includes('souvenir') || msg.includes('markt'))
+    || msg.includes('einkaufen') || msg.includes('laden') || msg.includes('markt'))
     return { context: CATEGORY_CONTEXTS.kupovina(db), category: 'kupovina' };
 
   if (msg.includes('benzin') || msg.includes('goriv') || msg.includes('pumpa')
@@ -353,12 +354,12 @@ function getRelevantContext(message, db, lastCategory) {
 
   if (msg.includes('ljekar') || msg.includes('banka') || msg.includes('bankomat') || msg.includes('taksi') || msg.includes('taxi') || msg.includes('autobus') || msg.includes('uslug') || msg.includes('bolnic') || msg.includes('liječnik') || msg.includes('ljekarna') || msg.includes('pošta') || msg.includes('auto servis') || msg.includes('mehanik')
     || msg.includes('doctor') || msg.includes('pharmacy') || msg.includes('hospital') || msg.includes('bank') || msg.includes('atm') || msg.includes('bus') || msg.includes('service') || msg.includes('post office')
-    || msg.includes('arzt') || msg.includes('apotheke') || msg.includes('krankenhaus') || msg.includes('bank') || msg.includes('bus') || msg.includes('taxi') || msg.includes('post'))
+    || msg.includes('arzt') || msg.includes('apotheke') || msg.includes('krankenhaus') || msg.includes('post'))
     return { context: CATEGORY_CONTEXTS.usluge(db), category: 'usluge' };
 
   if (msg.includes('šetn') || msg.includes('park') || msg.includes('priroda') || msg.includes('ribolov') || msg.includes('sava') || msg.includes('šuma') || msg.includes('poloj') || msg.includes('bicikl') || msg.includes('riva') || msg.includes('posavina') || msg.includes('posavsk')
     || msg.includes('walk') || msg.includes('hiking') || msg.includes('cycling') || msg.includes('nature') || msg.includes('fishing') || msg.includes('river') || msg.includes('forest') || msg.includes('outdoor')
-    || msg.includes('wandern') || msg.includes('radfahren') || msg.includes('natur') || msg.includes('angeln') || msg.includes('fluss') || msg.includes('wald'))
+    || msg.includes('wandern') || msg.includes('radfahren') || msg.includes('natur') || msg.includes('fluss') || msg.includes('wald'))
     return { context: CATEGORY_CONTEXTS.priroda(db), category: 'priroda' };
 
   if (msg.includes('izlet') || msg.includes('okolica') || msg.includes('blizin') || msg.includes('đakovo') || msg.includes('dakovo') || msg.includes('osijek') || msg.includes('požega') || msg.includes('pozega') || msg.includes('vinkovci') || msg.includes('kutjevo') || msg.includes('bosanski brod') || msg.includes('kozara')
@@ -368,7 +369,7 @@ function getRelevantContext(message, db, lastCategory) {
 
   if (msg.includes('dokument') || msg.includes('strateg') || msg.includes('plan razvoja') || msg.includes('akcijski plan') || msg.includes('master plan') || msg.includes('marketinški plan') || msg.includes('turistička pristojba') || msg.includes('turisticka pristojba') || msg.includes('statut') || msg.includes('pravilnik') || msg.includes('izvješće tz') || msg.includes('program rada')
     || msg.includes('document') || msg.includes('strategy') || msg.includes('development plan') || msg.includes('tourist tax')
-    || msg.includes('dokument') || msg.includes('strategie') || msg.includes('entwicklungsplan'))
+    || msg.includes('strategie') || msg.includes('entwicklungsplan'))
     return { context: CATEGORY_CONTEXTS.dokumenti(db), category: 'dokumenti' };
 
   if (lastCategory && CATEGORY_CONTEXTS[lastCategory])
