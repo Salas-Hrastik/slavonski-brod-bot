@@ -1,0 +1,12 @@
+{
+    "name": "slavonski-brod-bot",
+    "version": "1.0.0",
+    "type": "module",
+    "engines": {
+        "node": "20.x"
+    },
+    "scripts": {},
+    "dependencies": {
+        "openai": "^4.77.0"
+    }
+}

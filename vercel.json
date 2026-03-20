@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "functions": {
+        "api/**/*.js": {
+            "maxDuration": 25,
+            "memory": 1024
+        }
+    },
+    "headers": [
+        {
+            "source": "/(.*)\\.html",
+            "headers": [
+                { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+            ]
+        }
+    ]
+}
