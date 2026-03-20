@@ -183,16 +183,16 @@ function buildScrapedSection(category) {
 }
 
 const CATEGORY_CONTEXTS = {
-  smjestaj:     (db) => ({ grad: db.grad, smjestaj: db.smjestaj }),
-  gastronomija: (db) => ({ grad: db.grad, gastronomija: db.gastronomija, lokalna_kuhinja: db.lokalna_kuhinja }),
+  smjestaj:     (db) => ({ grad: db.grad }),
+  gastronomija: (db) => ({ grad: db.grad, lokalna_kuhinja: db.lokalna_kuhinja }),
   dogadanja:    (db) => ({ grad: db.grad, dogadanja: db.dogadanja }),
   znamenitosti: (db) => ({ grad: db.grad, znamenitosti: db.znamenitosti }),
   sport:        (db) => ({ grad: db.grad, sport: db.sport }),
   kupovina:     (db) => ({ grad: db.grad, kupovina: db.kupovina }),
-  opcenito:     (db) => ({ grad: db.grad, opcenito: db.opcenito, lokalna_kuhinja: db.lokalna_kuhinja }),
-  benzinske:    (db) => ({ grad: db.grad, benzinske_stanice: db.usluge.benzinske_stanice }),
-  parking:      (db) => ({ grad: db.grad, parkiralista: db.usluge.parkiralista }),
-  usluge:       (db) => ({ grad: db.grad, usluge: db.usluge }),
+  opcenito:     (db) => ({ grad: db.grad, opcenito: db.opcenito }),
+  benzinske:    (db) => ({ grad: db.grad }),
+  parking:      (db) => ({ grad: db.grad }),
+  usluge:       (db) => ({ grad: db.grad }),
   priroda:      (db) => ({ grad: db.grad, priroda: db.priroda }),
   okolica:      (db) => ({ grad: db.grad, okolica: db.okolica }),
   dokumenti:    (db) => ({ grad: db.grad }),
@@ -600,7 +600,7 @@ Pravila:
       model: "gpt-4o-mini",
       messages,
       temperature: 0.7,
-      max_tokens: 800,
+      max_tokens: 500,
     });
 
     const reply = completion.choices[0]?.message?.content || "Nije moguće generirati odgovor.";
