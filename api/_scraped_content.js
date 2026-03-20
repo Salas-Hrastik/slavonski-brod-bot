@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-03-20 20:18 UTC
+// Zadnje skrapanje: 2026-03-20 20:22 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-03-20T20:18:00.647Z",
+    "zadnje_azuriranje": "2026-03-20T20:22:33.822Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -1641,8 +1641,36 @@ export const scrapedContent = {
       "naziv": "Living History — Tvrđava Brod",
       "tip": "Doživljajna turistička atrakcija",
       "link": "https://www.tzgsb.hr/index.php?page=livinghistory",
+      "adresa": "Trg pobjede 28/1, 35000 Slavonski Brod (prijava putem TZ)",
+      "telefon": "+385 35 447 721",
+      "email": "info@tzgsb.hr",
       "karta": "https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod",
       "opis": "Living History programi Gostima koji u Slavonski Brod dođu posredstvom putničkih agencija bit će omogućeno aktivno sudjelovanje u programima živuće povijesti koji se, uz angažman kostimiranih konjanika, vojnika i tvrđavskih zanatlija, izvode u tvrđavi Brod, kao i susret s likovima iz pripovijetki svjetski poznate spisateljice Ivane Brlić-Mažuranić ispred kuće Brlić na središnjem gradskom trgu i kostimiranim likom Dragutina Tadijanovića u Franjevačkom samostanu. Trg pobjede 28/1 35000 Slavonski Brod"
+    },
+    {
+      "naziv": "Prirodni rezervat Gajna",
+      "tip": "Zaštićeni krajobraz / Priroda",
+      "link": "https://www.tzgsb.hr/index.php?page=prirodni_rezervati",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Gajna+Oprisavci+Slavonski+Brod",
+      "opis": "Prirodni rezervat Gajna Ovaj tipični slavonski prisavski pašnjak oplemenjen močvarnom florom i faunom, koji ima status zaštićenog krajolika, se nalazi istočno od Slavonskog Broda, kod sela Oprisavci i Poljanci. Na Gajni se nalazi više aluvijalnih depresija u kojima se zbog proljetno-jesenskih poplava zadržava voda čime se obnavlja vodeni biljni i životinjski svijet bara, što tehnički pospješuje postojanje lateralnog kanala koji Gajnu presijeca u zapadnom dijelu te vodu skupljenu na Dilj gori odvodi u Savu odnosno u bare Gajne. S obzirom da se uglavnom uvijek ukazuje na negativno antropogeno dj"
+    },
+    {
+      "naziv": "Izletišta — Etno-selo Crljen i Jezero Petnja",
+      "tip": "Izletište / Ekoturizam",
+      "link": "https://www.tzgsb.hr/index.php?page=izletista",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Jezero+Petnja+Sibin j",
+      "opis": "Izletišta, rekreacija... Podvinje Uz šumu Striborovu u naselju Janiševac, namijenjenu zabavi i rekreaciji najmlađih, svakako preporučujemo zadržavanje u etno-selu obitelji Crljen, smještenom tik uz cestu koja u Slavonski Brod vodi iz pravca Našica. Dok dvorišne gospodarske zgrade Crljenovih daju prikaz tipičnog gospodarstva slavonskog seljaka sa kraja 18. i početka 19. stoljeća, u tzv. \"bećarskoj kući\" mogu se kušati tipični slavonski domaći specijaliteti. U etno-dvorištu je, uz prethodnu najavu, moguće organizirati i kolektivne tradicijske dječje igre, kao i kreativnu radionicu izrade tradici"
+    },
+    {
+      "naziv": "Katarinski sajam",
+      "tip": "Tradicionalni sajam",
+      "link": "https://www.tzgsb.hr/index.php?page=sajmovanja",
+      "adresa": "Sportska dvorana Vijuš, Stjepana pl. Horvata 2, 35000 Slavonski Brod",
+      "telefon": "+385 35 445 765",
+      "email": "info@brod-turist.hr",
+      "web": "https://www.katarinskisajam.com",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Katarinski+sajam+Slavonski+Brod",
+      "opis": "Sajmovanja Sajam je prvi puta održan 1769. Danas se, slijedeći moderne trendove, organizira u Sportskoj dvorani „Vijuš“ i obiluje brojnim popratnim sadržajima poput eno i gastro prezentacija, stručnih predavanja, koncerata i sl. Adresa: Stjepana pl. Horvata 2 35000 Slavonski Brod Telefon: Web:  E-mail:"
     }
   ],
   "atrakcije_tz": [

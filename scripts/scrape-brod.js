@@ -330,7 +330,32 @@ const BASTINA_PAGES = [
     naziv: 'Living History — Tvrđava Brod',
     tip: 'Doživljajna turistička atrakcija',
     link: 'https://www.tzgsb.hr/index.php?page=livinghistory',
+    adresa: 'Trg pobjede 28/1, 35000 Slavonski Brod (prijava putem TZ)',
+    telefon: '+385 35 447 721',
+    email: 'info@tzgsb.hr',
     karta: 'https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod',
+  },
+  {
+    naziv: 'Prirodni rezervat Gajna',
+    tip: 'Zaštićeni krajobraz / Priroda',
+    link: 'https://www.tzgsb.hr/index.php?page=prirodni_rezervati',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Gajna+Oprisavci+Slavonski+Brod',
+  },
+  {
+    naziv: 'Izletišta — Etno-selo Crljen i Jezero Petnja',
+    tip: 'Izletište / Ekoturizam',
+    link: 'https://www.tzgsb.hr/index.php?page=izletista',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Jezero+Petnja+Sibin j',
+  },
+  {
+    naziv: 'Katarinski sajam',
+    tip: 'Tradicionalni sajam',
+    link: 'https://www.tzgsb.hr/index.php?page=sajmovanja',
+    adresa: 'Sportska dvorana Vijuš, Stjepana pl. Horvata 2, 35000 Slavonski Brod',
+    telefon: '+385 35 445 765',
+    email: 'info@brod-turist.hr',
+    web: 'https://www.katarinskisajam.com',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Katarinski+sajam+Slavonski+Brod',
   },
 ];
 
@@ -340,7 +365,11 @@ function extractBastrinaContent(html) {
 
   // Pokušaj naći specifičan sadržaj stranice u bloku iza navigacije
   // TZ stranice s konkretnim sadržajem imaju ga iza "Preporučujemo!" ili "Living History" ili naziva sekcije
-  const contentMarkers = ['Preporučujemo!', 'Living History programi', 'Kuća Brlićevih', 'Gradski vodič'];
+  const contentMarkers = [
+    'Preporučujemo!', 'Living History programi', 'Kuća Brlićevih',
+    'Prirodni rezervat Gajna', 'Izletišta, rekreacija', 'Sajmovanja Sajam',
+    'Gradski vodič',
+  ];
   let start = -1;
   for (const marker of contentMarkers) {
     const idx = text.indexOf(marker);
@@ -376,7 +405,10 @@ async function scrapeBastina() {
       const html = await fetchHtml(page.link);
       opis = html ? extractBastrinaContent(html) : '';
     }
-    result.push({ ...page, opis: opis || undefined });
+    // Ako već ima kontaktnih podataka u statičnoj definiciji — ne trebamo ih iz HTML-a
+    const entry = { ...page };
+    if (opis) entry.opis = opis;
+    result.push(entry);
     console.log(`  🏛️  ${page.naziv}: ${opis.length} znakova`);
   }
 
