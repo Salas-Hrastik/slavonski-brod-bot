@@ -19,34 +19,64 @@ function stripImages(data) {
   return data;
 }
 
-function buildScrapedSection() {
+function buildScrapedSection(category) {
   const s = scrapedContent;
-  if (!s || (!s.novosti_tz?.length && !s.novosti_grad?.length && !s.manifestacije_aktualne?.length)) {
-    return '';
-  }
-  const lines = ['\nAKTUALNI SADRŽAJ (automatski dohvaćen s web stranica grada):'];
-  if (s.meta?.zadnje_azuriranje) {
-    lines.push(`Zadnje ažuriranje: ${s.meta.zadnje_azuriranje.substring(0, 10)}`);
-  }
-  if (s.novosti_tz?.length) {
-    lines.push('\nNajnovije vijesti — Turistička zajednica Slavonski Brod:');
-    s.novosti_tz.forEach(n => {
-      lines.push(`• [${n.datum || ''}] ${n.naslov}${n.kratki_opis ? ' — ' + n.kratki_opis : ''}`);
+  if (!s) return '';
+
+  const lines = [];
+  const ts = s.meta?.zadnje_azuriranje?.substring(0, 10) || '';
+
+  // Vijesti — uvijek u kontekstu vijesti/novosti
+  if (s.novosti_grad?.length && (!category || category === 'opcenito')) {
+    lines.push(`\nNajnovije vijesti — Grad Slavonski Brod (${ts}):`);
+    s.novosti_grad.slice(0, 6).forEach(n => {
+      lines.push(`• [${n.datum}] ${n.naslov}`);
     });
   }
-  if (s.novosti_grad?.length) {
-    lines.push('\nNajnovije vijesti — Grad Slavonski Brod:');
-    s.novosti_grad.forEach(n => {
-      lines.push(`• [${n.datum || ''}] ${n.naslov}${n.kratki_opis ? ' — ' + n.kratki_opis : ''}`);
-    });
-  }
-  if (s.manifestacije_aktualne?.length) {
-    lines.push('\nAktualne manifestacije (s datumima):');
+
+  // Manifestacije — za upite o događanjima
+  if (s.manifestacije_aktualne?.length && (!category || category === 'dogadanja')) {
+    lines.push('\nAktualne manifestacije:');
     s.manifestacije_aktualne.forEach(m => {
-      lines.push(`• ${m.naziv}${m.datum ? ' (' + m.datum + ')' : ''}${m.opis ? ' — ' + m.opis : ''}`);
+      lines.push(`• ${m.naziv} (${m.datum})`);
+      if (m.opis) lines.push(`  ${m.opis.substring(0, 200)}`);
     });
   }
-  return lines.join('\n');
+
+  // Restorani — za gastronomiju
+  if (s.restorani_tz?.length && (!category || category === 'gastronomija')) {
+    lines.push(`\nRestorani registrirani pri TZ Slavonski Brod (${s.restorani_tz.length} ukupno):`);
+    s.restorani_tz.forEach(r => {
+      const tel = r.telefon ? ` | Tel: ${r.telefon}` : '';
+      const web = r.web ? ` | ${r.web}` : '';
+      lines.push(`• **${r.naziv}** — ${r.adresa}${tel}${web}`);
+    });
+  }
+
+  // Smještaj — za upite o smještaju
+  if (category === 'smjestaj' || !category) {
+    if (s.smjestaj_hoteli?.length) {
+      lines.push(`\nHoteli, hosteli i pansioni (${s.smjestaj_hoteli.length}):`);
+      s.smjestaj_hoteli.forEach(h => {
+        const tel = h.telefon ? ` | Tel: ${h.telefon}` : '';
+        const web = h.web ? ` | ${h.web}` : '';
+        lines.push(`• **${h.naziv}** [${h.tip}] — ${h.adresa}${tel}${web}`);
+      });
+    }
+    if (s.smjestaj_apartmani?.length) {
+      lines.push(`\nApartmani, sobe i vile (${s.smjestaj_apartmani.length} ukupno — prikazujem prvih 30):`);
+      s.smjestaj_apartmani.slice(0, 30).forEach(a => {
+        const tel = a.telefon ? ` | Tel: ${a.telefon}` : '';
+        const web = a.web ? ` | ${a.web}` : '';
+        lines.push(`• **${a.naziv}** [${a.tip}] — ${a.adresa}${tel}${web}`);
+      });
+      if (s.smjestaj_apartmani.length > 30) {
+        lines.push(`  ... i još ${s.smjestaj_apartmani.length - 30} objekata. Puni popis: https://www.tzgsb.hr/index.php?page=smjestaj`);
+      }
+    }
+  }
+
+  return lines.length ? lines.join('\n') : '';
 }
 
 const CATEGORY_CONTEXTS = {
@@ -424,7 +454,7 @@ export default async function handler(req, res) {
     // === AI odgovor ===
     const contextData = isConversationalMode || isGeneralKnowledgeQuery ? db : context;
     const contextStr = JSON.stringify(stripImages(contextData), null, 1);
-    const scrapedSection = buildScrapedSection();
+    const scrapedSection = buildScrapedSection(category || lastCategory);
 
     const langInstruction = lang === 'en'
       ? 'The user is writing in English. Respond in English.'

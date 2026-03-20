@@ -1,11 +1,13 @@
 /**
  * scrape-brod.js
- * Scraper za slavonski-brod.hr (RSS) i tzgsb.hr (manifestacije po mjesecima)
+ * Scraper za slavonski-brod.hr (RSS) i tzgsb.hr (JSON + HTML)
  * Output: api/_scraped_content.js
  *
  * Što se skrapa:
- *   - Vijesti s Grada Slavonski Brod (RSS: slavonski-brod.hr/vijesti?format=feed&type=rss)
- *   - Manifestacije s TZ web stranica (tzgsb.hr po mjesecima: sijecanj, ozujak, travanj...)
+ *   - Vijesti s Grada Slavonski Brod (RSS feed)
+ *   - Manifestacije s TZ (HTML po mjesecima)
+ *   - Restorani iz TZ JSON API-ja (tzgsb.hr/static/json/restorani.json)
+ *   - Smještaj iz TZ JSON API-ja (tzgsb.hr/static/json/smjestaj.json)
  */
 
 import { writeFileSync, readFileSync } from 'fs';
@@ -236,22 +238,72 @@ async function scrapeManifestacije() {
   return allEvents;
 }
 
-// ─── Restorani i smještaj s TZ ──────────────────────────────────────────────
+// ─── Restorani iz TZ JSON API-ja ────────────────────────────────────────────
 
-async function scrapeSmjestajSummary() {
-  const html = await fetchHtml('https://www.tzgsb.hr/index.php?page=smjestaj');
-  if (!html) return null;
+async function scrapeRestorani() {
+  const text = await fetchHtml('https://www.tzgsb.hr/static/json/restorani.json');
+  if (!text) return [];
 
-  const text = stripHtml(html);
-  const start = text.indexOf('Smještaj');
-  const end = text.indexOf('© Copyright');
-  if (start < 0) return null;
+  let data;
+  try { data = JSON.parse(text); } catch { return []; }
 
-  const chunk = (end > start ? text.substring(start, end) : text.substring(start, start + 2000))
-    .trim()
-    .substring(0, 800);
+  const records = data.records || [];
+  const result = records.map(r => {
+    const web = r.web?.[0];
+    const webUrl = typeof web === 'object' ? (web.https ? 'https://' : 'http://') + web.url : (web ? 'https://' + web : '');
+    const name = r.name || '';
+    const addr = (r.address || []).join(', ');
+    const phone = r.phone?.[0] || r.mobile?.[0] || '';
+    return {
+      naziv: name,
+      adresa: addr,
+      telefon: phone,
+      web: webUrl,
+      karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + ' Slavonski Brod')}`,
+    };
+  }).filter(r => r.naziv);
 
-  return chunk || null;
+  console.log(`✅ Restorani TZ: ${result.length} stavki`);
+  return result;
+}
+
+// ─── Smještaj iz TZ JSON API-ja ─────────────────────────────────────────────
+
+async function scrapeSmjestaj() {
+  const text = await fetchHtml('https://www.tzgsb.hr/static/json/smjestaj.json');
+  if (!text) return { hoteli: [], ostalo: [] };
+
+  let data;
+  try { data = JSON.parse(text); } catch { return { hoteli: [], ostalo: [] }; }
+
+  const records = data.records || [];
+
+  // Grupiramo po tipu
+  const hotelTypes = new Set(['HOTEL', 'HOSTEL', 'HOSTERLY', 'PANSION']);
+  const apartTypes = new Set(['APARTMENT', 'APARTMENTS', 'STUDIO_APARTMENT', 'ROOMS', 'VILLA', 'HOLIDAY_HOME']);
+
+  function mapRecord(r) {
+    const web = r.web?.[0];
+    const webUrl = typeof web === 'object' ? (web.https ? 'https://' : 'http://') + web.url : (web ? 'https://' + web : '');
+    const name = r.name || '';
+    const addr = (r.address || []).join(', ');
+    const phone = r.phone?.[0] || r.mobile?.[0] || '';
+    const rank = r.rank ? '★'.repeat(Math.min(r.rank, 5)) : '';
+    return {
+      naziv: name + (rank ? ` ${rank}` : ''),
+      tip: r.type || 'OSTALO',
+      adresa: addr,
+      telefon: phone,
+      web: webUrl,
+      karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + ' Slavonski Brod')}`,
+    };
+  }
+
+  const hoteli = records.filter(r => hotelTypes.has(r.type)).map(mapRecord);
+  const apartmani = records.filter(r => apartTypes.has(r.type)).map(mapRecord);
+
+  console.log(`✅ Smještaj TZ: ${hoteli.length} hoteli/hosteli/pansioni + ${apartmani.length} apartmani/sobe/vile`);
+  return { hoteli, apartmani };
 }
 
 // ─── Zapis rezultata ─────────────────────────────────────────────────────────
@@ -260,7 +312,7 @@ function writeOutput(data) {
   const ts = new Date().toISOString().replace('T', ' ').substring(0, 16);
   const output = `// AUTO-GENERATED — ne editiraj ručno!
 // Zadnje skrapanje: ${ts} UTC
-// Izvor: slavonski-brod.hr (RSS vijesti), tzgsb.hr (manifestacije po mjesecima)
+// Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = ${JSON.stringify(data, null, 2)};
@@ -274,10 +326,11 @@ export const scrapedContent = ${JSON.stringify(data, null, 2)};
 async function main() {
   console.log('🔍 Pokrećem scraping za Slavonski Brod...\n');
 
-  const [vijesti, manifestacije, smjestajTekst] = await Promise.all([
+  const [vijesti, manifestacije, restorani, smjestajData] = await Promise.all([
     scrapeVijesti(),
     scrapeManifestacije(),
-    scrapeSmjestajSummary(),
+    scrapeRestorani(),
+    scrapeSmjestaj(),
   ]);
 
   const data = {
@@ -285,15 +338,20 @@ async function main() {
       zadnje_azuriranje: new Date().toISOString(),
       izvori: [
         'https://www.slavonski-brod.hr/vijesti?format=feed&type=rss',
+        'https://www.tzgsb.hr/static/json/restorani.json',
+        'https://www.tzgsb.hr/static/json/smjestaj.json',
         'https://www.tzgsb.hr/index.php?page=manifestacije',
       ],
     },
     novosti_grad: vijesti,
     manifestacije_aktualne: manifestacije,
-    smjestaj_tz_info: smjestajTekst,
+    restorani_tz: restorani,
+    smjestaj_hoteli: smjestajData.hoteli || [],
+    smjestaj_apartmani: smjestajData.apartmani || [],
   };
 
-  const total = vijesti.length + manifestacije.length;
+  const total = vijesti.length + manifestacije.length + restorani.length +
+    (smjestajData.hoteli?.length || 0) + (smjestajData.apartmani?.length || 0);
 
   if (total === 0) {
     console.warn('⚠️  Nije dohvaćen nikakav sadržaj. Provjeri dostupnost web stranica.');
@@ -301,9 +359,12 @@ async function main() {
   }
 
   writeOutput(data);
-  console.log(`\n✅ Ukupno: ${total} stavki skrapano i zapisano.`);
+  console.log(`\n✅ Ukupno scraped:`);
   console.log('  📰 Vijesti:', vijesti.length);
   console.log('  📅 Manifestacije:', manifestacije.length);
+  console.log('  🍽️  Restorani:', restorani.length);
+  console.log('  🏨 Hoteli/hosteli/pansioni:', smjestajData.hoteli?.length || 0);
+  console.log('  🏠 Apartmani/sobe/vile:', smjestajData.apartmani?.length || 0);
 }
 
 main().catch(err => {

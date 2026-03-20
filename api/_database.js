@@ -176,72 +176,38 @@ export const db = {
     }
   ],
   "gastronomija": {
+    "izvor": "Turistička zajednica Slavonski Brod-Posavina (tzgsb.hr)",
+    "napomena": "Svi ugostiteljski objekti registrirani pri Turističkoj zajednici Brodsko-posavske županije",
     "restorani": [
-      {
-        "naziv": "Restoran Galija",
-        "tip": "Slavonska kuhinja",
-        "opis": "Tradicionalna slavonska kuhinja uz rijeku Savu. Specijaliziran za fiš-paprikaš i roštilj. Jedna od najcjenjenijih adresa u gradu.",
-        "adresa": "Brodska obala bb, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Restoran+Galija+Slavonski+Brod"
-      },
-      {
-        "naziv": "Restaurant & Caffe Bar Meridian",
-        "tip": "Internacionalna kuhinja",
-        "opis": "Moderan restoran u centru grada s bogatim menijem. Popularan za poslovne ručkove i obiteljska slavlja.",
-        "adresa": "Centar, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Restaurant+Meridian+Slavonski+Brod"
-      },
-      {
-        "naziv": "Restoran Brodska Pivnica",
-        "tip": "Slavonska kuhinja / Roštilj",
-        "opis": "Autentična brodska atmosfera, slavonski specijaliteti — kulen, čobanac, roštilj. Bogat izbor domaćih piva i slavonskih vina.",
-        "adresa": "Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Brodska+Pivnica+Slavonski+Brod"
-      },
-      {
-        "naziv": "Konoba Stari Brod",
-        "tip": "Tradicionalna kuhinja",
-        "opis": "Smještena u staroj gradskoj jezgri, konoba nudi autentična brodska i slavonska jela u rustikalnoj atmosferi. Fiš-paprikaš i šaran s roštilja su specijalitet.",
-        "adresa": "Stara jezgra, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Konoba+Stari+Brod"
-      },
-      {
-        "naziv": "Pizzeria Napoli",
-        "tip": "Pizzeria",
-        "opis": "Popularna pizzeria u centru s talijanskim i domaćim specijalitetima. Pogodna za brzi obrok ili obiteljski izlazak.",
-        "adresa": "Centar, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Pizzeria+Napoli+Slavonski+Brod"
-      }
-    ],
-    "cafici": [
-      {
-        "naziv": "Caffe Bar Tvrđava",
-        "tip": "Caffe bar",
-        "opis": "Popularan caffe bar u neposrednoj blizini Tvrđave Brod. Idealno za kavu nakon obilaska tvrđave.",
-        "adresa": "Uz Tvrđavu, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Caffe+Bar+Tvrdava+Slavonski+Brod"
-      },
-      {
-        "naziv": "Kavana Central",
-        "tip": "Kavana",
-        "opis": "Klasična gradska kavana na Trgu pobjede. Omiljeno okupljalište Broðana uz jutarnju kavu, kolače i novine.",
-        "adresa": "Trg pobjede, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Kavana+Central+Slavonski+Brod"
-      },
-      {
-        "naziv": "Caffe Bar Sava",
-        "tip": "Caffe bar",
-        "opis": "Caffe bar uz šetalište na obali Save, s pogledom na rijeku. Savršeno za opuštanje uz kavu i pogled na Savu.",
-        "adresa": "Brodska riva, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Caffe+Bar+Sava+Slavonski+Brod"
-      }
-    ],
-    "brza_hrana": [
-      {
-        "naziv": "Brodski Burek",
-        "opis": "Tradicijska burekdžinica u centru, omiljeno jutarnje odredište Broðana.",
-        "adresa": "Centar, Slavonski Brod"
-      }
+      { "naziv": "Eden (Krčma Eden)", "adresa": "J. J. Strossmayera 1, Slavonski Brod", "telefon": "+385 35 440 406", "web": "https://www.krcma-eden.com", "karta": "https://www.google.com/maps/search/?api=1&query=Krcma+Eden+Slavonski+Brod" },
+      { "naziv": "Grozd", "adresa": "Bečic 11a, Slavonski Brod", "telefon": "+385 35 273 337", "web": "https://www.restoran-grozd.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Restoran+Grozd+Slavonski+Brod" },
+      { "naziv": "Savus (hotel restoran)", "adresa": "A. Starčevića 2A, Slavonski Brod", "telefon": "+385 35 405 888", "web": "https://www.savus-hotel.com", "karta": "https://www.google.com/maps/search/?api=1&query=Hotel+Savus+Slavonski+Brod" },
+      { "naziv": "Oroz", "adresa": "Matije Gupca 33, Slavonski Brod", "telefon": "+385 35 441 666", "mobitel": "+385 98 263 523", "web": "https://www.restoran-oroz.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Restoran+Oroz+Slavonski+Brod" },
+      { "naziv": "Onyx", "adresa": "N. Zrinskog 50, Slavonski Brod", "telefon": "+385 35 445 555", "web": "https://www.onyx-restaurant-pizzeria.com", "karta": "https://www.google.com/maps/search/?api=1&query=Onyx+Slavonski+Brod" },
+      { "naziv": "Plavi Jadran", "adresa": "Š. K. Đalskog 24, Slavonski Brod", "telefon": "+385 35 440 317", "mobitel": "+385 91 220 4560", "karta": "https://www.google.com/maps/search/?api=1&query=Plavi+Jadran+Slavonski+Brod" },
+      { "naziv": "Uno", "adresa": "N. Zrinskog 7, Slavonski Brod", "telefon": "+385 35 442 107", "web": "https://www.uno-brod.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Restoran+Uno+Slavonski+Brod" },
+      { "naziv": "Zrinski (Hotel Art)", "adresa": "Nikole Zrinskog 44, Slavonski Brod", "telefon": "+385 35 638 950", "web": "https://www.art-hotel.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Hotel+Art+Slavonski+Brod" },
+      { "naziv": "Antik — Kuća piva", "adresa": "Ul. Ante Starčevića 17, Slavonski Brod", "telefon": "+385 35 400 033", "karta": "https://www.google.com/maps/search/?api=1&query=Antik+Kuca+Piva+Slavonski+Brod" },
+      { "naziv": "Gurman", "adresa": "Ul. Matije Mesića 47, Slavonski Brod", "telefon": "+385 35 427 841", "web": "https://www.gurmansb.com", "karta": "https://www.google.com/maps/search/?api=1&query=Gurman+Slavonski+Brod" },
+      { "naziv": "Podroom Grill", "adresa": "Trg Ivane Brlić Mažuranić 15, Slavonski Brod", "telefon": "+385 35 445 045", "web": "https://www.podroom-grill.com", "karta": "https://www.google.com/maps/search/?api=1&query=Podroom+Grill+Slavonski+Brod" },
+      { "naziv": "Zdenac", "adresa": "Dr. Mile Budaka 1A, Slavonski Brod", "mobitel": "+385 98 265 724", "web": "https://zdenac.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Zdenac+Slavonski+Brod" },
+      { "naziv": "Zen", "adresa": "Ante Starčevića 1, Slavonski Brod", "telefon": "+385 35 260 600", "mobitel": "+385 91 543 1717", "karta": "https://www.google.com/maps/search/?api=1&query=Zen+Slavonski+Brod" },
+      { "naziv": "Galiot", "adresa": "Zagrebačka 10, Slavonski Brod", "telefon": "+385 35 439 096", "karta": "https://www.google.com/maps/search/?api=1&query=Galiot+Slavonski+Brod" },
+      { "naziv": "My way", "adresa": "Trg Ivane Brlić Mažuranić 10, Slavonski Brod", "mobitel": "+385 99 485 8550", "karta": "https://www.google.com/maps/search/?api=1&query=My+Way+Slavonski+Brod" },
+      { "naziv": "Papo's Restoran i Pizzeria", "adresa": "Ul. Ante Starčevića 19, Slavonski Brod", "telefon": "+385 35 321 321", "web": "https://www.facebook.com/pizzeriapapos/", "karta": "https://www.google.com/maps/search/?api=1&query=Papos+Slavonski+Brod" },
+      { "naziv": "Restoran Jelen", "adresa": "Marijana Lanosovića bb, Slavonski Brod", "telefon": "+385 35 444 488", "karta": "https://www.google.com/maps/search/?api=1&query=Restoran+Jelen+Slavonski+Brod" },
+      { "naziv": "Eko etno salaš Savus", "adresa": "Masleničkih Vitezova 39, Slavonski Brod", "telefon": "+385 35 405 888", "tip": "Etno salaš / tradicijska kuhinja", "karta": "https://www.google.com/maps/search/?api=1&query=Eko+etno+salas+Savus+Slavonski+Brod" },
+      { "naziv": "Rodino gnijezdo", "adresa": "Zagrebačka 348, Slavonski Brod", "telefon": "+385 35 273 408", "mobitel": "+385 98 737 247", "karta": "https://www.google.com/maps/search/?api=1&query=Rodino+Gnijezdo+Slavonski+Brod" },
+      { "naziv": "Gastro & Wine Bar Šabeso", "adresa": "Ferde Filipovića 56, Slavonski Brod", "mobitel": "+385 98 406 876", "karta": "https://www.google.com/maps/search/?api=1&query=Sabeso+Slavonski+Brod" },
+      { "naziv": "Konoba Glembay", "adresa": "Andrije Štampara 36, Slavonski Brod", "mobitel": "+385 35 492 228", "karta": "https://www.google.com/maps/search/?api=1&query=Konoba+Glembay+Slavonski+Brod" },
+      { "naziv": "Konoba Brešić", "adresa": "Vinogorska 77, Slavonski Brod", "telefon": "+385 35 492 414", "mobitel": "+385 95 533 7914", "karta": "https://www.google.com/maps/search/?api=1&query=Konoba+Bresic+Slavonski+Brod" },
+      { "naziv": "Bistro ShpajZ", "adresa": "Trg Ivane Brlić Mažuranić 1, Slavonski Brod", "telefon": "+385 35 409 876", "mobitel": "+385 99 754 3334", "karta": "https://www.google.com/maps/search/?api=1&query=Bistro+ShpajZ+Slavonski+Brod" },
+      { "naziv": "Vesuvio", "adresa": "Ul. Ante Starčevića, Slavonski Brod", "telefon": "+385 35 465 077", "karta": "https://www.google.com/maps/search/?api=1&query=Vesuvio+Slavonski+Brod" },
+      { "naziv": "DOMINOS", "adresa": "Trg Pobjede 1, Slavonski Brod", "telefon": "+385 35 330 643", "karta": "https://www.google.com/maps/search/?api=1&query=Dominos+Slavonski+Brod" },
+      { "naziv": "Pablo", "adresa": "Ul. Andrije Štampara 30, Slavonski Brod", "mobitel": "+385 91 500 6356", "karta": "https://www.google.com/maps/search/?api=1&query=Pablo+Slavonski+Brod" },
+      { "naziv": "Astor", "adresa": "Ul. Ante Starčevića 10, Slavonski Brod", "mobitel": "+385 98 901 3382", "karta": "https://www.google.com/maps/search/?api=1&query=Astor+Slavonski+Brod" },
+      { "naziv": "McDonald's", "adresa": "Hrvatskog proljeća 10, Slavonski Brod", "telefon": "+385 35 494 107", "tip": "Brza hrana", "karta": "https://www.google.com/maps/search/?api=1&query=McDonalds+Slavonski+Brod" },
+      { "naziv": "Wok by Matija", "adresa": "Ul. Petra Krešimira IV 32, Slavonski Brod", "telefon": "+385 35 412 878", "tip": "Azijska kuhinja", "karta": "https://www.google.com/maps/search/?api=1&query=Wok+by+Matija+Slavonski+Brod" }
     ]
   },
   "lokalna_kuhinja": {
@@ -278,38 +244,30 @@ export const db = {
     ]
   },
   "smjestaj": {
+    "izvor": "Turistička zajednica Slavonski Brod-Posavina (tzgsb.hr)",
+    "napomena": "Ukupno 162 smještajnih jedinica registriranih pri TZ Brodsko-posavske županije (hoteli, apartmani, sobe, vile, kuće za odmor)",
     "hoteli": [
-      {
-        "naziv": "Hotel Savus",
-        "kategorija": "3 zvjezdice",
-        "opis": "Centralno smješten hotel u srcu Slavonskog Broda. Moderan, s restoranom i konferencijskim dvoranama. Najpopularniji hotel u gradu.",
-        "adresa": "Ul. Petra Krešimira IV, 35000 Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Hotel+Savus+Slavonski+Brod"
-      },
-      {
-        "naziv": "Hotel Central",
-        "kategorija": "3 zvjezdice",
-        "opis": "Hotel u centru grada s udobnim sobama i poslovnim sadržajima. Popularan kod poslovnih gostiju.",
-        "adresa": "Centar, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Hotel+Central+Slavonski+Brod"
-      }
+      { "naziv": "Hotel Savus ****", "kategorija": "4 zvjezdice", "adresa": "A. Starčevića 2A, 35000 Slavonski Brod", "telefon": "+385 35 405 888", "web": "https://www.savus-hotel.com", "karta": "https://www.google.com/maps/search/?api=1&query=Hotel+Savus+Slavonski+Brod", "opis": "Vodeći hotel u Slavonskom Brodu. Restoran, konferencijske dvorane, spa. Idealan za poslovne i turističke goste." },
+      { "naziv": "Hotel Art ****", "kategorija": "4 zvjezdice", "adresa": "Nikole Zrinskog 44, 35000 Slavonski Brod", "telefon": "+385 35 638 950", "web": "https://www.art-hotel.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Hotel+Art+Slavonski+Brod", "opis": "Boutique hotel u centru s restoranom Zrinski. Moderan dizajn, udobne sobe." },
+      { "naziv": "Hotel Central ***", "kategorija": "3 zvjezdice", "adresa": "Petra Krešimira IV 45, 35000 Slavonski Brod", "telefon": "+385 35 492 030", "web": "https://www.hotelcentralsb.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Hotel+Central+Slavonski+Brod", "opis": "Hotel u srcu Slavonskog Broda. Dobra lokacija, dostupan parking." },
+      { "naziv": "Garten Hotel", "adresa": "M. Dizdara 2, 35000 Slavonski Brod", "telefon": "+385 35 465 072", "web": "https://www.garten.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Garten+Hotel+Slavonski+Brod", "opis": "Hotel s ugostiteljskim sadržajima i parkingom." }
     ],
-    "apartmani": [
-      {
-        "naziv": "Apartmani uz Savu",
-        "opis": "Privatni apartmani s pogledom na Savu, u blizini šetališta. Idealni za dulje boravke.",
-        "adresa": "Brodska obala, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Apartmani+Slavonski+Brod"
-      }
+    "hosteli": [
+      { "naziv": "Smart Hostel", "adresa": "Ulica Petra Krešimira IV 45, 35000 Slavonski Brod", "telefon": "+385 35 492 030", "web": "https://www.smarthostel.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Smart+Hostel+Slavonski+Brod", "opis": "Moderni hostel u centru — povoljno, idealno za mlade putnike." },
+      { "naziv": "Hostel Levicki", "adresa": "Trg Stjepana Miletića 11, 35000 Slavonski Brod", "web": "https://hostel-levicki.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Hostel+Levicki+Slavonski+Brod", "opis": "Hostel u centru grada, pristupačne cijene." },
+      { "naziv": "Hostel Mali Pariz", "adresa": "Eugena Kumičića 32, 35000 Slavonski Brod", "karta": "https://www.google.com/maps/search/?api=1&query=Hostel+Mali+Pariz+Slavonski+Brod", "opis": "Povoljni hostel u stambenoj četvrti." }
     ],
-    "prenocista": [
-      {
-        "naziv": "Prenoćište Brod",
-        "opis": "Povoljno prenoćište s čistim sobama u centru. Idealno za kratke posjete i prolaznike.",
-        "adresa": "Centar, Slavonski Brod",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Prenociste+Slavonski+Brod"
-      }
-    ]
+    "pansioni": [
+      { "naziv": "Pansion Antonio", "adresa": "Frane Bulića 22, 35000 Slavonski Brod", "telefon": "+385 35 415 522", "web": "https://www.pansion-antonio.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Pansion+Antonio+Slavonski+Brod", "opis": "Obiteljski pansion s domaćom atmosferom." },
+      { "naziv": "My way Pansion", "adresa": "Trg Ivane Brlić Mažuranić 10, 35000 Slavonski Brod", "karta": "https://www.google.com/maps/search/?api=1&query=My+Way+Pansion+Slavonski+Brod", "opis": "Pansion u centru uz istoimeni restoran." }
+    ],
+    "apartmani_top": [
+      { "naziv": "Apartmani na Savi ***", "adresa": "Šetalište braće Radića 16, 35000 Slavonski Brod", "telefon": "+385 35 411 160", "web": "https://www.apartmani-na-savi.com.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Apartmani+na+Savi+Slavonski+Brod", "opis": "Apartmani uz šetalište na Savi — panoramski pogled na rijeku." },
+      { "naziv": "Apartmani Mia ***", "adresa": "Trg pobjede 4, 35000 Slavonski Brod", "web": "https://www.apartmani-mia.eu", "karta": "https://www.google.com/maps/search/?api=1&query=Apartmani+Mia+Slavonski+Brod", "opis": "Apartmani na centralnom Trgu pobjede — idealna lokacija." },
+      { "naziv": "Apartmani Kolonija **", "adresa": "J. Gotovca 22, 35000 Slavonski Brod", "telefon": "+385 35 491 238", "web": "https://www.apartman-kolonija.hr", "karta": "https://www.google.com/maps/search/?api=1&query=Apartmani+Kolonija+Slavonski+Brod", "opis": "Obiteljski apartmani s dobrim pristupom centru." },
+      { "naziv": "Prenoćište Magnus *", "adresa": "Josipa Jurja Strossmayera 46, 35000 Slavonski Brod", "telefon": "+385 35 436 536", "web": "https://www.prenociste-magnus.com", "karta": "https://www.google.com/maps/search/?api=1&query=Prenociste+Magnus+Slavonski+Brod", "opis": "Povoljno prenoćište u stambenom dijelu grada." }
+    ],
+    "booking_info": "Za puni popis svih 162 smještajnih kapaciteta (apartmani, sobe, vile, kuće za odmor) posjetite: https://www.tzgsb.hr/index.php?page=smjestaj ili kontaktirajte TZ: +385 35 447 721"
   },
   "dogadanja": [
     {
