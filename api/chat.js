@@ -26,6 +26,27 @@ function buildScrapedSection(category) {
   const lines = [];
   const ts = s.meta?.zadnje_azuriranje?.substring(0, 10) || '';
 
+  // Dokumenti TZ — samo za izravne upite o strategijama/dokumentima
+  if (category === 'dokumenti') {
+    if (s.dokumenti_strategije?.length) {
+      lines.push(`\nStrategije i planovi razvoja turizma — Slavonski Brod-Posavina (${s.dokumenti_strategije.length} dokumenata):`);
+      s.dokumenti_strategije.forEach(d => {
+        lines.push(`• ${d.naslov}`);
+        lines.push(`  ${d.url}`);
+      });
+    }
+    if (s.dokumenti_ostali?.length) {
+      lines.push(`\nOstali dokumenti TZ (statut, pravilnici, izvješća, odluke o pristojbi) — ${s.dokumenti_ostali.length} dokumenata:`);
+      s.dokumenti_ostali.slice(0, 15).forEach(d => {
+        lines.push(`• ${d.naslov}`);
+        lines.push(`  ${d.url}`);
+      });
+      if (s.dokumenti_ostali.length > 15) {
+        lines.push(`  ... i još ${s.dokumenti_ostali.length - 15} dokumenata: https://www.tzgsb.hr/index.php?page=opceinformacije`);
+      }
+    }
+  }
+
   // Vijesti — uvijek u kontekstu vijesti/novosti
   if (s.novosti_grad?.length && (!category || category === 'opcenito')) {
     lines.push(`\nNajnovije vijesti — Grad Slavonski Brod (${ts}):`);
@@ -118,6 +139,7 @@ const CATEGORY_CONTEXTS = {
   usluge:       (db) => ({ grad: db.grad, usluge: db.usluge }),
   priroda:      (db) => ({ grad: db.grad, priroda: db.priroda }),
   okolica:      (db) => ({ grad: db.grad, okolica: db.okolica }),
+  dokumenti:    (db) => ({ grad: db.grad }),
 };
 
 function detectLang(msg) {
@@ -288,6 +310,11 @@ function getRelevantContext(message, db, lastCategory) {
     || msg.includes('trip') || msg.includes('excursion') || msg.includes('nearby') || msg.includes('surroundings') || msg.includes('day trip') || msg.includes('wine')
     || msg.includes('ausflug') || msg.includes('umgebung') || msg.includes('in der nähe') || msg.includes('wein'))
     return { context: CATEGORY_CONTEXTS.okolica(db), category: 'okolica' };
+
+  if (msg.includes('dokument') || msg.includes('strateg') || msg.includes('plan razvoja') || msg.includes('akcijski plan') || msg.includes('master plan') || msg.includes('marketinški plan') || msg.includes('turistička pristojba') || msg.includes('turisticka pristojba') || msg.includes('statut') || msg.includes('pravilnik') || msg.includes('izvješće tz') || msg.includes('program rada')
+    || msg.includes('document') || msg.includes('strategy') || msg.includes('development plan') || msg.includes('tourist tax')
+    || msg.includes('dokument') || msg.includes('strategie') || msg.includes('entwicklungsplan'))
+    return { context: CATEGORY_CONTEXTS.dokumenti(db), category: 'dokumenti' };
 
   if (lastCategory && CATEGORY_CONTEXTS[lastCategory])
     return { context: CATEGORY_CONTEXTS[lastCategory](db), category: lastCategory, matched: false };

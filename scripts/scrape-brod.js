@@ -416,6 +416,73 @@ async function scrapeBastina() {
   return result;
 }
 
+// ─── Dokumenti TZ (strategije i ostali) ──────────────────────────────────────
+
+// Ključne riječi za kategorizaciju dokumenata
+const STRATEGIJE_KLJUCNE = [
+  'strateg', 'plan upravljanja', 'master plan', 'marketinški plan',
+  'akcijski plan', 'smjernice', 'analiza', 'priručnik', 'razvoj turizma',
+];
+const OSTALI_KLJUCNE = [
+  'statut', 'poslovnik', 'pravilnik', 'odluka', 'program rada',
+  'izvješ', 'izvješće', 'zapisnik', 'nadzor', 'pristojb', 'revizij',
+];
+
+function kategorizirajDokument(naziv) {
+  const n = naziv.toLowerCase();
+  if (STRATEGIJE_KLJUCNE.some(k => n.includes(k))) return 'strategije';
+  if (OSTALI_KLJUCNE.some(k => n.includes(k))) return 'ostali';
+  return null;
+}
+
+async function scrapeDokumenti() {
+  const html = await fetchHtml('https://www.tzgsb.hr/index.php?page=opceinformacije');
+  if (!html) return { strategije: [], ostali: [] };
+
+  const strategije = [];
+  const ostali = [];
+  const seen = new Set();
+
+  // Izvuci sve href+tekst parove
+  const linkRe = /href=["']([^"']+\.(?:pdf|PDF))["'][^>]*>\s*([^<]{3,120})/gi;
+  let m;
+  while ((m = linkRe.exec(html)) !== null) {
+    let href = m[1].trim();
+    const naslov = m[2].trim().replace(/\s+/g, ' ');
+
+    if (seen.has(href) || naslov === 'Više') continue;
+    seen.add(href);
+
+    // Normalizacija URL-a
+    const url = href.startsWith('http') ? href
+      : `https://www.tzgsb.hr/${href.replace(/^\//, '')}`;
+
+    const kategorija = kategorizirajDokument(naslov);
+    if (kategorija === 'strategije') strategije.push({ naslov, url });
+    else if (kategorija === 'ostali') ostali.push({ naslov, url });
+  }
+
+  // Fallback: linkovi gdje tekst = "Više" — izvuci naslov iz URL-a
+  const hrefOnlyRe = /href=["'](static\/pdf\/[^"']+\.(?:pdf|PDF))["']/gi;
+  while ((m = hrefOnlyRe.exec(html)) !== null) {
+    const href = m[1].trim();
+    if (seen.has(href)) continue;
+    seen.add(href);
+
+    const url = `https://www.tzgsb.hr/${href}`;
+    // Naslov iz naziva datoteke
+    const filename = decodeURIComponent(href.split('/').pop().replace(/\.pdf$/i, ''))
+      .replace(/[_-]+/g, ' ').trim();
+
+    const kategorija = kategorizirajDokument(filename);
+    if (kategorija === 'strategije') strategije.push({ naslov: filename, url });
+    else if (kategorija === 'ostali') ostali.push({ naslov: filename, url });
+  }
+
+  console.log(`✅ Dokumenti TZ: ${strategije.length} strategija + ${ostali.length} ostalih`);
+  return { strategije, ostali };
+}
+
 // ─── Turističke atrakcije ────────────────────────────────────────────────────
 
 // Kurirane atrakcije s poznatim podacima (TZ HTML nema specifičnih stranica za svaku)
@@ -531,13 +598,14 @@ export const scrapedContent = ${JSON.stringify(data, null, 2)};
 async function main() {
   console.log('🔍 Pokrećem scraping za Slavonski Brod...\n');
 
-  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije] = await Promise.all([
+  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije, dokumenti] = await Promise.all([
     scrapeVijesti(),
     scrapeManifestacije(),
     scrapeRestorani(),
     scrapeSmjestaj(),
     scrapeBastina(),
     scrapeAtrakcije(),
+    scrapeDokumenti(),
   ]);
 
   const data = {
@@ -550,6 +618,7 @@ async function main() {
         'https://www.tzgsb.hr/index.php?page=manifestacije',
         'https://www.tzgsb.hr/index.php?page=kulturna-bastina',
         'https://www.tzgsb.hr/index.php?page=rekreacija',
+        'https://www.tzgsb.hr/index.php?page=opceinformacije',
       ],
     },
     novosti_grad: vijesti,
@@ -559,11 +628,14 @@ async function main() {
     smjestaj_apartmani: smjestajData.apartmani || [],
     kulturna_bastina: bastina,
     atrakcije_tz: atrakcije,
+    dokumenti_strategije: dokumenti.strategije,
+    dokumenti_ostali: dokumenti.ostali,
   };
 
   const total = vijesti.length + manifestacije.length + restorani.length +
     (smjestajData.hoteli?.length || 0) + (smjestajData.apartmani?.length || 0) +
-    bastina.length + atrakcije.length;
+    bastina.length + atrakcije.length +
+    dokumenti.strategije.length + dokumenti.ostali.length;
 
   if (total === 0) {
     console.warn('⚠️  Nije dohvaćen nikakav sadržaj. Provjeri dostupnost web stranica.');
@@ -579,6 +651,8 @@ async function main() {
   console.log('  🏠 Apartmani/sobe/vile:', smjestajData.apartmani?.length || 0);
   console.log('  🏛️  Kulturna baština:', bastina.length);
   console.log('  🎯 Turističke atrakcije:', atrakcije.length);
+  console.log('  📄 Dokumenti — strategije:', dokumenti.strategije.length);
+  console.log('  📄 Dokumenti — ostali:', dokumenti.ostali.length);
 }
 
 main().catch(err => {

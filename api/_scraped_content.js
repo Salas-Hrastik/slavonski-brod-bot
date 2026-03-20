@@ -1,18 +1,19 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-03-20 20:22 UTC
+// Zadnje skrapanje: 2026-03-20 20:29 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-03-20T20:22:33.822Z",
+    "zadnje_azuriranje": "2026-03-20T20:29:38.475Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
       "https://www.tzgsb.hr/static/json/smjestaj.json",
       "https://www.tzgsb.hr/index.php?page=manifestacije",
       "https://www.tzgsb.hr/index.php?page=kulturna-bastina",
-      "https://www.tzgsb.hr/index.php?page=rekreacija"
+      "https://www.tzgsb.hr/index.php?page=rekreacija",
+      "https://www.tzgsb.hr/index.php?page=opceinformacije"
     ]
   },
   "novosti_grad": [
@@ -1747,6 +1748,238 @@ export const scrapedContent = {
       "opis": "Brodsko-posavska županija ima bogata lovišta s jelenima, srnama, divljim svinjama, fazanima i zejevima. Lov je organiziran putem lovačkih udruga i Lovačkog saveza Brodsko-posavske županije. Za strane lovce potrebna je lovačka dozvola i privremena dozvola za lov u RH. Lovišta su u posavskim šumama i na obroncima Dilj gore.",
       "link": "https://www.tzgsb.hr/index.php?page=lovribolov",
       "karta": "https://www.google.com/maps/search/?api=1&query=loviste+Brodsko+posavska+zupanija"
+    }
+  ],
+  "dokumenti_strategije": [
+    {
+      "naslov": "Ministarstvo turizma i sporta: Smjernice i upute za izradu plana upravljanja destinacijom",
+      "url": "https://mint.gov.hr/UserDocsImages/1A_UPISNICI/240930_Smjernice_upravljanje_dest.pdf"
+    },
+    {
+      "naslov": "Strateški master plan SLAVONIJA",
+      "url": "https://www.tzgsb.hr/static/pdf/Strateški_master_plan_SLAVONIJA.pdf"
+    },
+    {
+      "naslov": "Strategija razvoja turizma i marketinški plan za Brodsko posavsku županiju do 2030.god.",
+      "url": "https://www.tzgsb.hr/static/pdf/Strategija razvoja turizma i marketinški plan za Brodsko-posavsku županiju do 2030.god..pdf"
+    },
+    {
+      "naslov": "Plan upravljanja turizmom Slavonski Brod Posavina",
+      "url": "https://www.tzgsb.hr/static/pdf/Plan upravljanja turizmom Slavonski Brod Posavina.pdf"
+    },
+    {
+      "naslov": "Institut za turizam akcijski plan Enogastronomija 2023 finalno PDF",
+      "url": "https://www.tzgsb.hr/static/pdf/Institut_za_turizam_akcijski_plan_Enogastronomija_2023_finalno_PDF.pdf"
+    },
+    {
+      "naslov": "Institut za turizam akcijski plan kulturnog turizma, finalno PDF",
+      "url": "https://www.tzgsb.hr/static/pdf/Institut_za_turizam_akcijski_plan_kulturnog_turizma,_finalno_PDF.pdf"
+    },
+    {
+      "naslov": "Akcijski plan SB rujan 2011 finalni",
+      "url": "https://www.tzgsb.hr/static/pdf/Akcijski_plan_SB_rujan_2011_finalni.pdf"
+    },
+    {
+      "naslov": "Akcijski plan korona finalni 15 12 2020",
+      "url": "https://www.tzgsb.hr/static/pdf/Akcijski_plan_korona_finalni_15_12_2020.pdf"
+    },
+    {
+      "naslov": "Analiza Ekonomskog fakulteta",
+      "url": "https://www.tzgsb.hr/static/pdf/Analiza Ekonomskog fakulteta.pdf"
+    },
+    {
+      "naslov": "Analiza Instituta za turizam",
+      "url": "https://www.tzgsb.hr/static/pdf/Analiza Instituta za turizam.pdf"
+    },
+    {
+      "naslov": "Priručnik o pristupačnosti u turizmu",
+      "url": "https://www.tzgsb.hr/static/pdf/Priručnik o pristupačnosti u turizmu.pdf"
+    }
+  ],
+  "dokumenti_ostali": [
+    {
+      "naslov": "Izvješće o provedbi zakona o pravu na pristup informacija",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Godisnje_izvjesce_2025.pdf"
+    },
+    {
+      "naslov": "Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2026. godinu",
+      "url": "https://www.tzgsb.hr/static/pdf/2025/odluka_o_visini_turisticke_pristojbe_na_podrucju_brodsko_posavske_zupanije_za_2026.pdf"
+    },
+    {
+      "naslov": "Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2025. godinu",
+      "url": "https://www.tzgsb.hr/static/pdf/ODLUKA o visini turističke pristojbe na području BPŽ za 2025. godinu.pdf"
+    },
+    {
+      "naslov": "Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2024. godinu",
+      "url": "https://www.tzgsb.hr/static/pdf/Odluka_o_visini_turisticke_pristojbe_na_podrucju_Brodsko-posavske_zupanije_za_2024._godinu.pdf"
+    },
+    {
+      "naslov": "Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2023. godinu",
+      "url": "https://www.tzgsb.hr/static/pdf/Turist. pristojba ODLUKA o visini za 2023. godinu.pdf"
+    },
+    {
+      "naslov": "Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2022. godinu",
+      "url": "https://www.tzgsb.hr/static/pdf/Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2022. godinu.pdf"
+    },
+    {
+      "naslov": "TZPSBP Statut 20230309",
+      "url": "https://www.tzgsb.hr/static/pdf/TZPSBP-Statut-20230309.pdf"
+    },
+    {
+      "naslov": "TZPSBP Poslovnik 20230309",
+      "url": "https://www.tzgsb.hr/static/pdf/TZPSBP-Poslovnik-20230309.pdf"
+    },
+    {
+      "naslov": "Poslovnik o radu Turističkog vijeća TZP Slavonski Brod Posavina",
+      "url": "https://www.tzgsb.hr/static/pdf/Poslovnik o radu Turističkog vijeća TZP Slavonski Brod-Posavina.PDF"
+    },
+    {
+      "naslov": "Pravilnik o provodenju postupka jednostavne nabave",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Pravilnik_o_provodenju_postupka_jednostavne_nabave.pdf"
+    },
+    {
+      "naslov": "Pravilnik o oznacavanju projekta dobar gazda",
+      "url": "https://www.tzgsb.hr/static/pdf/Pravilnik_o_oznacavanju_projekta_dobar_gazda.PDF"
+    },
+    {
+      "naslov": "Izvješće o radu TZP 2024. doneseno na Skupštini",
+      "url": "https://www.tzgsb.hr/static/pdf/Izvješće o radu TZP 2024. doneseno na Skupštini.pdf"
+    },
+    {
+      "naslov": "izvješće o radu TZP 2023. za Skupštinu veljača 2024",
+      "url": "https://www.tzgsb.hr/static/pdf/izvješće o radu TZP 2023. za Skupštinu veljača 2024_.pdf"
+    },
+    {
+      "naslov": "Izvješće o radu TZ 2022.god.",
+      "url": "https://www.tzgsb.hr/static/pdf/Izvješće o radu TZ 2022.god..pdf"
+    },
+    {
+      "naslov": "Izvješće o nadzoru na radom TZ 2025",
+      "url": "https://www.tzgsb.hr/static/pdf/Izvješće o nadzoru na radom TZ 2025.PDF"
+    },
+    {
+      "naslov": "Nadzor nad radom TZ 2023.",
+      "url": "https://www.tzgsb.hr/static/pdf/Nadzor nad radom TZ 2023..PDF"
+    },
+    {
+      "naslov": "Nadzor nad radom TZ u 2022. od strane Skupštine, ožujak 2023.",
+      "url": "https://www.tzgsb.hr/static/pdf/Nadzor nad radom TZ u 2022. od strane Skupštine, ožujak 2023..pdf"
+    },
+    {
+      "naslov": "IZVJESCE O NADZORU NAD RADOM TURISTICKE ZAJEDNICE GRADA SLAVONSKOG BRODA ZA RAZDOBLJE 1 1 31 12 2021",
+      "url": "https://www.tzgsb.hr/static/pdf/IZVJESCE_O_NADZORU_NAD_RADOM_TURISTICKE_ZAJEDNICE_GRADA_SLAVONSKOG_BRODA_ZA_RAZDOBLJE_1-1-31-12-2021.pdf"
+    },
+    {
+      "naslov": "Nadzor nad radom TZ u 2020 od strane Skupstine ozujak 2021",
+      "url": "https://www.tzgsb.hr/static/pdf/Nadzor_nad_radom_TZ_u_2020_od_strane_Skupstine_ozujak_2021.pdf"
+    },
+    {
+      "naslov": "Izvješće o radu Turističkog vijeća za 2024.god",
+      "url": "https://www.tzgsb.hr/static/pdf/Izvješće o radu Turističkog vijeća za 2024.god.PDF"
+    },
+    {
+      "naslov": "Turističko vijeće Izvješće o radu u 2023.",
+      "url": "https://www.tzgsb.hr/static/pdf/Turističko vijeće Izvješće o radu u 2023..pdf"
+    },
+    {
+      "naslov": "Izvješće o radu Turističkog vijeća",
+      "url": "https://www.tzgsb.hr/static/pdf/Izvješće o radu Turističkog vijeća.pdf"
+    },
+    {
+      "naslov": "Izvjesce o obavljenoj financijskoj reviziji Turisticke zajednice grada Slavonskog Broda za 2019",
+      "url": "https://www.tzgsb.hr/static/pdf/Izvjesce_o_obavljenoj_financijskoj_reviziji_Turisticke_zajednice_grada_Slavonskog_Broda_za_2019.pdf"
+    },
+    {
+      "naslov": "program rada tz za 2026",
+      "url": "https://www.tzgsb.hr/static/pdf/2025/program_rada_tz_za_2026.pdf"
+    },
+    {
+      "naslov": "Program rada TZ za 2025.god.",
+      "url": "https://www.tzgsb.hr/static/pdf/Program rada TZ za 2025.god..pdf"
+    },
+    {
+      "naslov": "Tz podrucja Program rada TZ za 2024 dopunjen i usvojen na Skupstini prosinac 2023",
+      "url": "https://www.tzgsb.hr/static/pdf/Tz_podrucja_Program_rada_TZ_za_2024_dopunjen_i_usvojen_na_Skupstini_prosinac_2023.pdf"
+    },
+    {
+      "naslov": "Tz područja Program rada TZ konačno",
+      "url": "https://www.tzgsb.hr/static/pdf/Tz područja Program rada TZ-konačno.pdf"
+    },
+    {
+      "naslov": "Program rada TZ prijedlog za Skupštinu 1. prosinac 2022. konačni",
+      "url": "https://www.tzgsb.hr/static/pdf/Program rada TZ prijedlog za Skupštinu 1. prosinac 2022. konačni.pdf"
+    },
+    {
+      "naslov": "Program rada TZ za 2022",
+      "url": "https://www.tzgsb.hr/static/pdf/Program_rada_TZ_za_2022.pdf"
+    },
+    {
+      "naslov": "Program rada TZ prosinac 2020",
+      "url": "https://www.tzgsb.hr/static/pdf/Program_rada_TZ_prosinac_2020.pdf"
+    },
+    {
+      "naslov": "Program rada 2020 TZGSB",
+      "url": "https://www.tzgsb.hr/static/pdf/Program_rada_2020_TZGSB.pdf"
+    },
+    {
+      "naslov": "Program rada 2023. izmjene i dopune",
+      "url": "https://www.tzgsb.hr/static/pdf/Program_rada_2023._izmjene_i_dopune.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa 8 sjednice Skupstine",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Zapisnik_sa_8_sjednice_Skupstine.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa Skupštine 2025",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik sa Skupštine 2025.PDF"
+    },
+    {
+      "naslov": "Zapisnik 27 sijecnja 2025",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik_27_sijecnja_2025.PDF"
+    },
+    {
+      "naslov": "Zapisnik sa 5.sjednice Skupštine Turističke zajednice",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik sa 5.sjednice Skupštine Turističke zajednice.PDF"
+    },
+    {
+      "naslov": "Zapisnik sa Skupštine 25. ožujka 2024",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik sa Skupštine 25. ožujka 2024.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa 3. Skupstine",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik_sa_3._Skupstine.PDF"
+    },
+    {
+      "naslov": "Zapisnik TZPSBP 24 04 2023",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik_TZPSBP_24_04_2023.pdf"
+    },
+    {
+      "naslov": "Zapisnik s osnivačke Skupstine 20230309",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik s osnivačke Skupstine-20230309.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa Skupštine prosinac 2022",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik sa Skupštine prosinac 2022.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa Skupštine ožujak 2022",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik sa Skupštine ožujak 2022.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa sjednice Skupstine TZ odrzane 28 prosinca 2021",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik_sa_sjednice_Skupstine_TZ_odrzane_28_prosinca_2021.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa sjednice Skupstine TZ odrzane 26 ozujka 2021",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik_sa_sjednice_Skupstine_TZ_odrzane_26_ozujka_2021.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa sjednice Skupštine TZ odrzane 28 prosinca 2020",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik_sa_sjednice_Skupštine_TZ_odrzane_28_prosinca_2020.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa sjednice Skupštine TZ odrzane 27 prosinca 2019",
+      "url": "https://www.tzgsb.hr/static/pdf/Zapisnik_sa_sjednice_Skupštine_TZ_odrzane_27_prosinca_2019.pdf"
     }
   ]
 };
