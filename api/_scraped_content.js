@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-03-20 20:08 UTC
+// Zadnje skrapanje: 2026-03-20 20:18 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-03-20T20:08:10.849Z",
+    "zadnje_azuriranje": "2026-03-20T20:18:00.647Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -1705,6 +1705,20 @@ export const scrapedContent = {
       "opis": "Ravninska biciklistička ruta koja prolazi uz Savu kroz Brodsko-posavsku županiju. Dio međunarodne EuroVelo mreže. Lako vozna, prolazi uz rijeku i kroz posavska sela.",
       "link": "https://www.tzgsb.hr",
       "karta": "https://www.google.com/maps/search/?api=1&query=Posavska+biciklisticka+ruta"
+    },
+    {
+      "naziv": "Ribolov na rijeci Savi",
+      "tip": "Ribolov",
+      "opis": "Sava je jedno od najbogatijih ribolovnih područja u Hrvatskoj. Ulovite šarana, soma, štuku, smuđa, linjaka i klena. Ribolovna dozvola nabavlja se kod lokalnih ribolovačkih udruga (Ribolovna udruga \"Sava\" Slavonski Brod). Sezona: cijela godina, uz godišnju dozvolu. Ribolov uz lijevu obalu Save i na mrtvajama oko Slavonskog Broda.",
+      "link": "https://www.tzgsb.hr/index.php?page=lovribolov",
+      "karta": "https://www.google.com/maps/search/?api=1&query=ribolov+Sava+Slavonski+Brod"
+    },
+    {
+      "naziv": "Lov u Brodsko-posavskoj županiji",
+      "tip": "Lov",
+      "opis": "Brodsko-posavska županija ima bogata lovišta s jelenima, srnama, divljim svinjama, fazanima i zejevima. Lov je organiziran putem lovačkih udruga i Lovačkog saveza Brodsko-posavske županije. Za strane lovce potrebna je lovačka dozvola i privremena dozvola za lov u RH. Lovišta su u posavskim šumama i na obroncima Dilj gore.",
+      "link": "https://www.tzgsb.hr/index.php?page=lovribolov",
+      "karta": "https://www.google.com/maps/search/?api=1&query=loviste+Brodsko+posavska+zupanija"
     }
   ]
 };

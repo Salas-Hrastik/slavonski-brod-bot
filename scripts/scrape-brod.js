@@ -448,6 +448,20 @@ const ATRAKCIJE_STATIC = [
     link: 'https://www.tzgsb.hr',
     karta: 'https://www.google.com/maps/search/?api=1&query=Posavska+biciklisticka+ruta',
   },
+  {
+    naziv: 'Ribolov na rijeci Savi',
+    tip: 'Ribolov',
+    opis: 'Sava je jedno od najbogatijih ribolovnih područja u Hrvatskoj. Ulovite šarana, soma, štuku, smuđa, linjaka i klena. Ribolovna dozvola nabavlja se kod lokalnih ribolovačkih udruga (Ribolovna udruga "Sava" Slavonski Brod). Sezona: cijela godina, uz godišnju dozvolu. Ribolov uz lijevu obalu Save i na mrtvajama oko Slavonskog Broda.',
+    link: 'https://www.tzgsb.hr/index.php?page=lovribolov',
+    karta: 'https://www.google.com/maps/search/?api=1&query=ribolov+Sava+Slavonski+Brod',
+  },
+  {
+    naziv: 'Lov u Brodsko-posavskoj županiji',
+    tip: 'Lov',
+    opis: 'Brodsko-posavska županija ima bogata lovišta s jelenima, srnama, divljim svinjama, fazanima i zejevima. Lov je organiziran putem lovačkih udruga i Lovačkog saveza Brodsko-posavske županije. Za strane lovce potrebna je lovačka dozvola i privremena dozvola za lov u RH. Lovišta su u posavskim šumama i na obroncima Dilj gore.',
+    link: 'https://www.tzgsb.hr/index.php?page=lovribolov',
+    karta: 'https://www.google.com/maps/search/?api=1&query=loviste+Brodsko+posavska+zupanija',
+  },
 ];
 
 async function scrapeAtrakcije() {
