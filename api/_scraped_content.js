@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-03-20 20:37 UTC
+// Zadnje skrapanje: 2026-03-20 20:50 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-03-20T20:37:53.894Z",
+    "zadnje_azuriranje": "2026-03-20T20:50:49.678Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -1989,5 +1989,2439 @@ export const scrapedContent = {
     "kontakti": "Turističke zajednice Turistička zajednica područja Slavonski Brod-Posavina Trg pobjede 28/I, HR-35000 Slavonski Brod tel.: +385 35 447 721 web: www.tzbpz.hr e-mail: info@tzgsb.hr Turistička zajednica Brodsko-posavske županije Petra Krešimira IV br. 2, HR-35000 Slavonski Brod tel.: +385 35 408 393; fax: +385 35 408 392 web: www.tzbpz.hr e-mail: info@tzbpz.hr Turističko informativni centar Radno vrijeme: svaki dan od 10:00 do 17:00 srpanj i kolovoz: od 10,00 do 19,00 sati Trg Ivane Brlić-Mažuranić 7a, HR-35000 Slavonski Brod tel.: +385 35 203 696 e-mail: tic@tzgsb.hr Služba turističkih vodiča grada Slavonskog Broda Trg pobjede 28/1, HR-35000 Slavonski Brod tel: +385 35 447 721 e-mail: info@tzgsb.hr Važne adrese i telefoni Za telefon i telefax predbroj iz Hrvatske 035, a iz svijeta +385 35. Detaljnije informacije o telekomunikacijama vidjeti na on-line telefonskom imeniku Hrvatske: Čitav niz drugih korisnih informacija možete naći na najvećem hrvatskom Internet portalu: Bolnica Opća bolnica \"Dr. Josip Benčević\" A. Štampara 42 centrala: +385 35 201 201 Hitna medicinska pomoć Plavo polje, Borovska 7 tel.: 194 Državna uprava za zaštitu i spašavanje tel.: 112 Dežurne bolnice i ljekarne (u cijeloj Hrvatskoj) tel.: +385 60 334 334 Policija Dežurna služba: 192 Policijska uprava Slavonski Brod Ivana Mažuranića 7 centrala: +385 35 211 111 prometna policija: +385 35 211 500 Autobusni kolodvor Slavonski Brod Trg hrvatskog proljeća informacije: +385 60 810 810 Željeznički kolodvor Slavonski",
     "tic": "Turističko-informativni centar Turističko-informativni centar Turističke zajednice područja Slavonski Brod-Posavina nalazi se u samom središtu grada, na adresi Trg Ivane Brlić-Mažuranić 7a. U centru za posjetitelje mogu se dobiti turističke informacije i promotivne brošure; kupiti suveniri s lokalnim obilježjima te razgledati izložbeni eksponati. Telefon: +385 35 203 696 E-mail: tic@tzgsb.hr Radno vrijeme: svaki dan, od 10,00 do 17,00 sati; srpanj i kolovoz: od 10,00 do 19,00 sati",
     "turisticke_agencije": "Turističke agencije Hrvatski English Deutsch Italiano --> 3D slika Muzej tambura Mural Informacije i zaštita podataka Kontakti Centar za posjetitelje Turističke agencije Integrirani program Interpretacijski centar Ivana Brlić Mažuranić Integrirani program Kuća Tambure Slavonska notna bajka Integrirani program Obnova tvrđave Brod Integrirani program People Powered Tourism Gradski vodič - siječanj/veljača 2012. Turističke agencije Atlantis travel d.o.o. nas. Slavonija I/3 HR-35000 Slavonski Brod tel.: +385 35 442 411 fax: +385 35 441 276 e-mail: croatia@atlantis-travel.hr Brod tours M. Mesića 60 HR-35000 Slavonski Brod tel.: +385 35 444 111 fax: +385 35 444 035 e-mail: info@brod-tours.hr Kompas Brod Petra Krešimira IV 36 HR-35000 Slavonski Brod tel.: +385 35 409 060 fax: +385 35 449 760 mob: +385 91 1002 221 e-mail: kompas@vip.hr Mystical TRAVEL Trg Hrvatskog Proljeća 12 HR-35000 Slavonski Brod tel.: +385 99 856 8444 e-mail: info@mystical-travel.hr Slavonija bus d.o.o. Trg hrvatskog proljeća b.b. HR-35000 Slavonski Brod tel.: +385 35 415 165 fax: +385 35 475 301 e-mail: info@slavonija-bus.hr VB Tours P. Krešimira IV 49 HR-35000 Slavonski Brod tel./fax: +385 35 449 911, 449 922 mob: +385 98 263 992, +385 98 550 201, e-mail: vbtours@sb.htnet.hr , vbtours.hr@gmail.com eHolidays Vatroslava Jagića 17 HR-35000 Slavonski Brod tel: +385 (0)35 628 777 e-mail: info@eholidays.hr"
+  },
+  "poi": {
+    "muzeji": [
+      {
+        "naziv": "Muzej Brodskog Posavlja",
+        "adresa": "Ante Starčevića 40",
+        "telefon": "+38535447415",
+        "web": "https://www.muzejbp.hr/",
+        "radno_vrijeme": "Mo-Fr 07:00-15:00",
+        "karta": "https://www.google.com/maps?q=45.152707,18.0165119"
+      },
+      {
+        "naziv": "Muzej tambure",
+        "adresa": "Vukovarska ulica 1, Slavonski Brod",
+        "telefon": "",
+        "web": "http://www.but.hr/muzej_tambure.php",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1559583,18.0057286"
+      }
+    ],
+    "ljekarne": [
+      {
+        "naziv": "Centralna ljekarna",
+        "adresa": "Vukovarska ulica, Slavonski Brod",
+        "telefon": "+38535447838",
+        "web": "https://www.ljekarna-sb.hr/",
+        "radno_vrijeme": "24/7",
+        "karta": "https://www.google.com/maps?q=45.1604179,18.0112521"
+      },
+      {
+        "naziv": "DM",
+        "adresa": "Osječka 284, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Sa 09:00-21:00; Su 09:00-14:00",
+        "karta": "https://www.google.com/maps?q=45.1738406,18.0523468"
+      },
+      {
+        "naziv": "Đurković",
+        "adresa": "Josipa Jurja Strossmayera",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1531513,18.0238164"
+      },
+      {
+        "naziv": "Farmacia",
+        "adresa": "Primorska ulica 12, Slavonski Brod",
+        "telefon": "",
+        "web": "https://www.farmacia.hr/",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1665586,18.0012255"
+      },
+      {
+        "naziv": "Farmacia",
+        "adresa": "Naselje Slavonija II 5, Slavonski Brod",
+        "telefon": "+385 35 272 438",
+        "web": "",
+        "radno_vrijeme": "Mo-Sa 07:00-22:00;Su 08:00-20:00",
+        "karta": "https://www.google.com/maps?q=45.1625742,18.0185682"
+      },
+      {
+        "naziv": "Joukhadar",
+        "adresa": "Zagrebačka ulica 130",
+        "telefon": "",
+        "web": "https://www.ljekarne-joukhadar.hr/",
+        "radno_vrijeme": "Mo-Fr 07:00-20:00;Su 07:30-15:00",
+        "karta": "https://www.google.com/maps?q=45.1691097,17.9900973"
+      },
+      {
+        "naziv": "Ljekarna \"Vinković\"",
+        "adresa": "Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1661175,18.0382682"
+      },
+      {
+        "naziv": "Ljekarna Korzo",
+        "adresa": "Trg Ivane Brlić Mažuranić",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 07:00-20:00;Sa 07:00-13:00",
+        "karta": "https://www.google.com/maps?q=45.1537284,18.0121575"
+      },
+      {
+        "naziv": "Mandis pharm plus",
+        "adresa": "Josipa Rimca 7, Slavonski Brod",
+        "telefon": "+385 35 250 492",
+        "web": "",
+        "radno_vrijeme": "Mo-Su 09:00-21:00",
+        "karta": "https://www.google.com/maps?q=45.1595886,17.9988406"
+      },
+      {
+        "naziv": "Moja Apoteka",
+        "adresa": "Kralja Petra I Osl., Bosanski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.14594,18.0088431"
+      },
+      {
+        "naziv": "Pharma Nova",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1461008,18.0055029"
+      },
+      {
+        "naziv": "Selena apoteka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1476719,18.0002841"
+      },
+      {
+        "naziv": "Vaše zdravlje",
+        "adresa": "Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1572972,18.0318611"
+      },
+      {
+        "naziv": "Vidić apoteka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1479415,18.00215"
+      },
+      {
+        "naziv": "Vidić apoteka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1460626,18.0043734"
+      }
+    ],
+    "lijecnici": [
+      {
+        "naziv": "Marinič - Prvulović",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1535202,18.028955"
+      },
+      {
+        "naziv": "Odjel za reumatske bolesti, fizikalnu medicinu i rehabilitaciju",
+        "adresa": "Trg pobjede 5, Slavonski Brod",
+        "telefon": "",
+        "web": "https://www.bolnicasb.hr/department/odjel-za-reumatske-bolesti-fizikalnu-medicinu-i-rehabilitaciju/",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.158748,18.0118834"
+      },
+      {
+        "naziv": "Poliklinika Ćosić",
+        "adresa": "Matije Mesića",
+        "telefon": "",
+        "web": "https://poliklinika-cosic.hr/",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1537406,18.0157364"
+      },
+      {
+        "naziv": "Poliklinika Sunce",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1613411,18.0154412"
+      },
+      {
+        "naziv": "Školska medicina",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1597319,18.0213423"
+      }
+    ],
+    "javni_prijevoz": [
+      {
+        "naziv": "108. brigade ZNG I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1647162,18.0146087"
+      },
+      {
+        "naziv": "108. brigade ZNG II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1649861,18.0100383"
+      },
+      {
+        "naziv": "A. kolodvor",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.162698,18.0097672"
+      },
+      {
+        "naziv": "Borovska",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1597962,18.0042114"
+      },
+      {
+        "naziv": "Gupčeva",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1606027,18.0159473"
+      },
+      {
+        "naziv": "Gupčeva",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1603389,18.0156798"
+      },
+      {
+        "naziv": "Kerdeni I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1854085,18.0094212"
+      },
+      {
+        "naziv": "Kerdeni II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1893239,18.01855"
+      },
+      {
+        "naziv": "Kolodvorska I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1640064,17.9994877"
+      },
+      {
+        "naziv": "Kolodvorska II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1646923,17.9940113"
+      },
+      {
+        "naziv": "Kolodvorska III",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1653614,17.9905311"
+      },
+      {
+        "naziv": "Korzo",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1556762,18.0115873"
+      },
+      {
+        "naziv": "Korzo",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1556269,18.0110143"
+      },
+      {
+        "naziv": "Kumičićeva I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1739054,18.0183396"
+      },
+      {
+        "naziv": "Kumičićeva II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1684406,18.0184036"
+      },
+      {
+        "naziv": "Marije Jurić Zagorke",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1485912,18.0348802"
+      },
+      {
+        "naziv": "Pavla Šubića I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1556593,17.9943028"
+      },
+      {
+        "naziv": "Pavla Šubića II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1540795,17.9893339"
+      },
+      {
+        "naziv": "Petra Svačića-KAUFLAND",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.16149,18.0186356"
+      },
+      {
+        "naziv": "Srednja škola",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1449232,18.0116942"
+      },
+      {
+        "naziv": "Sv. Nikole Tavelića",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1567729,17.9959051"
+      },
+      {
+        "naziv": "Tome Bakača III",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1496075,18.0344428"
+      },
+      {
+        "naziv": "Tome Bakača III",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1497523,18.0337157"
+      },
+      {
+        "naziv": "Tržnica",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1543216,18.0238839"
+      },
+      {
+        "naziv": "Tržnica",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1545946,18.0238017"
+      },
+      {
+        "naziv": "Ulica sv. Antuna I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1794398,18.0206927"
+      },
+      {
+        "naziv": "Vinogorska I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1817974,17.9922386"
+      },
+      {
+        "naziv": "Vinogorska II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1823925,17.9965827"
+      },
+      {
+        "naziv": "Vinogorska III",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1839311,18.0037569"
+      },
+      {
+        "naziv": "Vinogradska I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1677642,18.0038365"
+      },
+      {
+        "naziv": "Vinogradska II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1708352,18.0034201"
+      },
+      {
+        "naziv": "Vinogradska III",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1747618,18.0019136"
+      },
+      {
+        "naziv": "Vinogradska III",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1741117,18.002297"
+      },
+      {
+        "naziv": "Vinogradska V",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1783393,17.9987454"
+      },
+      {
+        "naziv": "Zagrebačka I",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1654965,17.9982841"
+      },
+      {
+        "naziv": "Zagrebačka II",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1675411,17.9936219"
+      },
+      {
+        "naziv": "Zagrebačka III",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1712312,17.9846367"
+      },
+      {
+        "naziv": "Zagrebačka IV",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1728233,17.9819745"
+      },
+      {
+        "naziv": "Zrinska",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1578164,18.0208623"
+      },
+      {
+        "naziv": "Zrinska",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1580318,18.0216468"
+      }
+    ],
+    "auto_servisi": [
+      {
+        "naziv": "Auto Expert",
+        "adresa": "Sjeverna vezna cesta 37, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-17:00;Sa 08:00-14:00",
+        "karta": "https://www.google.com/maps?q=45.1809193,18.0120805"
+      },
+      {
+        "naziv": "Auto Hrvatska",
+        "adresa": "Sjeverna vezna cesta, Slavonski Brod",
+        "telefon": "0038535491304",
+        "web": "http://www.ahservis.hr",
+        "radno_vrijeme": "Mo-Fr 08:00-18:00;Sa 08:00-13:00",
+        "karta": "https://www.google.com/maps?q=45.1757423,18.0572705"
+      },
+      {
+        "naziv": "Autoservis Volkswagen \"Lukić\"",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1400715,18.0091908"
+      },
+      {
+        "naziv": "Hrvatski autoklub",
+        "adresa": "Primorska ulica 13, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1673856,17.9997642"
+      },
+      {
+        "naziv": "Renault Autoservis \"Đorđić\"",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1458841,18.0121352"
+      },
+      {
+        "naziv": "Seat AC Bilić",
+        "adresa": "Sjeverna vezna cesta 14",
+        "telefon": "0038535272460",
+        "web": "http://www.autocentarbilic.hr/",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1765932,17.9819165"
+      },
+      {
+        "naziv": "Tešanović - Mercedes Benz servis",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1357909,18.0131827"
+      },
+      {
+        "naziv": "Vuković autoservis",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1373933,18.0159401"
+      }
+    ],
+    "trgovacki_centri": [
+      {
+        "naziv": "Dujanić",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1370355,17.9967019"
+      },
+      {
+        "naziv": "Emmezeta",
+        "adresa": "Ulica hvatskih branitelja 4, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Su 09:00-21:00",
+        "karta": "https://www.google.com/maps?q=45.1721251,18.0636333"
+      },
+      {
+        "naziv": "EuroSpin",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1621157,18.0175075"
+      },
+      {
+        "naziv": "Fis",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Sa 10:00-20:00",
+        "karta": "https://www.google.com/maps?q=45.1737708,18.0660048"
+      },
+      {
+        "naziv": "Hiper-Kort Brod",
+        "adresa": "Kralja Petra I Oslobodioca, Brod",
+        "telefon": "+387 53 622025",
+        "web": "https://www.fructatrade.com/",
+        "radno_vrijeme": "Mo-Sa 07:00-22:00; Su 08:00-18:00",
+        "karta": "https://www.google.com/maps?q=45.1457304,18.0089244"
+      },
+      {
+        "naziv": "Interspar",
+        "adresa": "Osječka ulica 284, Slavonski Brod",
+        "telefon": "+385 35 212 950",
+        "web": "",
+        "radno_vrijeme": "Mo-Sa 08:00-21:00; Su 08:00-18:00",
+        "karta": "https://www.google.com/maps?q=45.1747706,18.0545717"
+      },
+      {
+        "naziv": "Jasna",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1361047,18.0116515"
+      },
+      {
+        "naziv": "Kaufland",
+        "adresa": "Naselje Slavonija II 5, Slavonski Brod",
+        "telefon": "035/405-270",
+        "web": "https://www.kaufland.hr/",
+        "radno_vrijeme": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+        "karta": "https://www.google.com/maps?q=45.162628,18.0190113"
+      },
+      {
+        "naziv": "Konzum",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1479614,18.001479"
+      },
+      {
+        "naziv": "Konzum",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1869855,18.0318422"
+      },
+      {
+        "naziv": "Konzum",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1595336,17.9990608"
+      },
+      {
+        "naziv": "Lidl",
+        "adresa": "Trg hrvatskog proljeća 9, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Sa 07:00-21:00;Su 08:00-18:00",
+        "karta": "https://www.google.com/maps?q=45.1624761,18.0130828"
+      },
+      {
+        "naziv": "Lidl",
+        "adresa": "Osječka ulica 280c",
+        "telefon": "",
+        "web": "https://www.lidl.hr/s/hr-HR/trazilica-trgovina/slavonski-brod/osjecka-ulica-280c/",
+        "radno_vrijeme": "Mo-Sa 08:00-21:00",
+        "karta": "https://www.google.com/maps?q=45.1738228,18.0501056"
+      },
+      {
+        "naziv": "Nešo market",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1430065,17.9962377"
+      },
+      {
+        "naziv": "Plodine",
+        "adresa": "Sjeverna vezna cesta 31, Slavonski Brod",
+        "telefon": "+385 35 405 680",
+        "web": "https://www.plodine.hr",
+        "radno_vrijeme": "Mo-Su 07:00-22:00",
+        "karta": "https://www.google.com/maps?q=45.1801976,18.0099782"
+      },
+      {
+        "naziv": "Spar",
+        "adresa": "Ulica Petra Svačića 2, Slavonski Brod",
+        "telefon": "+385 35 410 206",
+        "web": "",
+        "radno_vrijeme": "Mo-Sa 07:00-23:30; Su 07:00-22:00",
+        "karta": "https://www.google.com/maps?q=45.1629318,18.0072919"
+      },
+      {
+        "naziv": "Supernova",
+        "adresa": "Osječka ulica 284, Slavonski Brod",
+        "telefon": "+385 35 258 447",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1744905,18.0545007"
+      },
+      {
+        "naziv": "Supernova Colosseum",
+        "adresa": "Ulica Josipa Rimca 7, Slavonski Brod",
+        "telefon": "",
+        "web": "http://www.city-colosseum.hr/",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1596983,17.9982886"
+      },
+      {
+        "naziv": "Tropic",
+        "adresa": "Krajiških brigada bb, Bosanski Brod",
+        "telefon": "",
+        "web": "https://tropic.ba",
+        "radno_vrijeme": "Mo-Sa 07:00-22:00; Su 07:00-20:00",
+        "karta": "https://www.google.com/maps?q=45.1411858,18.0065063"
+      }
+    ],
+    "parkinzi": [
+      {
+        "naziv": "Elgrad",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1794931,18.0090662"
+      },
+      {
+        "naziv": "Savus",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.153899,18.0114198"
+      }
+    ],
+    "frizerski_saloni": [
+      {
+        "naziv": "Albert",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1542071,18.0178584"
+      },
+      {
+        "naziv": "Anita",
+        "adresa": "Zagrebačka ulica 48",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1663953,17.9964649"
+      },
+      {
+        "naziv": "Black & White",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1584901,18.0232126"
+      },
+      {
+        "naziv": "Blaža",
+        "adresa": "Dalmatinska ulica 24",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.165292,18.0013318"
+      },
+      {
+        "naziv": "Blondie",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1562744,18.0239523"
+      },
+      {
+        "naziv": "Briljantin",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1570567,18.0130595"
+      },
+      {
+        "naziv": "Danijela",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1546823,18.0137555"
+      },
+      {
+        "naziv": "Draga",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1552595,18.0169409"
+      },
+      {
+        "naziv": "Elbl",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1643996,18.0169138"
+      },
+      {
+        "naziv": "Ema",
+        "adresa": "Matije Mesića, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1535275,18.0179967"
+      },
+      {
+        "naziv": "Fantastic",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1540606,18.0235646"
+      },
+      {
+        "naziv": "Frizerski salon RITUAL",
+        "adresa": "Ulica Vrbskih žrtava 163, Gornja Vrba",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo,We,Th 13:00-20:00, Tu,Fr,Sa 08:00-15:00",
+        "karta": "https://www.google.com/maps?q=45.1537652,18.0698302"
+      },
+      {
+        "naziv": "Gabrijela",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.158774,18.0230365"
+      },
+      {
+        "naziv": "Hrvoje",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1576883,18.0336306"
+      },
+      {
+        "naziv": "Iva",
+        "adresa": "Jadranska",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1638622,18.000558"
+      },
+      {
+        "naziv": "Ivana",
+        "adresa": "Šetalište braće Radić",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1527906,18.0135101"
+      },
+      {
+        "naziv": "Ivanšić",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.153868,18.020712"
+      },
+      {
+        "naziv": "Kosa",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1638341,18.0356544"
+      },
+      {
+        "naziv": "Kristijan",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1551375,18.0210469"
+      },
+      {
+        "naziv": "Kristina",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1542804,18.0117052"
+      },
+      {
+        "naziv": "Laria",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1576177,18.0333933"
+      },
+      {
+        "naziv": "Majk",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1583038,18.0150184"
+      },
+      {
+        "naziv": "Marijana",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1530413,18.0167227"
+      },
+      {
+        "naziv": "Mirjana",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1532932,18.0197914"
+      },
+      {
+        "naziv": "Mirjana",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1537117,18.0176158"
+      },
+      {
+        "naziv": "Nataša",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1593309,18.0247093"
+      },
+      {
+        "naziv": "Nova",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1626253,18.0331741"
+      },
+      {
+        "naziv": "Novi izgled",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1543768,18.0169312"
+      },
+      {
+        "naziv": "Rea",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1722957,18.0442718"
+      },
+      {
+        "naziv": "Sandra",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1636839,18.0354146"
+      },
+      {
+        "naziv": "Sanela",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1559302,18.0332607"
+      },
+      {
+        "naziv": "Sanja",
+        "adresa": "Matije Mesića, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1536444,18.0182368"
+      },
+      {
+        "naziv": "Snježana",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1596117,18.027452"
+      },
+      {
+        "naziv": "Studio Ena",
+        "adresa": "Ante Starčevića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1531579,18.0160532"
+      },
+      {
+        "naziv": "Studio i",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1569922,18.0180627"
+      },
+      {
+        "naziv": "Tihana",
+        "adresa": "Zagrebačka ulica 39",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.166119,17.9964033"
+      },
+      {
+        "naziv": "Tomislav",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1657841,18.0178525"
+      },
+      {
+        "naziv": "Twins",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1568519,18.0189195"
+      },
+      {
+        "naziv": "Vesna",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1577615,18.0214822"
+      }
+    ],
+    "caffe_barovi": [
+      {
+        "naziv": "\"Lutvinka\"",
+        "adresa": "Vatroslava Jagića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1590602,18.0267333"
+      },
+      {
+        "naziv": "$ollar",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1677193,18.0040264"
+      },
+      {
+        "naziv": "Aleksandrija",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1458526,18.0046336"
+      },
+      {
+        "naziv": "Alfa Club",
+        "adresa": "19",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1534855,18.0140805"
+      },
+      {
+        "naziv": "Ante",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1554293,18.0151014"
+      },
+      {
+        "naziv": "Arena",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1566206,18.018692"
+      },
+      {
+        "naziv": "Auto bar",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1673799,18.0001451"
+      },
+      {
+        "naziv": "Big Ben",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.158063,18.033811"
+      },
+      {
+        "naziv": "Bondo",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1568212,18.0313164"
+      },
+      {
+        "naziv": "Brod na Savi",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1633548,18.0108458"
+      },
+      {
+        "naziv": "Buf",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1743101,18.0544365"
+      },
+      {
+        "naziv": "buffet Dominik",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1899243,18.0328163"
+      },
+      {
+        "naziv": "Caffe \"Kennedy\"",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1731798,18.045512"
+      },
+      {
+        "naziv": "Caffe Bar",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1588851,18.0130608"
+      },
+      {
+        "naziv": "Caffe Bar",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1587979,18.0109206"
+      },
+      {
+        "naziv": "Caffe Bar",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1560748,18.0149985"
+      },
+      {
+        "naziv": "Caffe Bar Amadeus",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1606504,18.0124922"
+      },
+      {
+        "naziv": "Caffe Bar Aquarious",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.161263,18.0123639"
+      },
+      {
+        "naziv": "Caffe Bar Beerc",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1534748,18.0116718"
+      },
+      {
+        "naziv": "Caffe bar Bubamara",
+        "adresa": "Zagrebačka ulica 10, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "07:00-00:00",
+        "karta": "https://www.google.com/maps?q=45.1653747,17.998915"
+      },
+      {
+        "naziv": "Caffe Bar Cappuccino",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1547098,18.0237914"
+      },
+      {
+        "naziv": "Caffe Bar Chicago",
+        "adresa": "Ulica Vrbskih žrtava 110, Gornja Vrba",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Sa 08:00-23:00",
+        "karta": "https://www.google.com/maps?q=45.1544243,18.0659415"
+      },
+      {
+        "naziv": "Caffe bar Dream",
+        "adresa": "Ulica Vrbskih žrtava 146, Gornja Vrba",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Su 08:00-23:00",
+        "karta": "https://www.google.com/maps?q=45.153686,18.0688618"
+      },
+      {
+        "naziv": "Caffe Bar Evergreen",
+        "adresa": "Petra Krešimira IV",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1543403,18.0184651"
+      },
+      {
+        "naziv": "Caffe Bar Insomnija",
+        "adresa": "11",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1535959,18.0132297"
+      },
+      {
+        "naziv": "Caffe Bar Lipa",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1550553,18.0209648"
+      },
+      {
+        "naziv": "Caffe Bar Palazzo",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1535945,18.020904"
+      },
+      {
+        "naziv": "Caffe Bar Ponita",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.155728,18.0241468"
+      },
+      {
+        "naziv": "Caffe Bar Royal",
+        "adresa": "Aleja Miroslava Krleže, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.16843,18.0341692"
+      },
+      {
+        "naziv": "Caffe Bar Rupa",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1538412,18.0121579"
+      },
+      {
+        "naziv": "Caffe bar San Marco",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1546101,18.0139873"
+      },
+      {
+        "naziv": "Caffe Bar Slavonac",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1609934,18.0125457"
+      },
+      {
+        "naziv": "Caffe Bar Sport",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1581555,18.0129415"
+      },
+      {
+        "naziv": "Casper",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1535972,18.0319879"
+      },
+      {
+        "naziv": "Cat",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1624067,18.0186657"
+      },
+      {
+        "naziv": "Citrus",
+        "adresa": "Augusta Cesarca 17, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1585384,18.0154205"
+      },
+      {
+        "naziv": "City",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1463933,18.0007196"
+      },
+      {
+        "naziv": "City",
+        "adresa": "Trg Ivane Brlić Mažuranić 4",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1539862,18.0121658"
+      },
+      {
+        "naziv": "Coctail",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1636491,18.0353663"
+      },
+      {
+        "naziv": "COME BACK",
+        "adresa": "Primorska ulica 2, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1650975,17.9995962"
+      },
+      {
+        "naziv": "D Paris",
+        "adresa": "Matije Gupca",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1587008,18.0150983"
+      },
+      {
+        "naziv": "Del Cappellano",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1548166,18.0070128"
+      },
+      {
+        "naziv": "Deny",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1753349,18.0519012"
+      },
+      {
+        "naziv": "Derby",
+        "adresa": "Augusta Cesarca 15, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1586045,18.0145512"
+      },
+      {
+        "naziv": "Dolcevita",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1552316,18.019305"
+      },
+      {
+        "naziv": "Doors",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.144759,18.0103284"
+      },
+      {
+        "naziv": "Dorian Gray",
+        "adresa": "Petra Krešimira IV 31, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1551461,18.0166019"
+      },
+      {
+        "naziv": "Elite",
+        "adresa": "Primorska ulica, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1664685,18.0007657"
+      },
+      {
+        "naziv": "Europa",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1528791,18.0273637"
+      },
+      {
+        "naziv": "Exkluziv",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1542927,18.0115328"
+      },
+      {
+        "naziv": "Faraon",
+        "adresa": "Dalmatinska ulica 28",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1651799,18.0015544"
+      },
+      {
+        "naziv": "Fortuna",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1681338,18.0401802"
+      },
+      {
+        "naziv": "Fresh",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1482019,18.0004969"
+      },
+      {
+        "naziv": "Gaga",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.159378,18.0140883"
+      },
+      {
+        "naziv": "Galerija",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1534486,18.0133181"
+      },
+      {
+        "naziv": "Gatsby",
+        "adresa": "Eugena Kumičića, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.166814,18.018166"
+      },
+      {
+        "naziv": "Giovani",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1641342,18.023692"
+      },
+      {
+        "naziv": "Glamour",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1592955,18.0131037"
+      },
+      {
+        "naziv": "Gradska kavana",
+        "adresa": "Šetalište braće Radić",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1529987,18.0122065"
+      },
+      {
+        "naziv": "Green park",
+        "adresa": "Trg žrtava rata 1/3",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1516807,18.0180165"
+      },
+      {
+        "naziv": "Green park",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1550555,18.0124058"
+      },
+      {
+        "naziv": "Grizli",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1641815,18.0234755"
+      },
+      {
+        "naziv": "Grof",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1545954,18.0235266"
+      },
+      {
+        "naziv": "Habana",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1577414,18.0337926"
+      },
+      {
+        "naziv": "Hajduk",
+        "adresa": "Posavska 5A",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1705196,17.9841561"
+      },
+      {
+        "naziv": "Harley",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1517131,18.0179623"
+      },
+      {
+        "naziv": "Horoskop",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1538414,18.0154919"
+      },
+      {
+        "naziv": "Imago",
+        "adresa": "Ante Starčevića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1530249,18.0166454"
+      },
+      {
+        "naziv": "Jack Daniels",
+        "adresa": "Naselje Andrije Hebranga, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1574221,18.0328787"
+      },
+      {
+        "naziv": "K caffe",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1627186,18.0075748"
+      },
+      {
+        "naziv": "Kaktus",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1561044,18.0217175"
+      },
+      {
+        "naziv": "Knez",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1594352,18.0140132"
+      },
+      {
+        "naziv": "Kod Jerka",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.167019,18.0182066"
+      },
+      {
+        "naziv": "Korner",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1540337,18.0233676"
+      },
+      {
+        "naziv": "Krčma Zen",
+        "adresa": "Ante Starčevića, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1536898,18.0123102"
+      },
+      {
+        "naziv": "Krešimir",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1578309,18.0331677"
+      },
+      {
+        "naziv": "Leggiero Bar",
+        "adresa": "Josipa Rimca 7",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1600074,17.9987455"
+      },
+      {
+        "naziv": "Likaj",
+        "adresa": "Petra Krešimira IV",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.154678,18.0167537"
+      },
+      {
+        "naziv": "LuMa",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1541795,18.0209739"
+      },
+      {
+        "naziv": "Lješnica",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1558663,17.9953456"
+      },
+      {
+        "naziv": "Malboro",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1501302,18.0450502"
+      },
+      {
+        "naziv": "MALI PARIS",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1663079,18.0183809"
+      },
+      {
+        "naziv": "Mario",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1563907,18.0257699"
+      },
+      {
+        "naziv": "MARTEL",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1661642,18.0183568"
+      },
+      {
+        "naziv": "Mint",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1515501,18.0184281"
+      },
+      {
+        "naziv": "Modena",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1476969,18.0013767"
+      },
+      {
+        "naziv": "Mollinary",
+        "adresa": "Šetalište braće Radić 19",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1526181,18.0149153"
+      },
+      {
+        "naziv": "Mond",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1468361,17.9973681"
+      },
+      {
+        "naziv": "Montana",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1629057,18.0030105"
+      },
+      {
+        "naziv": "Mozart",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1554105,18.0152276"
+      },
+      {
+        "naziv": "NAPOLEON",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1659429,18.0182441"
+      },
+      {
+        "naziv": "Navigator",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1538695,18.0117186"
+      },
+      {
+        "naziv": "Nina",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1576612,18.0335437"
+      },
+      {
+        "naziv": "Noćni klub Navalis",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1533807,18.0149652"
+      },
+      {
+        "naziv": "ODEON",
+        "adresa": "Eugena Kumičića, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1668979,18.0181744"
+      },
+      {
+        "naziv": "ORLY",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1655477,18.0180698"
+      },
+      {
+        "naziv": "Pergamino",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1554161,18.0151658"
+      },
+      {
+        "naziv": "PIGAL",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1662493,18.0183756"
+      },
+      {
+        "naziv": "Pizzeria MEGI",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1550476,18.0672516"
+      },
+      {
+        "naziv": "Prohibition bar",
+        "adresa": "Šetalište braće Radić",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1527715,18.0137311"
+      },
+      {
+        "naziv": "Puslica",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1552817,18.0137774"
+      },
+      {
+        "naziv": "Rail",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.163047,18.0337703"
+      },
+      {
+        "naziv": "Regoč",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1591177,18.0130628"
+      },
+      {
+        "naziv": "Robi",
+        "adresa": "Stanka Vraza 2",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1487124,18.0246162"
+      },
+      {
+        "naziv": "Sens Bar Night",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1536785,18.0124624"
+      },
+      {
+        "naziv": "Soho bar",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1540947,18.0121858"
+      },
+      {
+        "naziv": "Square Cafe",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1550778,18.0118438"
+      },
+      {
+        "naziv": "Stars",
+        "adresa": "Petra Svačića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1613207,18.0149816"
+      },
+      {
+        "naziv": "Tiffany",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1476023,18.0012695"
+      },
+      {
+        "naziv": "TIME-OUT",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1658957,18.0178874"
+      },
+      {
+        "naziv": "Trg Cafe",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1476786,18.0015465"
+      },
+      {
+        "naziv": "Tržnica",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1547837,18.0222205"
+      },
+      {
+        "naziv": "Vinograd",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1825054,17.9959766"
+      },
+      {
+        "naziv": "Vip - Aqua Cafe",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1484333,18.0021017"
+      },
+      {
+        "naziv": "Virus",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1750446,18.0187765"
+      },
+      {
+        "naziv": "Zero",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1553099,18.013468"
+      }
+    ],
+    "benzinske": [
+      {
+        "naziv": "Brčko Gas",
+        "adresa": "Kralja Petra Prvog Oslobodioca, Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.144273,18.013863"
+      },
+      {
+        "naziv": "CNG Metan Punionica",
+        "adresa": "Trešnjica, Podvinje",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1825044,18.0323853"
+      },
+      {
+        "naziv": "Nestro",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1472605,18.0033463"
+      },
+      {
+        "naziv": "SP",
+        "adresa": "Eugena Kumičića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1736902,18.0187445"
+      },
+      {
+        "naziv": "Vidic Petrol",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1420446,18.0052089"
+      }
+    ],
+    "banke_bankomati": [
+      {
+        "naziv": "Banco Popolare",
+        "adresa": "",
+        "telefon": "",
+        "web": "http://www.bpc.hr/",
+        "radno_vrijeme": "Mo-Fr 08:00-15:30",
+        "karta": "https://www.google.com/maps?q=45.1592925,18.0151749"
+      },
+      {
+        "naziv": "Bobar banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1453831,17.994639"
+      },
+      {
+        "naziv": "Croatia",
+        "adresa": "Trg Ivane Brlić Mažuranić 15, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 07:00-14:00",
+        "karta": "https://www.google.com/maps?q=45.1542536,18.0117802"
+      },
+      {
+        "naziv": "Croatia",
+        "adresa": "Trg Ivane Brlić Mažuranić 15, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1542669,18.0117761"
+      },
+      {
+        "naziv": "Erste",
+        "adresa": "Petra Krešimira IV 24, Slavonski Brod",
+        "telefon": "+385 72 374 760",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-18:00; Sa 08:00-12:00",
+        "karta": "https://www.google.com/maps?q=45.1549788,18.0153214"
+      },
+      {
+        "naziv": "Hrvatska poštanska banka",
+        "adresa": "Matije Gupca 3, Slavonski Brod",
+        "telefon": "+385 35 212 530",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-19:00; Sa 08:00-12:00",
+        "karta": "https://www.google.com/maps?q=45.1557634,18.0144194"
+      },
+      {
+        "naziv": "Hrvatska poštanska banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1579499,18.0335437"
+      },
+      {
+        "naziv": "Hrvatska poštanska banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1557881,18.0144226"
+      },
+      {
+        "naziv": "Hrvatska poštanska banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "24/7",
+        "karta": "https://www.google.com/maps?q=45.1552617,18.0194264"
+      },
+      {
+        "naziv": "Hypo",
+        "adresa": "Petra Krešimira IV 3",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-19:00;Sa 08:00-13:00",
+        "karta": "https://www.google.com/maps?q=45.1556726,18.0130012"
+      },
+      {
+        "naziv": "Hypo",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1743849,18.0539491"
+      },
+      {
+        "naziv": "Hypo",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1556443,18.0130223"
+      },
+      {
+        "naziv": "Hypo Alpe Adria banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1479567,18.0005541"
+      },
+      {
+        "naziv": "KentBank",
+        "adresa": "Ivana pl. Zajca 21, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-19:00;Sa 08:00-13:00",
+        "karta": "https://www.google.com/maps?q=45.1552558,18.0138372"
+      },
+      {
+        "naziv": "KentBank",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1547097,18.0228195"
+      },
+      {
+        "naziv": "Kreditna banka Zagreb",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1612893,18.0156803"
+      },
+      {
+        "naziv": "NLB Razvojna banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1456366,17.9944645"
+      },
+      {
+        "naziv": "Nova Banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1475049,18.0017979"
+      },
+      {
+        "naziv": "OTP",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1556733,18.0126338"
+      },
+      {
+        "naziv": "Pavlović Int. banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1456137,17.994866"
+      },
+      {
+        "naziv": "PBZ",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1563977,18.0126992"
+      },
+      {
+        "naziv": "PBZ",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1557861,18.0126388"
+      },
+      {
+        "naziv": "PBZ",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1598521,18.0128577"
+      },
+      {
+        "naziv": "PBZ",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1548047,18.0212473"
+      },
+      {
+        "naziv": "PBZ",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1621323,18.0209503"
+      },
+      {
+        "naziv": "PBZ",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1740076,18.0480304"
+      },
+      {
+        "naziv": "Privredna banka Zagreb",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1564603,18.0127205"
+      },
+      {
+        "naziv": "Privredna banka Zagreb",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1867284,18.0318325"
+      },
+      {
+        "naziv": "Privredna Banka Zagreb",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1597979,18.0128657"
+      },
+      {
+        "naziv": "Raiffeisen bank",
+        "adresa": "Augusta Cesarca",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-19:00;Sa 08:30-12:30",
+        "karta": "https://www.google.com/maps?q=45.158694,18.0125013"
+      },
+      {
+        "naziv": "Raiffeisen Bank",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1476748,18.0000847"
+      },
+      {
+        "naziv": "Raiffeisen Bank",
+        "adresa": "Petra Svačića",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1613339,18.0148448"
+      },
+      {
+        "naziv": "Raiffeisen Bank",
+        "adresa": "Dr. Andrije Štampara 29",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Tu 08:30-15:00;We 08:30-17:30;Th-Fr 08:30-15:00",
+        "karta": "https://www.google.com/maps?q=45.1548669,18.0238263"
+      },
+      {
+        "naziv": "RBA",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1575646,18.0332262"
+      },
+      {
+        "naziv": "RBA",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1552998,18.0124382"
+      },
+      {
+        "naziv": "Sberbank",
+        "adresa": "Petra Krešimira IV, Slavonski Brod",
+        "telefon": "+38535638390",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-16:00;We 08:00-18:00",
+        "karta": "https://www.google.com/maps?q=45.1552789,18.0136924"
+      },
+      {
+        "naziv": "Splitska",
+        "adresa": "Petra Krešimira IV",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1557077,18.0126396"
+      },
+      {
+        "naziv": "Unicredit banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1474868,18.0006444"
+      },
+      {
+        "naziv": "VABA",
+        "adresa": "Trg Pobjede 29",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 07:30-19:30;Sa 07:30-12:00",
+        "karta": "https://www.google.com/maps?q=45.1560909,18.0126656"
+      },
+      {
+        "naziv": "VABA",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1561403,18.0126664"
+      },
+      {
+        "naziv": "ZABA",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "24/7",
+        "karta": "https://www.google.com/maps?q=45.1552484,18.0201009"
+      },
+      {
+        "naziv": "Zagrebačka banka",
+        "adresa": "Trg Ivane Brlić Mažuranić 1, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-19:00;Sa 08:00-12:00",
+        "karta": "https://www.google.com/maps?q=45.1551788,18.0124152"
+      },
+      {
+        "naziv": "Zagrebačka banka",
+        "adresa": "Stjepana pl. Horvata 23, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "Mo-Fr 08:00-16:00;Sa off",
+        "karta": "https://www.google.com/maps?q=45.1552383,18.0201628"
+      },
+      {
+        "naziv": "Zagrebačka banka",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1551123,18.0124023"
+      }
+    ],
+    "posta": [
+      {
+        "naziv": "35104 Slavonski Brod",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1661465,17.9963548"
+      },
+      {
+        "naziv": "35105 Slavonski Brod",
+        "adresa": "Trg Velike Gospe 2, Slavonski Brod",
+        "telefon": "072 303 304",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1824173,17.9944828"
+      },
+      {
+        "naziv": "35106 Slavonski Brod",
+        "adresa": "Naselje Andrije Hebranga, Slavonski Brod",
+        "telefon": "072 303 304",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1579334,18.0334635"
+      },
+      {
+        "naziv": "35108 Slavonski Brod",
+        "adresa": "Ulica 108. brigade ZNG 34, Slavonski Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1654435,18.0121853"
+      },
+      {
+        "naziv": "74450 Brod",
+        "adresa": "Svetog Save 26, Brod",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1471667,17.9974758"
+      },
+      {
+        "naziv": "City Express",
+        "adresa": "",
+        "telefon": "",
+        "web": "",
+        "radno_vrijeme": "",
+        "karta": "https://www.google.com/maps?q=45.1564264,18.0161673"
+      }
+    ]
   }
 };

@@ -138,6 +138,46 @@ function buildScrapedSection(category) {
     }
   }
 
+  // OSM točke od interesa
+  if (s.poi) {
+    const p = s.poi;
+    function poiLines(lista, max = 30) {
+      return (lista || []).slice(0, max).map(x => {
+        const adr = x.adresa ? ` — ${x.adresa}` : '';
+        const tel = x.telefon ? ` | ${x.telefon}` : '';
+        const rw  = x.radno_vrijeme ? ` | ${x.radno_vrijeme}` : '';
+        return `• **${x.naziv}**${adr}${tel}${rw}`;
+      });
+    }
+
+    if (category === 'usluge' || !category) {
+      if (p.ljekarne?.length)       { lines.push(`\nLjekarne (${p.ljekarne.length}):`);         lines.push(...poiLines(p.ljekarne)); }
+      if (p.lijecnici?.length)      { lines.push(`\nLiječnici/klinike (${p.lijecnici.length}):`); lines.push(...poiLines(p.lijecnici)); }
+      if (p.banke_bankomati?.length){ lines.push(`\nBanke i bankomati (${p.banke_bankomati.length}):`); lines.push(...poiLines(p.banke_bankomati, 20)); }
+      if (p.posta?.length)          { lines.push(`\nPoštanski uredi (${p.posta.length}):`);     lines.push(...poiLines(p.posta)); }
+      if (p.auto_servisi?.length)   { lines.push(`\nAuto servisi (${p.auto_servisi.length}):`); lines.push(...poiLines(p.auto_servisi)); }
+    }
+    if (category === 'benzinske' || category === 'usluge') {
+      if (p.benzinske?.length)      { lines.push(`\nBenzinske postaje (${p.benzinske.length}):`); lines.push(...poiLines(p.benzinske)); }
+    }
+    if (category === 'parking' || category === 'usluge') {
+      if (p.parkinzi?.length)       { lines.push(`\nParkirališta (${p.parkinzi.length}):`);     lines.push(...poiLines(p.parkinzi, 25)); }
+    }
+    if (category === 'kupovina' || !category) {
+      if (p.trgovacki_centri?.length){ lines.push(`\nTrgovački centri i supermarketi (${p.trgovacki_centri.length}):`); lines.push(...poiLines(p.trgovacki_centri)); }
+      if (p.frizerski_saloni?.length){ lines.push(`\nFrizerski saloni (${p.frizerski_saloni.length}):`); lines.push(...poiLines(p.frizerski_saloni, 20)); }
+    }
+    if (category === 'gastronomija' || !category) {
+      if (p.caffe_barovi?.length)   { lines.push(`\nCaffe barovi i kafići (${p.caffe_barovi.length}):`); lines.push(...poiLines(p.caffe_barovi, 30)); }
+    }
+    if (category === 'usluge' || category === 'opcenito') {
+      if (p.javni_prijevoz?.length) { lines.push(`\nStanice javnog prijevoza (${p.javni_prijevoz.length}):`); lines.push(...poiLines(p.javni_prijevoz, 20)); }
+    }
+    if (category === 'znamenitosti' || !category) {
+      if (p.muzeji?.length)         { lines.push(`\nMuzeji (${p.muzeji.length}):`);             lines.push(...poiLines(p.muzeji)); }
+    }
+  }
+
   return lines.length ? lines.join('\n') : '';
 }
 

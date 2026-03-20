@@ -456,6 +456,102 @@ async function scrapeONama() {
   return result;
 }
 
+// ─── Točke od interesa — OpenStreetMap Overpass API ─────────────────────────
+
+const OVERPASS_URL = 'https://overpass-api.de/api/interpreter';
+const SB_BBOX = '45.13,17.97,45.19,18.08';
+
+async function overpassQuery(ql) {
+  const body = `[out:json][timeout:60];(${ql});out center;`;
+  try {
+    const res = await fetch(OVERPASS_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: `data=${encodeURIComponent(body)}`,
+      signal: AbortSignal.timeout(70000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return await res.json();
+  } catch (e) {
+    console.warn(`⚠️  Overpass API greška: ${e.message}`);
+    return null;
+  }
+}
+
+function mapPOI(el) {
+  const t = el.tags || {};
+  const lat = el.lat ?? el.center?.lat;
+  const lon = el.lon ?? el.center?.lon;
+  const street = [t['addr:street'], t['addr:housenumber']].filter(Boolean).join(' ');
+  const city   = t['addr:city'] || '';
+  const adresa = [street, city].filter(Boolean).join(', ');
+  return {
+    naziv: t.name || t['name:hr'] || '',
+    adresa,
+    telefon: t.phone || t['contact:phone'] || '',
+    web: t.website || t['contact:website'] || t.url || '',
+    radno_vrijeme: t.opening_hours || '',
+    karta: lat && lon ? `https://www.google.com/maps?q=${lat},${lon}` : '',
+  };
+}
+
+function filterPOI(elements) {
+  return elements
+    .map(mapPOI)
+    .filter(p => p.naziv)
+    .sort((a, b) => a.naziv.localeCompare(b.naziv, 'hr'));
+}
+
+async function scrapePOI() {
+  const bb = SB_BBOX;
+  const ql = `
+    node[tourism=museum](${bb});way[tourism=museum](${bb});
+    node[amenity=pharmacy](${bb});
+    node[amenity=hospital](${bb});node[amenity=clinic](${bb});node[amenity=doctors](${bb});
+    node[highway=bus_stop](${bb});
+    node[shop=car_repair](${bb});way[shop=car_repair](${bb});
+    node[shop=mall](${bb});way[shop=mall](${bb});
+    node[shop=supermarket](${bb});way[shop=supermarket](${bb});
+    node[amenity=parking](${bb});way[amenity=parking](${bb});
+    node[shop=hairdresser](${bb});
+    node[amenity=cafe](${bb});
+    node[amenity=bar](${bb});
+    node[amenity=fuel](${bb});
+    node[amenity=bank](${bb});node[amenity=atm](${bb});
+    node[amenity=post_office](${bb});
+  `;
+
+  const data = await overpassQuery(ql);
+  if (!data) return {};
+
+  const byType = {};
+  for (const el of data.elements) {
+    const t = el.tags || {};
+    const tip = t.amenity || t.shop || t.tourism || t.highway;
+    if (!byType[tip]) byType[tip] = [];
+    byType[tip].push(el);
+  }
+
+  const kategorije = {
+    muzeji:            filterPOI([...(byType.museum||[])]),
+    ljekarne:          filterPOI(byType.pharmacy||[]),
+    lijecnici:         filterPOI([...(byType.hospital||[]),...(byType.clinic||[]),...(byType.doctors||[])]),
+    javni_prijevoz:    filterPOI(byType.bus_stop||[]),
+    auto_servisi:      filterPOI(byType.car_repair||[]),
+    trgovacki_centri:  filterPOI([...(byType.mall||[]),...(byType.supermarket||[])]),
+    parkinzi:          filterPOI(byType.parking||[]),
+    frizerski_saloni:  filterPOI(byType.hairdresser||[]),
+    caffe_barovi:      filterPOI([...(byType.cafe||[]),...(byType.bar||[])]),
+    benzinske:         filterPOI(byType.fuel||[]),
+    banke_bankomati:   filterPOI([...(byType.bank||[]),...(byType.atm||[])]),
+    posta:             filterPOI(byType.post_office||[]),
+  };
+
+  const totals = Object.entries(kategorije).map(([k,v]) => `${k}:${v.length}`).join(' | ');
+  console.log(`✅ OSM POI: ${totals}`);
+  return kategorije;
+}
+
 // ─── Dokumenti TZ (strategije i ostali) ──────────────────────────────────────
 
 // Ključne riječi za kategorizaciju dokumenata
@@ -638,7 +734,7 @@ export const scrapedContent = ${JSON.stringify(data, null, 2)};
 async function main() {
   console.log('🔍 Pokrećem scraping za Slavonski Brod...\n');
 
-  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije, dokumenti, onama] = await Promise.all([
+  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije, dokumenti, onama, poi] = await Promise.all([
     scrapeVijesti(),
     scrapeManifestacije(),
     scrapeRestorani(),
@@ -647,6 +743,7 @@ async function main() {
     scrapeAtrakcije(),
     scrapeDokumenti(),
     scrapeONama(),
+    scrapePOI(),
   ]);
 
   const data = {
@@ -672,6 +769,7 @@ async function main() {
     dokumenti_strategije: dokumenti.strategije,
     dokumenti_ostali: dokumenti.ostali,
     o_nama: onama,
+    poi: poi,
   };
 
   const total = vijesti.length + manifestacije.length + restorani.length +
@@ -696,6 +794,8 @@ async function main() {
   console.log('  📄 Dokumenti — strategije:', dokumenti.strategije.length);
   console.log('  📄 Dokumenti — ostali:', dokumenti.ostali.length);
   console.log('  ℹ️  O nama sekcije:', Object.keys(onama).length);
+  const poiTotal = Object.values(poi).reduce((s,v) => s + v.length, 0);
+  console.log(`  📍 OSM točke od interesa: ${poiTotal} ukupno`);
 }
 
 main().catch(err => {
