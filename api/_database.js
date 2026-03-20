@@ -168,11 +168,23 @@ export const db = {
       "karta": "https://www.google.com/maps/search/?api=1&query=Setaliste+uz+Savu+Slavonski+Brod"
     },
     {
-      "naziv": "Rodna kuća Ivane Brlić-Mažuranić",
-      "tip": "Spomen-kuća",
-      "opis": "Slavonski Brod je rodni grad Ivane Brlić-Mažuranić (1874.–1938.), jedne od najznačajnijih hrvatskih književnica, autorece 'Priče iz davnine'. Spomen-kuća i muzej posvećen njezinoj životu i djelu.",
-      "napomena": "Za obilazak i aktualno radno vrijeme kontaktirajte TZ Slavonski Brod: +385 35 447 721",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Ivana+Brlic+Mazuranic+Slavonski+Brod"
+      "naziv": "Kuća Brlićevih — Interpretacijski centar Ivane Brlić-Mažuranić",
+      "tip": "Spomen-kuća / Interpretacijski centar",
+      "opis": "Kulturni spomenik na glavnom gradskom trgu. Izgrađena u kasnom 18. st., obnovljena 1885. kao neoklasicistička građevina. Dom obitelji Brlić — Ignjat Alojzije, Andrija Torkvat i Ivana Brlić-Mažuranić (1874.–1938.), autorica 'Priče iz davnine'. Danas je interpretacijski centar s 1.405 m²: prizemlje (galerija, info, suvenirnica), kat (autentični namještaj i multimedija), potkrovlje (književni eventi), podrum (vinski eventi).",
+      "napomena": "Projekt sufinanciran EU sredstvima; interaktivne izložbe, hologrami, mobilna aplikacija",
+      "telefon": "+385 35 447 721",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Kuca+Brlicevih+Slavonski+Brod",
+      "web": "https://www.tzgsb.hr/index.php?page=kuca_brlicevih"
+    },
+    {
+      "naziv": "Muzej tambura (Kuća tambure)",
+      "tip": "Muzej",
+      "opis": "Prvi svjetski muzej tambure, smješten u obnovljenoj kazamati zapadne kurtine Tvrđave Brod. Čuva više od 60 ručno izrađenih instrumenata. Nudi kreativne radionice izrade gudačkih instrumenata i multimedijalne prezentacije. Dvorana kapaciteta 70–80 mjesta, glazbeni studio i edukacijski prostori.",
+      "adresa": "Vukovarska 1, 35000 Slavonski Brod (zapadna kurtina Tvrđave Brod)",
+      "telefon": "+385 98 226 707",
+      "email": "but@but.hr",
+      "web": "https://www.but.hr",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Muzej+tambura+Slavonski+Brod"
     }
   ],
   "gastronomija": {

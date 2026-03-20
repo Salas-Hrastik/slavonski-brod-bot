@@ -53,6 +53,21 @@ function buildScrapedSection(category) {
     });
   }
 
+  // Kulturna baština — za znamenitosti upite
+  if (s.kulturna_bastina?.length && (!category || category === 'znamenitosti')) {
+    lines.push(`\nKulturna baština i znamenitosti Slavonskog Broda (${s.kulturna_bastina.length} lokacija):`);
+    s.kulturna_bastina.forEach(b => {
+      const adresa = b.adresa ? ` | ${b.adresa}` : '';
+      const tel = b.telefon ? ` | Tel: ${b.telefon}` : '';
+      const web = b.web ? ` | ${b.web}` : '';
+      const link = b.link && !b.link.includes(b.web || '') ? ` | Više: ${b.link}` : '';
+      lines.push(`• **${b.naziv}** [${b.tip}]${adresa}${tel}${web}${link}`);
+      if (b.opis && b.opis.length > 30) {
+        lines.push(`  ${b.opis.substring(0, 300)}`);
+      }
+    });
+  }
+
   // Smještaj — za upite o smještaju
   if (category === 'smjestaj' || !category) {
     if (s.smjestaj_hoteli?.length) {

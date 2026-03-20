@@ -306,6 +306,84 @@ async function scrapeSmjestaj() {
   return { hoteli, apartmani };
 }
 
+// ─── Kulturna baština (TZ stranice) ─────────────────────────────────────────
+
+// Samo TZ stranice koje imaju specifičan HTML sadržaj za scraping
+const BASTINA_PAGES = [
+  {
+    naziv: 'Muzej tambura (Kuća tambure)',
+    tip: 'Muzej',
+    link: 'https://www.tzgsb.hr/index.php?page=muzejtambura',
+    adresa: 'Vukovarska 1, 35000 Slavonski Brod (zapadna kurtina Tvrđave Brod)',
+    telefon: '+385 98 226 707',
+    email: 'but@but.hr',
+    web: 'https://www.but.hr',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Muzej+tambura+Slavonski+Brod',
+  },
+  {
+    naziv: 'Kuća Brlićevih — Interpretacijski centar Ivane Brlić-Mažuranić',
+    tip: 'Spomen-kuća / Interpretacijski centar',
+    link: 'https://www.tzgsb.hr/index.php?page=kuca_brlicevih',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Kuca+Brlicevih+Slavonski+Brod',
+  },
+  {
+    naziv: 'Living History — Tvrđava Brod',
+    tip: 'Doživljajna turistička atrakcija',
+    link: 'https://www.tzgsb.hr/index.php?page=livinghistory',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod',
+  },
+];
+
+function extractBastrinaContent(html) {
+  const text = stripHtml(html);
+  const footerMarker = '© Copyright Tourist Board';
+
+  // Pokušaj naći specifičan sadržaj stranice u bloku iza navigacije
+  // TZ stranice s konkretnim sadržajem imaju ga iza "Preporučujemo!" ili "Living History" ili naziva sekcije
+  const contentMarkers = ['Preporučujemo!', 'Living History programi', 'Kuća Brlićevih', 'Gradski vodič'];
+  let start = -1;
+  for (const marker of contentMarkers) {
+    const idx = text.indexOf(marker);
+    if (idx >= 0) { start = idx; break; }
+  }
+  if (start < 0) return ''; // nema prepoznatljivog sadržaja
+
+  const end = text.indexOf(footerMarker);
+  const raw = (end > start ? text.substring(start, end) : text.substring(start, start + 2000)).trim();
+
+  const cleaned = raw
+    .replace(/^-?\s*\w+\/\w+\s+\d{4}\.?\s*/i, '')  // ukloni "- siječanj/veljača 2012."
+    .replace(/\+385\s*\d[\d\s\-\/]+/g, '')
+    .replace(/[\w.+-]+@[\w-]+\.[a-z]{2,}/g, '')
+    .replace(/www\.\S+/g, '')
+    .replace(/\s{3,}/g, '  ')
+    .trim();
+
+  // Odbaci ako počinje s navigacijskim tekstom
+  if (/^Turistička zajednica|^O nama|^Kulturna baština/.test(cleaned)) return '';
+
+  return cleaned.substring(0, 600);
+}
+
+async function scrapeBastina() {
+  const result = [];
+
+  for (const page of BASTINA_PAGES) {
+    // Za TZ stranice dohvati HTML; za vanjske URL-ove preskoči scraping opisa
+    const isTzPage = page.link.includes('tzgsb.hr/index.php');
+    let opis = '';
+    if (isTzPage) {
+      const html = await fetchHtml(page.link);
+      opis = html ? extractBastrinaContent(html) : '';
+    }
+    result.push({ ...page, opis: opis || undefined });
+    console.log(`  🏛️  ${page.naziv}: ${opis.length} znakova`);
+  }
+
+  console.log(`✅ Kulturna baština: ${result.length} stavki`);
+  return result;
+}
+
 // ─── Zapis rezultata ─────────────────────────────────────────────────────────
 
 function writeOutput(data) {
@@ -326,11 +404,12 @@ export const scrapedContent = ${JSON.stringify(data, null, 2)};
 async function main() {
   console.log('🔍 Pokrećem scraping za Slavonski Brod...\n');
 
-  const [vijesti, manifestacije, restorani, smjestajData] = await Promise.all([
+  const [vijesti, manifestacije, restorani, smjestajData, bastina] = await Promise.all([
     scrapeVijesti(),
     scrapeManifestacije(),
     scrapeRestorani(),
     scrapeSmjestaj(),
+    scrapeBastina(),
   ]);
 
   const data = {
@@ -341,6 +420,7 @@ async function main() {
         'https://www.tzgsb.hr/static/json/restorani.json',
         'https://www.tzgsb.hr/static/json/smjestaj.json',
         'https://www.tzgsb.hr/index.php?page=manifestacije',
+        'https://www.tzgsb.hr/index.php?page=kulturna-bastina',
       ],
     },
     novosti_grad: vijesti,
@@ -348,10 +428,11 @@ async function main() {
     restorani_tz: restorani,
     smjestaj_hoteli: smjestajData.hoteli || [],
     smjestaj_apartmani: smjestajData.apartmani || [],
+    kulturna_bastina: bastina,
   };
 
   const total = vijesti.length + manifestacije.length + restorani.length +
-    (smjestajData.hoteli?.length || 0) + (smjestajData.apartmani?.length || 0);
+    (smjestajData.hoteli?.length || 0) + (smjestajData.apartmani?.length || 0) + bastina.length;
 
   if (total === 0) {
     console.warn('⚠️  Nije dohvaćen nikakav sadržaj. Provjeri dostupnost web stranica.');
@@ -365,6 +446,7 @@ async function main() {
   console.log('  🍽️  Restorani:', restorani.length);
   console.log('  🏨 Hoteli/hosteli/pansioni:', smjestajData.hoteli?.length || 0);
   console.log('  🏠 Apartmani/sobe/vile:', smjestajData.apartmani?.length || 0);
+  console.log('  🏛️  Kulturna baština:', bastina.length);
 }
 
 main().catch(err => {

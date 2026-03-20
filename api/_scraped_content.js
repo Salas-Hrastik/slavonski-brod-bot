@@ -1,16 +1,17 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-03-20 19:45 UTC
+// Zadnje skrapanje: 2026-03-20 20:00 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-03-20T19:45:47.729Z",
+    "zadnje_azuriranje": "2026-03-20T20:00:38.544Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
       "https://www.tzgsb.hr/static/json/smjestaj.json",
-      "https://www.tzgsb.hr/index.php?page=manifestacije"
+      "https://www.tzgsb.hr/index.php?page=manifestacije",
+      "https://www.tzgsb.hr/index.php?page=kulturna-bastina"
     ]
   },
   "novosti_grad": [
@@ -1614,6 +1615,33 @@ export const scrapedContent = {
       "telefon": "+385 91 508 7975",
       "web": "",
       "karta": "https://www.google.com/maps/search/?api=1&query=LORA%20Slavonski%20Brod"
+    }
+  ],
+  "kulturna_bastina": [
+    {
+      "naziv": "Muzej tambura (Kuća tambure)",
+      "tip": "Muzej",
+      "link": "https://www.tzgsb.hr/index.php?page=muzejtambura",
+      "adresa": "Vukovarska 1, 35000 Slavonski Brod (zapadna kurtina Tvrđave Brod)",
+      "telefon": "+385 98 226 707",
+      "email": "but@but.hr",
+      "web": "https://www.but.hr",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Muzej+tambura+Slavonski+Brod",
+      "opis": "Preporučujemo! Obiđite prvi svjetski muzej tambura u obnovljenom kazamatu zapadne kurtine u tvrđavi Brod u kojem možete razgledati više od 60 ručno izrađenih eksponata; aktivno sudjelovati u kreativnim radionicama na kojima se izrađuju žičani instrumenti i uživati u multimedijalnim prezentacijama. Brodska udruga tamburaša Adresa: Vukovarska 1, 35000 Slavonski Brod Telefon: E-mail:  Web:  Članovi klape \"Intrade\" iz Zadra i slovački turisti (snimano u ožujku 2013.): Krešimir Galić"
+    },
+    {
+      "naziv": "Kuća Brlićevih — Interpretacijski centar Ivane Brlić-Mažuranić",
+      "tip": "Spomen-kuća / Interpretacijski centar",
+      "link": "https://www.tzgsb.hr/index.php?page=kuca_brlicevih",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Kuca+Brlicevih+Slavonski+Brod",
+      "opis": "Kuća Brlićevih Crkve u općini Podcrkavlje Gradski vodič - siječanj/veljača 2012. Kuća Brlićevih Obiteljska kuća Brlić sagrađena krajem 18. stoljeća na glavnom gradskom trgu, nestala je u velikom požaru 1882., a na njezinom mjestu podignuta je 1885. moderna neoklasicistička jednokatnica, danas spomenik kulture pod zaštitom. U autentičnom povijesnom ambijentu doma Brlićevih stvarale su i nalazile nadahnuće za svoje mnogostrane interese ličnosti koje su značajno pridonijele javnom, kulturnom i političkom životu Broda i Hrvatske: Ignjat Alojzije Brlić, pisac i jezikoslovac, Andrija Torkvat Brlić, "
+    },
+    {
+      "naziv": "Living History — Tvrđava Brod",
+      "tip": "Doživljajna turistička atrakcija",
+      "link": "https://www.tzgsb.hr/index.php?page=livinghistory",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod",
+      "opis": "Living History programi Gostima koji u Slavonski Brod dođu posredstvom putničkih agencija bit će omogućeno aktivno sudjelovanje u programima živuće povijesti koji se, uz angažman kostimiranih konjanika, vojnika i tvrđavskih zanatlija, izvode u tvrđavi Brod, kao i susret s likovima iz pripovijetki svjetski poznate spisateljice Ivane Brlić-Mažuranić ispred kuće Brlić na središnjem gradskom trgu i kostimiranim likom Dragutina Tadijanovića u Franjevačkom samostanu. Trg pobjede 28/1 35000 Slavonski Brod"
     }
   ]
 };
