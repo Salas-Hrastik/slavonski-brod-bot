@@ -614,6 +614,16 @@ Pravila:
 
   } catch (err) {
     console.error("Chat error:", err);
-    return res.status(500).json({ reply: "Greška u komunikaciji sa serverom. Pokušajte ponovno.", _debug: err?.message || String(err) });
+    const cause = err?.cause;
+    return res.status(500).json({
+      reply: "Greška u komunikaciji sa serverom. Pokušajte ponovno.",
+      _debug: {
+        msg: err?.message,
+        cause: cause?.message || String(cause),
+        code: cause?.code,
+        key_set: !!process.env.OPENAI_API_KEY,
+        key_prefix: process.env.OPENAI_API_KEY?.substring(0, 7)
+      }
+    });
   }
 }
