@@ -614,6 +614,6 @@ Pravila:
 
   } catch (err) {
     console.error("Chat error:", err);
-    return res.status(500).json({ reply: "Greška u komunikaciji sa serverom. Pokušajte ponovno." });
+    return res.status(500).json({ reply: "Greška u komunikaciji sa serverom. Pokušajte ponovno.", _debug: err?.message || String(err) });
   }
 }
