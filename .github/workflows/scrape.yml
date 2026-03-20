@@ -1,0 +1,38 @@
+name: Scrape Slavonski Brod
+
+on:
+  schedule:
+    # Svaki ponedjeljak u 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:   # Ručno pokretanje iz GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run scraper
+        run: node scripts/scrape-brod.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add api/_scraped_content.js
+          if git diff --staged --quiet; then
+            echo "Nema promjena — preskačem commit."
+          else
+            git commit -m "chore: auto-update scraped content [skip ci]"
+            git push
+          fi
