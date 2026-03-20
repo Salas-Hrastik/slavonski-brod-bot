@@ -1,17 +1,18 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-03-20 20:00 UTC
+// Zadnje skrapanje: 2026-03-20 20:08 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-03-20T20:00:38.544Z",
+    "zadnje_azuriranje": "2026-03-20T20:08:10.849Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
       "https://www.tzgsb.hr/static/json/smjestaj.json",
       "https://www.tzgsb.hr/index.php?page=manifestacije",
-      "https://www.tzgsb.hr/index.php?page=kulturna-bastina"
+      "https://www.tzgsb.hr/index.php?page=kulturna-bastina",
+      "https://www.tzgsb.hr/index.php?page=rekreacija"
     ]
   },
   "novosti_grad": [
@@ -1642,6 +1643,68 @@ export const scrapedContent = {
       "link": "https://www.tzgsb.hr/index.php?page=livinghistory",
       "karta": "https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod",
       "opis": "Living History programi Gostima koji u Slavonski Brod dođu posredstvom putničkih agencija bit će omogućeno aktivno sudjelovanje u programima živuće povijesti koji se, uz angažman kostimiranih konjanika, vojnika i tvrđavskih zanatlija, izvode u tvrđavi Brod, kao i susret s likovima iz pripovijetki svjetski poznate spisateljice Ivane Brlić-Mažuranić ispred kuće Brlić na središnjem gradskom trgu i kostimiranim likom Dragutina Tadijanovića u Franjevačkom samostanu. Trg pobjede 28/1 35000 Slavonski Brod"
+    }
+  ],
+  "atrakcije_tz": [
+    {
+      "naziv": "Sportsko-rekreacijska zona Vijuš",
+      "tip": "Rekreacija",
+      "opis": "Sportska dvorana kapaciteta 2.200 mjesta, kuglana, bazeni, nogometni stadion, 3D mural (1.300 m²) — jedan od najvećih u regiji, fitness park i biciklističke staze.",
+      "link": "https://www.tzgsb.hr/index.php?page=rekreacija",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Vijus+Slavonski+Brod"
+    },
+    {
+      "naziv": "Rekreacijski centar Poloj",
+      "tip": "Rekreacija / Plaža",
+      "opis": "3 km nizvodno od centra grada uz Savu. Pješčana riječna plaža, sportski tereni, piknik prostori i parking. Omiljeno ljetno odredište Broðana.",
+      "link": "https://www.tzgsb.hr/index.php?page=rekreacija",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Poloj+Slavonski+Brod"
+    },
+    {
+      "naziv": "Dilj gora — rekreacija i priroda",
+      "tip": "Priroda / Planinarenje",
+      "opis": "Geološki lokalitet Pljuskara, jezero Ljeskove vode, Planinski dom Đuro Pilar i rekreacijska šuma Striborova u podnožju Dilj gore sjeverno od grada.",
+      "link": "https://www.tzgsb.hr/index.php?page=rekreacija",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Dilj+gora+Slavonski+Brod"
+    },
+    {
+      "naziv": "Malena i Klepetan — Priča o rodama",
+      "tip": "Jedinstvena turistička priča",
+      "opis": "Svjetski poznata priča o rodi Maleni koja zbog oštećenih krila ne može letjeti, te njezinom partneru Klepetanu koji se svake godine vraća iz Afrike u Brodsku Posavinu. Priča je obišla cijeli svijet i postala simbol odanosti.",
+      "lokacija": "Slavonski Kobaš (15 km od Slavonskog Broda)",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Slavonski+Kobas+rode",
+      "link": "https://www.tzgsb.hr/index.php?page=malena-klepetan"
+    },
+    {
+      "naziv": "Spomen dom Dragutina Tadijanovića",
+      "tip": "Memorijalna kuća / Muzej",
+      "opis": "Spomen dom posvećen Dragutinu Tadijanoviću (1905.–2007.), jednom od najznačajnijih hrvatskih pjesnika 20. st. Rodio se u Rastušju kraj Slavonskog Broda. Dom čuva osobne predmete, rukopise i fotografije. TZ organizira susrete s \"likom\" pjesnika u okviru Living History programa.",
+      "lokacija": "Rastušje, okolica Slavonskog Broda",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Spomen+dom+Tadijanovic+Slavonski+Brod",
+      "link": "https://www.tzgsb.hr/index.php?page=tada-tadijanovic"
+    },
+    {
+      "naziv": "Turističko-industrijski park \"Đuro Đaković\"",
+      "tip": "Industrijska baština / Park",
+      "opis": "Park s izloženim željezničkim vagonima, cisternama i industrijskim strojevima slavne brodske tvornice Đuro Đaković. Jedinstven industrijski muzej na otvorenom koji prikazuje 100+ godina slavonske industrije.",
+      "adresa": "Slavonski Brod",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Djuro+Djakovic+Slavonski+Brod",
+      "link": "https://www.tzgsb.hr/index.php?page=gdjdj"
+    },
+    {
+      "naziv": "Lovački muzej",
+      "tip": "Muzej",
+      "opis": "Muzej s bogatom zbirkom lovačkih trofeja, oružja i opreme karakteristične za Brodsko-posavsku županiju i posavske lovišta.",
+      "adresa": "Slavonski Brod",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Lovacki+muzej+Slavonski+Brod",
+      "link": "https://www.tzgsb.hr"
+    },
+    {
+      "naziv": "Posavska biciklistička ruta",
+      "tip": "Aktivni turizam / Biciklizam",
+      "opis": "Ravninska biciklistička ruta koja prolazi uz Savu kroz Brodsko-posavsku županiju. Dio međunarodne EuroVelo mreže. Lako vozna, prolazi uz rijeku i kroz posavska sela.",
+      "link": "https://www.tzgsb.hr",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Posavska+biciklisticka+ruta"
     }
   ]
 };

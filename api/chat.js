@@ -68,6 +68,17 @@ function buildScrapedSection(category) {
     });
   }
 
+  // Turističke atrakcije — za priroda, sport, opcenito
+  const atrakcijeCategories = ['priroda', 'sport', 'opcenito', 'znamenitosti'];
+  if (s.atrakcije_tz?.length && (!category || atrakcijeCategories.includes(category))) {
+    lines.push(`\nTurističke atrakcije i rekreacija (${s.atrakcije_tz.length}):`);
+    s.atrakcije_tz.forEach(a => {
+      const lok = a.lokacija ? ` | ${a.lokacija}` : (a.adresa ? ` | ${a.adresa}` : '');
+      lines.push(`• **${a.naziv}** [${a.tip}]${lok}`);
+      if (a.opis) lines.push(`  ${a.opis.substring(0, 200)}`);
+    });
+  }
+
   // Smještaj — za upite o smještaju
   if (category === 'smjestaj' || !category) {
     if (s.smjestaj_hoteli?.length) {

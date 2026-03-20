@@ -384,6 +384,87 @@ async function scrapeBastina() {
   return result;
 }
 
+// ─── Turističke atrakcije ────────────────────────────────────────────────────
+
+// Kurirane atrakcije s poznatim podacima (TZ HTML nema specifičnih stranica za svaku)
+const ATRAKCIJE_STATIC = [
+  {
+    naziv: 'Sportsko-rekreacijska zona Vijuš',
+    tip: 'Rekreacija',
+    opis: 'Sportska dvorana kapaciteta 2.200 mjesta, kuglana, bazeni, nogometni stadion, 3D mural (1.300 m²) — jedan od najvećih u regiji, fitness park i biciklističke staze.',
+    link: 'https://www.tzgsb.hr/index.php?page=rekreacija',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Vijus+Slavonski+Brod',
+  },
+  {
+    naziv: 'Rekreacijski centar Poloj',
+    tip: 'Rekreacija / Plaža',
+    opis: '3 km nizvodno od centra grada uz Savu. Pješčana riječna plaža, sportski tereni, piknik prostori i parking. Omiljeno ljetno odredište Broðana.',
+    link: 'https://www.tzgsb.hr/index.php?page=rekreacija',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Poloj+Slavonski+Brod',
+  },
+  {
+    naziv: 'Dilj gora — rekreacija i priroda',
+    tip: 'Priroda / Planinarenje',
+    opis: 'Geološki lokalitet Pljuskara, jezero Ljeskove vode, Planinski dom Đuro Pilar i rekreacijska šuma Striborova u podnožju Dilj gore sjeverno od grada.',
+    link: 'https://www.tzgsb.hr/index.php?page=rekreacija',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Dilj+gora+Slavonski+Brod',
+  },
+  {
+    naziv: 'Malena i Klepetan — Priča o rodama',
+    tip: 'Jedinstvena turistička priča',
+    opis: 'Svjetski poznata priča o rodi Maleni koja zbog oštećenih krila ne može letjeti, te njezinom partneru Klepetanu koji se svake godine vraća iz Afrike u Brodsku Posavinu. Priča je obišla cijeli svijet i postala simbol odanosti.',
+    lokacija: 'Slavonski Kobaš (15 km od Slavonskog Broda)',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Slavonski+Kobas+rode',
+    link: 'https://www.tzgsb.hr/index.php?page=malena-klepetan',
+  },
+  {
+    naziv: 'Spomen dom Dragutina Tadijanovića',
+    tip: 'Memorijalna kuća / Muzej',
+    opis: 'Spomen dom posvećen Dragutinu Tadijanoviću (1905.–2007.), jednom od najznačajnijih hrvatskih pjesnika 20. st. Rodio se u Rastušju kraj Slavonskog Broda. Dom čuva osobne predmete, rukopise i fotografije. TZ organizira susrete s "likom" pjesnika u okviru Living History programa.',
+    lokacija: 'Rastušje, okolica Slavonskog Broda',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Spomen+dom+Tadijanovic+Slavonski+Brod',
+    link: 'https://www.tzgsb.hr/index.php?page=tada-tadijanovic',
+  },
+  {
+    naziv: 'Turističko-industrijski park "Đuro Đaković"',
+    tip: 'Industrijska baština / Park',
+    opis: 'Park s izloženim željezničkim vagonima, cisternama i industrijskim strojevima slavne brodske tvornice Đuro Đaković. Jedinstven industrijski muzej na otvorenom koji prikazuje 100+ godina slavonske industrije.',
+    adresa: 'Slavonski Brod',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Djuro+Djakovic+Slavonski+Brod',
+    link: 'https://www.tzgsb.hr/index.php?page=gdjdj',
+  },
+  {
+    naziv: 'Lovački muzej',
+    tip: 'Muzej',
+    opis: 'Muzej s bogatom zbirkom lovačkih trofeja, oružja i opreme karakteristične za Brodsko-posavsku županiju i posavske lovišta.',
+    adresa: 'Slavonski Brod',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Lovacki+muzej+Slavonski+Brod',
+    link: 'https://www.tzgsb.hr',
+  },
+  {
+    naziv: 'Posavska biciklistička ruta',
+    tip: 'Aktivni turizam / Biciklizam',
+    opis: 'Ravninska biciklistička ruta koja prolazi uz Savu kroz Brodsko-posavsku županiju. Dio međunarodne EuroVelo mreže. Lako vozna, prolazi uz rijeku i kroz posavska sela.',
+    link: 'https://www.tzgsb.hr',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Posavska+biciklisticka+ruta',
+  },
+];
+
+async function scrapeAtrakcije() {
+  // Provjeri ima li stranica rekreacija ažurnijeg sadržaja od statičkih podataka
+  const html = await fetchHtml('https://www.tzgsb.hr/index.php?page=rekreacija');
+  if (html) {
+    const text = stripHtml(html);
+    // Provjeri prisutnost očekivanog sadržaja
+    const hasVijus = /Vijuš/i.test(text);
+    const hasPoloj = /Poloj/i.test(text);
+    console.log(`  🏃 Rekreacija: Vijuš=${hasVijus}, Poloj=${hasPoloj}`);
+  }
+
+  console.log(`✅ Turističke atrakcije: ${ATRAKCIJE_STATIC.length} stavki`);
+  return ATRAKCIJE_STATIC;
+}
+
 // ─── Zapis rezultata ─────────────────────────────────────────────────────────
 
 function writeOutput(data) {
@@ -404,12 +485,13 @@ export const scrapedContent = ${JSON.stringify(data, null, 2)};
 async function main() {
   console.log('🔍 Pokrećem scraping za Slavonski Brod...\n');
 
-  const [vijesti, manifestacije, restorani, smjestajData, bastina] = await Promise.all([
+  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije] = await Promise.all([
     scrapeVijesti(),
     scrapeManifestacije(),
     scrapeRestorani(),
     scrapeSmjestaj(),
     scrapeBastina(),
+    scrapeAtrakcije(),
   ]);
 
   const data = {
@@ -421,6 +503,7 @@ async function main() {
         'https://www.tzgsb.hr/static/json/smjestaj.json',
         'https://www.tzgsb.hr/index.php?page=manifestacije',
         'https://www.tzgsb.hr/index.php?page=kulturna-bastina',
+        'https://www.tzgsb.hr/index.php?page=rekreacija',
       ],
     },
     novosti_grad: vijesti,
@@ -429,10 +512,12 @@ async function main() {
     smjestaj_hoteli: smjestajData.hoteli || [],
     smjestaj_apartmani: smjestajData.apartmani || [],
     kulturna_bastina: bastina,
+    atrakcije_tz: atrakcije,
   };
 
   const total = vijesti.length + manifestacije.length + restorani.length +
-    (smjestajData.hoteli?.length || 0) + (smjestajData.apartmani?.length || 0) + bastina.length;
+    (smjestajData.hoteli?.length || 0) + (smjestajData.apartmani?.length || 0) +
+    bastina.length + atrakcije.length;
 
   if (total === 0) {
     console.warn('⚠️  Nije dohvaćen nikakav sadržaj. Provjeri dostupnost web stranica.');
@@ -447,6 +532,7 @@ async function main() {
   console.log('  🏨 Hoteli/hosteli/pansioni:', smjestajData.hoteli?.length || 0);
   console.log('  🏠 Apartmani/sobe/vile:', smjestajData.apartmani?.length || 0);
   console.log('  🏛️  Kulturna baština:', bastina.length);
+  console.log('  🎯 Turističke atrakcije:', atrakcije.length);
 }
 
 main().catch(err => {
