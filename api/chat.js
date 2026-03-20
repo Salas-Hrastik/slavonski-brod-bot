@@ -47,6 +47,21 @@ function buildScrapedSection(category) {
     }
   }
 
+  // O nama — opis grada, županija, gradonačelnik, TIC, agencije
+  if (s.o_nama) {
+    const o = s.o_nama;
+    if (!category || category === 'opcenito') {
+      if (o.grad_opis) lines.push(`\nO gradu Slavonski Brod:\n${o.grad_opis.substring(0, 800)}`);
+      if (o.zupanija) lines.push(`\nBrodsko-posavska županija:\n${o.zupanija.substring(0, 500)}`);
+      if (o.rijec_gradonacelnika) lines.push(`\nRiječ gradonačelnika:\n${o.rijec_gradonacelnika.substring(0, 600)}`);
+    }
+    if (!category || category === 'usluge' || category === 'opcenito') {
+      if (o.kontakti) lines.push(`\nKontakti i važni brojevi:\n${o.kontakti.substring(0, 800)}`);
+      if (o.tic) lines.push(`\nTurističko-informativni centar:\n${o.tic.substring(0, 400)}`);
+      if (o.turisticke_agencije) lines.push(`\nTurističke agencije u Slavonskom Brodu:\n${o.turisticke_agencije.substring(0, 600)}`);
+    }
+  }
+
   // Vijesti — uvijek u kontekstu vijesti/novosti
   if (s.novosti_grad?.length && (!category || category === 'opcenito')) {
     lines.push(`\nNajnovije vijesti — Grad Slavonski Brod (${ts}):`);

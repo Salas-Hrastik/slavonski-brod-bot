@@ -416,6 +416,46 @@ async function scrapeBastina() {
   return result;
 }
 
+// ─── O nama (TZ "O nama" sekcija) ────────────────────────────────────────────
+
+const O_NAMA_PAGES = [
+  { kljuc: 'grad_opis',        page: 'slavonski_brod',      marker: 'Slavonski Brod Grad' },
+  { kljuc: 'zupanija',         page: 'zupanija',            marker: 'Brodsko-posavska županija' },
+  { kljuc: 'rijec_gradonacelnika', page: 'rijec_gradonacelnika', marker: 'Riječ gradonačelnika' },
+  { kljuc: 'kontakti',         page: 'kontakti',            marker: 'Turističke zajednice' },
+  { kljuc: 'tic',              page: 'centar_za_posjetitelje', marker: 'Turističko-informativni centar' },
+  { kljuc: 'turisticke_agencije', page: 'tipa',             marker: 'Turističke agencije' },
+];
+
+async function scrapeONama() {
+  const result = {};
+
+  for (const { kljuc, page, marker } of O_NAMA_PAGES) {
+    const html = await fetchHtml(`https://www.tzgsb.hr/index.php?page=${page}`);
+    if (!html) { result[kljuc] = ''; continue; }
+
+    const text = stripHtml(html);
+    const footerMarker = '© Copyright Tourist Board';
+
+    const start = text.indexOf(marker);
+    if (start < 0) { result[kljuc] = ''; continue; }
+
+    const end = text.indexOf(footerMarker);
+    const raw = (end > start ? text.substring(start, end) : text.substring(start, start + 4000)).trim();
+
+    const cleaned = raw
+      .replace(/Gradski vodič\s*-?\s*\w+\/?\w*\s*\d{4}\.?\s*/g, '')
+      .replace(/\s{3,}/g, '  ')
+      .trim();
+
+    result[kljuc] = cleaned.substring(0, 1500);
+    console.log(`  ℹ️  ${kljuc}: ${cleaned.length} znakova`);
+  }
+
+  console.log(`✅ O nama: ${Object.keys(result).length} sekcija`);
+  return result;
+}
+
 // ─── Dokumenti TZ (strategije i ostali) ──────────────────────────────────────
 
 // Ključne riječi za kategorizaciju dokumenata
@@ -598,7 +638,7 @@ export const scrapedContent = ${JSON.stringify(data, null, 2)};
 async function main() {
   console.log('🔍 Pokrećem scraping za Slavonski Brod...\n');
 
-  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije, dokumenti] = await Promise.all([
+  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije, dokumenti, onama] = await Promise.all([
     scrapeVijesti(),
     scrapeManifestacije(),
     scrapeRestorani(),
@@ -606,6 +646,7 @@ async function main() {
     scrapeBastina(),
     scrapeAtrakcije(),
     scrapeDokumenti(),
+    scrapeONama(),
   ]);
 
   const data = {
@@ -630,6 +671,7 @@ async function main() {
     atrakcije_tz: atrakcije,
     dokumenti_strategije: dokumenti.strategije,
     dokumenti_ostali: dokumenti.ostali,
+    o_nama: onama,
   };
 
   const total = vijesti.length + manifestacije.length + restorani.length +
@@ -653,6 +695,7 @@ async function main() {
   console.log('  🎯 Turističke atrakcije:', atrakcije.length);
   console.log('  📄 Dokumenti — strategije:', dokumenti.strategije.length);
   console.log('  📄 Dokumenti — ostali:', dokumenti.ostali.length);
+  console.log('  ℹ️  O nama sekcije:', Object.keys(onama).length);
 }
 
 main().catch(err => {
