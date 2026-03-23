@@ -195,6 +195,29 @@ background:#1a5fa8;
 color:white;
 }
 
+/* Minijature slika */
+.thumbnails{
+margin-top:10px;
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.thumbnails img{
+width:90px;
+height:68px;
+object-fit:cover;
+border-radius:8px;
+cursor:pointer;
+border:2px solid transparent;
+transition:border-color 0.2s, transform 0.2s;
+}
+
+.thumbnails img:hover{
+border-color:#c8a84b;
+transform:scale(1.05);
+}
+
 a{
 color:#1a5fa8;
 text-decoration:none;
@@ -350,13 +373,28 @@ function formatReply(text){
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
 }
 
-function addMessage(text, type, suggestions){
+function addMessage(text, type, suggestions, images){
   const chatBox = document.getElementById("chat-box");
 
   const div = document.createElement("div");
   div.className = type === "user" ? "user-message" : "bot-message";
   div.innerHTML = type === "user" ? text : formatReply(text);
   chatBox.appendChild(div);
+
+  if(type === "bot" && images && images.length){
+    const thumbs = document.createElement("div");
+    thumbs.className = "thumbnails";
+    images.forEach(img => {
+      const el = document.createElement("img");
+      el.src = img.url;
+      el.alt = img.alt || '';
+      el.title = img.alt || '';
+      el.onerror = function(){ this.style.display='none'; };
+      el.onclick = () => openModal(img.url);
+      thumbs.appendChild(el);
+    });
+    chatBox.appendChild(thumbs);
+  }
 
   if(suggestions && suggestions.length && type === "bot"){
     const sug = document.createElement("div");
@@ -420,7 +458,7 @@ async function sendMessage(){
     if(data.category) currentCategory = data.category;
 
     if(data.reply){
-      addMessage(data.reply, "bot", data.suggestions);
+      addMessage(data.reply, "bot", data.suggestions, data.images);
       chatHistory.push({ role: "assistant", content: data.reply });
       if(chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
     } else {

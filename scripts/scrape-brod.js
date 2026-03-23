@@ -259,6 +259,7 @@ async function scrapeRestorani() {
       adresa: addr,
       telefon: phone,
       web: webUrl,
+      slika: r.image ? `https://www.tzgsb.hr/static/images/${r.image}` : '',
       karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + ' Slavonski Brod')}`,
     };
   }).filter(r => r.naziv);
@@ -295,6 +296,7 @@ async function scrapeSmjestaj() {
       adresa: addr,
       telefon: phone,
       web: webUrl,
+      slika: r.image ? `https://www.tzgsb.hr/static/images/${r.image}` : '',
       karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + ' Slavonski Brod')}`,
     };
   }
@@ -318,12 +320,14 @@ const BASTINA_PAGES = [
     telefon: '+385 98 226 707',
     email: 'but@but.hr',
     web: 'https://www.but.hr',
+    slika: 'https://www.tzgsb.hr/static/images/svi170-1.jpg',
     karta: 'https://www.google.com/maps/search/?api=1&query=Muzej+tambura+Slavonski+Brod',
   },
   {
     naziv: 'Kuća Brlićevih — Interpretacijski centar Ivane Brlić-Mažuranić',
     tip: 'Spomen-kuća / Interpretacijski centar',
     link: 'https://www.tzgsb.hr/index.php?page=kuca_brlicevih',
+    slika: 'https://www.tzgsb.hr/static/images/bajkeibm170x120-1.jpg',
     karta: 'https://www.google.com/maps/search/?api=1&query=Kuca+Brlicevih+Slavonski+Brod',
   },
   {
@@ -333,19 +337,22 @@ const BASTINA_PAGES = [
     adresa: 'Trg pobjede 28/1, 35000 Slavonski Brod (prijava putem TZ)',
     telefon: '+385 35 447 721',
     email: 'info@tzgsb.hr',
+    slika: 'https://www.tzgsb.hr/static/images/nslovna_tzgsb.jpg',
     karta: 'https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod',
   },
   {
     naziv: 'Prirodni rezervat Gajna',
     tip: 'Zaštićeni krajobraz / Priroda',
     link: 'https://www.tzgsb.hr/index.php?page=prirodni_rezervati',
+    slika: 'https://www.tzgsb.hr/static/images/brodici_1.png',
     karta: 'https://www.google.com/maps/search/?api=1&query=Gajna+Oprisavci+Slavonski+Brod',
   },
   {
     naziv: 'Izletišta — Etno-selo Crljen i Jezero Petnja',
     tip: 'Izletište / Ekoturizam',
     link: 'https://www.tzgsb.hr/index.php?page=izletista',
-    karta: 'https://www.google.com/maps/search/?api=1&query=Jezero+Petnja+Sibin j',
+    slika: 'https://www.tzgsb.hr/static/images/tic_1.jpg',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Jezero+Petnja+Sibinj',
   },
   {
     naziv: 'Katarinski sajam',
@@ -355,6 +362,7 @@ const BASTINA_PAGES = [
     telefon: '+385 35 445 765',
     email: 'info@brod-turist.hr',
     web: 'https://www.katarinskisajam.com',
+    slika: 'https://www.tzgsb.hr/static/images/uno-rez170-1.jpg',
     karta: 'https://www.google.com/maps/search/?api=1&query=Katarinski+sajam+Slavonski+Brod',
   },
 ];

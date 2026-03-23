@@ -19,6 +19,26 @@ function stripImages(data) {
   return data;
 }
 
+function getCategoryImages(category) {
+  const s = scrapedContent;
+  if (!s) return [];
+  const imgs = [];
+  const addImg = (url, alt) => { if (url) imgs.push({ url, alt: alt || '' }); };
+
+  if (category === 'gastronomija') {
+    (s.restorani_tz || []).slice(0, 8).forEach(r => addImg(r.slika, r.naziv));
+  } else if (category === 'smjestaj') {
+    (s.smjestaj_hoteli || []).slice(0, 6).forEach(h => addImg(h.slika, h.naziv));
+  } else if (category === 'znamenitosti') {
+    (s.kulturna_bastina || []).forEach(b => addImg(b.slika, b.naziv));
+  } else if (category === 'dogadanja') {
+    (s.kulturna_bastina || []).slice(0, 4).forEach(b => addImg(b.slika, b.naziv));
+  } else if (category === 'priroda' || category === 'sport' || category === 'okolica') {
+    (s.kulturna_bastina || []).filter(b => b.tip?.includes('Izletište') || b.tip?.includes('Priroda') || b.tip?.includes('Zaštićeni')).forEach(b => addImg(b.slika, b.naziv));
+  }
+  return imgs.filter(i => i.url).slice(0, 8);
+}
+
 function buildScrapedSection(category) {
   const s = scrapedContent;
   if (!s) return '';
@@ -609,7 +629,7 @@ Pravila:
       reply,
       category: category || lastCategory || null,
       suggestions: getSuggestions(category || lastCategory),
-      images: []
+      images: getCategoryImages(category || lastCategory)
     });
 
   } catch (err) {
