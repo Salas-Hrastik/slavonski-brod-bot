@@ -199,10 +199,86 @@ a{
 color:#1a5fa8;
 text-decoration:none;
 font-weight:bold;
+cursor:pointer;
 }
 
 a:hover{
 text-decoration:underline;
+}
+
+/* Modal popup za linkove */
+#link-modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.6);
+z-index:1000;
+align-items:center;
+justify-content:center;
+}
+
+#link-modal.open{
+display:flex;
+}
+
+.modal-box{
+background:white;
+border-radius:12px;
+width:80vw;
+max-width:820px;
+height:75vh;
+display:flex;
+flex-direction:column;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+
+.modal-bar{
+background:#142d54;
+color:white;
+padding:10px 16px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:10px;
+flex-shrink:0;
+}
+
+.modal-bar span{
+font-size:13px;
+opacity:0.8;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+flex:1;
+}
+
+.modal-bar a.modal-ext{
+color:#c8a84b;
+font-size:12px;
+white-space:nowrap;
+text-decoration:none;
+}
+
+.modal-bar a.modal-ext:hover{
+text-decoration:underline;
+}
+
+.modal-close{
+background:none;
+border:none;
+color:white;
+font-size:22px;
+cursor:pointer;
+line-height:1;
+padding:0 4px;
+flex-shrink:0;
+}
+
+.modal-iframe{
+flex:1;
+border:none;
+width:100%;
 }
 
 .welcome{
@@ -375,7 +451,46 @@ document.getElementById("user-input").addEventListener("keypress", function(e){
   }
 });
 
+// --- Modal popup za linkove ---
+function openModal(url){
+  document.getElementById("modal-url").textContent = url;
+  document.getElementById("modal-ext").href = url;
+  document.getElementById("modal-iframe").src = url;
+  document.getElementById("link-modal").classList.add("open");
+}
+
+function closeModal(){
+  const modal = document.getElementById("link-modal");
+  modal.classList.remove("open");
+  document.getElementById("modal-iframe").src = "";
+}
+
+// Zatvori klikom na pozadinu
+document.getElementById("link-modal").addEventListener("click", function(e){
+  if(e.target === this) closeModal();
+});
+
+// Intercept svih linkova u chat-boxu
+document.getElementById("chat-box").addEventListener("click", function(e){
+  const a = e.target.closest("a");
+  if(!a) return;
+  e.preventDefault();
+  openModal(a.href);
+});
+
 </script>
+
+<!-- Modal popup -->
+<div id="link-modal">
+  <div class="modal-box">
+    <div class="modal-bar">
+      <span id="modal-url"></span>
+      <a id="modal-ext" class="modal-ext" href="#" target="_blank" rel="noopener">Otvori u novoj kartici ↗</a>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <iframe id="modal-iframe" class="modal-iframe" src="" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+  </div>
+</div>
 
 </body>
 </html>
