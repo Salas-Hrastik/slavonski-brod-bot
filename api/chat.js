@@ -19,24 +19,28 @@ function stripImages(data) {
   return data;
 }
 
-function getCategoryImages(category) {
+function getCategoryItems(category) {
   const s = scrapedContent;
   if (!s) return [];
-  const imgs = [];
-  const addImg = (url, alt) => { if (url) imgs.push({ url, alt: alt || '' }); };
+
+  function item(o, extra) {
+    return { naziv: o.naziv || '', slika: o.slika || '', adresa: o.adresa || '',
+             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '', ...extra };
+  }
 
   if (category === 'gastronomija') {
-    (s.restorani_tz || []).slice(0, 8).forEach(r => addImg(r.slika, r.naziv));
-  } else if (category === 'smjestaj') {
-    (s.smjestaj_hoteli || []).slice(0, 6).forEach(h => addImg(h.slika, h.naziv));
-  } else if (category === 'znamenitosti') {
-    (s.kulturna_bastina || []).forEach(b => addImg(b.slika, b.naziv));
-  } else if (category === 'dogadanja') {
-    (s.kulturna_bastina || []).slice(0, 4).forEach(b => addImg(b.slika, b.naziv));
-  } else if (category === 'priroda' || category === 'sport' || category === 'okolica') {
-    (s.kulturna_bastina || []).filter(b => b.tip?.includes('Izletište') || b.tip?.includes('Priroda') || b.tip?.includes('Zaštićeni')).forEach(b => addImg(b.slika, b.naziv));
+    return (s.restorani_tz || []).filter(r => r.slika).slice(0, 12).map(r => item(r));
   }
-  return imgs.filter(i => i.url).slice(0, 8);
+  if (category === 'smjestaj') {
+    return (s.smjestaj_hoteli || []).filter(h => h.slika).map(h => item(h));
+  }
+  if (category === 'znamenitosti') {
+    return (s.kulturna_bastina || []).filter(b => b.slika).map(b => item(b, { opis: b.opis || '' }));
+  }
+  if (category === 'priroda' || category === 'sport') {
+    return (s.kulturna_bastina || []).filter(b => b.slika && (b.tip?.includes('Izletište') || b.tip?.includes('Priroda') || b.tip?.includes('Zaštićeni'))).map(b => item(b, { opis: b.opis || '' }));
+  }
+  return [];
 }
 
 function buildScrapedSection(category) {
@@ -629,7 +633,8 @@ Pravila:
       reply,
       category: category || lastCategory || null,
       suggestions: getSuggestions(category || lastCategory),
-      images: getCategoryImages(category || lastCategory)
+      items: getCategoryItems(category || lastCategory),
+      images: []
     });
 
   } catch (err) {

@@ -195,28 +195,75 @@ background:#1a5fa8;
 color:white;
 }
 
-/* Minijature slika */
-.thumbnails{
-margin-top:10px;
+/* Kartice s minijaturama */
+.item-cards{
+margin-top:12px;
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.item-card{
+display:flex;
+gap:10px;
+background:#fff;
+border:1px solid #e8e8e8;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 1px 4px rgba(0,0,0,0.07);
+}
+
+.item-card img{
+width:100px;
+height:76px;
+object-fit:cover;
+flex-shrink:0;
+cursor:pointer;
+transition:opacity 0.2s;
+}
+
+.item-card img:hover{ opacity:0.85; }
+
+.item-card-info{
+padding:8px 10px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap:2px;
+min-width:0;
+}
+
+.item-card-info strong{
+font-size:13px;
+color:#142d54;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+.item-card-info small{
+font-size:11px;
+color:#666;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+.item-card-links{
+margin-top:4px;
 display:flex;
 gap:8px;
 flex-wrap:wrap;
 }
 
-.thumbnails img{
-width:90px;
-height:68px;
-object-fit:cover;
-border-radius:8px;
-cursor:pointer;
-border:2px solid transparent;
-transition:border-color 0.2s, transform 0.2s;
+.item-card-links a{
+font-size:11px;
+color:#1a5fa8;
+text-decoration:none;
+font-weight:bold;
 }
 
-.thumbnails img:hover{
-border-color:#c8a84b;
-transform:scale(1.05);
-}
+.item-card-links a:hover{ text-decoration:underline; }
 
 a{
 color:#1a5fa8;
@@ -373,7 +420,7 @@ function formatReply(text){
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
 }
 
-function addMessage(text, type, suggestions, images){
+function addMessage(text, type, suggestions, images, items){
   const chatBox = document.getElementById("chat-box");
 
   const div = document.createElement("div");
@@ -381,19 +428,51 @@ function addMessage(text, type, suggestions, images){
   div.innerHTML = type === "user" ? text : formatReply(text);
   chatBox.appendChild(div);
 
-  if(type === "bot" && images && images.length){
-    const thumbs = document.createElement("div");
-    thumbs.className = "thumbnails";
-    images.forEach(img => {
-      const el = document.createElement("img");
-      el.src = img.url;
-      el.alt = img.alt || '';
-      el.title = img.alt || '';
-      el.onerror = function(){ this.style.display='none'; };
-      el.onclick = () => openModal(img.url);
-      thumbs.appendChild(el);
+  if(type === "bot" && items && items.length){
+    const cards = document.createElement("div");
+    cards.className = "item-cards";
+    items.forEach(it => {
+      const card = document.createElement("div");
+      card.className = "item-card";
+
+      if(it.slika){
+        const img = document.createElement("img");
+        img.src = it.slika;
+        img.alt = it.naziv;
+        img.title = it.naziv;
+        img.onerror = function(){ this.parentElement.style.display='none'; };
+        img.onclick = () => openModal(it.slika);
+        card.appendChild(img);
+      }
+
+      const info = document.createElement("div");
+      info.className = "item-card-info";
+
+      const name = document.createElement("strong");
+      name.textContent = it.naziv;
+      info.appendChild(name);
+
+      if(it.adresa){
+        const adr = document.createElement("small");
+        adr.textContent = it.adresa;
+        info.appendChild(adr);
+      }
+      if(it.telefon){
+        const tel = document.createElement("small");
+        tel.textContent = it.telefon;
+        info.appendChild(tel);
+      }
+
+      const links = document.createElement("div");
+      links.className = "item-card-links";
+      if(it.web){ const a=document.createElement("a"); a.href=it.web; a.textContent="Web"; a.onclick=e=>{e.preventDefault();openModal(it.web);}; links.appendChild(a); }
+      if(it.karta){ const a=document.createElement("a"); a.href=it.karta; a.textContent="Karta"; a.onclick=e=>{e.preventDefault();openModal(it.karta);}; links.appendChild(a); }
+      if(links.children.length) info.appendChild(links);
+
+      card.appendChild(info);
+      cards.appendChild(card);
     });
-    chatBox.appendChild(thumbs);
+    chatBox.appendChild(cards);
   }
 
   if(suggestions && suggestions.length && type === "bot"){
@@ -458,7 +537,7 @@ async function sendMessage(){
     if(data.category) currentCategory = data.category;
 
     if(data.reply){
-      addMessage(data.reply, "bot", data.suggestions, data.images);
+      addMessage(data.reply, "bot", data.suggestions, data.images, data.items);
       chatHistory.push({ role: "assistant", content: data.reply });
       if(chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
     } else {
