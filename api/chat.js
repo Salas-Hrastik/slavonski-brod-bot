@@ -29,16 +29,19 @@ function getCategoryItems(category) {
   }
 
   if (category === 'gastronomija') {
-    return (s.restorani_tz || []).filter(r => r.slika).slice(0, 12).map(r => item(r));
+    return (s.restorani_tz || []).slice(0, 20).map(r => item(r));
   }
   if (category === 'smjestaj') {
-    return (s.smjestaj_hoteli || []).filter(h => h.slika).map(h => item(h));
+    return (s.smjestaj_hoteli || []).map(h => item(h));
   }
   if (category === 'znamenitosti') {
-    return (s.kulturna_bastina || []).filter(b => b.slika).map(b => item(b, { opis: b.opis || '' }));
+    return (s.kulturna_bastina || []).map(b => item(b, { opis: b.opis || '' }));
   }
   if (category === 'priroda' || category === 'sport') {
-    return (s.kulturna_bastina || []).filter(b => b.slika && (b.tip?.includes('Izletište') || b.tip?.includes('Priroda') || b.tip?.includes('Zaštićeni'))).map(b => item(b, { opis: b.opis || '' }));
+    return (s.atrakcije_tz || []).map(a => item(a, { opis: a.opis || '' }));
+  }
+  if (category === 'okolica') {
+    return (s.atrakcije_tz || []).map(a => item(a, { opis: a.opis || '' }));
   }
   return [];
 }

@@ -205,7 +205,6 @@ gap:8px;
 
 .item-card{
 display:flex;
-gap:10px;
 background:#fff;
 border:1px solid #e8e8e8;
 border-radius:10px;
@@ -213,24 +212,32 @@ overflow:hidden;
 box-shadow:0 1px 4px rgba(0,0,0,0.07);
 }
 
-.item-card img{
-width:100px;
-height:76px;
-object-fit:cover;
+.item-card-thumb{
+width:90px;
+height:80px;
 flex-shrink:0;
-cursor:pointer;
-transition:opacity 0.2s;
+overflow:hidden;
 }
 
-.item-card img:hover{ opacity:0.85; }
+.item-card-thumb img{
+width:100%;
+height:100%;
+object-fit:cover;
+cursor:pointer;
+transition:opacity 0.2s;
+display:block;
+}
+
+.item-card-thumb img:hover{ opacity:0.82; }
 
 .item-card-info{
-padding:8px 10px;
+padding:7px 10px;
 display:flex;
 flex-direction:column;
 justify-content:center;
 gap:2px;
 min-width:0;
+flex:1;
 }
 
 .item-card-info strong{
@@ -241,7 +248,7 @@ overflow:hidden;
 text-overflow:ellipsis;
 }
 
-.item-card-info small{
+.item-card-meta{
 font-size:11px;
 color:#666;
 white-space:nowrap;
@@ -254,6 +261,7 @@ margin-top:4px;
 display:flex;
 gap:8px;
 flex-wrap:wrap;
+align-items:center;
 }
 
 .item-card-links a{
@@ -264,6 +272,10 @@ font-weight:bold;
 }
 
 .item-card-links a:hover{ text-decoration:underline; }
+
+.item-card-links a.tel{
+color:#2a7a3a;
+}
 
 a{
 color:#1a5fa8;
@@ -435,16 +447,21 @@ function addMessage(text, type, suggestions, images, items){
       const card = document.createElement("div");
       card.className = "item-card";
 
+      // Thumbnail (ako postoji)
       if(it.slika){
+        const thumb = document.createElement("div");
+        thumb.className = "item-card-thumb";
         const img = document.createElement("img");
         img.src = it.slika;
         img.alt = it.naziv;
         img.title = it.naziv;
-        img.onerror = function(){ this.parentElement.style.display='none'; };
+        img.onerror = function(){ thumb.style.display='none'; };
         img.onclick = () => openModal(it.slika);
-        card.appendChild(img);
+        thumb.appendChild(img);
+        card.appendChild(thumb);
       }
 
+      // Info
       const info = document.createElement("div");
       info.className = "item-card-info";
 
@@ -453,20 +470,37 @@ function addMessage(text, type, suggestions, images, items){
       info.appendChild(name);
 
       if(it.adresa){
-        const adr = document.createElement("small");
-        adr.textContent = it.adresa;
-        info.appendChild(adr);
-      }
-      if(it.telefon){
-        const tel = document.createElement("small");
-        tel.textContent = it.telefon;
-        info.appendChild(tel);
+        const m = document.createElement("div");
+        m.className = "item-card-meta";
+        m.textContent = "📍 " + it.adresa;
+        info.appendChild(m);
       }
 
+      // Linkovi: telefon (tel:), web, karta
       const links = document.createElement("div");
       links.className = "item-card-links";
-      if(it.web){ const a=document.createElement("a"); a.href=it.web; a.textContent="Web"; a.onclick=e=>{e.preventDefault();openModal(it.web);}; links.appendChild(a); }
-      if(it.karta){ const a=document.createElement("a"); a.href=it.karta; a.textContent="Karta"; a.onclick=e=>{e.preventDefault();openModal(it.karta);}; links.appendChild(a); }
+
+      if(it.telefon){
+        const a = document.createElement("a");
+        a.className = "tel";
+        a.href = "tel:" + it.telefon.replace(/\s/g,'');
+        a.textContent = "📞 " + it.telefon;
+        links.appendChild(a);
+      }
+      if(it.web){
+        const a = document.createElement("a");
+        a.href = it.web;
+        a.textContent = "🌐 Web";
+        a.onclick = e => { e.preventDefault(); openModal(it.web); };
+        links.appendChild(a);
+      }
+      if(it.karta){
+        const a = document.createElement("a");
+        a.href = it.karta;
+        a.textContent = "🗺 Karta";
+        a.onclick = e => { e.preventDefault(); openModal(it.karta); };
+        links.appendChild(a);
+      }
       if(links.children.length) info.appendChild(links);
 
       card.appendChild(info);
