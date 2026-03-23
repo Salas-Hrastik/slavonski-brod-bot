@@ -147,12 +147,13 @@ button.send-btn:hover{
 background:#b8982e;
 }
 
-/* Brzi tabovi — prikazuju se samo na početku */
+/* Brzi tabovi — unutar welcome okvira, samo na početku */
 .quick{
-margin-top:14px;
+margin-top:18px;
 display:flex;
 gap:8px;
 flex-wrap:wrap;
+justify-content:center;
 }
 
 .quick button{
@@ -237,26 +238,24 @@ font-size:15px;
 <div class="main">
 
   <div id="chat-box" class="chat-box">
-    <div class="welcome">
-      <div class="emoji">🏰</div>
+    <div class="welcome" id="welcome-block">
       <p><strong>Dobrodošli u Slavonski Brod!</strong></p>
       <p>Pitajte me o znamenitostima, gastronomiji, smještaju, događanjima i svemu što grad nudi.</p>
+      <!-- Brzi tabovi: unutar okvira, skrivaju se nakon prvog upita -->
+      <div class="quick" id="quick-tabs">
+        <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')">🏰 Znamenitosti</button>
+        <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')">🍽 Gastronomija</button>
+        <button onclick="quickAsk('Koja događanja se održavaju?')">🎭 Događanja</button>
+        <button onclick="quickAsk('Smještaj u Slavonskom Brodu')">🏨 Smještaj</button>
+        <button onclick="quickAsk('Brodsko kolo festival')">🎶 Brodsko kolo</button>
+        <button onclick="quickAsk('Izleti iz Slavonskog Broda')">🗺 Okolica</button>
+      </div>
     </div>
   </div>
 
   <div class="input-row">
     <input id="user-input" placeholder="Postavite pitanje o Slavonskom Brodu...">
     <button class="send-btn" id="send-btn">Pošalji</button>
-  </div>
-
-  <!-- Brzi tabovi: vidljivi samo na početku, skrivaju se nakon prvog slanja -->
-  <div class="quick" id="quick-tabs">
-    <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')">🏰 Znamenitosti</button>
-    <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')">🍽 Gastronomija</button>
-    <button onclick="quickAsk('Koja događanja se održavaju?')">🎭 Događanja</button>
-    <button onclick="quickAsk('Smještaj u Slavonskom Brodu')">🏨 Smještaj</button>
-    <button onclick="quickAsk('Brodsko kolo festival')">🎶 Brodsko kolo</button>
-    <button onclick="quickAsk('Izleti iz Slavonskog Broda')">🗺 Okolica</button>
   </div>
 
 </div>
@@ -303,13 +302,11 @@ async function sendMessage(){
   const message = input.value.trim();
   if(!message) return;
 
-  // Ukloni welcome poruku i tabove nakon prvog slanja
+  // Ukloni welcome blok (sadrži dobrodošicu + tabove) nakon prvog slanja
   if(firstMessage){
     firstMessage = false;
-    const welcome = document.querySelector(".welcome");
+    const welcome = document.getElementById("welcome-block");
     if(welcome) welcome.remove();
-    const tabs = document.getElementById("quick-tabs");
-    if(tabs) tabs.style.display = "none";
   }
 
   addMessage(message, "user");
