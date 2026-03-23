@@ -26,7 +26,7 @@ overflow:hidden;
 header{
 background:#142d54;
 color:white;
-padding:14px 24px;
+padding:10px 24px;
 display:flex;
 align-items:center;
 gap:16px;
@@ -34,15 +34,13 @@ box-shadow:0 2px 8px rgba(0,0,0,0.3);
 flex-shrink:0;
 }
 
-header .icon{
+header .logo-img{
 width:56px;
 height:56px;
-border-radius:12px;
-background:#c8a84b;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
+object-fit:contain;
+border-radius:8px;
+background:white;
+padding:4px;
 flex-shrink:0;
 }
 
@@ -149,8 +147,9 @@ button.send-btn:hover{
 background:#b8982e;
 }
 
+/* Brzi tabovi — prikazuju se samo na početku */
 .quick{
-margin-top:16px;
+margin-top:14px;
 display:flex;
 gap:8px;
 flex-wrap:wrap;
@@ -171,6 +170,7 @@ transition:background 0.2s;
 background:#142d54;
 }
 
+/* Sugestivna pitanja — kontekstualna, nakon odgovora */
 .suggestions{
 margin-top:8px;
 display:flex;
@@ -226,10 +226,11 @@ font-size:15px;
 <body>
 
 <header>
-  <div class="icon">🏰</div>
+  <img class="logo-img" src="https://www.tzgsb.hr/static/images/tzgsb_logo_120x120.png" alt="TZ Slavonski Brod" onerror="this.style.display='none';document.getElementById('fallback-icon').style.display='flex'">
+  <span id="fallback-icon" style="display:none;width:56px;height:56px;border-radius:12px;background:#c8a84b;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">🏰</span>
   <div>
     <h1>Turistički informator</h1>
-    <small>Slavonski Brod &bull; AI asistent &bull; Tvrđava Brod</small>
+    <small>Slavonski Brod &bull; AI asistent &bull; Turistička zajednica</small>
   </div>
 </header>
 
@@ -248,7 +249,8 @@ font-size:15px;
     <button class="send-btn" id="send-btn">Pošalji</button>
   </div>
 
-  <div class="quick">
+  <!-- Brzi tabovi: vidljivi samo na početku, skrivaju se nakon prvog slanja -->
+  <div class="quick" id="quick-tabs">
     <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')">🏰 Znamenitosti</button>
     <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')">🍽 Gastronomija</button>
     <button onclick="quickAsk('Koja događanja se održavaju?')">🎭 Događanja</button>
@@ -263,6 +265,7 @@ font-size:15px;
 
 let chatHistory = [];
 let currentCategory = null;
+let firstMessage = true;
 
 function formatReply(text){
   return text
@@ -286,7 +289,7 @@ function addMessage(text, type, suggestions){
     suggestions.forEach(s => {
       const btn = document.createElement("button");
       btn.textContent = s;
-      btn.onclick = () => quickAsk(s.replace(/^[^\w\s]+\s*/,''));
+      btn.onclick = () => quickAsk(s.replace(/^[^\w\s\u00C0-\u024F]+\s*/,''));
       sug.appendChild(btn);
     });
     chatBox.appendChild(sug);
@@ -300,9 +303,14 @@ async function sendMessage(){
   const message = input.value.trim();
   if(!message) return;
 
-  // Ukloni welcome poruku
-  const welcome = document.querySelector(".welcome");
-  if(welcome) welcome.remove();
+  // Ukloni welcome poruku i tabove nakon prvog slanja
+  if(firstMessage){
+    firstMessage = false;
+    const welcome = document.querySelector(".welcome");
+    if(welcome) welcome.remove();
+    const tabs = document.getElementById("quick-tabs");
+    if(tabs) tabs.style.display = "none";
+  }
 
   addMessage(message, "user");
   chatHistory.push({ role: "user", content: message });
@@ -340,7 +348,6 @@ async function sendMessage(){
     if(data.reply){
       addMessage(data.reply, "bot", data.suggestions);
       chatHistory.push({ role: "assistant", content: data.reply });
-      // Max history
       if(chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
     } else {
       addMessage("Asistent nije dao odgovor.", "bot");
