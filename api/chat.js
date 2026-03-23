@@ -681,7 +681,8 @@ Pravila:
 4. Brodsko kolo (lipanj) je najvažnija manifestacija
 5. Slavonski kulen i fiš-paprikaš su kulinarski specijaliteti
 6. Koristi emoji za bolji vizualni dojam
-7. Na kraju odgovora dodaj TOČNO ovaj format u zadnjem retku bez razmaka između SUGGESTIONS: i [: SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]`;
+7. Na APSOLUTNOM KRAJU odgovora, u zadnjem retku, dodaj TOČNO ovako (bez ikakvog prefiksa, zagrade ili dvotočke ispred, uvijek na HRVATSKOM jeziku):
+SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na hrvatskom?"]`;
 
     const messages = [
       { role: "system", content: systemPrompt },
@@ -698,15 +699,15 @@ Pravila:
 
     let raw = completion.choices[0]?.message?.content || "Nije moguće generirati odgovor.";
 
-    // Izvuci SUGGESTIONS — tolerira razmak i višeredni JSON
+    // Izvuci SUGGESTIONS — tolerira bilo koji prefix ([: , \n, razmak itd.)
     let aiSuggestions = null;
-    const sugMatch = raw.match(/\nSUGGESTIONS:\s*(\[[\s\S]+?\])\s*$/);
+    const sugMatch = raw.match(/(?:\[?:?\s*)SUGGESTIONS:\s*(\[[\s\S]+?\])\s*\]?\s*$/);
     if (sugMatch) {
       try { aiSuggestions = JSON.parse(sugMatch[1]); } catch {}
       raw = raw.slice(0, sugMatch.index).trimEnd();
     }
-    // Fallback: ukloni ostatak SUGGESTIONS retka ako parsiranje nije uspjelo
-    raw = raw.replace(/\nSUGGESTIONS:[\s\S]*$/, '').trimEnd();
+    // Fallback: ukloni sve što počinje s SUGGESTIONS (ili [...SUGGESTIONS) do kraja
+    raw = raw.replace(/\[?:?\s*SUGGESTIONS:[\s\S]*$/, '').trimEnd();
 
     // Pronađi relevantne stavke sa slikom za AI odgovor (pretraži po ključnim riječima)
     const aiItems = findRelevantItems(message + ' ' + raw, resolvedCat);
