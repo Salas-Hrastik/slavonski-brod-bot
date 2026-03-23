@@ -615,7 +615,10 @@ Pravila:
 4. Tvrđava Brod je GLAVNA atrakcija — uvijek je istakni kod pitanja o znamenitostima
 5. Brodsko kolo (lipanj) je najvažnija manifestacija — uvijek ga istakni
 6. Slavonski kulen i fiš-paprikaš su kulinarski specijaliteti koje treba istaknuti
-7. Koristi emoji za bolji vizualni dojam`;
+7. Koristi emoji za bolji vizualni dojam
+8. Na kraju svakog odgovora dodaj TOČNO jedan redak u formatu (bez ičega iza):
+SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]
+— 3 kratka, kontekstualna pitanja koja korisnik prirodno može postaviti NAKON ovog odgovora, vezana uz sadržaj koji je upravo prikazan. Nikad ne ponavljaj ista pitanja kao u prethodnom odgovoru.`;
 
     const messages = [
       { role: "system", content: systemPrompt },
@@ -630,12 +633,20 @@ Pravila:
       max_tokens: 1200,
     });
 
-    const reply = completion.choices[0]?.message?.content || "Nije moguće generirati odgovor.";
+    let raw = completion.choices[0]?.message?.content || "Nije moguće generirati odgovor.";
+
+    // Izvuci AI-generirane sugestije iz zadnjeg retka SUGGESTIONS:[...]
+    let aiSuggestions = null;
+    const sugMatch = raw.match(/\nSUGGESTIONS:(\[.+?\])\s*$/s);
+    if (sugMatch) {
+      try { aiSuggestions = JSON.parse(sugMatch[1]); } catch {}
+      raw = raw.slice(0, sugMatch.index).trimEnd();
+    }
 
     return res.status(200).json({
-      reply,
+      reply: raw,
       category: category || lastCategory || null,
-      suggestions: getSuggestions(category || lastCategory),
+      suggestions: aiSuggestions || getSuggestions(category || lastCategory),
       items: getCategoryItems(category || lastCategory),
       images: []
     });
