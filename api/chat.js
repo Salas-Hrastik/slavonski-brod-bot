@@ -581,7 +581,36 @@ export default async function handler(req, res) {
           '🥃 **Domaća rakija** — Šljivovica iz posavskih domaćinstava';
       }
 
-      // 8. KONTAKT / OPĆE
+      // 8. VLAK / KOLODVOR
+      if (!faqReply && (ml.includes('vlak') || ml.includes('train') || ml.includes('zug') || ml.includes('željeznic') || ml.includes('zeleznic') || ml.includes('kolodvor') || ml.includes('hž') || ml.includes('hz') || ml.includes('hžpp') || ml.includes('hzpp'))) {
+        faqReply =
+          '🚂 **Vlak iz Slavonskog Broda**\n\n' +
+          '📍 **Kolodvor Slavonski Brod**\n' +
+          'Trg Josipa Langa 1, 35000 Slavonski Brod\n' +
+          '[Otvori na karti](https://www.google.com/maps/search/?api=1&query=Zeljeznicki+kolodvor+Slavonski+Brod)\n\n' +
+          '🗺️ **Glavne linije:**\n' +
+          '• **Slavonski Brod → Zagreb** — direktna linija, ~2h 30min\n' +
+          '• **Slavonski Brod → Osijek** — direktna linija, ~2h\n' +
+          '• **Slavonski Brod → Split** — s presedom u Zagrebu\n\n' +
+          '📅 Vozni red i karte: [hzpp.hr](https://www.hzpp.hr)\n' +
+          '📞 HŽ info: **060 333 444**';
+      }
+
+      // 9. AUTOBUS / BUS STANICA
+      if (!faqReply && (ml.includes('autobus') || ml.includes('autobusn') || ml.includes('bus stanica') || ml.includes('autobusna stanica') || ml.includes('akz') || (ml.includes('bus') && !ml.includes('vlak')))) {
+        faqReply =
+          '🚌 **Autobusni prijevoz iz Slavonskog Broda**\n\n' +
+          '📍 **Autobusni kolodvor Slavonski Brod**\n' +
+          'Petra Krešimira IV, 35000 Slavonski Brod\n' +
+          '[Otvori na karti](https://www.google.com/maps/search/?api=1&query=Autobusni+kolodvor+Slavonski+Brod)\n\n' +
+          '🗺️ **Linije:**\n' +
+          '• Zagreb, Osijek, Đakovo, Vinkovci, Split i ostali gradovi\n' +
+          '• Lokalne linije po Brodsko-posavskoj županiji\n\n' +
+          '📅 Vozni red: [akz.hr](https://www.akz.hr) ili [getbybus.com](https://getbybus.com)\n' +
+          '📞 Kolodvor: **035 280 824**';
+      }
+
+      // 11. KONTAKT / OPĆE
       if (!faqReply && (ml.includes('kontakt') || ml.includes('contact') || ml.includes('telefon tz') || ml.includes('email tz') || ml.includes('info o brodu') || ml.includes('informacije o brodu'))) {
         faqReply =
           'ℹ️ Kontakt i informacije o Slavonskom Brodu:\n\n' +
@@ -592,7 +621,7 @@ export default async function handler(req, res) {
           '[Više informacija](https://www.tzgsb.hr)';
       }
 
-      // 9. PRISTUPAČNOST
+      // 12. PRISTUPAČNOST
       if (!faqReply && (ml.includes('invalid') || ml.includes('pristupačn') || ml.includes('kolica') || ml.includes('wheelchair') || ml.includes('accessible') || ml.includes('hendikep'))) {
         faqReply =
           '♿ Pristupačnost u Slavonskom Brodu:\n\n' +
