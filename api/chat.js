@@ -40,9 +40,7 @@ function getCategoryItems(category) {
   if (category === 'priroda' || category === 'sport') {
     return (s.atrakcije_tz || []).map(a => item(a, { opis: a.opis || '' }));
   }
-  if (category === 'okolica') {
-    return (s.atrakcije_tz || []).map(a => item(a, { opis: a.opis || '' }));
-  }
+  // okolica — AI obrađuje s db.okolica.izleti (pravi izleti iz SB, ne lokalne atrakcije)
   return [];
 }
 
@@ -627,7 +625,6 @@ export default async function handler(req, res) {
         znamenitosti: `🏛️ **Kulturna baština Slavonskog Broda** (${items.length} lokacija)\n\nGlavna atrakcija je **Tvrđava Brod** — jedna od najvećih baroknih tvrđava u ovom dijelu Europe. Evo svih lokacija:`,
         priroda:      `🌿 **Turističke atrakcije i rekreacija** (${items.length} lokacija)\n\nSlavonski Brod nudi raznovrsne mogućnosti za aktivan odmor uz rijeku Savu i u okolnoj prirodi:`,
         sport:        `🏃 **Sport i rekreacija u Slavonskom Brodu** (${items.length} lokacija):`,
-        okolica:      `🗺️ **Izletišta i atrakcije u okolici** (${items.length} lokacija)\n\nIz Slavonskog Broda lako se dostupni brojni izletnički ciljevi:`,
       };
       const intro = intros[resolvedCat] || `📍 **${items.length} lokacija** u Slavonskom Brodu:`;
 
