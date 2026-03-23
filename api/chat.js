@@ -46,6 +46,35 @@ function getCategoryItems(category) {
   return [];
 }
 
+// Traži stavke sa slikom koje odgovaraju ključnim riječima u tekstu (za AI odgovore)
+function findRelevantItems(text, category) {
+  const s = scrapedContent;
+  if (!s) return [];
+  const t = text.toLowerCase();
+
+  function item(o) {
+    return { naziv: o.naziv || '', slika: o.slika || '', adresa: o.adresa || '',
+             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '' };
+  }
+
+  // Pretraži sve dostupne izvore sa slikama
+  const pools = [
+    ...(s.kulturna_bastina || []),
+    ...(s.restorani_tz || []),
+    ...(s.smjestaj_hoteli || []),
+  ];
+
+  const matched = pools.filter(o => {
+    if (!o.slika) return false;
+    const name = (o.naziv || '').toLowerCase();
+    // Provjeri sadrži li tekst upita ključne riječi iz naziva
+    const words = name.split(/[\s\-—/]+/).filter(w => w.length > 3);
+    return words.some(w => t.includes(w));
+  });
+
+  return matched.slice(0, 4).map(item);
+}
+
 function buildScrapedSection(category) {
   const s = scrapedContent;
   if (!s) return '';
@@ -652,8 +681,7 @@ Pravila:
 4. Brodsko kolo (lipanj) je najvažnija manifestacija
 5. Slavonski kulen i fiš-paprikaš su kulinarski specijaliteti
 6. Koristi emoji za bolji vizualni dojam
-7. Na kraju odgovora dodaj redak: SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]
-— 3 kontekstualna follow-up pitanja vezana uz upravo prikazani sadržaj.`;
+7. Na kraju odgovora dodaj TOČNO ovaj format u zadnjem retku bez razmaka između SUGGESTIONS: i [: SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]`;
 
     const messages = [
       { role: "system", content: systemPrompt },
@@ -670,18 +698,24 @@ Pravila:
 
     let raw = completion.choices[0]?.message?.content || "Nije moguće generirati odgovor.";
 
+    // Izvuci SUGGESTIONS — tolerira razmak i višeredni JSON
     let aiSuggestions = null;
-    const sugMatch = raw.match(/\nSUGGESTIONS:(\[.+?\])\s*$/s);
+    const sugMatch = raw.match(/\nSUGGESTIONS:\s*(\[[\s\S]+?\])\s*$/);
     if (sugMatch) {
       try { aiSuggestions = JSON.parse(sugMatch[1]); } catch {}
       raw = raw.slice(0, sugMatch.index).trimEnd();
     }
+    // Fallback: ukloni ostatak SUGGESTIONS retka ako parsiranje nije uspjelo
+    raw = raw.replace(/\nSUGGESTIONS:[\s\S]*$/, '').trimEnd();
+
+    // Pronađi relevantne stavke sa slikom za AI odgovor (pretraži po ključnim riječima)
+    const aiItems = findRelevantItems(message + ' ' + raw, resolvedCat);
 
     return res.status(200).json({
       reply: raw,
       category: resolvedCat || null,
       suggestions: aiSuggestions || getSuggestions(resolvedCat),
-      items: [],
+      items: aiItems,
       images: []
     });
 
