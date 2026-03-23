@@ -205,6 +205,24 @@ a:hover{
 text-decoration:underline;
 }
 
+.more-btn{
+display:block;
+margin-top:10px;
+background:none;
+border:1px solid #c8a84b;
+color:#c8a84b;
+padding:5px 14px;
+border-radius:14px;
+cursor:pointer;
+font-size:12px;
+transition:all 0.2s;
+}
+
+.more-btn:hover{
+background:#c8a84b;
+color:#142d54;
+}
+
 .welcome{
 text-align:center;
 padding:20px;
@@ -274,12 +292,41 @@ function formatReply(text){
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
 }
 
+const PREVIEW_LIMIT = 400; // znakova vidljivo bez klikanja
+
 function addMessage(text, type, suggestions){
   const chatBox = document.getElementById("chat-box");
 
   const div = document.createElement("div");
   div.className = type === "user" ? "user-message" : "bot-message";
-  div.innerHTML = type === "user" ? text : formatReply(text);
+
+  if(type === "user"){
+    div.innerHTML = text;
+  } else {
+    const full = formatReply(text);
+    // Skrati na PREVIEW_LIMIT (po granici riječi, ne usred HTML taga)
+    if(text.length > PREVIEW_LIMIT){
+      // Pronađi sigurnu točku rezanja u izvornom tekstu
+      let cut = text.lastIndexOf(' ', PREVIEW_LIMIT);
+      if(cut < 200) cut = PREVIEW_LIMIT;
+      const preview = formatReply(text.substring(0, cut));
+
+      div.innerHTML = preview + '<span class="ellipsis"> …</span>';
+
+      const moreBtn = document.createElement("button");
+      moreBtn.className = "more-btn";
+      moreBtn.textContent = "Prikaži više ▾";
+      moreBtn.onclick = () => {
+        div.innerHTML = full;
+        moreBtn.remove();
+        chatBox.scrollTop = chatBox.scrollHeight;
+      };
+      div.appendChild(moreBtn);
+    } else {
+      div.innerHTML = full;
+    }
+  }
+
   chatBox.appendChild(div);
 
   if(suggestions && suggestions.length && type === "bot"){
