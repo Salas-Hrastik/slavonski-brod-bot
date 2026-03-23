@@ -587,10 +587,47 @@ export default async function handler(req, res) {
       }
     }
 
-    // === AI odgovor ===
+    // === Strukturirani odgovor (bez AI — brzo) ===
+    const resolvedCat = category || lastCategory;
+    const items = getCategoryItems(resolvedCat);
+
+    if (items.length > 0 && !isConversationalMode && !isGeneralKnowledgeQuery) {
+      const intros = {
+        gastronomija: `🍽️ **Restorani u Slavonskom Brodu** (${items.length} registriranih objekata pri TZ)\n\nSlavonski Brod poznata je po bogatoj slavonskoj kuhinji — kulenu, čobancu i fiš-paprikašu. Evo svih restorana:`,
+        smjestaj:     `🏨 **Smještaj u Slavonskom Brodu** (${items.length} objekata)\n\nOd hotela do pansiona — evo svih smještajnih objekata registriranih pri Turističkoj zajednici:`,
+        znamenitosti: `🏛️ **Kulturna baština Slavonskog Broda** (${items.length} lokacija)\n\nGlavna atrakcija je **Tvrđava Brod** — jedna od najvećih baroknih tvrđava u ovom dijelu Europe. Evo svih lokacija:`,
+        priroda:      `🌿 **Turističke atrakcije i rekreacija** (${items.length} lokacija)\n\nSlavonski Brod nudi raznovrsne mogućnosti za aktivan odmor uz rijeku Savu i u okolnoj prirodi:`,
+        sport:        `🏃 **Sport i rekreacija u Slavonskom Brodu** (${items.length} lokacija):`,
+        okolica:      `🗺️ **Izletišta i atrakcije u okolici** (${items.length} lokacija)\n\nIz Slavonskog Broda lako se dostupni brojni izletnički ciljevi:`,
+      };
+      const intro = intros[resolvedCat] || `📍 **${items.length} lokacija** u Slavonskom Brodu:`;
+
+      const suggPool = {
+        gastronomija: ['Koji restoran ima slavonski kulen?', 'Gdje je fiš-paprikaš?', 'Terasa uz Savu?', 'Preporuka za večeru?', 'Gdje ručati s djecom?', 'Koji restorani rade nedjeljom?'],
+        smjestaj:     ['Koji hotel je najbliži centru?', 'Ima li apartmana uz Savu?', 'Parkiranje uz hotel?', 'Najbliži hotel Tvrđavi?', 'Ima li hostela u gradu?', 'Jeftiniji smještaj?'],
+        znamenitosti: ['Radno vrijeme Tvrđave?', 'Što je Living History?', 'Kuća Brlićevih — info?', 'Gdje kupiti ulaznice?', 'Muzej tambure — gdje?', 'Vođene ture po gradu?'],
+        priroda:      ['Biciklistička staza uz Savu?', 'Gdje ići ribolovom?', 'Poloj — šetnica uz Savu?', 'Jezero Petnja — kako doći?', 'Gajna rezervat — ulaz?', 'Lov u BPŽ?'],
+        sport:        ['Teniski tereni u gradu?', 'Sportska dvorana Vijuš?', 'Plivanje — bazeni?', 'Jogging staze?', 'Sportski centri?'],
+        okolica:      ['Kako do Đakova?', 'Vinkovci — što posjetiti?', 'Osijek od Broda?', 'Kutjevo vina — izlet?', 'Bosanski Brod — prijelaz?', 'Dilj gora — planinarenje?'],
+      };
+      const pool = suggPool[resolvedCat] || getSuggestions(resolvedCat);
+      // Odaberi 3 sugestije na temelju duljine poruke kao pseudo-randomizator
+      const offset = message.length % Math.max(1, pool.length - 2);
+      const suggestions = pool.slice(offset, offset + 3).concat(pool.slice(0, Math.max(0, 3 - (pool.length - offset)))).slice(0, 3);
+
+      return res.status(200).json({
+        reply: intro,
+        category: resolvedCat,
+        suggestions,
+        items,
+        images: []
+      });
+    }
+
+    // === AI odgovor (za konverzacijska i složena pitanja) ===
     const contextData = isConversationalMode || isGeneralKnowledgeQuery ? db : context;
     const contextStr = JSON.stringify(stripImages(contextData), null, 1);
-    const scrapedSection = buildScrapedSection(category || lastCategory);
+    const scrapedSection = buildScrapedSection(resolvedCat);
 
     const langInstruction = lang === 'en'
       ? 'The user is writing in English. Respond in English.'
@@ -602,7 +639,7 @@ export default async function handler(req, res) {
 
 ${langInstruction}
 
-Koristiš isključivo podatke iz baze i svoja opća znanja o gradu. Budi prijateljski, informativan i koncizan. Formatiranje: koristi markdown (bold za naslove, bullet točke za liste, linkovi za mape i web). Uvijek navedi link na Google Maps gdje je moguće.
+Koristiš isključivo podatke iz baze i svoja opća znanja o gradu. Budi prijateljski, informativan i koncizan. Koristi markdown (bold, bullet točke, linkovi na Google Maps).
 
 Baza podataka o Slavonskom Brodu:
 ${contextStr}
@@ -610,19 +647,17 @@ ${scrapedSection}
 
 Pravila:
 1. Odgovaraj samo na pitanja vezana uz Slavonski Brod i turizam u regiji
-2. Za smještaj, restorane i usluge navedi adresu i link na kartu gdje je dostupan
-3. Ne izmišljaj informacije — ako nešto ne znaš, uputi na TZ Slavonski Brod (+385 35 447 721)
-4. Tvrđava Brod je GLAVNA atrakcija — uvijek je istakni kod pitanja o znamenitostima
-5. Brodsko kolo (lipanj) je najvažnija manifestacija — uvijek ga istakni
-6. Slavonski kulen i fiš-paprikaš su kulinarski specijaliteti koje treba istaknuti
-7. Koristi emoji za bolji vizualni dojam
-8. Na kraju svakog odgovora dodaj TOČNO jedan redak u formatu (bez ičega iza):
-SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]
-— 3 kratka, kontekstualna pitanja koja korisnik prirodno može postaviti NAKON ovog odgovora, vezana uz sadržaj koji je upravo prikazan. Nikad ne ponavljaj ista pitanja kao u prethodnom odgovoru.`;
+2. Ne izmišljaj informacije — ako nešto ne znaš, uputi na TZ (+385 35 447 721)
+3. Tvrđava Brod je GLAVNA atrakcija — uvijek je istakni
+4. Brodsko kolo (lipanj) je najvažnija manifestacija
+5. Slavonski kulen i fiš-paprikaš su kulinarski specijaliteti
+6. Koristi emoji za bolji vizualni dojam
+7. Na kraju odgovora dodaj redak: SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]
+— 3 kontekstualna follow-up pitanja vezana uz upravo prikazani sadržaj.`;
 
     const messages = [
       { role: "system", content: systemPrompt },
-      ...conversationHistory.slice(-8),
+      ...conversationHistory.slice(-6),
       { role: "user", content: message }
     ];
 
@@ -630,12 +665,11 @@ SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]
       model: "gpt-4o-mini",
       messages,
       temperature: 0.7,
-      max_tokens: 1200,
+      max_tokens: 900,
     });
 
     let raw = completion.choices[0]?.message?.content || "Nije moguće generirati odgovor.";
 
-    // Izvuci AI-generirane sugestije iz zadnjeg retka SUGGESTIONS:[...]
     let aiSuggestions = null;
     const sugMatch = raw.match(/\nSUGGESTIONS:(\[.+?\])\s*$/s);
     if (sugMatch) {
@@ -645,9 +679,9 @@ SUGGESTIONS:["pitanje1","pitanje2","pitanje3"]
 
     return res.status(200).json({
       reply: raw,
-      category: category || lastCategory || null,
-      suggestions: aiSuggestions || getSuggestions(category || lastCategory),
-      items: getCategoryItems(category || lastCategory),
+      category: resolvedCat || null,
+      suggestions: aiSuggestions || getSuggestions(resolvedCat),
+      items: [],
       images: []
     });
 
