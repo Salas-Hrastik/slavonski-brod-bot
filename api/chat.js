@@ -468,6 +468,11 @@ export default async function handler(req, res) {
       return res.status(400).json({ reply: "Poruka je prazna." });
     }
 
+    // Warmup ping — odmah vrati, ne zovi OpenAI
+    if (message === '__warmup__') {
+      return res.status(200).json({ reply: '', category: null, suggestions: [], items: [], images: [] });
+    }
+
     const { context, category, matched = true } = getRelevantContext(message, db, lastCategory);
     const msgLower = message.toLowerCase();
     const lang = detectLang(message);
@@ -650,6 +655,34 @@ export default async function handler(req, res) {
 
     // === Strukturirani odgovor (bez AI — brzo) ===
     const resolvedCat = category || lastCategory;
+
+    // O gradu — template bez AI
+    if (resolvedCat === 'opcenito' && !isConversationalMode && !isDetailQuery) {
+      const s = scrapedContent || {};
+      const o = s.o_nama || {};
+      const gradOpis = o.grad_opis ? o.grad_opis.substring(0, 500) : '';
+      const reply =
+        `🏙️ **Slavonski Brod — O gradu**\n\n` +
+        `📍 Grad na lijevoj obali rijeke Save, uz granicu s Bosnom i Hercegovinom\n` +
+        `👥 Oko 44.000 stanovnika | Brodsko-posavska županija\n` +
+        `🗺️ 200 km od Zagreba | 100 km od Osijeka\n\n` +
+        (gradOpis ? `${gradOpis}\n\n` : '') +
+        `**Kontakt i informacije:**\n` +
+        `🏢 Turistička zajednica Grada Slavonskog Broda\n` +
+        `📍 Trg pobjede 28/I, 35000 Slavonski Brod\n` +
+        `📞 [+385 35 447 721](tel:+38535447721)\n` +
+        `✉️ info@tzgsb.hr\n` +
+        `🌐 [tzgsb.hr](https://www.tzgsb.hr)\n\n` +
+        `🏛️ Grad osnovan u rimsko doba (Marsonia), danas poznat po **Tvrđavi Brod** i **Brodskom kolu** — najdugovječnijoj smotri folklora u Hrvatskoj.`;
+      return res.status(200).json({
+        reply,
+        category: 'opcenito',
+        suggestions: ['🏰 Tvrđava Brod?', '🍽️ Gdje ručati?', '🎭 Brodsko kolo — kada?'],
+        items: [],
+        images: []
+      });
+    }
+
     const items = getCategoryItems(resolvedCat);
 
     if (items.length > 0 && !isConversationalMode && !isGeneralKnowledgeQuery) {

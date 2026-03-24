@@ -754,6 +754,15 @@ async function loadWeather(){
 
 loadWeather();
 
+// Warmup — grije Vercel serverless funkciju da prvi pravi upit bude brz
+setTimeout(() => {
+  fetch('/api/chat', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: '__warmup__', history: [], category: null })
+  }).catch(() => {});
+}, 500);
+
 </script>
 
 <!-- Modal popup -->
