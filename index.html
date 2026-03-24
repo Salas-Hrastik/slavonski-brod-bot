@@ -521,6 +521,7 @@ width:100%;
 let chatHistory = [];
 let currentCategory = null;
 let firstMessage = true;
+let currentWeather = null; // globalni weather kontekst za AI
 
 // ===== FORMAT REPLY (markdown → HTML) =====
 function formatReply(text){
@@ -669,7 +670,8 @@ async function sendMessage(){
       body: JSON.stringify({
         message,
         history: chatHistory.slice(-10),
-        category: currentCategory
+        category: currentCategory,
+        weather: currentWeather
       })
     });
 
@@ -749,25 +751,28 @@ document.getElementById("chat-box").addEventListener("click", function(e){
   openModal(href);
 });
 
-// ===== WEATHER — direktno iz browsera (Open-Meteo, CORS OK) =====
+// ===== WEATHER — dohvati aktualno + prognozu, pohrani globalno =====
 async function loadWeather(){
   const el = document.getElementById("weather-info");
-  const ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌦️',61:'🌧️',63:'🌧️',65:'🌧️',71:'❄️',73:'❄️',75:'❄️',77:'❄️',80:'🌦️',81:'🌦️',82:'🌦️',85:'❄️',86:'❄️',95:'⛈️',96:'⛈️',99:'⛈️'};
-  // 1. Pokušaj direktno iz browsera (Open-Meteo dopušta CORS)
-  try {
-    const r = await fetch("https://api.open-meteo.com/v1/forecast?latitude=45.16&longitude=18.015&current_weather=true&wind_speed_unit=kmh");
-    const d = await r.json();
-    const w = d.current_weather;
-    el.textContent = `${ICONS[w.weathercode]||'🌡️'} ${Math.round(w.temperature)}°C  •  🌬️ ${Math.round(w.windspeed)} km/h`;
-    return;
-  } catch(e1) {}
-  // 2. Fallback: server-side endpoint
   try {
     const r = await fetch("/api/weather");
     const d = await r.json();
-    if(d.temperature != null) el.textContent = `${d.icon||'🌡️'} ${d.temperature}°C  •  🌬️ ${d.windspeed} km/h`;
-    else el.textContent = '';
-  } catch(e2) { el.textContent = ''; }
+    currentWeather = d; // pohrani za AI kontekst
+    if(d.temperature != null){
+      el.textContent = `${d.icon} ${d.temperature}°C  •  🌬️ ${d.windspeed} km/h`;
+    } else {
+      el.textContent = '';
+    }
+  } catch(e){
+    // Fallback: direktno iz browsera
+    try {
+      const r2 = await fetch("https://api.open-meteo.com/v1/forecast?latitude=45.16&longitude=18.015&current_weather=true&wind_speed_unit=kmh");
+      const d2 = await r2.json();
+      const w = d2.current_weather;
+      el.textContent = `🌡️ ${Math.round(w.temperature)}°C  •  🌬️ ${Math.round(w.windspeed)} km/h`;
+      currentWeather = { temperature: Math.round(w.temperature), windspeed: Math.round(w.windspeed), forecast: [] };
+    } catch(e2){ el.textContent = ''; }
+  }
 }
 
 loadWeather();

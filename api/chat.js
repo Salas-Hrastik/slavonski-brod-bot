@@ -462,7 +462,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, history, category: lastCategory } = req.body;
+    const { message, history, category: lastCategory, weather } = req.body;
 
     if (!message) {
       return res.status(400).json({ reply: "Poruka je prazna." });
@@ -728,7 +728,28 @@ export default async function handler(req, res) {
       ? 'Der Benutzer schreibt auf Deutsch. Antworte auf Deutsch.'
       : 'Korisnik piše na hrvatskom. Odgovaraj na hrvatskom.';
 
+    // Pripremi weather/datum kontekst za AI
+    const now = new Date();
+    const MONTHS = ['siječanj','veljača','ožujak','travanj','svibanj','lipanj','srpanj','kolovoz','rujan','listopad','studeni','prosinac'];
+    const DAYS   = ['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
+    const datumStr = weather?.datum || `${now.getDate()}. ${MONTHS[now.getMonth()]} ${now.getFullYear()}.`;
+    const danStr   = weather?.dan   || DAYS[now.getDay()];
+
+    let weatherCtx = `\nTrenutni datum: ${danStr}, ${datumStr}\nSezona: ${['prosinac','siječanj','veljača'].includes(MONTHS[now.getMonth()]) ? 'zima' : ['ožujak','travanj','svibanj'].includes(MONTHS[now.getMonth()]) ? 'proljeće' : ['lipanj','srpanj','kolovoz'].includes(MONTHS[now.getMonth()]) ? 'ljeto' : 'jesen'}`;
+    if(weather?.temperature != null){
+      weatherCtx += `\nAktualno vrijeme u Slavonskom Brodu: ${weather.icon||''} ${weather.temperature}°C, ${weather.opis||''}, vjetar ${weather.windspeed} km/h`;
+    }
+    if(weather?.forecast?.length){
+      weatherCtx += `\nPrognoza za sljedećih dana:`;
+      weather.forecast.slice(0,5).forEach(f => {
+        weatherCtx += `\n  ${f.dan} (${f.datum}): ${f.icon} ${f.tmin}–${f.tmax}°C, ${f.opis}${f.kisa ? `, kiša ${f.kisa}%` : ''}`;
+      });
+    }
+
     const systemPrompt = `Ti si stručni turistički asistent za grad Slavonski Brod (Hrvatska). Pomažeš posjetiteljima pronaći informacije o znamenitostima, gastronomiji, smještaju, događanjima i svemu što Slavonski Brod nudi.
+${weatherCtx}
+
+VAŽNO: Koristi datum i vremenske podatke u odgovorima — preporuči aktivnosti primjerene AKTUALNOJ sezoni i temperaturi. Ako je pitanje o nadolazećim danima, referenciraj prognozu. Nikad ne predlažeš ljetne aktivnosti ako je zima ili obrnuto.
 
 ${langInstruction}
 
