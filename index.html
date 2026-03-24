@@ -503,6 +503,19 @@ width:100%;
 
 </div>
 
+<!-- Modal popup — MORA biti prije <script> bloka! -->
+<div id="link-modal">
+  <div class="modal-box">
+    <div class="modal-bar">
+      <span id="modal-url"></span>
+      <a id="modal-ext" class="modal-ext" href="#" target="_blank" rel="noopener">Otvori u novoj kartici ↗</a>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <iframe id="modal-iframe" class="modal-iframe" src=""
+      sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+  </div>
+</div>
+
 <script>
 
 let chatHistory = [];
@@ -769,19 +782,6 @@ setTimeout(() => {
 }, 500);
 
 </script>
-
-<!-- Modal popup -->
-<div id="link-modal">
-  <div class="modal-box">
-    <div class="modal-bar">
-      <span id="modal-url"></span>
-      <a id="modal-ext" class="modal-ext" href="#" target="_blank" rel="noopener">Otvori u novoj kartici ↗</a>
-      <button class="modal-close" onclick="closeModal()">✕</button>
-    </div>
-    <iframe id="modal-iframe" class="modal-iframe" src=""
-      sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
-  </div>
-</div>
 
 </body>
 </html>
