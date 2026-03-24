@@ -702,29 +702,17 @@ document.getElementById("chat-box").addEventListener("click", function(e){
   openModal(href);
 });
 
-// ===== WEATHER (Open-Meteo API — besplatan, bez ključa) =====
+// ===== WEATHER — server-side endpoint (keširan 10 min) =====
 async function loadWeather(){
   try {
-    const r = await fetch(
-      "https://api.open-meteo.com/v1/forecast?latitude=45.16&longitude=18.015&current=temperature_2m,windspeed_10m,weathercode&wind_speed_unit=kmh"
-    );
+    const r = await fetch("/api/weather");
     const d = await r.json();
-    const c = d.current;
-    const icons = {
-      0:'☀️',1:'🌤️',2:'⛅',3:'☁️',
-      45:'🌫️',48:'🌫️',
-      51:'🌦️',53:'🌦️',55:'🌦️',
-      61:'🌧️',63:'🌧️',65:'🌧️',
-      71:'❄️',73:'❄️',75:'❄️',77:'❄️',
-      80:'🌦️',81:'🌦️',82:'🌦️',
-      85:'❄️',86:'❄️',
-      95:'⛈️',96:'⛈️',99:'⛈️'
-    };
-    const icon = icons[c.weathercode] || '🌡️';
-    const temp = Math.round(c.temperature_2m);
-    const wind = Math.round(c.windspeed_10m);
-    document.getElementById("weather-info").textContent =
-      `${icon} ${temp}°C  •  💨 ${wind} km/h`;
+    const el = document.getElementById("weather-info");
+    if(d.temp !== null && d.temp !== undefined){
+      el.textContent = `${d.icon} ${d.temp}°C  •  💨 ${d.wind} km/h`;
+    } else {
+      el.textContent = '';
+    }
   } catch(e) {
     document.getElementById("weather-info").textContent = '';
   }
