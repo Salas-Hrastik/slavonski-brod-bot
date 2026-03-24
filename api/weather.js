@@ -3,7 +3,7 @@
 
 let cached = null;
 let cachedAt = 0;
-const CACHE_MS = 10 * 60 * 1000; // 10 minuta
+const CACHE_MS = 15 * 60 * 1000; // 15 minuta
 
 const WMO_ICONS = {
   0:'☀️',1:'🌤️',2:'⛅',3:'☁️',
@@ -18,7 +18,8 @@ const WMO_ICONS = {
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Cache-Control', 'public, s-maxage=600, stale-while-revalidate=60');
+  // Vercel CDN kešira 10 min, stale-while-revalidate još 5 min (brži odgovor)
+  res.setHeader('Cache-Control', 'public, s-maxage=600, stale-while-revalidate=300');
 
   const now = Date.now();
   if (cached && (now - cachedAt) < CACHE_MS) {

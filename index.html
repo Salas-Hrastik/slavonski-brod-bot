@@ -509,6 +509,9 @@ let firstMessage = true;
 // ===== FORMAT REPLY (markdown → HTML) =====
 function formatReply(text){
   return text
+    .replace(/^### (.+)$/gm,'<h3 style="margin:10px 0 4px;font-size:14px;color:#142d54">$1</h3>')
+    .replace(/^## (.+)$/gm,'<h2 style="margin:12px 0 4px;font-size:15px;color:#142d54">$1</h2>')
+    .replace(/^# (.+)$/gm,'<h2 style="margin:12px 0 4px;font-size:16px;color:#142d54">$1</h2>')
     .replace(/\n/g,"<br>")
     .replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>")
     .replace(/\*(.*?)\*/g,"<em>$1</em>")
@@ -731,17 +734,20 @@ document.getElementById("chat-box").addEventListener("click", function(e){
 
 // ===== WEATHER — server-side endpoint (keširan 10 min) =====
 async function loadWeather(){
+  const el = document.getElementById("weather-info");
   try {
-    const r = await fetch("/api/weather");
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 12000); // 12s timeout
+    const r = await fetch("/api/weather", { signal: ctrl.signal });
+    clearTimeout(t);
     const d = await r.json();
-    const el = document.getElementById("weather-info");
     if(d.temp !== null && d.temp !== undefined){
       el.textContent = `${d.icon} ${d.temp}°C  •  💨 ${d.wind} km/h`;
     } else {
       el.textContent = '';
     }
   } catch(e) {
-    document.getElementById("weather-info").textContent = '';
+    el.textContent = '';
   }
 }
 

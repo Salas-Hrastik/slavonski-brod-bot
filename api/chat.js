@@ -706,7 +706,11 @@ Pravila:
 3. Tvrđava Brod je GLAVNA atrakcija — uvijek je istakni
 4. Brodsko kolo (lipanj) je najvažnija manifestacija
 5. Slavonski kulen i fiš-paprikaš su kulinarski specijaliteti
-6. Koristi KONTEKSTUALNE i MAŠTOVITE emoji ikone — svaka stavka u listi treba imati svoju ikonu koja opisuje sadržaj (npr. 🏰 za tvrđavu, 🎻 za tambure, 🐟 za ribu, 🌲 za prirodu, 🚴 za biciklizam, 🍷 za vino, 🎭 za kulturu). Nikad ne ponavljaj istu ikonu uzastopno.
+6. FORMATIRANJE — OBAVEZNO:
+   - NIKAD ne koristi ### ili ## za naslove — umjesto toga koristi **Naslov** (bold)
+   - NIKAD ne koristi crtice (- stavka) za listanje — uvijek koristi EMOJI ikonu ispred svake stavke
+   - Svaka stavka u listi počinje kontekstualnom ikonom: 🏰 tvrđava, 🎻 glazba, 🐟 riba, 🌲 priroda, 🚴 biciklizam, 🍷 vino, 🎭 kultura, 🍽️ restoran, 🏨 hotel, 📍 lokacija, 📞 telefon, 🌐 web, 🗺️ izlet, ⛪ crkva, 🎪 festival, 🛍️ kupovina, 🏊 sport itd.
+   - Nikad ne ponavljaj istu ikonu uzastopno u listi
 7. Na APSOLUTNOM KRAJU odgovora, u zadnjem retku, dodaj TOČNO ovako (bez ikakvog prefiksa, zagrade ili dvotočke ispred, uvijek na HRVATSKOM jeziku):
 SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na hrvatskom?"]`;
 
