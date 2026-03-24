@@ -489,10 +489,29 @@ export default async function handler(req, res) {
     const isRecommendationQuery = ['preporuč', 'savjetuješ', 'savjet', 'što bi', 'sto bi', 'koji bi', 'predloži', 'recommend', 'suggest', 'advice', 'what would you', 'empfehl', 'vorschlag'].some(k => msgLower.includes(k));
     const isDetailQuery = ['zanima me više', 'reci mi više', 'više o', 'više informacij', 'detaljn', 'tko je', 'što je to', 'govori mi o', 'ispričaj mi', 'objasni mi', 'tell me more', 'more about', 'details about', 'who is', 'what is', 'explain', 'erzähl mir mehr', 'mehr über'].some(k => msgLower.includes(k));
 
-    const isDirectListingRequest = ['koji postoje', 'koji ima', 'što postoji', 'sto postoji', 'prikaži', 'prikazi', 'nabroji', 'liste svih', 'svi restorani', 'pregled svih', 'gdje ručati', 'gdje jesti', 'gdje spavati', 'što se događa', 'show me all', 'list all', 'what are the', 'all restaurants', 'all hotels', 'where to eat', 'where to stay'].some(k => msgLower.includes(k));
+    // Direktno listanje (tabovi, brzi gumbi) → uvijek template s karticama
+    const isDirectListingRequest = [
+      'koji postoje', 'koji ima', 'što postoji', 'prikaži', 'nabroji',
+      'svi restorani', 'pregled svih', 'gdje ručati', 'gdje jesti', 'gdje spavati',
+      'što se događa', 'show me all', 'list all', 'all restaurants', 'all hotels',
+      'where to eat', 'where to stay',
+      // Tab gumbi — eksplicitno
+      'što vidjeti u slavonskom brodu', 'gdje ručati u slavonskom brodu',
+      'smještaj u slavonskom brodu', 'koja događanja', 'brodsko kolo festival',
+      'izleti iz slavonskog broda', 'sport i rekreacija', 'kupovina u slavonskom brodu',
+      'korisne informacije o slavonskom brodu'
+    ].some(k => msgLower.includes(k));
+
+    // Pitanja o uvjetima, aktivnostima, vremenu → uvijek AI (s vremenskim kontekstom)
+    const isActivityQuery = [
+      'mogu li', 'da li', 'je li', 'hoće li', 'može li', 'vrijedi li', 'isplati li',
+      'što raditi', 'što posjetiti', 'što preporučuješ', 'za vikend', 'sutra', 'ovaj tjedan',
+      'can i', 'is it', 'will it', 'should i', 'worth it', 'what to do'
+    ].some(k => msgLower.includes(k));
 
     const conversationHistory = Array.isArray(history) ? history : [];
-    const isConversationalMode = conversationHistory.length >= 2 && !isDirectListingRequest;
+    // Konverzacijski mod: history >= 2 ILI activity pitanje — ali NE ako je direktno listanje
+    const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery) && !isDirectListingRequest;
 
     const isGeneralKnowledgeQuery = ['kako se priprema', 'kako se kuha', 'recept', 'recepti', 'sastojci', 'kultura', 'tradicija', 'običaj', 'folklor', 'porijeklo', 'legenda', 'kako doći', 'how to make', 'how to cook', 'recipe', 'ingredients', 'tradition', 'culture', 'how to get', 'wie macht man', 'wie kommt man', 'rezept', 'klima', 'valuta', 'govore li', 'koji jezik', 'vegetar', 'vegan'].some(k => msgLower.includes(k));
 
