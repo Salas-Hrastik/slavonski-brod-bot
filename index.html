@@ -639,7 +639,8 @@ async function sendMessage(){
   typing.className = "typing";
   typing.innerHTML = `<span>Razmišljam...</span><div class="typing-dots"><span></span><span></span><span></span></div>`;
   chatMessages.appendChild(typing);
-  chatMessages.scrollTop = chatMessages.scrollHeight;
+  // Kratki delay da DOM renderira, pa smoothly skrola na "Razmišljam..."
+  setTimeout(() => typing.scrollIntoView({ behavior: "smooth", block: "end" }), 50);
 
   try {
     const controller = new AbortController();
