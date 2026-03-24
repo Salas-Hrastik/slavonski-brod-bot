@@ -32,7 +32,12 @@ function getCategoryItems(category) {
     return (s.restorani_tz || []).slice(0, 20).map(r => item(r));
   }
   if (category === 'smjestaj') {
-    return (s.smjestaj_hoteli || []).map(h => item(h));
+    const hoteli = (s.smjestaj_hoteli || []).map(h => item(h));
+    const apartmani = (s.smjestaj_apartmani || [])
+      .filter(a => a.slika)
+      .slice(0, 20)
+      .map(a => item(a));
+    return [...hoteli, ...apartmani];
   }
   if (category === 'znamenitosti') {
     return (s.kulturna_bastina || []).map(b => item(b, { opis: b.opis || '' }));
@@ -650,7 +655,7 @@ export default async function handler(req, res) {
     if (items.length > 0 && !isConversationalMode && !isGeneralKnowledgeQuery) {
       const intros = {
         gastronomija: `🍽️ **Restorani u Slavonskom Brodu** (${items.length} registriranih objekata pri TZ)\n\nSlavonski Brod poznata je po bogatoj slavonskoj kuhinji — kulenu, čobancu i fiš-paprikašu. Evo svih restorana:`,
-        smjestaj:     `🏨 **Smještaj u Slavonskom Brodu** (${items.length} objekata)\n\nOd hotela do pansiona — evo svih smještajnih objekata registriranih pri Turističkoj zajednici:`,
+        smjestaj:     `🏨 **Smještaj u Slavonskom Brodu** (${items.length} objekata)\n\nHoteli, pansioni i apartmani registrirani pri Turističkoj zajednici — s fotografijama:`,
         znamenitosti: `🏛️ **Kulturna baština Slavonskog Broda** (${items.length} lokacija)\n\nGlavna atrakcija je **Tvrđava Brod** — jedna od najvećih baroknih tvrđava u ovom dijelu Europe. Evo svih lokacija:`,
         priroda:      `🌿 **Turističke atrakcije i rekreacija** (${items.length} lokacija)\n\nSlavonski Brod nudi raznovrsne mogućnosti za aktivan odmor uz rijeku Savu i u okolnoj prirodi:`,
         sport:        `🏃 **Sport i rekreacija u Slavonskom Brodu** (${items.length} lokacija):`,
