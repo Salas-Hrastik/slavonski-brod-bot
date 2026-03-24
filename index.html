@@ -736,20 +736,25 @@ document.getElementById("chat-box").addEventListener("click", function(e){
   openModal(href);
 });
 
-// ===== WEATHER — isti pristup kao Valpovo =====
+// ===== WEATHER — direktno iz browsera (Open-Meteo, CORS OK) =====
 async function loadWeather(){
   const el = document.getElementById("weather-info");
+  const ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌦️',61:'🌧️',63:'🌧️',65:'🌧️',71:'❄️',73:'❄️',75:'❄️',77:'❄️',80:'🌦️',81:'🌦️',82:'🌦️',85:'❄️',86:'❄️',95:'⛈️',96:'⛈️',99:'⛈️'};
+  // 1. Pokušaj direktno iz browsera (Open-Meteo dopušta CORS)
+  try {
+    const r = await fetch("https://api.open-meteo.com/v1/forecast?latitude=45.16&longitude=18.015&current_weather=true&wind_speed_unit=kmh");
+    const d = await r.json();
+    const w = d.current_weather;
+    el.textContent = `${ICONS[w.weathercode]||'🌡️'} ${Math.round(w.temperature)}°C  •  🌬️ ${Math.round(w.windspeed)} km/h`;
+    return;
+  } catch(e1) {}
+  // 2. Fallback: server-side endpoint
   try {
     const r = await fetch("/api/weather");
     const d = await r.json();
-    if(d.temperature !== null && d.temperature !== undefined){
-      el.textContent = `${d.icon} ${d.temperature}°C  •  🌬️ ${d.windspeed} km/h`;
-    } else {
-      el.textContent = '';
-    }
-  } catch(e) {
-    el.textContent = '';
-  }
+    if(d.temperature != null) el.textContent = `${d.icon||'🌡️'} ${d.temperature}°C  •  🌬️ ${d.windspeed} km/h`;
+    else el.textContent = '';
+  } catch(e2) { el.textContent = ''; }
 }
 
 loadWeather();
