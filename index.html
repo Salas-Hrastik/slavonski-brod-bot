@@ -498,7 +498,8 @@ function addMessage(text, type, suggestions, images, items){
         const a = document.createElement("a");
         a.href = it.karta;
         a.textContent = "🗺 Karta";
-        a.onclick = e => { e.preventDefault(); openModal(it.karta); };
+        a.target = "_blank";
+        a.rel = "noopener";
         links.appendChild(a);
       }
       if(links.children.length) info.appendChild(links);
