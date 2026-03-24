@@ -429,7 +429,14 @@ function formatReply(text){
     .replace(/\n/g,"<br>")
     .replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>")
     .replace(/\*(.*?)\*/g,"<em>$1</em>")
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_,label,url){
+      // tel: → direktno, Google Maps → novi tab, ostalo → popup
+      if(url.startsWith('tel:')) return `<a href="${url}">${label}</a>`;
+      if(url.includes('google.com/maps') || url.includes('maps.google') || url.includes('goo.gl/maps'))
+        return `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+      const safe = url.replace(/'/g,"%27");
+      return `<a href="${url}" onclick="openModal('${safe}');return false;">${label}</a>`;
+    });
 }
 
 function addMessage(text, type, suggestions, images, items){
