@@ -736,17 +736,14 @@ document.getElementById("chat-box").addEventListener("click", function(e){
   openModal(href);
 });
 
-// ===== WEATHER — server-side endpoint (keširan 10 min) =====
+// ===== WEATHER — isti pristup kao Valpovo =====
 async function loadWeather(){
   const el = document.getElementById("weather-info");
   try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), 12000); // 12s timeout
-    const r = await fetch("/api/weather", { signal: ctrl.signal });
-    clearTimeout(t);
+    const r = await fetch("/api/weather");
     const d = await r.json();
-    if(d.temp !== null && d.temp !== undefined){
-      el.textContent = `${d.icon} ${d.temp}°C  •  💨 ${d.wind} km/h`;
+    if(d.temperature !== null && d.temperature !== undefined){
+      el.textContent = `${d.icon} ${d.temperature}°C  •  🌬️ ${d.windspeed} km/h`;
     } else {
       el.textContent = '';
     }
