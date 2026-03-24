@@ -23,20 +23,21 @@ flex-direction:column;
 overflow:hidden;
 }
 
+/* ===== HEADER ===== */
 header{
 background:#142d54;
 color:white;
 padding:10px 24px;
 display:flex;
 align-items:center;
-gap:16px;
+gap:14px;
 box-shadow:0 2px 8px rgba(0,0,0,0.3);
 flex-shrink:0;
 }
 
 header .logo-img{
-width:56px;
-height:56px;
+width:52px;
+height:52px;
 object-fit:contain;
 border-radius:8px;
 background:white;
@@ -46,19 +47,69 @@ flex-shrink:0;
 
 header h1{
 margin:0;
-font-size:22px;
+font-size:20px;
+line-height:1.2;
 }
 
 header small{
-opacity:0.8;
-font-size:13px;
+opacity:0.75;
+font-size:12px;
 }
 
+/* ===== WEATHER BAR ===== */
+#weather-bar{
+background:#f0f4f8;
+border-bottom:1px solid #dde3ea;
+padding:6px 24px;
+font-size:13px;
+color:#444;
+flex-shrink:0;
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+/* ===== CATEGORY TABS — persistent bar ===== */
+#cat-tabs{
+background:#1e3d6e;
+padding:8px 16px;
+display:flex;
+gap:6px;
+overflow-x:auto;
+flex-shrink:0;
+scrollbar-width:none;
+border-bottom:2px solid #c8a84b;
+}
+
+#cat-tabs::-webkit-scrollbar{ display:none; }
+
+#cat-tabs button{
+background:rgba(255,255,255,0.12);
+color:white;
+border:1px solid rgba(255,255,255,0.2);
+padding:7px 14px;
+border-radius:20px;
+cursor:pointer;
+font-size:12px;
+white-space:nowrap;
+transition:all 0.2s;
+flex-shrink:0;
+}
+
+#cat-tabs button:hover,
+#cat-tabs button.active{
+background:#c8a84b;
+color:#142d54;
+border-color:#c8a84b;
+font-weight:bold;
+}
+
+/* ===== MAIN ===== */
 .main{
 max-width:900px;
 width:100%;
 margin:0 auto;
-padding:16px 24px;
+padding:14px 20px;
 flex:1;
 display:flex;
 flex-direction:column;
@@ -66,17 +117,37 @@ overflow:hidden;
 min-height:0;
 }
 
+/* ===== CHAT BOX ===== */
 .chat-box{
 background:white;
 border-radius:14px;
-padding:20px;
 flex:1;
 min-height:0;
 box-shadow:0 10px 30px rgba(0,0,0,0.25);
 overflow-y:auto;
 display:flex;
 flex-direction:column;
+}
+
+/* Label unutar chat okvira */
+.chat-label{
+padding:10px 18px 0;
+font-size:11px;
+font-weight:bold;
+letter-spacing:1.5px;
+color:#999;
+text-transform:uppercase;
+flex-shrink:0;
+}
+
+/* Poruke unutar padded containera */
+.chat-messages{
+padding:10px 18px 14px;
+display:flex;
+flex-direction:column;
 gap:8px;
+flex:1;
+min-height:0;
 }
 
 .user-message{
@@ -111,18 +182,20 @@ font-style:italic;
 border-left:3px solid #c8a84b;
 }
 
+/* ===== INPUT ROW ===== */
 .input-row{
-margin-top:16px;
+margin-top:12px;
 display:flex;
 gap:10px;
+flex-shrink:0;
 }
 
 input{
 flex:1;
-padding:14px 16px;
+padding:13px 16px;
 border-radius:10px;
 border:2px solid #ddd;
-font-size:16px;
+font-size:15px;
 outline:none;
 transition:border-color 0.2s;
 }
@@ -141,37 +214,24 @@ cursor:pointer;
 color:#142d54;
 font-size:15px;
 transition:background 0.2s;
+white-space:nowrap;
 }
 
-button.send-btn:hover{
-background:#b8982e;
+button.send-btn:hover{ background:#b8982e; }
+
+/* ===== WELCOME ===== */
+.welcome{
+text-align:center;
+padding:24px 20px 16px;
+color:#666;
 }
 
-/* Brzi tabovi — unutar welcome okvira, samo na početku */
-.quick{
-margin-top:18px;
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-justify-content:center;
+.welcome p{
+margin:6px 0;
+font-size:15px;
 }
 
-.quick button{
-background:#1a5fa8;
-color:white;
-border:none;
-padding:10px 16px;
-border-radius:20px;
-cursor:pointer;
-font-size:13px;
-transition:background 0.2s;
-}
-
-.quick button:hover{
-background:#142d54;
-}
-
-/* Sugestivna pitanja — kontekstualna, nakon odgovora */
+/* ===== SUGGESTIONS — kontekstualna pitanja ===== */
 .suggestions{
 margin-top:8px;
 display:flex;
@@ -195,12 +255,12 @@ background:#1a5fa8;
 color:white;
 }
 
-/* Kartice s minijaturama */
+/* ===== ITEM CARDS ===== */
 .item-cards{
-margin-top:12px;
+margin-top:10px;
 display:flex;
 flex-direction:column;
-gap:8px;
+gap:7px;
 }
 
 .item-card{
@@ -273,9 +333,7 @@ font-weight:bold;
 
 .item-card-links a:hover{ text-decoration:underline; }
 
-.item-card-links a.tel{
-color:#2a7a3a;
-}
+.item-card-links a.tel{ color:#2a7a3a; }
 
 a{
 color:#1a5fa8;
@@ -284,11 +342,9 @@ font-weight:bold;
 cursor:pointer;
 }
 
-a:hover{
-text-decoration:underline;
-}
+a:hover{ text-decoration:underline; }
 
-/* Modal popup za linkove */
+/* ===== MODAL POPUP ===== */
 #link-modal{
 display:none;
 position:fixed;
@@ -299,9 +355,7 @@ align-items:center;
 justify-content:center;
 }
 
-#link-modal.open{
-display:flex;
-}
+#link-modal.open{ display:flex; }
 
 .modal-box{
 background:white;
@@ -342,9 +396,7 @@ white-space:nowrap;
 text-decoration:none;
 }
 
-.modal-bar a.modal-ext:hover{
-text-decoration:underline;
-}
+.modal-bar a.modal-ext:hover{ text-decoration:underline; }
 
 .modal-close{
 background:none;
@@ -363,50 +415,53 @@ border:none;
 width:100%;
 }
 
-.welcome{
-text-align:center;
-padding:20px;
-color:#666;
-}
-
-.welcome .emoji{
-font-size:48px;
-}
-
-.welcome p{
-margin:8px 0;
-font-size:15px;
-}
-
 </style>
 
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-  <img class="logo-img" src="https://www.tzgsb.hr/static/images/tzgsb_logo_120x120.png" alt="TZ Slavonski Brod" onerror="this.style.display='none';document.getElementById('fallback-icon').style.display='flex'">
-  <span id="fallback-icon" style="display:none;width:56px;height:56px;border-radius:12px;background:#c8a84b;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">🏰</span>
+  <img class="logo-img"
+    src="https://www.tzgsb.hr/static/images/tzgsb_logo_120x120.png"
+    alt="TZ Slavonski Brod"
+    onerror="this.style.display='none';document.getElementById('fallback-icon').style.display='flex'">
+  <span id="fallback-icon" style="display:none;width:52px;height:52px;border-radius:12px;background:#c8a84b;align-items:center;justify-content:center;font-size:26px;flex-shrink:0">🏰</span>
   <div>
-    <h1>Turistički informator</h1>
-    <small>Slavonski Brod &bull; AI asistent &bull; Turistička zajednica</small>
+    <h1>AI turistički informator</h1>
+    <small>Slavonski Brod &bull; Turistička zajednica Grada Slavonskog Broda</small>
   </div>
 </header>
 
+<!-- WEATHER BAR -->
+<div id="weather-bar">
+  <span>Sada je u Slavonskom Brodu:</span>
+  <span id="weather-info">⏳ učitavam...</span>
+</div>
+
+<!-- CATEGORY TABS — persistentni, uvijek vidljivi -->
+<nav id="cat-tabs">
+  <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')" data-cat="znamenitosti">🏰 Znamenitosti</button>
+  <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')" data-cat="gastronomija">🍽 Gastronomija</button>
+  <button onclick="quickAsk('Koja događanja se održavaju?')" data-cat="dogadanja">🎭 Događanja</button>
+  <button onclick="quickAsk('Smještaj u Slavonskom Brodu')" data-cat="smjestaj">🏨 Smještaj</button>
+  <button onclick="quickAsk('Brodsko kolo festival')" data-cat="brodsko-kolo">🎶 Brodsko kolo</button>
+  <button onclick="quickAsk('Izleti iz Slavonskog Broda')" data-cat="okolica">🗺 Okolica</button>
+  <button onclick="quickAsk('Sport i rekreacija u Slavonskom Brodu')" data-cat="sport">🚴 Sport</button>
+  <button onclick="quickAsk('Kupovina u Slavonskom Brodu')" data-cat="kupovina">🛍 Kupovina</button>
+  <button onclick="quickAsk('Korisne informacije o Slavonskom Brodu')" data-cat="opcenito">ℹ️ O gradu</button>
+</nav>
+
+<!-- MAIN -->
 <div class="main">
 
   <div id="chat-box" class="chat-box">
-    <div class="welcome" id="welcome-block">
-      <p><strong>Dobrodošli u Slavonski Brod!</strong></p>
-      <p>Pitajte me o znamenitostima, gastronomiji, smještaju, događanjima i svemu što grad nudi.</p>
-      <!-- Brzi tabovi: unutar okvira, skrivaju se nakon prvog upita -->
-      <div class="quick" id="quick-tabs">
-        <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')">🏰 Znamenitosti</button>
-        <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')">🍽 Gastronomija</button>
-        <button onclick="quickAsk('Koja događanja se održavaju?')">🎭 Događanja</button>
-        <button onclick="quickAsk('Smještaj u Slavonskom Brodu')">🏨 Smještaj</button>
-        <button onclick="quickAsk('Brodsko kolo festival')">🎶 Brodsko kolo</button>
-        <button onclick="quickAsk('Izleti iz Slavonskog Broda')">🗺 Okolica</button>
+    <div class="chat-label">Turistički informator</div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="welcome" id="welcome-block">
+        <p><strong>Dobrodošli u Slavonski Brod!</strong> 🏰</p>
+        <p>Pitajte me o znamenitostima, gastronomiji, smještaju,<br>događanjima i svemu što grad nudi.</p>
       </div>
     </div>
   </div>
@@ -424,13 +479,13 @@ let chatHistory = [];
 let currentCategory = null;
 let firstMessage = true;
 
+// ===== FORMAT REPLY (markdown → HTML) =====
 function formatReply(text){
   return text
     .replace(/\n/g,"<br>")
     .replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>")
     .replace(/\*(.*?)\*/g,"<em>$1</em>")
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_,label,url){
-      // tel: → direktno, Google Maps → novi tab, ostalo → popup
       if(url.startsWith('tel:')) return `<a href="${url}">${label}</a>`;
       if(url.includes('google.com/maps') || url.includes('maps.google') || url.includes('goo.gl/maps'))
         return `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
@@ -439,13 +494,14 @@ function formatReply(text){
     });
 }
 
+// ===== ADD MESSAGE =====
 function addMessage(text, type, suggestions, images, items){
-  const chatBox = document.getElementById("chat-box");
+  const chatMessages = document.getElementById("chat-messages");
 
   const div = document.createElement("div");
   div.className = type === "user" ? "user-message" : "bot-message";
   div.innerHTML = type === "user" ? text : formatReply(text);
-  chatBox.appendChild(div);
+  chatMessages.appendChild(div);
 
   if(type === "bot" && items && items.length){
     const cards = document.createElement("div");
@@ -454,7 +510,6 @@ function addMessage(text, type, suggestions, images, items){
       const card = document.createElement("div");
       card.className = "item-card";
 
-      // Thumbnail (ako postoji)
       if(it.slika){
         const thumb = document.createElement("div");
         thumb.className = "item-card-thumb";
@@ -462,13 +517,11 @@ function addMessage(text, type, suggestions, images, items){
         img.src = it.slika;
         img.alt = it.naziv;
         img.title = it.naziv;
-        img.onerror = function(){ thumb.style.display='none'; };
-        img.onclick = () => openModal(it.slika);
+        if(it.web) img.onclick = () => openModal(it.web);
         thumb.appendChild(img);
         card.appendChild(thumb);
       }
 
-      // Info
       const info = document.createElement("div");
       info.className = "item-card-info";
 
@@ -483,7 +536,6 @@ function addMessage(text, type, suggestions, images, items){
         info.appendChild(m);
       }
 
-      // Linkovi: telefon (tel:), web, karta
       const links = document.createElement("div");
       links.className = "item-card-links";
 
@@ -514,7 +566,7 @@ function addMessage(text, type, suggestions, images, items){
       card.appendChild(info);
       cards.appendChild(card);
     });
-    chatBox.appendChild(cards);
+    chatMessages.appendChild(cards);
   }
 
   if(suggestions && suggestions.length && type === "bot"){
@@ -526,35 +578,38 @@ function addMessage(text, type, suggestions, images, items){
       btn.onclick = () => quickAsk(s.replace(/^[^\w\s\u00C0-\u024F]+\s*/,''));
       sug.appendChild(btn);
     });
-    chatBox.appendChild(sug);
+    chatMessages.appendChild(sug);
   }
 
-  // Scroll na početak nove poruke, ne na dno — korisnik ručno skrola
   div.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+// ===== SEND MESSAGE =====
 async function sendMessage(){
   const input = document.getElementById("user-input");
   const message = input.value.trim();
   if(!message) return;
 
-  // Ukloni welcome blok (sadrži dobrodošicu + tabove) nakon prvog slanja
+  // Ukloni welcome blok pri prvom upitu
   if(firstMessage){
     firstMessage = false;
     const welcome = document.getElementById("welcome-block");
     if(welcome) welcome.remove();
   }
 
+  // Ukloni active klasu s tabova
+  document.querySelectorAll('#cat-tabs button').forEach(b => b.classList.remove('active'));
+
   addMessage(message, "user");
   chatHistory.push({ role: "user", content: message });
   input.value = "";
 
-  const chatBox = document.getElementById("chat-box");
+  const chatMessages = document.getElementById("chat-messages");
   const typing = document.createElement("div");
   typing.className = "typing";
   typing.innerText = "Asistent razmišlja...";
-  chatBox.appendChild(typing);
-  chatBox.scrollTop = chatBox.scrollHeight;
+  chatMessages.appendChild(typing);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
 
   try {
     const controller = new AbortController();
@@ -576,7 +631,15 @@ async function sendMessage(){
 
     const data = await response.json();
 
-    if(data.category) currentCategory = data.category;
+    if(data.category){
+      currentCategory = data.category;
+      // Označi aktivan tab
+      const btn = document.querySelector(`#cat-tabs button[data-cat="${data.category}"]`);
+      if(btn){
+        document.querySelectorAll('#cat-tabs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+    }
 
     if(data.reply){
       addMessage(data.reply, "bot", data.suggestions, data.images, data.items);
@@ -610,7 +673,7 @@ document.getElementById("user-input").addEventListener("keypress", function(e){
   }
 });
 
-// --- Modal popup za linkove ---
+// ===== MODAL POPUP =====
 function openModal(url){
   document.getElementById("modal-url").textContent = url;
   document.getElementById("modal-ext").href = url;
@@ -624,18 +687,50 @@ function closeModal(){
   document.getElementById("modal-iframe").src = "";
 }
 
-// Zatvori klikom na pozadinu
 document.getElementById("link-modal").addEventListener("click", function(e){
   if(e.target === this) closeModal();
 });
 
-// Intercept svih linkova u chat-boxu
+// Intercept web linkova unutar chat (osim tel: i maps)
 document.getElementById("chat-box").addEventListener("click", function(e){
   const a = e.target.closest("a");
   if(!a) return;
+  const href = a.getAttribute("href") || "";
+  if(href.startsWith("tel:") || href.startsWith("#") || a.target === "_blank") return;
+  if(a.onclick) return; // ima vlastiti onclick
   e.preventDefault();
-  openModal(a.href);
+  openModal(href);
 });
+
+// ===== WEATHER (Open-Meteo API — besplatan, bez ključa) =====
+async function loadWeather(){
+  try {
+    const r = await fetch(
+      "https://api.open-meteo.com/v1/forecast?latitude=45.16&longitude=18.015&current=temperature_2m,windspeed_10m,weathercode&wind_speed_unit=kmh"
+    );
+    const d = await r.json();
+    const c = d.current;
+    const icons = {
+      0:'☀️',1:'🌤️',2:'⛅',3:'☁️',
+      45:'🌫️',48:'🌫️',
+      51:'🌦️',53:'🌦️',55:'🌦️',
+      61:'🌧️',63:'🌧️',65:'🌧️',
+      71:'❄️',73:'❄️',75:'❄️',77:'❄️',
+      80:'🌦️',81:'🌦️',82:'🌦️',
+      85:'❄️',86:'❄️',
+      95:'⛈️',96:'⛈️',99:'⛈️'
+    };
+    const icon = icons[c.weathercode] || '🌡️';
+    const temp = Math.round(c.temperature_2m);
+    const wind = Math.round(c.windspeed_10m);
+    document.getElementById("weather-info").textContent =
+      `${icon} ${temp}°C  •  💨 ${wind} km/h`;
+  } catch(e) {
+    document.getElementById("weather-info").textContent = '';
+  }
+}
+
+loadWeather();
 
 </script>
 
@@ -647,7 +742,8 @@ document.getElementById("chat-box").addEventListener("click", function(e){
       <a id="modal-ext" class="modal-ext" href="#" target="_blank" rel="noopener">Otvori u novoj kartici ↗</a>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
-    <iframe id="modal-iframe" class="modal-iframe" src="" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+    <iframe id="modal-iframe" class="modal-iframe" src=""
+      sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
   </div>
 </div>
 
