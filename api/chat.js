@@ -49,7 +49,38 @@ function getCategoryItems(category) {
   return [];
 }
 
+// Vizualne kategorije — uvijek prikazuju minijature
+const VISUAL_CATS = ['gastronomija', 'smjestaj', 'znamenitosti', 'priroda', 'sport'];
+
+// Vraća stavke sa slikom za kategoriju — uvijek, bez obzira na kontekst pitanja
+function getItemsForCategory(category, limit = 8) {
+  const s = scrapedContent;
+  if (!s) return [];
+
+  function item(o) {
+    return { naziv: o.naziv || '', slika: o.slika || '', adresa: o.adresa || '',
+             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '' };
+  }
+
+  if (category === 'gastronomija') {
+    return (s.restorani_tz || []).filter(o => o.slika).slice(0, limit).map(item);
+  }
+  if (category === 'smjestaj') {
+    const hoteli = (s.smjestaj_hoteli || []).filter(o => o.slika).map(item);
+    const apartmani = (s.smjestaj_apartmani || []).filter(o => o.slika).slice(0, limit - hoteli.length).map(item);
+    return [...hoteli, ...apartmani].slice(0, limit);
+  }
+  if (category === 'znamenitosti') {
+    return (s.kulturna_bastina || []).filter(o => o.slika).slice(0, limit).map(item);
+  }
+  if (category === 'priroda' || category === 'sport') {
+    return (s.atrakcije_tz || []).filter(o => o.slika).slice(0, limit).map(item);
+  }
+  return [];
+}
+
 // Traži stavke sa slikom koje odgovaraju ključnim riječima u tekstu (za AI odgovore)
+// Ako nema dovoljno matcheva, dopuni s kategorijskim stavkama
 function findRelevantItems(text, category) {
   const s = scrapedContent;
   if (!s) return [];
@@ -60,22 +91,22 @@ function findRelevantItems(text, category) {
              telefon: o.telefon || '', web: o.web || '', karta: o.karta || '' };
   }
 
-  // Pretraži sve dostupne izvore sa slikama
-  const pools = [
-    ...(s.kulturna_bastina || []),
-    ...(s.restorani_tz || []),
-    ...(s.smjestaj_hoteli || []),
-  ];
+  // Odaberi pool prema kategoriji
+  let pool;
+  if (category === 'gastronomija') pool = s.restorani_tz || [];
+  else if (category === 'smjestaj') pool = [...(s.smjestaj_hoteli || []), ...(s.smjestaj_apartmani || [])];
+  else if (category === 'znamenitosti') pool = s.kulturna_bastina || [];
+  else if (category === 'priroda' || category === 'sport') pool = s.atrakcije_tz || [];
+  else pool = [...(s.kulturna_bastina || []), ...(s.restorani_tz || []), ...(s.smjestaj_hoteli || [])];
 
-  const matched = pools.filter(o => {
+  const matched = pool.filter(o => {
     if (!o.slika) return false;
     const name = (o.naziv || '').toLowerCase();
-    // Provjeri sadrži li tekst upita ključne riječi iz naziva
     const words = name.split(/[\s\-—/]+/).filter(w => w.length > 3);
     return words.some(w => t.includes(w));
   });
 
-  return matched.slice(0, 4).map(item);
+  return matched.slice(0, 6).map(item);
 }
 
 function buildScrapedSection(category) {
@@ -817,8 +848,13 @@ SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na h
     // Fallback: ukloni sve što počinje s SUGGESTIONS (ili [...SUGGESTIONS) do kraja
     raw = raw.replace(/\[?:?\s*SUGGESTIONS:[\s\S]*$/, '').trimEnd();
 
-    // Pronađi relevantne stavke sa slikom za AI odgovor (pretraži po ključnim riječima)
-    const aiItems = findRelevantItems(message + ' ' + raw, resolvedCat);
+    // Pronađi relevantne stavke sa slikom za AI odgovor
+    // Za vizualne kategorije — uvijek prikaži minijature, neovisno o kontekstu pitanja
+    let aiItems = findRelevantItems(message + ' ' + raw, resolvedCat);
+    if (VISUAL_CATS.includes(resolvedCat) && aiItems.length < 2) {
+      // Nema dovoljno keyword matcheva — uzmi prvih N stavki s fotografijom iz kategorije
+      aiItems = getItemsForCategory(resolvedCat, 6);
+    }
 
     return res.status(200).json({
       reply: raw,
