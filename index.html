@@ -523,12 +523,13 @@ let currentCategory = null;
 let firstMessage = true;
 let currentWeather = null; // globalni weather kontekst za AI
 
-// ===== FORMAT REPLY (markdown → HTML) =====
+// ===== FORMAT REPLY (markdown → HTML, konzistentni font) =====
 function formatReply(text){
   return text
-    .replace(/^### (.+)$/gm,'<h3 style="margin:10px 0 4px;font-size:14px;color:#142d54">$1</h3>')
-    .replace(/^## (.+)$/gm,'<h2 style="margin:12px 0 4px;font-size:15px;color:#142d54">$1</h2>')
-    .replace(/^# (.+)$/gm,'<h2 style="margin:12px 0 4px;font-size:16px;color:#142d54">$1</h2>')
+    // Headings → styled div (ne h3 koji mijenja font!)
+    .replace(/^### (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:13.5px;color:#142d54;margin:10px 0 3px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
+    .replace(/^## (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:14.5px;color:#142d54;margin:12px 0 4px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
+    .replace(/^# (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:15px;color:#142d54;margin:12px 0 4px">$1</div>')
     .replace(/\n/g,"<br>")
     .replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>")
     .replace(/\*(.*?)\*/g,"<em>$1</em>")
