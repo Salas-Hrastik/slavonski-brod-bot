@@ -220,6 +220,63 @@ gap:10px;
 flex-shrink:0;
 }
 
+/* ===== MIC BUTTON ===== */
+button.mic-btn{
+background:#f0f4f8;
+border:2px solid #ddd;
+padding:0;
+width:48px;
+height:48px;
+border-radius:10px;
+cursor:pointer;
+font-size:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-shrink:0;
+transition:all 0.2s;
+position:relative;
+}
+
+button.mic-btn:hover{
+background:#e0e8f0;
+border-color:#1a5fa8;
+}
+
+button.mic-btn.listening{
+background:#e53935;
+border-color:#e53935;
+animation:mic-pulse 1s infinite ease-in-out;
+}
+
+button.mic-btn.listening::after{
+content:'';
+position:absolute;
+inset:-4px;
+border-radius:14px;
+border:2px solid rgba(229,57,53,0.5);
+animation:mic-ring 1s infinite ease-out;
+}
+
+@keyframes mic-pulse{
+0%,100%{ transform:scale(1); }
+50%{ transform:scale(1.08); }
+}
+
+@keyframes mic-ring{
+0%{ transform:scale(1); opacity:1; }
+100%{ transform:scale(1.5); opacity:0; }
+}
+
+/* Poruka "ne podržava" */
+#mic-unsupported{
+display:none;
+font-size:11px;
+color:#e53935;
+align-self:center;
+white-space:nowrap;
+}
+
 input{
 flex:1;
 padding:13px 16px;
@@ -498,6 +555,8 @@ width:100%;
 
   <div class="input-row">
     <input id="user-input" placeholder="Postavite pitanje o Slavonskom Brodu...">
+    <button class="mic-btn" id="mic-btn" title="Govori (glasovni unos)">🎤</button>
+    <span id="mic-unsupported">glasovni unos nije podržan</span>
     <button class="send-btn" id="send-btn">Pošalji</button>
   </div>
 
@@ -786,6 +845,80 @@ setTimeout(() => {
     body: JSON.stringify({ message: '__warmup__', history: [], category: null })
   }).catch(() => {});
 }, 500);
+
+// ===== GLASOVNI UNOS (Web Speech API) =====
+(function(){
+  const micBtn  = document.getElementById("mic-btn");
+  const micMsg  = document.getElementById("mic-unsupported");
+  const input   = document.getElementById("user-input");
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if(!SpeechRecognition){
+    // Browser ne podržava — sakrij gumb, prikaži poruku
+    micBtn.style.display = "none";
+    micMsg.style.display = "inline";
+    return;
+  }
+
+  const recognition = new SpeechRecognition();
+  recognition.lang = "hr-HR";        // Hrvatski; fallback na engleski ako ne prepozna
+  recognition.continuous = false;    // Stani nakon prve pauze
+  recognition.interimResults = true; // Prikaži međurezultate dok govori
+
+  let listening = false;
+  let autoSubmit = false;
+
+  micBtn.addEventListener("click", function(){
+    if(listening){
+      recognition.stop();
+      return;
+    }
+    input.value = "";
+    input.placeholder = "🎤 Slušam...";
+    micBtn.classList.add("listening");
+    listening = true;
+    autoSubmit = true;
+    try { recognition.start(); }
+    catch(e){ resetMic(); }
+  });
+
+  // Privremeni rezultati — prikazuj u polju dok korisnik govori
+  recognition.addEventListener("result", function(e){
+    let transcript = "";
+    for(let i = 0; i < e.results.length; i++){
+      transcript += e.results[i][0].transcript;
+    }
+    input.value = transcript;
+  });
+
+  // Prepoznavanje završeno — pošalji automatski
+  recognition.addEventListener("end", function(){
+    resetMic();
+    if(autoSubmit && input.value.trim()){
+      // Kratki delay da korisnik vidi što je prepoznato, pa šalje
+      setTimeout(() => sendMessage(), 600);
+    }
+    autoSubmit = false;
+  });
+
+  recognition.addEventListener("error", function(e){
+    resetMic();
+    autoSubmit = false;
+    if(e.error === "not-allowed"){
+      input.placeholder = "⚠️ Dopustite pristup mikrofonu u pregledniku";
+      setTimeout(() => { input.placeholder = "Postavite pitanje o Slavonskom Brodu..."; }, 3000);
+    } else if(e.error === "no-speech"){
+      input.placeholder = "Ništa nisam čuo — pokušajte ponovno";
+      setTimeout(() => { input.placeholder = "Postavite pitanje o Slavonskom Brodu..."; }, 2500);
+    }
+  });
+
+  function resetMic(){
+    listening = false;
+    micBtn.classList.remove("listening");
+    input.placeholder = "Postavite pitanje o Slavonskom Brodu...";
+  }
+})();
 
 </script>
 
