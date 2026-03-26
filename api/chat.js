@@ -79,7 +79,19 @@ function getCategoryItems(category) {
       { opis: a.opis || '' }
     ));
   }
-  // okolica — AI obrađuje s db.okolica.izleti (pravi izleti iz SB, ne lokalne atrakcije)
+  // okolica — strukturirani izleti iz db.okolica.izleti s web + karta linkovima
+  if (category === 'okolica') {
+    return (db.okolica?.izleti || []).map(iz => ({
+      naziv:   iz.naziv || '',
+      slika:   iz.slika || '',
+      adresa:  iz.udaljenost ? `🚗 ${iz.udaljenost} od Slavonskog Broda` : '',
+      telefon: '',
+      web:     iz.web || '',
+      karta:   iz.karta || '',
+      opis:    iz.opis || '',
+      recenzija: '', ocjena: '', recenzija_izvor: '', recenzija_url: ''
+    }));
+  }
   return [];
 }
 
@@ -287,7 +299,7 @@ function buildScrapedSection(category) {
   }
 
   if (category === 'okolica') {
-    if (s.atrakcije_tz?.length) {
+    if (s.atrakcije_tz?.length && false) { // disabled — okolica sada iz db.okolica.izleti
       const prirodne = s.atrakcije_tz.filter(a => a.tip?.includes('Priroda') || a.tip?.includes('Izletiste') || a.lokacija);
       if (prirodne.length) {
         lines.push(`\nIzletista i priroda u okolici:`);
@@ -786,6 +798,7 @@ export default async function handler(req, res) {
         znamenitosti: `🏛️ **Kulturna baština Slavonskog Broda** (${items.length} lokacija)\n\nGlavna atrakcija je **Tvrđava Brod** — jedna od najvećih baroknih tvrđava u ovom dijelu Europe. Evo svih lokacija:`,
         priroda:      `🌿 **Turističke atrakcije i rekreacija** (${items.length} lokacija)\n\nSlavonski Brod nudi raznovrsne mogućnosti za aktivan odmor uz rijeku Savu i u okolnoj prirodi:`,
         sport:        `🏃 **Sport i rekreacija u Slavonskom Brodu** (${items.length} lokacija):`,
+        okolica:      `🗺️ **Izleti iz Slavonskog Broda** (${items.length} preporučenih destinacija)\n\nSlavonski Brod idealno je polazište za jednodnevne izlete. Kliknite na 🌐 Web za više informacija ili 🗺 Karta za navigaciju:`,
       };
       const intro = intros[resolvedCat] || `📍 **${items.length} lokacija** u Slavonskom Brodu:`;
 

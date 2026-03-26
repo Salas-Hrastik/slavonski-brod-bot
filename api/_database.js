@@ -423,37 +423,65 @@ export const db = {
       {
         "naziv": "Bosanski Brod (BiH)",
         "udaljenost": "Odmah preko mosta (Most slobode)",
-        "opis": "Grad s druge strane Save u Republici Srpskoj. Kratki izlet preko granice — drugačija atmosfera, gastronomija i kultura."
+        "opis": "Grad s druge strane Save u Republici Srpskoj. Kratki izlet preko granice — drugačija atmosfera, gastronomija i kultura.",
+        "web": "https://www.opstinabosanskibrod.net",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Bosanski+Brod+Bosna+i+Hercegovina"
       },
       {
         "naziv": "Đakovo",
         "udaljenost": "35 km",
-        "opis": "Grad katedrale i lipicančkih konja. Đakovačka katedrala (Strossmayerova) jedna je od najimpresivnijih sakralnih građevina u Hrvatskoj. Đakovački vezovi — međunarodna smotra folklora (lipanj)."
+        "opis": "Grad katedrale i lipicančkih konja. Đakovačka katedrala (Strossmayerova) jedna je od najimpresivnijih sakralnih građevina u Hrvatskoj. Đakovački vezovi — međunarodna smotra folklora (lipanj).",
+        "web": "https://www.tz-dakovo.hr",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Đakovo+Hrvatska"
       },
       {
         "naziv": "Požega",
         "udaljenost": "45 km",
-        "opis": "Zlatna dolina — Požeška kotlina okružena vinogradima i šumama. Grad s bogatom kulturnom baštinom, đakovačka katedrala i vinogradarski kraj."
+        "opis": "Zlatna dolina — Požeška kotlina okružena vinogradima i šumama. Grad s bogatom kulturnom baštinom i vinogradarskim krajem.",
+        "web": "https://www.tz-pozega.hr",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Požega+Hrvatska"
       },
       {
         "naziv": "Vinkovci",
         "udaljenost": "60 km",
-        "opis": "Grad vinkovačkih jeseni — jedna od najstarijih naselja u Europi (neolitska kultura Vučedol). Vučedolska golubica, najvažniji prapovijesni nalaz iz regije."
+        "opis": "Grad vinkovačkih jeseni — jedna od najstarijih naselja u Europi (neolitska kultura Vučedol). Vučedolska golubica, najvažniji prapovijesni nalaz iz regije.",
+        "web": "https://www.tz-vinkovci.hr",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Vinkovci+Hrvatska"
       },
       {
         "naziv": "Osijek",
         "udaljenost": "100 km",
-        "opis": "Metropola Slavonije s Tvrđom (barokni grad-tvrđava, UNESCO kandidatura), Zoološkim vrtom i bogatom kulturnom scenom."
+        "opis": "Metropola Slavonije s Tvrđom (barokni grad-tvrđava, UNESCO kandidatura), Zoološkim vrtom i bogatom kulturnom scenom.",
+        "web": "https://www.tzosijek.hr",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Osijek+Hrvatska"
       },
       {
         "naziv": "Nacionalni park Kozara (BiH)",
         "udaljenost": "70 km (u BiH)",
-        "opis": "Planinski nacionalni park u Bosni — zelenilo, šetnice i priroda. Idealno za ljubitelje planinarenja i prirode."
+        "opis": "Planinski nacionalni park u Bosni — zelenilo, šetnice i priroda. Idealno za ljubitelje planinarenja i prirode.",
+        "web": "https://www.npkozara.com",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Nacionalni+park+Kozara+BiH"
       },
       {
         "naziv": "Kutjevo — vinska cesta",
         "udaljenost": "50 km",
-        "opis": "Centar slavonskog vinarstva. Kutjevački rizling i graševina — vrhunska slavonska bijela vina. Podrumi kutjevačkog vina i vinska cesta."
+        "opis": "Centar slavonskog vinarstva. Kutjevački rizling i graševina — vrhunska slavonska bijela vina. Podrumi kutjevačkog vina i vinska cesta.",
+        "web": "https://www.kutjevo.com",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Kutjevo+Hrvatska"
+      },
+      {
+        "naziv": "Dilj gora — planinarenje",
+        "udaljenost": "10–20 km (sjeverno od Broda)",
+        "opis": "Geološki lokalitet Pljuskara, jezero Ljeskove vode i Planinski dom Đuro Pilar. Popularna jedndnevna destinacija za planinarenje i rekreaciju.",
+        "web": "https://www.hps.hr",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Dilj+gora+Slavonija"
+      },
+      {
+        "naziv": "Slavonski Kobaš — Malena i Klepetan",
+        "udaljenost": "15 km",
+        "opis": "Svjetski poznata priča o rodi Maleni i njenom partneru Klepetanu koji se svake godine vraćao iz Afrike — simbol odanosti koji je obišao cijeli svijet.",
+        "web": "https://www.tzgsb.hr/index.php?page=malena-klepetan",
+        "karta": "https://www.google.com/maps/search/?api=1&query=Slavonski+Kobaš+Hrvatska"
       }
     ]
   }
