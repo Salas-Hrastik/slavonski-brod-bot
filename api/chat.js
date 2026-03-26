@@ -6,6 +6,16 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY?.trim()
 });
 
+// ===== DOPUNSKE SLIKE za atrakcije/sport (nije u scrapedContent) =====
+const ATRAKCIJE_SLIKE = {
+  'Sportsko-rekreacijska zona Vijuš':  'https://www.tzgsb.hr/static/images/srz_vijus.png',
+  'Rekreacijski centar Poloj':         'https://www.tzgsb.hr/static/images/poloj170x120-2.jpg',
+  'Dilj gora — rekreacija i priroda':  'https://www.tzgsb.hr/static/images/obronci_dilj_gore_170.png',
+  'Lov u Brodsko-posavskoj županiji':  'https://www.tzgsb.hr/static/images/lov170-1.jpg',
+  'Ribolov na rijeci Savi':            'https://www.tzgsb.hr/static/images/ribic170-2.jpg',
+  'Posavska biciklistička ruta':       'https://www.tzgsb.hr/static/images/brodici_1.png',
+};
+
 // ===== RECENZIJE — prikupljene s Google Maps, TripAdvisor i Booking.com =====
 const RECENZIJE = {
   // Restorani
@@ -64,7 +74,10 @@ function getCategoryItems(category) {
     return (s.kulturna_bastina || []).map(b => item(b, { opis: b.opis || '' }));
   }
   if (category === 'priroda' || category === 'sport') {
-    return (s.atrakcije_tz || []).map(a => item(a, { opis: a.opis || '' }));
+    return (s.atrakcije_tz || []).map(a => item(
+      { ...a, slika: a.slika || ATRAKCIJE_SLIKE[a.naziv] || '' },
+      { opis: a.opis || '' }
+    ));
   }
   // okolica — AI obrađuje s db.okolica.izleti (pravi izleti iz SB, ne lokalne atrakcije)
   return [];
@@ -98,7 +111,11 @@ function getItemsForCategory(category, limit = 8) {
     return (s.kulturna_bastina || []).filter(o => o.slika).slice(0, limit).map(item);
   }
   if (category === 'priroda' || category === 'sport') {
-    return (s.atrakcije_tz || []).filter(o => o.slika).slice(0, limit).map(item);
+    return (s.atrakcije_tz || [])
+      .map(o => ({ ...o, slika: o.slika || ATRAKCIJE_SLIKE[o.naziv] || '' }))
+      .filter(o => o.slika)
+      .slice(0, limit)
+      .map(item);
   }
   return [];
 }
