@@ -484,7 +484,7 @@ function getRelevantContext(message, db, lastCategory) {
     || msg.includes('fußball') || msg.includes('fitnessstudio') || msg.includes('angeln'))
     return { context: CATEGORY_CONTEXTS.sport(db), category: 'sport' };
 
-  if (msg.includes('kupin') || msg.includes('kupovat') || msg.includes('shopping') || msg.includes('trgovin') || msg.includes('supermarket') || msg.includes('dućan') || msg.includes('suveniri') || msg.includes('tržnic') || msg.includes('avenue mall')
+  if (msg.includes('kupin') || msg.includes('kupovat') || msg.includes('shopping') || msg.includes('trgovin') || msg.includes('supermarket') || msg.includes('dućan') || msg.includes('suveniri') || msg.includes('tržnic') || msg.includes('city colos') || msg.includes('supernov') || msg.includes('kaufland')
     || msg.includes('shop') || msg.includes('store') || msg.includes('buy') || msg.includes('souvenir') || msg.includes('market') || msg.includes('mall') || msg.includes('grocery')
     || msg.includes('einkaufen') || msg.includes('laden') || msg.includes('markt'))
     return { context: CATEGORY_CONTEXTS.kupovina(db), category: 'kupovina' };
@@ -648,9 +648,9 @@ export default async function handler(req, res) {
           '🎁 Besplatni sadržaji u Slavonskom Brodu:\n\n' +
           '🏰 **Tvrđava Brod** — Vanjske površine otvorene cijele godine, besplatno\n' +
           '[Otvori na karti](https://www.google.com/maps/search/?api=1&query=Tvrdava+Brod+Slavonski+Brod)\n\n' +
-          '🚶 **Šetalište uz Savu (Brodska riva)** — 3+ km šetnice uz rijeku, besplatno\n\n' +
-          '🌳 **Šuma Poloj** — gradska šuma s piknik mjestima, besplatno\n\n' +
-          '🅿️ **Parkiranje uz Tvrđavu** i šetalište — besplatno ili pristupačna naplata\n\n' +
+          '🚶 **Kej (Šetalište uz Savu)** — 3+ km uređene šetnice uz rijeku, besplatno\n\n' +
+          '🏖️ **Poloj** — Riječna plaža uz Savu s piknik mjestima, besplatno\n\n' +
+          '🅿️ **Parkiranje uz Tvrđavu** i Kej — besplatno ili pristupačna naplata\n\n' +
           'ℹ️ Za ulaznice u Muzej Brodskog Posavlja obratite se:\n📞 +385 35 447 721 | [tzgsb.hr](https://www.tzgsb.hr)';
       }
 
@@ -660,8 +660,8 @@ export default async function handler(req, res) {
           '👨‍👩‍👧 Slavonski Brod s djecom i obitelju:\n\n' +
           '🏰 **Tvrđava Brod** — Ogroman prostor za istraživanje, bastioni i hodnici, djeci jako zanimljivo!\n\n' +
           '🏊 **Gradski bazen** — Otvoreni bazen ljeti za sve uzraste\n\n' +
-          '🌳 **Sportski park Poloj** — Dječja igrališta, atletska staza, zelenilo\n\n' +
-          '🚴 **Šetalište uz Savu** — Bicikliranje i šetnja uz rijeku (3+ km)\n\n' +
+          '🏖️ **Poloj** — Riječna plaža uz Savu, dječja igrališta i atletska staza\n\n' +
+          '🚴 **Kej (Šetalište uz Savu)** — Bicikliranje i šetnja uz rijeku (3+ km)\n\n' +
           '🎭 **Brodsko kolo (lipanj)** — Međunarodni folklor — djeca obožavaju!\n\n' +
           '📚 **Muzej Brodskog Posavlja** — Edukativno za sve uzraste';
       }
@@ -672,12 +672,12 @@ export default async function handler(req, res) {
           '🗺️ Preporučeni plan obilaska Slavonskog Broda:\n\n' +
           '⏱️ **Poludnevni posjet (3–4 sata):**\n' +
           '✅ Tvrđava Brod — obilazak i fotografiranje\n' +
-          '✅ Šetalište uz Savu\n' +
-          '✅ Centar — Trg pobjede, crkva i kavana\n\n' +
+          '✅ Kej (Šetalište uz Savu)\n' +
+          '✅ Centar — Trg Ivane Brlić Mažuranić, kavane i Korzo\n\n' +
           '☀️ **Cijeli dan (6–8 sati):**\n' +
           '✅ Sve gore + Muzej Brodskog Posavlja\n' +
           '✅ Ručak s fiš-paprikašem u restoranu uz Savu\n' +
-          '✅ Šuma Poloj ili bicikliranje uz Savu\n\n' +
+          '✅ Poloj (riječna plaža) ili bicikliranje uz Kej\n\n' +
           '🏕️ **Vikend u Slavonskom Brodu:**\n' +
           '✅ Sve gore + Đakovo (35 km) — katedrala i lipicaneri\n\n' +
           '💡 Više informacija: [tzgsb.hr](https://www.tzgsb.hr)';
@@ -741,9 +741,10 @@ export default async function handler(req, res) {
       if (!faqReply && (ml.includes('invalid') || ml.includes('pristupačn') || ml.includes('kolica') || ml.includes('wheelchair') || ml.includes('accessible') || ml.includes('hendikep'))) {
         faqReply =
           '♿ Pristupačnost u Slavonskom Brodu:\n\n' +
-          '✅ **Šetalište uz Savu** — Ravna, asfaltirana staza, pogodna za kolica\n' +
-          '✅ **Avenue Mall** — Moderni shopping centar, potpuno pristupačan\n' +
-          '✅ **Trg pobjede** — Centar bez prepreka\n\n' +
+          '✅ **Kej (Šetalište uz Savu)** — Ravna, asfaltirana staza, pogodna za kolica\n' +
+          '✅ **City Colosseum** — Tržni centar, lift i parking za invalide\n' +
+          '✅ **Supernova** — Moderni tržni centar, potpuno pristupačan\n' +
+          '✅ **Trg Ivane Brlić Mažuranić** — Središnji gradski trg, bez prepreka\n\n' +
           'Za detalje o pristupačnosti Tvrđave i muzeja:\n' +
           '📞 **+385 35 447 721**\n' +
           '✉️ info@tzgsb.hr | [tzgsb.hr](https://www.tzgsb.hr)';
@@ -869,6 +870,25 @@ Koristiš isključivo podatke iz baze i svoja opća znanja o gradu. Budi prijate
 Baza podataka o Slavonskom Brodu:
 ${contextStr}
 ${scrapedSection}
+
+STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
+
+🔴 ZABRANJENO (ne postoji ili je pogrešno):
+- "Avenue Mall" — NE POSTOJI u Slavonskom Brodu, nikad ga ne spominji
+- "Župna crkva Presvetog Srca Isusova" — NE POSTOJI u SB
+- "Brodska riva" — pogrešan naziv, ispravno je "Kej"
+- "Šuma Poloj" — Poloj je RIJEČNA PLAŽA, ne šuma
+- "Trg pobjede je središnji gradski trg" — POGREŠNO; na Trgu pobjede je TZ i nekoliko ureda, nema restorana (samo jedan kafić u sklopu hotela Park)
+- "Korzo na Trgu pobjede" — POGREŠNO; Korzo se nalazi na Trgu Ivane Brlić Mažuranić
+
+✅ ISPRAVNI NAZIVI I ČINJENICE:
+- Šetalište uz rijeku Savu = **Kej** (ne Brodska riva)
+- **Poloj** = riječna plaža uz Savu (ne šuma), s piknik mjestima i igralištima
+- **Središnji gradski trg** = Trg Ivane Brlić Mažuranić (tu je Korzo, glavne kavane i restorani)
+- **Trg pobjede** = administrativni trg (TZ, Gradska uprava, Hotel Park) — nema restorana
+- **Tržni centri**: City Colosseum i Supernova (jedini veći tržni centri u SB); uz to: Kaufland, Lidl, Konzum, gradska tržnica
+- **Smještaj u prirodi / vikendice**: Matanovi Dvori, Bakina Divljaka, Kuća za odmor Mladen i Martina
+- **Izletišta u okolici SB**: Jezero Petnja, Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora, Etno-selo Crljen
 
 Pravila:
 1. Odgovaraj samo na pitanja vezana uz Slavonski Brod i turizam u regiji
