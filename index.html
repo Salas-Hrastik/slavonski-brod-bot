@@ -317,24 +317,33 @@ align-items:center;
 justify-content:center;
 border-radius:0 0 14px 14px;
 background:
-  linear-gradient(rgba(20,45,84,0.60), rgba(10,24,48,0.80)),
   url('https://www.tzgsb.hr/static/images/nslovna_tzgsb.jpg') center/cover no-repeat;
 min-height:180px;
 position:relative;
 overflow:hidden;
 }
 
+/* Tekst dobrodošlice u poluprovidnoj kutiji — slika ostaje prirodna */
+.welcome-text{
+background:rgba(10,24,50,0.55);
+backdrop-filter:blur(2px);
+-webkit-backdrop-filter:blur(2px);
+border-radius:12px;
+padding:18px 32px;
+border:1px solid rgba(255,255,255,0.15);
+max-width:90%;
+}
+
 .welcome p{
-margin:6px 0;
+margin:5px 0;
 font-size:15px;
-color:rgba(255,255,255,0.92);
-text-shadow:0 1px 4px rgba(0,0,0,0.5);
+color:rgba(255,255,255,0.95);
+text-shadow:none;
 }
 
 .welcome strong{
 color:#fff;
 font-size:17px;
-text-shadow:0 2px 6px rgba(0,0,0,0.6);
 }
 
 /* ===== SUGGESTIONS — kontekstualna pitanja ===== */
@@ -597,8 +606,10 @@ width:100%;
     <div class="chat-label">Turistički informator</div>
     <div class="chat-messages" id="chat-messages">
       <div class="welcome" id="welcome-block">
-        <p><strong>Dobrodošli u Slavonski Brod!</strong> 🏰</p>
-        <p>Pitajte me o znamenitostima, gastronomiji, smještaju,<br>događanjima i svemu što grad nudi.</p>
+        <div class="welcome-text">
+          <p><strong>Dobrodošli u Slavonski Brod!</strong> 🏰</p>
+          <p>Pitajte me o znamenitostima, gastronomiji, smještaju,<br>događanjima i svemu što grad nudi.</p>
+        </div>
       </div>
     </div>
   </div>
