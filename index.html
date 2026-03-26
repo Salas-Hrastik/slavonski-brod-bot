@@ -441,6 +441,37 @@ font-weight:bold;
 
 .item-card-links a.tel{ color:#2a7a3a; }
 
+/* ===== RECENZIJA u kartici ===== */
+.item-card-review{
+margin-top:5px;
+padding-top:5px;
+border-top:1px solid #f0f0f0;
+font-size:11px;
+color:#555;
+font-style:italic;
+line-height:1.4;
+}
+
+.item-card-review .review-stars{
+color:#e8a000;
+font-style:normal;
+font-weight:bold;
+margin-right:3px;
+}
+
+.item-card-review .review-source{
+display:inline;
+font-style:normal;
+font-size:10px;
+color:#1a5fa8;
+font-weight:bold;
+margin-left:4px;
+text-decoration:none;
+white-space:nowrap;
+}
+
+.item-card-review .review-source:hover{ text-decoration:underline; }
+
 a{
 color:#1a5fa8;
 text-decoration:none;
@@ -688,6 +719,33 @@ function addMessage(text, type, suggestions, images, items){
         links.appendChild(a);
       }
       if(links.children.length) info.appendChild(links);
+
+      // Recenzija (ako postoji)
+      if(it.ocjena || it.recenzija){
+        const rev = document.createElement("div");
+        rev.className = "item-card-review";
+
+        const stars = document.createElement("span");
+        stars.className = "review-stars";
+        stars.textContent = "⭐ " + it.ocjena;
+        rev.appendChild(stars);
+
+        if(it.recenzija){
+          rev.appendChild(document.createTextNode(" " + it.recenzija));
+        }
+
+        if(it.recenzija_izvor){
+          const srcLink = document.createElement("a");
+          srcLink.className = "review-source";
+          srcLink.textContent = "— " + it.recenzija_izvor;
+          srcLink.href = it.recenzija_url || "#";
+          srcLink.target = "_blank";
+          srcLink.rel = "noopener";
+          rev.appendChild(srcLink);
+        }
+
+        info.appendChild(rev);
+      }
 
       card.appendChild(info);
       cards.appendChild(card);

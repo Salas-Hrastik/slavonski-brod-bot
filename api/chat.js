@@ -6,6 +6,23 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY?.trim()
 });
 
+// ===== RECENZIJE — prikupljene s Google Maps, TripAdvisor i Booking.com =====
+const RECENZIJE = {
+  // Restorani
+  'Eden':          { tekst: '"Nevjerojatna hrana, ugodna atmosfera i izvrsna usluga. Brza priprema jela po pristupačnim cijenama."', ocjena: '4.6', izvor: 'TripAdvisor', url: 'https://www.tripadvisor.com/Restaurant_Review-g303835-d6611503-Reviews-Krcma_Eden-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  'Grozd':         { tekst: '"Pravi dragulj Slavonskog Broda! Obilna domaća hrana, jednostavno servirana od izvrsnog osoblja."', ocjena: '4.6', izvor: 'TripAdvisor', url: 'https://www.tripadvisor.com/Restaurant_Review-g303835-d10535237-Reviews-Restoran_Grozd-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  'Oroz':          { tekst: '"Posjetili smo dva puta i apsolutno preporučujemo — ukusna hrana, ljubazno osoblje, lijepi interijer."', ocjena: '4.4', izvor: 'TripAdvisor', url: 'https://www.tripadvisor.com/Restaurant_Review-g303835-d21036528-Reviews-Restoran_Oroz-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  'Onyx':          { tekst: '"Ugodan ambijent, preljubazno osoblje i fantastičan okus hrane — definitivno preporuka!"', ocjena: '4.1', izvor: 'Google', url: 'https://www.google.com/maps/search/?api=1&query=Onyx+Slavonski+Brod' },
+  'Podroom Grill': { tekst: null, ocjena: '4.7', izvor: 'TripAdvisor (#1 u gradu)', url: 'https://www.tripadvisor.com/Restaurant_Review-g303835-d11894149-Reviews-Podroom_Grill-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  'Zdenac':        { tekst: '"Hrana je pravo umjetničko djelo — vizualno savršena i ukusna. Profesionalno i ljubazno osoblje."', ocjena: '5.0', izvor: 'TripAdvisor', url: 'https://www.tripadvisor.com/Restaurant_Review-g303835-d14037151-Reviews-Restoran_Zdenac-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  'Gurman':        { tekst: '"Jako ukusna hrana u mirnom ambijentu — odlično za svaku prigodu."', ocjena: '4.0', izvor: 'TripAdvisor', url: 'https://www.tripadvisor.com/Restaurant_Review-g303835-d25175959-Reviews-Restoran_Gurman-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  'Galiot':        { tekst: '"Stvarno dobar restoran — preporučujem svakome tko posjeti Slavonski Brod!"', ocjena: '4.0', izvor: 'TripAdvisor', url: 'https://www.tripadvisor.com/Restaurant_Review-g303835-d18154023-Reviews-Pizzeria_Galiot-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  // Hoteli
+  'Savus ★★★★':    { tekst: '"Sjajno! Mali hotel u srcu grada — ugodan s ljubaznim osobljem i odličnom lokacijom."', ocjena: '4.5', izvor: 'TripAdvisor', url: 'https://www.tripadvisor.com/Hotel_Review-g303835-d1832491-Reviews-Hotel_Savus-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+  'Art ★★★★':      { tekst: '"Osoblje iznimno ljubazno — restoran na vrhu s pogledom na grad odličan za poslovne putnike."', ocjena: '8.2/10', izvor: 'Booking.com', url: 'https://www.booking.com/hotel/hr/art.html' },
+  'Garten':        { tekst: '"Kao kod kuće čim uđete — toplo osoblje, savršena čistoća i fantastičan wellness!"', ocjena: '8.0/10', izvor: 'Expedia', url: 'https://www.tripadvisor.com/Hotel_Review-g303835-d1808833-Reviews-Hotel_Garten-Slavonski_Brod_Brod_Posavina_County_Slavonia.html' },
+};
+
 function stripImages(data) {
   if (Array.isArray(data)) return data.map(stripImages);
   if (data && typeof data === 'object') {
@@ -24,8 +41,12 @@ function getCategoryItems(category) {
   if (!s) return [];
 
   function item(o, extra) {
+    const rev = RECENZIJE[o.naziv];
     return { naziv: o.naziv || '', slika: o.slika || '', adresa: o.adresa || '',
-             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '', ...extra };
+             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '',
+             recenzija: rev?.tekst || '', ocjena: rev?.ocjena || '',
+             recenzija_izvor: rev?.izvor || '', recenzija_url: rev?.url || '',
+             ...extra };
   }
 
   if (category === 'gastronomija') {
@@ -58,8 +79,11 @@ function getItemsForCategory(category, limit = 8) {
   if (!s) return [];
 
   function item(o) {
+    const rev = RECENZIJE[o.naziv];
     return { naziv: o.naziv || '', slika: o.slika || '', adresa: o.adresa || '',
-             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '' };
+             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '',
+             recenzija: rev?.tekst || '', ocjena: rev?.ocjena || '',
+             recenzija_izvor: rev?.izvor || '', recenzija_url: rev?.url || '' };
   }
 
   if (category === 'gastronomija') {
@@ -87,8 +111,11 @@ function findRelevantItems(text, category) {
   const t = text.toLowerCase();
 
   function item(o) {
+    const rev = RECENZIJE[o.naziv];
     return { naziv: o.naziv || '', slika: o.slika || '', adresa: o.adresa || '',
-             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '' };
+             telefon: o.telefon || '', web: o.web || '', karta: o.karta || '',
+             recenzija: rev?.tekst || '', ocjena: rev?.ocjena || '',
+             recenzija_izvor: rev?.izvor || '', recenzija_url: rev?.url || '' };
   }
 
   // Odaberi pool prema kategoriji
