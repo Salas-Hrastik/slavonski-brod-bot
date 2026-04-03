@@ -607,15 +607,22 @@ export default async function handler(req, res) {
       const ml = msgLower;
       let faqReply = null;
 
-      // 1. TURISTIČKA ZAJEDNICA
-      if (!faqReply && (ml.includes('turistič') || ml.includes('info centar') || ml.includes('info punkt') || ml.includes('tourist info') || ml.includes('tz slavonski') || ml.includes('tz brod') || ml.includes('turistički ured'))) {
+      // 1. TURISTIČKA ZAJEDNICA / TIC
+      if (!faqReply && (ml.includes('turistič') || ml.includes('info centar') || ml.includes('info punkt') || ml.includes('tourist info') || ml.includes('tz slavonski') || ml.includes('tz brod') || ml.includes('turistički ured') || ml.includes('tic '))) {
         faqReply =
           '🏢 **Turistička zajednica Grada Slavonskog Broda**\n\n' +
           '📍 Trg pobjede 28/I, 35000 Slavonski Brod\n' +
           '📞 +385 35 447 721\n' +
           '✉️ info@tzgsb.hr\n' +
           '[Otvori na karti](https://www.google.com/maps/search/?api=1&query=Turisticka+zajednica+Slavonski+Brod)\n' +
-          '[Više informacija](https://www.tzgsb.hr)';
+          '[Više informacija](https://www.tzgsb.hr)\n\n' +
+          '---\n\n' +
+          '🗺️ **Turistički informativni centar (TIC)**\n\n' +
+          '📍 Trg Ivane Brlić Mažuranić 7a, 35000 Slavonski Brod\n' +
+          '🕐 Radno vrijeme: **svaki dan 10:00–17:00**\n' +
+          '📞 +385 35 203 696\n' +
+          '✉️ tic@tzgsb.hr\n' +
+          '[Otvori na karti](https://www.google.com/maps/search/?api=1&query=Turisticki+informativni+centar+Slavonski+Brod+Trg+Ivane+Brlic+Mazuranic)';
       }
 
       // 2. TVRĐAVA BROD
@@ -737,7 +744,31 @@ export default async function handler(req, res) {
           '[Više informacija](https://www.tzgsb.hr)';
       }
 
-      // 12. PRISTUPAČNOST
+      // 12. NOĆNI ŽIVOT — barovi i klubovi
+      if (!faqReply && (ml.includes('bar') || ml.includes('noćni') || ml.includes('nocni') || ml.includes('klub') || ml.includes('izlaz') || ml.includes('provod') || ml.includes('party') || ml.includes('nightlife') || ml.includes('disco') || ml.includes('pivo') || ml.includes('cocktail') || ml.includes('kokteli'))) {
+        faqReply =
+          '🍺 **Noćni život u Slavonskom Brodu**\n\n' +
+          '**Barovi:**\n' +
+          '🍻 Navigator\n' +
+          '🍸 Soho Bar\n' +
+          '🍺 Beerc\n' +
+          '🥂 Imperia\n' +
+          '🎵 BoomBar\n' +
+          '⚽ Derby\n' +
+          '🍺 Pipa bar\n' +
+          '🏠 Kuća Piva\n\n' +
+          '**Noćni klubovi:**\n' +
+          '🎶 Klub Rupa\n' +
+          '🎭 Alfa Club\n' +
+          '💃 Hedonic Club\n' +
+          '🥃 Prohibition Bar\n' +
+          '🎪 Central Club\n' +
+          '🌙 Sens Bar Night\n\n' +
+          'Za aktualni program pratite stranice klubova na društvenim mrežama ili upitajte TIC:\n' +
+          '📞 +385 35 203 696 | tic@tzgsb.hr';
+      }
+
+      // 13. PRISTUPAČNOST
       if (!faqReply && (ml.includes('invalid') || ml.includes('pristupačn') || ml.includes('kolica') || ml.includes('wheelchair') || ml.includes('accessible') || ml.includes('hendikep'))) {
         faqReply =
           '♿ Pristupačnost u Slavonskom Brodu:\n\n' +
@@ -873,22 +904,31 @@ ${scrapedSection}
 
 STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 
-🔴 ZABRANJENO (ne postoji ili je pogrešno):
-- "Avenue Mall" — NE POSTOJI u Slavonskom Brodu, nikad ga ne spominji
+🔴 ZABRANJENO (ne postoji ili je pogrešno — NIKAD ne koristi):
+- "Avenue Mall" — NE POSTOJI u Slavonskom Brodu
+- "City Club" — NE POSTOJI u Slavonskom Brodu
+- "Crljenka" — NE POSTOJI; ispravno je "Etno-selo Crljen" u Podvinju
 - "Župna crkva Presvetog Srca Isusova" — NE POSTOJI u SB
 - "Brodska riva" — pogrešan naziv, ispravno je "Kej"
 - "Šuma Poloj" — Poloj je RIJEČNA PLAŽA, ne šuma
-- "Trg pobjede je središnji gradski trg" — POGREŠNO; na Trgu pobjede je TZ i nekoliko ureda, nema restorana (samo jedan kafić u sklopu hotela Park)
-- "Korzo na Trgu pobjede" — POGREŠNO; Korzo se nalazi na Trgu Ivane Brlić Mažuranić
+- "Trg pobjede je središnji gradski trg" — POGREŠNO; središnji trg je Trg Ivane Brlić Mažuranić
+- "Korzo na Trgu pobjede" — POGREŠNO; Korzo je na Trgu Ivane Brlić Mažuranić
+- Na Trgu pobjede nema restorana (samo jedan kafić u sklopu hotela Park)
 
 ✅ ISPRAVNI NAZIVI I ČINJENICE:
-- Šetalište uz rijeku Savu = **Kej** (ne Brodska riva)
-- **Poloj** = riječna plaža uz Savu (ne šuma), s piknik mjestima i igralištima
-- **Središnji gradski trg** = Trg Ivane Brlić Mažuranić (tu je Korzo, glavne kavane i restorani)
-- **Trg pobjede** = administrativni trg (TZ, Gradska uprava, Hotel Park) — nema restorana
-- **Tržni centri**: City Colosseum i Supernova (jedini veći tržni centri u SB); uz to: Kaufland, Lidl, Konzum, gradska tržnica
+- **TIC** (Turistički informativni centar): Trg Ivane Brlić Mažuranić 7a | tel. +385 35 203 696 | tic@tzgsb.hr | radi svaki dan 10:00–17:00
+- **TZ** (Turistička zajednica): Trg pobjede 28/I | tel. +385 35 447 721 | info@tzgsb.hr (administracija, ne info šalter)
+- **Palača Horvat**: Ulica Ante Starčevića 8 (prizemlje) — kulturno-povijesna zgrada u centru SB
+- **Kej** = Šetalište uz rijeku Savu (ne "Brodska riva")
+- **Poloj** = riječna plaža uz Savu, s piknik mjestima i igralištima (ne šuma)
+- **Središnji gradski trg** = Trg Ivane Brlić Mažuranić (Korzo, kavane, restorani)
+- **Dilj gora** = planina povrh Podvinja (naselja u sastavu SB), na spoju ulice Hrvatskih dobrovoljaca i Janiševca I (cca 5 km od centra)
+- **Etno-selo Crljen** = nalazi se u Podvinju (naselje u sastavu SB, cca 5 km od centra)
+- **Tržni centri**: City Colosseum i Supernova; uz to: Kaufland, Lidl, Konzum, gradska tržnica
+- **Barovi u SB**: Navigator, Soho Bar, Beerc, Imperia, BoomBar, Derby, Pipa bar, Kuća Piva
+- **Noćni klubovi u SB**: Klub Rupa, Alfa Club, Hedonic Club, Prohibition Bar, Central Club, Sens Bar Night
 - **Smještaj u prirodi / vikendice**: Matanovi Dvori, Bakina Divljaka, Kuća za odmor Mladen i Martina
-- **Izletišta u okolici SB**: Jezero Petnja, Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora, Etno-selo Crljen
+- **Izletišta u okolici SB**: Jezero Petnja, Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora, Etno-selo Crljen (Podvinje)
 
 Pravila:
 1. Odgovaraj samo na pitanja vezana uz Slavonski Brod i turizam u regiji
