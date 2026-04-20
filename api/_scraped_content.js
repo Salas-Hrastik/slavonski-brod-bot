@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-03-23 18:22 UTC
+// Zadnje skrapanje: 2026-04-20 12:50 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-03-23T18:22:57.526Z",
+    "zadnje_azuriranje": "2026-04-20T12:50:55.987Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,83 +18,77 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "U srijedu počinje isplata uskrsnica umirovljenicima i korisnicima inkluzivnog dodatka",
-      "datum": "23. 03. 2026.",
-      "kratki_opis": "Grad Slavonski Brod i ove godine osigurava uskrsnice za najugroženije građane, a isplata novčane pomoći počinje u srijedu, 25. ožujka 2026. godine. Pomoć će biti isplaćena umirovljenicima s nižim primanjima, korisnicima zajamčene minimalne naknade starijima od 65 godina te korisnicima nacionalne nak",
-      "link": "https://www.slavonski-brod.hr/vijesti/16702-u-srijedu-pocinje-isplata-uskrsnica-umirovljenicima-i-korisnicima-inkluzivnog-dodatka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/uskrs22_resize.png"
+      "naslov": "DDD mjere 2026. godine – Proveden 2. (drugi) larvicidni tretman te monitoring ličinki i adulta komaraca",
+      "datum": "20. 04. 2026.",
+      "kratki_opis": "Dana 16. travnja 2026. godine (četvrtak), stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba, proveli su 2. (drugi) larvicidni tretman na području grada Slavonskog Broda te monitoring ličinki i adulta komaraca. Temeljem provedenog monitoringa na otvorenim vodenim površinama na po",
+      "link": "https://www.slavonski-brod.hr/vijesti/16786-ddd-mjere-2026-godine-proveden-2-drugi-larvicidni-tretman-te-monitoring-licinki-i-adulta-komaraca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/DJI_0093_resize.jpg"
     },
     {
-      "naslov": "Građani Slavonskog Broda dobit će uređen Park Klasije s novim stazama i zelenilom",
-      "datum": "23. 03. 2026.",
-      "kratki_opis": "Najveći središnji park u Slavonskom Brodu, Park Klasije, kroz koji svakodnevno prolaze brojni građani, dobit će novo uređenje i hortikulturno osvježenje. Naime, Ministarstvo prostornog uređenja, graditeljstva i državne imovine donijelo je Odluku o financiranju projekta „Uređenje Parka Klasije sa hor",
-      "link": "https://www.slavonski-brod.hr/vijesti/16701-gradani-slavonskog-broda-dobit-ce-ureden-park-klasije-s-novim-stazama-i-zelenilom",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/naslovna_klasije_resize.jpeg"
+      "naslov": "DDD mjere 2026. godine – 3. tjedan provođenja proljetne deratizacije",
+      "datum": "20. 04. 2026.",
+      "kratki_opis": "U razdoblju od 20. travnja (ponedjeljak) do 24. travnja (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala vodo",
+      "link": "https://www.slavonski-brod.hr/vijesti/16785-ddd-mjere-2026-godine-3-tjedan-provodenja-proljetne-deratizacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/IMG_1497_resize.jpeg"
     },
     {
-      "naslov": "Obavijest o privremenoj regulaciji prometa",
-      "datum": "21. 03. 2026.",
-      "kratki_opis": "U ponedjeljak, 23. ožujka 2026. godine, u vremenu od 8:00 do 12:00 sati, Ulica Matije Gupca od Pilareve do Svačićeve ulice bit će potpuno zatvorena za promet zbog radova na rušenju stabala. U navedenom razdoblju prometnica će biti otvorena isključivo za autobuse javnog prijevoza, dok će se ostala vo",
-      "link": "https://www.slavonski-brod.hr/vijesti/16700-obavijest-o-privremenoj-regulaciji-prometa-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/gradska_uprava_resize.jpg"
+      "naslov": "Grad upriličio prijem za mlade sportašice nakon uspjeha na europskoj razini",
+      "datum": "20. 04. 2026.",
+      "kratki_opis": "Gradonačelnikova zamjenica Marina Martić Puača i pročelnik Upravnog odjela za društvene djelatnosti Ivan Holik primili su danas u Gradskoj upravi članice i vodstvo Jiu Jitsu Kluba Slavonski Brod koji je nedavno nastupao na JJIF Europskom prvenstvu za mlade (U14) u Heraklionu na Kreti. Povod prijema ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16784-grad-uprilicio-prijem-za-mlade-sportasice-nakon-uspjeha-na-europskoj-razini",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/image00001_resize-1.jpeg"
     },
     {
-      "naslov": "Narcisi na gradskoj tržnici u znaku borbe protiv raka dojke",
-      "datum": "21. 03. 2026.",
-      "kratki_opis": "Na Gradskoj tržnici i ove su se godine prodavali narcisi u sklopu obilježavanja Dana narcisa, posvećenog prevenciji i ranom otkrivanju raka dojke. Akciju je pokrenula Hrvatska liga protiv raka s ciljem podizanja svijesti o važnosti redovitih preventivnih pregleda dojki radi pravovremenog otkrivanja ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16699-narcisi-na-gradskoj-trznici-u-znaku-borbe-protiv-raka-dojke",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/narcnas_resize.jpeg"
+      "naslov": "Noć knjige donosi inspiraciju, dijalog i nezaboravne susrete",
+      "datum": "20. 04. 2026.",
+      "kratki_opis": "Manifestacija Noć knjige, pokrenuta 2012. godine, i ove godine okuplja ljubitelje pisane riječi s ciljem promicanja čitanja i isticanja važnosti knjige u suvremenom društvu. Nadahnuta obilježavanjem Svjetskog dana knjige i autorskih prava kojeg obilježavamo 23. travnja i Dana hrvatske knjige, ova je",
+      "link": "https://www.slavonski-brod.hr/vijesti/16783-noc-knjige-donosi-inspiraciju-dijalog-i-nezaboravne-susrete",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/noc_knjige_resize.jpg"
     },
     {
-      "naslov": "Pet novih paketa za prvorođene bebe u Slavonskom Brodu",
-      "datum": "20. 03. 2026.",
-      "kratki_opis": "U Slavonskom Brodu danas je još pet obitelji primilo pakete opreme za svoje prvorođene bebe. Pakete je, kao i dosad, uručila zamjenica gradonačelnika Marina Martić Puača, istaknuvši kako Grad i dalje s ponosom nastavlja provedbu mjere koja je već godinama simbol brige i potpore obiteljima. Ova jedin",
-      "link": "https://www.slavonski-brod.hr/vijesti/16697-pet-novih-paketa-za-prvorodene-bebe-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/nasss.jpeg"
+      "naslov": "Danas obilježavamo 152. obljetnicu rođenja naše najpoznatije književnice Ivane Brlić-Mažuranić",
+      "datum": "18. 04. 2026.",
+      "kratki_opis": "Na današnji dan rođena je Ivana Brlić-Mažuranić – najpoznatija hrvatska spisateljica dječje književnosti, čije su priče već više od stoljeća izvor čarolije, mudrosti i nadahnuća. Danas bi slavila svoj 152. rođendan. Ivana Brlić-Mažuranić ostavila je neizbrisiv trag u hrvatskoj književnosti, ali i u ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16781-danas-obiljezavamo-152-obljetnicu-rodenja-nase-najpoznatije-knjizevnice-ivane-brlic-mazuranic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/IBM_SLIKA.jpg"
     },
     {
-      "naslov": "Svečano proglašeni najuspješniji sportaši Slavonskog Broda za 2025. godinu",
-      "datum": "20. 03. 2026.",
-      "kratki_opis": "U Slavonskom Brodu održana je svečanost proglašenja najuspješnijih sportašica i sportaša za 2025. godinu, na kojoj su dodijeljena priznanja najzaslužnijima za iznimne sportske rezultate i doprinos razvoju sporta u gradu. Na svečanosti proglašenja okupljenima se obratio gradonačelnik Mirko Duspara, k",
-      "link": "https://www.slavonski-brod.hr/vijesti/16696-svecano-proglaseni-najuspjesniji-sportasi-slavonskog-broda-za-2025-godinu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/IZBOR_page-0001_resize.jpg"
+      "naslov": "Dan Osnovne škole Ivana Brlić-Mažuranić obilježen u svečanom ozračju",
+      "datum": "17. 04. 2026.",
+      "kratki_opis": "Danas je u Osnovnoj školi Ivana Brlić-Mažuranić u naselju Budainka, koja je osnovana davne 1930. godine, obilježen Dan škole u vedrom i svečanom ozračju. Škola ponosno nosi ime istaknute hrvatske književnice – autorice brojnih bajki i prvog hrvatskog romana za djecu, a uz matičnu školu djeluju i dvi",
+      "link": "https://www.slavonski-brod.hr/vijesti/16780-dan-osnovne-skole-ivana-brlic-mazuranic-obiljezen-u-svecanom-ozracju",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/naslovnaibm_resize.jpeg"
     },
     {
-      "naslov": "Čestitka gradonačelnika povodom Ramazanskog bajrama",
-      "datum": "20. 03. 2026.",
-      "kratki_opis": "Povodom Ramazanskog bajrama, svim građankama i građanima islamske vjeroispovijesti upućujem iskrene čestitke, uz želju da ovaj veliki blagdan provedete u miru, dostojanstvu i zajedništvu sa svojim obiteljima i najbližima. Neka vas duh Bajrama ispuni nadom, vjerom i snagom te vam bude nadahnuće u suo",
-      "link": "https://www.slavonski-brod.hr/vijesti/16695-cestitka-gradonacelnika-povodom-ramazanskog-bajrama-3",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/22_resize.png"
+      "naslov": "Večer zavičajne poezije ispunjena emocijama i uspomenama",
+      "datum": "17. 04. 2026.",
+      "kratki_opis": "U petak, 17. travnja, u Edukacijsko-multimedijalnom centru održana je Večer zavičajne poezije, događaj koji je još jednom potvrdio snagu riječi u povezivanju ljudi, uspomena i identiteta. Program je organiziran u sklopu manifestacije „U svijetu bajki Ivane Brlić-Mažuranić“, u suradnji s Gradskom knj",
+      "link": "https://www.slavonski-brod.hr/vijesti/16782-vecer-zavicajne-poezije-ispunjena-emocijama-i-uspomenama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/naslovna_resize.jpeg"
     },
     {
-      "naslov": "Javni pozivi građanima za sufinanciranje mjera određenih Akcijskim planom poboljšanja kvalitete zraka",
-      "datum": "19. 03. 2026.",
-      "kratki_opis": "S ciljem povećanja učinkovitosti postojećih sustava za grijanje, smanjenja potrošnje energenata, povećanja energetske učinkovitosti postojećih kuća, smanjenja emisija CO 2 &nbsp;i lebdećih čestica PM 10 &nbsp;i PM 2,5 &nbsp;u zrak te poboljšanja kvalitete zraka i kvalitete života, Grad Slavonski Bro",
-      "link": "https://www.slavonski-brod.hr/vijesti/16694-javni-pozivi-gradanima-za-sufinanciranje-mjera-odredenih-akcijskim-planom-poboljsanja-kvalitete-zraka-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/drvo_resize.jpg"
+      "naslov": "Svečano zaključene dječje svečanosti „U svijetu bajki Ivane Brlić-Mažuranić&quot;",
+      "datum": "17. 04. 2026.",
+      "kratki_opis": "U likovnom salonu „Vladimir Becić\" danas su svečano zaključene ovogodišnje dječje svečanosti „U svijetu bajki Ivane Brlić-Mažuranić\". Tradicionalnom simbolikom predaje ključeva u ruke Grada, manifestacija je obilježila još jedan kraj radosnih i sadržajnih dana posvećenih najmlađima. Pročelnik Upravn",
+      "link": "https://www.slavonski-brod.hr/vijesti/16777-svecano-zakljucene-djecje-svecanosti-u-svijetu-bajki-ivane-brlic-mazuranic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/image00001_resize.jpeg"
     },
     {
-      "naslov": "Potpisan ugovor o sufinanciranju rekonstrukcije atletske staze i borilišta na stadionu &quot;Stanko Vlainić Dida&quot;",
-      "datum": "19. 03. 2026.",
-      "kratki_opis": "U Nacionalnoj i sveučilišnoj knjižnici u Zagrebu zamjenica gradonačelnika Marina Martić Puača sudjelovala je na svečanom potpisivanju i uručenju ugovora o sufinanciranju izgradnje i rekonstrukcije sportskih građevina. Riječ je o projektu odobrenom kroz Javni poziv za iskaz interesa za sufinanciranje",
-      "link": "https://www.slavonski-brod.hr/vijesti/16685-potpisan-ugovor-o-sufinanciranju-rekonstrukcije-atletske-staze-i-borilista-na-stadionu-stanko-vlainic-dida",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/NASLOVNA-1.jpeg"
+      "naslov": "Plesnjak kod Brlićke na rođendan Ivane Brlić-Mažuranić",
+      "datum": "17. 04. 2026.",
+      "kratki_opis": "Kuća Brlić i ove godine postaje središte posebnog kulturno-zabavnog događanja kojim obilježavamo rođendan naše velike spisateljice Ivane Brlić-Mažuranić. Pozivamo vas na Plesnjak kod Brlićke, večer posvećenu glazbi, plesu i atmosferi početka 20. stoljeća, koja će se održati u subotu, 18. travnja. Pr",
+      "link": "https://www.slavonski-brod.hr/vijesti/16779-plesnjak-kod-brlicke-na-rodendan-ivane-brlic-mazuranic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/IBM.png"
     },
     {
-      "naslov": "Skulptura „Otac i sin“ kao simbol očinske ljubavi u Slavonskom Brodu",
-      "datum": "19. 03. 2026.",
-      "kratki_opis": "Na blagdan sv. Josipa, 19. ožujka, obilježava se Dan očeva – dan posvećen ulozi oca u obitelji i društvu te važnosti njegove prisutnosti u odrastanju djece. To je prilika da se istakne koliko su očevi važni kao uzori, oslonac i podrška u svakodnevnom životu. U Slavonskom Brodu, simbolika ovog dana p",
-      "link": "https://www.slavonski-brod.hr/vijesti/16684-skulptura-otac-i-sin-kao-simbol-ocinske-ljubavi-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/OTAC_resize.jpeg"
+      "naslov": "Podsjetnik: Anketa o priuštivom stanovanju – još uvijek traje",
+      "datum": "16. 04. 2026.",
+      "kratki_opis": "Grad Slavonski Brod poziva sve zainteresirane punoljetne građane koji još nisu sudjelovali da ispune anketu o priuštivom stanovanju. Anketa je pokrenuta s ciljem prikupljanja podataka koji će poslužiti kao podloga za planiranje stambene politike na lokalnoj razini, a još uvijek je otvorena za ispunj",
+      "link": "https://www.slavonski-brod.hr/vijesti/16776-podsjetnik-anketa-o-priustivom-stanovanju-jos-uvijek-traje",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/image00002_resize-1.jpeg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "Međunarodni Festival harmonike \"Bela pl",
-      "datum": "Ožujak",
-      "opis": "Panthy\" Jedini festival harmonike takvog tipa u Republici Hrvatskoj. Prvi je put održan 2010. na inicijativu nekoliko entuzijasta i članova Brodskog harmonikaškog orkestra \"Bela pl. Panthy\". Dvodnevna zbivanja obuhvaćaju revijalne i natjecateljske nastupe harmonikaških orkestara pod stručnim nadzoro",
-      "link": "https://www.tzgsb.hr/index.php?page=ozujak"
-    },
     {
       "naziv": "U svijetu bajki Ivane Brlić-Mažuranić Dječja manifestacija koja nastavlja tradiciju susreta koji tra",
       "datum": "Travanj",
@@ -112,6 +106,12 @@ export const scrapedContent = {
       "datum": "Lipanj",
       "opis": "i etnografskih izložbi, promocija knjiga, dječje smotre, smotre svečanih zaprega, smotre izvornog pjevanja, smotre izvornog folklora, revije hrvatskih narodnih nošnji te izbora najljepše Hrvatice u narodnoj nošnji. Brodsko glazbeno ljeto Riječ je o kulturnoj manifestaciji koja, uz programe koji se o",
       "link": "https://www.tzgsb.hr/index.php?page=lipanj"
+    },
+    {
+      "naziv": "Brodsko glazbeno ljeto Riječ je o kulturnoj manifestaciji koja, uz programe koji se odvijaju u Kazal",
+      "datum": "Srpanj",
+      "opis": "išno-koncertnoj dvorani poput opera, opereta, baleta i sl., obuhvaća i sadržaje poput komornih koncerata koji se održavaju u franjevačkoj crkvi. Fišijada Tradicionalna manifestacija koja se, uz sudjelovanje velikog broja natjecatelja s područja cijele regije Slavonije odvija u Sportsko-rekreacijskom",
+      "link": "https://www.tzgsb.hr/index.php?page=srpanj"
     }
   ],
   "restorani_tz": [
@@ -1030,9 +1030,9 @@ export const scrapedContent = {
       "naziv": "ABY ★★★",
       "tip": "APARTMENT",
       "adresa": "Vukovarska 10/C, 35000 Slavonski Brod",
-      "telefon": "+385 92 355 6059",
+      "telefon": "+385 98 131 4084",
       "web": "",
-      "slika": "https://www.tzgsb.hr/static/images/smjestaj/ABY_apartman_170.jpg",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/aby_2026.jpeg",
       "karta": "https://www.google.com/maps/search/?api=1&query=ABY%20Slavonski%20Brod"
     },
     {
@@ -1173,7 +1173,7 @@ export const scrapedContent = {
     {
       "naziv": "Dika ★★★",
       "tip": "STUDIO_APARTMENT",
-      "adresa": "Ante Starčevića 10, 35000 Slavonski Brod",
+      "adresa": "Sadovi II br. 14., Brodski Varoš, 35000 Slavonski Brod",
       "telefon": "+385 98 848 935",
       "web": "",
       "slika": "https://www.tzgsb.hr/static/images/smjestaj/dika_170.jpg",
@@ -2039,6 +2039,10 @@ export const scrapedContent = {
       "url": "https://www.tzgsb.hr/static/pdf/Pravilnik_o_oznacavanju_projekta_dobar_gazda.PDF"
     },
     {
+      "naslov": "Izvješće o radu TZP 2025",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Izvješće o radu TZP 2025.pdf"
+    },
+    {
       "naslov": "Izvješće o radu TZP 2024. doneseno na Skupštini",
       "url": "https://www.tzgsb.hr/static/pdf/Izvješće o radu TZP 2024. doneseno na Skupštini.pdf"
     },
@@ -2071,6 +2075,10 @@ export const scrapedContent = {
       "url": "https://www.tzgsb.hr/static/pdf/Nadzor_nad_radom_TZ_u_2020_od_strane_Skupstine_ozujak_2021.pdf"
     },
     {
+      "naslov": "Turističko vijeće Izvješće o radu u 2025",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Turističko vijeće Izvješće o radu u 2025.pdf"
+    },
+    {
       "naslov": "Izvješće o radu Turističkog vijeća za 2024.god",
       "url": "https://www.tzgsb.hr/static/pdf/Izvješće o radu Turističkog vijeća za 2024.god.PDF"
     },
@@ -2081,6 +2089,14 @@ export const scrapedContent = {
     {
       "naslov": "Izvješće o radu Turističkog vijeća",
       "url": "https://www.tzgsb.hr/static/pdf/Izvješće o radu Turističkog vijeća.pdf"
+    },
+    {
+      "naslov": "Revizija nadzor nad poslovanjem",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Revizija-nadzor nad poslovanjem.pdf"
+    },
+    {
+      "naslov": "Revizija uvid u fin.izvještaje",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Revizija-uvid u fin.izvještaje.pdf"
     },
     {
       "naslov": "Izvjesce o obavljenoj financijskoj reviziji Turisticke zajednice grada Slavonskog Broda za 2019",
@@ -2121,6 +2137,10 @@ export const scrapedContent = {
     {
       "naslov": "Program rada 2023. izmjene i dopune",
       "url": "https://www.tzgsb.hr/static/pdf/Program_rada_2023._izmjene_i_dopune.pdf"
+    },
+    {
+      "naslov": "Zapisnik sa skupstine 25.03.2026",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Zapisnik_sa_skupstine_25.03.2026.pdf"
     },
     {
       "naslov": "Zapisnik sa 8 sjednice Skupstine",
