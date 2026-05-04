@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-04-27 08:28 UTC
+// Zadnje skrapanje: 2026-05-04 08:31 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-04-27T08:28:48.690Z",
+    "zadnje_azuriranje": "2026-05-04T08:31:41.904Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,83 +18,77 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Čestitke Gabrijelu Veočiću na srebrnoj medalji Svjetskog kupa!",
-      "datum": "27. 04. 2026.",
-      "kratki_opis": "Gradonačelnik Mirko Duspara u ime Grada Slavonskog Broda upućuje iskrene čestitke Gabrijelu Veočiću na osvojenoj srebrnoj medalji na Svjetskom kupu u boksu u Foz do Iguacuu u Brazilu! Gabrijel je u ovom prestižnom natjecanju kao prvi nositelj poluteške kategorije ostvario tri uvjerljive pobjede prot",
-      "link": "https://www.slavonski-brod.hr/vijesti/16808-cestitke-gabrijelu-veocicu-na-srebrnoj-medalji-svjetskog-kupa",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/680014232_1654328309685861_3605963017164738888_n_resize.jpg"
+      "naslov": "Javni poziv za upis djece u gradske dječje vrtiće za pedagošku 2026./2027. godinu",
+      "datum": "04. 05. 2026.",
+      "kratki_opis": "Grad Slavonski Brod obavještava roditelje i skrbnike da upisi u gradske dječje vrtiće za pedagošku 2026./2027. godinu započinju danas, 4. svibnja 2026. godine te traju do 29. svibnja 2026. godine. Upisni postupak provodit će se isključivo elektroničkim putem, a prijave za upis i nastavak korištenja ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16838-javni-poziv-za-upis-djece-u-gradske-djecje-vrtice-za-pedagosku-2026-2027-godinu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/sva_2.jpeg"
     },
     {
-      "naslov": "Obavijest o dežurstvu Gradskog izbornog povjerenstva za mjesne odbore",
-      "datum": "27. 04. 2026.",
-      "kratki_opis": "Za predaju kandidacijskih lista i ovjeru očitovanja o prihvaćanju kandidature za članicu/člana vijeća mjesnih odbora, Gradsko izborno povjerenstvo ima organizirano dežurstvo u Gradskoj upravi Grada Slavonskog Broda, Vukovarska 1, kako slijedi: Krajnji rok je&nbsp; Ponedjeljak, 27. travnja 2026. godi",
-      "link": "https://www.slavonski-brod.hr/vijesti/16807-obavijest-o-dezurstvu-gradskog-izbornog-povjerenstva-za-mjesne-odbore-4",
-      "IMAGE_URL": ""
+      "naslov": "Čestitka gradonačelnika Mirka Duspare povodom Dana vatrogasaca i blagdana sv. Florijana",
+      "datum": "04. 05. 2026.",
+      "kratki_opis": "Sveti Florijan, rimski časnik koji je pred više od sedamnaest stoljeća odbio slijediti naredbu i umjesto toga stao uz one koji su bili u opasnosti, ostavio nam je nasljeđe koje i danas živi u svakom vatrogascu. Njegova je hrabrost bila tiha i odlučna, ne junaštvo radi slave, nego čin savjesti i odan",
+      "link": "https://www.slavonski-brod.hr/vijesti/16837-cestitka-gradonacelnika-mirka-duspare-povodom-dana-vatrogasaca-i-blagdana-sv-florijana",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/IMG_3486_resize.jpg"
     },
     {
-      "naslov": "Sedam desetljeća uz zajednicu: Udruga gluhih i nagluhih Brodsko-posavske županije proslavila 70 godina postojanja",
-      "datum": "25. 04. 2026.",
-      "kratki_opis": "U Slavonskom Brodu je održana svečana proslava 70. obljetnice postojanja Udruge gluhih i nagluhih Brodsko-posavske županije, jedne od najdugovječnijih udruga koje skrbe o osobama s oštećenjem sluha u ovom dijelu Hrvatske. Obljetnica je obilježena svečanim programom u društvu partnera, prijatelja i u",
-      "link": "https://www.slavonski-brod.hr/vijesti/16804-sedam-desetljeca-uz-zajednicu-udruga-gluhih-i-nagluhih-brodsko-posavske-zupanije-proslavila-70-godina-postojanja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/IMG_6656_resize.jpeg"
+      "naslov": "Danas obilježavamo Dan sjećanja na ubijenu i stradalu djecu u Domovinskom ratu",
+      "datum": "03. 05. 2026.",
+      "kratki_opis": "Na današnji dan, 3. svibnja, s dubokim poštovanjem i tugom obilježavamo Dan sjećanja na ubijenu i stradalu djecu u Domovinskom ratu, spomendan koji je na prijedlog Vlade Republike Hrvatske usvojio Hrvatski sabor u znak trajnog pijeteta prema najnevinijim žrtvama rata. Posebno mjesto u tom sjećanju z",
+      "link": "https://www.slavonski-brod.hr/vijesti/16836-danas-obiljezavamo-dan-sjecanja-na-ubijenu-i-stradalu-djecu-u-domovinskom-ratu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/prek_resize.jpeg"
     },
     {
-      "naslov": "Gradonačelnik Duspara na svetkovini sv. Marka Evanđelista na Plehanu",
-      "datum": "25. 04. 2026.",
-      "kratki_opis": "Gradonačelnik Grada Slavonskog Broda Mirko Duspara danas je nazočio svetkovini sv. Marka Evanđelista u župi i samostanu sv. Marka Evanđelista na Plehanu u Bosanskoj Posavini, jednom od najstarijih franjevačkih svetišta u ovome dijelu Bosne. Svetu misu predvodio je i propovijedao fra Antonio Gašić. N",
-      "link": "https://www.slavonski-brod.hr/vijesti/16806-gradonacelnik-duspara-na-svetkovini-sv-marka-evandelista-na-plehanu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/IMG-20260425-WA0003_resize.jpg"
+      "naslov": "Danas obilježena obljetnica Udruge hrvatskih branitelja postrojbi HRZ I PZO",
+      "datum": "02. 05. 2026.",
+      "kratki_opis": "U organizaciji Udruge hrvatskih branitelja pripadnika HRZ i PZO Slavonskog Broda obilježena je 34. obljetnica ustroja HRZ i PZO Slavonski Brod. Obilježavanje je započelo polaganjem vijenaca, paljenjem svijeća i molitvom kod Spomen obilježja poginulih hrvatskih branitelja u Domovinskom ratu. Nakon to",
+      "link": "https://www.slavonski-brod.hr/vijesti/16835-danas-obiljezena-obljetnica-udruge-hrvatskih-branitelja-postrojbi-hrz-i-pzo",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/2NAS.jpeg"
     },
     {
-      "naslov": "Slavonski Brod domaćin više od 250 parasportaša: „Bljesak 2026&quot; okupio četiri zemlje",
-      "datum": "25. 04. 2026.",
-      "kratki_opis": "U Slavonskom Brodu su jučer, 24. travnja 2026., počeli 26. Međunarodni sportski susreti invalida „Bljesak 2026\", jedan od najdugovječnijih i najznačajnijih parasportskih događanja u ovom dijelu Hrvatske. Manifestaciju organiziraju Parasportski savezi Grada Slavonskog Broda i Brodsko-posavske županij",
-      "link": "https://www.slavonski-brod.hr/vijesti/16802-slavonski-brod-domacin-vise-od-250-parasportasa-bljesak-2026-okupio-cetiri-zemlje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/image00004_resize.jpeg"
+      "naslov": "Poloj u znaku dobrog raspoloženja za Praznik rada",
+      "datum": "01. 05. 2026.",
+      "kratki_opis": "Na Sportsko-rekreacijskom centru Poloj danas je uz veselu atmosferu i lijepo vrijeme obilježen Međunarodni praznik rada. Mnogobrojni građani okupili su se kako bi u zajedništvu i dobrom raspoloženju proslavili ovaj dan, uživajući u glazbi i druženju. Za sve posjetitelje pripremljene su porcije ukusn",
+      "link": "https://www.slavonski-brod.hr/vijesti/16829-poloj-u-znaku-dobrog-raspolozenja-za-praznik-rada",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/NASMAJ.jpeg"
     },
     {
-      "naslov": "Slavonski Brod ugostio motocikliste u molitvi za branitelje: 35 krunica za 35 godina",
-      "datum": "24. 04. 2026.",
-      "kratki_opis": "Ovog petka, Slavonski Brod ugostio je članove Moto kluba 4. gardijske brigade Split koji su u sklopu manifestacije „35 krunica za 35 godina\" obilježili 35. godišnjicu utemeljenja 4. gardijske brigade i svih ostalih gardijskih postrojbi Hrvatske vojske. Prema ustaljenoj tradiciji, splitski motociklis",
-      "link": "https://www.slavonski-brod.hr/vijesti/16801-slavonski-brod-ugostio-motocikliste-u-molitvi-za-branitelje-35-krunica-za-35-godina",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/image00011_resize-1.jpeg"
+      "naslov": "Gradonačelnikova čestitka povodom Međunarodnog praznika rada",
+      "datum": "01. 05. 2026.",
+      "kratki_opis": "Drage Brođanke i Brođani, Međunarodni praznik rada prilika je da s poštovanjem i zahvalnošću odamo priznanje svim generacijama radnika čije su borbe oblikovale pravednije i humanije uvjete rada kakve danas poznajemo. Njihova ustrajnost i zajedništvo trajni su podsjetnik da upravo suradnjom, solidarn",
+      "link": "https://www.slavonski-brod.hr/vijesti/16833-gradonacelnikova-cestitka-povodom-medunarodnog-praznika-rada-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/gradska_uprava_cvijece_resize.jpg"
     },
     {
-      "naslov": "Grad ulaže u budućnost: „Pčelica“ i „Kosjenka“ dobivaju nove kapacitete",
-      "datum": "24. 04. 2026.",
-      "kratki_opis": "Grad Slavonski Brod nastavlja s konkretnim koracima u rješavanju jednog od ključnih problema mladih obitelji, nedostatka mjesta u dječjim vrtićima. Aktualni radovi na dogradnji dječjih vrtića „Pčelica“ i „Kosjenka“ napreduju prema planu, a ono najvažnije, donose značajno povećanje kapaciteta za najm",
-      "link": "https://www.slavonski-brod.hr/vijesti/16799-grad-ulaze-u-buducnost-pcelica-i-kosjenka-dobivaju-nove-kapacitete",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/VRTICI.png"
+      "naslov": "Danas obilježavamo 31. obljetnicu vojno-redarstvene operacije „Bljesak“",
+      "datum": "01. 05. 2026.",
+      "kratki_opis": "Na današnji dan obilježavamo 31. obljetnicu vojno-redarstvene operacije Bljesak, u kojoj su hrvatske vojne i policijske snage oslobodile područja zapadne Slavonije nakon gotovo četiri godine okupacije. U manje od dva dana vraćeno je oko 500 četvornih kilometara teritorija te je ponovno uspostavljen ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16828-danas-obiljezavamo-31-obljetnicu-vojno-redarstvene-operacije-bljesak",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/croatia_resize.jpg"
     },
     {
-      "naslov": "Poziv na informativnu radionicu „Zelena budućnost počinje kod kuće - kako ispravno izdvajati otpad?“",
-      "datum": "24. 04. 2026.",
-      "kratki_opis": "U svrhu informiranja građana u svezi provedbe projektnih aktivnosti, temeljem zaključenog Ugovora o dodjeli bespovratnih sredstava za projekte koji se financiraju iz mehanizma za oporavak i otpornost za Projekt „Izgradnja i opremanje postrojenja za sortiranje odvojeno sakupljenog komunalnog otpada u",
-      "link": "https://www.slavonski-brod.hr/vijesti/16800-poziv-na-informativnu-radionicu-zelena-buducnost-pocinje-kod-kuce-kako-ispravno-izdvajati-otpad",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/radionica_resize.png"
+      "naslov": "Noć tvrđava u Slavonskom Brodu: stručna vodstva i promatranje zvjezdanog neba",
+      "datum": "30. 04. 2026.",
+      "kratki_opis": "U sklopu manifestacije Noć tvrđava, koja se ove godine održava 8. i 9. svibnja, Edukacijsko-multimedijalni centar Slavonski Brod u suradnji s Astronomskim društvom Gea X priprema bogat program za posjetitelje. U petak, 8. svibnja, od 19:00 do 22:00 sata, zainteresirani posjetitelji moći će razgledat",
+      "link": "https://www.slavonski-brod.hr/vijesti/16831-noc-tvrdava-u-slavonskom-brodu-strucna-vodstva-i-promatranje-zvjezdanog-neba",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/Night_of_Fortresses_2026_3_resize.png"
     },
     {
-      "naslov": "Održana 7. sjednica Gradskog vijeća Grada Slavonskog Broda",
-      "datum": "23. 04. 2026.",
-      "kratki_opis": "Danas je održana 7. sjednica Gradskog vijeća Grada Slavonskog Broda. Sjednica je održana u Velikoj vijećnici Gradske uprave, a prisustvovalo je 19 od ukupno 21 vijećnika. Sjednica je započela Aktualnim satom, tijekom kojeg su vijećnici postavljali pitanja gradonačelniku o temama od javnog interesa. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16796-odrzana-7-sjednica-gradskog-vijeca-grada-slavonskog-broda",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/IMG_0257_resize.JPG"
+      "naslov": "Nacionalni dan hitne medicinske službe: Prepoznajte hitno stanje na vrijeme",
+      "datum": "30. 04. 2026.",
+      "kratki_opis": "Danas, 30. travnja, Hrvatska obilježava Nacionalni dan hitne medicinske službe - datum koji je Hrvatski sabor posebno posvetio prepoznavanju iznimno zahtjevnog i odgovornog poziva onih koji svakodnevno stoje između života i smrti. Ove godine obilježavanje je usmjereno prema građanima - prema podizan",
+      "link": "https://www.slavonski-brod.hr/vijesti/16830-nacionalni-dan-hitne-medicinske-sluzbe-prepoznajte-hitno-stanje-na-vrijeme",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/Nacionalni_dan_HMS_resize.jpg"
     },
     {
-      "naslov": "Slavonski Brod potvrđuje turistički uzlet: dodjela oznaka, nagrade i novi projekti",
-      "datum": "23. 04. 2026.",
-      "kratki_opis": "U Slavonskom Brodu održana je svečana prezentacija Turističke zajednice Slavonski Brod – Posavina posvećena razvoju destinacije i unapređenju kvalitete obiteljskog smještaja, uz sudjelovanje brojnih iznajmljivača, turističkih djelatnika i partnera. Posebnu pozornost privukla je dodjela oznake kvalit",
-      "link": "https://www.slavonski-brod.hr/vijesti/16794-slavonski-brod-potvrduje-turisticki-uzlet-dodjela-oznaka-nagrade-i-novi-projekti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/naslovna_resize-1.jpeg"
+      "naslov": "Obavijest građanima: Radno vrijeme TD Komunalac na Međunarodni praznik rada",
+      "datum": "30. 04. 2026.",
+      "kratki_opis": "TD Komunalac d.o.o. obavještava korisnike svojih usluga, da se za vrijeme&nbsp;nadolazećeg,&nbsp;Međunarodnog praznika rada,&nbsp; petak 01.05.2026., &nbsp;miješani komunalni otpad, reciklabilni otpad te biootpad,&nbsp; odvozi prema redovnom rasporedu . Reciklažna dvorišta 1, 2 i 3, kao i odlagališt",
+      "link": "https://www.slavonski-brod.hr/vijesti/16827-obavijest-gradanima-radno-vrijeme-td-komunalac-na-medunarodni-praznik-rada-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/komunalac_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "U svijetu bajki Ivane Brlić-Mažuranić Dječja manifestacija koja nastavlja tradiciju susreta koji tra",
-      "datum": "Travanj",
-      "opis": "ju od 1970. u spomen na veliku hrvatsku spisateljicu koja je svoj djeci svijeta podarila prekrasne priče. Obuhvaća obilje programa namijenjenih djeci poput dramskih, likovnih i kompjutorskih radionica, kazališnih predstava, igraonica, pričaonica, susreta s književnicima, izložbi, glazbeno-scenskih p",
-      "link": "https://www.tzgsb.hr/index.php?page=travanj"
-    },
     {
       "naziv": "Moto susreti Moto susreti se održavaju na terenima Sportsko-rekreacijskog centra \"Poloj\" u povodu Da",
       "datum": "Svibanj",
@@ -112,6 +106,12 @@ export const scrapedContent = {
       "datum": "Srpanj",
       "opis": "išno-koncertnoj dvorani poput opera, opereta, baleta i sl., obuhvaća i sadržaje poput komornih koncerata koji se održavaju u franjevačkoj crkvi. Fišijada Tradicionalna manifestacija koja se, uz sudjelovanje velikog broja natjecatelja s područja cijele regije Slavonije odvija u Sportsko-rekreacijskom",
       "link": "https://www.tzgsb.hr/index.php?page=srpanj"
+    },
+    {
+      "naziv": "CMC 200 - Slavonija FEST Festival se, uz brojne popratne programe, održava u kolovozu u baroknoj tvr",
+      "datum": "Kolovoz",
+      "opis": "đavi Brod, uz slobodan ulaz. U vrijeme festivala posjetitelji mogu uživati u vrhunskoj produkciji, od audio opreme do scenografije i rasvjete, uz nastup svih izvođača uživo. Naglašeni pop rock izričaj, kao sadašnja i buduća smjernica festivala, postiže se izborom koncertnih headlinera, s tim da se u",
+      "link": "https://www.tzgsb.hr/index.php?page=kolovoz"
     }
   ],
   "restorani_tz": [
