@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-05-04 08:31 UTC
+// Zadnje skrapanje: 2026-05-11 09:42 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-05-04T08:31:41.904Z",
+    "zadnje_azuriranje": "2026-05-11T09:42:19.600Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,74 +18,67 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Javni poziv za upis djece u gradske dječje vrtiće za pedagošku 2026./2027. godinu",
-      "datum": "04. 05. 2026.",
-      "kratki_opis": "Grad Slavonski Brod obavještava roditelje i skrbnike da upisi u gradske dječje vrtiće za pedagošku 2026./2027. godinu započinju danas, 4. svibnja 2026. godine te traju do 29. svibnja 2026. godine. Upisni postupak provodit će se isključivo elektroničkim putem, a prijave za upis i nastavak korištenja ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16838-javni-poziv-za-upis-djece-u-gradske-djecje-vrtice-za-pedagosku-2026-2027-godinu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/sva_2.jpeg"
+      "naslov": "Slavonski Brod poziva građane na dan ispunjen kulturom, VR-om i zvijezdama",
+      "datum": "11. 05. 2026.",
+      "kratki_opis": "Građani Slavonskog Broda i okolice imati će priliku u utorak, 12. svibnja 2026. godine, sudjelovati u zanimljivom i edukativnom programu Dana otvorenih vrata Edukacijsko – multimedijalnog centra u Tvrđavi Brod. Program će se održavati od 10 do 15 sati, a posjetitelje očekuje spoj kulturne baštine, m",
+      "link": "https://www.slavonski-brod.hr/vijesti/16862-slavonski-brod-domacin-atraktivnog-programa-dana-otvorenih-vrata-eu-projekata",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/dani_resize.png"
     },
     {
-      "naslov": "Čestitka gradonačelnika Mirka Duspare povodom Dana vatrogasaca i blagdana sv. Florijana",
-      "datum": "04. 05. 2026.",
-      "kratki_opis": "Sveti Florijan, rimski časnik koji je pred više od sedamnaest stoljeća odbio slijediti naredbu i umjesto toga stao uz one koji su bili u opasnosti, ostavio nam je nasljeđe koje i danas živi u svakom vatrogascu. Njegova je hrabrost bila tiha i odlučna, ne junaštvo radi slave, nego čin savjesti i odan",
-      "link": "https://www.slavonski-brod.hr/vijesti/16837-cestitka-gradonacelnika-mirka-duspare-povodom-dana-vatrogasaca-i-blagdana-sv-florijana",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/IMG_3486_resize.jpg"
+      "naslov": "Raspored mobilnih blagajni za svibanj",
+      "datum": "11. 05. 2026.",
+      "kratki_opis": "Obavještavaju se građani i građanke kako će mobilne gradske blagajne u svibnju raditi prema sljedećem rasporedu: 11. svibanj&nbsp;&nbsp;2026. (ponedjeljak) &nbsp; Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30 sati &nbsp; Mjesni dom Podvinje – od 12,30 do 15,00 sati 12. svibanj &nbsp;2026. ( utora",
+      "link": "https://www.slavonski-brod.hr/vijesti/16861-raspored-mobilnih-blagajni-za-svibanj",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/blagajna_resize-1.jpg"
     },
     {
-      "naslov": "Danas obilježavamo Dan sjećanja na ubijenu i stradalu djecu u Domovinskom ratu",
-      "datum": "03. 05. 2026.",
-      "kratki_opis": "Na današnji dan, 3. svibnja, s dubokim poštovanjem i tugom obilježavamo Dan sjećanja na ubijenu i stradalu djecu u Domovinskom ratu, spomendan koji je na prijedlog Vlade Republike Hrvatske usvojio Hrvatski sabor u znak trajnog pijeteta prema najnevinijim žrtvama rata. Posebno mjesto u tom sjećanju z",
-      "link": "https://www.slavonski-brod.hr/vijesti/16836-danas-obiljezavamo-dan-sjecanja-na-ubijenu-i-stradalu-djecu-u-domovinskom-ratu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/prek_resize.jpeg"
+      "naslov": "Tvrđava Brod zamirisala cvijećem: Florafest svečano otvoren uz zahvalnice vjernim izlagačima",
+      "datum": "09. 05. 2026.",
+      "kratki_opis": "Tvrđava Brod ove je subote postala središte prvog dana Florafesta, manifestacije koja iz godine u godinu okuplja sve veći broj ljubitelja cvijeća, bilja i prirode. Ovogodišnje, 18. izdanje festivala otvoreno je uz nastupe plesnih skupina Brodski leptirići, InMotion Plesni studio i Radost pokreta te ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16856-tvrdava-brod-zamirisala-cvijecem-florafest-svecano-otvoren-uz-zahvalnice-vjernim-izlagacima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/Flora.jpg"
     },
     {
-      "naslov": "Danas obilježena obljetnica Udruge hrvatskih branitelja postrojbi HRZ I PZO",
-      "datum": "02. 05. 2026.",
-      "kratki_opis": "U organizaciji Udruge hrvatskih branitelja pripadnika HRZ i PZO Slavonskog Broda obilježena je 34. obljetnica ustroja HRZ i PZO Slavonski Brod. Obilježavanje je započelo polaganjem vijenaca, paljenjem svijeća i molitvom kod Spomen obilježja poginulih hrvatskih branitelja u Domovinskom ratu. Nakon to",
-      "link": "https://www.slavonski-brod.hr/vijesti/16835-danas-obiljezena-obljetnica-udruge-hrvatskih-branitelja-postrojbi-hrz-i-pzo",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/2NAS.jpeg"
+      "naslov": "Danas obilježavamo Dan Europe te Dan sjećanja i počasti svim žrtvama Drugog svjetskog rata",
+      "datum": "09. 05. 2026.",
+      "kratki_opis": "Dan Europe, koji se obilježava 9. svibnja, simbol je zajedništva, mira i suradnje među europskim narodima. Na taj datum 1950. godine predstavljena je Schumanova deklaracija - povijesni prijedlog koji je postavio temelje europskog povezivanja i stvaranja današnje Europske unije. Ideja o suradnji drža",
+      "link": "https://www.slavonski-brod.hr/vijesti/16855-danas-obiljezavamo-dan-europe-te-dan-sjecanja-i-pocasti-svim-zrtvama-drugog-svjetskog-rata-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/waving-european-union-flag-blue-background_resize.jpg"
     },
     {
-      "naslov": "Poloj u znaku dobrog raspoloženja za Praznik rada",
-      "datum": "01. 05. 2026.",
-      "kratki_opis": "Na Sportsko-rekreacijskom centru Poloj danas je uz veselu atmosferu i lijepo vrijeme obilježen Međunarodni praznik rada. Mnogobrojni građani okupili su se kako bi u zajedništvu i dobrom raspoloženju proslavili ovaj dan, uživajući u glazbi i druženju. Za sve posjetitelje pripremljene su porcije ukusn",
-      "link": "https://www.slavonski-brod.hr/vijesti/16829-poloj-u-znaku-dobrog-raspolozenja-za-praznik-rada",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/NASMAJ.jpeg"
+      "naslov": "23. Dan škole obilježen u OŠ Dragutin Tadijanović uz poseban program i druženje",
+      "datum": "08. 05. 2026.",
+      "kratki_opis": "U Osnovnoj školi Dragutin Tadijanović danas je svečano obilježen 23. Dan škole, uz poseban program koji su pripremili učenici i djelatnici škole. Obilježavanje je okupilo brojne učenike, roditelje, nastavnike i goste, a svečanosti je prisustvovala i zamjenica gradonačelnika Marina Martić Puača. Tom ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16854-dan-os-dragutin-tadijanovic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00007_resize-1.jpeg"
     },
     {
-      "naslov": "Gradonačelnikova čestitka povodom Međunarodnog praznika rada",
-      "datum": "01. 05. 2026.",
-      "kratki_opis": "Drage Brođanke i Brođani, Međunarodni praznik rada prilika je da s poštovanjem i zahvalnošću odamo priznanje svim generacijama radnika čije su borbe oblikovale pravednije i humanije uvjete rada kakve danas poznajemo. Njihova ustrajnost i zajedništvo trajni su podsjetnik da upravo suradnjom, solidarn",
-      "link": "https://www.slavonski-brod.hr/vijesti/16833-gradonacelnikova-cestitka-povodom-medunarodnog-praznika-rada-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/gradska_uprava_cvijece_resize.jpg"
+      "naslov": "Održan sastanak s gospodarstvenicima radi povećanja cijena komunalne naknade",
+      "datum": "08. 05. 2026.",
+      "kratki_opis": "Hrvatska gospodarska komora Slavonski Brod obratila se Gradu na temu povećanja cijene komunalne naknade gospodarstvenicima na području grada Slavonskog Broda. Iako su predstavnici Hrvatske gospodarske komore prethodno već održali sastanak i dostavili zaključke o navedenoj temi, Gradonačelnik je pozv",
+      "link": "https://www.slavonski-brod.hr/vijesti/16858-odrzan-sastanak-o-operativnom-usuglasavanju-rjesenja-vezanih-uz-komunalnu-naknadu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00005_resize.jpeg"
     },
     {
-      "naslov": "Danas obilježavamo 31. obljetnicu vojno-redarstvene operacije „Bljesak“",
-      "datum": "01. 05. 2026.",
-      "kratki_opis": "Na današnji dan obilježavamo 31. obljetnicu vojno-redarstvene operacije Bljesak, u kojoj su hrvatske vojne i policijske snage oslobodile područja zapadne Slavonije nakon gotovo četiri godine okupacije. U manje od dva dana vraćeno je oko 500 četvornih kilometara teritorija te je ponovno uspostavljen ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16828-danas-obiljezavamo-31-obljetnicu-vojno-redarstvene-operacije-bljesak",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/croatia_resize.jpg"
+      "naslov": "Florafest poziva sve generacije na vikend ispunjen prirodom i bojama",
+      "datum": "08. 05. 2026.",
+      "kratki_opis": "Ovog vikenda Tvrđava Brod ponovno postaje središte cvijeća, kreativnosti i dobrog druženja. Florafest 2026., koji će se održati u subotu i nedjelju 9. i 10. svibnja, donosi bogat program za djecu, odrasle, zaljubljenike u vrtlarenje i sve one koji žele vikend provesti u prirodnom i opuštenom ozračju",
+      "link": "https://www.slavonski-brod.hr/vijesti/16853-florafest-poziva-sve-generacije-na-vikend-ispunjen-prirodom-i-bojama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/cvijece_resize.jpg"
     },
     {
-      "naslov": "Noć tvrđava u Slavonskom Brodu: stručna vodstva i promatranje zvjezdanog neba",
-      "datum": "30. 04. 2026.",
-      "kratki_opis": "U sklopu manifestacije Noć tvrđava, koja se ove godine održava 8. i 9. svibnja, Edukacijsko-multimedijalni centar Slavonski Brod u suradnji s Astronomskim društvom Gea X priprema bogat program za posjetitelje. U petak, 8. svibnja, od 19:00 do 22:00 sata, zainteresirani posjetitelji moći će razgledat",
-      "link": "https://www.slavonski-brod.hr/vijesti/16831-noc-tvrdava-u-slavonskom-brodu-strucna-vodstva-i-promatranje-zvjezdanog-neba",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/Night_of_Fortresses_2026_3_resize.png"
+      "naslov": "Svjetski dan Crvenog križa: 166 godina poslije, ista poruka",
+      "datum": "08. 05. 2026.",
+      "kratki_opis": "Prije više od sto šezdeset godina, na krvavom polju kraj talijanskog gradića Solferina, jedan čovjek nije okrenuo glavu. Jean-Henry Dunant nije bio vojnik ni liječnik - bio je švicarski poslovnjak koji se u krivo vrijeme našao na krivom mjestu. Ono što je vidio - tisuće ranjenih prepuštenih sami seb",
+      "link": "https://www.slavonski-brod.hr/vijesti/16851-svjetski-dan-crvenog-kriza-166-godina-poslije-ista-poruka",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/crveni_resize.jpg"
     },
     {
-      "naslov": "Nacionalni dan hitne medicinske službe: Prepoznajte hitno stanje na vrijeme",
-      "datum": "30. 04. 2026.",
-      "kratki_opis": "Danas, 30. travnja, Hrvatska obilježava Nacionalni dan hitne medicinske službe - datum koji je Hrvatski sabor posebno posvetio prepoznavanju iznimno zahtjevnog i odgovornog poziva onih koji svakodnevno stoje između života i smrti. Ove godine obilježavanje je usmjereno prema građanima - prema podizan",
-      "link": "https://www.slavonski-brod.hr/vijesti/16830-nacionalni-dan-hitne-medicinske-sluzbe-prepoznajte-hitno-stanje-na-vrijeme",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/Nacionalni_dan_HMS_resize.jpg"
-    },
-    {
-      "naslov": "Obavijest građanima: Radno vrijeme TD Komunalac na Međunarodni praznik rada",
-      "datum": "30. 04. 2026.",
-      "kratki_opis": "TD Komunalac d.o.o. obavještava korisnike svojih usluga, da se za vrijeme&nbsp;nadolazećeg,&nbsp;Međunarodnog praznika rada,&nbsp; petak 01.05.2026., &nbsp;miješani komunalni otpad, reciklabilni otpad te biootpad,&nbsp; odvozi prema redovnom rasporedu . Reciklažna dvorišta 1, 2 i 3, kao i odlagališt",
-      "link": "https://www.slavonski-brod.hr/vijesti/16827-obavijest-gradanima-radno-vrijeme-td-komunalac-na-medunarodni-praznik-rada-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/komunalac_resize.jpg"
+      "naslov": "ŠRC &quot;Klasije&quot; sve bliže modernom sportskom centru",
+      "datum": "07. 05. 2026.",
+      "kratki_opis": "Radovi na drugoj fazi uređenja Športsko-rekreacijskog centra „Klasije\" bilježe značajan napredak. Dovršeni su svi građevinski radovi na konstrukcijama obiju zgrada, a na zgradi 2 završeni su u cijelosti svi radovi - uključujući fasadu, krovište, instalaterske radove vodovoda, elektroinstalacija, gri",
+      "link": "https://www.slavonski-brod.hr/vijesti/16846-naslov-3",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/KLA.png"
     }
   ],
   "manifestacije_aktualne": [
