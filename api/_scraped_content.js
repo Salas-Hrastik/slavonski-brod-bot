@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-05-11 09:42 UTC
+// Zadnje skrapanje: 2026-05-18 10:07 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-05-11T09:42:19.600Z",
+    "zadnje_azuriranje": "2026-05-18T10:07:14.595Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,67 +18,74 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Slavonski Brod poziva građane na dan ispunjen kulturom, VR-om i zvijezdama",
-      "datum": "11. 05. 2026.",
-      "kratki_opis": "Građani Slavonskog Broda i okolice imati će priliku u utorak, 12. svibnja 2026. godine, sudjelovati u zanimljivom i edukativnom programu Dana otvorenih vrata Edukacijsko – multimedijalnog centra u Tvrđavi Brod. Program će se održavati od 10 do 15 sati, a posjetitelje očekuje spoj kulturne baštine, m",
-      "link": "https://www.slavonski-brod.hr/vijesti/16862-slavonski-brod-domacin-atraktivnog-programa-dana-otvorenih-vrata-eu-projekata",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/dani_resize.png"
+      "naslov": "Danas obilježavamo Međunarodni dan muzeja",
+      "datum": "18. 05. 2026.",
+      "kratki_opis": "Svake godine 18. svibnja obilježava se Međunarodni dan muzeja, dan kojim muzeji diljem svijeta skreću pozornost javnosti na važnost kulturne baštine i nezamjenjivu ulogu muzeja u njezinu očuvanju, istraživanju i predstavljanju budućim generacijama. Obilježavanje je pokrenula međunarodna muzejska zaj",
+      "link": "https://www.slavonski-brod.hr/vijesti/16894-danas-obiljezavamo-medunarodni-dan-muzeja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/dom.jpg"
     },
     {
-      "naslov": "Raspored mobilnih blagajni za svibanj",
-      "datum": "11. 05. 2026.",
-      "kratki_opis": "Obavještavaju se građani i građanke kako će mobilne gradske blagajne u svibnju raditi prema sljedećem rasporedu: 11. svibanj&nbsp;&nbsp;2026. (ponedjeljak) &nbsp; Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30 sati &nbsp; Mjesni dom Podvinje – od 12,30 do 15,00 sati 12. svibanj &nbsp;2026. ( utora",
-      "link": "https://www.slavonski-brod.hr/vijesti/16861-raspored-mobilnih-blagajni-za-svibanj",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/blagajna_resize-1.jpg"
+      "naslov": "Danas na Trgu Ivane Brlić-Mažuranić: Sajam udruga i program „Volim Brod”",
+      "datum": "18. 05. 2026.",
+      "kratki_opis": "Grad Slavonski Brod poziva sve građane da nam se danas, 18. svibnja 2026. godine, pridruže na Trgu Ivane Brlić-Mažuranić u nastavku obilježavanja Dana grada Slavonskog Broda. Nakon odgode zbog nepovoljnih vremenskih uvjeta najavljenih za subotu, danas će se održati Sajam udruga i program „Volim Brod",
+      "link": "https://www.slavonski-brod.hr/vijesti/16892-danas-na-trgu-ivane-brlic-mazuranic-sajam-udruga-i-program-volim-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00032_resize.jpeg"
     },
     {
-      "naslov": "Tvrđava Brod zamirisala cvijećem: Florafest svečano otvoren uz zahvalnice vjernim izlagačima",
-      "datum": "09. 05. 2026.",
-      "kratki_opis": "Tvrđava Brod ove je subote postala središte prvog dana Florafesta, manifestacije koja iz godine u godinu okuplja sve veći broj ljubitelja cvijeća, bilja i prirode. Ovogodišnje, 18. izdanje festivala otvoreno je uz nastupe plesnih skupina Brodski leptirići, InMotion Plesni studio i Radost pokreta te ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16856-tvrdava-brod-zamirisala-cvijecem-florafest-svecano-otvoren-uz-zahvalnice-vjernim-izlagacima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/Flora.jpg"
+      "naslov": "Neslužbeni rezultati za izbore Vijeća mjesnih odbora",
+      "datum": "17. 05. 2026.",
+      "kratki_opis": "Gradsko izborno povjerenstvo dana 17. svibnja 2026. objavljuje neslužbene rezultate za izbore Vijeća mjesnih odbora. I. IZBORNA JEDINICA - Mjesni odbor \"LUTVINKA\" II. IZBORNA JEDINICA - Mjesni odbor \"ANDRIJA HEBRANG\" III. IZBORNA JEDINICA - Mjesni odbor \"CENTAR\" IV. IZBORNA JEDINICA - Mjesni odbor \"",
+      "link": "https://www.slavonski-brod.hr/vijesti/16888-nesluzbeni-rezultati-za-izbore-vijeca-mjesnih-odbora-2026",
+      "IMAGE_URL": ""
     },
     {
-      "naslov": "Danas obilježavamo Dan Europe te Dan sjećanja i počasti svim žrtvama Drugog svjetskog rata",
-      "datum": "09. 05. 2026.",
-      "kratki_opis": "Dan Europe, koji se obilježava 9. svibnja, simbol je zajedništva, mira i suradnje među europskim narodima. Na taj datum 1950. godine predstavljena je Schumanova deklaracija - povijesni prijedlog koji je postavio temelje europskog povezivanja i stvaranja današnje Europske unije. Ideja o suradnji drža",
-      "link": "https://www.slavonski-brod.hr/vijesti/16855-danas-obiljezavamo-dan-europe-te-dan-sjecanja-i-pocasti-svim-zrtvama-drugog-svjetskog-rata-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/waving-european-union-flag-blue-background_resize.jpg"
+      "naslov": "Stotine sportaša i posjetitelja na sportskim događanjima povodom Dana grada",
+      "datum": "17. 05. 2026.",
+      "kratki_opis": "Ovotjedni vikend u Slavonskom Brodu obilježila su sportska događanja koja su okupila stotine sportaša i zaljubljenika u sport iz cijele Hrvatske i inozemstva. Slavonski Brod još jednom je pokazao da s ponosom nosi titulu grada sporta. Sportska događanja u našem gradu podržali su gradonačelnik Mirko ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16890-stotine-sportasa-i-posjetitelja-na-sportskim-dogadanjima-povodom-dana-grada",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/nova.jpg"
     },
     {
-      "naslov": "23. Dan škole obilježen u OŠ Dragutin Tadijanović uz poseban program i druženje",
-      "datum": "08. 05. 2026.",
-      "kratki_opis": "U Osnovnoj školi Dragutin Tadijanović danas je svečano obilježen 23. Dan škole, uz poseban program koji su pripremili učenici i djelatnici škole. Obilježavanje je okupilo brojne učenike, roditelje, nastavnike i goste, a svečanosti je prisustvovala i zamjenica gradonačelnika Marina Martić Puača. Tom ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16854-dan-os-dragutin-tadijanovic",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00007_resize-1.jpeg"
+      "naslov": "Do 19 sati otvorena biračka mjesta za izbore vijeća mjesnih odbora",
+      "datum": "17. 05. 2026.",
+      "kratki_opis": "Podsjećamo kako su danas, u nedjelju 17. svibnja 2026. godine, u tijeku izbori za članove vijeća 16 mjesnih odbora na području grada Slavonskog Broda, pri čemu se u svako vijeće bira po 9 članova. Birališta su otvorena do 19:00 sati, a pravo glasovanja imaju svi birači s prebivalištem na području mj",
+      "link": "https://www.slavonski-brod.hr/vijesti/16889-do-19-sati-otvorena-biracka-mjesta-za-izbore-vijeca-mjesnih-odbora",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Veljaca/gradska_uprava_resize.jpg"
     },
     {
-      "naslov": "Održan sastanak s gospodarstvenicima radi povećanja cijena komunalne naknade",
-      "datum": "08. 05. 2026.",
-      "kratki_opis": "Hrvatska gospodarska komora Slavonski Brod obratila se Gradu na temu povećanja cijene komunalne naknade gospodarstvenicima na području grada Slavonskog Broda. Iako su predstavnici Hrvatske gospodarske komore prethodno već održali sastanak i dostavili zaključke o navedenoj temi, Gradonačelnik je pozv",
-      "link": "https://www.slavonski-brod.hr/vijesti/16858-odrzan-sastanak-o-operativnom-usuglasavanju-rjesenja-vezanih-uz-komunalnu-naknadu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00005_resize.jpeg"
+      "naslov": "Limena glazba „Željezničar“ jutros zasvirala budnicu",
+      "datum": "16. 05. 2026.",
+      "kratki_opis": "Danas obilježavamo Dan grada Slavonskog Broda. Prema tradiciji, u rano jutro, na današnji blagdan nebeskog zaštitnika svetog Ivana Nepomuka krenula je budnica limene glazbe ulicama grada. Uz veselu glazbenu atmosferu, članovi Limene glazbe „Željezničar“ svim su građanima čestitali Dan grada, a već t",
+      "link": "https://www.slavonski-brod.hr/vijesti/16887-limena-glazba-zeljeznicar-jutros-zasvirala-budnicu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/BUDNICA.jpeg"
     },
     {
-      "naslov": "Florafest poziva sve generacije na vikend ispunjen prirodom i bojama",
-      "datum": "08. 05. 2026.",
-      "kratki_opis": "Ovog vikenda Tvrđava Brod ponovno postaje središte cvijeća, kreativnosti i dobrog druženja. Florafest 2026., koji će se održati u subotu i nedjelju 9. i 10. svibnja, donosi bogat program za djecu, odrasle, zaljubljenike u vrtlarenje i sve one koji žele vikend provesti u prirodnom i opuštenom ozračju",
-      "link": "https://www.slavonski-brod.hr/vijesti/16853-florafest-poziva-sve-generacije-na-vikend-ispunjen-prirodom-i-bojama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/cvijece_resize.jpg"
+      "naslov": "Gradonačelnikova čestitka povodom Dana grada Slavonskog Broda",
+      "datum": "16. 05. 2026.",
+      "kratki_opis": "Poštovane Brođanke i Brođani, od srca vam čestitam Dan grada Slavonskog Broda! Danas ne slavimo samo godine našeg grada. Slavimo ljude. Slavimo zajedništvo, trud, uspomene i svaki korak kojim smo zajedno gradili Slavonski Brod kakav danas poznajemo. Siguran, topao i ponosan grad. 782 godine naše pov",
+      "link": "https://www.slavonski-brod.hr/vijesti/16881-gradonacelnikova-cestitka-povodom-dana-grada-slavonskog-broda-5",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/MIRKO_DUSPARA_-_GLAS_SLAVONIJE_2.jpg"
     },
     {
-      "naslov": "Svjetski dan Crvenog križa: 166 godina poslije, ista poruka",
-      "datum": "08. 05. 2026.",
-      "kratki_opis": "Prije više od sto šezdeset godina, na krvavom polju kraj talijanskog gradića Solferina, jedan čovjek nije okrenuo glavu. Jean-Henry Dunant nije bio vojnik ni liječnik - bio je švicarski poslovnjak koji se u krivo vrijeme našao na krivom mjestu. Ono što je vidio - tisuće ranjenih prepuštenih sami seb",
-      "link": "https://www.slavonski-brod.hr/vijesti/16851-svjetski-dan-crvenog-kriza-166-godina-poslije-ista-poruka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/crveni_resize.jpg"
+      "naslov": "U čast blagdana sv. Ivana Nepomuka održane Ivanjske svečanosti",
+      "datum": "15. 05. 2026.",
+      "kratki_opis": "Tradicionalnim paljenjem krijesa, u čast blagdana sv. Ivana Nepomuka, zaštitnika grada Slavonskoga Broda, večeras su na Trgu Ivane Brlić-Mažuranić održane Ivanjske svečanosti. Okružen povorkom članova Folklornog ansambla Broda sa zapaljenim bakljama, veliki Ivanjski krijes na brodskom Korzu zapalio ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16886-tradicionalne-ivanjske-svecanosti-odrzane-na-trgu-ivane-brlic-mazuranic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/nasssloooo.jpeg"
     },
     {
-      "naslov": "ŠRC &quot;Klasije&quot; sve bliže modernom sportskom centru",
-      "datum": "07. 05. 2026.",
-      "kratki_opis": "Radovi na drugoj fazi uređenja Športsko-rekreacijskog centra „Klasije\" bilježe značajan napredak. Dovršeni su svi građevinski radovi na konstrukcijama obiju zgrada, a na zgradi 2 završeni su u cijelosti svi radovi - uključujući fasadu, krovište, instalaterske radove vodovoda, elektroinstalacija, gri",
-      "link": "https://www.slavonski-brod.hr/vijesti/16846-naslov-3",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Travanj/KLA.png"
+      "naslov": "Služena sveta misa u Župi sv. Antuna Padovanskog povodom obilježavanja Dana Grada",
+      "datum": "15. 05. 2026.",
+      "kratki_opis": "Misno slavlje uz&nbsp; Dan Grada Slavonskog Broda i nebeskog zaštitnika sv. Ivana Nepumuka predvodio je u petak 15. svibnja u župnoj crkvi sv. Antuna Padovanskog u Podvinju domaći župnik o. Paul Karim. Na misi su sudjelovali predstavnici Grada na čelu s gradonačelnikom dr. Mirkom Dusparom. U prigodn",
+      "link": "https://www.slavonski-brod.hr/vijesti/16885-odrzana-sveta-misa-u-zupi-sv-antuna-padovanskog-povodom-obiljezavanja-dana-grada",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/NASLOVNAZUPA_resize.jpg"
+    },
+    {
+      "naslov": "Svečano obilježen Dan Osnovne škole „Antun Mihanović“",
+      "datum": "15. 05. 2026.",
+      "kratki_opis": "U ugodnom i svečanom ozračju, Osnovna škola „Antun Mihanović“ obilježila je Dan škole 15. svibnja 2026. godine pod motom „Gdje snovi dobivaju krila…“. Bogat program okupio je učenike, roditelje, učitelje, djelatnike škole i brojne uzvanike koji su zajedno proslavili još jednu uspješnu školsku godinu",
+      "link": "https://www.slavonski-brod.hr/vijesti/16883-svecano-obiljezen-dan-skole-osnovne-skole-antun-mihanovic-slavonski-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/NASLOOO.jpeg"
     }
   ],
   "manifestacije_aktualne": [
