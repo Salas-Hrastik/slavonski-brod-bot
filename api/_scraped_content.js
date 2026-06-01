@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-05-25 10:09 UTC
+// Zadnje skrapanje: 2026-06-01 11:37 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-05-25T10:09:06.794Z",
+    "zadnje_azuriranje": "2026-06-01T11:37:13.949Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,83 +18,77 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Željko Bebek 30. svibnja stiže u Tvrđavu Brod uz večer punu hitova i odlične atmosfere",
-      "datum": "25. 05. 2026.",
-      "kratki_opis": "Grad Slavonski Brod poziva sve građane i posjetitelje da nam se pridruže na velikom koncertu Željko Bebek, koji će se održati u subotu, 30. svibnja 2026. godine, u prekrasnom ambijentu Tvrđava Brod. Iako je koncert prvotno bio planiran za 16. svibnja, zbog najavljenih nepovoljnih vremenskih uvjeta d",
-      "link": "https://www.slavonski-brod.hr/vijesti/16922-zeljko-bebek-30-svibnja-stize-u-tvrdavu-brod-uz-vecer-punu-hitova-i-odlicne-atmosfere",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/bebek3005-1.jpg"
+      "naslov": "Na konferenciji za medije predstavljen program 37. Brodskog glazbenog ljeta",
+      "datum": "01. 06. 2026.",
+      "kratki_opis": "U Kazališno-koncertnoj dvorani „Ivana Brlić-Mažuranić\" danas je održana konferencija za medije na kojoj je predstavljen program 37. Brodskog glazbenog ljeta. Program su predstavile ravnateljica Kazališno-koncertne dvorane „Ivana Brlić-Mažuranić\" Sanja Nuhanović te zamjenica gradonačelnika Marina Mar",
+      "link": "https://www.slavonski-brod.hr/vijesti/16956-na-konferenciji-za-medije-predstavljen-program-37-brodskog-glazbenog-ljeta",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0041_resize.jpeg"
     },
     {
-      "naslov": "Grad mladim obiteljima osigurava temelje za dom - potpisani novi ugovori o pravu građenja",
-      "datum": "25. 05. 2026.",
-      "kratki_opis": "U Velikoj vijećnici Gradske uprave Slavonskog Broda danas je održano svečano potpisivanje ugovora s mladim obiteljima kojima je osnovano pravo građenja na zemljištima u vlasništvu Grada. Ugovore je danas potpisalo pet obitelji, koje će na dodijeljenim česticama graditi vlastite obiteljske kuće, uz m",
-      "link": "https://www.slavonski-brod.hr/vijesti/16921-grad-mladim-obiteljima-osigurava-temelje-za-dom-potpisani-novi-ugovori-o-pravu-gradenja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00001_resize.jpeg"
+      "naslov": "Bjeliš dobiva nove gospodarske snage: potpisani ugovori o pravu građenja",
+      "datum": "01. 06. 2026.",
+      "kratki_opis": "Grad Slavonski Brod učinio je danas još jedan korak prema razvoju Gospodarsko-proizvodne zone Bjeliš – u Velikoj vijećnici Grada potpisani su ugovori o osnivanju prava građenja na građevinskom zemljištu u vlasništvu Grada, uz mogućnost otkupa. Ugovore su potpisale tvrtke LASERING d.o.o. i MARK-MONT ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16959-bjelis-dobiva-nove-gospodarske-snage-potpisani-ugovori-o-pravu-gradenja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0021_resize.jpeg"
     },
     {
-      "naslov": "Brodski glazbenici blistali na međunarodnoj sceni: „Davor” i „Bela pl. Panthy” donijeli nova odličja kući",
-      "datum": "25. 05. 2026.",
-      "kratki_opis": "Slavonski Brod ima razloga za ponos. U proteklim danima, dva naša ugledna glazbena ansambla istaknula su se na prestižnim međunarodnim natjecanjima i potvrdila da brodska glazbena tradicija živi, napreduje i osvaja srca publike i stručnih žirija. U Šibeniku je održano jedno od najznačajnijih natjeca",
-      "link": "https://www.slavonski-brod.hr/vijesti/16920-brodski-glazbenici-blistali-na-medunarodnoj-sceni-davor-i-bela-pl-panthy-donijeli-nova-odlicja-kuci",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/photo-collage.png-2.jpg"
+      "naslov": "Danas obilježavamo Svjetski dan roditelja i Međunarodni dan djeteta",
+      "datum": "01. 06. 2026.",
+      "kratki_opis": "Diljem svijeta 1. lipnja obilježavaju se dva važna dana – Svjetski dan roditelja i Međunarodni dan djeteta. Ovi datumi podsjećaju nas na neraskidivu povezanost djece i njihovih roditelja, skrbnika i obitelji te na zajedničku odgovornost društva da svakom djetetu osigura sigurno, zdravo i poticajno o",
+      "link": "https://www.slavonski-brod.hr/vijesti/16958-danas-obiljezavamo-svjetski-dan-roditelja-i-medunarodni-dan-djeteta",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/FAMILI_resize.png"
     },
     {
-      "naslov": "Humanitarna utrka „Trčimo za obrok više“ okupila Brođane za pomoć djeci u Africi",
-      "datum": "23. 05. 2026.",
-      "kratki_opis": "Na Trgu Ivane Brlić-Mažuranić danas je održana humanitarna utrka „Trčimo za obrok više“ u organizaciji Volontera Marijinih obroka Slavonija. Brojni građani svih generacija okupili su se kako bi podržali plemenit cilj – osiguravanje školskih obroka za djecu u najsiromašnijim dijelovima svijeta. Progr",
-      "link": "https://www.slavonski-brod.hr/vijesti/16917-humanitarna-utrka-trcimo-za-obrok-vise-okupila-brodane-za-pomoc-djeci-u-africi",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/naslovnaobrok_resize.jpeg"
+      "naslov": "Najmlađi čuvari baštine otvorili mjesec folklora u Slavonskom Brodu",
+      "datum": "31. 05. 2026.",
+      "kratki_opis": "Na svetkovinu Duhova na Trgu Ivane Brlić-Mažuranić svečano je otvoreno 62. Brodsko kolo, najstarija i najveća folklorna manifestacija Brodsko-posavske županije. Tradicionalno, program je započeo 36. dječjom smotrom folklora „Igra kolo maleno“, koja je i ove godine okupila brojne sudionike i posjetit",
+      "link": "https://www.slavonski-brod.hr/vijesti/16955-najmladi-cuvari-bastine-otvorili-mjesec-folklora-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/kolonas.jpeg"
     },
     {
-      "naslov": "Brodski maturanti proslavili svoj dan i oduševili kostimima",
-      "datum": "23. 05. 2026.",
-      "kratki_opis": "Brodski maturanti su tradicionalno obilježili posljednji dan srednjoškolskog obrazovanja. Nešto poslije 18 sati, u povorci, prošetali su ulicama grada uz pjesmu i veselje u originalno osmišljenim kostimima te se zaputili prema Trgu Ivane Brlić-Mažuranić. Ova generacija bilježi ukupno 1038 brodskih m",
-      "link": "https://www.slavonski-brod.hr/vijesti/16916-brodski-maturanti-proslavili-svoj-dan-i-odusevili-kostimima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00022_resize.jpeg"
+      "naslov": "Odlična atmosfera na koncertu Željka Bebeka u Tvrđavi Brod",
+      "datum": "31. 05. 2026.",
+      "kratki_opis": "Sinoć je u punoj Tvrđavi Brod održan koncert Željka Bebeka u sklopu programa obilježavanja Dana grada Slavonskog Broda. Iako je koncert prvotno bio planiran za 16. svibnja, zbog nepovoljnih vremenskih uvjeta odgođen je za 30. svibnja, kada su građani i brojni posjetitelji napokon imali priliku uživa",
+      "link": "https://www.slavonski-brod.hr/vijesti/16954-odlicna-atmosfera-na-koncertu-zeljka-bebeka-u-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/nasze.jpeg"
     },
     {
-      "naslov": "DDD mjere 2026. godine – 1.  adulticidni tretman (ograničen)",
-      "datum": "22. 05. 2026.",
-      "kratki_opis": "Dana 25. svibnja 2026. godine (ponedjeljak), stručni i osposobljeni djelatnici tvrtke djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba provesti će 1. adulticidni tretman (ograničeni), u večernjem terminu od 19:30 do 22:00 sati, a na lokacijama navedenim u Tablici. 1. adulticidni tretman (ograničeni) ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16915-ddd-mjere-2026-godine-1-adulticidni-tretman-ogranicen",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/prema_podvinju_i_brodskom_brdu_resize.JPG"
+      "naslov": "Danas obilježavamo Svjetski dan multiple skleroze i pružamo podršku oboljelima",
+      "datum": "30. 05. 2026.",
+      "kratki_opis": "Danas se obilježava Svjetski dan multiple skleroze, koji se na inicijativu Multiple Sclerosis International Federation (MSIF) svake godine obilježava 30. svibnja s ciljem podizanja svijesti o multiploj sklerozi, pružanja podrške oboljelima te poticanja suradnje u istraživanju ove bolesti. U znak pod",
+      "link": "https://www.slavonski-brod.hr/vijesti/16953-danas-obiljezavamo-svjetski-dan-multiple-skleroze-i-pruzamo-podrsku-oboljelima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/VRPCA.jpg"
     },
     {
-      "naslov": "Danas privremena regulacija prometa zbog Dana maturanata 2026.",
-      "datum": "22. 05. 2026.",
-      "kratki_opis": "Povodom održavanja Dana maturanata 2026., u petak, 22. svibnja 2026. godine, na području grada bit će na snazi privremena regulacija prometa na nekoliko lokacija. Za promet će biti zatvoreni: Ulica Petra Krešimira IV, od raskrižja s Vukovarskom ulicom do raskrižja s Ulicom Đure Basaričeka, od 18:00 ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16913-danas-privremena-regulacija-prometa-zbog-dana-maturanata-2026",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/maturanti_slika_resize.jpeg"
+      "naslov": "Katolička osnovna škola proslavila svoj prvi Dan škole",
+      "datum": "30. 05. 2026.",
+      "kratki_opis": "Katolička osnovna škola Andrije Živkovića u Slavonskom Brodu, osnovana 9. rujna 2025. &nbsp;kao prva katolička škola na području Đakovačko-osječke nadbiskupije, svečano je u petak, 29. svibnja proslavila svoj prvi Dan škole. Sedamnaest prvašića svečanost je otvorila znakovitim igrokazom o sv. Antunu",
+      "link": "https://www.slavonski-brod.hr/vijesti/16952-katolicka-osnovna-skola-proslavila-svoj-prvi-dan-skole",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/katnas.jpg"
     },
     {
-      "naslov": "„Krug života“ oduševio publiku na 70. rođendanu Osnovne škole &quot;Hugo Badalić&quot;",
-      "datum": "21. 05. 2026.",
-      "kratki_opis": "Svečanim i emotivnim programom „Kralj lavova: Krug života“ obilježena je 70. obljetnica Osnovna škole \"Hugo Badalić\", a dvoranom su odzvanjali dječji osmijesi, pjesma i snažne poruke zajedništva, prijateljstva i životnih vrijednosti. U nazočnosti brojnih učenika, roditelja, umirovljenih djelatnika, ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16912-krug-zivota-odusevio-publiku-na-70-rodendanu-osnovne-skole-hugo-badalic",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/HBSKOLA.png"
+      "naslov": "Gradonačelnikova čestitka povodom Dana državnosti Republike Hrvatske",
+      "datum": "30. 05. 2026.",
+      "kratki_opis": "Drage Brođanke i Brođani, na Dan državnosti Republike Hrvatske s ponosom se prisjećamo povijesnog puta kojim je ostvarena naša sloboda, neovisnost i državnost. Posebnu zahvalnost i trajno poštovanje iskazujemo hrvatskim braniteljima i svima koji su svojim životima, hrabrošću i žrtvom utkali temelje ",
+      "link": "https://www.slavonski-brod.hr/vijesti/16951-gradonacelnikova-cestitka-povodom-dana-drzavnosti-republike-hrvatske-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/flag-croatia_resize.jpg"
     },
     {
-      "naslov": "Brod na Savi i Slavonski Brod zajedno proslavili naslov prvakinja Hrvatske",
-      "datum": "21. 05. 2026.",
-      "kratki_opis": "Na Trgu Ivane Brlić-Mažuranić jučer je održan svečani doček za košarkašice Ženskog košarkaškog kluba „Brod na Savi” koje su osvajanjem naslova državnih prvakinja Hrvatske ostvarile najveći uspjeh u povijesti ženskog sporta u Slavonskom Brodu. Brođanke i Brođani okupili su se na slavonskobrodskom Kor",
-      "link": "https://www.slavonski-brod.hr/vijesti/16911-brod-na-savi-i-slavonski-brod-zajedno-proslavili-naslov-prvakinja-hrvatske",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/image00004_resize.jpeg"
+      "naslov": "Obilježen Dan Osnovne škole „Blaž Tadijanović“",
+      "datum": "29. 05. 2026.",
+      "kratki_opis": "U Osnovnoj školi „Blaž Tadijanović“ u Slavonskom Brodu danas je svečano obilježen Dan škole pod nazivom „Ritam škole“. Svečanost je održana u prostoru škole, a okupila je učenike, učitelje, roditelje i brojne goste. Program obilježavanja započeo je izložbom učeničkih radova, na kojoj su posjetitelji",
+      "link": "https://www.slavonski-brod.hr/vijesti/16950-obiljezen-dan-skole-osnovne-skole-blaz-tadijanovic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/blaznas_resize.jpeg"
     },
     {
-      "naslov": "Gradonačelnik primio košarkašice „Broda na Savi&quot;: Čestitke za povijesni naslov",
-      "datum": "20. 05. 2026.",
-      "kratki_opis": "Gradonačelnik Slavonskog Broda Mirko Duspara upriličio je danas svečani prijem za košarkašice Ženskog košarkaškog kluba „Brod na Savi\" te njihov stručni stožer, kojima je u Velikoj vijećnici Gradske uprave čestitao na osvajanju naslova državnih prvakinja Hrvatske u sezoni 2025./2026. Prijem je održa",
-      "link": "https://www.slavonski-brod.hr/vijesti/16910-gradonacelnik-primio-kosarkasice-broda-na-savi-cestitke-za-povijesni-naslov",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/IMG_0964_resize.JPG"
+      "naslov": "Ljetovanje uz more: Dječje odmaralište na Hvaru otvara vrata za novu sezonu",
+      "datum": "29. 05. 2026.",
+      "kratki_opis": "Slavonskobrodsko dječje odmaralište u Starom Gradu na otoku Hvaru i ove ljeto postaje omiljeno odredište za brojne osnovnoškolce s područja Grada Slavonskog Broda i Brodsko-posavske županije. Organizirani dolasci odvijat će se kontinuirano kroz jedanaest smjena, u razdoblju od 15. lipnja do 1. rujna",
+      "link": "https://www.slavonski-brod.hr/vijesti/16948-ljetovanje-uz-more-djecje-odmaraliste-na-hvaru-otvara-vrata-za-novu-sezonu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/received_917854979511192_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "Moto susreti Moto susreti se održavaju na terenima Sportsko-rekreacijskog centra \"Poloj\" u povodu Da",
-      "datum": "Svibanj",
-      "opis": "na grada Slavonskog Broda, te imaju međunarodni karakter. Među obiljem zanimljivih sadržaja koji svake godine na susrete privuku više tisuća posjetitelja, treba istaknuti moto igre, utrke ubrzanja, moto defile sa egzibicijama, rock koncerte i dr. Regata Slavonski Brod Regata je uvrštena u kalendar n",
-      "link": "https://www.tzgsb.hr/index.php?page=svibanj"
-    },
     {
       "naziv": "Brodsko kolo Najstarija smotra folklora u Hrvatskoj koja obuhvaća različite programe poput likovnih",
       "datum": "Lipanj",
@@ -112,6 +106,12 @@ export const scrapedContent = {
       "datum": "Kolovoz",
       "opis": "đavi Brod, uz slobodan ulaz. U vrijeme festivala posjetitelji mogu uživati u vrhunskoj produkciji, od audio opreme do scenografije i rasvjete, uz nastup svih izvođača uživo. Naglašeni pop rock izričaj, kao sadašnja i buduća smjernica festivala, postiže se izborom koncertnih headlinera, s tim da se u",
       "link": "https://www.tzgsb.hr/index.php?page=kolovoz"
+    },
+    {
+      "naziv": "Svila šuška, šlingeraj se širi Folklorna manifestacija koja se održava u Podvinju u spomen na običaj",
+      "datum": "Rujan",
+      "opis": "tkanja svile u podvinjskoj svilani tijekom 19. stoljeća.",
+      "link": "https://www.tzgsb.hr/index.php?page=rujan"
     }
   ],
   "restorani_tz": [
