@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-06-15 12:17 UTC
+// Zadnje skrapanje: 2026-06-22 11:57 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-06-15T12:17:32.793Z",
+    "zadnje_azuriranje": "2026-06-22T11:57:25.452Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,74 +18,67 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Otvoreno prvenstvo Slavonskog Broda u kuhanju fiša 2026.",
-      "datum": "15. 06. 2026.",
-      "kratki_opis": "Turistička zajednica područja „Slavonski Brod-Posavina“ pod pokroviteljstvom Grada Slavonskog Broda organizira tradicionalno OTVORENO PRVENSTVO GRADA SLAVONSKOG BRODA U KUHANJU FIŠA. Manifestacija će se održati u petak, 3. srpnja 2026., na Sportsko-rekreacijskom centru „Poloj“ u Slavonskom Brodu, s ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17002-otvoreno-prvenstvo-slavonskog-broda-u-kuhanju-fisa-2026",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Fisijada_plakat_2026_PRIJAVE_resize.jpg"
+      "naslov": "Polaganjem vijenaca obilježen Dan antifašističke borbe u Slavonskom Brodu",
+      "datum": "22. 06. 2026.",
+      "kratki_opis": "U Slavonskom Brodu danas je prigodno obilježen Dan antifašističke borbe, državni praznik kojim se iskazuje poštovanje svim sudionicima antifašističkog pokreta i žrtvama koje su tijekom Drugog svjetskog rata dale doprinos borbi za slobodu i pravednije društvo. Tim su povodom položeni vijenci i zapalj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17021-polaganjem-vijenaca-obiljezen-dan-antifasisticke-borbe-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/image00001_resize.jpeg"
     },
     {
-      "naslov": "Slavonski Brod ponovno postaje središte vrhunske street food scene",
-      "datum": "15. 06. 2026.",
-      "kratki_opis": "U Velikoj vijećnici danas je održana konferencija za medije na kojoj je predstavljen program i datum održavanja trećeg izdanja Street Food Festivala u Slavonskom Brodu. Festival će se održati od 3. do 6. rujna u jedinstvenom ambijentu Tvrđave Brod kao savršena uvertira u novu školsku godinu i idealn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17001-slavonski-brod-ponovno-postaje-srediste-vrhunske-street-food-scene",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Street_food_festival_SB_JUMBO_2026_page-0001_resize.jpg"
+      "naslov": "Gradonačelnikova čestitka povodom Dana antifašističke borbe",
+      "datum": "22. 06. 2026.",
+      "kratki_opis": "Poštovane sugrađanke i sugrađani, povodom Dana antifašističke borbe upućujem vam iskrene čestitke uz prisjećanje na jedan od važnih trenutaka hrvatske povijesti, kada su hrabri pojedinci svojim djelovanjem stali u obranu slobode, ljudskog dostojanstva i prava na život. Ovaj blagdan prilika je da oda",
+      "link": "https://www.slavonski-brod.hr/vijesti/17019-gradonacelnikova-cestitka-povodom-dana-antifasisticke-borbe-6",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/dan_antifasisticke_borbe_resize.jpg"
     },
     {
-      "naslov": "Ljetovanje uz more: učenici iz Celja stižu u Stari Grad na Hvaru",
-      "datum": "15. 06. 2026.",
-      "kratki_opis": "Dječje odmaralište u Starom Gradu na otoku Hvaru uskoro će ugostiti još jednu generaciju mladih prijatelja – dvadeset učenika iz slovenskog Celja, koji 30. lipnja kreću na tjedan dana ljetovanja u sklopu dugogodišnje suradnje dvaju gradova. Tijekom tjedan dana boravka, od 30. lipnja do 7. srpnja, uč",
-      "link": "https://www.slavonski-brod.hr/vijesti/17000-ljetovanje-uz-more-ucenici-iz-celja-stizu-u-stari-grad-na-hvaru",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/image00003_starigrad.jpeg"
+      "naslov": "Na Savi održano 4. kolo Hrvatske kajakaške lige: Više od 200 natjecatelja okupilo se u Slavonskom Brodu",
+      "datum": "20. 06. 2026.",
+      "kratki_opis": "Na rijeci Savi u Slavonskom Brodu danas je održano 4. kolo Hrvatske kajakaške lige, jedno od najznačajnijih domaćih kajakaških natjecanja koje je okupilo više od 200 natjecatelja iz 12 klubova iz cijele Hrvatske. Natjecanje je organizirano povodom Dana grada Slavonskog Broda, a središte događanja bi",
+      "link": "https://www.slavonski-brod.hr/vijesti/17018-na-savi-odrzano-4-kolo-hrvatske-kajakaske-lige-vise-od-200-natjecatelja-okupilo-se-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0406_resize.jpeg"
     },
     {
-      "naslov": "Gdje kolo ne staje ni nakon šezdeset i dvije godine",
-      "datum": "15. 06. 2026.",
-      "kratki_opis": "Nedjeljna večer u Slavonskom Brodu ponovno je bila u znaku folklornog nasljeđa i živih tradicija brodskog kraja. Na poznatoj pozornici u Tvrđavi Brod pred brojnom je publikom nastupilo dvanaest kulturno-umjetničkih društava iz Brodsko-posavske županije i šire, svatko sa svojom posebnom pričom o kraj",
-      "link": "https://www.slavonski-brod.hr/vijesti/16997-gdje-kolo-ne-staje-ni-nakon-sezdeset-i-dvije-godine",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_1943_resize.jpeg"
+      "naslov": "Ne propustite glazbenu nedjelju u Slavonskom Brodu – ulaz je besplatan!",
+      "datum": "19. 06. 2026.",
+      "kratki_opis": "Samo još dva dana dijele nas od glazbene nedjelje kakvu Slavonski Brod zna prirediti! U nedjelju, 21. lipnja, povodom Svjetskog dana glazbe, šest gradskih lokacija pretvorit će se u veliku pozornicu na otvorenom – a ulaz na sva događanja je besplatan. Program počinje već u jutarnjim satima na Korzu,",
+      "link": "https://www.slavonski-brod.hr/vijesti/17016-ne-propustite-glazbenu-nedjelju-u-slavonskom-brodu-ulaz-je-besplatan",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Glazb.jpg"
     },
     {
-      "naslov": "Večer puna srca, pjesme i običaja: FAB ponovno oduševio Brođane",
-      "datum": "14. 06. 2026.",
-      "kratki_opis": "U predivnom ambijentu Tvrđave Brod sinoć je održan godišnji koncert Folklornog ansambla Broda, koji je i ove godine okupio brojne ljubitelje tradicijske kulture i folklora. Popunjena gledališta i odlična atmosfera pokazali su veliki interes publike za ovu manifestaciju koja je dio programa 62. Brods",
-      "link": "https://www.slavonski-brod.hr/vijesti/16999-vecer-puna-srca-pjesme-i-obicaja-fab-ponovno-odusevio-brodane",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0247_resize.jpeg"
+      "naslov": "Brodske bebe i dalje u dobrim rukama: Grad ove godine podijelio već 97 paketa opreme",
+      "datum": "19. 06. 2026.",
+      "kratki_opis": "Zamjenica gradonačelnika Marina Martić Puača danas je uručila pakete dobrodošlice za novorođenčad deset brodskih obitelji – čime broj podijeljenih paketa od početka 2026. godine dostiže impresivnih 97. Mjera potpore roditeljima koju Grad Slavonski Brod provodi već sedmu godinu zaredom ne posustaje, ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17015-brodske-bebe-i-dalje-u-dobrim-rukama-grad-ove-godine-podijelio-vec-97-paketa-opreme",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Bebe19626.jpg"
     },
     {
-      "naslov": "Podvinje proslavilo svog nebeskog zaštitnika: Svetkovini sv. Antuna Padovanskog prisustvovao gradonačelnik Duspara",
-      "datum": "13. 06. 2026.",
-      "kratki_opis": "Uz liturgijsko slavlje i zvuke župnog zbora, Župa sv. Antuna Padovanskog u Podvinju proslavila je 13. lipnja svetkovinu svog nebeskog zaštitnika. Svečanu svetu misu predvodio je fra Mirko Filipović, župnik Žeravca, a misno slavlje animirao je domaći župni zbor sv. Antuna. Slavlju je prisustvovao i g",
-      "link": "https://www.slavonski-brod.hr/vijesti/16996-podvinje-proslavilo-svog-nebeskog-zastitnika-svetkovini-sv-antuna-padovanskog-prisustvovao-gradonacelnik-duspara-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0208_resize.jpeg"
+      "naslov": "Napreduju radovi na dogradnji dječjih vrtića „Pčelica“ i „Kosjenka“ – stvaraju se uvjeti za 140 novih vrtićkih mjesta",
+      "datum": "18. 06. 2026.",
+      "kratki_opis": "Grad Slavonski Brod nastavlja s ulaganjima u predškolski odgoj i obrazovanje kroz dogradnju dječjih vrtića „Pčelica“ i „Kosjenka“. Radovi na oba objekta odvijaju se planiranom dinamikom, a tijekom proteklog mjeseca ostvareni su značajni pomaci na građevinskim, instalaterskim i završnim radovima. Na ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17012-napreduju-radovi-na-dogradnji-djecjih-vrtica-pcelica-i-kosjenka-stvaraju-se-uvjeti-za-140-novih-vrtickih-mjesta",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/DV_KiP.jpg"
     },
     {
-      "naslov": "Produljeno radno vrijeme ugostiteljskih objekata tijekom Svjetskog prvenstva 2026.",
-      "datum": "12. 06. 2026.",
-      "kratki_opis": "Gradonačelnik Grada Slavonskog Broda Mirko Duspara donio je Zaključak o davanju suglasnosti na produljeno radno vrijeme ugostiteljskih objekata za vrijeme trajanja Svjetskog nogometnog prvenstva 2026. godine. S ciljem podrške inicijativi organiziranog praćenja utakmica hrvatske nogometne reprezentac",
-      "link": "https://www.slavonski-brod.hr/vijesti/16998-zakljucak-o-davanju-suglasnosti-na-produljeno-radno-vrijeme-ugostiteljskih-objekata-za-vrijeme-trajanja-svjetskog-nogometnog-prvenstva",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/korzo_i_park_resize.jpg"
+      "naslov": "Povratak na Poloj: od 20. lipnja počinje sezona kupanja",
+      "datum": "17. 06. 2026.",
+      "kratki_opis": "&nbsp; Gradsko kupalište Poloj i ove godine otvara svoja vrata svim ljubiteljima boravka na otvorenom, kupanja i rekreacije uz rijeku Savu. Kupališna sezona službeno započinje u subotu, 20. lipnja, te će trajati do 20. kolovoza 2026. godine. Poloj će i ovoga ljeta biti omiljeno mjesto okupljanja Bro",
+      "link": "https://www.slavonski-brod.hr/vijesti/17010-povratak-na-poloj-od-20-lipnja-pocinje-sezona-kupanja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Poloj2026.jpg"
     },
     {
-      "naslov": "Osigurana sredstva za proširenje kanalizacijske mreže u Brodskom Vinogorju i Brodskom Varošu",
-      "datum": "12. 06. 2026.",
-      "kratki_opis": "U Ministarstvu zaštite okoliša i zelene tranzicije potpisan je Ugovor o dodjeli bespovratnih sredstava za projekt „Proširenje i rekonstrukcija kanalizacijske mreže Grada Slavonskog Broda: naselja Brodsko Vinogorje i Brodski Varoš\". Nositelj projekta je Vodovod d.o.o. Slavonski Brod. Ukupna vrijednos",
-      "link": "https://www.slavonski-brod.hr/vijesti/16995-osigurana-sredstva-za-prosirenje-kanalizacijske-mreze-u-brodskom-vinogorju-i-brodskom-varosu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/vinogradska_2_resize.jpg"
+      "naslov": "Slavonski Brod u nedjelju slavi Svjetski dan glazbe – besplatni koncerti na šest gradskih lokacija",
+      "datum": "17. 06. 2026.",
+      "kratki_opis": "Povodom Svjetskog dana glazbe, u nedjelju 21. lipnja 2026., Slavonski Brod i ove godine nastavlja lijepu tradiciju pretvaranja gradskih prostora u veliku pozornicu na otvorenom. Raznoliki glazbeni program protegnut će se od jutarnjih sati do kasne večeri na šest gradskih lokacija, a ulaz na sva doga",
+      "link": "https://www.slavonski-brod.hr/vijesti/17009-slavonski-brod-u-nedjelju-slavi-svjetski-dan-glazbe-besplatni-koncerti-na-sest-gradskih-lokacija",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/wal_172619-piano-5353974_resize.jpg"
     },
     {
-      "naslov": "Predstavnici kongresnog turizma upoznali potencijale Slavonskog Broda za poslovna događanja",
-      "datum": "12. 06. 2026.",
-      "kratki_opis": "Turistička zajednica područja „Slavonski Brod-Posavina“, uz potporu Hrvatske turističke zajednice, bila je domaćin novinarima i predstavnicima putničkih agencija – članovima Hrvatske udruge profesionalaca kongresnog turizma, koji su tijekom dvodnevnog studijskog putovanja posjetili Slavonski Brod i ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16992-predstavnici-kongresnog-turizma-upoznali-potencijale-slavonskog-broda-za-poslovna-dogadanja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/719740212_1422037853284787_7581181991982682787_n.jpg"
-    },
-    {
-      "naslov": "U Slavonskom Brodu obilježena 35. obljetnica osnutka 3. bojne 3. gardijske brigade „Kune“",
-      "datum": "12. 06. 2026.",
-      "kratki_opis": "Povodom 35. obljetnice osnutka 3. bojne 3. gardijske brigade „Kune“, danas je u Slavonskom Brodu održan prigodan program kojim je odana počast svim pripadnicima ove slavne postrojbe i njihovom nemjerljivom doprinosu u obrani Republike Hrvatske tijekom Domovinskog rata. Program obilježavanja započeo ",
-      "link": "https://www.slavonski-brod.hr/vijesti/16990-u-slavonskom-brodu-obiljezena-35-obljetnica-osnutka-3-bojne-3-gardijske-brigade-kune",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0182_resize.jpeg"
+      "naslov": "Učenici OŠ „Vladimir Nazor&quot; uskoro dobivaju novu sportsku dvoranu",
+      "datum": "16. 06. 2026.",
+      "kratki_opis": "Radovi na dogradnji školske sportske dvorane uz Osnovnu školu „Vladimir Nazor\" u Slavonskom Brodu napreduju prema planu, a projekt je u proteklim mjesecima ušao u intenzivnu završnu fazu koja obuhvaća širok spektar građevinskih, instalaterskih i završnih radova. U okviru konstrukcijskih i bravarskih",
+      "link": "https://www.slavonski-brod.hr/vijesti/17006-ucenici-os-vladimir-nazor-uskoro-dobivaju-novu-sportsku-dvoranu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/photo-collagepng.jpg"
     }
   ],
   "manifestacije_aktualne": [
