@@ -729,7 +729,7 @@ function writeOutput(data) {
   const output = `// AUTO-GENERATED — ne editiraj ručno!
 // Zadnje skrapanje: ${ts} UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
-// GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
+// GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = ${JSON.stringify(data, null, 2)};
 `;

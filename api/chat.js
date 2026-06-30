@@ -1,9 +1,9 @@
-import OpenAI from "openai";
+import Anthropic from "@anthropic-ai/sdk";
 import { db } from "./_database.js";
 import { scrapedContent } from "./_scraped_content.js";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY?.trim()
+const anthropic = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY?.trim()
 });
 
 // ===== DOPUNSKE SLIKE za atrakcije/sport (nije u scrapedContent) =====
@@ -569,7 +569,23 @@ export default async function handler(req, res) {
     const isWeatherQuery = ['prognoz', 'forecast', 'wetter', 'vremensku prognozu'].some(k => msgLower.includes(k))
       || (['kakvo', 'kako', 'hoće', 'biti', 'temperatura'].filter(k => msgLower.includes(k)).length >= 2 && ['vrij', 'tempera', 'kišno', 'sunčano'].some(k => msgLower.includes(k)));
     if (isWeatherQuery) {
-      const reply = `Nažalost, nemam pristup vremenskim podacima.\n\nZa točnu vremensku prognozu preporučujem:\n🌤️ [meteo.hr](https://meteo.hr) — Državni hidrometeorološki zavod\n🌡️ [Weather.com Slavonski Brod](https://weather.com/hr-HR/weather/today/l/Slavonski+Brod)\n\nAko mi kažeš kakvo vrijeme očekuješ — predložit ću aktivnosti koje odgovaraju!`;
+      let reply;
+      if (weather && weather.temperature != null) {
+        // Bot IMA vrijeme uživo (Open-Meteo, /api/weather) — odgovori stvarnim podacima
+        reply = `${weather.icon || '🌡️'} Trenutno u Slavonskom Brodu: **${weather.temperature}°C**`
+          + (weather.opis ? `, ${weather.opis}` : '')
+          + (weather.windspeed != null ? `, vjetar ${weather.windspeed} km/h` : '') + '.';
+        if (Array.isArray(weather.forecast) && weather.forecast.length) {
+          reply += `\n\n**Prognoza za sljedeće dane:**`;
+          weather.forecast.slice(0, 5).forEach(f => {
+            reply += `\n${f.icon || ''} ${f.dan} (${f.datum}): ${f.tmin}–${f.tmax}°C, ${f.opis}`
+              + (f.kisa ? `, kiša ${f.kisa}%` : '');
+          });
+        }
+        reply += `\n\nℹ️ Izvor: Open-Meteo. Za detaljnu prognozu: [meteo.hr](https://meteo.hr).`;
+      } else {
+        reply = `Trenutačno nemam dohvaćene vremenske podatke. Za prognozu:\n🌤️ [meteo.hr](https://meteo.hr) — Državni hidrometeorološki zavod\n🌡️ [Weather.com Slavonski Brod](https://weather.com/hr-HR/weather/today/l/Slavonski+Brod)`;
+      }
       return res.status(200).json({ reply, category: lastCategory || null, suggestions: getSuggestions(lastCategory), images: [] });
     }
 
@@ -949,20 +965,32 @@ Pravila:
 8. Na APSOLUTNOM KRAJU odgovora, u zadnjem retku, dodaj TOČNO ovako (bez ikakvog prefiksa, zagrade ili dvotočke ispred, uvijek na HRVATSKOM jeziku):
 SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na hrvatskom?"]`;
 
-    const messages = [
-      { role: "system", content: systemPrompt },
-      ...conversationHistory.slice(-6),
-      { role: "user", content: message }
-    ];
+    // Anthropic Messages API: system je odvojen parametar (NE ide u messages).
+    // Zadržavamo zadnjih 6 izmjena povijesti; messages mora početi "user" porukom.
+    let historyMsgs = conversationHistory
+      .filter(m => m && (m.role === "user" || m.role === "assistant") && m.content)
+      .slice(-6);
+    while (historyMsgs.length && historyMsgs[0].role !== "user") historyMsgs.shift();
+    // Klijent već gura trenutnu poruku u history — izbjegni dupliranje.
+    const lastMsg = historyMsgs[historyMsgs.length - 1];
+    const anthropicMessages = (lastMsg && lastMsg.role === "user" && lastMsg.content === message)
+      ? historyMsgs
+      : [...historyMsgs, { role: "user", content: message }];
+    if (!anthropicMessages.length) anthropicMessages.push({ role: "user", content: message });
 
-    const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages,
-      temperature: 0.7,
+    const completion = await anthropic.messages.create({
+      model: "claude-sonnet-5",
       max_tokens: 1100,
+      thinking: { type: "disabled" }, // turistički bot: prioritet je brzina odgovora
+      system: systemPrompt,
+      messages: anthropicMessages,
     });
 
-    let raw = completion.choices[0]?.message?.content || "Nije moguće generirati odgovor.";
+    let raw = (completion.content || [])
+      .filter(b => b.type === "text")
+      .map(b => b.text)
+      .join("")
+      || "Nije moguće generirati odgovor.";
 
     // Izvuci SUGGESTIONS — tolerira bilo koji prefix ([: , \n, razmak itd.)
     let aiSuggestions = null;

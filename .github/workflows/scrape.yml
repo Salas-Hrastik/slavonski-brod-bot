@@ -2,8 +2,8 @@ name: Scrape Slavonski Brod
 
 on:
   schedule:
-    # Svaki ponedjeljak u 06:00 UTC
-    - cron: '0 6 * * 1'
+    # Svaki dan u 06:00 UTC (vijesti, događanja i manifestacije mijenjaju se često)
+    - cron: '0 6 * * *'
   workflow_dispatch:   # Ručno pokretanje iz GitHub UI
 
 jobs:
