@@ -2,8 +2,7 @@
     "version": 2,
     "functions": {
         "api/**/*.js": {
-            "maxDuration": 45,
-            "memory": 1024
+            "maxDuration": 45
         }
     },
     "routes": [
