@@ -1019,7 +1019,23 @@ SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na h
     });
 
   } catch (err) {
-    console.error("Chat error:", err);
-    return res.status(500).json({ reply: "Greška u komunikaciji sa serverom. Pokušajte ponovno." });
+    // Detaljan log za Vercel Functions (status + tip + poruka Anthropic SDK-a)
+    console.error("Chat error:", err?.status, err?.name, err?.message);
+    const status = err?.status;
+    let reply = "Greška u komunikaciji sa serverom. Pokušajte ponovno.";
+    if (status === 401) {
+      reply = "⚠️ Konfiguracija: ANTHROPIC_API_KEY nedostaje ili je neispravan na serveru (401).";
+    } else if (status === 403) {
+      reply = "⚠️ Konfiguracija: API ključ nema dopuštenje za ovaj zahtjev (403).";
+    } else if (status === 404) {
+      reply = "⚠️ Konfiguracija: traženi AI model nije dostupan za ovaj API ključ (404).";
+    } else if (status === 400) {
+      reply = "⚠️ Greška u zahtjevu prema AI servisu (400). Javite administratoru.";
+    } else if (status === 429) {
+      reply = "Trenutačno je previše upita — pričekajte trenutak pa pokušajte ponovno.";
+    } else if (status >= 500) {
+      reply = "AI servis je trenutačno preopterećen. Pokušajte za koji trenutak.";
+    }
+    return res.status(200).json({ reply, category: null, suggestions: [], items: [], images: [] });
   }
 }
