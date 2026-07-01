@@ -913,22 +913,15 @@ export default async function handler(req, res) {
       });
     }
 
-    const systemPrompt = `Ti si stručni turistički asistent za grad Slavonski Brod (Hrvatska). Pomažeš posjetiteljima pronaći informacije o znamenitostima, gastronomiji, smještaju, događanjima i svemu što Slavonski Brod nudi.
-${weatherCtx}
-
-VAŽNO — SEZONSKI I VREMENSKI KONTEKST:
-• Uvijek koristi aktualni datum i vremensku prognozu u odgovoru
-• Za preporuke aktivnosti, izričito navedi sezonu/uvjete: "Budući da je sada ${danStr} i ${weather?.temperature != null ? weather.temperature + '°C' : 'proljeće'}, idealno je..."
-• Nikad ne predlažeš ljetne aktivnosti ako je zima, i obrnuto
-• Ako korisnik pita za vikend ili nadolazeće dane — referenciraj prognozu iz podataka
-
-${langInstruction}
+    // Sistemski prompt u DVA bloka radi prompt cachinga:
+    //  1) STABILNI blok (persona + stroge činjenice + pravila) — bajt-identičan u
+    //     svakom upitu → Anthropic ga kešira (cache_control), pa se na sljedećim
+    //     upitima naplaćuje ~10x jeftinije i brže obradi.
+    //  2) DINAMIČKI blok (vrijeme, jezik, kontekst kategorije) — mijenja se po upitu,
+    //     zato ide NAKON keširanog bloka (cache je prefiks-podudaranje).
+    const systemStable = `Ti si stručni turistički asistent za grad Slavonski Brod (Hrvatska). Pomažeš posjetiteljima pronaći informacije o znamenitostima, gastronomiji, smještaju, događanjima i svemu što Slavonski Brod nudi.
 
 Koristiš isključivo podatke iz baze i svoja opća znanja o gradu. Budi prijateljski, topao i informativan. Koristi markdown (bold, bullet točke, linkovi na Google Maps).
-
-Baza podataka o Slavonskom Brodu:
-${contextStr}
-${scrapedSection}
 
 STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 
@@ -977,6 +970,20 @@ Pravila:
 8. Na APSOLUTNOM KRAJU odgovora, u zadnjem retku, dodaj TOČNO ovako (bez ikakvog prefiksa, zagrade ili dvotočke ispred, uvijek na HRVATSKOM jeziku):
 SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na hrvatskom?"]`;
 
+    const systemDynamic = `${weatherCtx}
+
+VAŽNO — SEZONSKI I VREMENSKI KONTEKST:
+• Uvijek koristi aktualni datum i vremensku prognozu u odgovoru
+• Za preporuke aktivnosti, izričito navedi sezonu/uvjete: "Budući da je sada ${danStr} i ${weather?.temperature != null ? weather.temperature + '°C' : 'proljeće'}, idealno je..."
+• Nikad ne predlažeš ljetne aktivnosti ako je zima, i obrnuto
+• Ako korisnik pita za vikend ili nadolazeće dane — referenciraj prognozu iz podataka
+
+${langInstruction}
+
+Baza podataka o Slavonskom Brodu:
+${contextStr}
+${scrapedSection}`;
+
     // Anthropic Messages API: system je odvojen parametar (NE ide u messages).
     // Zadržavamo zadnjih 6 izmjena povijesti; messages mora početi "user" porukom.
     let historyMsgs = conversationHistory
@@ -994,7 +1001,10 @@ SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na h
       model: "claude-sonnet-5",
       max_tokens: 1100,
       thinking: { type: "disabled" }, // turistički bot: prioritet je brzina odgovora
-      system: systemPrompt,
+      system: [
+        { type: "text", text: systemStable, cache_control: { type: "ephemeral" } },
+        { type: "text", text: systemDynamic },
+      ],
       messages: anthropicMessages,
     });
 
