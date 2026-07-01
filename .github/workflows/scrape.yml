@@ -37,6 +37,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Nema promjena — preskačem commit."
           else
-            git commit -m "chore: auto-update scraped content [skip ci]"
+            git commit -m "chore: auto-update scraped content"
             git push
           fi
