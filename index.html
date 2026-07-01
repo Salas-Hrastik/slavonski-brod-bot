@@ -410,44 +410,46 @@ button.send-btn:active{ transform:translateY(0); }
 /* ===== WELCOME (hero) ===== */
 .welcome{
   text-align:center;
-  padding:0;
+  padding:0 0 16px;
   flex:1;
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-end; /* tekst uz donji rub — slika Tvrđave ostaje vidljiva */
   border-radius:0 0 var(--radius) var(--radius);
   background:
-    linear-gradient(180deg, rgba(14,74,67,.18), rgba(194,94,44,.42)),
+    linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(10,28,24,.42) 100%),
     url('https://www.tzgsb.hr/static/images/nslovna_tzgsb.jpg') center/cover no-repeat;
   min-height:200px;
   position:relative;
   overflow:hidden;
 }
 .welcome-text{
-  background:rgba(14,40,36,.34);
-  backdrop-filter:blur(3px);
-  -webkit-backdrop-filter:blur(3px);
-  border-radius:18px;
-  padding:24px 36px;
-  border:1px solid rgba(255,255,255,.20);
-  max-width:90%;
-  box-shadow:0 18px 50px rgba(0,0,0,.30);
+  background:rgba(12,30,26,.26);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+  border-radius:16px;
+  padding:12px 22px 14px;
+  border:1px solid rgba(255,255,255,.16);
+  max-width:86%;
+  box-shadow:0 10px 30px rgba(0,0,0,.22);
   animation:msgIn .5s ease both;
 }
 .welcome p{
-  margin:7px 0;
+  margin:4px 0;
   font-size:16.5px;
-  color:rgba(255,255,255,.96);
+  color:rgba(255,255,255,.97);
+  text-shadow:0 1px 6px rgba(0,0,0,.45);
 }
 .welcome strong{
   display:block;
-  margin-bottom:4px;
+  margin-bottom:2px;
   font-family:'Fraunces',Georgia,serif;
   font-weight:600;
   color:#fff;
-  font-size:25px;
+  font-size:23px;
   letter-spacing:.3px;
+  text-shadow:0 2px 10px rgba(0,0,0,.5);
 }
 
 /* ===== SUGGESTIONS ===== */
@@ -680,7 +682,7 @@ a:hover{ text-decoration:underline; }
 
 /* ===== WELCOME STARTER CHIPS ===== */
 .welcome-chips{
-  margin-top:18px;
+  margin-top:12px;
   display:flex;
   gap:9px;
   flex-wrap:wrap;
