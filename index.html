@@ -329,6 +329,7 @@ button.mic-btn.listening::after{
 
 input{
   flex:1;
+  min-width:0; /* dopušta skupljanje da 'Pošalji' ostane vidljiv na mobitelu */
   padding:15px 18px;
   border-radius:14px;
   border:1.5px solid var(--line);
@@ -622,12 +623,102 @@ a:hover{ text-decoration:underline; }
   .main{ padding:12px 12px 12px; }
   .chat-box{ border-radius:16px; }
   .user-message, .bot-message{ max-width:90%; font-size:15px; }
-  .welcome strong{ font-size:22px; }
+  .welcome strong{ font-size:20px; }
+  .welcome-text{ padding:18px 20px; }
+  .welcome-chips button{ padding:9px 13px; font-size:12.5px; }
   .item-card-thumb{ width:88px; }
   input{ font-size:16px; padding:14px 16px; }
   button.send-btn{ padding:13px 18px; font-size:15px; }
   button.mic-btn{ width:50px; height:50px; }
   .modal-box{ width:94vw; height:82vh; }
+}
+
+/* ===== WELCOME STARTER CHIPS ===== */
+.welcome-chips{
+  margin-top:18px;
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.welcome-chips button{
+  background:rgba(255,255,255,.16);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.38);
+  padding:10px 16px;
+  border-radius:999px;
+  font-family:inherit;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  transition:transform .16s ease, background .16s ease, border-color .16s ease;
+}
+.welcome-chips button:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.30);
+  border-color:#fff;
+}
+
+/* ===== SKELETON TYPING INDIKATOR ===== */
+.typing{
+  flex-direction:column;
+  align-items:stretch;
+  gap:11px;
+  min-width:min(340px,72%);
+}
+.typing-head{ display:flex; align-items:center; gap:10px; }
+.typing-label{ font-weight:700; color:var(--ink-soft); font-size:13px; }
+.skeleton-lines{ display:flex; flex-direction:column; gap:9px; }
+.skeleton-line{
+  height:11px;
+  border-radius:6px;
+  background:linear-gradient(90deg,#efe6d6 25%,#f8f1e5 37%,#efe6d6 63%);
+  background-size:400% 100%;
+  animation:shimmer 1.4s ease-in-out infinite;
+}
+.skeleton-line.short{ width:60%; }
+@keyframes shimmer{ 0%{ background-position:100% 0; } 100%{ background-position:-100% 0; } }
+
+/* ===== STAGGER DOLASKA KARTICA / PRIJEDLOGA ===== */
+.item-card{ animation:cardIn .42s cubic-bezier(.2,.7,.3,1) both; }
+.item-card:nth-child(1){ animation-delay:.04s; }
+.item-card:nth-child(2){ animation-delay:.12s; }
+.item-card:nth-child(3){ animation-delay:.20s; }
+.item-card:nth-child(4){ animation-delay:.28s; }
+.item-card:nth-child(5){ animation-delay:.36s; }
+.item-card:nth-child(n+6){ animation-delay:.42s; }
+@keyframes cardIn{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
+.suggestions button{ animation:cardIn .4s ease both; }
+
+/* ===== DARK MODE (automatski, prema postavci uređaja) ===== */
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg-1:#17130f; --bg-2:#0f0c09;
+    --card:#221b15;
+    --ink:#f1e8dc; --ink-soft:#b8ab99;
+    --teal:#43b8a6; --teal-deep:#8fe3d4; --teal-soft:#1d322e;
+    --terra:#e08a54; --terra-deep:#eda574; --amber:#efba4e;
+    --line:#3a2f25;
+    --shadow-sm:0 2px 10px rgba(0,0,0,.45);
+    --shadow:0 18px 44px rgba(0,0,0,.6);
+  }
+  body{ background:linear-gradient(160deg,#17130f,#0f0c09); }
+  #weather-bar{ background:linear-gradient(90deg,#241c13,#1c1610); }
+  #cat-tabs{ background:rgba(18,14,10,.62); }
+  #cat-tabs button{ background:#251d15; color:var(--teal-deep); border-color:#34291e; }
+  .bot-message{ background:#241d16; }
+  .typing{ background:#241d16; }
+  .skeleton-line{ background:linear-gradient(90deg,#2b2118 25%,#362b20 37%,#2b2118 63%); background-size:400% 100%; }
+  /* Naslovi unutar odgovora imaju inline boju — nadjačaj radi kontrasta */
+  .bot-message div[style*="color:#0e4a43"]{ color:var(--teal-deep) !important; border-bottom-color:#3a2f25 !important; }
+  .item-card{ background:#26201a; }
+  input{ background:#221b15; color:var(--ink); }
+  input::placeholder{ color:#8a7c6b; }
+  button.mic-btn{ background:#251d15; }
+  .chat-box{ border-color:rgba(255,255,255,.06); }
+  .chat-box::-webkit-scrollbar-thumb{ background:#3a2f24; border-color:var(--card); }
 }
 
 @media (prefers-reduced-motion:reduce){
@@ -682,6 +773,11 @@ a:hover{ text-decoration:underline; }
         <div class="welcome-text">
           <p><strong>Dobrodošli u Slavonski Brod!</strong> 🏰</p>
           <p>Pitajte me o znamenitostima, gastronomiji, smještaju,<br>događanjima i svemu što grad nudi.</p>
+          <div class="welcome-chips">
+            <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')">🏰 Što vidjeti?</button>
+            <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')">🍽 Gdje jesti?</button>
+            <button onclick="quickAsk('Koja događanja se održavaju?')">🎭 Događanja</button>
+          </div>
         </div>
       </div>
     </div>
@@ -875,7 +971,7 @@ async function sendMessage(){
   const chatMessages = document.getElementById("chat-messages");
   const typing = document.createElement("div");
   typing.className = "typing";
-  typing.innerHTML = `<span>Razmišljam...</span><div class="typing-dots"><span></span><span></span><span></span></div>`;
+  typing.innerHTML = `<div class="typing-head"><span class="typing-label">Tražim najbolji odgovor…</span><div class="typing-dots"><span></span><span></span><span></span></div></div><div class="skeleton-lines"><span class="skeleton-line"></span><span class="skeleton-line"></span><span class="skeleton-line short"></span></div>`;
   chatMessages.appendChild(typing);
   // Kratki delay da DOM renderira, pa smoothly skrola na "Razmišljam..."
   setTimeout(() => typing.scrollIntoView({ behavior: "smooth", block: "end" }), 50);
