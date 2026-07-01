@@ -160,6 +160,22 @@ header small{
   border-color:transparent;
   box-shadow:0 8px 20px rgba(217,116,63,.38);
 }
+#cat-tabs button.reset-tab{
+  background:transparent;
+  color:var(--terra-deep);
+  border:1.5px dashed var(--terra);
+  font-weight:700;
+  margin-right:8px;
+  box-shadow:none;
+}
+#cat-tabs button.reset-tab:hover{
+  background:var(--terra);
+  color:#fff;
+  border-style:solid;
+  border-color:var(--terra);
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(217,116,63,.30);
+}
 
 /* ===== MAIN ===== */
 .main{
@@ -752,6 +768,7 @@ a:hover{ text-decoration:underline; }
 
 <!-- CATEGORY TABS — persistentni, uvijek vidljivi -->
 <nav id="cat-tabs">
+  <button class="reset-tab" onclick="resetChat()" title="Očisti razgovor i počni ispočetka">↺ Ponovno pokretanje</button>
   <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')" data-cat="znamenitosti">🏰 Znamenitosti</button>
   <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')" data-cat="gastronomija">🍽 Gastronomija</button>
   <button onclick="quickAsk('Koja događanja se održavaju?')" data-cat="dogadanja">🎭 Događanja</button>
@@ -811,6 +828,7 @@ let chatHistory = [];
 let currentCategory = null;
 let firstMessage = true;
 let currentWeather = null; // globalni weather kontekst za AI
+let pendingTab = null;     // tab kliknut ovaj krug — ostaje označen bez obzira na detektiranu kategoriju
 
 // ===== FORMAT REPLY (markdown → HTML, konzistentni font) =====
 function formatReply(text){
@@ -997,9 +1015,15 @@ async function sendMessage(){
 
     const data = await response.json();
 
-    if(data.category){
-      currentCategory = data.category;
-      // Označi aktivan tab
+    if(data.category) currentCategory = data.category;
+    // Ako je korisnik kliknuo tab — taj tab ostaje označen (npr. „Brodsko kolo"
+    // interno mapira na „događanja", ali highlight mora ostati na kliknutom tabu).
+    // Za slobodno upisana pitanja označi tab prema detektiranoj kategoriji.
+    if(pendingTab){
+      document.querySelectorAll('#cat-tabs button').forEach(b => b.classList.remove('active'));
+      pendingTab.classList.add('active');
+      pendingTab = null;
+    } else if(data.category){
       const btn = document.querySelector(`#cat-tabs button[data-cat="${data.category}"]`);
       if(btn){
         document.querySelectorAll('#cat-tabs button').forEach(b => b.classList.remove('active'));
@@ -1017,6 +1041,7 @@ async function sendMessage(){
 
   } catch(e) {
     typing.remove();
+    pendingTab = null;
     if(e.name === "AbortError"){
       addMessage("Odgovor traje dulje nego očekivano. Pokušajte ponovno.", "bot");
     } else {
@@ -1026,9 +1051,43 @@ async function sendMessage(){
 }
 
 function quickAsk(text){
+  pendingTab = null; // slobodno pitanje / prijedlog — highlight ide po detektiranoj kategoriji
   document.getElementById("user-input").value = text;
   sendMessage();
 }
+
+// Ponovno pokretanje razgovora — očisti poruke i vrati pozdrav
+function resetChat(){
+  chatHistory = [];
+  currentCategory = null;
+  firstMessage = true;
+  pendingTab = null;
+  document.querySelectorAll('#cat-tabs button').forEach(b => b.classList.remove('active'));
+  const cm = document.getElementById("chat-messages");
+  if(cm){
+    cm.innerHTML =
+      '<div class="welcome" id="welcome-block">'
+      + '<div class="welcome-text">'
+      + '<p><strong>Dobrodošli u Slavonski Brod!</strong> 🏰</p>'
+      + '<p>Pitajte me o znamenitostima, gastronomiji, smještaju,<br>događanjima i svemu što grad nudi.</p>'
+      + '<div class="welcome-chips">'
+      + '<button onclick="quickAsk(\'Što vidjeti u Slavonskom Brodu?\')">🏰 Što vidjeti?</button>'
+      + '<button onclick="quickAsk(\'Gdje ručati u Slavonskom Brodu?\')">🍽 Gdje jesti?</button>'
+      + '<button onclick="quickAsk(\'Koja događanja se održavaju?\')">🎭 Događanja</button>'
+      + '</div></div></div>';
+  }
+  const inp = document.getElementById("user-input");
+  if(inp){ inp.value = ""; inp.focus(); }
+}
+
+// Klik na kategorijski tab — zapamti ga i odmah označi (optimistički highlight)
+document.getElementById("cat-tabs").addEventListener("click", function(e){
+  const btn = e.target.closest("button[data-cat]");
+  if(!btn) return;
+  pendingTab = btn;
+  document.querySelectorAll('#cat-tabs button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+});
 
 document.getElementById("send-btn").addEventListener("click", sendMessage);
 
