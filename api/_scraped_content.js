@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-06-29 11:02 UTC
+// Zadnje skrapanje: 2026-07-01 09:23 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
-// GitHub Actions job: scrape-brod (tjedno, ponedjeljkom u 06:00 UTC)
+// GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-06-29T11:02:05.447Z",
+    "zadnje_azuriranje": "2026-07-01T09:23:12.560Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Brodska fišijada ove godine okuplja 60 fiš majstora iz cijele Slavonije",
+      "datum": "01. 07. 2026.",
+      "kratki_opis": "Sportsko-rekreacijski centar „Poloj\" 3. srpnja ugostit će Otvoreno prvenstvo grada Slavonskog Broda u kuhanju fiš paprikaša, natjecanje koje svake godine uz Savu okuplja najvještije poznavatelje ovog slavonskog kulinarskog nasljeđa. Na ovogodišnjem izdanju fišijade sudjelovat će čak 60 fiš majstora ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17046-brodska-fisijada-ove-godine-okuplja-60-fis-majstora-iz-cijele-slavonije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00045_resize.jpeg"
+    },
+    {
+      "naslov": "Plesna večer Brodskih leptirića oduševila publiku ispred Kazališno-koncertne dvorane",
+      "datum": "01. 07. 2026.",
+      "kratki_opis": "Na platou ispred Kazališno-koncertne dvorane Ivana Brlić-Mažuranić sinoć je održana plesna večer Plesnog studija Brodski Leptirići, u okviru 37. Brodskog glazbenog ljeta. Pod nazivom „Ritam koraka”, ova završna plesna produkcija okupila je članove studija koji su publici predstavili raznolik i bogat",
+      "link": "https://www.slavonski-brod.hr/vijesti/17045-plesna-vecer-brodskih-leptirica-odusevila-publiku-ispred-kazalisno-koncertne-dvorane",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Leptirici_119_resize.jpg"
+    },
+    {
+      "naslov": "Gradonačelnikova čestitka nagrađenoj Ireni Vukas Çufalar povodom osvajanja nagrade „Siniša Glavašević&quot;",
+      "datum": "30. 06. 2026.",
+      "kratki_opis": "Čestitam novinarki Ireni Vukas Çufalar na nagradi Hrvatskog novinarskog društva „Siniša Glavašević\" koju je zasluženo osvojila na festivalu novinarstva Media in Time u Vinkovcima. Kao gradonačelnik Slavonskog Broda, uvijek me posebno raduje kada naši sugrađani bivaju prepoznati izvan granica našeg g",
+      "link": "https://www.slavonski-brod.hr/vijesti/17043-gradonacelnikova-cestitka-nagradenoj-ireni-vukas-cufalar-povodom-osvajanja-nagrade-sinisa-glavasevic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/4bc1b638-1410-434c-a58d-a3a9ca368151.jpeg"
+    },
+    {
+      "naslov": "Ljeto u Tvrđavi Brod: od sredine kolovoza do početka rujna Tvrđava postaje središte kulturnog i društvenog života grada",
+      "datum": "30. 06. 2026.",
+      "kratki_opis": "Na jučerašnjoj press konferenciji, Turistička zajednica područja „Slavonski Brod-Posavina\" službeno je predstavila program „Ljeto u Tvrđavi Brod\" – ambiciozni projekt koji će u razdoblju od 14. kolovoza do 6. rujna pretvoriti Tvrđavu u pravo ljetno odredište za sve generacije. Press konferenciji pri",
+      "link": "https://www.slavonski-brod.hr/vijesti/17042-ljeto-u-tvrdavi-brod-od-sredine-kolovoza-do-pocetka-rujna-tvrdava-postaje-srediste-kulturnog-i-drustvenog-zivota-grada",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/20260629_1941251_resize.jpg"
+    },
     {
       "naslov": "Uživajte u ljetnim danima uz nekoliko jednostavnih mjera opreza",
       "datum": "29. 06. 2026.",
@@ -58,43 +86,9 @@ export const scrapedContent = {
       "kratki_opis": "Obavještavamo građane kako će zbog održavanja sportske manifestacije „3. Polojski triatlon – 3. kolo Hrvatske triatlon lige“ doći do privremene obustave prometa na dijelu Splavarske ulice te prometnica na istočnoj strani Bazena Slavonski Brod. Privremena regulacija prometa bit će na snazi prema slje",
       "link": "https://www.slavonski-brod.hr/vijesti/17033-privremena-obustava-prometa-zbog-odrzavanja-3-polojskog-triatlona",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_8720_resize.jpeg"
-    },
-    {
-      "naslov": "Obilježavamo Dan neovisnosti Republike Hrvatske",
-      "datum": "25. 06. 2026.",
-      "kratki_opis": "Trideset pet godina dijele nas od trenutka koji je zauvijek promijenio tijek hrvatske povijesti. Na današnji dan, 25. lipnja 1991. godine, Hrvatski sabor izglasao je Odluku o suverenosti i samostalnosti Republike Hrvatske – odluku koja je bila odjek volje milijuna građana izražene na referendumu sve",
-      "link": "https://www.slavonski-brod.hr/vijesti/17031-obiljezavamo-dan-neovisnosti-republike-hrvatske",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/dan_neovisnosti_resize.jpg"
-    },
-    {
-      "naslov": "Dođite na Biciklijadu predškolaca i provedite aktivno poslijepodne",
-      "datum": "24. 06. 2026.",
-      "kratki_opis": "U organizaciji Europskog doma Slavonski Brod , a u suradnji s Dječjim vrtićem Ivana Brlić-Mažuranić , u petak, 26. lipnja 2026. godine, od 17:30 do 20:00 sati na Skate parku u Slavonskom Brodu održat će se događaj „Biciklijada predškolaca“ . Program je namijenjen predškolskoj djeci i njihovim obitel",
-      "link": "https://www.slavonski-brod.hr/vijesti/17030-dodite-na-biciklijadu-predskolaca-i-provedite-aktivno-poslijepodne",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/neelam279-cycling-tour-7434189_1920_resize.jpg"
-    },
-    {
-      "naslov": "Ljeto u Slavonskom Brodu: grad je pobrinuo se da svako dijete pronađe svoje",
-      "datum": "24. 06. 2026.",
-      "kratki_opis": "Ljetni praznici vrijeme su odmora, druženja i stvaranja uspomena koje djeca pamte cijeli život. Upravo zato Grad Slavonski Brod i ove je godine, u suradnji sa svojim ustanovama i partnerima, pripremio raznovrstan program aktivnosti koji najmlađim sugrađanima nudi kvalitetno, aktivno i sadržajno prov",
-      "link": "https://www.slavonski-brod.hr/vijesti/17029-ljeto-u-slavonskom-brodu-grad-je-pobrinuo-se-da-svako-dijete-pronade-svoje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Ljeto_djeca.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 6. (šesti) larvicidni tretman i monitoring komaraca",
-      "datum": "24. 06. 2026.",
-      "kratki_opis": "Dana 29. lipnja 2026. godine (ponedjeljak) , stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba provest će 6. (šesti) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih površina ut",
-      "link": "https://www.slavonski-brod.hr/vijesti/17028-ddd-mjere-2026-godine-6-sesti-larvicidni-tretman-i-monitoring-komaraca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/adinavoicu-mosquito-871913_1920_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "Brodsko kolo Najstarija smotra folklora u Hrvatskoj koja obuhvaća različite programe poput likovnih",
-      "datum": "Lipanj",
-      "opis": "i etnografskih izložbi, promocija knjiga, dječje smotre, smotre svečanih zaprega, smotre izvornog pjevanja, smotre izvornog folklora, revije hrvatskih narodnih nošnji te izbora najljepše Hrvatice u narodnoj nošnji. Brodsko glazbeno ljeto Riječ je o kulturnoj manifestaciji koja, uz programe koji se o",
-      "link": "https://www.tzgsb.hr/index.php?page=lipanj"
-    },
     {
       "naziv": "Brodsko glazbeno ljeto Riječ je o kulturnoj manifestaciji koja, uz programe koji se odvijaju u Kazal",
       "datum": "Srpanj",
@@ -112,6 +106,12 @@ export const scrapedContent = {
       "datum": "Rujan",
       "opis": "tkanja svile u podvinjskoj svilani tijekom 19. stoljeća.",
       "link": "https://www.tzgsb.hr/index.php?page=rujan"
+    },
+    {
+      "naziv": "Pečenkijada Ovo jedinstveno natjecanje u pečenju odojaka održava se u Sportsko-rekreacijskom centru",
+      "datum": "Listopad",
+      "opis": "\"Poloj\" i, uz prigodni zabavni program, okuplja više od stotinu natjecatelja iz Hrvatske i iz inozemstva. Međunarodni Festival harmonike \"Bela pl. Panthy\" Jedini festival harmonike takvog tipa u Republici Hrvatskoj. Prvi je put održan 2010. na inicijativu nekoliko entuzijasta i članova Brodskog harm",
+      "link": "https://www.tzgsb.hr/index.php?page=listopad"
     }
   ],
   "restorani_tz": [
