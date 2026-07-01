@@ -1013,7 +1013,17 @@ async function sendMessage(){
     clearTimeout(timeout);
     typing.remove();
 
-    const data = await response.json();
+    // Robusno parsiranje: ako server ne vrati JSON (timeout/pad funkcije),
+    // pokaži HTTP status i djelić odgovora umjesto generičke poruke.
+    const bodyText = await response.text();
+    let data;
+    try {
+      data = JSON.parse(bodyText);
+    } catch {
+      pendingTab = null;
+      addMessage(`⚠️ Server (HTTP ${response.status}) nije vratio ispravan odgovor. ${(bodyText || '').replace(/<[^>]+>/g,' ').trim().slice(0,160)}`, "bot");
+      return;
+    }
 
     if(data.category) currentCategory = data.category;
     // Ako je korisnik kliknuo tab — taj tab ostaje označen (npr. „Brodsko kolo"
