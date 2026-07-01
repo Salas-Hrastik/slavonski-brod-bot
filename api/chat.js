@@ -484,7 +484,7 @@ function getRelevantContext(message, db, lastCategory) {
     || msg.includes('fußball') || msg.includes('fitnessstudio') || msg.includes('angeln'))
     return { context: CATEGORY_CONTEXTS.sport(db), category: 'sport' };
 
-  if (msg.includes('kupin') || msg.includes('kupovat') || msg.includes('shopping') || msg.includes('trgovin') || msg.includes('supermarket') || msg.includes('dućan') || msg.includes('suveniri') || msg.includes('tržnic') || msg.includes('city colos') || msg.includes('supernov') || msg.includes('kaufland')
+  if (msg.includes('kupov') || msg.includes('kupnja') || msg.includes('kupnj') || msg.includes('kupin') || msg.includes('kupovat') || msg.includes('shopping') || msg.includes('trgovin') || msg.includes('supermarket') || msg.includes('dućan') || msg.includes('suveniri') || msg.includes('tržnic') || msg.includes('city colos') || msg.includes('supernov') || msg.includes('kaufland')
     || msg.includes('shop') || msg.includes('store') || msg.includes('buy') || msg.includes('souvenir') || msg.includes('market') || msg.includes('mall') || msg.includes('grocery')
     || msg.includes('einkaufen') || msg.includes('laden') || msg.includes('markt'))
     return { context: CATEGORY_CONTEXTS.kupovina(db), category: 'kupovina' };
