@@ -873,8 +873,20 @@ export default async function handler(req, res) {
     }
 
     // === AI odgovor (za konverzacijska i složena pitanja) ===
-    const contextData = isConversationalMode || isGeneralKnowledgeQuery ? db : context;
-    const contextStr = JSON.stringify(stripImages(contextData), null, 1);
+    // OPTIMIZACIJA konteksta: prije se u razgovornom/općem modu slala CIJELA baza
+    // (velik, spor i skup zahtjev → rizik od timeouta/504). Sada šaljemo samo
+    // ciljani kontekst kategorije + bazne gradske podatke, uz gornju granicu.
+    let contextData = (resolvedCat && CATEGORY_CONTEXTS[resolvedCat])
+      ? CATEGORY_CONTEXTS[resolvedCat](db)
+      : { grad: db.grad, opcenito: db.opcenito };
+    if (isGeneralKnowledgeQuery) {
+      contextData = { ...contextData, opcenito: db.opcenito, lokalna_kuhinja: db.lokalna_kuhinja };
+    }
+    let contextStr = JSON.stringify(stripImages(contextData), null, 1);
+    const MAX_CTX_CHARS = 9000;
+    if (contextStr.length > MAX_CTX_CHARS) {
+      contextStr = contextStr.slice(0, MAX_CTX_CHARS) + '\n… (skraćeno radi brzine)';
+    }
     const scrapedSection = buildScrapedSection(resolvedCat);
 
     const langInstruction = lang === 'en'
