@@ -1022,7 +1022,8 @@ SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na h
     // Detaljan log za Vercel Functions (status + tip + poruka Anthropic SDK-a)
     console.error("Chat error:", err?.status, err?.name, err?.message);
     const status = err?.status;
-    let reply = "Greška u komunikaciji sa serverom. Pokušajte ponovno.";
+    // Privremena dijagnostika: uvijek pokaži tip+poruku (i za greške bez statusa)
+    let reply = `⚠️ Greška: ${err?.name || 'Error'}${status ? ' ('+status+')' : ''} — ${(err?.message || '').toString().slice(0, 160)}`;
     if (status === 401) {
       reply = "⚠️ Konfiguracija: ANTHROPIC_API_KEY nedostaje ili je neispravan na serveru (401).";
     } else if (status === 403) {
