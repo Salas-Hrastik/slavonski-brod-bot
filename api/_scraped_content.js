@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-01 09:23 UTC
+// Zadnje skrapanje: 2026-07-02 08:36 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-01T09:23:12.560Z",
+    "zadnje_azuriranje": "2026-07-02T08:36:40.345Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,41 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Grad Slavonski Brod osigurao besplatan prijevoz učenicima pripadnicima romske nacionalne manjine",
+      "datum": "02. 07. 2026.",
+      "kratki_opis": "Nastavljamo provoditi aktivnosti usmjerene na stvaranje jednakih mogućnosti za sve učenike te unapređenje uvjeta njihova obrazovanja. S tim ciljem, Grad Slavonski Brod je 2. prosinca 2025. godine s Uredom za ljudska prava i prava nacionalnih manjina Vlade Republike Hrvatske sklopio Ugovor o jednokra",
+      "link": "https://www.slavonski-brod.hr/vijesti/17053-grad-slavonski-brod-osigurao-besplatan-prijevoz-ucenicima-pripadnicima-romske-nacionalne-manjine",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/HB.jpg"
+    },
+    {
+      "naslov": "Raspored mobilnih blagajni za srpanj",
+      "datum": "02. 07. 2026.",
+      "kratki_opis": "Obavještavamo građane i građanke kako će mobilne gradske blagajne u srpnju raditi prema sljedećem rasporedu: 13. srpanj 2026. (ponedjeljak) Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30&nbsp; Mjesni dom Podvinje – od 12,30 do 15,00 sati &nbsp; 14. srpanj 2026. (utorak) Mjesni dom Kolonija – od 09",
+      "link": "https://www.slavonski-brod.hr/vijesti/17052-raspored-mobilnih-blagajni-za-srpanj",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Sijecanj/blagajna_resize-1.jpg"
+    },
+    {
+      "naslov": "Mladi gosti iz Celja stigli na obale Jadrana",
+      "datum": "01. 07. 2026.",
+      "kratki_opis": "Dječje odmaralište u Starom Gradu na otoku Hvaru jučer je otvorilo vrata za dvadeset učenika iz slovenskog Celja, koji su krenuli na tjedan dana ljetovanja u sklopu dugogodišnjeg prijateljstva dvaju gradova. Do 7. srpnja mladi će gosti uz smještaj i tri obroka dnevno imati na raspolaganju i marendu,",
+      "link": "https://www.slavonski-brod.hr/vijesti/17051-mladi-gosti-iz-celja-stigli-na-obale-jadrana-3",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/d25542ec-a230-4590-b431-2333c3899597.jpeg"
+    },
+    {
+      "naslov": "Ovogodišnji izvještaj potvrdio izvrsnu kvalitetu vode za kupanje na Poloju",
+      "datum": "01. 07. 2026.",
+      "kratki_opis": "Grad Slavonski Brod nastavlja s redovitim praćenjem kvalitete vode na gradskom kupalištu Poloj tijekom kupališne sezone, s ciljem osiguravanja sigurnih uvjeta za sve građane i posjetitelje. Prema najnovijem izvještaju o ispitivanju kakvoće vode, koji je izradio Nastavni zavod za javno zdravstvo Brod",
+      "link": "https://www.slavonski-brod.hr/vijesti/17050-ovogodisnji-izvjestaj-potvrdio-izvrsnu-kvalitetu-vode-za-kupanje-na-poloju",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/poloj21_resize.jpg"
+    },
+    {
+      "naslov": "Produljeno radno vrijeme ugostiteljskih objekata povodom utakmice hrvatske reprezentacije",
+      "datum": "01. 07. 2026.",
+      "kratki_opis": "Donesen je Zaključak o davanju suglasnosti na produljeno radno vrijeme ugostiteljskih objekata povodom nogometne utakmice hrvatske reprezentacije u noći s 2. na 3. srpnja 2026. godine. Sukladno članku 8. Odluke o ugostiteljskoj djelatnosti na području grada Slavonskog Broda, dana je suglasnost na pr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17049-produljeno-radno-vrijeme-ugostiteljskih-objekata-povodom-utakmice-hrvatske-reprezentacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/korzo_i_park_resize.jpg"
+    },
     {
       "naslov": "Brodska fišijada ove godine okuplja 60 fiš majstora iz cijele Slavonije",
       "datum": "01. 07. 2026.",
@@ -51,41 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Visoke temperature, boravak na otvorenom i povećan broj posjetitelja obilježavaju ljetne mjesece. Dok većina građana i posjetitelja uživa u odmoru, ljeto je ujedno razdoblje kada raste rizik od toplinskih valova, požara i drugih izvanrednih događaja. Jedan neugašeni opušak, nedovoljno vode tijekom i",
       "link": "https://www.slavonski-brod.hr/vijesti/17041-uzivajte-u-ljetnim-danima-uz-nekoliko-jednostavnih-mjera-opreza",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/1_resize.jpg"
-    },
-    {
-      "naslov": "Tri i pol desetljeća vjerne uspomene na heroje 108. brigade",
-      "datum": "28. 06. 2026.",
-      "kratki_opis": "Na Spomen obilježju poginulim braniteljima u Slavonskom Brodu ove nedjelje je obilježena 35. obljetnica osnutka 108. brigade Zbora narodne garde Republike Hrvatske. Polaganjem vijenca i paljenjem svijeće Grad je iskazao zahvalnost svim pripadnicima ove legendarne postrojbe koji su živote ugradili u ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17039-tri-i-pol-desetljeca-vjerne-uspomene-na-heroje-108-brigade",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0619_resize.jpeg"
-    },
-    {
-      "naslov": "ŠRC „Klasije“ dobiva svoje konačne obrise – radovi ulaze u završnu fazu",
-      "datum": "26. 06. 2026.",
-      "kratki_opis": "Radovi na drugoj fazi uređenja Športsko-rekreacijskog centra „Klasije“ napreduju prema planu te kompleks svakim danom sve više poprima svoj konačni izgled. Većina građevinskih i obrtničkih radova je završena, a na objektima se izvode završni zahvati i fina montaža instalacija prije početka postupka ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17038-klasije-3",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_0556_resize.jpeg"
-    },
-    {
-      "naslov": "Grad Slavonski Brod u prvih šest mjeseci podijelio više od sto paketa opreme za novorođenčad",
-      "datum": "26. 06. 2026.",
-      "kratki_opis": "Ponekad brojke govore više od riječi – a broj 107 jedna je od takvih. Toliko smo paketa opreme za novorođenčad podijelili u prvih šest mjeseci 2026. godine, i to zahvaljujući mjeri koja u gradu živi već osmu godinu zaredom. Današnju podjelu, kojom je deset brodskih obitelji primilo pakete dobrodošli",
-      "link": "https://www.slavonski-brod.hr/vijesti/17037-grad-slavonski-brod-u-prvih-sest-mjeseci-podijelio-vise-od-sto-paketa-opreme-za-novorodencad-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Bebe26626.jpg"
-    },
-    {
-      "naslov": "Brodske glazbene udruge oduševile publiku na ljetnoj pozornici",
-      "datum": "26. 06. 2026.",
-      "kratki_opis": "Brodsko glazbeno ljeto nastavilo se sinoć spektakularnim koncertom domaćih glazbenih snaga na platou ispred Kazališno-koncertne dvorane Ivana Brlić Mažuranić. Na popularnoj ljetnoj pozornici publici su se predstavili Hrvatsko pjevačko društvo „Davor\", Brodski tamburaški orkestar, Brodski harmonikašk",
-      "link": "https://www.slavonski-brod.hr/vijesti/17036-koncert-brodskih-glazbenih-udruga",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/1_60_resize.jpg"
-    },
-    {
-      "naslov": "Privremena obustava prometa zbog održavanja „3. Polojskog triatlona“",
-      "datum": "25. 06. 2026.",
-      "kratki_opis": "Obavještavamo građane kako će zbog održavanja sportske manifestacije „3. Polojski triatlon – 3. kolo Hrvatske triatlon lige“ doći do privremene obustave prometa na dijelu Splavarske ulice te prometnica na istočnoj strani Bazena Slavonski Brod. Privremena regulacija prometa bit će na snazi prema slje",
-      "link": "https://www.slavonski-brod.hr/vijesti/17033-privremena-obustava-prometa-zbog-odrzavanja-3-polojskog-triatlona",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/IMG_8720_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
