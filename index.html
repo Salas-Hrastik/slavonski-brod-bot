@@ -89,14 +89,14 @@ header h1{
   margin:0;
   font-family:'Fraunces',Georgia,serif;
   font-weight:600;
-  font-size:23px;
+  font-size:27px;
   line-height:1.1;
   letter-spacing:.2px;
 }
 
 header small{
   opacity:.85;
-  font-size:13px;
+  font-size:14.5px;
   font-weight:500;
   letter-spacing:.2px;
 }
@@ -126,13 +126,19 @@ header small{
   background:rgba(255,255,255,.30);
   border-color:rgba(255,255,255,.6);
 }
+.lang-flags .flag.active{
+  background:rgba(255,255,255,.92);
+  border-color:#fff;
+  box-shadow:0 3px 10px rgba(0,0,0,.25);
+  transform:translateY(-1px);
+}
 
 /* ===== WEATHER BAR ===== */
 #weather-bar{
   background:linear-gradient(90deg,#fff8ec,#fdf3e2);
   border-bottom:1px solid var(--line);
-  padding:8px 26px;
-  font-size:13.5px;
+  padding:9px 26px;
+  font-size:15.5px;
   color:var(--ink-soft);
   flex-shrink:0;
   display:flex;
@@ -168,7 +174,7 @@ header small{
   border-radius:999px;
   cursor:pointer;
   font-family:inherit;
-  font-size:13px;
+  font-size:15px;
   font-weight:600;
   white-space:nowrap;
   transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
@@ -187,21 +193,26 @@ header small{
   border-color:transparent;
   box-shadow:0 8px 20px rgba(217,116,63,.38);
 }
+/* Reset — diskretan, manji od kategorijskih tabova */
 #cat-tabs button.reset-tab{
   background:transparent;
-  color:var(--terra-deep);
-  border:1.5px dashed var(--terra);
-  font-weight:700;
-  margin-right:8px;
+  color:var(--ink-soft);
+  border:1px solid var(--line);
+  font-weight:600;
+  font-size:12px;
+  padding:6px 11px;
+  margin-right:6px;
   box-shadow:none;
+  opacity:.8;
 }
+#cat-tabs button.reset-tab .reset-ico{ font-size:13px; }
 #cat-tabs button.reset-tab:hover{
-  background:var(--terra);
-  color:#fff;
-  border-style:solid;
+  opacity:1;
+  color:var(--terra-deep);
   border-color:var(--terra);
-  transform:translateY(-2px);
-  box-shadow:0 8px 18px rgba(217,116,63,.30);
+  background:rgba(217,116,63,.06);
+  transform:none;
+  box-shadow:none;
 }
 
 /* ===== MAIN ===== */
@@ -234,7 +245,7 @@ header small{
 
 .chat-label{
   padding:13px 20px 0;
-  font-size:11px;
+  font-size:12px;
   font-weight:800;
   letter-spacing:2px;
   color:#b7ab98;
@@ -260,7 +271,7 @@ header small{
   text-align:left;
   align-self:flex-end;
   max-width:80%;
-  font-size:16.5px;
+  font-size:18px;
   line-height:1.55;
   box-shadow:0 6px 16px rgba(217,116,63,.28);
   animation:msgIn .34s cubic-bezier(.2,.7,.3,1) both;
@@ -272,7 +283,7 @@ header small{
   border-radius:16px 16px 16px 4px;
   margin:2px 0;
   line-height:1.66;
-  font-size:16.5px;
+  font-size:18px;
   align-self:flex-start;
   max-width:92%;
   border:1px solid var(--line);
@@ -378,7 +389,7 @@ input{
   border:1.5px solid var(--line);
   background:#fff;
   font-family:inherit;
-  font-size:16px;
+  font-size:17.5px;
   color:var(--ink);
   outline:none;
   transition:border-color .18s ease, box-shadow .18s ease;
@@ -399,7 +410,7 @@ button.send-btn{
   font-weight:700;
   cursor:pointer;
   color:#fff;
-  font-size:15.5px;
+  font-size:17px;
   transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
   white-space:nowrap;
   box-shadow:0 8px 20px rgba(217,116,63,.34);
@@ -436,8 +447,8 @@ button.send-btn:active{ transform:translateY(0); }
   animation:msgIn .5s ease both;
 }
 .welcome p{
-  margin:4px 0;
-  font-size:16.5px;
+  margin:5px 0;
+  font-size:19px;
   color:rgba(255,255,255,.97);
   text-shadow:0 1px 6px rgba(0,0,0,.45);
 }
@@ -447,7 +458,7 @@ button.send-btn:active{ transform:translateY(0); }
   font-family:'Fraunces',Georgia,serif;
   font-weight:600;
   color:#fff;
-  font-size:23px;
+  font-size:29px;
   letter-spacing:.3px;
   text-shadow:0 2px 10px rgba(0,0,0,.5);
 }
@@ -463,11 +474,11 @@ button.send-btn:active{ transform:translateY(0); }
   background:#fff;
   color:var(--teal);
   border:1.5px solid var(--teal-soft);
-  padding:9px 15px;
+  padding:9px 16px;
   border-radius:999px;
   cursor:pointer;
   font-family:inherit;
-  font-size:13.5px;
+  font-size:15px;
   font-weight:600;
   transition:transform .16s ease, background .16s ease, color .16s ease, box-shadow .16s ease, border-color .16s ease;
   box-shadow:var(--shadow-sm);
@@ -523,14 +534,14 @@ button.send-btn:active{ transform:translateY(0); }
   flex:1;
 }
 .item-card-info strong{
-  font-size:15px;
+  font-size:16.5px;
   color:var(--teal-deep);
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
 }
 .item-card-meta{
-  font-size:12.5px;
+  font-size:13.5px;
   color:var(--ink-soft);
   white-space:nowrap;
   overflow:hidden;
@@ -544,7 +555,7 @@ button.send-btn:active{ transform:translateY(0); }
   align-items:center;
 }
 .item-card-links a{
-  font-size:12.5px;
+  font-size:13.5px;
   color:var(--terra-deep);
   text-decoration:none;
   font-weight:700;
@@ -660,17 +671,17 @@ a:hover{ text-decoration:underline; }
 @media (max-width:640px){
   header{ padding:12px 16px; gap:11px; }
   header .logo-img{ width:44px; height:44px; }
-  header h1{ font-size:19px; }
-  header small{ font-size:12px; }
+  header h1{ font-size:22px; }
+  header small{ font-size:13px; }
   .lang-flags{ gap:5px; }
-  .lang-flags .flag{ font-size:17px; padding:4px 6px; }
+  .lang-flags .flag{ font-size:18px; padding:4px 6px; }
   #weather-bar{ padding:7px 16px; font-size:13px; }
   #cat-tabs{ padding:9px 12px; gap:7px; flex-wrap:nowrap; }
   #cat-tabs button{ padding:8px 13px; font-size:12.5px; }
   .main{ padding:12px 12px 12px; }
   .chat-box{ border-radius:16px; }
-  .user-message, .bot-message{ max-width:90%; font-size:15px; }
-  .welcome strong{ font-size:20px; }
+  .user-message, .bot-message{ max-width:90%; font-size:16.5px; }
+  .welcome strong{ font-size:24px; }
   .welcome-text{ padding:18px 20px; }
   .welcome-chips button{ padding:9px 13px; font-size:12.5px; }
   .item-card-thumb{ width:88px; }
@@ -692,10 +703,10 @@ a:hover{ text-decoration:underline; }
   background:rgba(255,255,255,.16);
   color:#fff;
   border:1px solid rgba(255,255,255,.38);
-  padding:10px 16px;
+  padding:10px 17px;
   border-radius:999px;
   font-family:inherit;
-  font-size:13px;
+  font-size:14.5px;
   font-weight:600;
   cursor:pointer;
   backdrop-filter:blur(4px);
@@ -786,49 +797,49 @@ a:hover{ text-decoration:underline; }
     onerror="this.style.display='none';document.getElementById('fallback-icon').style.display='flex'">
   <span id="fallback-icon" style="display:none;width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,#d9743f,#e8a82c);align-items:center;justify-content:center;font-size:26px;flex-shrink:0">🏰</span>
   <div class="header-title">
-    <h1>AI turistički informator</h1>
-    <small>Turistička zajednica Slavonskog Broda</small>
+    <h1 data-i18n="title">AI turistički informator</h1>
+    <small data-i18n="subtitle">Turistička zajednica Slavonskog Broda</small>
   </div>
-  <div class="lang-flags" title="Pišite na svom jeziku — odgovaram na hrvatskom, engleskom ili njemačkom">
-    <button class="flag" onclick="quickAsk('Što mogu posjetiti u Slavonskom Brodu?')" title="Hrvatski — pišite na hrvatskom" aria-label="Hrvatski">🇭🇷</button>
-    <button class="flag" onclick="quickAsk('What can I see in Slavonski Brod?')" title="English — ask in English" aria-label="English">🇬🇧</button>
-    <button class="flag" onclick="quickAsk('Was kann ich in Slavonski Brod sehen?')" title="Deutsch — fragen Sie auf Deutsch" aria-label="Deutsch">🇩🇪</button>
+  <div class="lang-flags">
+    <button class="flag" data-lang="hr" onclick="setLang('hr')" title="Hrvatski" aria-label="Hrvatski">🇭🇷</button>
+    <button class="flag" data-lang="en" onclick="setLang('en')" title="English" aria-label="English">🇬🇧</button>
+    <button class="flag" data-lang="de" onclick="setLang('de')" title="Deutsch" aria-label="Deutsch">🇩🇪</button>
   </div>
 </header>
 
 <!-- WEATHER BAR -->
 <div id="weather-bar">
-  <span>Sada je u Slavonskom Brodu:</span>
-  <span id="weather-info">⏳ učitavam...</span>
+  <span data-i18n="weatherPrefix">Sada je u Slavonskom Brodu:</span>
+  <span id="weather-info">⏳ …</span>
 </div>
 
 <!-- CATEGORY TABS — persistentni, uvijek vidljivi -->
 <nav id="cat-tabs">
-  <button class="reset-tab" onclick="resetChat()" title="Očisti razgovor i počni ispočetka">↺ Ponovno pokretanje</button>
-  <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')" data-cat="znamenitosti">🏰 Znamenitosti</button>
-  <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')" data-cat="gastronomija">🍽 Gastronomija</button>
-  <button onclick="quickAsk('Koja događanja se održavaju?')" data-cat="dogadanja">🎭 Događanja</button>
-  <button onclick="quickAsk('Smještaj u Slavonskom Brodu')" data-cat="smjestaj">🏨 Smještaj</button>
-  <button onclick="quickAsk('Izleti iz Slavonskog Broda')" data-cat="okolica">🗺 Okolica</button>
-  <button onclick="quickAsk('Sport i rekreacija u Slavonskom Brodu')" data-cat="sport">🚴 Sport</button>
-  <button onclick="quickAsk('Kupovina u Slavonskom Brodu')" data-cat="kupovina">🛍 Kupovina</button>
-  <button onclick="quickAsk('Korisne informacije o Slavonskom Brodu')" data-cat="opcenito">ℹ️ O gradu</button>
+  <button class="reset-tab" onclick="resetChat()" title="Očisti razgovor"><span class="reset-ico">↺</span> <span data-i18n="reset">Ponovno pokretanje</span></button>
+  <button data-cat="znamenitosti">🏰 <span data-i18n="tab_znamenitosti">Znamenitosti</span></button>
+  <button data-cat="gastronomija">🍽 <span data-i18n="tab_gastronomija">Gastronomija</span></button>
+  <button data-cat="dogadanja">🎭 <span data-i18n="tab_dogadanja">Događanja</span></button>
+  <button data-cat="smjestaj">🏨 <span data-i18n="tab_smjestaj">Smještaj</span></button>
+  <button data-cat="okolica">🗺 <span data-i18n="tab_okolica">Okolica</span></button>
+  <button data-cat="sport">🚴 <span data-i18n="tab_sport">Sport</span></button>
+  <button data-cat="kupovina">🛍 <span data-i18n="tab_kupovina">Kupovina</span></button>
+  <button data-cat="opcenito">ℹ️ <span data-i18n="tab_opcenito">O gradu</span></button>
 </nav>
 
 <!-- MAIN -->
 <div class="main">
 
   <div id="chat-box" class="chat-box">
-    <div class="chat-label">Turistički informator</div>
+    <div class="chat-label" data-i18n="chatLabel">Turistički informator</div>
     <div class="chat-messages" id="chat-messages">
       <div class="welcome" id="welcome-block">
         <div class="welcome-text">
-          <p><strong>Dobrodošli u Slavonski Brod!</strong> 🏰</p>
-          <p>Pitajte me o znamenitostima, gastronomiji, smještaju,<br>događanjima i svemu što grad nudi.</p>
+          <p><strong data-i18n="welcomeTitle">Dobrodošli u Slavonski Brod!</strong> 🏰</p>
+          <p data-i18n="welcomeText">Pitajte me o znamenitostima, gastronomiji, smještaju, događanjima i svemu što grad nudi.</p>
           <div class="welcome-chips">
-            <button onclick="quickAsk('Što vidjeti u Slavonskom Brodu?')">🏰 Što vidjeti?</button>
-            <button onclick="quickAsk('Gdje ručati u Slavonskom Brodu?')">🍽 Gdje jesti?</button>
-            <button onclick="quickAsk('Koja događanja se održavaju?')">🎭 Događanja</button>
+            <button onclick="chipAsk('vidjeti')">🏰 <span data-i18n="chip_vidjeti">Što vidjeti?</span></button>
+            <button onclick="chipAsk('jesti')">🍽 <span data-i18n="chip_jesti">Gdje jesti?</span></button>
+            <button onclick="chipAsk('dogadanja')">🎭 <span data-i18n="chip_dogadanja">Događanja</span></button>
           </div>
         </div>
       </div>
@@ -836,10 +847,10 @@ a:hover{ text-decoration:underline; }
   </div>
 
   <div class="input-row">
-    <input id="user-input" placeholder="Postavite pitanje o Slavonskom Brodu...">
+    <input id="user-input" data-i18n-ph="placeholder" placeholder="Postavite pitanje o Slavonskom Brodu...">
     <button class="mic-btn" id="mic-btn" title="Govori (glasovni unos)">🎤</button>
-    <span id="mic-unsupported">glasovni unos nije podržan</span>
-    <button class="send-btn" id="send-btn">Pošalji</button>
+    <span id="mic-unsupported" data-i18n="micUnsupported">glasovni unos nije podržan</span>
+    <button class="send-btn" id="send-btn" data-i18n="send">Pošalji</button>
   </div>
 
 </div>
@@ -849,7 +860,7 @@ a:hover{ text-decoration:underline; }
   <div class="modal-box">
     <div class="modal-bar">
       <span id="modal-url"></span>
-      <a id="modal-ext" class="modal-ext" href="#" target="_blank" rel="noopener">Otvori u novoj kartici ↗</a>
+      <a id="modal-ext" class="modal-ext" href="#" target="_blank" rel="noopener" data-i18n="modalExt">Otvori u novoj kartici ↗</a>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <iframe id="modal-iframe" class="modal-iframe" src=""
@@ -864,6 +875,102 @@ let currentCategory = null;
 let firstMessage = true;
 let currentWeather = null; // globalni weather kontekst za AI
 let pendingTab = null;     // tab kliknut ovaj krug — ostaje označen bez obzira na detektiranu kategoriju
+let currentLang = 'hr';    // jezik sučelja (HR/EN/DE)
+
+// ===== VIŠEJEZIČNOST (i18n) =====
+const I18N = {
+  hr: {
+    title:"AI turistički informator", subtitle:"Turistička zajednica Slavonskog Broda",
+    weatherPrefix:"Sada je u Slavonskom Brodu:", chatLabel:"Turistički informator",
+    reset:"Ponovno pokretanje", send:"Pošalji", placeholder:"Postavite pitanje o Slavonskom Brodu...",
+    tab_znamenitosti:"Znamenitosti", tab_gastronomija:"Gastronomija", tab_dogadanja:"Događanja",
+    tab_smjestaj:"Smještaj", tab_okolica:"Okolica", tab_sport:"Sport", tab_kupovina:"Kupovina", tab_opcenito:"O gradu",
+    welcomeTitle:"Dobrodošli u Slavonski Brod!",
+    welcomeText:"Pitajte me o znamenitostima, gastronomiji, smještaju, događanjima i svemu što grad nudi.",
+    chip_vidjeti:"Što vidjeti?", chip_jesti:"Gdje jesti?", chip_dogadanja:"Događanja",
+    typing:"Tražim najbolji odgovor…", err_server:"Greška u komunikaciji sa serverom.",
+    err_timeout:"Odgovor traje dulje nego očekivano. Pokušajte ponovno.", err_noreply:"Asistent nije dao odgovor.",
+    err_http:"Server nije vratio ispravan odgovor",
+    micListen:"🎤 Slušam...", micDenied:"⚠️ Dopustite pristup mikrofonu u pregledniku",
+    micNospeech:"Ništa nisam čuo — pokušajte ponovno", micUnsupported:"glasovni unos nije podržan",
+    modalExt:"Otvori u novoj kartici ↗"
+  },
+  en: {
+    title:"AI Tourist Guide", subtitle:"Tourist Board of Slavonski Brod",
+    weatherPrefix:"Now in Slavonski Brod:", chatLabel:"Tourist guide",
+    reset:"Restart", send:"Send", placeholder:"Ask a question about Slavonski Brod...",
+    tab_znamenitosti:"Attractions", tab_gastronomija:"Dining", tab_dogadanja:"Events",
+    tab_smjestaj:"Accommodation", tab_okolica:"Surroundings", tab_sport:"Sports", tab_kupovina:"Shopping", tab_opcenito:"About the city",
+    welcomeTitle:"Welcome to Slavonski Brod!",
+    welcomeText:"Ask me about attractions, dining, accommodation, events and everything the city has to offer.",
+    chip_vidjeti:"What to see?", chip_jesti:"Where to eat?", chip_dogadanja:"Events",
+    typing:"Finding the best answer…", err_server:"Server communication error.",
+    err_timeout:"The response is taking longer than expected. Please try again.", err_noreply:"The assistant gave no answer.",
+    err_http:"The server did not return a valid response",
+    micListen:"🎤 Listening...", micDenied:"⚠️ Please allow microphone access in your browser",
+    micNospeech:"I didn't catch that — please try again", micUnsupported:"voice input not supported",
+    modalExt:"Open in new tab ↗"
+  },
+  de: {
+    title:"KI-Reiseführer", subtitle:"Tourismusverband Slavonski Brod",
+    weatherPrefix:"Jetzt in Slavonski Brod:", chatLabel:"Reiseführer",
+    reset:"Neu starten", send:"Senden", placeholder:"Stellen Sie eine Frage zu Slavonski Brod...",
+    tab_znamenitosti:"Sehenswürdigkeiten", tab_gastronomija:"Gastronomie", tab_dogadanja:"Veranstaltungen",
+    tab_smjestaj:"Unterkunft", tab_okolica:"Umgebung", tab_sport:"Sport", tab_kupovina:"Einkaufen", tab_opcenito:"Über die Stadt",
+    welcomeTitle:"Willkommen in Slavonski Brod!",
+    welcomeText:"Fragen Sie mich nach Sehenswürdigkeiten, Gastronomie, Unterkunft, Veranstaltungen und allem, was die Stadt bietet.",
+    chip_vidjeti:"Was sehen?", chip_jesti:"Wo essen?", chip_dogadanja:"Veranstaltungen",
+    typing:"Beste Antwort wird gesucht…", err_server:"Kommunikationsfehler mit dem Server.",
+    err_timeout:"Die Antwort dauert länger als erwartet. Bitte erneut versuchen.", err_noreply:"Der Assistent hat keine Antwort gegeben.",
+    err_http:"Der Server hat keine gültige Antwort zurückgegeben",
+    micListen:"🎤 Ich höre zu...", micDenied:"⚠️ Bitte erlauben Sie den Mikrofonzugriff im Browser",
+    micNospeech:"Nichts gehört — bitte erneut versuchen", micUnsupported:"Spracheingabe nicht unterstützt",
+    modalExt:"In neuem Tab öffnen ↗"
+  }
+};
+
+// Pitanja koja tabovi/pilule šalju botu (na jeziku sučelja) — da bot odgovori na tom jeziku
+const TAB_Q = {
+  znamenitosti:{hr:"Što vidjeti u Slavonskom Brodu?",en:"What to see in Slavonski Brod?",de:"Was kann man in Slavonski Brod sehen?"},
+  gastronomija:{hr:"Gdje ručati u Slavonskom Brodu?",en:"Where to eat in Slavonski Brod?",de:"Wo kann man in Slavonski Brod essen?"},
+  dogadanja:{hr:"Koja događanja se održavaju?",en:"What events are happening in Slavonski Brod?",de:"Welche Veranstaltungen finden in Slavonski Brod statt?"},
+  smjestaj:{hr:"Smještaj u Slavonskom Brodu",en:"Accommodation in Slavonski Brod",de:"Unterkunft in Slavonski Brod"},
+  okolica:{hr:"Izleti iz Slavonskog Broda",en:"Day trips from Slavonski Brod",de:"Ausflüge von Slavonski Brod"},
+  sport:{hr:"Sport i rekreacija u Slavonskom Brodu",en:"Sports and recreation in Slavonski Brod",de:"Sport und Freizeit in Slavonski Brod"},
+  kupovina:{hr:"Kupovina u Slavonskom Brodu",en:"Shopping in Slavonski Brod",de:"Einkaufen in Slavonski Brod"},
+  opcenito:{hr:"Korisne informacije o Slavonskom Brodu",en:"Useful information about Slavonski Brod",de:"Nützliche Informationen über Slavonski Brod"}
+};
+const CHIP_Q = { vidjeti:TAB_Q.znamenitosti, jesti:TAB_Q.gastronomija, dogadanja:TAB_Q.dogadanja };
+
+function t(key){ return (I18N[currentLang] && I18N[currentLang][key]) || I18N.hr[key] || ''; }
+
+// Primijeni jezik na cijelo sučelje
+function applyLang(lang){
+  currentLang = (['hr','en','de'].includes(lang)) ? lang : 'hr';
+  try { localStorage.setItem('sbLang', currentLang); } catch(e){}
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+  document.querySelectorAll('.lang-flags .flag').forEach(f => f.classList.toggle('active', f.dataset.lang === currentLang));
+  if (window._recognition) { try { window._recognition.lang = {hr:'hr-HR',en:'en-US',de:'de-DE'}[currentLang]; } catch(e){} }
+}
+function setLang(lang){ applyLang(lang); }
+
+// Lagana detekcija jezika iz upisane poruke (zrcali serversku logiku)
+function clientDetectLang(msg){
+  const w = (msg||'').toLowerCase().split(/[\s,?.!;:()\-]+/);
+  const has = (list) => list.some(x => w.includes(x));
+  if (has(['what','where','how','which','when','is','are','can','do','have','show','find','tell','give','the','and','best','visit','see','eat','stay','sleep','open','near','price','time','hours','hotel','restaurant']))
+    return 'en';
+  if (has(['was','wo','wie','welche','wann','ist','sind','kann','haben','zeig','gibt','bitte','ich','ein','eine','der','die','das','und','oder','nicht','mit','für','von','nach','zum','zur']))
+    return 'de';
+  return 'hr';
+}
+
+function chipAsk(name){
+  const q = CHIP_Q[name] ? (CHIP_Q[name][currentLang] || CHIP_Q[name].hr) : name;
+  quickAsk(q);
+}
 
 // ===== FORMAT REPLY (markdown → HTML, konzistentni font) =====
 function formatReply(text){
@@ -1007,6 +1114,10 @@ async function sendMessage(){
   const message = input.value.trim();
   if(!message) return;
 
+  // Ako je poruka jasno na stranom jeziku (EN/DE) — prebaci cijelo sučelje odmah
+  const detected = clientDetectLang(message);
+  if(detected !== 'hr' && detected !== currentLang) applyLang(detected);
+
   // Ukloni welcome blok pri prvom upitu
   if(firstMessage){
     firstMessage = false;
@@ -1024,7 +1135,7 @@ async function sendMessage(){
   const chatMessages = document.getElementById("chat-messages");
   const typing = document.createElement("div");
   typing.className = "typing";
-  typing.innerHTML = `<div class="typing-head"><span class="typing-label">Tražim najbolji odgovor…</span><div class="typing-dots"><span></span><span></span><span></span></div></div><div class="skeleton-lines"><span class="skeleton-line"></span><span class="skeleton-line"></span><span class="skeleton-line short"></span></div>`;
+  typing.innerHTML = `<div class="typing-head"><span class="typing-label">${t('typing')}</span><div class="typing-dots"><span></span><span></span><span></span></div></div><div class="skeleton-lines"><span class="skeleton-line"></span><span class="skeleton-line"></span><span class="skeleton-line short"></span></div>`;
   chatMessages.appendChild(typing);
   // Kratki delay da DOM renderira, pa smoothly skrola na "Razmišljam..."
   setTimeout(() => typing.scrollIntoView({ behavior: "smooth", block: "end" }), 50);
@@ -1041,7 +1152,8 @@ async function sendMessage(){
         message,
         history: chatHistory.slice(-10),
         category: currentCategory,
-        weather: currentWeather
+        weather: currentWeather,
+        lang: currentLang
       })
     });
 
@@ -1056,9 +1168,12 @@ async function sendMessage(){
       data = JSON.parse(bodyText);
     } catch {
       pendingTab = null;
-      addMessage(`⚠️ Server (HTTP ${response.status}) nije vratio ispravan odgovor. ${(bodyText || '').replace(/<[^>]+>/g,' ').trim().slice(0,160)}`, "bot");
+      addMessage(`⚠️ ${t('err_http')} (HTTP ${response.status}). ${(bodyText || '').replace(/<[^>]+>/g,' ').trim().slice(0,160)}`, "bot");
       return;
     }
+
+    // Rekonsilijacija jezika: ako je server prepoznao drugi jezik nego sučelje — prebaci
+    if(data.lang && data.lang !== currentLang) applyLang(data.lang);
 
     if(data.category) currentCategory = data.category;
     // Ako je korisnik kliknuo tab — taj tab ostaje označen (npr. „Brodsko kolo"
@@ -1081,16 +1196,16 @@ async function sendMessage(){
       chatHistory.push({ role: "assistant", content: data.reply });
       if(chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
     } else {
-      addMessage("Asistent nije dao odgovor.", "bot");
+      addMessage(t('err_noreply'), "bot");
     }
 
   } catch(e) {
     typing.remove();
     pendingTab = null;
     if(e.name === "AbortError"){
-      addMessage("Odgovor traje dulje nego očekivano. Pokušajte ponovno.", "bot");
+      addMessage(t('err_timeout'), "bot");
     } else {
-      addMessage("Greška u komunikaciji sa serverom.", "bot");
+      addMessage(t('err_server'), "bot");
     }
   }
 }
@@ -1113,22 +1228,25 @@ function resetChat(){
     cm.innerHTML =
       '<div class="welcome" id="welcome-block">'
       + '<div class="welcome-text">'
-      + '<p><strong>Dobrodošli u Slavonski Brod!</strong> 🏰</p>'
-      + '<p>Pitajte me o znamenitostima, gastronomiji, smještaju,<br>događanjima i svemu što grad nudi.</p>'
+      + '<p><strong data-i18n="welcomeTitle">Dobrodošli u Slavonski Brod!</strong> 🏰</p>'
+      + '<p data-i18n="welcomeText">Pitajte me o znamenitostima, gastronomiji, smještaju, događanjima i svemu što grad nudi.</p>'
       + '<div class="welcome-chips">'
-      + '<button onclick="quickAsk(\'Što vidjeti u Slavonskom Brodu?\')">🏰 Što vidjeti?</button>'
-      + '<button onclick="quickAsk(\'Gdje ručati u Slavonskom Brodu?\')">🍽 Gdje jesti?</button>'
-      + '<button onclick="quickAsk(\'Koja događanja se održavaju?\')">🎭 Događanja</button>'
+      + '<button onclick="chipAsk(\'vidjeti\')">🏰 <span data-i18n="chip_vidjeti">Što vidjeti?</span></button>'
+      + '<button onclick="chipAsk(\'jesti\')">🍽 <span data-i18n="chip_jesti">Gdje jesti?</span></button>'
+      + '<button onclick="chipAsk(\'dogadanja\')">🎭 <span data-i18n="chip_dogadanja">Događanja</span></button>'
       + '</div></div></div>';
+    applyLang(currentLang); // prevedi svježe ubačeni pozdrav
   }
   const inp = document.getElementById("user-input");
   if(inp){ inp.value = ""; inp.focus(); }
 }
 
-// Klik na kategorijski tab — zapamti ga i odmah označi (optimistički highlight)
+// Klik na kategorijski tab — pošalji pitanje na jeziku sučelja + optimistički highlight
 document.getElementById("cat-tabs").addEventListener("click", function(e){
   const btn = e.target.closest("button[data-cat]");
   if(!btn) return;
+  const cat = btn.dataset.cat;
+  quickAsk((TAB_Q[cat] && (TAB_Q[cat][currentLang] || TAB_Q[cat].hr)) || btn.textContent.trim());
   pendingTab = btn;
   document.querySelectorAll('#cat-tabs button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -1222,7 +1340,8 @@ setTimeout(() => {
   }
 
   const recognition = new SpeechRecognition();
-  recognition.lang = "hr-HR";        // Hrvatski; fallback na engleski ako ne prepozna
+  window._recognition = recognition; // da applyLang može prebaciti jezik prepoznavanja
+  recognition.lang = {hr:'hr-HR',en:'en-US',de:'de-DE'}[currentLang] || 'hr-HR';
   recognition.continuous = false;    // Stani nakon prve pauze
   recognition.interimResults = true; // Prikaži međurezultate dok govori
 
@@ -1235,7 +1354,7 @@ setTimeout(() => {
       return;
     }
     input.value = "";
-    input.placeholder = "🎤 Slušam...";
+    input.placeholder = t('micListen');
     micBtn.classList.add("listening");
     listening = true;
     autoSubmit = true;
@@ -1266,19 +1385,26 @@ setTimeout(() => {
     resetMic();
     autoSubmit = false;
     if(e.error === "not-allowed"){
-      input.placeholder = "⚠️ Dopustite pristup mikrofonu u pregledniku";
-      setTimeout(() => { input.placeholder = "Postavite pitanje o Slavonskom Brodu..."; }, 3000);
+      input.placeholder = t('micDenied');
+      setTimeout(() => { input.placeholder = t('placeholder'); }, 3000);
     } else if(e.error === "no-speech"){
-      input.placeholder = "Ništa nisam čuo — pokušajte ponovno";
-      setTimeout(() => { input.placeholder = "Postavite pitanje o Slavonskom Brodu..."; }, 2500);
+      input.placeholder = t('micNospeech');
+      setTimeout(() => { input.placeholder = t('placeholder'); }, 2500);
     }
   });
 
   function resetMic(){
     listening = false;
     micBtn.classList.remove("listening");
-    input.placeholder = "Postavite pitanje o Slavonskom Brodu...";
+    input.placeholder = t('placeholder');
   }
+})();
+
+// ===== INIT JEZIKA — primijeni spremljeni jezik pri učitavanju =====
+(function(){
+  let saved = 'hr';
+  try { saved = localStorage.getItem('sbLang') || 'hr'; } catch(e){}
+  applyLang(saved);
 })();
 
 </script>

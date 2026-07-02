@@ -549,7 +549,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, history, category: lastCategory, weather } = req.body;
+    const { message, history, category: lastCategory, weather, lang: clientLang } = req.body;
 
     if (!message) {
       return res.status(400).json({ reply: "Poruka je prazna." });
@@ -562,13 +562,19 @@ export default async function handler(req, res) {
 
     const { context, category, matched = true } = getRelevantContext(message, db, lastCategory);
     const msgLower = message.toLowerCase();
-    const lang = detectLang(message);
+    // Jezik odgovora: ako je poruka JASNO na stranom jeziku (EN/DE), poštuj detekciju
+    // (prebacivanje jezikom unosa). Inače koristi jezik sučelja koji je klijent poslao
+    // (npr. odabran zastavom), a tek onda default hrvatski.
+    const detected = detectLang(message);
+    const lang = detected !== 'hr'
+      ? detected
+      : (['hr', 'en', 'de'].includes(clientLang) ? clientLang : 'hr');
     const t = TR[lang] || TR.hr;
 
     // Vremenski upit
     const isWeatherQuery = ['prognoz', 'forecast', 'wetter', 'vremensku prognozu'].some(k => msgLower.includes(k))
       || (['kakvo', 'kako', 'hoće', 'biti', 'temperatura'].filter(k => msgLower.includes(k)).length >= 2 && ['vrij', 'tempera', 'kišno', 'sunčano'].some(k => msgLower.includes(k)));
-    if (isWeatherQuery) {
+    if (isWeatherQuery && lang === 'hr') {
       let reply;
       if (weather && weather.temperature != null) {
         // Bot IMA vrijeme uživo (Open-Meteo, /api/weather) — odgovori stvarnim podacima
@@ -797,7 +803,7 @@ export default async function handler(req, res) {
           '✉️ info@tzgsb.hr | [tzgsb.hr](https://www.tzgsb.hr)';
       }
 
-      if (faqReply) {
+      if (faqReply && lang === 'hr') {
         return res.status(200).json({
           reply: faqReply,
           category: category || 'opcenito',
@@ -810,8 +816,8 @@ export default async function handler(req, res) {
     // === Strukturirani odgovor (bez AI — brzo) ===
     const resolvedCat = category || lastCategory;
 
-    // O gradu — template bez AI
-    if (resolvedCat === 'opcenito' && !isConversationalMode && !isDetailQuery) {
+    // O gradu — template bez AI (samo hrvatski; za EN/DE ide na AI koji odgovara na tom jeziku)
+    if (resolvedCat === 'opcenito' && !isConversationalMode && !isDetailQuery && lang === 'hr') {
       const s = scrapedContent || {};
       const o = s.o_nama || {};
       const gradOpis = o.grad_opis ? o.grad_opis.substring(0, 500) : '';
@@ -839,7 +845,7 @@ export default async function handler(req, res) {
 
     const items = getCategoryItems(resolvedCat);
 
-    if (items.length > 0 && !isConversationalMode && !isGeneralKnowledgeQuery) {
+    if (items.length > 0 && !isConversationalMode && !isGeneralKnowledgeQuery && lang === 'hr') {
       const intros = {
         gastronomija: `🍽️ **Restorani u Slavonskom Brodu** (${items.length} registriranih objekata pri TZ)\n\nSlavonski Brod poznata je po bogatoj slavonskoj kuhinji — kulenu, čobancu i fiš-paprikašu. Evo svih restorana:`,
         smjestaj:     `🏨 **Smještaj u Slavonskom Brodu** (${items.length} objekata)\n\nHoteli, pansioni i apartmani registrirani pri Turističkoj zajednici — s fotografijama:`,
@@ -967,8 +973,8 @@ Pravila:
    - NIKAD ne koristi crtice (- stavka) za listanje — uvijek koristi EMOJI ikonu ispred svake stavke
    - Svaka stavka u listi počinje kontekstualnom ikonom: 🏰 tvrđava, 🎻 glazba, 🐟 riba, 🌲 priroda, 🚴 biciklizam, 🍷 vino, 🎭 kultura, 🍽️ restoran, 🏨 hotel, 📍 lokacija, 📞 telefon, 🌐 web, 🗺️ izlet, ⛪ crkva, 🎪 festival, 🛍️ kupovina, 🏊 sport itd.
    - Nikad ne ponavljaj istu ikonu uzastopno u listi
-8. Na APSOLUTNOM KRAJU odgovora, u zadnjem retku, dodaj TOČNO ovako (bez ikakvog prefiksa, zagrade ili dvotočke ispred, uvijek na HRVATSKOM jeziku):
-SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na hrvatskom?"]`;
+8. Na APSOLUTNOM KRAJU odgovora, u zadnjem retku, dodaj TOČNO ovako (bez ikakvog prefiksa, zagrade ili dvotočke ispred) — pitanja moraju biti NA ISTOM JEZIKU kao i odgovor:
+SUGGESTIONS:["Pitanje 1?","Pitanje 2?","Pitanje 3?"]`;
 
     const systemDynamic = `${weatherCtx}
 
@@ -1035,8 +1041,9 @@ ${scrapedSection}`;
     return res.status(200).json({
       reply: raw,
       category: resolvedCat || null,
-      suggestions: aiSuggestions || getSuggestions(resolvedCat),
+      suggestions: aiSuggestions || (lang === 'hr' ? getSuggestions(resolvedCat) : []),
       items: aiItems,
+      lang,
       images: []
     });
 

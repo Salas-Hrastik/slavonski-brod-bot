@@ -9,6 +9,6 @@
         "scrape": "node scripts/scrape-brod.js"
     },
     "dependencies": {
-        "@anthropic-ai/sdk": "^0.109.0"
+        "@anthropic-ai/sdk": "^0.109.1"
     }
 }
