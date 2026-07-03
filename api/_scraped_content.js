@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-02 08:36 UTC
+// Zadnje skrapanje: 2026-07-03 08:41 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-02T08:36:40.345Z",
+    "zadnje_azuriranje": "2026-07-03T08:41:30.304Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Šezdesetak fiš majstora danas se natječe za titulu najboljeg na Poloju",
+      "datum": "03. 07. 2026.",
+      "kratki_opis": "Sportsko-rekreacijski centar „Poloj\" već od današnjeg poslijepodneva postaje pozornica jednog od najdražih ljetnih događanja u gradu – Otvorenog prvenstva Slavonskog Broda u kuhanju fiš paprikaša. Uz obalu Save okupit će se čak 60 ekipa iz cijele Slavonije, spremnih da svoje kulinarsko umijeće stave",
+      "link": "https://www.slavonski-brod.hr/vijesti/17056-sezdesetak-fis-majstora-danas-se-natjece-za-titulu-najboljeg-na-poloju",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00038_resize.jpeg"
+    },
+    {
+      "naslov": "Odlični turistički rezultati u destinaciji Slavonski Brod-Posavina u prvoj polovici 2026. godine",
+      "datum": "02. 07. 2026.",
+      "kratki_opis": "Destinacija Slavonski Brod-Posavina i u prvoj polovici 2026. godine bilježi rast turističkog prometa. Prema podacima Turističke zajednice, od siječnja do lipnja ostvareno je 28.855 noćenja, što je 14,17 posto više nego u istom razdoblju lani. Zanimljivo je da domaći gosti više nisu većina – čak 52,3",
+      "link": "https://www.slavonski-brod.hr/vijesti/17054-odlicni-turisticki-rezultati-u-destinaciji-slavonski-brod-posavina-u-prvoj-polovici-2026-godine",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/centar_grada_iz_daljeg_resize.jpg"
+    },
     {
       "naslov": "Grad Slavonski Brod osigurao besplatan prijevoz učenicima pripadnicima romske nacionalne manjine",
       "datum": "02. 07. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Čestitam novinarki Ireni Vukas Çufalar na nagradi Hrvatskog novinarskog društva „Siniša Glavašević\" koju je zasluženo osvojila na festivalu novinarstva Media in Time u Vinkovcima. Kao gradonačelnik Slavonskog Broda, uvijek me posebno raduje kada naši sugrađani bivaju prepoznati izvan granica našeg g",
       "link": "https://www.slavonski-brod.hr/vijesti/17043-gradonacelnikova-cestitka-nagradenoj-ireni-vukas-cufalar-povodom-osvajanja-nagrade-sinisa-glavasevic",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/4bc1b638-1410-434c-a58d-a3a9ca368151.jpeg"
-    },
-    {
-      "naslov": "Ljeto u Tvrđavi Brod: od sredine kolovoza do početka rujna Tvrđava postaje središte kulturnog i društvenog života grada",
-      "datum": "30. 06. 2026.",
-      "kratki_opis": "Na jučerašnjoj press konferenciji, Turistička zajednica područja „Slavonski Brod-Posavina\" službeno je predstavila program „Ljeto u Tvrđavi Brod\" – ambiciozni projekt koji će u razdoblju od 14. kolovoza do 6. rujna pretvoriti Tvrđavu u pravo ljetno odredište za sve generacije. Press konferenciji pri",
-      "link": "https://www.slavonski-brod.hr/vijesti/17042-ljeto-u-tvrdavi-brod-od-sredine-kolovoza-do-pocetka-rujna-tvrdava-postaje-srediste-kulturnog-i-drustvenog-zivota-grada",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/20260629_1941251_resize.jpg"
-    },
-    {
-      "naslov": "Uživajte u ljetnim danima uz nekoliko jednostavnih mjera opreza",
-      "datum": "29. 06. 2026.",
-      "kratki_opis": "Visoke temperature, boravak na otvorenom i povećan broj posjetitelja obilježavaju ljetne mjesece. Dok većina građana i posjetitelja uživa u odmoru, ljeto je ujedno razdoblje kada raste rizik od toplinskih valova, požara i drugih izvanrednih događaja. Jedan neugašeni opušak, nedovoljno vode tijekom i",
-      "link": "https://www.slavonski-brod.hr/vijesti/17041-uzivajte-u-ljetnim-danima-uz-nekoliko-jednostavnih-mjera-opreza",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/1_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
