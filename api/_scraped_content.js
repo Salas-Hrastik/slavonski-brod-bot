@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-03 08:41 UTC
+// Zadnje skrapanje: 2026-07-04 08:15 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-03T08:41:30.304Z",
+    "zadnje_azuriranje": "2026-07-04T08:15:54.069Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Grad Slavonski Brod svečano preuzeo ugovor za uređenje Parka Klasije",
+      "datum": "03. 07. 2026.",
+      "kratki_opis": "Slavonski Brod je danas, u sklopu posjeta potpredsjednika Vlade Republike Hrvatske i ministra prostornoga uređenja, graditeljstva i državne imovine Branka Bačića u Đakovu, sudjelovao na svečanoj dodjeli ugovora o financiranju projekta uređenja Parka Klasije. Događaj je organiziran u okviru sastanka ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17058-grad-slavonski-brod-svecano-preuzeo-ugovor-za-uredenje-parka-klasije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/foto.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod ovog vikenda domaćin 4. Polojskog triatlona i Prvenstva Hrvatske u mješovitim štafetama",
+      "datum": "03. 07. 2026.",
+      "kratki_opis": "Triatlon klub Mazator organizira 4. i 5. srpnja 2026. godine 4. Polojski triatlon, sportsku manifestaciju koja će ove godine imati poseban značaj za Slavonski Brod. U subotu, 4. srpnja, s početkom u 8:30 sati, na rasporedu je 3. kolo Hrvatske triatlon lige, dok će u nedjelju, 5. srpnja, s početkom u",
+      "link": "https://www.slavonski-brod.hr/vijesti/17057-slavonski-brod-ovog-vikenda-domacin-4-polojskog-triatlona-i-prvenstva-hrvatske-u-mjesovitim-stafetama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_8702_resize.jpeg"
+    },
     {
       "naslov": "Šezdesetak fiš majstora danas se natječe za titulu najboljeg na Poloju",
       "datum": "03. 07. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Sportsko-rekreacijski centar „Poloj\" 3. srpnja ugostit će Otvoreno prvenstvo grada Slavonskog Broda u kuhanju fiš paprikaša, natjecanje koje svake godine uz Savu okuplja najvještije poznavatelje ovog slavonskog kulinarskog nasljeđa. Na ovogodišnjem izdanju fišijade sudjelovat će čak 60 fiš majstora ",
       "link": "https://www.slavonski-brod.hr/vijesti/17046-brodska-fisijada-ove-godine-okuplja-60-fis-majstora-iz-cijele-slavonije",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00045_resize.jpeg"
-    },
-    {
-      "naslov": "Plesna večer Brodskih leptirića oduševila publiku ispred Kazališno-koncertne dvorane",
-      "datum": "01. 07. 2026.",
-      "kratki_opis": "Na platou ispred Kazališno-koncertne dvorane Ivana Brlić-Mažuranić sinoć je održana plesna večer Plesnog studija Brodski Leptirići, u okviru 37. Brodskog glazbenog ljeta. Pod nazivom „Ritam koraka”, ova završna plesna produkcija okupila je članove studija koji su publici predstavili raznolik i bogat",
-      "link": "https://www.slavonski-brod.hr/vijesti/17045-plesna-vecer-brodskih-leptirica-odusevila-publiku-ispred-kazalisno-koncertne-dvorane",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/Leptirici_119_resize.jpg"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka nagrađenoj Ireni Vukas Çufalar povodom osvajanja nagrade „Siniša Glavašević&quot;",
-      "datum": "30. 06. 2026.",
-      "kratki_opis": "Čestitam novinarki Ireni Vukas Çufalar na nagradi Hrvatskog novinarskog društva „Siniša Glavašević\" koju je zasluženo osvojila na festivalu novinarstva Media in Time u Vinkovcima. Kao gradonačelnik Slavonskog Broda, uvijek me posebno raduje kada naši sugrađani bivaju prepoznati izvan granica našeg g",
-      "link": "https://www.slavonski-brod.hr/vijesti/17043-gradonacelnikova-cestitka-nagradenoj-ireni-vukas-cufalar-povodom-osvajanja-nagrade-sinisa-glavasevic",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/4bc1b638-1410-434c-a58d-a3a9ca368151.jpeg"
     }
   ],
   "manifestacije_aktualne": [
