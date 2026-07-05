@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-04 08:15 UTC
+// Zadnje skrapanje: 2026-07-05 08:34 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-04T08:15:54.069Z",
+    "zadnje_azuriranje": "2026-07-05T08:34:22.486Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Fišijada na Poloju ponovno okupila brojne ljubitelje slavonske gastronomije",
+      "datum": "04. 07. 2026.",
+      "kratki_opis": "Sportsko-rekreacijski centar „Poloj” sinoć je ponovno bio domaćin jednog od najdražih ljetnih događanja u gradu – Otvorenog prvenstva Slavonskog Broda u kuhanju fiš paprikaša. Uz obalu rijeke Save okupilo se čak 60 ekipa iz cijele Slavonije koje su svoje kulinarsko umijeće stavile na kušnju pred str",
+      "link": "https://www.slavonski-brod.hr/vijesti/17060-fisijada-na-poloju-ponovno-okupila-brojne-ljubitelje-slavonske-gastronomije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_0800_resize.jpeg"
+    },
     {
       "naslov": "Grad Slavonski Brod svečano preuzeo ugovor za uređenje Parka Klasije",
       "datum": "03. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Donesen je Zaključak o davanju suglasnosti na produljeno radno vrijeme ugostiteljskih objekata povodom nogometne utakmice hrvatske reprezentacije u noći s 2. na 3. srpnja 2026. godine. Sukladno članku 8. Odluke o ugostiteljskoj djelatnosti na području grada Slavonskog Broda, dana je suglasnost na pr",
       "link": "https://www.slavonski-brod.hr/vijesti/17049-produljeno-radno-vrijeme-ugostiteljskih-objekata-povodom-utakmice-hrvatske-reprezentacije",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/korzo_i_park_resize.jpg"
-    },
-    {
-      "naslov": "Brodska fišijada ove godine okuplja 60 fiš majstora iz cijele Slavonije",
-      "datum": "01. 07. 2026.",
-      "kratki_opis": "Sportsko-rekreacijski centar „Poloj\" 3. srpnja ugostit će Otvoreno prvenstvo grada Slavonskog Broda u kuhanju fiš paprikaša, natjecanje koje svake godine uz Savu okuplja najvještije poznavatelje ovog slavonskog kulinarskog nasljeđa. Na ovogodišnjem izdanju fišijade sudjelovat će čak 60 fiš majstora ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17046-brodska-fisijada-ove-godine-okuplja-60-fis-majstora-iz-cijele-slavonije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00045_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
