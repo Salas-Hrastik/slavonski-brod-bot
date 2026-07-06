@@ -60,7 +60,8 @@ function getCategoryItems(category) {
   }
 
   if (category === 'gastronomija') {
-    return (s.restorani_tz || []).slice(0, 20).map(r => item(r));
+    // Svi restorani s TZ popisa — bez rezanja (TZ primjedba: moraju biti navedeni svi)
+    return (s.restorani_tz || []).map(r => item(r));
   }
   if (category === 'smjestaj') {
     const hoteli = (s.smjestaj_hoteli || []).map(h => item(h));
@@ -860,7 +861,7 @@ export default async function handler(req, res) {
         gastronomija: ['Koji restoran ima slavonski kulen?', 'Gdje je fiš-paprikaš?', 'Terasa uz Savu?', 'Preporuka za večeru?', 'Gdje ručati s djecom?', 'Koji restorani rade nedjeljom?'],
         smjestaj:     ['Koji hotel je najbliži centru?', 'Ima li apartmana uz Savu?', 'Parkiranje uz hotel?', 'Najbliži hotel Tvrđavi?', 'Ima li hostela u gradu?', 'Jeftiniji smještaj?'],
         znamenitosti: ['Radno vrijeme Tvrđave?', 'Što je Living History?', 'Kuća Brlićevih — info?', 'Gdje kupiti ulaznice?', 'Muzej tambure — gdje?', 'Vođene ture po gradu?'],
-        priroda:      ['Biciklistička staza uz Savu?', 'Gdje ići ribolovom?', 'Poloj — šetnica uz Savu?', 'Jezero Petnja — kako doći?', 'Gajna rezervat — ulaz?', 'Lov u BPŽ?'],
+        priroda:      ['Biciklistička staza uz Savu?', 'Gdje ići ribolovom?', 'Poloj — šetnica uz Savu?', 'Dilj gora — planinarenje?', 'Posavska biciklistička ruta?', 'Lov u BPŽ?'],
         sport:        ['Teniski tereni u gradu?', 'Sportska dvorana Vijuš?', 'Plivanje — bazeni?', 'Jogging staze?', 'Sportski centri?'],
         okolica:      ['Kako do Đakova?', 'Vinkovci — što posjetiti?', 'Osijek od Broda?', 'Kutjevo vina — izlet?', 'Bosanski Brod — prijelaz?', 'Dilj gora — planinarenje?'],
       };
@@ -934,7 +935,9 @@ STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 🔴 ZABRANJENO (ne postoji ili je pogrešno — NIKAD ne koristi):
 - "Avenue Mall" — NE POSTOJI u Slavonskom Brodu
 - "City Club" — NE POSTOJI u Slavonskom Brodu
-- "Crljenka" — NE POSTOJI; ispravno je "Etno-selo Crljen" u Podvinju
+- "Crljenka" — NE POSTOJI; "Etno-selo Crljen" (Podvinje) je TRAJNO ZATVORENO — NE preporučuj posjet
+- "Jezero Petnja" i "Prirodni rezervat Gajna" — NISU u destinaciji Slavonski Brod-Posavina — NE preporučuj ih
+- "Brodska Brodilica", "Festival Posavine", "Slavonska fešta" — te manifestacije NE POSTOJE / ne održavaju se
 - "Župna crkva Presvetog Srca Isusova" — NE POSTOJI u SB
 - "Brodska riva" — pogrešan naziv, ispravno je "Kej"
 - "Šuma Poloj" — Poloj je RIJEČNA PLAŽA, ne šuma
@@ -950,12 +953,13 @@ STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 - **Poloj** = riječna plaža uz Savu, s piknik mjestima i igralištima (ne šuma)
 - **Središnji gradski trg** = Trg Ivane Brlić Mažuranić (Korzo, kavane, restorani)
 - **Dilj gora** = planina povrh Podvinja (naselja u sastavu SB), na spoju ulice Hrvatskih dobrovoljaca i Janiševca I (cca 5 km od centra)
-- **Etno-selo Crljen** = nalazi se u Podvinju (naselje u sastavu SB, cca 5 km od centra)
+- **Dan grada Slavonskog Broda** = 16. svibnja (blagdan sv. Ivana Nepomuka, zaštitnika grada); povodom Dana grada održavaju se Moto susreti, Regata i Florafest
+- **Advent u Slavonskom Brodu ("Advent iz davnina")** = održava se na Trgu Ivane Brlić-Mažuranić i u Tvrđavi Brod (NE na Trgu pobjede)
 - **Tržni centri**: City Colosseum i Supernova; uz to: Kaufland, Lidl, Konzum, gradska tržnica
 - **Barovi u SB**: Navigator, Soho Bar, Beerc, Imperia, BoomBar, Derby, Pipa bar, Kuća Piva
 - **Noćni klubovi u SB**: Klub Rupa, Alfa Club, Hedonic Club, Prohibition Bar, Central Club, Sens Bar Night
 - **Smještaj u prirodi / vikendice**: Matanovi Dvori, Bakina Divljaka, Kuća za odmor Mladen i Martina
-- **Izletišta u okolici SB**: Jezero Petnja, Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora, Etno-selo Crljen (Podvinje)
+- **Izletišta u okolici SB**: Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora
 
 Pravila:
 1. Odgovaraj samo na pitanja vezana uz Slavonski Brod i turizam u regiji

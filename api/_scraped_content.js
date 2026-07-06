@@ -1812,7 +1812,7 @@ export const scrapedContent = {
   ],
   "kulturna_bastina": [
     {
-      "naziv": "Muzej tambura (Kuća tambure)",
+      "naziv": "Muzej tambura",
       "tip": "Muzej",
       "link": "https://www.tzgsb.hr/index.php?page=muzejtambura",
       "adresa": "Vukovarska 1, 35000 Slavonski Brod (zapadna kurtina Tvrđave Brod)",
@@ -1832,43 +1832,30 @@ export const scrapedContent = {
       "opis": "Kuća Brlićevih Crkve u općini Podcrkavlje Gradski vodič - siječanj/veljača 2012. Kuća Brlićevih Obiteljska kuća Brlić sagrađena krajem 18. stoljeća na glavnom gradskom trgu, nestala je u velikom požaru 1882., a na njezinom mjestu podignuta je 1885. moderna neoklasicistička jednokatnica, danas spomenik kulture pod zaštitom. U autentičnom povijesnom ambijentu doma Brlićevih stvarale su i nalazile nadahnuće za svoje mnogostrane interese ličnosti koje su značajno pridonijele javnom, kulturnom i političkom životu Broda i Hrvatske: Ignjat Alojzije Brlić, pisac i jezikoslovac, Andrija Torkvat Brlić, "
     },
     {
-      "naziv": "Living History — Tvrđava Brod",
-      "tip": "Doživljajna turistička atrakcija",
-      "link": "https://www.tzgsb.hr/index.php?page=livinghistory",
-      "adresa": "Trg pobjede 28/1, 35000 Slavonski Brod (prijava putem TZ)",
-      "telefon": "+385 35 447 721",
-      "email": "info@tzgsb.hr",
-      "slika": "https://www.tzgsb.hr/static/images/nslovna_tzgsb.jpg",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod",
-      "opis": "Living History programi Gostima koji u Slavonski Brod dođu posredstvom putničkih agencija bit će omogućeno aktivno sudjelovanje u programima živuće povijesti koji se, uz angažman kostimiranih konjanika, vojnika i tvrđavskih zanatlija, izvode u tvrđavi Brod, kao i susret s likovima iz pripovijetki svjetski poznate spisateljice Ivane Brlić-Mažuranić ispred kuće Brlić na središnjem gradskom trgu i kostimiranim likom Dragutina Tadijanovića u Franjevačkom samostanu. Trg pobjede 28/1 35000 Slavonski Brod"
+      "naziv": "Tvrđava Brod",
+      "tip": "Povijesna tvrđava",
+      "link": "https://www.tzgsb.hr/index.php?page=tvrdjava",
+      "adresa": "Trg Ivane Brlić-Mažuranić, 35000 Slavonski Brod",
+      "slika": "https://www.tzgsb.hr/static/images/r_husari170x120.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Tvrdava+Brod+Slavonski+Brod",
+      "opis": "Impresivna barokna tvrđava iz 18. stoljeća, jedna od najvećih i najočuvanijih u jugoistočnoj Europi. Gradila se od 1715. do 1780. po nalogu Habsburga; tlocrt je zvjezdastog oblika s opkopima i bastionima. Danas je kulturno središte grada — prostor festivala, koncerata i izložbi. Vanjski prostori dostupni su besplatno cijele godine."
     },
     {
-      "naziv": "Prirodni rezervat Gajna",
-      "tip": "Zaštićeni krajobraz / Priroda",
-      "link": "https://www.tzgsb.hr/index.php?page=prirodni_rezervati",
-      "slika": "https://www.tzgsb.hr/static/images/brodici_1.png",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Gajna+Oprisavci+Slavonski+Brod",
-      "opis": "Prirodni rezervat Gajna Ovaj tipični slavonski prisavski pašnjak oplemenjen močvarnom florom i faunom, koji ima status zaštićenog krajolika, se nalazi istočno od Slavonskog Broda, kod sela Oprisavci i Poljanci. Na Gajni se nalazi više aluvijalnih depresija u kojima se zbog proljetno-jesenskih poplava zadržava voda čime se obnavlja vodeni biljni i životinjski svijet bara, što tehnički pospješuje postojanje lateralnog kanala koji Gajnu presijeca u zapadnom dijelu te vodu skupljenu na Dilj gori odvodi u Savu odnosno u bare Gajne. S obzirom da se uglavnom uvijek ukazuje na negativno antropogeno dj"
+      "naziv": "Franjevački samostan i crkva sv. Trojstva",
+      "tip": "Sakralni objekt",
+      "link": "https://www.tzgsb.hr/index.php?page=povijesne_znamenitosti",
+      "adresa": "Franjevačka ul. 12, 35000 Slavonski Brod",
+      "slika": "https://www.tzgsb.hr/static/images/sam170-2.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Franjevacki+samostan+Slavonski+Brod",
+      "opis": "Franjevački samostan osnovan 1727. godine, smješten neposredno uz Tvrđavu Brod. Barokna crkva sv. Trojstva s bogatim unutarnjim uređenjem. Jedan od najstarijih i najvažnijih samostana u Slavoniji."
     },
     {
-      "naziv": "Izletišta — Etno-selo Crljen i Jezero Petnja",
-      "tip": "Izletište / Ekoturizam",
-      "link": "https://www.tzgsb.hr/index.php?page=izletista",
-      "slika": "https://www.tzgsb.hr/static/images/tic_1.jpg",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Jezero+Petnja+Sibinj",
-      "opis": "Izletišta, rekreacija... Podvinje Uz šumu Striborovu u naselju Janiševac, namijenjenu zabavi i rekreaciji najmlađih, svakako preporučujemo zadržavanje u etno-selu obitelji Crljen, smještenom tik uz cestu koja u Slavonski Brod vodi iz pravca Našica. Dok dvorišne gospodarske zgrade Crljenovih daju prikaz tipičnog gospodarstva slavonskog seljaka sa kraja 18. i početka 19. stoljeća, u tzv. \"bećarskoj kući\" mogu se kušati tipični slavonski domaći specijaliteti. U etno-dvorištu je, uz prethodnu najavu, moguće organizirati i kolektivne tradicijske dječje igre, kao i kreativnu radionicu izrade tradici"
-    },
-    {
-      "naziv": "Katarinski sajam",
-      "tip": "Tradicionalni sajam",
-      "link": "https://www.tzgsb.hr/index.php?page=sajmovanja",
-      "adresa": "Sportska dvorana Vijuš, Stjepana pl. Horvata 2, 35000 Slavonski Brod",
-      "telefon": "+385 35 445 765",
-      "email": "info@brod-turist.hr",
-      "web": "https://www.katarinskisajam.com",
-      "slika": "https://www.tzgsb.hr/static/images/uno-rez170-1.jpg",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Katarinski+sajam+Slavonski+Brod",
-      "opis": "Sajmovanja Sajam je prvi puta održan 1769. Danas se, slijedeći moderne trendove, organizira u Sportskoj dvorani „Vijuš“ i obiluje brojnim popratnim sadržajima poput eno i gastro prezentacija, stručnih predavanja, koncerata i sl. Adresa: Stjepana pl. Horvata 2 35000 Slavonski Brod Telefon: Web:  E-mail:"
+      "naziv": "Crkve u općini Podcrkavlje",
+      "tip": "Sakralna baština",
+      "link": "https://www.tzgsb.hr/index.php?page=povijesne_znamenitosti",
+      "slika": "https://www.tzgsb.hr/static/images/crkva_sv_petra_170.png",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Podcrkavlje",
+      "opis": "Sakralna baština općine Podcrkavlje na obroncima Dilj gore, sjeverno od Slavonskog Broda — povijesne crkve među kojima se ističe crkva sv. Petra. Dio kulturne baštine destinacije Slavonski Brod-Posavina."
     }
   ],
   "atrakcije_tz": [

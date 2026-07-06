@@ -147,13 +147,6 @@ export const db = {
       "karta": "https://www.google.com/maps/search/?api=1&query=Franjevacki+samostan+Slavonski+Brod"
     },
     {
-      "naziv": "Župna crkva Presvetog Srca Isusova",
-      "tip": "Sakralni objekt",
-      "opis": "Impozantna neogotička crkva u centru Slavonskog Broda, izgrađena krajem 19. stoljeća. Dominantna građevina gradske jezgre s visokim tornjom koji se vidi s rijeke Save.",
-      "adresa": "Trg pobjede, 35000 Slavonski Brod",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Crkva+Presvetog+Srca+Slavonski+Brod"
-    },
-    {
       "naziv": "Spomen-park Domovinskog rata",
       "tip": "Memorijal",
       "opis": "Spomen-park posvećen žrtvama Domovinskog rata i otporu građana Slavonskog Broda. Sadrži skulpture, spomen-ploče i memorijalne sadržaje. Obvezno mjesto posjeta za razumijevanje novije povijesti grada.",
@@ -161,7 +154,7 @@ export const db = {
       "karta": "https://www.google.com/maps/search/?api=1&query=Spomen+park+Domovinski+rat+Slavonski+Brod"
     },
     {
-      "naziv": "Šetalište uz Savu (Brodska riva)",
+      "naziv": "Kej — šetalište uz Savu",
       "tip": "Javni prostor",
       "opis": "Uređeno šetalište duž obale rijeke Save, dugo više od 3 km. Omiljeno mjesto šetnje, bicikliranja i rekreacije Broðana. Pruža pogled na rijeku Savu i bosansku obalu. Posebno lijepo u večernjim satima.",
       "ulaznica": "Besplatno",
@@ -177,7 +170,7 @@ export const db = {
       "web": "https://www.tzgsb.hr/index.php?page=kuca_brlicevih"
     },
     {
-      "naziv": "Muzej tambura (Kuća tambure)",
+      "naziv": "Muzej tambura",
       "tip": "Muzej",
       "opis": "Prvi svjetski muzej tambure, smješten u obnovljenoj kazamati zapadne kurtine Tvrđave Brod. Čuva više od 60 ručno izrađenih instrumenata. Nudi kreativne radionice izrade gudačkih instrumenata i multimedijalne prezentacije. Dvorana kapaciteta 70–80 mjesta, glazbeni studio i edukacijski prostori.",
       "adresa": "Vukovarska 1, 35000 Slavonski Brod (zapadna kurtina Tvrđave Brod)",
@@ -290,17 +283,11 @@ export const db = {
       "karta": "https://www.google.com/maps/search/?api=1&query=Tvrdava+Brod+Slavonski+Brod"
     },
     {
-      "naziv": "Brod Brodilica",
-      "opis": "Popularna kulturno-zabavna manifestacija u Slavonskom Brodu koja se odvija u proljeće ili rano ljeto. Koncerti, gastronomija, izložbe i zabavni sadržaji za sve uzraste.",
-      "datum": "Proljeće / Ljeto",
-      "lokacija": "Šetalište uz Savu i centar"
-    },
-    {
-      "naziv": "Brodski Advent",
-      "opis": "Adventska manifestacija koja oživljava centar grada u prosincu. Klizalište, kućice s lokalnim gastro i rukotvornim proizvodima, koncerti, lampijonfest. Jedno od najljepših adventskih događanja u Slavoniji.",
+      "naziv": "Advent u Slavonskom Brodu (Advent iz davnina)",
+      "opis": "Adventska manifestacija koja oživljava grad u prosincu — Božićni sajam s kućicama, koncerti, program za djecu i blagdanska atmosfera nadahnuta bajkama Ivane Brlić-Mažuranić. Jedno od najljepših adventskih događanja u Slavoniji.",
       "datum": "Prosinac (cijelo adventsko razdoblje)",
-      "lokacija": "Trg pobjede i centar Slavonskog Broda",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Trg+pobjede+Slavonski+Brod"
+      "lokacija": "Trg Ivane Brlić-Mažuranić i Tvrđava Brod",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Trg+Ivane+Brlic+Mazuranic+Slavonski+Brod"
     },
     {
       "naziv": "Brodska tvrđava noću — Noć muzeja",
@@ -309,22 +296,116 @@ export const db = {
       "lokacija": "Tvrđava Brod i Muzej Brodskog Posavlja"
     },
     {
-      "naziv": "Festival Posavine",
-      "opis": "Manifestacija posvećena tradicijskoj kulturi i gastru Brodsko-posavske županije. Prezentacija autohtonih proizvoda, folklora, rukotvorina i lokalne gastronomije.",
-      "datum": "Jesen",
-      "lokacija": "Slavonski Brod i okolica"
-    },
-    {
-      "naziv": "Slavonska fešta (Kuhanje kulenova seka)",
-      "opis": "Natjecanje u kuhanju slavonskih specijaliteta — fiš-paprikaša, čopanca i kobasičarskih specijaliteta. Autentični ugođaj slavonskog sela u gradu.",
-      "datum": "Jesen",
-      "lokacija": "Slavonski Brod"
-    },
-    {
       "naziv": "Dan grada Slavonskog Broda",
-      "opis": "Svečano obilježavanje Dana grada uz parade, priredbe, dodjelu nagrada zaslužnim građanima i kulturni program.",
-      "datum": "29. svibnja",
+      "opis": "Svečano obilježavanje Dana grada uz svečanu sjednicu, priredbe, dodjelu nagrada zaslužnim građanima i kulturni program. Povodom Dana grada održavaju se i Moto susreti, Regata Slavonski Brod i sajam cvijeća Florafest.",
+      "datum": "16. svibnja (blagdan sv. Ivana Nepomuka, zaštitnika grada)",
       "lokacija": "Centar Slavonskog Broda"
+    },
+    {
+      "naziv": "Vinkovo u tvrđavi Brod",
+      "opis": "Vinska manifestacija u čast svetom Vinku, zaštitniku vinara i vinogradara. Obilježava se 22. siječnja i u danima oko blagdana — u vinogradima slavonskobrodskog vinogorja na obroncima Dilj gore te u tvrđavi Brod, uz blagoslov loze, jelo, piće i tradicijsku pjesmu.",
+      "datum": "22. siječnja (i dani oko blagdana)",
+      "lokacija": "Tvrđava Brod i slavonskobrodsko vinogorje"
+    },
+    {
+      "naziv": "Međunarodni festival harmonike 'Bela pl. Panthy'",
+      "opis": "Jedini festival harmonike takvog tipa u Hrvatskoj, prvi put održan 2010. Dvodnevna zbivanja obuhvaćaju revijalne i natjecateljske nastupe harmonikaških orkestara pod nadzorom međunarodnog žirija.",
+      "datum": "Ožujak i listopad",
+      "lokacija": "Slavonski Brod",
+      "web": "https://www.festival-bela-panthy.com"
+    },
+    {
+      "naziv": "U svijetu bajki Ivane Brlić-Mažuranić",
+      "opis": "Dječja manifestacija koja nastavlja tradiciju susreta od 1970. u spomen na veliku hrvatsku spisateljicu. Dramske, likovne i računalne radionice, kazališne predstave, igraonice, susreti s književnicima, izložbe i glazbeno-scenski programi.",
+      "datum": "Travanj",
+      "lokacija": "Slavonski Brod",
+      "web": "https://www.usvijetubajki.org"
+    },
+    {
+      "naziv": "Moto susreti",
+      "opis": "Međunarodni moto susreti povodom Dana grada — moto igre, utrke ubrzanja, moto defile s egzibicijama i rock koncerti. Privlače više tisuća posjetitelja.",
+      "datum": "Svibanj (povodom Dana grada)",
+      "lokacija": "Sportsko-rekreacijski centar Poloj"
+    },
+    {
+      "naziv": "Regata Slavonski Brod",
+      "opis": "Kajakaška regata uvrštena u kalendar Hrvatskog kajakaškog saveza, održava se povodom Dana grada. Sudjeluje oko 250 natjecatelja iz svih hrvatskih klubova.",
+      "datum": "Svibanj (povodom Dana grada)",
+      "lokacija": "Rijeka Sava, Slavonski Brod"
+    },
+    {
+      "naziv": "Florafest",
+      "opis": "Sajam cvijeća koji se održava u tvrđavi Brod povodom Dana grada, uz veliki broj izlagača iz svih dijelova Hrvatske i brojne popratne programe.",
+      "datum": "Svibanj (povodom Dana grada)",
+      "lokacija": "Tvrđava Brod"
+    },
+    {
+      "naziv": "Brodsko glazbeno ljeto",
+      "opis": "Kulturna manifestacija s programima u Kazališno-koncertnoj dvorani (opere, operete, balet) te komornim koncertima u franjevačkoj crkvi.",
+      "datum": "Lipanj i srpanj",
+      "lokacija": "Kazališno-koncertna dvorana i franjevačka crkva",
+      "web": "https://www.kkd-ibm.hr"
+    },
+    {
+      "naziv": "Fišijada",
+      "opis": "Tradicionalno natjecanje u kuhanju fiš-paprikaša uz sudjelovanje velikog broja natjecatelja iz cijele Slavonije, na obali Save, uz bogat popratni program.",
+      "datum": "Srpanj",
+      "lokacija": "Sportsko-rekreacijski centar Poloj"
+    },
+    {
+      "naziv": "Čobanijada",
+      "opis": "Natjecanje u kuhanju tradicionalnog slavonskog jela — čobanca, uz brojne popratne zabavne sadržaje.",
+      "datum": "Srpanj",
+      "lokacija": "Općina Podcrkavlje"
+    },
+    {
+      "naziv": "CMC 200 — Slavonija Fest",
+      "opis": "Glazbeni festival u baroknoj tvrđavi Brod uz slobodan ulaz — pop-rock koncerti uz vrhunsku produkciju, promocije nosača zvuka i gastro prezentacije na središnjem gradskom trgu.",
+      "datum": "Kolovoz",
+      "lokacija": "Tvrđava Brod"
+    },
+    {
+      "naziv": "Vino u tvrđavi Brod",
+      "opis": "Vinska manifestacija sredinom kolovoza — prezentacija i prodaja vina renomiranih slavonskih i hrvatskih vinara u rustikalnom ambijentu istočne kurtine tvrđave Brod, uz degustacije i popratne kulturne sadržaje.",
+      "datum": "Sredina kolovoza",
+      "lokacija": "Istočna kurtina tvrđave Brod"
+    },
+    {
+      "naziv": "Street food festival",
+      "opis": "Festival ulične hrane u tvrđavi Brod — najpoznatiji street food majstori regije s ponudom od burgera i meksičkih specijaliteta do azijskih okusa i slavonskih delicija, uz zabavni program.",
+      "datum": "Kolovoz",
+      "lokacija": "Tvrđava Brod"
+    },
+    {
+      "naziv": "Svila šuška, šlingeraj se širi",
+      "opis": "Folklorna manifestacija u Podvinju u spomen na običaj tkanja svile u podvinjskoj svilani tijekom 19. stoljeća.",
+      "datum": "Rujan",
+      "lokacija": "Podvinje"
+    },
+    {
+      "naziv": "Pečenkijada",
+      "opis": "Jedinstveno natjecanje u pečenju odojaka koje okuplja više od stotinu natjecatelja iz Hrvatske i inozemstva, uz prigodni zabavni program.",
+      "datum": "Listopad",
+      "lokacija": "Sportsko-rekreacijski centar Poloj"
+    },
+    {
+      "naziv": "Pivo fest",
+      "opis": "Festival domaćih proizvođača craft piva u istočnoj kurtini tvrđave Brod, uz popratne zabavne programe.",
+      "datum": "Listopad",
+      "lokacija": "Istočna kurtina tvrđave Brod"
+    },
+    {
+      "naziv": "Pogača fest",
+      "opis": "Gastro manifestacija na središnjem slavonskobrodskom trgu posvećena očuvanju umijeća pripreme slavonske masne pogače — uz degustacije i upoznavanje s tradicijskim običajima.",
+      "datum": "Listopad",
+      "lokacija": "Trg Ivane Brlić-Mažuranić"
+    },
+    {
+      "naziv": "Katarinski sajam",
+      "opis": "Tradicionalni sajam prvi put održan 1769. godine. Danas se organizira u Sportskoj dvorani Vijuš uz eno i gastro prezentacije, stručna predavanja i koncerte.",
+      "datum": "Studeni (oko blagdana sv. Katarine)",
+      "lokacija": "Sportska dvorana Vijuš",
+      "web": "https://www.katarinskisajam.com"
     }
   ],
   "sport": {
