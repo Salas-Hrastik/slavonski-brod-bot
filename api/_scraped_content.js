@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-05 08:34 UTC
+// Zadnje skrapanje: 2026-07-06 09:47 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-05T08:34:22.486Z",
+    "zadnje_azuriranje": "2026-07-06T09:47:11.804Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Čestitke Emi Antunović i Petri Aračić na povijesnom plasmanu u finale Svjetskog juniorskog prvenstva u kajaku",
+      "datum": "06. 07. 2026.",
+      "kratki_opis": "Gradonačelnik Mirko Duspara u ime Grada Slavonskog Broda i svoje osobno ime upućuje iskrene čestitke Emi Antunović i Petri Aračić na povijesnom uspjehu ostvarenom na Svjetskom juniorskom prvenstvu u sprintu na mirnim vodama u Halifaxu! Ema i Petra ostvarile su rezultat koji će ostati trajno upisan u",
+      "link": "https://www.slavonski-brod.hr/vijesti/17061-cestitke-emi-antunovic-i-petri-aracic-na-povijesnom-plasmanu-u-finale-svjetskog-juniorskog-prvenstva-u-kajaku",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/737412659_857702170413210_7447190310632999636_n.jpg"
+    },
     {
       "naslov": "Fišijada na Poloju ponovno okupila brojne ljubitelje slavonske gastronomije",
       "datum": "04. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Grad Slavonski Brod nastavlja s redovitim praćenjem kvalitete vode na gradskom kupalištu Poloj tijekom kupališne sezone, s ciljem osiguravanja sigurnih uvjeta za sve građane i posjetitelje. Prema najnovijem izvještaju o ispitivanju kakvoće vode, koji je izradio Nastavni zavod za javno zdravstvo Brod",
       "link": "https://www.slavonski-brod.hr/vijesti/17050-ovogodisnji-izvjestaj-potvrdio-izvrsnu-kvalitetu-vode-za-kupanje-na-poloju",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/poloj21_resize.jpg"
-    },
-    {
-      "naslov": "Produljeno radno vrijeme ugostiteljskih objekata povodom utakmice hrvatske reprezentacije",
-      "datum": "01. 07. 2026.",
-      "kratki_opis": "Donesen je Zaključak o davanju suglasnosti na produljeno radno vrijeme ugostiteljskih objekata povodom nogometne utakmice hrvatske reprezentacije u noći s 2. na 3. srpnja 2026. godine. Sukladno članku 8. Odluke o ugostiteljskoj djelatnosti na području grada Slavonskog Broda, dana je suglasnost na pr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17049-produljeno-radno-vrijeme-ugostiteljskih-objekata-povodom-utakmice-hrvatske-reprezentacije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/korzo_i_park_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
