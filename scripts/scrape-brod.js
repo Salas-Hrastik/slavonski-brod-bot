@@ -11,12 +11,22 @@
  */
 
 import { writeFileSync, readFileSync } from 'fs';
+import { pathToFileURL } from 'url';
+import { resolve } from 'path';
 
 const HEADERS = {
   'User-Agent': 'SlavBrodChatbotScraper/1.0 (tourist-info-bot)',
   'Accept-Language': 'hr,en;q=0.8',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 };
+
+// Anti-bot / verifikacijske stranice (npr. "One moment, please... your request
+// is being verified"). Takav odgovor NIJE sadržaj — tretira se kao neuspjeh,
+// inače bi smeće završilo u bazi, a prazne sekcije pregazile dobre podatke.
+function isBotCheckPage(text) {
+  const head = text.slice(0, 4000);
+  return /one moment, please|request is being verified|verifying you are human|just a moment|checking your browser|cf-challenge/i.test(head);
+}
 
 async function fetchHtml(url) {
   try {
@@ -25,7 +35,12 @@ async function fetchHtml(url) {
       signal: AbortSignal.timeout(20000),
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.text();
+    const text = await res.text();
+    if (isBotCheckPage(text)) {
+      console.warn(`⚠️  ${url}: stranica vratila anti-bot provjeru — preskačem (nije pravi sadržaj)`);
+      return null;
+    }
+    return text;
   } catch (e) {
     console.warn(`⚠️  Nije moguće dohvatiti ${url}: ${e.message}`);
     return null;
@@ -310,10 +325,31 @@ async function scrapeSmjestaj() {
 
 // ─── Kulturna baština (TZ stranice) ─────────────────────────────────────────
 
-// Samo TZ stranice koje imaju specifičan HTML sadržaj za scraping
+// Popis prema primjedbama TZ Slavonski Brod-Posavina (srpanj 2026.) i TZ
+// podstranici "kulturna baština". NE vraćati: Living History (program, ne
+// znamenitost), Gajnu i Petnju (nisu u destinaciji), etno-selo Crljen
+// (zatvoreno), Katarinski sajam (sajam — pripada Događanjima, vidi _database.js).
+// Stavke sa statičnim `opis` ne scrapaju se (opis je uredništvo, ne HTML).
 const BASTINA_PAGES = [
   {
-    naziv: 'Muzej tambura (Kuća tambure)',
+    naziv: 'Tvrđava Brod',
+    tip: 'Povijesna tvrđava',
+    link: 'https://www.tzgsb.hr/index.php?page=tvrdjava',
+    adresa: 'Trg Ivane Brlić-Mažuranić, 35000 Slavonski Brod',
+    slika: 'https://www.tzgsb.hr/static/images/r_husari170x120.jpg',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Tvrdava+Brod+Slavonski+Brod',
+    opis: 'Impresivna barokna tvrđava iz 18. stoljeća, jedna od najvećih i najočuvanijih u jugoistočnoj Europi. Gradila se od 1715. do 1780. po nalogu Habsburga; tlocrt je zvjezdastog oblika s opkopima i bastionima. Danas je kulturno središte grada — prostor festivala, koncerata i izložbi. Vanjski prostori dostupni su besplatno cijele godine.',
+  },
+  {
+    naziv: 'Kuća Brlićevih — Interpretacijski centar Ivane Brlić-Mažuranić',
+    tip: 'Spomen-kuća / Interpretacijski centar',
+    link: 'https://www.tzgsb.hr/index.php?page=kuca_brlicevih',
+    slika: 'https://www.tzgsb.hr/static/images/bajkeibm170x120-1.jpg',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Kuca+Brlicevih+Slavonski+Brod',
+    opis: 'Obiteljska kuća Brlić na glavnom gradskom trgu — neoklasicistička jednokatnica iz 1885., podignuta na mjestu starije kuće stradale u požaru 1882. Dom obitelji Brlić u kojem je stvarala Ivana Brlić-Mažuranić; danas spomenik kulture i interpretacijski centar posvećen slavnoj spisateljici.',
+  },
+  {
+    naziv: 'Muzej tambura',
     tip: 'Muzej',
     link: 'https://www.tzgsb.hr/index.php?page=muzejtambura',
     adresa: 'Vukovarska 1, 35000 Slavonski Brod (zapadna kurtina Tvrđave Brod)',
@@ -322,48 +358,24 @@ const BASTINA_PAGES = [
     web: 'https://www.but.hr',
     slika: 'https://www.tzgsb.hr/static/images/svi170-1.jpg',
     karta: 'https://www.google.com/maps/search/?api=1&query=Muzej+tambura+Slavonski+Brod',
+    opis: 'Prvi svjetski muzej tambura, smješten u obnovljenom kazamatu zapadne kurtine Tvrđave Brod. Više od 60 ručno izrađenih eksponata, kreativne radionice izrade žičanih instrumenata i multimedijske prezentacije. Vodi ga Brodska udruga tamburaša.',
   },
   {
-    naziv: 'Kuća Brlićevih — Interpretacijski centar Ivane Brlić-Mažuranić',
-    tip: 'Spomen-kuća / Interpretacijski centar',
-    link: 'https://www.tzgsb.hr/index.php?page=kuca_brlicevih',
-    slika: 'https://www.tzgsb.hr/static/images/bajkeibm170x120-1.jpg',
-    karta: 'https://www.google.com/maps/search/?api=1&query=Kuca+Brlicevih+Slavonski+Brod',
+    naziv: 'Franjevački samostan i crkva sv. Trojstva',
+    tip: 'Sakralni objekt',
+    link: 'https://www.tzgsb.hr/index.php?page=povijesne_znamenitosti',
+    adresa: 'Franjevačka ul. 12, 35000 Slavonski Brod',
+    slika: 'https://www.tzgsb.hr/static/images/sam170-2.jpg',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Franjevacki+samostan+Slavonski+Brod',
+    opis: 'Franjevački samostan osnovan 1727. godine, smješten neposredno uz Tvrđavu Brod. Barokna crkva sv. Trojstva s bogatim unutarnjim uređenjem. Jedan od najstarijih i najvažnijih samostana u Slavoniji.',
   },
   {
-    naziv: 'Living History — Tvrđava Brod',
-    tip: 'Doživljajna turistička atrakcija',
-    link: 'https://www.tzgsb.hr/index.php?page=livinghistory',
-    adresa: 'Trg pobjede 28/1, 35000 Slavonski Brod (prijava putem TZ)',
-    telefon: '+385 35 447 721',
-    email: 'info@tzgsb.hr',
-    slika: 'https://www.tzgsb.hr/static/images/nslovna_tzgsb.jpg',
-    karta: 'https://www.google.com/maps/search/?api=1&query=Tvrdjava+Brod+Slavonski+Brod',
-  },
-  {
-    naziv: 'Prirodni rezervat Gajna',
-    tip: 'Zaštićeni krajobraz / Priroda',
-    link: 'https://www.tzgsb.hr/index.php?page=prirodni_rezervati',
-    slika: 'https://www.tzgsb.hr/static/images/brodici_1.png',
-    karta: 'https://www.google.com/maps/search/?api=1&query=Gajna+Oprisavci+Slavonski+Brod',
-  },
-  {
-    naziv: 'Izletišta — Etno-selo Crljen i Jezero Petnja',
-    tip: 'Izletište / Ekoturizam',
-    link: 'https://www.tzgsb.hr/index.php?page=izletista',
-    slika: 'https://www.tzgsb.hr/static/images/tic_1.jpg',
-    karta: 'https://www.google.com/maps/search/?api=1&query=Jezero+Petnja+Sibinj',
-  },
-  {
-    naziv: 'Katarinski sajam',
-    tip: 'Tradicionalni sajam',
-    link: 'https://www.tzgsb.hr/index.php?page=sajmovanja',
-    adresa: 'Sportska dvorana Vijuš, Stjepana pl. Horvata 2, 35000 Slavonski Brod',
-    telefon: '+385 35 445 765',
-    email: 'info@brod-turist.hr',
-    web: 'https://www.katarinskisajam.com',
-    slika: 'https://www.tzgsb.hr/static/images/uno-rez170-1.jpg',
-    karta: 'https://www.google.com/maps/search/?api=1&query=Katarinski+sajam+Slavonski+Brod',
+    naziv: 'Crkve u općini Podcrkavlje',
+    tip: 'Sakralna baština',
+    link: 'https://www.tzgsb.hr/index.php?page=povijesne_znamenitosti',
+    slika: 'https://www.tzgsb.hr/static/images/crkva_sv_petra_170.png',
+    karta: 'https://www.google.com/maps/search/?api=1&query=Podcrkavlje',
+    opis: 'Sakralna baština općine Podcrkavlje na obroncima Dilj gore, sjeverno od Slavonskog Broda — povijesne crkve među kojima se ističe crkva sv. Petra. Dio kulturne baštine destinacije Slavonski Brod-Posavina.',
   },
 ];
 
@@ -374,9 +386,7 @@ function extractBastrinaContent(html) {
   // Pokušaj naći specifičan sadržaj stranice u bloku iza navigacije
   // TZ stranice s konkretnim sadržajem imaju ga iza "Preporučujemo!" ili "Living History" ili naziva sekcije
   const contentMarkers = [
-    'Preporučujemo!', 'Living History programi', 'Kuća Brlićevih',
-    'Prirodni rezervat Gajna', 'Izletišta, rekreacija', 'Sajmovanja Sajam',
-    'Gradski vodič',
+    'Preporučujemo!', 'Kuća Brlićevih', 'Gradski vodič',
   ];
   let start = -1;
   for (const marker of contentMarkers) {
@@ -406,18 +416,18 @@ async function scrapeBastina() {
   const result = [];
 
   for (const page of BASTINA_PAGES) {
-    // Za TZ stranice dohvati HTML; za vanjske URL-ove preskoči scraping opisa
+    // Statični (uređivani) opis ima prednost — ne prepisuj ga scrapanim HTML-om.
+    // Scrapamo samo TZ stranice stavki bez statičnog opisa.
     const isTzPage = page.link.includes('tzgsb.hr/index.php');
     let opis = '';
-    if (isTzPage) {
+    if (isTzPage && !page.opis) {
       const html = await fetchHtml(page.link);
       opis = html ? extractBastrinaContent(html) : '';
     }
-    // Ako već ima kontaktnih podataka u statičnoj definiciji — ne trebamo ih iz HTML-a
     const entry = { ...page };
     if (opis) entry.opis = opis;
     result.push(entry);
-    console.log(`  🏛️  ${page.naziv}: ${opis.length} znakova`);
+    console.log(`  🏛️  ${page.naziv}: ${(entry.opis || '').length} znakova opisa${page.opis ? ' (statično)' : ''}`);
   }
 
   console.log(`✅ Kulturna baština: ${result.length} stavki`);
@@ -790,6 +800,39 @@ async function main() {
     process.exit(0);
   }
 
+  // ── ZAŠTITA PODATAKA ────────────────────────────────────────────────────
+  // Kad izvor privremeno zakaže (mreža, anti-bot provjera…), njegova sekcija
+  // dođe PRAZNA. Prazna sekcija NE SMIJE pregaziti postojeće dobre podatke —
+  // zadržavamo prethodni sadržaj te sekcije (7.7.2026. su tako izbrisani svi
+  // restorani, smještaj i novosti kad je tzgsb.hr uveo bot-provjeru).
+  const prev = await loadPreviousContent();
+  if (prev) {
+    const LIST_KEYS = [
+      'novosti_grad', 'manifestacije_aktualne', 'restorani_tz',
+      'smjestaj_hoteli', 'smjestaj_apartmani', 'kulturna_bastina',
+      'atrakcije_tz', 'dokumenti_strategije', 'dokumenti_ostali',
+    ];
+    for (const key of LIST_KEYS) {
+      const novo = data[key];
+      const staro = prev[key];
+      if (Array.isArray(novo) && novo.length === 0 && Array.isArray(staro) && staro.length > 0) {
+        console.warn(`⚠️  ${key}: novi dohvat prazan — zadržavam ${staro.length} postojećih stavki`);
+        data[key] = staro;
+      }
+    }
+    // Objektne sekcije: o_nama (tekstovi) i poi (OSM točke po kategorijama)
+    const onamaEmpty = Object.values(data.o_nama || {}).every(v => !v);
+    if (onamaEmpty && prev.o_nama && Object.values(prev.o_nama).some(v => v)) {
+      console.warn('⚠️  o_nama: novi dohvat prazan — zadržavam postojeći sadržaj');
+      data.o_nama = prev.o_nama;
+    }
+    const poiCount = obj => Object.values(obj || {}).reduce((s, v) => s + (v?.length || 0), 0);
+    if (poiCount(data.poi) === 0 && poiCount(prev.poi) > 0) {
+      console.warn('⚠️  poi: novi dohvat prazan — zadržavam postojeće točke');
+      data.poi = prev.poi;
+    }
+  }
+
   writeOutput(data);
   console.log(`\n✅ Ukupno scraped:`);
   console.log('  📰 Vijesti:', vijesti.length);
@@ -804,6 +847,17 @@ async function main() {
   console.log('  ℹ️  O nama sekcije:', Object.keys(onama).length);
   const poiTotal = Object.values(poi).reduce((s,v) => s + v.length, 0);
   console.log(`  📍 OSM točke od interesa: ${poiTotal} ukupno`);
+}
+
+// Učitaj postojeći api/_scraped_content.js (za zadržavanje sekcija čiji dohvat zakaže).
+async function loadPreviousContent() {
+  try {
+    const mod = await import(pathToFileURL(resolve('api/_scraped_content.js')).href);
+    return mod.scrapedContent || null;
+  } catch (e) {
+    console.warn('⚠️  Ne mogu učitati postojeći _scraped_content.js:', e.message);
+    return null;
+  }
 }
 
 main().catch(err => {
