@@ -434,7 +434,7 @@ export const db = {
       { "naziv": "Gradska tržnica Slavonski Brod", "opis": "Centralna gradska tržnica s domaćim OPG proizvodima — sezonsko voće i povrće, jaja, mlijeko, sir, med. Pon–Sub jutro.", "adresa": "Tržnica, Slavonski Brod", "karta": "https://www.google.com/maps/search/?api=1&query=Trznica+Slavonski+Brod" }
     ],
     "suveniri": [
-      { "naziv": "TZ Slavonski Brod — suveniri", "opis": "Suveniri s motivima Tvrđave Brod, Brodskog kola i slavonskih motiva. Kulen, brodski med i domaće rakije kao autentični pokloni.", "adresa": "Trg pobjede 28/I, Slavonski Brod", "karta": "https://www.google.com/maps/search/?api=1&query=Turisticka+zajednica+Slavonski+Brod" }
+      { "naziv": "Suvenirnica — Turističko-informativni centar (TIC)", "opis": "Suveniri s motivima Tvrđave Brod, Brodskog kola i slavonskih motiva kupuju se u Turističko-informativnom centru. Kulen, brodski med i domaće rakije kao autentični pokloni. (Napomena: Trg pobjede 28/I je sjedište Turističke zajednice, ne prodajno mjesto suvenira.)", "adresa": "Trg Ivane Brlić Mažuranić 7a, 35000 Slavonski Brod", "karta": "https://www.google.com/maps/search/?api=1&query=Turisticko+informativni+centar+Slavonski+Brod" }
     ]
   },
   "priroda": {

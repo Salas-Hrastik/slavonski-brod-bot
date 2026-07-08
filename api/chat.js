@@ -717,9 +717,9 @@ export default async function handler(req, res) {
       if (!faqReply && (ml.includes('suvenir') || ml.includes('souvenir') || ml.includes('poklon') || ml.includes('gift') || ml.includes('lokalni proizvod') || ml.includes('suvenirnic'))) {
         faqReply =
           '🎁 Suveniri i lokalni proizvodi iz Slavonskog Broda:\n\n' +
-          '🏢 **Turistička zajednica Slavonski Brod**\n' +
-          '📍 Trg pobjede 28/I\n' +
-          'Suveniri s motivima Tvrđave Brod i Brodskog kola\n\n' +
+          '🗺️ **Turističko-informativni centar (TIC)**\n' +
+          '📍 Trg Ivane Brlić Mažuranić 7a, 35000 Slavonski Brod\n' +
+          'Suveniri s motivima Tvrđave Brod i Brodskog kola mogu se kupiti u TIC-u.\n\n' +
           '🌿 **Gradska tržnica** — Domaći OPG proizvodi:\n' +
           'Med, sir, sezonsko voće i povrće, jaja\n\n' +
           '🥩 **Slavonski kulen** — Zaštićena oznaka izvornosti, savršen poklon!\n' +
@@ -946,8 +946,8 @@ STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 - Na Trgu pobjede nema restorana (samo jedan kafić u sklopu hotela Park)
 
 ✅ ISPRAVNI NAZIVI I ČINJENICE:
-- **TIC** (Turistički informativni centar): Trg Ivane Brlić Mažuranić 7a | tel. +385 35 203 696 | tic@tzgsb.hr | radi svaki dan 10:00–17:00
-- **TZ** (Turistička zajednica): Trg pobjede 28/I | tel. +385 35 447 721 | info@tzgsb.hr (administracija, ne info šalter)
+- **TIC** (Turistički informativni centar): Trg Ivane Brlić Mažuranić 7a | tel. +385 35 203 696 | tic@tzgsb.hr | radi svaki dan 10:00–17:00. OVDJE se kupuju SUVENIRI (s motivima Tvrđave Brod i Brodskog kola).
+- **TZ** (Turistička zajednica područja „Slavonski Brod-Posavina"): Trg pobjede 28/I | tel. +385 35 447 721 | info@tzgsb.hr — SJEDIŠTE turističke zajednice (administracija), NIJE prodajno mjesto suvenira ni info šalter.
 - **Palača Horvat**: Ulica Ante Starčevića 8 (prizemlje) — kulturno-povijesna zgrada u centru SB
 - **Kej** = Šetalište uz rijeku Savu (ne "Brodska riva")
 - **Poloj** = riječna plaža uz Savu, s piknik mjestima i igralištima (ne šuma)
