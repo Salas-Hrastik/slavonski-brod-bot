@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-08 07:34 UTC
+// Zadnje skrapanje: 2026-07-08 08:02 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-08T07:34:42.764Z",
+    "zadnje_azuriranje": "2026-07-08T08:02:01.477Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Glazbeni piknik u Tvrđavi donosi opuštenu srpanjsku večer uz bend After Mass",
+      "datum": "07. 07. 2026.",
+      "kratki_opis": "Kazališno-koncertna dvorana \"Ivana Brlić Mažuranić\" u sklopu 37. Brodskog glazbenog ljeta organizira novo izdanje Glazbenog piknika u Tvrđavi, koje se održava u četvrtak, 9. srpnja 2026. godine, s početkom u 21 sat na terasi Kapelanovog stana. Ovoga puta na pozornici će nastupiti sastav After Mass, ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17062-glazbeni-piknik-u-tvrdavi-donosi-opustenu-srpanjsku-vecer-uz-bend-after-mass",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/tvrdava_detalj_resize.jpg"
+    },
     {
       "naslov": "Čestitke Emi Antunović i Petri Aračić na povijesnom plasmanu u finale Svjetskog juniorskog prvenstva u kajaku",
       "datum": "06. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Dječje odmaralište u Starom Gradu na otoku Hvaru jučer je otvorilo vrata za dvadeset učenika iz slovenskog Celja, koji su krenuli na tjedan dana ljetovanja u sklopu dugogodišnjeg prijateljstva dvaju gradova. Do 7. srpnja mladi će gosti uz smještaj i tri obroka dnevno imati na raspolaganju i marendu,",
       "link": "https://www.slavonski-brod.hr/vijesti/17051-mladi-gosti-iz-celja-stigli-na-obale-jadrana-3",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/d25542ec-a230-4590-b431-2333c3899597.jpeg"
-    },
-    {
-      "naslov": "Ovogodišnji izvještaj potvrdio izvrsnu kvalitetu vode za kupanje na Poloju",
-      "datum": "01. 07. 2026.",
-      "kratki_opis": "Grad Slavonski Brod nastavlja s redovitim praćenjem kvalitete vode na gradskom kupalištu Poloj tijekom kupališne sezone, s ciljem osiguravanja sigurnih uvjeta za sve građane i posjetitelje. Prema najnovijem izvještaju o ispitivanju kakvoće vode, koji je izradio Nastavni zavod za javno zdravstvo Brod",
-      "link": "https://www.slavonski-brod.hr/vijesti/17050-ovogodisnji-izvjestaj-potvrdio-izvrsnu-kvalitetu-vode-za-kupanje-na-poloju",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/poloj21_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
