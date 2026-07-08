@@ -1018,6 +1018,13 @@ ${scrapedSection}`;
       messages: anthropicMessages,
     });
 
+    // Mjerenje prompt cachinga (vidljivo u Vercel logovima): ako je cache_read > 0,
+    // keširani sustavski prompt se ponovno koristi (~10x jeftinije i brže).
+    if (completion.usage) {
+      const u = completion.usage;
+      console.log(`[cache] read=${u.cache_read_input_tokens ?? 0} write=${u.cache_creation_input_tokens ?? 0} input=${u.input_tokens ?? 0} output=${u.output_tokens ?? 0}`);
+    }
+
     let raw = (completion.content || [])
       .filter(b => b.type === "text")
       .map(b => b.text)
