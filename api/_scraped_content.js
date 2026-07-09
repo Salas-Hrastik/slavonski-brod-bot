@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-08 08:02 UTC
+// Zadnje skrapanje: 2026-07-09 08:57 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-08T08:02:01.477Z",
+    "zadnje_azuriranje": "2026-07-09T08:57:56.105Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Lista prvenstva za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda po priuštivoj najamnini",
+      "datum": "09. 07. 2026.",
+      "kratki_opis": "Temeljem podnesenih prijava mladih obitelji na natječaj za davanje u najam stanova po priuštivoj najamnini, koji je objavljen 19. svibnja 2026. na Oglasnoj ploči Gradske uprave i na službenoj stranici Grada Slavonskog Broda, sastavljena je lista prvenstva.&nbsp; Listu prvenstva moguće je pronaći u p",
+      "link": "https://www.slavonski-brod.hr/vijesti/17067-lista-prvenstva-za-dodjelu-u-najam-stanova-u-vlasnistvu-grada-slavonskog-broda-po-priustivoj-najamnini-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Grad2.jpeg"
+    },
+    {
+      "naslov": "Objavljena Lista prvenstva za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda",
+      "datum": "09. 07. 2026.",
+      "kratki_opis": "Nakon provedenog postupka Natječaja za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda koji je objavljen 18. svibnja 2026.,&nbsp;objavljena je konačna Lista prvenstva&nbsp;za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda. Listu možete pogledati na oglasnoj ploči u gradskoj ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17066-objavljena-lista-prvenstva-za-dodjelu-u-najam-stanova-u-vlasnistvu-grada-slavonskog-broda-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_1497_resize.jpeg"
+    },
+    {
+      "naslov": "Gradonačelnik Duspara u &quot;Gradskih 60 minuta&quot; o projektima i planovima za grad",
+      "datum": "08. 07. 2026.",
+      "kratki_opis": "Gradonačelnik Slavonskog Broda Mirko Duspara i ovoga je tjedna gostovao u emisiji \"Gradskih 60 minuta\" na Radiju Brod, gdje je odgovarao na pitanja i govorio o aktualnim gradskim temama. Najviše pozornosti izazvala je najava velikog uređenja Parka Klasije, za koje je nedavno potpisan ugovor o financ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17064-gradonacelnik-duspara-u-gradskih-60-minuta-o-projektima-i-planovima-za-grad",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VIZUAL-ZA-GRADSKIH-60-MINUTA-0021.jpg"
+    },
     {
       "naslov": "Glazbeni piknik u Tvrđavi donosi opuštenu srpanjsku večer uz bend After Mass",
       "datum": "07. 07. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Destinacija Slavonski Brod-Posavina i u prvoj polovici 2026. godine bilježi rast turističkog prometa. Prema podacima Turističke zajednice, od siječnja do lipnja ostvareno je 28.855 noćenja, što je 14,17 posto više nego u istom razdoblju lani. Zanimljivo je da domaći gosti više nisu većina – čak 52,3",
       "link": "https://www.slavonski-brod.hr/vijesti/17054-odlicni-turisticki-rezultati-u-destinaciji-slavonski-brod-posavina-u-prvoj-polovici-2026-godine",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/centar_grada_iz_daljeg_resize.jpg"
-    },
-    {
-      "naslov": "Grad Slavonski Brod osigurao besplatan prijevoz učenicima pripadnicima romske nacionalne manjine",
-      "datum": "02. 07. 2026.",
-      "kratki_opis": "Nastavljamo provoditi aktivnosti usmjerene na stvaranje jednakih mogućnosti za sve učenike te unapređenje uvjeta njihova obrazovanja. S tim ciljem, Grad Slavonski Brod je 2. prosinca 2025. godine s Uredom za ljudska prava i prava nacionalnih manjina Vlade Republike Hrvatske sklopio Ugovor o jednokra",
-      "link": "https://www.slavonski-brod.hr/vijesti/17053-grad-slavonski-brod-osigurao-besplatan-prijevoz-ucenicima-pripadnicima-romske-nacionalne-manjine",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/HB.jpg"
-    },
-    {
-      "naslov": "Raspored mobilnih blagajni za srpanj",
-      "datum": "02. 07. 2026.",
-      "kratki_opis": "Obavještavamo građane i građanke kako će mobilne gradske blagajne u srpnju raditi prema sljedećem rasporedu: 13. srpanj 2026. (ponedjeljak) Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30&nbsp; Mjesni dom Podvinje – od 12,30 do 15,00 sati &nbsp; 14. srpanj 2026. (utorak) Mjesni dom Kolonija – od 09",
-      "link": "https://www.slavonski-brod.hr/vijesti/17052-raspored-mobilnih-blagajni-za-srpanj",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Sijecanj/blagajna_resize-1.jpg"
-    },
-    {
-      "naslov": "Mladi gosti iz Celja stigli na obale Jadrana",
-      "datum": "01. 07. 2026.",
-      "kratki_opis": "Dječje odmaralište u Starom Gradu na otoku Hvaru jučer je otvorilo vrata za dvadeset učenika iz slovenskog Celja, koji su krenuli na tjedan dana ljetovanja u sklopu dugogodišnjeg prijateljstva dvaju gradova. Do 7. srpnja mladi će gosti uz smještaj i tri obroka dnevno imati na raspolaganju i marendu,",
-      "link": "https://www.slavonski-brod.hr/vijesti/17051-mladi-gosti-iz-celja-stigli-na-obale-jadrana-3",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/d25542ec-a230-4590-b431-2333c3899597.jpeg"
     }
   ],
   "manifestacije_aktualne": [
