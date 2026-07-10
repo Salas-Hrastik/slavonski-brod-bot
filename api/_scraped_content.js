@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-09 08:57 UTC
+// Zadnje skrapanje: 2026-07-10 08:54 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-09T08:57:56.105Z",
+    "zadnje_azuriranje": "2026-07-10T08:54:08.820Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "37. Brodsko glazbeno ljeto i u srpnju donosi vrhunski glazbeni program na više gradskih lokacija",
+      "datum": "09. 07. 2026.",
+      "kratki_opis": "Ovogodišnje Brodsko glazbeno ljeto i tijekom srpnja nastavlja publici donositi raznolik i kvalitetan glazbeni program, a do završnice manifestacije očekuje nas još pet glazbenih večeri koje spajaju vrhunske izvođače, jedinstvene lokacije i bogatstvo glazbenih stilova. Slijedi raspored nadolazećih pr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17068-37-brodsko-glazbeno-ljeto-i-u-srpnju-donosi-vrhunski-glazbeni-program-na-vise-gradskih-lokacija",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Dizajn_bez_naslova.jpg"
+    },
     {
       "naslov": "Lista prvenstva za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda po priuštivoj najamnini",
       "datum": "09. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Sportsko-rekreacijski centar „Poloj\" već od današnjeg poslijepodneva postaje pozornica jednog od najdražih ljetnih događanja u gradu – Otvorenog prvenstva Slavonskog Broda u kuhanju fiš paprikaša. Uz obalu Save okupit će se čak 60 ekipa iz cijele Slavonije, spremnih da svoje kulinarsko umijeće stave",
       "link": "https://www.slavonski-brod.hr/vijesti/17056-sezdesetak-fis-majstora-danas-se-natjece-za-titulu-najboljeg-na-poloju",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00038_resize.jpeg"
-    },
-    {
-      "naslov": "Odlični turistički rezultati u destinaciji Slavonski Brod-Posavina u prvoj polovici 2026. godine",
-      "datum": "02. 07. 2026.",
-      "kratki_opis": "Destinacija Slavonski Brod-Posavina i u prvoj polovici 2026. godine bilježi rast turističkog prometa. Prema podacima Turističke zajednice, od siječnja do lipnja ostvareno je 28.855 noćenja, što je 14,17 posto više nego u istom razdoblju lani. Zanimljivo je da domaći gosti više nisu većina – čak 52,3",
-      "link": "https://www.slavonski-brod.hr/vijesti/17054-odlicni-turisticki-rezultati-u-destinaciji-slavonski-brod-posavina-u-prvoj-polovici-2026-godine",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/centar_grada_iz_daljeg_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
