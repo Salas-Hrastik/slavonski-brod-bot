@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-10 08:54 UTC
+// Zadnje skrapanje: 2026-07-11 07:27 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-10T08:54:08.820Z",
+    "zadnje_azuriranje": "2026-07-11T07:27:37.792Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Nepropisno odlaganje otpada teret je koji na kraju snose svi savjesni građani",
+      "datum": "10. 07. 2026.",
+      "kratki_opis": "Zabilježen je prizor koji, nažalost, nije rijedak – otpad odložen mimo predviđenih kontejnera i reciklažnih dvorišta, na mjestu koje to nikako ne bi smjelo biti. Važno je reći da nepropisno odlaganje otpada nije bezazlen propust pojedinca, već trošak koji na kraju plaćaju svi. Uklanjanje divljih odl",
+      "link": "https://www.slavonski-brod.hr/vijesti/17070-nepropisno-odlaganje-otpada-teret-je-koji-na-kraju-snose-svi-savjesni-gradani",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_20260709_081736_resize.jpg"
+    },
+    {
+      "naslov": "Objavljene privremene liste upisane djece u gradske dječje vrtiće",
+      "datum": "10. 07. 2026.",
+      "kratki_opis": "I ove su godine dječji vrtići tijekom svibnja proveli redoviti javni poziv za upis djece u dječji vrtić. Ustanove dječjih vrtića tijekom trajanja javnog poziva zaprimile su 568 zahtjeva za novi upis. Prihvaćeni su svi zahtjevi za djecu čija su oba roditelja zaposlena i s prebivalištem u Slavonskom B",
+      "link": "https://www.slavonski-brod.hr/vijesti/17069-objavljene-privremene-liste-upisane-djece-u-gradske-djecje-vrtice",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/37.jpg"
+    },
     {
       "naslov": "37. Brodsko glazbeno ljeto i u srpnju donosi vrhunski glazbeni program na više gradskih lokacija",
       "datum": "09. 07. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonski Brod je danas, u sklopu posjeta potpredsjednika Vlade Republike Hrvatske i ministra prostornoga uređenja, graditeljstva i državne imovine Branka Bačića u Đakovu, sudjelovao na svečanoj dodjeli ugovora o financiranju projekta uređenja Parka Klasije. Događaj je organiziran u okviru sastanka ",
       "link": "https://www.slavonski-brod.hr/vijesti/17058-grad-slavonski-brod-svecano-preuzeo-ugovor-za-uredenje-parka-klasije",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/foto.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod ovog vikenda domaćin 4. Polojskog triatlona i Prvenstva Hrvatske u mješovitim štafetama",
-      "datum": "03. 07. 2026.",
-      "kratki_opis": "Triatlon klub Mazator organizira 4. i 5. srpnja 2026. godine 4. Polojski triatlon, sportsku manifestaciju koja će ove godine imati poseban značaj za Slavonski Brod. U subotu, 4. srpnja, s početkom u 8:30 sati, na rasporedu je 3. kolo Hrvatske triatlon lige, dok će u nedjelju, 5. srpnja, s početkom u",
-      "link": "https://www.slavonski-brod.hr/vijesti/17057-slavonski-brod-ovog-vikenda-domacin-4-polojskog-triatlona-i-prvenstva-hrvatske-u-mjesovitim-stafetama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_8702_resize.jpeg"
-    },
-    {
-      "naslov": "Šezdesetak fiš majstora danas se natječe za titulu najboljeg na Poloju",
-      "datum": "03. 07. 2026.",
-      "kratki_opis": "Sportsko-rekreacijski centar „Poloj\" već od današnjeg poslijepodneva postaje pozornica jednog od najdražih ljetnih događanja u gradu – Otvorenog prvenstva Slavonskog Broda u kuhanju fiš paprikaša. Uz obalu Save okupit će se čak 60 ekipa iz cijele Slavonije, spremnih da svoje kulinarsko umijeće stave",
-      "link": "https://www.slavonski-brod.hr/vijesti/17056-sezdesetak-fis-majstora-danas-se-natjece-za-titulu-najboljeg-na-poloju",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00038_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
