@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-13 08:38 UTC
+// Zadnje skrapanje: 2026-07-14 07:30 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-13T08:38:28.130Z",
+    "zadnje_azuriranje": "2026-07-14T07:30:57.191Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Održana 9. sjednica Gradskog vijeća Grada Slavonskog Broda",
+      "datum": "13. 07. 2026.",
+      "kratki_opis": "U Velikoj vijećnici Gradske uprave danas je održana 9. sjednica Gradskog vijeća Grada Slavonskog Broda. Na sjednici je danas prisustvovalo 17 od ukupno 21 vijećnika. Sjednica je započela Aktualnim satom a na dnevnom redu našlo se 12 točaka. Između ostaloga, usvojen je prijedlog raspodjele financijsk",
+      "link": "https://www.slavonski-brod.hr/vijesti/17072-odrzana-9-sjednica-gradskog-vijeca-grada-slavonskog-broda",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/sjednicanaslovna.jpeg"
+    },
     {
       "naslov": "Nepropisno odlaganje otpada teret je koji na kraju snose svi savjesni građani",
       "datum": "10. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Sportsko-rekreacijski centar „Poloj” sinoć je ponovno bio domaćin jednog od najdražih ljetnih događanja u gradu – Otvorenog prvenstva Slavonskog Broda u kuhanju fiš paprikaša. Uz obalu rijeke Save okupilo se čak 60 ekipa iz cijele Slavonije koje su svoje kulinarsko umijeće stavile na kušnju pred str",
       "link": "https://www.slavonski-brod.hr/vijesti/17060-fisijada-na-poloju-ponovno-okupila-brojne-ljubitelje-slavonske-gastronomije",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_0800_resize.jpeg"
-    },
-    {
-      "naslov": "Grad Slavonski Brod svečano preuzeo ugovor za uređenje Parka Klasije",
-      "datum": "03. 07. 2026.",
-      "kratki_opis": "Slavonski Brod je danas, u sklopu posjeta potpredsjednika Vlade Republike Hrvatske i ministra prostornoga uređenja, graditeljstva i državne imovine Branka Bačića u Đakovu, sudjelovao na svečanoj dodjeli ugovora o financiranju projekta uređenja Parka Klasije. Događaj je organiziran u okviru sastanka ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17058-grad-slavonski-brod-svecano-preuzeo-ugovor-za-uredenje-parka-klasije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/foto.jpg"
     }
   ],
   "manifestacije_aktualne": [
