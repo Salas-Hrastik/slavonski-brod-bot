@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-14 07:30 UTC
+// Zadnje skrapanje: 2026-07-15 07:44 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-14T07:30:57.191Z",
+    "zadnje_azuriranje": "2026-07-15T07:44:37.255Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Podrška koja ne staje ni ljeti: „Zaposlena“ uz starije i osobe s invaliditetom",
+      "datum": "15. 07. 2026.",
+      "kratki_opis": "U ljetnim mjesecima, kada visoke temperature dodatno otežavaju svakodnevicu, posebno starijim osobama i osobama s invaliditetom, podrška u osnovnim životnim potrebama postaje još važnija.&nbsp; Pomoć u pripremi obroka, odlazak u nabavu hrane i lijekova, pospremanje doma, donošenje ogrjeva, pranje ru",
+      "link": "https://www.slavonski-brod.hr/vijesti/17074-podrska-koja-ne-staje-ni-ljeti-zaposlena-uz-starije-i-osobe-s-invaliditetom",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/pomocnica_resize.jpg"
+    },
+    {
+      "naslov": "Jubilarni 10. CMC 200 Slavonija fest vraća glazbeni spektakl u Tvrđavu Brod!",
+      "datum": "15. 07. 2026.",
+      "kratki_opis": "U prostorijama Croatia Recordsa najavljen je jubilarni, 10. CMC 200 Slavonija fest, a festival u srcu Slavonskog Broda donosi popularna glazbena imena!&nbsp; Deset godina glazbe, uspomena i nezaboravnih festivalskih trenutaka slavit će se i ovog ljeta u Slavonskom Brodu. Jubilarni 10. CMC 200 Slavon",
+      "link": "https://www.slavonski-brod.hr/vijesti/17073-jubilarni-10-cmc-200-slavonija-fest-vraca-glazbeni-spektakl-u-tvrdavu-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_slika_resize.jpg"
+    },
     {
       "naslov": "Održana 9. sjednica Gradskog vijeća Grada Slavonskog Broda",
       "datum": "13. 07. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Kazališno-koncertna dvorana \"Ivana Brlić Mažuranić\" u sklopu 37. Brodskog glazbenog ljeta organizira novo izdanje Glazbenog piknika u Tvrđavi, koje se održava u četvrtak, 9. srpnja 2026. godine, s početkom u 21 sat na terasi Kapelanovog stana. Ovoga puta na pozornici će nastupiti sastav After Mass, ",
       "link": "https://www.slavonski-brod.hr/vijesti/17062-glazbeni-piknik-u-tvrdavi-donosi-opustenu-srpanjsku-vecer-uz-bend-after-mass",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/tvrdava_detalj_resize.jpg"
-    },
-    {
-      "naslov": "Čestitke Emi Antunović i Petri Aračić na povijesnom plasmanu u finale Svjetskog juniorskog prvenstva u kajaku",
-      "datum": "06. 07. 2026.",
-      "kratki_opis": "Gradonačelnik Mirko Duspara u ime Grada Slavonskog Broda i svoje osobno ime upućuje iskrene čestitke Emi Antunović i Petri Aračić na povijesnom uspjehu ostvarenom na Svjetskom juniorskom prvenstvu u sprintu na mirnim vodama u Halifaxu! Ema i Petra ostvarile su rezultat koji će ostati trajno upisan u",
-      "link": "https://www.slavonski-brod.hr/vijesti/17061-cestitke-emi-antunovic-i-petri-aracic-na-povijesnom-plasmanu-u-finale-svjetskog-juniorskog-prvenstva-u-kajaku",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/737412659_857702170413210_7447190310632999636_n.jpg"
-    },
-    {
-      "naslov": "Fišijada na Poloju ponovno okupila brojne ljubitelje slavonske gastronomije",
-      "datum": "04. 07. 2026.",
-      "kratki_opis": "Sportsko-rekreacijski centar „Poloj” sinoć je ponovno bio domaćin jednog od najdražih ljetnih događanja u gradu – Otvorenog prvenstva Slavonskog Broda u kuhanju fiš paprikaša. Uz obalu rijeke Save okupilo se čak 60 ekipa iz cijele Slavonije koje su svoje kulinarsko umijeće stavile na kušnju pred str",
-      "link": "https://www.slavonski-brod.hr/vijesti/17060-fisijada-na-poloju-ponovno-okupila-brojne-ljubitelje-slavonske-gastronomije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_0800_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
