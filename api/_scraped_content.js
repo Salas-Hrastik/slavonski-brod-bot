@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-15 07:44 UTC
+// Zadnje skrapanje: 2026-07-16 07:49 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-15T07:44:37.255Z",
+    "zadnje_azuriranje": "2026-07-16T07:49:28.707Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Djeca u Slavonskom Brodu i ovoga ljeta uživaju u raznovrsnim sadržajima",
+      "datum": "15. 07. 2026.",
+      "kratki_opis": "Ljetni praznici vrijeme su odmora, igre, druženja i stvaranja uspomena koje djeca pamte cijeli život. Kako bi najmlađim sugrađanima i tijekom ljetnih mjeseci omogućio kvalitetno, aktivno i sadržajno provođenje slobodnog vremena, Grad Slavonski Brod i ove je godine u suradnji sa svojim ustanovama i p",
+      "link": "https://www.slavonski-brod.hr/vijesti/17075-djeca-u-slavonskom-brodu-i-ovoga-ljeta-uzivaju-u-raznovrsnim-sadrzajima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/djecaigra_resize.jpg"
+    },
     {
       "naslov": "Podrška koja ne staje ni ljeti: „Zaposlena“ uz starije i osobe s invaliditetom",
       "datum": "15. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Gradonačelnik Slavonskog Broda Mirko Duspara i ovoga je tjedna gostovao u emisiji \"Gradskih 60 minuta\" na Radiju Brod, gdje je odgovarao na pitanja i govorio o aktualnim gradskim temama. Najviše pozornosti izazvala je najava velikog uređenja Parka Klasije, za koje je nedavno potpisan ugovor o financ",
       "link": "https://www.slavonski-brod.hr/vijesti/17064-gradonacelnik-duspara-u-gradskih-60-minuta-o-projektima-i-planovima-za-grad",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VIZUAL-ZA-GRADSKIH-60-MINUTA-0021.jpg"
-    },
-    {
-      "naslov": "Glazbeni piknik u Tvrđavi donosi opuštenu srpanjsku večer uz bend After Mass",
-      "datum": "07. 07. 2026.",
-      "kratki_opis": "Kazališno-koncertna dvorana \"Ivana Brlić Mažuranić\" u sklopu 37. Brodskog glazbenog ljeta organizira novo izdanje Glazbenog piknika u Tvrđavi, koje se održava u četvrtak, 9. srpnja 2026. godine, s početkom u 21 sat na terasi Kapelanovog stana. Ovoga puta na pozornici će nastupiti sastav After Mass, ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17062-glazbeni-piknik-u-tvrdavi-donosi-opustenu-srpanjsku-vecer-uz-bend-after-mass",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/tvrdava_detalj_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
