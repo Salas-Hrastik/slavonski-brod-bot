@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-16 07:49 UTC
+// Zadnje skrapanje: 2026-07-17 07:47 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-16T07:49:28.707Z",
+    "zadnje_azuriranje": "2026-07-17T07:47:01.027Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Ove godine Street Food donosi četiri dana najbolje hrane i zabave!",
+      "datum": "16. 07. 2026.",
+      "kratki_opis": "Od 3. do 6. rujna jedinstveni prostor Tvrđave Brod ponovno će postati mjesto okupljanja svih ljubitelja gastronomije, odlične atmosfere i druženja za sve generacije. Nakon što je prošlogodišnje izdanje privuklo oko 6.000 posjetitelja i pokazalo koliko je Slavonski Brod prepoznao ovu manifestaciju, t",
+      "link": "https://www.slavonski-brod.hr/vijesti/17076-ove-godine-street-food-donosi-cetiri-dana-najbolje-hrane-i-zabave",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/strit.png"
+    },
     {
       "naslov": "Djeca u Slavonskom Brodu i ovoga ljeta uživaju u raznovrsnim sadržajima",
       "datum": "15. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Nakon provedenog postupka Natječaja za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda koji je objavljen 18. svibnja 2026.,&nbsp;objavljena je konačna Lista prvenstva&nbsp;za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda. Listu možete pogledati na oglasnoj ploči u gradskoj ",
       "link": "https://www.slavonski-brod.hr/vijesti/17066-objavljena-lista-prvenstva-za-dodjelu-u-najam-stanova-u-vlasnistvu-grada-slavonskog-broda-2",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_1497_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnik Duspara u &quot;Gradskih 60 minuta&quot; o projektima i planovima za grad",
-      "datum": "08. 07. 2026.",
-      "kratki_opis": "Gradonačelnik Slavonskog Broda Mirko Duspara i ovoga je tjedna gostovao u emisiji \"Gradskih 60 minuta\" na Radiju Brod, gdje je odgovarao na pitanja i govorio o aktualnim gradskim temama. Najviše pozornosti izazvala je najava velikog uređenja Parka Klasije, za koje je nedavno potpisan ugovor o financ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17064-gradonacelnik-duspara-u-gradskih-60-minuta-o-projektima-i-planovima-za-grad",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VIZUAL-ZA-GRADSKIH-60-MINUTA-0021.jpg"
     }
   ],
   "manifestacije_aktualne": [
