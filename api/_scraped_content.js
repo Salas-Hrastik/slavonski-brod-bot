@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-20 08:30 UTC
+// Zadnje skrapanje: 2026-07-21 08:01 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-20T08:30:33.847Z",
+    "zadnje_azuriranje": "2026-07-21T08:01:17.984Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "DDD mjere 2026. godine – Proveden 7. (sedmi) larvicidni tretman i monitoring komaraca",
+      "datum": "21. 07. 2026.",
+      "kratki_opis": "Dana 17. srpnja 2026. godine (petak) , stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 7. (sedmi) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih površina utvrđene",
+      "link": "https://www.slavonski-brod.hr/vijesti/17080-ddd-mjere-2026-godine-proveden-7-sedmi-larvicidni-tretman-i-monitoring-komaraca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/komarac_resize.jpg"
+    },
+    {
+      "naslov": "Brodsko dječje odmaralište na Hvaru nudi idealno ljeto za osnovnoškolce",
+      "datum": "20. 07. 2026.",
+      "kratki_opis": "Slavonskobrodsko dječje odmaralište u Starom Gradu na otoku Hvaru i ovoga ljeta ponovno postaje omiljeno odredište za brojne osnovnoškolce s područja Grada Slavonskog Broda i Brodsko-posavske županije. U proteklih pet smjena u odmaralištu su boravili učenici osnovnih škola iz Slavonskog Broda i okol",
+      "link": "https://www.slavonski-brod.hr/vijesti/17079-brodsko-djecje-odmaraliste-na-hvaru-nudi-idealno-ljeto-za-osnovnoskolce",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/hvar_resize.jpg"
+    },
+    {
+      "naslov": "Gradska uprava zaprimila prijeteće poruke",
+      "datum": "20. 07. 2026.",
+      "kratki_opis": "Gradska uprava Grada Slavonskog Broda zaprimila je prijeteću poruku putem e-maila upućenu gradonačelniku Mirku Duspari i pročelnici Upravnog odjela za gospodarstvo Ankici Majetić koja je poslana na njihove službene elektroničke adrese. O cijelom slučaju obaviještena je i policija. Grad Slavonski Bro",
+      "link": "https://www.slavonski-brod.hr/vijesti/17078-gradska-uprava-zaprimila-prijetece-poruke",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/Grad2.jpeg"
+    },
     {
       "naslov": "Ove godine Street Food donosi četiri dana najbolje hrane i zabave!",
       "datum": "16. 07. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "I ove su godine dječji vrtići tijekom svibnja proveli redoviti javni poziv za upis djece u dječji vrtić. Ustanove dječjih vrtića tijekom trajanja javnog poziva zaprimile su 568 zahtjeva za novi upis. Prihvaćeni su svi zahtjevi za djecu čija su oba roditelja zaposlena i s prebivalištem u Slavonskom B",
       "link": "https://www.slavonski-brod.hr/vijesti/17069-objavljene-privremene-liste-upisane-djece-u-gradske-djecje-vrtice",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/37.jpg"
-    },
-    {
-      "naslov": "37. Brodsko glazbeno ljeto i u srpnju donosi vrhunski glazbeni program na više gradskih lokacija",
-      "datum": "09. 07. 2026.",
-      "kratki_opis": "Ovogodišnje Brodsko glazbeno ljeto i tijekom srpnja nastavlja publici donositi raznolik i kvalitetan glazbeni program, a do završnice manifestacije očekuje nas još pet glazbenih večeri koje spajaju vrhunske izvođače, jedinstvene lokacije i bogatstvo glazbenih stilova. Slijedi raspored nadolazećih pr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17068-37-brodsko-glazbeno-ljeto-i-u-srpnju-donosi-vrhunski-glazbeni-program-na-vise-gradskih-lokacija",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Dizajn_bez_naslova.jpg"
-    },
-    {
-      "naslov": "Lista prvenstva za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda po priuštivoj najamnini",
-      "datum": "09. 07. 2026.",
-      "kratki_opis": "Temeljem podnesenih prijava mladih obitelji na natječaj za davanje u najam stanova po priuštivoj najamnini, koji je objavljen 19. svibnja 2026. na Oglasnoj ploči Gradske uprave i na službenoj stranici Grada Slavonskog Broda, sastavljena je lista prvenstva.&nbsp; Listu prvenstva moguće je pronaći u p",
-      "link": "https://www.slavonski-brod.hr/vijesti/17067-lista-prvenstva-za-dodjelu-u-najam-stanova-u-vlasnistvu-grada-slavonskog-broda-po-priustivoj-najamnini-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Grad2.jpeg"
-    },
-    {
-      "naslov": "Objavljena Lista prvenstva za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda",
-      "datum": "09. 07. 2026.",
-      "kratki_opis": "Nakon provedenog postupka Natječaja za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda koji je objavljen 18. svibnja 2026.,&nbsp;objavljena je konačna Lista prvenstva&nbsp;za dodjelu u najam stanova u vlasništvu Grada Slavonskog Broda. Listu možete pogledati na oglasnoj ploči u gradskoj ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17066-objavljena-lista-prvenstva-za-dodjelu-u-najam-stanova-u-vlasnistvu-grada-slavonskog-broda-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_1497_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
