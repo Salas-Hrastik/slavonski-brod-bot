@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-21 08:01 UTC
+// Zadnje skrapanje: 2026-07-22 08:01 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-21T08:01:17.984Z",
+    "zadnje_azuriranje": "2026-07-22T08:01:39.612Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod među vodećim gradovima po ulaganjima u sport",
+      "datum": "21. 07. 2026.",
+      "kratki_opis": "Sport je i tijekom 2025. godine ostao jedno od ključnih područja ulaganja hrvatskih gradova, potvrđuje najnovija analiza portala Gradonačelnik.hr temeljena na podacima FINA-e o izvršenju proračuna jedinica lokalne samouprave. Posebno se ističe Slavonski Brod, koji se prema udjelu izdvajanja za sport",
+      "link": "https://www.slavonski-brod.hr/vijesti/17082-slavonski-brod-medu-vodecim-gradovima-po-ulaganjima-u-sport",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/deca_resize.jpg"
+    },
     {
       "naslov": "DDD mjere 2026. godine – Proveden 7. (sedmi) larvicidni tretman i monitoring komaraca",
       "datum": "21. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Zabilježen je prizor koji, nažalost, nije rijedak – otpad odložen mimo predviđenih kontejnera i reciklažnih dvorišta, na mjestu koje to nikako ne bi smjelo biti. Važno je reći da nepropisno odlaganje otpada nije bezazlen propust pojedinca, već trošak koji na kraju plaćaju svi. Uklanjanje divljih odl",
       "link": "https://www.slavonski-brod.hr/vijesti/17070-nepropisno-odlaganje-otpada-teret-je-koji-na-kraju-snose-svi-savjesni-gradani",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_20260709_081736_resize.jpg"
-    },
-    {
-      "naslov": "Objavljene privremene liste upisane djece u gradske dječje vrtiće",
-      "datum": "10. 07. 2026.",
-      "kratki_opis": "I ove su godine dječji vrtići tijekom svibnja proveli redoviti javni poziv za upis djece u dječji vrtić. Ustanove dječjih vrtića tijekom trajanja javnog poziva zaprimile su 568 zahtjeva za novi upis. Prihvaćeni su svi zahtjevi za djecu čija su oba roditelja zaposlena i s prebivalištem u Slavonskom B",
-      "link": "https://www.slavonski-brod.hr/vijesti/17069-objavljene-privremene-liste-upisane-djece-u-gradske-djecje-vrtice",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/37.jpg"
     }
   ],
   "manifestacije_aktualne": [
