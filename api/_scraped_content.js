@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-22 08:01 UTC
+// Zadnje skrapanje: 2026-07-23 08:04 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-22T08:01:39.612Z",
+    "zadnje_azuriranje": "2026-07-23T08:04:38.050Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Grad Slavonski Brod objavio Javni poziv za predlaganje muških kandidata suca porotnika za mladež",
+      "datum": "22. 07. 2026.",
+      "kratki_opis": "Grad Slavonski Brod poziva sve zainteresirane građane grada Slavonskog Broda koji ispunjavaju uvjete propisane Zakonom o sudovima i Zakonom o sudovima za mladež da&nbsp; podnesu prijavu na Javni poziv za prijedlog kandidata za imenovanje suca porotnika za mladež Županijskog suda u Slavonskom Brodu. ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17086-grad-slavonski-brod-objavio-javni-poziv-za-predlaganje-muskih-kandidata-za-suca-porotnika-za-mladez",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/SUDAC_resize.jpg"
+    },
+    {
+      "naslov": "Gradska knjižnica potvrđuje status kulturnog središta grada",
+      "datum": "22. 07. 2026.",
+      "kratki_opis": "Gradska knjižnica Slavonski Brod nastavlja potvrđivati svoju ulogu jednog od najznačajnijih kulturnih i obrazovnih središta grada, o čemu svjedoči kontinuirano velik interes građana za knjižnične usluge, programe i događanja. Sve veća posjećenost knjižnice potvrđuje da ona odavno nije samo mjesto po",
+      "link": "https://www.slavonski-brod.hr/vijesti/17084-gradska-knjiznica-slavonski-brod-potvrduje-status-kulturnog-sredista-grada",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/LETO_resize.jpg"
+    },
     {
       "naslov": "Slavonski Brod među vodećim gradovima po ulaganjima u sport",
       "datum": "21. 07. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U prostorijama Croatia Recordsa najavljen je jubilarni, 10. CMC 200 Slavonija fest, a festival u srcu Slavonskog Broda donosi popularna glazbena imena!&nbsp; Deset godina glazbe, uspomena i nezaboravnih festivalskih trenutaka slavit će se i ovog ljeta u Slavonskom Brodu. Jubilarni 10. CMC 200 Slavon",
       "link": "https://www.slavonski-brod.hr/vijesti/17073-jubilarni-10-cmc-200-slavonija-fest-vraca-glazbeni-spektakl-u-tvrdavu-brod",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_slika_resize.jpg"
-    },
-    {
-      "naslov": "Održana 9. sjednica Gradskog vijeća Grada Slavonskog Broda",
-      "datum": "13. 07. 2026.",
-      "kratki_opis": "U Velikoj vijećnici Gradske uprave danas je održana 9. sjednica Gradskog vijeća Grada Slavonskog Broda. Na sjednici je danas prisustvovalo 17 od ukupno 21 vijećnika. Sjednica je započela Aktualnim satom a na dnevnom redu našlo se 12 točaka. Između ostaloga, usvojen je prijedlog raspodjele financijsk",
-      "link": "https://www.slavonski-brod.hr/vijesti/17072-odrzana-9-sjednica-gradskog-vijeca-grada-slavonskog-broda",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/sjednicanaslovna.jpeg"
-    },
-    {
-      "naslov": "Nepropisno odlaganje otpada teret je koji na kraju snose svi savjesni građani",
-      "datum": "10. 07. 2026.",
-      "kratki_opis": "Zabilježen je prizor koji, nažalost, nije rijedak – otpad odložen mimo predviđenih kontejnera i reciklažnih dvorišta, na mjestu koje to nikako ne bi smjelo biti. Važno je reći da nepropisno odlaganje otpada nije bezazlen propust pojedinca, već trošak koji na kraju plaćaju svi. Uklanjanje divljih odl",
-      "link": "https://www.slavonski-brod.hr/vijesti/17070-nepropisno-odlaganje-otpada-teret-je-koji-na-kraju-snose-svi-savjesni-gradani",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/IMG_20260709_081736_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
