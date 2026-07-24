@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-23 08:04 UTC
+// Zadnje skrapanje: 2026-07-24 08:01 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-23T08:04:38.050Z",
+    "zadnje_azuriranje": "2026-07-24T08:01:13.201Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Glazbom ispraćeno 37. Brodsko glazbeno ljeto",
+      "datum": "24. 07. 2026.",
+      "kratki_opis": "Sinoć je svečano zatvoreno 37. izdanje Brodskoga glazbenoga ljeta, manifestacije koja je i ove godine Slavonski Brod pretvorila u živu pozornicu ispunjenu raznovrsnim glazbenim programima, talentiranim izvođačima i brojnom publikom. Tijekom lipnja i srpnja, Brođani i njihovi gosti uživali su u bogat",
+      "link": "https://www.slavonski-brod.hr/vijesti/17089-glazbom-ispraceno-37-brodsko-glazbeno-ljeto",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/glazbeno_resize.jpg"
+    },
+    {
+      "naslov": "Svečano zatvaranje 37. Brodskog glazbenog ljeta uz koncert ansambla Sudar Percussion",
+      "datum": "23. 07. 2026.",
+      "kratki_opis": "Kazališno-koncertna dvorana Ivana Brlić-Mažuranić priprema završnicu 37. Brodskog glazbenog ljeta, koje će biti zaključeno atraktivnim koncertom renomiranog udaraljkaškog ansambla Sudar Percussion. Na ljetnoj pozornici ispred Kazališno-koncertne dvorane Ivana Brlić-Mažuranić, u četvrtak 23. srpnja s",
+      "link": "https://www.slavonski-brod.hr/vijesti/17088-svecano-zatvaranje-37-brodskog-glazbenog-ljeta-uz-koncert-ansambla-sudar-percussion",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/FOTKA_KKD_resize.jpg"
+    },
+    {
+      "naslov": "Otkrivena spomen-ploča u znak sjećanja na žrtve tragične nesreće državljana Kosova",
+      "datum": "23. 07. 2026.",
+      "kratki_opis": "U Slavonskom Brodu danas je održano otkrivanje spomen-ploče posvećene žrtvama tragične prometne nesreće koja se dogodila 25. srpnja 2021. godine na autocesti A3. Komemorativni događaj organiziralo je Veleposlanstvo Republike Kosova u Republici Hrvatskoj. Otkrivanjem spomen-ploče i polaganjem vijenac",
+      "link": "https://www.slavonski-brod.hr/vijesti/17087-otkrivena-spomen-ploca-u-slavonskom-brodu-u-znak-sjecanja-na-zrtve-tragicne-nesrece-drzavljana-kosova",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/KOS.jpeg"
+    },
     {
       "naslov": "Grad Slavonski Brod objavio Javni poziv za predlaganje muških kandidata suca porotnika za mladež",
       "datum": "22. 07. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Od 3. do 6. rujna jedinstveni prostor Tvrđave Brod ponovno će postati mjesto okupljanja svih ljubitelja gastronomije, odlične atmosfere i druženja za sve generacije. Nakon što je prošlogodišnje izdanje privuklo oko 6.000 posjetitelja i pokazalo koliko je Slavonski Brod prepoznao ovu manifestaciju, t",
       "link": "https://www.slavonski-brod.hr/vijesti/17076-ove-godine-street-food-donosi-cetiri-dana-najbolje-hrane-i-zabave",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/strit.png"
-    },
-    {
-      "naslov": "Djeca u Slavonskom Brodu i ovoga ljeta uživaju u raznovrsnim sadržajima",
-      "datum": "15. 07. 2026.",
-      "kratki_opis": "Ljetni praznici vrijeme su odmora, igre, druženja i stvaranja uspomena koje djeca pamte cijeli život. Kako bi najmlađim sugrađanima i tijekom ljetnih mjeseci omogućio kvalitetno, aktivno i sadržajno provođenje slobodnog vremena, Grad Slavonski Brod i ove je godine u suradnji sa svojim ustanovama i p",
-      "link": "https://www.slavonski-brod.hr/vijesti/17075-djeca-u-slavonskom-brodu-i-ovoga-ljeta-uzivaju-u-raznovrsnim-sadrzajima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/djecaigra_resize.jpg"
-    },
-    {
-      "naslov": "Podrška koja ne staje ni ljeti: „Zaposlena“ uz starije i osobe s invaliditetom",
-      "datum": "15. 07. 2026.",
-      "kratki_opis": "U ljetnim mjesecima, kada visoke temperature dodatno otežavaju svakodnevicu, posebno starijim osobama i osobama s invaliditetom, podrška u osnovnim životnim potrebama postaje još važnija.&nbsp; Pomoć u pripremi obroka, odlazak u nabavu hrane i lijekova, pospremanje doma, donošenje ogrjeva, pranje ru",
-      "link": "https://www.slavonski-brod.hr/vijesti/17074-podrska-koja-ne-staje-ni-ljeti-zaposlena-uz-starije-i-osobe-s-invaliditetom",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/pomocnica_resize.jpg"
-    },
-    {
-      "naslov": "Jubilarni 10. CMC 200 Slavonija fest vraća glazbeni spektakl u Tvrđavu Brod!",
-      "datum": "15. 07. 2026.",
-      "kratki_opis": "U prostorijama Croatia Recordsa najavljen je jubilarni, 10. CMC 200 Slavonija fest, a festival u srcu Slavonskog Broda donosi popularna glazbena imena!&nbsp; Deset godina glazbe, uspomena i nezaboravnih festivalskih trenutaka slavit će se i ovog ljeta u Slavonskom Brodu. Jubilarni 10. CMC 200 Slavon",
-      "link": "https://www.slavonski-brod.hr/vijesti/17073-jubilarni-10-cmc-200-slavonija-fest-vraca-glazbeni-spektakl-u-tvrdavu-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_slika_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
