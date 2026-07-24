@@ -1344,27 +1344,125 @@ setTimeout(() => {
   }).catch(() => {});
 }, 500);
 
-// ===== GLASOVNI UNOS (Web Speech API) =====
+// ===== GLASOVNI UNOS =====
+// Dva puta: (1) Web Speech API (Chrome/Edge/Android) — prepoznavanje u pregledniku;
+// (2) snimanje + /api/transcribe (Whisper) za uređaje BEZ Web Speecha (iPhone/iPad
+// Safari, Firefox). iOS Safari zna PRIJAVITI webkitSpeechRecognition koji ne radi —
+// zato na iOS-u (ako je dostupno snimanje) UVIJEK biramo snimanje.
 (function(){
   const micBtn  = document.getElementById("mic-btn");
   const micMsg  = document.getElementById("mic-unsupported");
   const input   = document.getElementById("user-input");
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-  if(!SpeechRecognition){
-    // Browser ne podržava — sakrij gumb, prikaži poruku
+  const ua = navigator.userAgent || '';
+  const isIOS = /iPad|iPhone|iPod/.test(ua) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const canRecord = typeof MediaRecorder !== 'undefined' &&
+    !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+  const useRecorder = canRecord && (isIOS || !SpeechRecognition);
+
+  if(!SpeechRecognition && !useRecorder){
+    // Nijedan način nije dostupan — sakrij gumb, prikaži poruku
     micBtn.style.display = "none";
     micMsg.style.display = "inline";
     return;
   }
 
+  let listening = false;
+
+  function resetMic(){
+    listening = false;
+    micBtn.classList.remove("listening");
+    input.placeholder = t('placeholder');
+  }
+
+  if(useRecorder){
+    // ----- FALLBACK: snimanje → /api/transcribe (Whisper) -----
+    let mediaRecorder = null, chunks = [], stream = null, maxTimer = null;
+
+    const blobToBase64 = (blob) => new Promise((resolve, reject) => {
+      const fr = new FileReader();
+      fr.onload  = () => resolve(String(fr.result).split(',')[1] || '');
+      fr.onerror = reject;
+      fr.readAsDataURL(blob);
+    });
+    const stopStream = () => { if(stream){ stream.getTracks().forEach(tr => tr.stop()); stream = null; } };
+
+    async function startRec(){
+      try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+      catch(e){
+        input.placeholder = t('micDenied');
+        setTimeout(() => { input.placeholder = t('placeholder'); }, 3000);
+        resetMic();
+        return;
+      }
+      let mr;
+      try { mr = new MediaRecorder(stream); }
+      catch(e){ stopStream(); micBtn.style.display = "none"; micMsg.style.display = "inline"; return; }
+      mediaRecorder = mr; chunks = [];
+      mr.ondataavailable = e => { if(e.data && e.data.size) chunks.push(e.data); };
+      mr.onstop = onStop;
+      mr.start();
+      listening = true;
+      micBtn.classList.add("listening");
+      input.value = "";
+      input.placeholder = t('micListen');
+      // Sigurnosni maksimum snimanja: 12 s
+      maxTimer = setTimeout(() => { if(mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop(); }, 12000);
+    }
+
+    async function onStop(){
+      clearTimeout(maxTimer);
+      const blob = new Blob(chunks, { type: (mediaRecorder && mediaRecorder.mimeType) || 'audio/webm' });
+      stopStream();
+      micBtn.classList.remove("listening");
+      listening = false;
+      if(blob.size < 1200){ // pretiho/prekratko
+        input.placeholder = t('micNospeech');
+        setTimeout(() => { input.placeholder = t('placeholder'); }, 2500);
+        return;
+      }
+      input.placeholder = t('micListen'); // "prepisujem…"
+      try {
+        const audio = await blobToBase64(blob);
+        const r = await fetch('/api/transcribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ audio, mime: blob.type, lang: currentLang })
+        });
+        const data = await r.json().catch(() => ({}));
+        const text = (data.text || '').trim();
+        input.placeholder = t('placeholder');
+        if(r.ok && text){
+          input.value = text;
+          setTimeout(() => sendMessage(), 400);
+        } else if(!text){
+          input.placeholder = t('micNospeech');
+          setTimeout(() => { input.placeholder = t('placeholder'); }, 2500);
+        }
+      } catch(e){
+        input.placeholder = t('placeholder');
+      }
+    }
+
+    micBtn.addEventListener("click", function(){
+      if(listening){
+        if(mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop();
+        return;
+      }
+      startRec();
+    });
+    return;
+  }
+
+  // ----- Web Speech API (Chrome/Edge/Android) -----
   const recognition = new SpeechRecognition();
   window._recognition = recognition; // da applyLang može prebaciti jezik prepoznavanja
   recognition.lang = {hr:'hr-HR',en:'en-US',de:'de-DE'}[currentLang] || 'hr-HR';
   recognition.continuous = false;    // Stani nakon prve pauze
   recognition.interimResults = true; // Prikaži međurezultate dok govori
 
-  let listening = false;
   let autoSubmit = false;
 
   micBtn.addEventListener("click", function(){
@@ -1411,12 +1509,6 @@ setTimeout(() => {
       setTimeout(() => { input.placeholder = t('placeholder'); }, 2500);
     }
   });
-
-  function resetMic(){
-    listening = false;
-    micBtn.classList.remove("listening");
-    input.placeholder = t('placeholder');
-  }
 })();
 
 // ===== INIT JEZIKA — primijeni spremljeni jezik pri učitavanju =====
