@@ -1378,8 +1378,12 @@ setTimeout(() => {
   }
 
   if(useRecorder){
-    // ----- FALLBACK: snimanje → /api/transcribe (Whisper) -----
-    let mediaRecorder = null, chunks = [], stream = null, maxTimer = null;
+    // ----- FALLBACK (iPhone/Safari/Firefox): snimanje → /api/transcribe (Whisper) -----
+    // "Near-live diktat": snimamo u isječcima (svake 1 s) i svakih ~2,5 s prepisujemo
+    // DOSAD izgovoreno, pa tekst RASTE u polju dok korisnik govori. Whisper je skupni
+    // (ne daje riječ-po-riječ kao Web Speech), pa je ovo najbliže diktatu na iPhoneu.
+    let mediaRecorder = null, chunks = [], stream = null, maxTimer = null, liveTimer = null;
+    let transcribing = false, finished = false;
 
     const blobToBase64 = (blob) => new Promise((resolve, reject) => {
       const fr = new FileReader();
@@ -1389,10 +1393,34 @@ setTimeout(() => {
     });
     const stopStream = () => { if(stream){ stream.getTracks().forEach(tr => tr.stop()); stream = null; } };
 
+    async function transcribeBlob(blob){
+      const audio = await blobToBase64(blob);
+      const r = await fetch('/api/transcribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ audio, mime: blob.type, lang: currentLang })
+      });
+      const data = await r.json().catch(() => ({}));
+      return { ok: r.ok, text: (data.text || '').trim() };
+    }
+
+    // Djelomični ("živi") prijepis dok korisnik govori — prepiše sve dosad snimljeno.
+    async function livePartial(){
+      if(transcribing || finished || chunks.length === 0) return;
+      const blob = new Blob(chunks, { type: (mediaRecorder && mediaRecorder.mimeType) || 'audio/webm' });
+      if(blob.size < 1600) return;
+      transcribing = true;
+      try {
+        const { ok, text } = await transcribeBlob(blob);
+        if(ok && text && !finished) input.value = text; // progresivno raste
+      } catch(e){ /* zanemari — konačni prijepis na stopu je mjerodavan */ }
+      transcribing = false;
+    }
+
     async function startRec(){
       // listening = true ODMAH (prije async getUserMedia) — sprječava da drugi tap
       // tijekom pokretanja pokrene NOVO snimanje i obriše već prepoznati tekst.
-      listening = true;
+      listening = true; finished = false; chunks = [];
       micBtn.classList.add("listening");
       input.value = "";
       input.placeholder = t('micListen');
@@ -1406,42 +1434,38 @@ setTimeout(() => {
       let mr;
       try { mr = new MediaRecorder(stream); }
       catch(e){ stopStream(); resetMic(); micBtn.style.display = "none"; micMsg.style.display = "inline"; return; }
-      mediaRecorder = mr; chunks = [];
+      mediaRecorder = mr;
       mr.ondataavailable = e => { if(e.data && e.data.size) chunks.push(e.data); };
       mr.onstop = onStop;
-      mr.start();
-      // Sigurnosni maksimum snimanja: 12 s
-      maxTimer = setTimeout(() => { if(mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop(); }, 12000);
+      mr.start(1000); // isječak svake 1 s → periodični chunkovi za živi prijepis
+      liveTimer = setInterval(livePartial, 2500);
+      // Sigurnosni maksimum snimanja: 30 s
+      maxTimer = setTimeout(() => { if(mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop(); }, 30000);
     }
 
     async function onStop(){
+      finished = true;
+      clearInterval(liveTimer);
       clearTimeout(maxTimer);
       const blob = new Blob(chunks, { type: (mediaRecorder && mediaRecorder.mimeType) || 'audio/webm' });
       stopStream();
       micBtn.classList.remove("listening");
       listening = false;
       if(blob.size < 1200){ // pretiho/prekratko
-        input.placeholder = t('micNospeech');
-        setTimeout(() => { input.placeholder = t('placeholder'); }, 2500);
+        if(!input.value.trim()){
+          input.placeholder = t('micNospeech');
+          setTimeout(() => { input.placeholder = t('placeholder'); }, 2500);
+        }
         return;
       }
       input.placeholder = t('micListen'); // "prepisujem…"
       try {
-        const audio = await blobToBase64(blob);
-        const r = await fetch('/api/transcribe', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ audio, mime: blob.type, lang: currentLang })
-        });
-        const data = await r.json().catch(() => ({}));
-        const text = (data.text || '').trim();
+        // Konačni, potpuni prijepis (mjerodavan) — korisnik ga PROVJERI/ISPRAVI i
+        // sam pošalje (Enter ili gumb Pošalji). Whisper zna pogriješiti.
+        const { ok, text } = await transcribeBlob(blob);
         input.placeholder = t('placeholder');
-        if(r.ok && text){
-          // Prikaži prepoznati tekst u polju — korisnik ga PROVJERI/ISPRAVI i sam
-          // pošalje (Enter ili gumb Pošalji). Whisper zna pogriješiti, pa je važno
-          // da vidi što je shvaćeno prije slanja.
-          input.value = text;
-        } else if(!text){
+        if(ok && text) input.value = text;
+        else if(!input.value.trim()){
           input.placeholder = t('micNospeech');
           setTimeout(() => { input.placeholder = t('placeholder'); }, 2500);
         }
