@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-24 08:01 UTC
+// Zadnje skrapanje: 2026-07-25 07:46 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-24T08:01:13.201Z",
+    "zadnje_azuriranje": "2026-07-25T07:46:50.220Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Deset obitelji u Slavonskom Brodu dobilo opremu za novorođenčad",
+      "datum": "24. 07. 2026.",
+      "kratki_opis": "U Slavonskom Brodu i danas je nastavljena provedba mjere kojom Grad pruža podršku obiteljima s novorođenom djecom. Oprema za bebe uručena je za deset obitelji, a dodjelu je, kao i u prethodnim prilikama, predvodila zamjenica gradonačelnika Marina Martić Puača. Riječ je o mjeri koja se provodi od 201",
+      "link": "https://www.slavonski-brod.hr/vijesti/17090-deset-obitelji-u-slavonskom-brodu-dobilo-opremu-za-novorodencad",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/BE.jpeg"
+    },
     {
       "naslov": "Glazbom ispraćeno 37. Brodsko glazbeno ljeto",
       "datum": "24. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Gradska uprava Grada Slavonskog Broda zaprimila je prijeteću poruku putem e-maila upućenu gradonačelniku Mirku Duspari i pročelnici Upravnog odjela za gospodarstvo Ankici Majetić koja je poslana na njihove službene elektroničke adrese. O cijelom slučaju obaviještena je i policija. Grad Slavonski Bro",
       "link": "https://www.slavonski-brod.hr/vijesti/17078-gradska-uprava-zaprimila-prijetece-poruke",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/Grad2.jpeg"
-    },
-    {
-      "naslov": "Ove godine Street Food donosi četiri dana najbolje hrane i zabave!",
-      "datum": "16. 07. 2026.",
-      "kratki_opis": "Od 3. do 6. rujna jedinstveni prostor Tvrđave Brod ponovno će postati mjesto okupljanja svih ljubitelja gastronomije, odlične atmosfere i druženja za sve generacije. Nakon što je prošlogodišnje izdanje privuklo oko 6.000 posjetitelja i pokazalo koliko je Slavonski Brod prepoznao ovu manifestaciju, t",
-      "link": "https://www.slavonski-brod.hr/vijesti/17076-ove-godine-street-food-donosi-cetiri-dana-najbolje-hrane-i-zabave",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/strit.png"
     }
   ],
   "manifestacije_aktualne": [
