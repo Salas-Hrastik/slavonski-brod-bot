@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-26 08:00 UTC
+// Zadnje skrapanje: 2026-07-27 09:00 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-26T08:00:13.833Z",
+    "zadnje_azuriranje": "2026-07-27T09:00:14.357Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Psihomodo Pop, Neda Ukraden i brojna poznata imena stižu u Slavonski Brod",
+      "datum": "27. 07. 2026.",
+      "kratki_opis": "Slavonski Brod i ovog će ljeta postati nezaobilazno okupljalište domaće i regionalne glazbe. Krajem kolovoza u impresivnom ambijentu Tvrđave Brod održava se jubilarno, deseto izdanje CMC 200 Slavonija fest, koje donosi dva dana ispunjena koncertima, dobrom atmosferom i druženjem. Festival će se održ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17092-psihomodo-pop-neda-ukraden-i-brojna-poznata-imena-stizu-u-slavonski-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_festival_resize.jpg"
+    },
+    {
+      "naslov": "Na dograđenom dijelu DV „Kosjenka“ postavljena fasada, vrtić donosi 80 novih mjesta",
+      "datum": "27. 07. 2026.",
+      "kratki_opis": "Grad Slavonski Brod nastavlja s ulaganjima u predškolski odgoj i obrazovanje, a u fokusu su trenutačno radovi na dogradnji Dječjeg vrtića „Kosjenka“, gdje je postavljena fasada, čime je objekt dobio završni vanjski izgled i ušao u završnu fazu radova. Tijekom proteklog razdoblja izvedeni su radovi n",
+      "link": "https://www.slavonski-brod.hr/vijesti/17091-postavljena-fasada-na-kosjenki-vrtic-donosi-80-novih-mjesta",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/NASKOS_resize.jpeg"
+    },
     {
       "naslov": "Deset obitelji u Slavonskom Brodu dobilo opremu za novorođenčad",
       "datum": "24. 07. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Dana 17. srpnja 2026. godine (petak) , stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 7. (sedmi) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih površina utvrđene",
       "link": "https://www.slavonski-brod.hr/vijesti/17080-ddd-mjere-2026-godine-proveden-7-sedmi-larvicidni-tretman-i-monitoring-komaraca",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/komarac_resize.jpg"
-    },
-    {
-      "naslov": "Brodsko dječje odmaralište na Hvaru nudi idealno ljeto za osnovnoškolce",
-      "datum": "20. 07. 2026.",
-      "kratki_opis": "Slavonskobrodsko dječje odmaralište u Starom Gradu na otoku Hvaru i ovoga ljeta ponovno postaje omiljeno odredište za brojne osnovnoškolce s područja Grada Slavonskog Broda i Brodsko-posavske županije. U proteklih pet smjena u odmaralištu su boravili učenici osnovnih škola iz Slavonskog Broda i okol",
-      "link": "https://www.slavonski-brod.hr/vijesti/17079-brodsko-djecje-odmaraliste-na-hvaru-nudi-idealno-ljeto-za-osnovnoskolce",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/hvar_resize.jpg"
-    },
-    {
-      "naslov": "Gradska uprava zaprimila prijeteće poruke",
-      "datum": "20. 07. 2026.",
-      "kratki_opis": "Gradska uprava Grada Slavonskog Broda zaprimila je prijeteću poruku putem e-maila upućenu gradonačelniku Mirku Duspari i pročelnici Upravnog odjela za gospodarstvo Ankici Majetić koja je poslana na njihove službene elektroničke adrese. O cijelom slučaju obaviještena je i policija. Grad Slavonski Bro",
-      "link": "https://www.slavonski-brod.hr/vijesti/17078-gradska-uprava-zaprimila-prijetece-poruke",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Svibanj/Grad2.jpeg"
     }
   ],
   "manifestacije_aktualne": [
