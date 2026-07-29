@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-28 08:08 UTC
+// Zadnje skrapanje: 2026-07-29 08:12 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-28T08:08:02.170Z",
+    "zadnje_azuriranje": "2026-07-29T08:12:22.290Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod među vodećim gradovima po broju novorođenih",
+      "datum": "29. 07. 2026.",
+      "kratki_opis": "Prema analizi portala Gradonačelnik.hr , koja se temelji na podacima Državnog zavoda za statistiku, u Hrvatskoj je tijekom 2025. godine rođeno 32.479 djece, što je 410 više nego 2024. godine. Time je nakon višegodišnjeg pada zabilježen prvi porast broja rođenih, uz istodobno smanjenje prirodnog minu",
+      "link": "https://www.slavonski-brod.hr/vijesti/17099-slavonski-brod-medu-vodecim-gradovima-po-broju-novorodenih",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/grad_bebe.png"
+    },
+    {
+      "naslov": "Kuća tambure ugostit će Vesnu Pisarović i vrhunske međunarodne glazbenike",
+      "datum": "28. 07. 2026.",
+      "kratki_opis": "Galerija umjetnina grada Slavonskog Broda s posebnim zadovoljstvom najavljuje gostovanje jedne od najintrigantnijih hrvatskih glazbenica današnjice, Vesne Pisarović. U četvrtak, 30. srpnja, u Kući tambure slavonskobrodska publika imat će priliku upoznati umjetnicu čiji je izniman stvaralački put obi",
+      "link": "https://www.slavonski-brod.hr/vijesti/17097-kuca-tambure-ugostit-ce-vesnu-pisarovic-i-vrhunske-medunarodne-glazbenike",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/logo_tambura.jpg"
+    },
+    {
+      "naslov": "Nakon deset godina čekanja otvoren put realizaciji projekta „Brod 2“ vrijednog preko 120 milijuna eura",
+      "datum": "28. 07. 2026.",
+      "kratki_opis": "Ministarstvo zaštite okoliša i zelene tranzicije objavilo je poziv na izravnu dodjelu bespovratnih sredstava za projekt „Izgradnja vodnokomunalne infrastrukture aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji Andrijevci“, čime je otvoren put realizaciji jednog od najvažnijih infrastrukt",
+      "link": "https://www.slavonski-brod.hr/vijesti/17096-nakon-deset-godina-cekanja-otvoren-put-realizaciji-projekta-brod-2-vrijednog-preko-120-milijuna-eura",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/vodovod_brod.png"
+    },
+    {
+      "naslov": "Slavonski Brod domaćin završnice Prvenstva Hrvatske u odbojci na pijesku",
+      "datum": "28. 07. 2026.",
+      "kratki_opis": "Prvi vikend u kolovozu, 1. i 2. kolovoza 2026. godine, Slavonski Brod bit će domaćin jednog od najvažnijih domaćih natjecanja u odbojci na pijesku: Otvorenog prvenstva Hrvatske u odbojci na pijesku, u sklopu kojeg će se održati Masters, odnosno završnica Prvenstva Hrvatske. Završni turnir organizira",
+      "link": "https://www.slavonski-brod.hr/vijesti/17093-slavonski-brod-domacin-zavrsnice-prvenstva-hrvatske-u-odbojci-na-pijesku",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/lopta_resize.jpg"
+    },
     {
       "naslov": "Psihomodo Pop, Neda Ukraden i brojna poznata imena stižu u Slavonski Brod",
       "datum": "27. 07. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U Slavonskom Brodu danas je održano otkrivanje spomen-ploče posvećene žrtvama tragične prometne nesreće koja se dogodila 25. srpnja 2021. godine na autocesti A3. Komemorativni događaj organiziralo je Veleposlanstvo Republike Kosova u Republici Hrvatskoj. Otkrivanjem spomen-ploče i polaganjem vijenac",
       "link": "https://www.slavonski-brod.hr/vijesti/17087-otkrivena-spomen-ploca-u-slavonskom-brodu-u-znak-sjecanja-na-zrtve-tragicne-nesrece-drzavljana-kosova",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/KOS.jpeg"
-    },
-    {
-      "naslov": "Grad Slavonski Brod objavio Javni poziv za predlaganje muških kandidata suca porotnika za mladež",
-      "datum": "22. 07. 2026.",
-      "kratki_opis": "Grad Slavonski Brod poziva sve zainteresirane građane grada Slavonskog Broda koji ispunjavaju uvjete propisane Zakonom o sudovima i Zakonom o sudovima za mladež da&nbsp; podnesu prijavu na Javni poziv za prijedlog kandidata za imenovanje suca porotnika za mladež Županijskog suda u Slavonskom Brodu. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17086-grad-slavonski-brod-objavio-javni-poziv-za-predlaganje-muskih-kandidata-za-suca-porotnika-za-mladez",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/SUDAC_resize.jpg"
-    },
-    {
-      "naslov": "Gradska knjižnica potvrđuje status kulturnog središta grada",
-      "datum": "22. 07. 2026.",
-      "kratki_opis": "Gradska knjižnica Slavonski Brod nastavlja potvrđivati svoju ulogu jednog od najznačajnijih kulturnih i obrazovnih središta grada, o čemu svjedoči kontinuirano velik interes građana za knjižnične usluge, programe i događanja. Sve veća posjećenost knjižnice potvrđuje da ona odavno nije samo mjesto po",
-      "link": "https://www.slavonski-brod.hr/vijesti/17084-gradska-knjiznica-slavonski-brod-potvrduje-status-kulturnog-sredista-grada",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/LETO_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod među vodećim gradovima po ulaganjima u sport",
-      "datum": "21. 07. 2026.",
-      "kratki_opis": "Sport je i tijekom 2025. godine ostao jedno od ključnih područja ulaganja hrvatskih gradova, potvrđuje najnovija analiza portala Gradonačelnik.hr temeljena na podacima FINA-e o izvršenju proračuna jedinica lokalne samouprave. Posebno se ističe Slavonski Brod, koji se prema udjelu izdvajanja za sport",
-      "link": "https://www.slavonski-brod.hr/vijesti/17082-slavonski-brod-medu-vodecim-gradovima-po-ulaganjima-u-sport",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/deca_resize.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – Proveden 7. (sedmi) larvicidni tretman i monitoring komaraca",
-      "datum": "21. 07. 2026.",
-      "kratki_opis": "Dana 17. srpnja 2026. godine (petak) , stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 7. (sedmi) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih površina utvrđene",
-      "link": "https://www.slavonski-brod.hr/vijesti/17080-ddd-mjere-2026-godine-proveden-7-sedmi-larvicidni-tretman-i-monitoring-komaraca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/komarac_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
