@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-29 08:12 UTC
+// Zadnje skrapanje: 2026-07-30 08:00 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-29T08:12:22.290Z",
+    "zadnje_azuriranje": "2026-07-30T08:00:34.288Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Nakon napada u centru, Grad uputio zamolbu policiji",
+      "datum": "29. 07. 2026.",
+      "kratki_opis": "Nakon nemilog događaja koji se dogodio u Ulici Ivana pl. Zajca u središtu Slavonskog Broda, Grad Slavonski Brod uputio je zamolbu Policijskoj upravi brodsko-posavskoj da, u okviru svojih nadležnosti, pojača nadzor i prisutnost nadležnih službi na lokacijama u gradu na kojima se okuplja veći broj gra",
+      "link": "https://www.slavonski-brod.hr/vijesti/17101-nakon-napada-u-centru-grad-uputio-zamolbu-policiji",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/GRB.jpg"
+    },
+    {
+      "naslov": "Reagiranje Grada Slavonskog Broda vezano uz poteškoće pri korištenju pristupne rampe u javnom gradskom prijevozu",
+      "datum": "29. 07. 2026.",
+      "kratki_opis": "Grad Slavonski Brod upozorio je prijevoznika javnog gradskog prijevoza Terzić bus d.o.o. na obvezu pridržavanja odredbi ugovora vezanih za prijevoz osoba sa invaliditetom zbog događaja koji je vezan uz onemogućeno korištenje pristupne rampe za osobe s invaliditetom Prijevoznik nas je izvijestio kako",
+      "link": "https://www.slavonski-brod.hr/vijesti/17100-reagiranje-grada-slavonskog-broda-vezano-uz-poteskoce-pri-koristenju-pristupne-rampe-u-javnom-gradskom-prijevozu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/bus_resize.jpg"
+    },
     {
       "naslov": "Slavonski Brod među vodećim gradovima po broju novorođenih",
       "datum": "29. 07. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Sinoć je svečano zatvoreno 37. izdanje Brodskoga glazbenoga ljeta, manifestacije koja je i ove godine Slavonski Brod pretvorila u živu pozornicu ispunjenu raznovrsnim glazbenim programima, talentiranim izvođačima i brojnom publikom. Tijekom lipnja i srpnja, Brođani i njihovi gosti uživali su u bogat",
       "link": "https://www.slavonski-brod.hr/vijesti/17089-glazbom-ispraceno-37-brodsko-glazbeno-ljeto",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/glazbeno_resize.jpg"
-    },
-    {
-      "naslov": "Svečano zatvaranje 37. Brodskog glazbenog ljeta uz koncert ansambla Sudar Percussion",
-      "datum": "23. 07. 2026.",
-      "kratki_opis": "Kazališno-koncertna dvorana Ivana Brlić-Mažuranić priprema završnicu 37. Brodskog glazbenog ljeta, koje će biti zaključeno atraktivnim koncertom renomiranog udaraljkaškog ansambla Sudar Percussion. Na ljetnoj pozornici ispred Kazališno-koncertne dvorane Ivana Brlić-Mažuranić, u četvrtak 23. srpnja s",
-      "link": "https://www.slavonski-brod.hr/vijesti/17088-svecano-zatvaranje-37-brodskog-glazbenog-ljeta-uz-koncert-ansambla-sudar-percussion",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/FOTKA_KKD_resize.jpg"
-    },
-    {
-      "naslov": "Otkrivena spomen-ploča u znak sjećanja na žrtve tragične nesreće državljana Kosova",
-      "datum": "23. 07. 2026.",
-      "kratki_opis": "U Slavonskom Brodu danas je održano otkrivanje spomen-ploče posvećene žrtvama tragične prometne nesreće koja se dogodila 25. srpnja 2021. godine na autocesti A3. Komemorativni događaj organiziralo je Veleposlanstvo Republike Kosova u Republici Hrvatskoj. Otkrivanjem spomen-ploče i polaganjem vijenac",
-      "link": "https://www.slavonski-brod.hr/vijesti/17087-otkrivena-spomen-ploca-u-slavonskom-brodu-u-znak-sjecanja-na-zrtve-tragicne-nesrece-drzavljana-kosova",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/KOS.jpeg"
     }
   ],
   "manifestacije_aktualne": [
