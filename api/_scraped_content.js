@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-30 08:00 UTC
+// Zadnje skrapanje: 2026-07-31 08:24 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-30T08:00:34.288Z",
+    "zadnje_azuriranje": "2026-07-31T08:24:32.798Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Raspored rada mobilnih gradskih blagajni u kolovozu",
+      "datum": "31. 07. 2026.",
+      "kratki_opis": "Obavještavaju se građani kako će mobilne gradske blagajne u kolovozu raditi prema sljedećem rasporedu: 10. kolovoz &nbsp;2026. ( ponedjeljak &nbsp;) Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30 sati &nbsp; Mjesni dom Podvinje – od 12,30 do 15,00 sati 11. kolovoz &nbsp;2026. ( utorak &nbsp;) Mjes",
+      "link": "https://www.slavonski-brod.hr/vijesti/17105-raspored-rada-mobilnih-gradskih-blagajni-u-kolovozu-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/blagajna.jpg"
+    },
+    {
+      "naslov": "Nova mjerenja: voda na Poloju čista i potpuno sigurna za kupače",
+      "datum": "30. 07. 2026.",
+      "kratki_opis": "Tijekom ljetne sezone, Grad Slavonski Brod nastavlja s redovitim provjerama kvalitete vode na omiljenom gradskom kupalištu „Poloj“, kako bi svim građanima i posjetiteljima osigurao sigurno i ugodno osvježenje. Prema najnovijem izvještaju o ispitivanju kakvoće vode, koji je izradio Nastavni zavod za ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17104-nova-mjerenja-voda-na-poloju-cista-i-potpuno-sigurna-za-kupace",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/poloj21_resize.jpg"
+    },
+    {
+      "naslov": "Tvrđava Brod otvara vrata brojnim kulturnim i zabavnim događanjima",
+      "datum": "30. 07. 2026.",
+      "kratki_opis": "Jedna od najljepših povijesnih lokacija u Slavonskom Brodu ovog će ljeta postati velika pozornica na otvorenom. Od 14. kolovoza do 11. rujna u Tvrđavi Brod održat će se manifestacija „Ljeto u Tvrđavi Brod“, koja po prvi put objedinjuje šest različitih programa namijenjenih svim generacijama. Prostor",
+      "link": "https://www.slavonski-brod.hr/vijesti/17103-tvrdava-brod-otvara-vrata-brojnim-kulturnim-i-zabavnim-dogadanjima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/BROD.jpg"
+    },
+    {
+      "naslov": "Briga o cvijeću i zelenilu našeg grada ne prestaje ni tijekom najtoplijih dana",
+      "datum": "30. 07. 2026.",
+      "kratki_opis": "Ljetni mjeseci svake godine predstavljaju poseban izazov kada je riječ o održavanju zelenih i cvjetnih površina u gradu. Visoke temperature, sušni periodi i intenzivno sunce zahtijevaju dodatnu brigu kako bi javni prostori zadržali uredan i ugodan izgled. Na području grada održava se ukupno 3.899 če",
+      "link": "https://www.slavonski-brod.hr/vijesti/17102-briga-o-cvijecu-i-zelenilu-naseg-grada-ne-prestaje-ni-tijekom-najtoplijih-dana",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cvice.jpg"
+    },
     {
       "naslov": "Nakon napada u centru, Grad uputio zamolbu policiji",
       "datum": "29. 07. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Prvi vikend u kolovozu, 1. i 2. kolovoza 2026. godine, Slavonski Brod bit će domaćin jednog od najvažnijih domaćih natjecanja u odbojci na pijesku: Otvorenog prvenstva Hrvatske u odbojci na pijesku, u sklopu kojeg će se održati Masters, odnosno završnica Prvenstva Hrvatske. Završni turnir organizira",
       "link": "https://www.slavonski-brod.hr/vijesti/17093-slavonski-brod-domacin-zavrsnice-prvenstva-hrvatske-u-odbojci-na-pijesku",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/lopta_resize.jpg"
-    },
-    {
-      "naslov": "Psihomodo Pop, Neda Ukraden i brojna poznata imena stižu u Slavonski Brod",
-      "datum": "27. 07. 2026.",
-      "kratki_opis": "Slavonski Brod i ovog će ljeta postati nezaobilazno okupljalište domaće i regionalne glazbe. Krajem kolovoza u impresivnom ambijentu Tvrđave Brod održava se jubilarno, deseto izdanje CMC 200 Slavonija fest, koje donosi dva dana ispunjena koncertima, dobrom atmosferom i druženjem. Festival će se održ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17092-psihomodo-pop-neda-ukraden-i-brojna-poznata-imena-stizu-u-slavonski-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_festival_resize.jpg"
-    },
-    {
-      "naslov": "Na dograđenom dijelu DV „Kosjenka“ postavljena fasada, vrtić donosi 80 novih mjesta",
-      "datum": "27. 07. 2026.",
-      "kratki_opis": "Grad Slavonski Brod nastavlja s ulaganjima u predškolski odgoj i obrazovanje, a u fokusu su trenutačno radovi na dogradnji Dječjeg vrtića „Kosjenka“, gdje je postavljena fasada, čime je objekt dobio završni vanjski izgled i ušao u završnu fazu radova. Tijekom proteklog razdoblja izvedeni su radovi n",
-      "link": "https://www.slavonski-brod.hr/vijesti/17091-postavljena-fasada-na-kosjenki-vrtic-donosi-80-novih-mjesta",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/NASKOS_resize.jpeg"
-    },
-    {
-      "naslov": "Deset obitelji u Slavonskom Brodu dobilo opremu za novorođenčad",
-      "datum": "24. 07. 2026.",
-      "kratki_opis": "U Slavonskom Brodu i danas je nastavljena provedba mjere kojom Grad pruža podršku obiteljima s novorođenom djecom. Oprema za bebe uručena je za deset obitelji, a dodjelu je, kao i u prethodnim prilikama, predvodila zamjenica gradonačelnika Marina Martić Puača. Riječ je o mjeri koja se provodi od 201",
-      "link": "https://www.slavonski-brod.hr/vijesti/17090-deset-obitelji-u-slavonskom-brodu-dobilo-opremu-za-novorodencad",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/BE.jpeg"
-    },
-    {
-      "naslov": "Glazbom ispraćeno 37. Brodsko glazbeno ljeto",
-      "datum": "24. 07. 2026.",
-      "kratki_opis": "Sinoć je svečano zatvoreno 37. izdanje Brodskoga glazbenoga ljeta, manifestacije koja je i ove godine Slavonski Brod pretvorila u živu pozornicu ispunjenu raznovrsnim glazbenim programima, talentiranim izvođačima i brojnom publikom. Tijekom lipnja i srpnja, Brođani i njihovi gosti uživali su u bogat",
-      "link": "https://www.slavonski-brod.hr/vijesti/17089-glazbom-ispraceno-37-brodsko-glazbeno-ljeto",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/glazbeno_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
