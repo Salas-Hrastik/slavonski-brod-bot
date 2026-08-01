@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-07-31 08:24 UTC
+// Zadnje skrapanje: 2026-08-01 07:54 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-07-31T08:24:32.798Z",
+    "zadnje_azuriranje": "2026-08-01T07:54:47.507Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Novi zrakoplov Croatia Airlinesa nosi ime Slavonskog Broda",
+      "datum": "31. 07. 2026.",
+      "kratki_opis": "Croatia Airlines danas je objavila kako je u svoju flotu uvela novi, moderan zrakoplov tipa Airbus A220, kojem je dodijeljeno ime „Slavonski Brod“. Ovim činom ime našega grada postaje dio nacionalne zrakoplovne flote te putuje diljem Europe i šire, pronoseći ime Slavonskog Broda. Riječ je o posebnom",
+      "link": "https://www.slavonski-brod.hr/vijesti/17107-croatia-airlines-nazvao-novi-zrakoplov-po-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/NASAVION_resize.jpeg"
+    },
+    {
+      "naslov": "Još deset obitelji dobilo podršku Grada za prve dane s bebom",
+      "datum": "31. 07. 2026.",
+      "kratki_opis": "U Slavonskom Brodu i danas je nastavljena provedba mjere kojom Grad pruža podršku obiteljima s novorođenom djecom. Oprema za bebe uručena je za deset obitelji, a dodjelu je, kao i u prethodnim prilikama, predvodila zamjenica gradonačelnika Marina Martić Puača. Riječ je o mjeri koja se provodi od 201",
+      "link": "https://www.slavonski-brod.hr/vijesti/17106-u-slavonskom-brodu-danas-podijeljeni-paketi",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/naslovna.jpeg"
+    },
     {
       "naslov": "Raspored rada mobilnih gradskih blagajni u kolovozu",
       "datum": "31. 07. 2026.",
@@ -72,29 +86,9 @@ export const scrapedContent = {
       "kratki_opis": "Galerija umjetnina grada Slavonskog Broda s posebnim zadovoljstvom najavljuje gostovanje jedne od najintrigantnijih hrvatskih glazbenica današnjice, Vesne Pisarović. U četvrtak, 30. srpnja, u Kući tambure slavonskobrodska publika imat će priliku upoznati umjetnicu čiji je izniman stvaralački put obi",
       "link": "https://www.slavonski-brod.hr/vijesti/17097-kuca-tambure-ugostit-ce-vesnu-pisarovic-i-vrhunske-medunarodne-glazbenike",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/logo_tambura.jpg"
-    },
-    {
-      "naslov": "Nakon deset godina čekanja otvoren put realizaciji projekta „Brod 2“ vrijednog preko 120 milijuna eura",
-      "datum": "28. 07. 2026.",
-      "kratki_opis": "Ministarstvo zaštite okoliša i zelene tranzicije objavilo je poziv na izravnu dodjelu bespovratnih sredstava za projekt „Izgradnja vodnokomunalne infrastrukture aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji Andrijevci“, čime je otvoren put realizaciji jednog od najvažnijih infrastrukt",
-      "link": "https://www.slavonski-brod.hr/vijesti/17096-nakon-deset-godina-cekanja-otvoren-put-realizaciji-projekta-brod-2-vrijednog-preko-120-milijuna-eura",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/vodovod_brod.png"
-    },
-    {
-      "naslov": "Slavonski Brod domaćin završnice Prvenstva Hrvatske u odbojci na pijesku",
-      "datum": "28. 07. 2026.",
-      "kratki_opis": "Prvi vikend u kolovozu, 1. i 2. kolovoza 2026. godine, Slavonski Brod bit će domaćin jednog od najvažnijih domaćih natjecanja u odbojci na pijesku: Otvorenog prvenstva Hrvatske u odbojci na pijesku, u sklopu kojeg će se održati Masters, odnosno završnica Prvenstva Hrvatske. Završni turnir organizira",
-      "link": "https://www.slavonski-brod.hr/vijesti/17093-slavonski-brod-domacin-zavrsnice-prvenstva-hrvatske-u-odbojci-na-pijesku",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/lopta_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "Brodsko glazbeno ljeto Riječ je o kulturnoj manifestaciji koja, uz programe koji se odvijaju u Kazal",
-      "datum": "Srpanj",
-      "opis": "išno-koncertnoj dvorani poput opera, opereta, baleta i sl., obuhvaća i sadržaje poput komornih koncerata koji se održavaju u franjevačkoj crkvi. Fišijada Tradicionalna manifestacija koja se, uz sudjelovanje velikog broja natjecatelja s područja cijele regije Slavonije odvija u Sportsko-rekreacijskom",
-      "link": "https://www.tzgsb.hr/index.php?page=srpanj"
-    },
     {
       "naziv": "CMC 200 - Slavonija FEST Festival se, uz brojne popratne programe, održava u kolovozu u baroknoj tvr",
       "datum": "Kolovoz",
@@ -112,6 +106,12 @@ export const scrapedContent = {
       "datum": "Listopad",
       "opis": "\"Poloj\" i, uz prigodni zabavni program, okuplja više od stotinu natjecatelja iz Hrvatske i iz inozemstva. Međunarodni Festival harmonike \"Bela pl. Panthy\" Jedini festival harmonike takvog tipa u Republici Hrvatskoj. Prvi je put održan 2010. na inicijativu nekoliko entuzijasta i članova Brodskog harm",
       "link": "https://www.tzgsb.hr/index.php?page=listopad"
+    },
+    {
+      "naziv": "Turistička zajednica područja \"Slavonski Brod-Posavina\" Turistička zajednica područja \"Slavonski Bro",
+      "datum": "Studeni",
+      "opis": "d-Posavina\" O nama Kulturna baština Događanja Smještaj i ugostiteljstvo Konferencijske dvorane Turističke atrakcije Preporuke Informacije Moja Slavonija --> Skip to content Open toolbar Alati za pristupačnost Povećajte tekst Smanji tekst Sive nijanse Visoki kontrast Negativni kontrast Svijetla pozad",
+      "link": "https://www.tzgsb.hr/index.php?page=studeni"
     }
   ],
   "restorani_tz": [
