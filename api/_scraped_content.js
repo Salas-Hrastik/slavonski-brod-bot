@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-01 07:54 UTC
+// Zadnje skrapanje: 2026-08-02 07:57 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-01T07:54:47.507Z",
+    "zadnje_azuriranje": "2026-08-02T07:57:03.018Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -766,13 +766,13 @@ export const scrapedContent = {
       "karta": "https://www.google.com/maps/search/?api=1&query=Nightsky%20Slavonski%20Brod"
     },
     {
-      "naziv": "Tomi ★★★★",
+      "naziv": "Luxury family apartment Tomi ★★★★",
       "tip": "APARTMENT",
       "adresa": "Ivana Gundulića 18, 35000 Slavonski Brod",
-      "telefon": "+385 98 341 003",
+      "telefon": "+385 98 504 599",
       "web": "",
       "slika": "https://www.tzgsb.hr/static/images/apartman-tomi-170.jpg",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Tomi%20Slavonski%20Brod"
+      "karta": "https://www.google.com/maps/search/?api=1&query=Luxury%20family%20apartment%20Tomi%20Slavonski%20Brod"
     },
     {
       "naziv": "Lavander ★★★★",
@@ -1808,6 +1808,87 @@ export const scrapedContent = {
       "web": "",
       "slika": "https://www.tzgsb.hr/static/images/smjestaj/Apartman LORA.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=LORA%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "U MLINU ★★★",
+      "tip": "APARTMENT",
+      "adresa": "Brodski Zdenci, Sv. Ane 1, Podcrkavlje",
+      "telefon": "+385 91 785 7866",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/U Mlinu.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=U%20MLINU%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "VISTA ★★★★",
+      "tip": "HOLIDAY_HOME",
+      "adresa": "Naselje Grbavica 34, 35000 Slavonski Brod",
+      "telefon": "+385 91 598 4085",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/Kuća za odmor Vista.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=VISTA%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "Anteo ★★★",
+      "tip": "APARTMENT",
+      "adresa": "Ivana Cankara 13, 35000 Slavonski Brod",
+      "telefon": "+385 97 778 9193",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/Apartman Anteo.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Anteo%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "EMA ★★★",
+      "tip": "STUDIO_APARTMENT",
+      "adresa": "Veliki dol 34, Brodski Varoš, Slavonski Brod",
+      "telefon": "+385 97 651 1953",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/bed.png",
+      "karta": "https://www.google.com/maps/search/?api=1&query=EMA%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "Salaš Čardak ★★★",
+      "tip": "ROOMS",
+      "adresa": "Korduševci 66D, Korduševci, Bukovlje",
+      "telefon": "+385 95 558 52147",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/soba salaš Čardak.png",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Sala%C5%A1%20%C4%8Cardak%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "Tomislav ★★★★",
+      "tip": "HOLIDAY_HOME",
+      "adresa": "Ulica 22. lipnja 1941. br. 29, 35000 Slavonski Brod",
+      "telefon": "+385 98 454 255",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/kuća za odmor Tomislav.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Tomislav%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "Serdar ★★★★",
+      "tip": "HOLIDAY_HOME",
+      "adresa": "Natka Nodila 68, 35000 Slavonski Brod",
+      "telefon": "+385 98 953 8189",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/Kuća za odmor Serdar.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Serdar%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "Klik ★★★★",
+      "tip": "STUDIO_APARTMENT",
+      "adresa": "Radnički trg 4, 35000 Slavonski Brod",
+      "telefon": "+385 91 610 3378",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/smjestaj/Apartman Klik.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Klik%20Slavonski%20Brod"
+    },
+    {
+      "naziv": "Sunset ★★★★",
+      "tip": "APARTMENT",
+      "adresa": "Jure Piškovića 20, Gornja Vrba",
+      "telefon": "+385 91 272 7902",
+      "web": "",
+      "slika": "https://www.tzgsb.hr/static/images/bed.png",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Sunset%20Slavonski%20Brod"
     }
   ],
   "kulturna_bastina": [
