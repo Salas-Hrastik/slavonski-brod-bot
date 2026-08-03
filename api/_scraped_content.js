@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-02 07:57 UTC
+// Zadnje skrapanje: 2026-08-03 08:53 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-02T07:57:03.018Z",
+    "zadnje_azuriranje": "2026-08-03T08:53:28.928Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod među vodećima po rastu broja brakova",
+      "datum": "03. 08. 2026.",
+      "kratki_opis": "Na razini Republike Hrvatske prošle su godine sklopljena tek 64 braka više nego u 2024., a gotovo identičan trend zadržali su i hrvatski gradovi. Istovremeno se broj razvoda osjetno povećao – za čak 610 ili 16,19 posto u gradskim središtima, pokazala je analiza Gradonačelnik.hr prema podacima Državn",
+      "link": "https://www.slavonski-brod.hr/vijesti/17108-slavonski-brod-medu-vodecima-po-rastu-broja-brakova",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/brak_resize.jpg"
+    },
     {
       "naslov": "Novi zrakoplov Croatia Airlinesa nosi ime Slavonskog Broda",
       "datum": "31. 07. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Prema analizi portala Gradonačelnik.hr , koja se temelji na podacima Državnog zavoda za statistiku, u Hrvatskoj je tijekom 2025. godine rođeno 32.479 djece, što je 410 više nego 2024. godine. Time je nakon višegodišnjeg pada zabilježen prvi porast broja rođenih, uz istodobno smanjenje prirodnog minu",
       "link": "https://www.slavonski-brod.hr/vijesti/17099-slavonski-brod-medu-vodecim-gradovima-po-broju-novorodenih",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/grad_bebe.png"
-    },
-    {
-      "naslov": "Kuća tambure ugostit će Vesnu Pisarović i vrhunske međunarodne glazbenike",
-      "datum": "28. 07. 2026.",
-      "kratki_opis": "Galerija umjetnina grada Slavonskog Broda s posebnim zadovoljstvom najavljuje gostovanje jedne od najintrigantnijih hrvatskih glazbenica današnjice, Vesne Pisarović. U četvrtak, 30. srpnja, u Kući tambure slavonskobrodska publika imat će priliku upoznati umjetnicu čiji je izniman stvaralački put obi",
-      "link": "https://www.slavonski-brod.hr/vijesti/17097-kuca-tambure-ugostit-ce-vesnu-pisarovic-i-vrhunske-medunarodne-glazbenike",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/logo_tambura.jpg"
     }
   ],
   "manifestacije_aktualne": [
