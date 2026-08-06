@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-05 08:10 UTC
+// Zadnje skrapanje: 2026-08-06 08:08 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-05T08:10:10.531Z",
+    "zadnje_azuriranje": "2026-08-06T08:08:51.511Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,62 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod devetnaesti put postaje pozornica za najbolje domaće i strane graffiti umjetnike",
+      "datum": "31. 08. 2026.",
+      "kratki_opis": "Slavonskobrodski Korzo, odnosno Trg Ivane Brlić Mažuranić, u subotu, 8. kolovoza, ponovno će se pretvoriti u otvoreni atelje pod vedrim nebom. Kreativna udruga mladih organizira 19. izdanje SB Graffiti Festa, manifestacije koja je tijekom godina prerasla u jedan od vodećih događaja ove vrste u regij",
+      "link": "https://www.slavonski-brod.hr/vijesti/17120-slavonski-brod-devetnaesti-put-postaje-pozornica-za-najbolje-domace-i-strane-graffiti-umjetnike",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/1000124527_resize.jpg"
+    },
+    {
+      "naslov": "Pet slavonskobrodskih osnovnih škola dobit će gotovo 700.000 eura za izvannastavne aktivnosti",
+      "datum": "05. 08. 2026.",
+      "kratki_opis": "Grad Slavonski Brod ostvario je financiranje za provedbu projekta „Izvan(k)lupe\", vrijednog 692.629,10 eura, u okviru poziva Ministarstva znanosti, obrazovanja i mladih namijenjenog podršci osnovnim školama u pripremi za program cjelodnevne škole. Riječ je o projektu koji se u cijelosti financira ne",
+      "link": "https://www.slavonski-brod.hr/vijesti/17119-pet-slavonskobrodskih-osnovnih-skola-dobit-ce-gotovo-700-000-eura-za-izvannastavne-aktivnosti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/kids-drawing-playing_resize.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod odao počast braniteljima na 31. obljetnicu pobjede u &quot;Oluji&quot;",
+      "datum": "05. 08. 2026.",
+      "kratki_opis": "Grad Slavonski Brod danas se, zajedno s cijelom Hrvatskom, prisjetio Dana pobjede i domovinske zahvalnosti, Dana hrvatskih branitelja i 31. obljetnice vojno-redarstvene operacije \"Oluja\". Povodom obilježavanja ovog važnog datuma, 5. kolovoza, građani Slavonskog Broda odali su počast svim poginulim i",
+      "link": "https://www.slavonski-brod.hr/vijesti/17115-slavonski-brod-odao-pocast-braniteljima-na-31-obljetnicu-pobjede-u-oluji",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_1674_resize.jpeg"
+    },
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja",
+      "datum": "05. 08. 2026.",
+      "kratki_opis": "Poštovane sugrađanke i sugrađani, &nbsp; Peti kolovoz nosi posebnu težinu u srcu svakog Hrvata. Prije 31 godinu, hrabrost i odlučnost naših branitelja u vojno-redarstvenoj akciji \"Oluja\" vratili su slobodu ovoj zemlji i otvorili put miru u kojem danas živimo, radimo i podižemo svoju djecu. Slavonski",
+      "link": "https://www.slavonski-brod.hr/vijesti/17114-gradonacelnikova-cestitka-povodom-dana-pobjede-i-domovinske-zahvalnosti-i-dana-hrvatskih-branitelja-6",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/DAN_POBJEDE_resize.jpg"
+    },
+    {
+      "naslov": "Vandalizam nad spomenikom &quot;Prekinuto djetinjstvo&quot; uvreda je sjećanju cijele zajednice",
+      "datum": "04. 08. 2026.",
+      "kratki_opis": "Zabilježen je prizor koji nikoga ne ostavlja ravnodušnim – neprimjeren grafit ispisan na kamenom dijelu spomenika \"Prekinuto djetinjstvo\", nacionalnom spomen-obilježju u Slavonskom Brodu podignuto u znak sjećanja na 402 djece poginule kao civilne žrtve tijekom Domovinskog rata u Hrvatskoj. Zahvaljuj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17117-vandalizam-nad-spomenikom-prekinuto-djetinjstvo-uvreda-je-sjecanju-cijele-zajednice",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image1_resize.jpeg"
+    },
+    {
+      "naslov": "Slavonski Brod u kolovozu postaje središte vina i dobre atmosfere",
+      "datum": "04. 08. 2026.",
+      "kratki_opis": "Slavonski Brod i ove će godine u kolovozu postati nezaobilazno odredište za sve ljubitelje vina, gastronomije i kulture. Od 17. do 22. kolovoza 2026. godine u jedinstvenom ambijentu povijesne Tvrđave Brod održava se vinski festival „Vino u Tvrđavi Brod“, manifestacija koja kroz šest dana bogat i raz",
+      "link": "https://www.slavonski-brod.hr/vijesti/17116-slavonski-brod-u-kolovozu-postaje-srediste-vina-i-dobre-atmosfere",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VINO_VIZUAL.png"
+    },
+    {
+      "naslov": "Obavijest građanima: radno vrijeme TD Komunalac na Dan pobjede i domovinske zahvalnosti",
+      "datum": "04. 08. 2026.",
+      "kratki_opis": "TD Komunalac d.o.o. obavještava korisnike svojih usluga, da se na državni praznik –&nbsp; Dan pobjede i domovinske zahvalnosti, &nbsp; srijeda 05.08.2026.,&nbsp; miješani komunalni otpad, reciklabilni otpad te biootpad,&nbsp; odvozi prema redovnom rasporedu . Reciklažna dvorišta 1, 2 i 3, kao i odla",
+      "link": "https://www.slavonski-brod.hr/vijesti/17111-obavijest-gradanima-radno-vrijeme-td-komunalac-na-dan-pobjede-i-domovinske-zahvalnosti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/ZV_09280cr.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod ugostio završnicu Prvenstva Hrvatske u odbojci na pijesku",
+      "datum": "03. 08. 2026.",
+      "kratki_opis": "Proteklog vikenda Slavonski Brod bio je domaćin Otvorenog prvenstva Hrvatske u odbojci na pijesku, u sklopu kojeg je održana Masters završnica Prvenstva Hrvatske. Ovaj sportski događaj okupio je najbolje hrvatske odbojkašice i odbojkaše na pijesku, koji su se tijekom dva dana natjecali za naslov drž",
+      "link": "https://www.slavonski-brod.hr/vijesti/17110-odbojkasko-natjecanje",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00036_resize.jpeg"
+    },
     {
       "naslov": "Slavonski Brod među vodećima po rastu broja brakova",
       "datum": "03. 08. 2026.",
@@ -30,62 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Croatia Airlines danas je objavila kako je u svoju flotu uvela novi, moderan zrakoplov tipa Airbus A220, kojem je dodijeljeno ime „Slavonski Brod“. Ovim činom ime našega grada postaje dio nacionalne zrakoplovne flote te putuje diljem Europe i šire, pronoseći ime Slavonskog Broda. Riječ je o posebnom",
       "link": "https://www.slavonski-brod.hr/vijesti/17107-croatia-airlines-nazvao-novi-zrakoplov-po-slavonskom-brodu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/NASAVION_resize.jpeg"
-    },
-    {
-      "naslov": "Još deset obitelji dobilo podršku Grada za prve dane s bebom",
-      "datum": "31. 07. 2026.",
-      "kratki_opis": "U Slavonskom Brodu i danas je nastavljena provedba mjere kojom Grad pruža podršku obiteljima s novorođenom djecom. Oprema za bebe uručena je za deset obitelji, a dodjelu je, kao i u prethodnim prilikama, predvodila zamjenica gradonačelnika Marina Martić Puača. Riječ je o mjeri koja se provodi od 201",
-      "link": "https://www.slavonski-brod.hr/vijesti/17106-u-slavonskom-brodu-danas-podijeljeni-paketi",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/naslovna.jpeg"
-    },
-    {
-      "naslov": "Raspored rada mobilnih gradskih blagajni u kolovozu",
-      "datum": "31. 07. 2026.",
-      "kratki_opis": "Obavještavaju se građani kako će mobilne gradske blagajne u kolovozu raditi prema sljedećem rasporedu: 10. kolovoz &nbsp;2026. ( ponedjeljak &nbsp;) Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30 sati &nbsp; Mjesni dom Podvinje – od 12,30 do 15,00 sati 11. kolovoz &nbsp;2026. ( utorak &nbsp;) Mjes",
-      "link": "https://www.slavonski-brod.hr/vijesti/17105-raspored-rada-mobilnih-gradskih-blagajni-u-kolovozu-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/blagajna.jpg"
-    },
-    {
-      "naslov": "Nova mjerenja: voda na Poloju čista i potpuno sigurna za kupače",
-      "datum": "30. 07. 2026.",
-      "kratki_opis": "Tijekom ljetne sezone, Grad Slavonski Brod nastavlja s redovitim provjerama kvalitete vode na omiljenom gradskom kupalištu „Poloj“, kako bi svim građanima i posjetiteljima osigurao sigurno i ugodno osvježenje. Prema najnovijem izvještaju o ispitivanju kakvoće vode, koji je izradio Nastavni zavod za ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17104-nova-mjerenja-voda-na-poloju-cista-i-potpuno-sigurna-za-kupace",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/poloj21_resize.jpg"
-    },
-    {
-      "naslov": "Tvrđava Brod otvara vrata brojnim kulturnim i zabavnim događanjima",
-      "datum": "30. 07. 2026.",
-      "kratki_opis": "Jedna od najljepših povijesnih lokacija u Slavonskom Brodu ovog će ljeta postati velika pozornica na otvorenom. Od 14. kolovoza do 11. rujna u Tvrđavi Brod održat će se manifestacija „Ljeto u Tvrđavi Brod“, koja po prvi put objedinjuje šest različitih programa namijenjenih svim generacijama. Prostor",
-      "link": "https://www.slavonski-brod.hr/vijesti/17103-tvrdava-brod-otvara-vrata-brojnim-kulturnim-i-zabavnim-dogadanjima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/BROD.jpg"
-    },
-    {
-      "naslov": "Briga o cvijeću i zelenilu našeg grada ne prestaje ni tijekom najtoplijih dana",
-      "datum": "30. 07. 2026.",
-      "kratki_opis": "Ljetni mjeseci svake godine predstavljaju poseban izazov kada je riječ o održavanju zelenih i cvjetnih površina u gradu. Visoke temperature, sušni periodi i intenzivno sunce zahtijevaju dodatnu brigu kako bi javni prostori zadržali uredan i ugodan izgled. Na području grada održava se ukupno 3.899 če",
-      "link": "https://www.slavonski-brod.hr/vijesti/17102-briga-o-cvijecu-i-zelenilu-naseg-grada-ne-prestaje-ni-tijekom-najtoplijih-dana",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cvice.jpg"
-    },
-    {
-      "naslov": "Nakon napada u centru, Grad uputio zamolbu policiji",
-      "datum": "29. 07. 2026.",
-      "kratki_opis": "Nakon nemilog događaja koji se dogodio u Ulici Ivana pl. Zajca u središtu Slavonskog Broda, Grad Slavonski Brod uputio je zamolbu Policijskoj upravi brodsko-posavskoj da, u okviru svojih nadležnosti, pojača nadzor i prisutnost nadležnih službi na lokacijama u gradu na kojima se okuplja veći broj gra",
-      "link": "https://www.slavonski-brod.hr/vijesti/17101-nakon-napada-u-centru-grad-uputio-zamolbu-policiji",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/GRB.jpg"
-    },
-    {
-      "naslov": "Reagiranje Grada Slavonskog Broda vezano uz poteškoće pri korištenju pristupne rampe u javnom gradskom prijevozu",
-      "datum": "29. 07. 2026.",
-      "kratki_opis": "Grad Slavonski Brod upozorio je prijevoznika javnog gradskog prijevoza Terzić bus d.o.o. na obvezu pridržavanja odredbi ugovora vezanih za prijevoz osoba sa invaliditetom zbog događaja koji je vezan uz onemogućeno korištenje pristupne rampe za osobe s invaliditetom Prijevoznik nas je izvijestio kako",
-      "link": "https://www.slavonski-brod.hr/vijesti/17100-reagiranje-grada-slavonskog-broda-vezano-uz-poteskoce-pri-koristenju-pristupne-rampe-u-javnom-gradskom-prijevozu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/bus_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod među vodećim gradovima po broju novorođenih",
-      "datum": "29. 07. 2026.",
-      "kratki_opis": "Prema analizi portala Gradonačelnik.hr , koja se temelji na podacima Državnog zavoda za statistiku, u Hrvatskoj je tijekom 2025. godine rođeno 32.479 djece, što je 410 više nego 2024. godine. Time je nakon višegodišnjeg pada zabilježen prvi porast broja rođenih, uz istodobno smanjenje prirodnog minu",
-      "link": "https://www.slavonski-brod.hr/vijesti/17099-slavonski-brod-medu-vodecim-gradovima-po-broju-novorodenih",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/grad_bebe.png"
     }
   ],
   "manifestacije_aktualne": [
