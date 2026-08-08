@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-07 06:55 UTC
+// Zadnje skrapanje: 2026-08-08 06:27 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-07T06:55:19.925Z",
+    "zadnje_azuriranje": "2026-08-08T06:27:53.905Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,8 +18,15 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
+      "naslov": "Vrući vikend pred vratima, a Poloj nudi pravi recept za osvježenje uz Savu",
+      "datum": "07. 08. 2026.",
+      "kratki_opis": "Visoke ljetne temperature najavljuju još jedan vrući vikend, a Grad Slavonski Brod podsjeća građane da im gradsko kupalište Poloj i dalje stoji na raspolaganju za bijeg od gradske vreve i osvježenje uz rijeku. Uz sunčano vrijeme koje se najavljuje, Poloj ostaje prvi izbor svih koji žele iskoristiti ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17121-vruci-vikend-pred-vratima-a-poloj-nudi-pravi-recept-za-osvjezenje-uz-savu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/poloj1706_25_resize.jpg"
+    },
+    {
       "naslov": "Slavonski Brod devetnaesti put postaje pozornica za najbolje domaće i strane graffiti umjetnike",
-      "datum": "31. 08. 2026.",
+      "datum": "06. 08. 2026.",
       "kratki_opis": "Slavonskobrodski Korzo, odnosno Trg Ivane Brlić Mažuranić, u subotu, 8. kolovoza, ponovno će se pretvoriti u otvoreni atelje pod vedrim nebom. Kreativna udruga mladih organizira 19. izdanje SB Graffiti Festa, manifestacije koja je tijekom godina prerasla u jedan od vodećih događaja ove vrste u regij",
       "link": "https://www.slavonski-brod.hr/vijesti/17120-slavonski-brod-devetnaesti-put-postaje-pozornica-za-najbolje-domace-i-strane-graffiti-umjetnike",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/1000124527_resize.jpg"
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Na razini Republike Hrvatske prošle su godine sklopljena tek 64 braka više nego u 2024., a gotovo identičan trend zadržali su i hrvatski gradovi. Istovremeno se broj razvoda osjetno povećao – za čak 610 ili 16,19 posto u gradskim središtima, pokazala je analiza Gradonačelnik.hr prema podacima Državn",
       "link": "https://www.slavonski-brod.hr/vijesti/17108-slavonski-brod-medu-vodecima-po-rastu-broja-brakova",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/brak_resize.jpg"
-    },
-    {
-      "naslov": "Novi zrakoplov Croatia Airlinesa nosi ime Slavonskog Broda",
-      "datum": "31. 07. 2026.",
-      "kratki_opis": "Croatia Airlines danas je objavila kako je u svoju flotu uvela novi, moderan zrakoplov tipa Airbus A220, kojem je dodijeljeno ime „Slavonski Brod“. Ovim činom ime našega grada postaje dio nacionalne zrakoplovne flote te putuje diljem Europe i šire, pronoseći ime Slavonskog Broda. Riječ je o posebnom",
-      "link": "https://www.slavonski-brod.hr/vijesti/17107-croatia-airlines-nazvao-novi-zrakoplov-po-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/NASAVION_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
