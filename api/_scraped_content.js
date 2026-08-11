@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-10 07:00 UTC
+// Zadnje skrapanje: 2026-08-11 06:40 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-10T07:00:48.738Z",
+    "zadnje_azuriranje": "2026-08-11T06:40:35.742Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Grad Slavonski Brod sufinancira izradu projekata sunčanih elektrana za kućanstva",
+      "datum": "10. 08. 2026.",
+      "kratki_opis": "Raspisan je natječaj za sufinanciranje izrade novog glavnog elektrotehničkog projekta sunčane elektrane za proizvodnju električne energije za vlastite potrebe kućanstva. Natječaj se provodi u sklopu Akcijskog plana poboljšanja kvalitete zraka za grad Slavonski Brod, a građanima omogućuje da uz znača",
+      "link": "https://www.slavonski-brod.hr/vijesti/17124-grad-slavonski-brod-sufinancira-izradu-projekata-suncanih-elektrana-za-kucanstva",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/man-with-white-helmet-near-solar-panel_resize.jpg"
+    },
+    {
+      "naslov": "Kup grada Slavonskog Broda pripao NK Vinogorcu",
+      "datum": "10. 08. 2026.",
+      "kratki_opis": "Ovog vikenda, na stadionu NK Amater Jelas, 8. i 9. kolovoza, održan je seniorski nogometni turnir „Kup grada Slavonskog Broda“. Na turnir su pozvani svi seniorski nogometni klubovi s područja grada: NK Amater Jelas, NK Marsonia, NK Vinogorac Brodsko Vinogorje, NK Željezničar 1946, NK Podvinje, NK Bu",
+      "link": "https://www.slavonski-brod.hr/vijesti/17122-kup-grada-slavonskog-broda-pripao-nk-vinogorcu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/vinogorac_naslovna.jpg"
+    },
     {
       "naslov": "Vrući vikend pred vratima, a Poloj nudi pravi recept za osvježenje uz Savu",
       "datum": "07. 08. 2026.",
@@ -65,27 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonski Brod i ove će godine u kolovozu postati nezaobilazno odredište za sve ljubitelje vina, gastronomije i kulture. Od 17. do 22. kolovoza 2026. godine u jedinstvenom ambijentu povijesne Tvrđave Brod održava se vinski festival „Vino u Tvrđavi Brod“, manifestacija koja kroz šest dana bogat i raz",
       "link": "https://www.slavonski-brod.hr/vijesti/17116-slavonski-brod-u-kolovozu-postaje-srediste-vina-i-dobre-atmosfere",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VINO_VIZUAL.png"
-    },
-    {
-      "naslov": "Obavijest građanima: radno vrijeme TD Komunalac na Dan pobjede i domovinske zahvalnosti",
-      "datum": "04. 08. 2026.",
-      "kratki_opis": "TD Komunalac d.o.o. obavještava korisnike svojih usluga, da se na državni praznik –&nbsp; Dan pobjede i domovinske zahvalnosti, &nbsp; srijeda 05.08.2026.,&nbsp; miješani komunalni otpad, reciklabilni otpad te biootpad,&nbsp; odvozi prema redovnom rasporedu . Reciklažna dvorišta 1, 2 i 3, kao i odla",
-      "link": "https://www.slavonski-brod.hr/vijesti/17111-obavijest-gradanima-radno-vrijeme-td-komunalac-na-dan-pobjede-i-domovinske-zahvalnosti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/ZV_09280cr.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod ugostio završnicu Prvenstva Hrvatske u odbojci na pijesku",
-      "datum": "03. 08. 2026.",
-      "kratki_opis": "Proteklog vikenda Slavonski Brod bio je domaćin Otvorenog prvenstva Hrvatske u odbojci na pijesku, u sklopu kojeg je održana Masters završnica Prvenstva Hrvatske. Ovaj sportski događaj okupio je najbolje hrvatske odbojkašice i odbojkaše na pijesku, koji su se tijekom dva dana natjecali za naslov drž",
-      "link": "https://www.slavonski-brod.hr/vijesti/17110-odbojkasko-natjecanje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image00036_resize.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod među vodećima po rastu broja brakova",
-      "datum": "03. 08. 2026.",
-      "kratki_opis": "Na razini Republike Hrvatske prošle su godine sklopljena tek 64 braka više nego u 2024., a gotovo identičan trend zadržali su i hrvatski gradovi. Istovremeno se broj razvoda osjetno povećao – za čak 610 ili 16,19 posto u gradskim središtima, pokazala je analiza Gradonačelnik.hr prema podacima Državn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17108-slavonski-brod-medu-vodecima-po-rastu-broja-brakova",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/brak_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
