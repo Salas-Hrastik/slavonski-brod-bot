@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-11 06:40 UTC
+// Zadnje skrapanje: 2026-08-12 07:00 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-11T06:40:35.742Z",
+    "zadnje_azuriranje": "2026-08-12T07:00:51.546Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Danas je Međunarodni dan mladih: Slavonski Brod pokazuje da ulaganje u mlade gradi sigurniju budućnost",
+      "datum": "12. 08. 2026.",
+      "kratki_opis": "Svake godine 12. kolovoza obilježava se Međunarodni dan mladih, prigoda da se istaknu izazovi s kojima se mladi generacije suočavaju, ali i njihov nezamjenjiv doprinos zajednici. Ovogodišnja tema podsjeća da mladi ljudi diljem svijeta odrastaju u vrlo različitim društvenim, gospodarskim i geografski",
+      "link": "https://www.slavonski-brod.hr/vijesti/17127-danas-je-medunarodni-dan-mladih-slavonski-brod-pokazuje-da-ulaganje-u-mlade-gradi-sigurniju-buducnost",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/DAN_MLADIH_2026_jpg.jpg"
+    },
+    {
+      "naslov": "Voda na „Poloju&quot; i dalje izvrsne kakvoće za kupanje",
+      "datum": "11. 08. 2026.",
+      "kratki_opis": "I tijekom kolovoza nastavljamo pratiti kakvoću vode na gradskom kupalištu „Poloj\", kako bi se svim kupačima jamčilo sigurno i ugodno kupanje na Savi. Prema najnovijim rezultatima ispitivanja koje je provela Služba za zdravstvenu ekologiju Nastavnog zavoda za javno zdravstvo Brodsko-posavske županije",
+      "link": "https://www.slavonski-brod.hr/vijesti/17126-voda-na-poloju-i-dalje-izvrsne-kakvoce-za-kupanje",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/polojske_sume_i_grad_resize.jpg"
+    },
+    {
+      "naslov": "Brodski ljetni kamp ove godine okupio više od 200 djece, prijave za drugi dio u tijeku",
+      "datum": "11. 08. 2026.",
+      "kratki_opis": "Devetu godinu zaredom Ustanova za gospodarenje športskim objektima, u suradnji s Gradom Slavonskim Brodom, organizira Brodski ljetni kamp – program koji djeci tijekom ljetnih praznika nudi sport, igru i druženje u sigurnom okruženju. Od 15. lipnja do 17. srpnja održano je pet ciklusa kampa kroz koje",
+      "link": "https://www.slavonski-brod.hr/vijesti/17125-brodski-ljetni-kamp-ove-godine-okupio-vise-od-200-djece-prijave-za-drugi-dio-u-tijeku",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/1000007071.jpg"
+    },
     {
       "naslov": "Grad Slavonski Brod sufinancira izradu projekata sunčanih elektrana za kućanstva",
       "datum": "10. 08. 2026.",
@@ -58,27 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Grad Slavonski Brod danas se, zajedno s cijelom Hrvatskom, prisjetio Dana pobjede i domovinske zahvalnosti, Dana hrvatskih branitelja i 31. obljetnice vojno-redarstvene operacije \"Oluja\". Povodom obilježavanja ovog važnog datuma, 5. kolovoza, građani Slavonskog Broda odali su počast svim poginulim i",
       "link": "https://www.slavonski-brod.hr/vijesti/17115-slavonski-brod-odao-pocast-braniteljima-na-31-obljetnicu-pobjede-u-oluji",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_1674_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka povodom Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja",
-      "datum": "05. 08. 2026.",
-      "kratki_opis": "Poštovane sugrađanke i sugrađani, &nbsp; Peti kolovoz nosi posebnu težinu u srcu svakog Hrvata. Prije 31 godinu, hrabrost i odlučnost naših branitelja u vojno-redarstvenoj akciji \"Oluja\" vratili su slobodu ovoj zemlji i otvorili put miru u kojem danas živimo, radimo i podižemo svoju djecu. Slavonski",
-      "link": "https://www.slavonski-brod.hr/vijesti/17114-gradonacelnikova-cestitka-povodom-dana-pobjede-i-domovinske-zahvalnosti-i-dana-hrvatskih-branitelja-6",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/DAN_POBJEDE_resize.jpg"
-    },
-    {
-      "naslov": "Vandalizam nad spomenikom &quot;Prekinuto djetinjstvo&quot; uvreda je sjećanju cijele zajednice",
-      "datum": "04. 08. 2026.",
-      "kratki_opis": "Zabilježen je prizor koji nikoga ne ostavlja ravnodušnim – neprimjeren grafit ispisan na kamenom dijelu spomenika \"Prekinuto djetinjstvo\", nacionalnom spomen-obilježju u Slavonskom Brodu podignuto u znak sjećanja na 402 djece poginule kao civilne žrtve tijekom Domovinskog rata u Hrvatskoj. Zahvaljuj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17117-vandalizam-nad-spomenikom-prekinuto-djetinjstvo-uvreda-je-sjecanju-cijele-zajednice",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/image1_resize.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod u kolovozu postaje središte vina i dobre atmosfere",
-      "datum": "04. 08. 2026.",
-      "kratki_opis": "Slavonski Brod i ove će godine u kolovozu postati nezaobilazno odredište za sve ljubitelje vina, gastronomije i kulture. Od 17. do 22. kolovoza 2026. godine u jedinstvenom ambijentu povijesne Tvrđave Brod održava se vinski festival „Vino u Tvrđavi Brod“, manifestacija koja kroz šest dana bogat i raz",
-      "link": "https://www.slavonski-brod.hr/vijesti/17116-slavonski-brod-u-kolovozu-postaje-srediste-vina-i-dobre-atmosfere",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VINO_VIZUAL.png"
     }
   ],
   "manifestacije_aktualne": [
