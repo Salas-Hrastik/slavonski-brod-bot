@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-12 07:00 UTC
+// Zadnje skrapanje: 2026-08-13 07:04 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-12T07:00:51.546Z",
+    "zadnje_azuriranje": "2026-08-13T07:04:39.805Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Večer vina i poezije „Vino u stihu – vino u glazbi&quot; u Gradskoj knjižnici",
+      "datum": "13. 08. 2026.",
+      "kratki_opis": "Pozivamo sve zainteresirane građane na Večer vina i poezije „Vino u stihu – vino u glazbi\", koja će se održati u utorak, 18. kolovoza 2026. godine, s početkom u 19 sati, u Velikoj dvorani Gradske knjižnice Slavonski Brod. Posjetitelje očekuje večer posvećena susretu poezije, glazbe i vina, uz nastup",
+      "link": "https://www.slavonski-brod.hr/vijesti/17129-vecer-vina-i-poezije-vino-u-stihu-vino-u-glazbi-u-gradskoj-knjiznici",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/VECER_VINA_I_POEZIJE_resize.png"
+    },
+    {
+      "naslov": "Kolovoška večer donosi rijedak spoj pomrčine Sunca i vrhunca Perzeida",
+      "datum": "12. 08. 2026.",
+      "kratki_opis": "Slavonski Brod i cijela Hrvatska večeras, 12. kolovoza 2026., dočekuju astronomski događaj koji se ne viđa često – u istom danu izmjenjuju se djelomična pomrčina Sunca i vrhunac meteorskog roja Perzeida. Ovakvo poklapanje dvaju atraktivnih nebeskih fenomena rijetkost je, pa pripremljenim uputama Ast",
+      "link": "https://www.slavonski-brod.hr/vijesti/17128-kolovoska-vecer-donosi-rijedak-spoj-pomrcine-sunca-i-vrhunca-perzeida",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/beautiful-silhouette-shot-trees-starry-night-sky_resize.jpg"
+    },
     {
       "naslov": "Danas je Međunarodni dan mladih: Slavonski Brod pokazuje da ulaganje u mlade gradi sigurniju budućnost",
       "datum": "12. 08. 2026.",
@@ -65,20 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonskobrodski Korzo, odnosno Trg Ivane Brlić Mažuranić, u subotu, 8. kolovoza, ponovno će se pretvoriti u otvoreni atelje pod vedrim nebom. Kreativna udruga mladih organizira 19. izdanje SB Graffiti Festa, manifestacije koja je tijekom godina prerasla u jedan od vodećih događaja ove vrste u regij",
       "link": "https://www.slavonski-brod.hr/vijesti/17120-slavonski-brod-devetnaesti-put-postaje-pozornica-za-najbolje-domace-i-strane-graffiti-umjetnike",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/1000124527_resize.jpg"
-    },
-    {
-      "naslov": "Pet slavonskobrodskih osnovnih škola dobit će gotovo 700.000 eura za izvannastavne aktivnosti",
-      "datum": "05. 08. 2026.",
-      "kratki_opis": "Grad Slavonski Brod ostvario je financiranje za provedbu projekta „Izvan(k)lupe\", vrijednog 692.629,10 eura, u okviru poziva Ministarstva znanosti, obrazovanja i mladih namijenjenog podršci osnovnim školama u pripremi za program cjelodnevne škole. Riječ je o projektu koji se u cijelosti financira ne",
-      "link": "https://www.slavonski-brod.hr/vijesti/17119-pet-slavonskobrodskih-osnovnih-skola-dobit-ce-gotovo-700-000-eura-za-izvannastavne-aktivnosti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/kids-drawing-playing_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod odao počast braniteljima na 31. obljetnicu pobjede u &quot;Oluji&quot;",
-      "datum": "05. 08. 2026.",
-      "kratki_opis": "Grad Slavonski Brod danas se, zajedno s cijelom Hrvatskom, prisjetio Dana pobjede i domovinske zahvalnosti, Dana hrvatskih branitelja i 31. obljetnice vojno-redarstvene operacije \"Oluja\". Povodom obilježavanja ovog važnog datuma, 5. kolovoza, građani Slavonskog Broda odali su počast svim poginulim i",
-      "link": "https://www.slavonski-brod.hr/vijesti/17115-slavonski-brod-odao-pocast-braniteljima-na-31-obljetnicu-pobjede-u-oluji",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_1674_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
