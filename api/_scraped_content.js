@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-13 07:04 UTC
+// Zadnje skrapanje: 2026-08-14 07:01 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-13T07:04:39.805Z",
+    "zadnje_azuriranje": "2026-08-14T07:01:24.313Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Više od zemljišta – Grad Slavonski Brod već gotovo deset godina mladima otvara put do vlastitog doma",
+      "datum": "13. 08. 2026.",
+      "kratki_opis": "Rješavanje stambenog pitanja jedan je od važnih izazova s kojima se susreću mlade obitelji. Upravo zato, Grad Slavonski Brod od 2017. godine provodi mjeru stambenog zbrinjavanja mladih kojom se mladim obiteljima omogućuje lakši put do izgradnje vlastitog doma. Kroz ovu mjeru Grad mladim obiteljima o",
+      "link": "https://www.slavonski-brod.hr/vijesti/17130-vise-od-zemljista-grad-slavonski-brod-vec-gotovo-deset-godina-mladima-otvara-put-do-vlastitog-doma",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Blage-Zadre-17.jpg"
+    },
     {
       "naslov": "Večer vina i poezije „Vino u stihu – vino u glazbi&quot; u Gradskoj knjižnici",
       "datum": "13. 08. 2026.",
@@ -72,13 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Visoke ljetne temperature najavljuju još jedan vrući vikend, a Grad Slavonski Brod podsjeća građane da im gradsko kupalište Poloj i dalje stoji na raspolaganju za bijeg od gradske vreve i osvježenje uz rijeku. Uz sunčano vrijeme koje se najavljuje, Poloj ostaje prvi izbor svih koji žele iskoristiti ",
       "link": "https://www.slavonski-brod.hr/vijesti/17121-vruci-vikend-pred-vratima-a-poloj-nudi-pravi-recept-za-osvjezenje-uz-savu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/poloj1706_25_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod devetnaesti put postaje pozornica za najbolje domaće i strane graffiti umjetnike",
-      "datum": "06. 08. 2026.",
-      "kratki_opis": "Slavonskobrodski Korzo, odnosno Trg Ivane Brlić Mažuranić, u subotu, 8. kolovoza, ponovno će se pretvoriti u otvoreni atelje pod vedrim nebom. Kreativna udruga mladih organizira 19. izdanje SB Graffiti Festa, manifestacije koja je tijekom godina prerasla u jedan od vodećih događaja ove vrste u regij",
-      "link": "https://www.slavonski-brod.hr/vijesti/17120-slavonski-brod-devetnaesti-put-postaje-pozornica-za-najbolje-domace-i-strane-graffiti-umjetnike",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/1000124527_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
