@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-14 07:01 UTC
+// Zadnje skrapanje: 2026-08-15 06:14 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-14T07:01:24.313Z",
+    "zadnje_azuriranje": "2026-08-15T06:14:58.310Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Produljeno radno vrijeme ugostiteljskih objekata za vrijeme trajanja manifestacije Street Food Festival",
+      "datum": "14. 08. 2026.",
+      "kratki_opis": "Donesen je Zaključak o davanju suglasnosti na produljeno radno vrijeme ugostiteljskih objekata za vrijeme trajanja manifestacije Street Food Festival u Tvrđavi Brod. Sukladno članku 8. Odluke o ugostiteljskoj djelatnosti na području grada Slavonskog Broda, dana je suglasnost na produljeno radno vrij",
+      "link": "https://www.slavonski-brod.hr/vijesti/17134-produljeno-radno-vrijeme-ugostiteljskih-objekata-za-vrijeme-trajanja-manifestacije-street-food-festival",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/tvrdava_2_resize.jpg"
+    },
+    {
+      "naslov": "Obavijest o proglašenju sajamskog dana",
+      "datum": "14. 08. 2026.",
+      "kratki_opis": "U svrhu održavanja Street Food Festivala, donesena je odluka kojom se&nbsp; nedjelja 6. rujna 2026. &nbsp;proglašava sajamskim danom te je u spomenutu svrhu dozvoljena prodaja predmeta i dobara koji su predmet i svrha tog sajamskog dana.&nbsp; Odluka je u cijelosti dostupna&nbsp; OVDJE .",
+      "link": "https://www.slavonski-brod.hr/vijesti/17133-obavijest-o-proglasenju-sajamskog-dana-4",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_1500_resize.jpeg"
+    },
+    {
+      "naslov": "Grad Slavonski Brod ne staje ni u kolovozu: pet novih obitelji primilo opremu za bebu",
+      "datum": "14. 08. 2026.",
+      "kratki_opis": "Dok su mnogi još na ljetnom odmoru, brige za najmlađe Brođane nema pauze – zamjenica gradonačelnika Marina Martić Puača danas je uručila pakete dobrodošlice za novorođenčad petero brodskih obitelji, nastavljajući mjeru potpore roditeljima koju Grad Slavonski Brod provodi već sedmu godinu zaredom. Sv",
+      "link": "https://www.slavonski-brod.hr/vijesti/17132-grad-slavonski-brod-ne-staje-ni-u-kolovozu-pet-novih-obitelji-primilo-opremu-za-bebu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/photo-collage.jpg"
+    },
+    {
+      "naslov": "Podsjetnik roditeljima: Prijave za produženi boravak do 21. kolovoza",
+      "datum": "14. 08. 2026.",
+      "kratki_opis": "Grad Slavonski Brod podsjeća sve zainteresirane roditelje da je u tijeku prijava učenika za upis u program produženog boravka u gradskim osnovnim školama za školsku godinu 2026./2027. Rok za podnošenje prijava je 21. kolovoza 2026. godine. Zahtjev za upis učenika u program produženog boravka potrebn",
+      "link": "https://www.slavonski-brod.hr/vijesti/17131-podsjetnik-roditeljima-prijave-za-produzeni-boravak-do-21-kolovoza",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/PRIJAVE_resize.jpg"
+    },
     {
       "naslov": "Više od zemljišta – Grad Slavonski Brod već gotovo deset godina mladima otvara put do vlastitog doma",
       "datum": "13. 08. 2026.",
@@ -58,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Devetu godinu zaredom Ustanova za gospodarenje športskim objektima, u suradnji s Gradom Slavonskim Brodom, organizira Brodski ljetni kamp – program koji djeci tijekom ljetnih praznika nudi sport, igru i druženje u sigurnom okruženju. Od 15. lipnja do 17. srpnja održano je pet ciklusa kampa kroz koje",
       "link": "https://www.slavonski-brod.hr/vijesti/17125-brodski-ljetni-kamp-ove-godine-okupio-vise-od-200-djece-prijave-za-drugi-dio-u-tijeku",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/1000007071.jpg"
-    },
-    {
-      "naslov": "Grad Slavonski Brod sufinancira izradu projekata sunčanih elektrana za kućanstva",
-      "datum": "10. 08. 2026.",
-      "kratki_opis": "Raspisan je natječaj za sufinanciranje izrade novog glavnog elektrotehničkog projekta sunčane elektrane za proizvodnju električne energije za vlastite potrebe kućanstva. Natječaj se provodi u sklopu Akcijskog plana poboljšanja kvalitete zraka za grad Slavonski Brod, a građanima omogućuje da uz znača",
-      "link": "https://www.slavonski-brod.hr/vijesti/17124-grad-slavonski-brod-sufinancira-izradu-projekata-suncanih-elektrana-za-kucanstva",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/man-with-white-helmet-near-solar-panel_resize.jpg"
-    },
-    {
-      "naslov": "Kup grada Slavonskog Broda pripao NK Vinogorcu",
-      "datum": "10. 08. 2026.",
-      "kratki_opis": "Ovog vikenda, na stadionu NK Amater Jelas, 8. i 9. kolovoza, održan je seniorski nogometni turnir „Kup grada Slavonskog Broda“. Na turnir su pozvani svi seniorski nogometni klubovi s područja grada: NK Amater Jelas, NK Marsonia, NK Vinogorac Brodsko Vinogorje, NK Željezničar 1946, NK Podvinje, NK Bu",
-      "link": "https://www.slavonski-brod.hr/vijesti/17122-kup-grada-slavonskog-broda-pripao-nk-vinogorcu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/vinogorac_naslovna.jpg"
-    },
-    {
-      "naslov": "Vrući vikend pred vratima, a Poloj nudi pravi recept za osvježenje uz Savu",
-      "datum": "07. 08. 2026.",
-      "kratki_opis": "Visoke ljetne temperature najavljuju još jedan vrući vikend, a Grad Slavonski Brod podsjeća građane da im gradsko kupalište Poloj i dalje stoji na raspolaganju za bijeg od gradske vreve i osvježenje uz rijeku. Uz sunčano vrijeme koje se najavljuje, Poloj ostaje prvi izbor svih koji žele iskoristiti ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17121-vruci-vikend-pred-vratima-a-poloj-nudi-pravi-recept-za-osvjezenje-uz-savu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/poloj1706_25_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
