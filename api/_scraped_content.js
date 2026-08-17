@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-16 06:16 UTC
+// Zadnje skrapanje: 2026-08-17 06:24 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-16T06:16:44.544Z",
+    "zadnje_azuriranje": "2026-08-17T06:24:22.078Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Velika Gospa svečano proslavljena u Brodskom Vinogorju",
+      "datum": "15. 08. 2026.",
+      "kratki_opis": "U župi Uznesenja Blažene Djevice Marije u Brodskom Vinogorju danas je održano središnje hodočasničko slavlje povodom blagdana Velike Gospe, kojemu je nazočio i gradonačelnik Slavonskog Broda Mirko Duspara. Svečanu misu predvodio je vlč. Ilija Nikolić, trajni đakon Zagrebačke nadbiskupije, a okupio j",
+      "link": "https://www.slavonski-brod.hr/vijesti/17135-velika-gospa-svecano-proslavljena-u-brodskom-vinogorju",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0094_resize.jpeg"
+    },
     {
       "naslov": "Produljeno radno vrijeme ugostiteljskih objekata za vrijeme trajanja manifestacije Street Food Festival",
       "datum": "14. 08. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "I tijekom kolovoza nastavljamo pratiti kakvoću vode na gradskom kupalištu „Poloj\", kako bi se svim kupačima jamčilo sigurno i ugodno kupanje na Savi. Prema najnovijim rezultatima ispitivanja koje je provela Služba za zdravstvenu ekologiju Nastavnog zavoda za javno zdravstvo Brodsko-posavske županije",
       "link": "https://www.slavonski-brod.hr/vijesti/17126-voda-na-poloju-i-dalje-izvrsne-kakvoce-za-kupanje",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/polojske_sume_i_grad_resize.jpg"
-    },
-    {
-      "naslov": "Brodski ljetni kamp ove godine okupio više od 200 djece, prijave za drugi dio u tijeku",
-      "datum": "11. 08. 2026.",
-      "kratki_opis": "Devetu godinu zaredom Ustanova za gospodarenje športskim objektima, u suradnji s Gradom Slavonskim Brodom, organizira Brodski ljetni kamp – program koji djeci tijekom ljetnih praznika nudi sport, igru i druženje u sigurnom okruženju. Od 15. lipnja do 17. srpnja održano je pet ciklusa kampa kroz koje",
-      "link": "https://www.slavonski-brod.hr/vijesti/17125-brodski-ljetni-kamp-ove-godine-okupio-vise-od-200-djece-prijave-za-drugi-dio-u-tijeku",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/1000007071.jpg"
     }
   ],
   "manifestacije_aktualne": [
