@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-17 06:24 UTC
+// Zadnje skrapanje: 2026-08-18 06:18 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-17T06:24:22.078Z",
+    "zadnje_azuriranje": "2026-08-18T06:18:49.177Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "DDD mjere 2026. godine – Proveden 8. (osmi) larvicidni tretman i monitoring komaraca",
+      "datum": "17. 08. 2026.",
+      "kratki_opis": "Dana 14. kolovoza 2026. godine (petak) , stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 8. (osmi) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih površina utvrđen",
+      "link": "https://www.slavonski-brod.hr/vijesti/17138-ddd-mjere-2026-godine-proveden-8-osmi-larvicidni-tretman-i-monitoring-komaraca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/polojske_sume_i_grad_resize.jpg"
+    },
+    {
+      "naslov": "Nastavljamo ulagati u ceste: nove asfaltirane dionice diljem grada",
+      "datum": "17. 08. 2026.",
+      "kratki_opis": "I u ljetnim mjesecima nastavljamo s intenzivnim radovima na uređenju prometne infrastrukture. Tijekom srpnja i kolovoza asfaltirali smo nekoliko dionica cesta i ulica diljem grada, čime građanima omogućujemo sigurnije i udobnije kretanje. Izgradili smo cestu na spoju Osječke i Šubićeve ulice, dok sm",
+      "link": "https://www.slavonski-brod.hr/vijesti/17137-ljeto-donijelo-nove-asfaltirane-ceste-i-ulice",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/photo-collage_ceste.jpg"
+    },
+    {
+      "naslov": "Večeras kreće vinska priča u Tvrđavi Brod!",
+      "datum": "17. 08. 2026.",
+      "kratki_opis": "Slavonski Brod od danas, 17. kolovoza, postaje mjesto susreta ljubitelja vina, kulture, glazbe i dobre zabave. U idućih šest dana održava se Brodski vinski festival „Vino u Tvrđavi Brod“, koji donosi bogat program posvećen vrhunskim hrvatskim vinima, eno-gastro ponudi i kreativnim sadržajima, a sve ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17136-veceras-krece-vinska-prica-u-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VINO_TVRDAVA_resize.png"
+    },
     {
       "naslov": "Velika Gospa svečano proslavljena u Brodskom Vinogorju",
       "datum": "15. 08. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Pozivamo sve zainteresirane građane na Večer vina i poezije „Vino u stihu – vino u glazbi\", koja će se održati u utorak, 18. kolovoza 2026. godine, s početkom u 19 sati, u Velikoj dvorani Gradske knjižnice Slavonski Brod. Posjetitelje očekuje večer posvećena susretu poezije, glazbe i vina, uz nastup",
       "link": "https://www.slavonski-brod.hr/vijesti/17129-vecer-vina-i-poezije-vino-u-stihu-vino-u-glazbi-u-gradskoj-knjiznici",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/VECER_VINA_I_POEZIJE_resize.png"
-    },
-    {
-      "naslov": "Kolovoška večer donosi rijedak spoj pomrčine Sunca i vrhunca Perzeida",
-      "datum": "12. 08. 2026.",
-      "kratki_opis": "Slavonski Brod i cijela Hrvatska večeras, 12. kolovoza 2026., dočekuju astronomski događaj koji se ne viđa često – u istom danu izmjenjuju se djelomična pomrčina Sunca i vrhunac meteorskog roja Perzeida. Ovakvo poklapanje dvaju atraktivnih nebeskih fenomena rijetkost je, pa pripremljenim uputama Ast",
-      "link": "https://www.slavonski-brod.hr/vijesti/17128-kolovoska-vecer-donosi-rijedak-spoj-pomrcine-sunca-i-vrhunca-perzeida",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/beautiful-silhouette-shot-trees-starry-night-sky_resize.jpg"
-    },
-    {
-      "naslov": "Danas je Međunarodni dan mladih: Slavonski Brod pokazuje da ulaganje u mlade gradi sigurniju budućnost",
-      "datum": "12. 08. 2026.",
-      "kratki_opis": "Svake godine 12. kolovoza obilježava se Međunarodni dan mladih, prigoda da se istaknu izazovi s kojima se mladi generacije suočavaju, ali i njihov nezamjenjiv doprinos zajednici. Ovogodišnja tema podsjeća da mladi ljudi diljem svijeta odrastaju u vrlo različitim društvenim, gospodarskim i geografski",
-      "link": "https://www.slavonski-brod.hr/vijesti/17127-danas-je-medunarodni-dan-mladih-slavonski-brod-pokazuje-da-ulaganje-u-mlade-gradi-sigurniju-buducnost",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/DAN_MLADIH_2026_jpg.jpg"
-    },
-    {
-      "naslov": "Voda na „Poloju&quot; i dalje izvrsne kakvoće za kupanje",
-      "datum": "11. 08. 2026.",
-      "kratki_opis": "I tijekom kolovoza nastavljamo pratiti kakvoću vode na gradskom kupalištu „Poloj\", kako bi se svim kupačima jamčilo sigurno i ugodno kupanje na Savi. Prema najnovijim rezultatima ispitivanja koje je provela Služba za zdravstvenu ekologiju Nastavnog zavoda za javno zdravstvo Brodsko-posavske županije",
-      "link": "https://www.slavonski-brod.hr/vijesti/17126-voda-na-poloju-i-dalje-izvrsne-kakvoce-za-kupanje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/polojske_sume_i_grad_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
