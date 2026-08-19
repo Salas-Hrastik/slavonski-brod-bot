@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-18 06:18 UTC
+// Zadnje skrapanje: 2026-08-19 06:19 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-18T06:18:49.177Z",
+    "zadnje_azuriranje": "2026-08-19T06:19:38.691Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Osamnaest imena, jedna žrtva: 34 godine od stradanja 105. brigade u Slavonskom Brodu",
+      "datum": "18. 08. 2026.",
+      "kratki_opis": "Kod spomenika poginulim braniteljima u Ulici Stjepana Radića u Slavonskom Brodu danas je održan komemorativni skup u čast 34. obljetnice stradanja pripadnika 105. bjelovarske gardijske brigade, koji su život položili braneći Republiku Hrvatsku u Domovinskom ratu. Tijekom kolovoza i rujna 1992. godin",
+      "link": "https://www.slavonski-brod.hr/vijesti/17139-osamnaest-imena-jedna-zrtva-34-godine-od-stradanja-105-brigade-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0188_resize.jpeg"
+    },
     {
       "naslov": "DDD mjere 2026. godine – Proveden 8. (osmi) larvicidni tretman i monitoring komaraca",
       "datum": "17. 08. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Rješavanje stambenog pitanja jedan je od važnih izazova s kojima se susreću mlade obitelji. Upravo zato, Grad Slavonski Brod od 2017. godine provodi mjeru stambenog zbrinjavanja mladih kojom se mladim obiteljima omogućuje lakši put do izgradnje vlastitog doma. Kroz ovu mjeru Grad mladim obiteljima o",
       "link": "https://www.slavonski-brod.hr/vijesti/17130-vise-od-zemljista-grad-slavonski-brod-vec-gotovo-deset-godina-mladima-otvara-put-do-vlastitog-doma",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Blage-Zadre-17.jpg"
-    },
-    {
-      "naslov": "Večer vina i poezije „Vino u stihu – vino u glazbi&quot; u Gradskoj knjižnici",
-      "datum": "13. 08. 2026.",
-      "kratki_opis": "Pozivamo sve zainteresirane građane na Večer vina i poezije „Vino u stihu – vino u glazbi\", koja će se održati u utorak, 18. kolovoza 2026. godine, s početkom u 19 sati, u Velikoj dvorani Gradske knjižnice Slavonski Brod. Posjetitelje očekuje večer posvećena susretu poezije, glazbe i vina, uz nastup",
-      "link": "https://www.slavonski-brod.hr/vijesti/17129-vecer-vina-i-poezije-vino-u-stihu-vino-u-glazbi-u-gradskoj-knjiznici",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/VECER_VINA_I_POEZIJE_resize.png"
     }
   ],
   "manifestacije_aktualne": [
