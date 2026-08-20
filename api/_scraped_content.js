@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-19 06:19 UTC
+// Zadnje skrapanje: 2026-08-20 06:20 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-19T06:19:38.691Z",
+    "zadnje_azuriranje": "2026-08-20T06:20:40.792Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Šezdeset novih mjesta u vrtiću „Pčelica&quot; sve bliže realizaciji",
+      "datum": "19. 08. 2026.",
+      "kratki_opis": "Nastavljamo s ulaganjima u predškolski odgoj i obrazovanje, a jedan od važnijih projekata je i dogradnja Dječjeg vrtića „Pčelica\". Radovi na objektu napreduju planiranom dinamikom, a izveden je niz građevinskih, instalaterskih i završnih radova. Na katu objekta ugrađen je vanjski dio stolarije, zavr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17141-znacajan-napredak-radova-na-dogradnji-dv-pcelica",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0211_resize.jpeg"
+    },
+    {
+      "naslov": "Osigurano financiranje za vodnokomunalnu infrastrukturu aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji And",
+      "datum": "19. 08. 2026.",
+      "kratki_opis": "Nakon gotovo desetljeća, projekt izgradnje vodnokomunalne infrastrukture aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji Andrijevci konačno dobiva svoje financiranje. Projekt je uspješno prošao stručnu ocjenu te je za njega osigurano sufinanciranje iz sredstava Kohezijske politike Europ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17140-osigurano-financiranje-za-vodnokomunalnu-infrastrukturu-aglomeracije-slavonski-brod-brodski-stupnik-garcin-i-donji-andrijevci",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/vinogorje_antena_i_grad_resize.jpg"
+    },
     {
       "naslov": "Osamnaest imena, jedna žrtva: 34 godine od stradanja 105. brigade u Slavonskom Brodu",
       "datum": "18. 08. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Dok su mnogi još na ljetnom odmoru, brige za najmlađe Brođane nema pauze – zamjenica gradonačelnika Marina Martić Puača danas je uručila pakete dobrodošlice za novorođenčad petero brodskih obitelji, nastavljajući mjeru potpore roditeljima koju Grad Slavonski Brod provodi već sedmu godinu zaredom. Sv",
       "link": "https://www.slavonski-brod.hr/vijesti/17132-grad-slavonski-brod-ne-staje-ni-u-kolovozu-pet-novih-obitelji-primilo-opremu-za-bebu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/photo-collage.jpg"
-    },
-    {
-      "naslov": "Podsjetnik roditeljima: Prijave za produženi boravak do 21. kolovoza",
-      "datum": "14. 08. 2026.",
-      "kratki_opis": "Grad Slavonski Brod podsjeća sve zainteresirane roditelje da je u tijeku prijava učenika za upis u program produženog boravka u gradskim osnovnim školama za školsku godinu 2026./2027. Rok za podnošenje prijava je 21. kolovoza 2026. godine. Zahtjev za upis učenika u program produženog boravka potrebn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17131-podsjetnik-roditeljima-prijave-za-produzeni-boravak-do-21-kolovoza",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/PRIJAVE_resize.jpg"
-    },
-    {
-      "naslov": "Više od zemljišta – Grad Slavonski Brod već gotovo deset godina mladima otvara put do vlastitog doma",
-      "datum": "13. 08. 2026.",
-      "kratki_opis": "Rješavanje stambenog pitanja jedan je od važnih izazova s kojima se susreću mlade obitelji. Upravo zato, Grad Slavonski Brod od 2017. godine provodi mjeru stambenog zbrinjavanja mladih kojom se mladim obiteljima omogućuje lakši put do izgradnje vlastitog doma. Kroz ovu mjeru Grad mladim obiteljima o",
-      "link": "https://www.slavonski-brod.hr/vijesti/17130-vise-od-zemljista-grad-slavonski-brod-vec-gotovo-deset-godina-mladima-otvara-put-do-vlastitog-doma",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Blage-Zadre-17.jpg"
     }
   ],
   "manifestacije_aktualne": [
