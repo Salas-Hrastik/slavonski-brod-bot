@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-20 06:20 UTC
+// Zadnje skrapanje: 2026-08-21 06:21 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-20T06:20:40.792Z",
+    "zadnje_azuriranje": "2026-08-21T06:21:16.328Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Zajedno do škole bez prepreka: Grad Slavonski Brod traži 98 pomoćnika u nastavi",
+      "datum": "20. 08. 2026.",
+      "kratki_opis": "Učionica je mjesto učenja, druženja, odrastanja i stvaranja prvih važnih životnih iskustava. Za neke učenike put kroz školu zahtijeva dodatnu podršku. Nekoga tko će im pomoći da se lakše uključe u nastavu, sudjeluju u školskim aktivnostima, kreću se školom, obave svakodnevne potrebe ili jednostavno ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17145-zajedno-do-skole-bez-prepreka-grad-slavonski-brod-trazi-98-pomocnika-u-nastavi",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/asitent_resize.jpg"
+    },
+    {
+      "naslov": "Zapadni dio južne tribine Stadiona kraj Save sve bliže svojoj konačnoj funkciji",
+      "datum": "20. 08. 2026.",
+      "kratki_opis": "Na gradilištu zapadnog dijela južne tribine Stadiona kraj Save i dalje su u tijeku brojni radovi, kojima se objekt korak po korak približava svojoj konačnoj namjeni. Nakon ranije dovršenih grubih građevinskih, instalaterskih i keramičarskih radova, trenutno su u fokusu unutarnji i vanjski detalji te",
+      "link": "https://www.slavonski-brod.hr/vijesti/17142-nastavljaju-se-radovi-na-zapadnom-dijelu-juzne-tribine-stadiona-kraj-save",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0194_resize.jpeg"
+    },
     {
       "naslov": "Šezdeset novih mjesta u vrtiću „Pčelica&quot; sve bliže realizaciji",
       "datum": "19. 08. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Donesen je Zaključak o davanju suglasnosti na produljeno radno vrijeme ugostiteljskih objekata za vrijeme trajanja manifestacije Street Food Festival u Tvrđavi Brod. Sukladno članku 8. Odluke o ugostiteljskoj djelatnosti na području grada Slavonskog Broda, dana je suglasnost na produljeno radno vrij",
       "link": "https://www.slavonski-brod.hr/vijesti/17134-produljeno-radno-vrijeme-ugostiteljskih-objekata-za-vrijeme-trajanja-manifestacije-street-food-festival",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/tvrdava_2_resize.jpg"
-    },
-    {
-      "naslov": "Obavijest o proglašenju sajamskog dana",
-      "datum": "14. 08. 2026.",
-      "kratki_opis": "U svrhu održavanja Street Food Festivala, donesena je odluka kojom se&nbsp; nedjelja 6. rujna 2026. &nbsp;proglašava sajamskim danom te je u spomenutu svrhu dozvoljena prodaja predmeta i dobara koji su predmet i svrha tog sajamskog dana.&nbsp; Odluka je u cijelosti dostupna&nbsp; OVDJE .",
-      "link": "https://www.slavonski-brod.hr/vijesti/17133-obavijest-o-proglasenju-sajamskog-dana-4",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_1500_resize.jpeg"
-    },
-    {
-      "naslov": "Grad Slavonski Brod ne staje ni u kolovozu: pet novih obitelji primilo opremu za bebu",
-      "datum": "14. 08. 2026.",
-      "kratki_opis": "Dok su mnogi još na ljetnom odmoru, brige za najmlađe Brođane nema pauze – zamjenica gradonačelnika Marina Martić Puača danas je uručila pakete dobrodošlice za novorođenčad petero brodskih obitelji, nastavljajući mjeru potpore roditeljima koju Grad Slavonski Brod provodi već sedmu godinu zaredom. Sv",
-      "link": "https://www.slavonski-brod.hr/vijesti/17132-grad-slavonski-brod-ne-staje-ni-u-kolovozu-pet-novih-obitelji-primilo-opremu-za-bebu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/photo-collage.jpg"
     }
   ],
   "manifestacije_aktualne": [
