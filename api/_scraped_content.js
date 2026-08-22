@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-21 06:21 UTC
+// Zadnje skrapanje: 2026-08-22 06:15 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-21T06:21:16.328Z",
+    "zadnje_azuriranje": "2026-08-22T06:15:56.793Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Poloj i sredinom kolovoza nudi sigurno osvježenje u čistoj Savi",
+      "datum": "21. 08. 2026.",
+      "kratki_opis": "Voda na gradskom kupalištu „Poloj\" i u drugoj polovici kolovoza zadržava visoku razinu kakvoće, potvrđuju najnoviji nalazi Službe za zdravstvenu ekologiju Nastavnog zavoda za javno zdravstvo Brodsko-posavske županije. Uzorkovanje provedeno 19. kolovoza obuhvatilo je sve tri stalne točke praćenja na ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17148-poloj-i-sredinom-kolovoza-nudi-sigurno-osvjezenje-u-cistoj-savi",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0223_resize.jpeg"
+    },
+    {
+      "naslov": "Vikend donosi vrhunac Brodskog vinskog festivala &quot;Vino u Tvrđavi Brod&quot;",
+      "datum": "21. 08. 2026.",
+      "kratki_opis": "Slavonski Brod ovog vikenda doživljava vrhunac Brodskog vinskog festivala \"Vino u Tvrđavi Brod\", koji se od ponedjeljka, 17. kolovoza, održava u jedinstvenom ambijentu Tvrđave Brod. Nakon niza sadržaja posvećenih vinu, glazbi, poeziji i kreativnosti, festival ulazi u svoja dva završna i najatraktivn",
+      "link": "https://www.slavonski-brod.hr/vijesti/17147-vikend-donosi-vrhunac-brodskog-vinskog-festivala-vino-u-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/image00015_resize.jpeg"
+    },
+    {
+      "naslov": "Besplatno predavanje o solarnim elektranama u Slavonskom Brodu na temu “Zašto je baš sada pravo vrijeme za vlastitu sola",
+      "datum": "21. 08. 2026.",
+      "kratki_opis": "Pozivamo građane na&nbsp;sudjelovanje na besplatnom edukativnom predavanju u sklopu Natječaja za sufinanciranje izrade novog glavnog elektrotehničkog projekta sunčane elektrane u kućanstvima u 2026. godini . Predavanje pod nazivom „Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?“ održ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17146-besplatno-predavanje-o-solarnim-elektranama-u-slavonskom-brodu-na-temu-zasto-je-bas-sada-pravo-vrijeme-za-vlastitu-solarnu-elektranu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/aerial-view-private-house-with-solar-panels-roof_resize.jpg"
+    },
     {
       "naslov": "Zajedno do škole bez prepreka: Grad Slavonski Brod traži 98 pomoćnika u nastavi",
       "datum": "20. 08. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "I u ljetnim mjesecima nastavljamo s intenzivnim radovima na uređenju prometne infrastrukture. Tijekom srpnja i kolovoza asfaltirali smo nekoliko dionica cesta i ulica diljem grada, čime građanima omogućujemo sigurnije i udobnije kretanje. Izgradili smo cestu na spoju Osječke i Šubićeve ulice, dok sm",
       "link": "https://www.slavonski-brod.hr/vijesti/17137-ljeto-donijelo-nove-asfaltirane-ceste-i-ulice",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/photo-collage_ceste.jpg"
-    },
-    {
-      "naslov": "Večeras kreće vinska priča u Tvrđavi Brod!",
-      "datum": "17. 08. 2026.",
-      "kratki_opis": "Slavonski Brod od danas, 17. kolovoza, postaje mjesto susreta ljubitelja vina, kulture, glazbe i dobre zabave. U idućih šest dana održava se Brodski vinski festival „Vino u Tvrđavi Brod“, koji donosi bogat program posvećen vrhunskim hrvatskim vinima, eno-gastro ponudi i kreativnim sadržajima, a sve ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17136-veceras-krece-vinska-prica-u-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/VINO_TVRDAVA_resize.png"
-    },
-    {
-      "naslov": "Velika Gospa svečano proslavljena u Brodskom Vinogorju",
-      "datum": "15. 08. 2026.",
-      "kratki_opis": "U župi Uznesenja Blažene Djevice Marije u Brodskom Vinogorju danas je održano središnje hodočasničko slavlje povodom blagdana Velike Gospe, kojemu je nazočio i gradonačelnik Slavonskog Broda Mirko Duspara. Svečanu misu predvodio je vlč. Ilija Nikolić, trajni đakon Zagrebačke nadbiskupije, a okupio j",
-      "link": "https://www.slavonski-brod.hr/vijesti/17135-velika-gospa-svecano-proslavljena-u-brodskom-vinogorju",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0094_resize.jpeg"
-    },
-    {
-      "naslov": "Produljeno radno vrijeme ugostiteljskih objekata za vrijeme trajanja manifestacije Street Food Festival",
-      "datum": "14. 08. 2026.",
-      "kratki_opis": "Donesen je Zaključak o davanju suglasnosti na produljeno radno vrijeme ugostiteljskih objekata za vrijeme trajanja manifestacije Street Food Festival u Tvrđavi Brod. Sukladno članku 8. Odluke o ugostiteljskoj djelatnosti na području grada Slavonskog Broda, dana je suglasnost na produljeno radno vrij",
-      "link": "https://www.slavonski-brod.hr/vijesti/17134-produljeno-radno-vrijeme-ugostiteljskih-objekata-za-vrijeme-trajanja-manifestacije-street-food-festival",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/tvrdava_2_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
