@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-23 06:17 UTC
+// Zadnje skrapanje: 2026-08-24 06:29 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-23T06:17:33.183Z",
+    "zadnje_azuriranje": "2026-08-24T06:29:04.307Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Vino, glazba i sjajna atmosfera obilježili završnu večer Brodskog vinskog festivala",
+      "datum": "23. 08. 2026.",
+      "kratki_opis": "Brodski vinski festival „Vino u Tvrđavi Brod“ sinoć je u velikom stilu priveden kraju. Završna večer, održana u kazamatima istočne kurtine Tvrđave Brod, okupila je velik broj posjetitelja koji su uživali u bogatoj ponudi vina, dobroj glazbi i jedinstvenom ambijentu povijesne tvrđave. Tijekom šest da",
+      "link": "https://www.slavonski-brod.hr/vijesti/17149-vino-glazba-i-sjajna-atmosfera-obiljezili-zavrsnu-vecer-brodskog-vinskog-festivala",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/naslovnavino.jpeg"
+    },
     {
       "naslov": "Poloj i sredinom kolovoza nudi sigurno osvježenje u čistoj Savi",
       "datum": "21. 08. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Dana 14. kolovoza 2026. godine (petak) , stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 8. (osmi) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih površina utvrđen",
       "link": "https://www.slavonski-brod.hr/vijesti/17138-ddd-mjere-2026-godine-proveden-8-osmi-larvicidni-tretman-i-monitoring-komaraca",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/polojske_sume_i_grad_resize.jpg"
-    },
-    {
-      "naslov": "Nastavljamo ulagati u ceste: nove asfaltirane dionice diljem grada",
-      "datum": "17. 08. 2026.",
-      "kratki_opis": "I u ljetnim mjesecima nastavljamo s intenzivnim radovima na uređenju prometne infrastrukture. Tijekom srpnja i kolovoza asfaltirali smo nekoliko dionica cesta i ulica diljem grada, čime građanima omogućujemo sigurnije i udobnije kretanje. Izgradili smo cestu na spoju Osječke i Šubićeve ulice, dok sm",
-      "link": "https://www.slavonski-brod.hr/vijesti/17137-ljeto-donijelo-nove-asfaltirane-ceste-i-ulice",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/photo-collage_ceste.jpg"
     }
   ],
   "manifestacije_aktualne": [
