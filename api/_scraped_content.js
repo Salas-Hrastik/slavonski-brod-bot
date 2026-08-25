@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-24 06:29 UTC
+// Zadnje skrapanje: 2026-08-25 06:20 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-24T06:29:04.307Z",
+    "zadnje_azuriranje": "2026-08-25T06:20:54.698Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Netočno je da Grad Slavonski Brod iznosi netočne i lažne tvrdnje",
+      "datum": "24. 08. 2026.",
+      "kratki_opis": "Povodom tekstova objavljenih na portalima 035portal i SB Online, u kojima se tvrdi da Grad iznosi netočne i lažne tvrdnje vezane uz uklanjanje ugostiteljske opreme na terasi Caffe bara Royal, iznosimo činjenice iz službene dokumentacije predmeta. Netočna je tvrdnja da je vlasnik zaprimio „jedan papi",
+      "link": "https://www.slavonski-brod.hr/vijesti/17153-netocno-je-da-je-grad-iznosi-netocne-i-lazne-tvrdnje",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Snimka_zaslona_2026-08-24_135711.png"
+    },
+    {
+      "naslov": "Komunalnim redarima onemogućeno uklanjanje ugostiteljske opreme terase Caffe bara Royal",
+      "datum": "24. 08. 2026.",
+      "kratki_opis": "Komunalno redarstvo Grada Slavonskog Broda u suradnji s TD Komunalac d.o.o. danas je pokušalo ukloniti ugostiteljsku opremu s terase Caffe bara Royal koju bez odobrenja koristi tvrtka Royal Holding d.o.o. vlasnika Gorana Ivezića. Dugotrajnim upravnim postupkom ugostitelju se nalagalo uklanjanje ugos",
+      "link": "https://www.slavonski-brod.hr/vijesti/17150-komunalnim-redarima-onemoguceno-uklanjanje-ugostiteljske-opreme-terase-caffe-bara-royal",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/redar_resize.jpeg"
+    },
+    {
+      "naslov": "Zgrade Grada Slavonskog Broda osvijetljene u bojama ukrajinske zastave",
+      "datum": "24. 08. 2026.",
+      "kratki_opis": "Povodom Dana državne zastave Ukrajine, koji se obilježava 23. kolovoza, te Dana neovisnosti Ukrajine, koji se obilježava dan poslije, Grad Slavonski Brod i danas se pridružio nizu hrvatskih gradova u iskazivanju podrške ukrajinskom narodu. Na inicijativu Veleposlanstva Ukrajine u Republici Hrvatskoj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17154-zgrade-grada-slavonskog-broda-osvijetljene-u-bojama-ukrajinske-zastave",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0295_resize.jpeg"
+    },
+    {
+      "naslov": "Ponovljeni Javni poziv za prijedloge kandidata za imenovanje sudaca porotnika za mladež Županijskog suda u Slavonskom Br",
+      "datum": "24. 08. 2026.",
+      "kratki_opis": "Grad Slavonski Brod poziva sve zainteresirane građane grada Slavonskog Broda koji ispunjavaju uvjete propisane Zakonom o sudovima i Zakonom o sudovima za mladež da&nbsp; podnesu prijavu na Javni poziv za prijedlog kandidata za imenovanje suca porotnika za mladež Županijskog suda u Slavonskom Brodu. ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17152-ponovljeni-javni-poziv-za-prijedloge-kandidata-za-imenovanje-sudaca-porotnika-za-mladez-zupanijskog-suda-u-slavonskom-brodu-kandidati-muskog-spola",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Grad2.jpeg"
+    },
     {
       "naslov": "Vino, glazba i sjajna atmosfera obilježili završnu večer Brodskog vinskog festivala",
       "datum": "23. 08. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Na gradilištu zapadnog dijela južne tribine Stadiona kraj Save i dalje su u tijeku brojni radovi, kojima se objekt korak po korak približava svojoj konačnoj namjeni. Nakon ranije dovršenih grubih građevinskih, instalaterskih i keramičarskih radova, trenutno su u fokusu unutarnji i vanjski detalji te",
       "link": "https://www.slavonski-brod.hr/vijesti/17142-nastavljaju-se-radovi-na-zapadnom-dijelu-juzne-tribine-stadiona-kraj-save",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0194_resize.jpeg"
-    },
-    {
-      "naslov": "Šezdeset novih mjesta u vrtiću „Pčelica&quot; sve bliže realizaciji",
-      "datum": "19. 08. 2026.",
-      "kratki_opis": "Nastavljamo s ulaganjima u predškolski odgoj i obrazovanje, a jedan od važnijih projekata je i dogradnja Dječjeg vrtića „Pčelica\". Radovi na objektu napreduju planiranom dinamikom, a izveden je niz građevinskih, instalaterskih i završnih radova. Na katu objekta ugrađen je vanjski dio stolarije, zavr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17141-znacajan-napredak-radova-na-dogradnji-dv-pcelica",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0211_resize.jpeg"
-    },
-    {
-      "naslov": "Osigurano financiranje za vodnokomunalnu infrastrukturu aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji And",
-      "datum": "19. 08. 2026.",
-      "kratki_opis": "Nakon gotovo desetljeća, projekt izgradnje vodnokomunalne infrastrukture aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji Andrijevci konačno dobiva svoje financiranje. Projekt je uspješno prošao stručnu ocjenu te je za njega osigurano sufinanciranje iz sredstava Kohezijske politike Europ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17140-osigurano-financiranje-za-vodnokomunalnu-infrastrukturu-aglomeracije-slavonski-brod-brodski-stupnik-garcin-i-donji-andrijevci",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/vinogorje_antena_i_grad_resize.jpg"
-    },
-    {
-      "naslov": "Osamnaest imena, jedna žrtva: 34 godine od stradanja 105. brigade u Slavonskom Brodu",
-      "datum": "18. 08. 2026.",
-      "kratki_opis": "Kod spomenika poginulim braniteljima u Ulici Stjepana Radića u Slavonskom Brodu danas je održan komemorativni skup u čast 34. obljetnice stradanja pripadnika 105. bjelovarske gardijske brigade, koji su život položili braneći Republiku Hrvatsku u Domovinskom ratu. Tijekom kolovoza i rujna 1992. godin",
-      "link": "https://www.slavonski-brod.hr/vijesti/17139-osamnaest-imena-jedna-zrtva-34-godine-od-stradanja-105-brigade-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0188_resize.jpeg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – Proveden 8. (osmi) larvicidni tretman i monitoring komaraca",
-      "datum": "17. 08. 2026.",
-      "kratki_opis": "Dana 14. kolovoza 2026. godine (petak) , stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 8. (osmi) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih površina utvrđen",
-      "link": "https://www.slavonski-brod.hr/vijesti/17138-ddd-mjere-2026-godine-proveden-8-osmi-larvicidni-tretman-i-monitoring-komaraca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/polojske_sume_i_grad_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
