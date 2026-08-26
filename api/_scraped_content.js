@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-25 06:20 UTC
+// Zadnje skrapanje: 2026-08-26 06:22 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-25T06:20:54.698Z",
+    "zadnje_azuriranje": "2026-08-26T06:22:41.405Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Održan sastanak o nastavku postupka uklanjanja ugostiteljske opreme na terasi Caffe bara Royal",
+      "datum": "25. 08. 2026.",
+      "kratki_opis": "Predstavnici Grada Slavonskog Broda održali su danas sastanak u Policijskoj upravi brodsko-posavskoj. Tema sastanka bila je pružanje asistencije u postupku uklanjanja ugostiteljske opreme ispred Caffe bara Royal. Kako je poznato, jučerašnji pokušaj uklanjanja ugostiteljske opreme nije proveden jer j",
+      "link": "https://www.slavonski-brod.hr/vijesti/17158-odrzan-sastanak-o-nastavku-postupka-uklanjanja-ugostiteljske-opreme-na-terasi-caffe-bara-royal",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Snimka_zaslona_2026-08-24_135711.png"
+    },
+    {
+      "naslov": "Gradonačelnik čestitao Vanesi Tot na osvojenoj srebrnoj medalji na Mediteranskim igrama",
+      "datum": "25. 08. 2026.",
+      "kratki_opis": "Brođanka Vanesa Tot osvojila je srebrnu medalju u disciplini C1 200 metara na Mediteranskim igrama u Tarantu. U vrlo izjednačenoj završnici, s rezultatom 48,04 sekunde, za samo sedam stotinki sekunde zaostala je za Talijankom Elenom Voltan, dok je brončanu medalju osvojila Španjolka Valeria Oliveira",
+      "link": "https://www.slavonski-brod.hr/vijesti/17156-gradonacelnik-cestitao-vanesi-tot-na-osvojenoj-srebrnoj-medalji-na-mediteranskim-igrama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/vannesa_resize.png"
+    },
+    {
+      "naslov": "Predstavljen program 19. festivala amaterskih kazališta u Slavonskom Brodu",
+      "datum": "25. 08. 2026.",
+      "kratki_opis": "U Velikoj vijećnici danas je održana konferencija za medije na kojoj je predstavljen program 19. Festivala amaterskih kazališta (FAK), koji će ove godine nositi slogan \"OPEN YOUR HEART AND SEE THIS IS FAK19\". U ime Grada Slavonskog Broda na konferenciji je sudjelovala zamjenica gradonačelnika Marina",
+      "link": "https://www.slavonski-brod.hr/vijesti/17157-predstavljen-program-19-festivala-amaterskih-kazalista-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0337_resize.jpeg"
+    },
+    {
+      "naslov": "Čestitka gradonačelnika KKK Olimpik na iznimnom uspjehu na Državnom prvenstvu",
+      "datum": "25. 08. 2026.",
+      "kratki_opis": "Gradonačelnik Mirko Duspara upućuje iskrene čestitke sportašicama i sportašima Kajak kanu kluba Olimpik na iznimnom uspjehu ostvarenom na Državnom prvenstvu Republike Hrvatske u kajaku i kanuu za juniore, mlađe juniore, kadete i mlađe kadete, održanom 22. i 23. kolovoza 2026. na zagrebačkom Jarunu. ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17155-grad-slavonski-brod-cestita-brodskim-sportasima-na-velikim-uspjesima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/olimpik_1_resize.jpg"
+    },
     {
       "naslov": "Netočno je da Grad Slavonski Brod iznosi netočne i lažne tvrdnje",
       "datum": "24. 08. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Voda na gradskom kupalištu „Poloj\" i u drugoj polovici kolovoza zadržava visoku razinu kakvoće, potvrđuju najnoviji nalazi Službe za zdravstvenu ekologiju Nastavnog zavoda za javno zdravstvo Brodsko-posavske županije. Uzorkovanje provedeno 19. kolovoza obuhvatilo je sve tri stalne točke praćenja na ",
       "link": "https://www.slavonski-brod.hr/vijesti/17148-poloj-i-sredinom-kolovoza-nudi-sigurno-osvjezenje-u-cistoj-savi",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0223_resize.jpeg"
-    },
-    {
-      "naslov": "Vikend donosi vrhunac Brodskog vinskog festivala &quot;Vino u Tvrđavi Brod&quot;",
-      "datum": "21. 08. 2026.",
-      "kratki_opis": "Slavonski Brod ovog vikenda doživljava vrhunac Brodskog vinskog festivala \"Vino u Tvrđavi Brod\", koji se od ponedjeljka, 17. kolovoza, održava u jedinstvenom ambijentu Tvrđave Brod. Nakon niza sadržaja posvećenih vinu, glazbi, poeziji i kreativnosti, festival ulazi u svoja dva završna i najatraktivn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17147-vikend-donosi-vrhunac-brodskog-vinskog-festivala-vino-u-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/image00015_resize.jpeg"
-    },
-    {
-      "naslov": "Besplatno predavanje o solarnim elektranama u Slavonskom Brodu na temu “Zašto je baš sada pravo vrijeme za vlastitu sola",
-      "datum": "21. 08. 2026.",
-      "kratki_opis": "Pozivamo građane na&nbsp;sudjelovanje na besplatnom edukativnom predavanju u sklopu Natječaja za sufinanciranje izrade novog glavnog elektrotehničkog projekta sunčane elektrane u kućanstvima u 2026. godini . Predavanje pod nazivom „Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?“ održ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17146-besplatno-predavanje-o-solarnim-elektranama-u-slavonskom-brodu-na-temu-zasto-je-bas-sada-pravo-vrijeme-za-vlastitu-solarnu-elektranu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/aerial-view-private-house-with-solar-panels-roof_resize.jpg"
-    },
-    {
-      "naslov": "Zajedno do škole bez prepreka: Grad Slavonski Brod traži 98 pomoćnika u nastavi",
-      "datum": "20. 08. 2026.",
-      "kratki_opis": "Učionica je mjesto učenja, druženja, odrastanja i stvaranja prvih važnih životnih iskustava. Za neke učenike put kroz školu zahtijeva dodatnu podršku. Nekoga tko će im pomoći da se lakše uključe u nastavu, sudjeluju u školskim aktivnostima, kreću se školom, obave svakodnevne potrebe ili jednostavno ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17145-zajedno-do-skole-bez-prepreka-grad-slavonski-brod-trazi-98-pomocnika-u-nastavi",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/asitent_resize.jpg"
-    },
-    {
-      "naslov": "Zapadni dio južne tribine Stadiona kraj Save sve bliže svojoj konačnoj funkciji",
-      "datum": "20. 08. 2026.",
-      "kratki_opis": "Na gradilištu zapadnog dijela južne tribine Stadiona kraj Save i dalje su u tijeku brojni radovi, kojima se objekt korak po korak približava svojoj konačnoj namjeni. Nakon ranije dovršenih grubih građevinskih, instalaterskih i keramičarskih radova, trenutno su u fokusu unutarnji i vanjski detalji te",
-      "link": "https://www.slavonski-brod.hr/vijesti/17142-nastavljaju-se-radovi-na-zapadnom-dijelu-juzne-tribine-stadiona-kraj-save",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0194_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
