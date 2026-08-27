@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-26 06:22 UTC
+// Zadnje skrapanje: 2026-08-27 16:52 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-26T06:22:41.405Z",
+    "zadnje_azuriranje": "2026-08-27T16:52:20.886Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,74 +18,74 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Održan sastanak o nastavku postupka uklanjanja ugostiteljske opreme na terasi Caffe bara Royal",
-      "datum": "25. 08. 2026.",
-      "kratki_opis": "Predstavnici Grada Slavonskog Broda održali su danas sastanak u Policijskoj upravi brodsko-posavskoj. Tema sastanka bila je pružanje asistencije u postupku uklanjanja ugostiteljske opreme ispred Caffe bara Royal. Kako je poznato, jučerašnji pokušaj uklanjanja ugostiteljske opreme nije proveden jer j",
-      "link": "https://www.slavonski-brod.hr/vijesti/17158-odrzan-sastanak-o-nastavku-postupka-uklanjanja-ugostiteljske-opreme-na-terasi-caffe-bara-royal",
+      "naslov": "Raskid ugovora s trenutnim učinkom",
+      "datum": "27. 08. 2026.",
+      "kratki_opis": "Zbog velikog interesa javnosti za tvrtku Royal Holding d.o.o. u prostoru u vlasništvu Grada Slavonskog Broda, a kako bismo izbjegli svako pogrešno tumačenje ili iznošenje netočnih informacija, objavljujemo podatke vezane za ugovor o zakupu poslovnog prostora na adresi Aleja Miroslava Krleže 4. Tvrtk",
+      "link": "https://www.slavonski-brod.hr/vijesti/17169-sto-je-prethodilo-raskidu-ugovora-o-zakupu-s-tvrtkom-royal-holding-d-o-o",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Snimka_zaslona_2026-08-24_135711.png"
     },
     {
-      "naslov": "Gradonačelnik čestitao Vanesi Tot na osvojenoj srebrnoj medalji na Mediteranskim igrama",
-      "datum": "25. 08. 2026.",
-      "kratki_opis": "Brođanka Vanesa Tot osvojila je srebrnu medalju u disciplini C1 200 metara na Mediteranskim igrama u Tarantu. U vrlo izjednačenoj završnici, s rezultatom 48,04 sekunde, za samo sedam stotinki sekunde zaostala je za Talijankom Elenom Voltan, dok je brončanu medalju osvojila Španjolka Valeria Oliveira",
-      "link": "https://www.slavonski-brod.hr/vijesti/17156-gradonacelnik-cestitao-vanesi-tot-na-osvojenoj-srebrnoj-medalji-na-mediteranskim-igrama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/vannesa_resize.png"
+      "naslov": "Mjera koju je prvi uveo Slavonski Brod i danas donosi konkretnu pomoć obiteljima",
+      "datum": "27. 08. 2026.",
+      "kratki_opis": "Prvi mjeseci s novorođenčetom donose mnogo radosti, ali i brojne nove troškove. Upravo zato Grad Slavonski Brod već godinama roditeljima nastoji pomoći konkretnom potporom, paketom opreme koji pokriva dio onoga što je obiteljima potrebno od samog dolaska bebe. Danas je opremu za bebe dobilo još pet ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17168-mjera-koju-je-prvi-uveo-slavonski-brod-i-danas-donosi-konkretnu-pomoc-obiteljima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/bebe.png"
     },
     {
-      "naslov": "Predstavljen program 19. festivala amaterskih kazališta u Slavonskom Brodu",
-      "datum": "25. 08. 2026.",
-      "kratki_opis": "U Velikoj vijećnici danas je održana konferencija za medije na kojoj je predstavljen program 19. Festivala amaterskih kazališta (FAK), koji će ove godine nositi slogan \"OPEN YOUR HEART AND SEE THIS IS FAK19\". U ime Grada Slavonskog Broda na konferenciji je sudjelovala zamjenica gradonačelnika Marina",
-      "link": "https://www.slavonski-brod.hr/vijesti/17157-predstavljen-program-19-festivala-amaterskih-kazalista-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0337_resize.jpeg"
+      "naslov": "Pozivamo na prijavu: stručni komunikacijski posrednik u osnovnim školama",
+      "datum": "27. 08. 2026.",
+      "kratki_opis": "U sklopu projekta „Helping – faza VII\", koji se provodi u okviru Natječaja „Osiguravanje pomoćnika u nastavi i stručnih komunikacijskih posrednika učenicima s teškoćama u razvoju u osnovnoškolskim i srednjoškolskim odgojno-obrazovnim ustanovama, faza VII\", a financira se u okviru Programa Učinkoviti",
+      "link": "https://www.slavonski-brod.hr/vijesti/17167-pozivamo-na-prijavu-strucni-komunikacijski-posrednik-u-osnovnim-skolama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/467310554_593501543097879_673896451514851275_n.jpg"
     },
     {
-      "naslov": "Čestitka gradonačelnika KKK Olimpik na iznimnom uspjehu na Državnom prvenstvu",
-      "datum": "25. 08. 2026.",
-      "kratki_opis": "Gradonačelnik Mirko Duspara upućuje iskrene čestitke sportašicama i sportašima Kajak kanu kluba Olimpik na iznimnom uspjehu ostvarenom na Državnom prvenstvu Republike Hrvatske u kajaku i kanuu za juniore, mlađe juniore, kadete i mlađe kadete, održanom 22. i 23. kolovoza 2026. na zagrebačkom Jarunu. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17155-grad-slavonski-brod-cestita-brodskim-sportasima-na-velikim-uspjesima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/olimpik_1_resize.jpg"
+      "naslov": "Danas edukativno predavanje o sunčanim elektranama za građane",
+      "datum": "27. 08. 2026.",
+      "kratki_opis": "Pozivamo sve zainteresirane građane da nam se pridruže već večeras na besplatnom edukativnom predavanju „Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?\", organiziranom u sklopu Natječaja za sufinanciranje izrade novog glavnog elektrotehničkog projekta sunčane elektrane u kućanstvima.",
+      "link": "https://www.slavonski-brod.hr/vijesti/17166-danas-edukativno-predavanje-o-suncanim-elektranama-za-gradane",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/ulleo-solar-system-2939560_1920.jpg"
     },
     {
-      "naslov": "Netočno je da Grad Slavonski Brod iznosi netočne i lažne tvrdnje",
-      "datum": "24. 08. 2026.",
-      "kratki_opis": "Povodom tekstova objavljenih na portalima 035portal i SB Online, u kojima se tvrdi da Grad iznosi netočne i lažne tvrdnje vezane uz uklanjanje ugostiteljske opreme na terasi Caffe bara Royal, iznosimo činjenice iz službene dokumentacije predmeta. Netočna je tvrdnja da je vlasnik zaprimio „jedan papi",
-      "link": "https://www.slavonski-brod.hr/vijesti/17153-netocno-je-da-je-grad-iznosi-netocne-i-lazne-tvrdnje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Snimka_zaslona_2026-08-24_135711.png"
+      "naslov": "Obavijest o privremenoj obustavi prometa u Splavarskoj ulici radi održavanja utrke &quot;Prevencijom do zdravlja&quot;",
+      "datum": "26. 08. 2026.",
+      "kratki_opis": "Obavještavmo građane da će u subotu, 5. rujna 2026. godine , u vremenu od 15:00 do 23:00 sati, biti privremeno zatvorena za promet Splavarska ulica u Slavonskom Brodu, od Športske dvorane Vijuš do Športsko-rekreacijskog centra Poloj, kao i pristupne ceste oko Športske dvorane Vijuš i Gradskih bazena",
+      "link": "https://www.slavonski-brod.hr/vijesti/17165-obavijest-o-privremenoj-obustavi-prometa-u-splavarskoj-ulici",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0108_resize.jpeg"
     },
     {
-      "naslov": "Komunalnim redarima onemogućeno uklanjanje ugostiteljske opreme terase Caffe bara Royal",
-      "datum": "24. 08. 2026.",
-      "kratki_opis": "Komunalno redarstvo Grada Slavonskog Broda u suradnji s TD Komunalac d.o.o. danas je pokušalo ukloniti ugostiteljsku opremu s terase Caffe bara Royal koju bez odobrenja koristi tvrtka Royal Holding d.o.o. vlasnika Gorana Ivezića. Dugotrajnim upravnim postupkom ugostitelju se nalagalo uklanjanje ugos",
-      "link": "https://www.slavonski-brod.hr/vijesti/17150-komunalnim-redarima-onemoguceno-uklanjanje-ugostiteljske-opreme-terase-caffe-bara-royal",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/redar_resize.jpeg"
+      "naslov": "Gradonačelnik uputio čestitke KKK Marsonia na sjajnom rezultatu",
+      "datum": "26. 08. 2026.",
+      "kratki_opis": "KKK Marsonia ponovno je pokazao da pripada samom vrhu hrvatskog kajakaštva. Na Prvenstvu Republike Hrvatske, održanom 22. i 23. kolovoza na zagrebačkom Jarunu, članovi slavonskobrodskog kluba ostvarili su izniman rezultat – osvojili su čak 48 medalja, od čega 20 zlatnih, 14 srebrnih i 14 brončanih .",
+      "link": "https://www.slavonski-brod.hr/vijesti/17164-gradonacelnik-uputio-cestitke-kkk-marsonia-na-sjajnom-rezultatu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/kkk_marsonia_resize.jpg"
     },
     {
-      "naslov": "Zgrade Grada Slavonskog Broda osvijetljene u bojama ukrajinske zastave",
-      "datum": "24. 08. 2026.",
-      "kratki_opis": "Povodom Dana državne zastave Ukrajine, koji se obilježava 23. kolovoza, te Dana neovisnosti Ukrajine, koji se obilježava dan poslije, Grad Slavonski Brod i danas se pridružio nizu hrvatskih gradova u iskazivanju podrške ukrajinskom narodu. Na inicijativu Veleposlanstva Ukrajine u Republici Hrvatskoj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17154-zgrade-grada-slavonskog-broda-osvijetljene-u-bojama-ukrajinske-zastave",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0295_resize.jpeg"
+      "naslov": "Ovog vikenda stiže glazbeni spektakl u Tvrđavi Brod – ulaz je potpuno besplatan!",
+      "datum": "26. 08. 2026.",
+      "kratki_opis": "Slavonski Brod ovog će vikenda ponovno biti središte domaće i regionalne glazbene scene. U impresivnom ambijentu Tvrđave Brod u petak i subotu, 28. i 29. kolovoza, održava se jubilarno, deseto izdanje CMC 200 Slavonija festa. Dva festivalska dana donose raznovrstan glazbeni program, od popa i zabavn",
+      "link": "https://www.slavonski-brod.hr/vijesti/17163-ovog-vikenda-stize-glazbeni-spektakl-u-tvrdavi-brod-ulaz-je-potpuno-besplatan",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_festival_resize.jpg"
     },
     {
-      "naslov": "Ponovljeni Javni poziv za prijedloge kandidata za imenovanje sudaca porotnika za mladež Županijskog suda u Slavonskom Br",
-      "datum": "24. 08. 2026.",
-      "kratki_opis": "Grad Slavonski Brod poziva sve zainteresirane građane grada Slavonskog Broda koji ispunjavaju uvjete propisane Zakonom o sudovima i Zakonom o sudovima za mladež da&nbsp; podnesu prijavu na Javni poziv za prijedlog kandidata za imenovanje suca porotnika za mladež Županijskog suda u Slavonskom Brodu. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17152-ponovljeni-javni-poziv-za-prijedloge-kandidata-za-imenovanje-sudaca-porotnika-za-mladez-zupanijskog-suda-u-slavonskom-brodu-kandidati-muskog-spola",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Grad2.jpeg"
+      "naslov": "Raspored rada mobilnih gradskih blagajni u rujnu",
+      "datum": "26. 08. 2026.",
+      "kratki_opis": "Obavještavaju se građani kako će mobilne gradske blagajne u rujnu&nbsp;raditi prema sljedećem rasporedu: RUJAN 09. rujan &nbsp;2026. ( srijeda &nbsp;) Mjesni dom Ante Starčević – od 10,00 do 14,00 sati&nbsp; 10. rujan &nbsp;2026. ( četvrtak ) Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30 sati &nb",
+      "link": "https://www.slavonski-brod.hr/vijesti/17162-raspored-rada-mobilnih-gradskih-blagajni-u-rujnu-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/blagajna.jpg"
     },
     {
-      "naslov": "Vino, glazba i sjajna atmosfera obilježili završnu večer Brodskog vinskog festivala",
-      "datum": "23. 08. 2026.",
-      "kratki_opis": "Brodski vinski festival „Vino u Tvrđavi Brod“ sinoć je u velikom stilu priveden kraju. Završna večer, održana u kazamatima istočne kurtine Tvrđave Brod, okupila je velik broj posjetitelja koji su uživali u bogatoj ponudi vina, dobroj glazbi i jedinstvenom ambijentu povijesne tvrđave. Tijekom šest da",
-      "link": "https://www.slavonski-brod.hr/vijesti/17149-vino-glazba-i-sjajna-atmosfera-obiljezili-zavrsnu-vecer-brodskog-vinskog-festivala",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/naslovnavino.jpeg"
+      "naslov": "Na Međunarodni dan pasa sjetimo se i onih koji još čekaju svoj dom",
+      "datum": "26. 08. 2026.",
+      "kratki_opis": "Danas, 26. kolovoza, obilježava se Međunarodni dan pasa, dan kojim se podsjeća na posebnu povezanost ljudi i pasa te na njihovu važnu ulogu u svakodnevnom životu. Psi su danas neizostavan dio brojnih obitelji, a svojim prisustvom, privrženošću i pomoći koju pružaju u različitim područjima života ima",
+      "link": "https://www.slavonski-brod.hr/vijesti/17161-na-medunarodni-dan-pasa-sjetimo-se-i-onih-koji-jos-cekaju-svoj-dom",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/pas22.png"
     },
     {
-      "naslov": "Poloj i sredinom kolovoza nudi sigurno osvježenje u čistoj Savi",
-      "datum": "21. 08. 2026.",
-      "kratki_opis": "Voda na gradskom kupalištu „Poloj\" i u drugoj polovici kolovoza zadržava visoku razinu kakvoće, potvrđuju najnoviji nalazi Službe za zdravstvenu ekologiju Nastavnog zavoda za javno zdravstvo Brodsko-posavske županije. Uzorkovanje provedeno 19. kolovoza obuhvatilo je sve tri stalne točke praćenja na ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17148-poloj-i-sredinom-kolovoza-nudi-sigurno-osvjezenje-u-cistoj-savi",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0223_resize.jpeg"
+      "naslov": "Čestitka gradonačelnika članovima AK Marsonia na sjajnim rezultatima na Sunset Runu 2026.",
+      "datum": "26. 08. 2026.",
+      "kratki_opis": "Gradonačelnik Mirko Duspara upućuje iskrene čestitke članovima Atletskog kluba Marsonia na sjajnim rezultatima ostvarenima na utrci Sunset Run 2026 . , održanoj u Osijeku. Na utrci dugoj sedam kilometara, koja je startala i završila na kupalištu Copacabana, nastupilo je ukupno 360 trkača i trkačica,",
+      "link": "https://www.slavonski-brod.hr/vijesti/17160-cestitka-gradonacelnika-clanovima-ak-marsonia-na-sjajnim-rezultatima-na-sunset-runu-2026",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/ak_marsonia_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
