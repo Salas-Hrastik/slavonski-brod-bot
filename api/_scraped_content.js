@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-27 16:52 UTC
+// Zadnje skrapanje: 2026-08-28 17:44 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-27T16:52:20.886Z",
+    "zadnje_azuriranje": "2026-08-28T17:44:08.554Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Objavljen Javni poziv za prijavu štete od prirodne nepogode",
+      "datum": "28. 08. 2026.",
+      "kratki_opis": "Budući da je dana 28. kolovoza 2026. godine donesena Odluka o proglašenju prirodne nepogode izazvane SUŠOM na poljoprivrednim usjevima proljetne sjetve 2026. godine, postrnim usjevima, djetelinsko-travnim smjesama, ribnjačarskim površinama i višegodišnjim nasadima - voćnjacima i vinogradima na podru",
+      "link": "https://www.slavonski-brod.hr/vijesti/17174-objavljen-javni-poziv-za-prijavu-stete-od-prirodne-nepogode",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/prema_zapadu_grada_resize.jpg"
+    },
+    {
+      "naslov": "Održano besplatno predavanje na temu “Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?”",
+      "datum": "28. 08. 2026.",
+      "kratki_opis": "Dana 27. kolovoza 2026. godine , u Velikoj vijećnici Gradske uprave u Slavonskom Brodu, održana je besplatna radionica za građane pod nazivom “Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?” . Građani su saznali sve o uvjetima ugradnje solarnih panela, isplativosti ulaganja u obnovlj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17171-odrzano-besplatno-predavanje-na-temu-zasto-je-bas-sada-pravo-vrijeme-za-vlastitu-solarnu-elektranu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Slika_1_resize.jpeg"
+    },
+    {
+      "naslov": "Dodijeljene nagrade za najuređenije okućnice, balkone, prozore i ugostiteljske objekte na području Slavonskog Broda i ok",
+      "datum": "28. 08. 2026.",
+      "kratki_opis": "Na prigodnoj svečanosti održanoj sinoć na terasi Kapelanova stana u Tvrđavi Brod dodijeljene su nagrade najuspješnijim sudionicima ovogodišnjeg izbora za najuređenije okućnice, balkone, prozore i ugostiteljske objekte na području Slavonskog Broda te općina Gornja Vrba, Podcrkavlje i Bukovlje. Tradic",
+      "link": "https://www.slavonski-brod.hr/vijesti/17170-dodijeljene-nagrade-za-najuredenije-okucnice-balkone-prozore-i-ugostiteljske-objekte-na-podrucju-slavonskog-broda-i-okolnih-opcina",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/NASNAG.jpeg"
+    },
     {
       "naslov": "Raskid ugovora s trenutnim učinkom",
       "datum": "27. 08. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonski Brod ovog će vikenda ponovno biti središte domaće i regionalne glazbene scene. U impresivnom ambijentu Tvrđave Brod u petak i subotu, 28. i 29. kolovoza, održava se jubilarno, deseto izdanje CMC 200 Slavonija festa. Dva festivalska dana donose raznovrstan glazbeni program, od popa i zabavn",
       "link": "https://www.slavonski-brod.hr/vijesti/17163-ovog-vikenda-stize-glazbeni-spektakl-u-tvrdavi-brod-ulaz-je-potpuno-besplatan",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_festival_resize.jpg"
-    },
-    {
-      "naslov": "Raspored rada mobilnih gradskih blagajni u rujnu",
-      "datum": "26. 08. 2026.",
-      "kratki_opis": "Obavještavaju se građani kako će mobilne gradske blagajne u rujnu&nbsp;raditi prema sljedećem rasporedu: RUJAN 09. rujan &nbsp;2026. ( srijeda &nbsp;) Mjesni dom Ante Starčević – od 10,00 do 14,00 sati&nbsp; 10. rujan &nbsp;2026. ( četvrtak ) Mjesni dom Brodsko Vinogorje – od 09,30 do 11,30 sati &nb",
-      "link": "https://www.slavonski-brod.hr/vijesti/17162-raspored-rada-mobilnih-gradskih-blagajni-u-rujnu-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/blagajna.jpg"
-    },
-    {
-      "naslov": "Na Međunarodni dan pasa sjetimo se i onih koji još čekaju svoj dom",
-      "datum": "26. 08. 2026.",
-      "kratki_opis": "Danas, 26. kolovoza, obilježava se Međunarodni dan pasa, dan kojim se podsjeća na posebnu povezanost ljudi i pasa te na njihovu važnu ulogu u svakodnevnom životu. Psi su danas neizostavan dio brojnih obitelji, a svojim prisustvom, privrženošću i pomoći koju pružaju u različitim područjima života ima",
-      "link": "https://www.slavonski-brod.hr/vijesti/17161-na-medunarodni-dan-pasa-sjetimo-se-i-onih-koji-jos-cekaju-svoj-dom",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/pas22.png"
-    },
-    {
-      "naslov": "Čestitka gradonačelnika članovima AK Marsonia na sjajnim rezultatima na Sunset Runu 2026.",
-      "datum": "26. 08. 2026.",
-      "kratki_opis": "Gradonačelnik Mirko Duspara upućuje iskrene čestitke članovima Atletskog kluba Marsonia na sjajnim rezultatima ostvarenima na utrci Sunset Run 2026 . , održanoj u Osijeku. Na utrci dugoj sedam kilometara, koja je startala i završila na kupalištu Copacabana, nastupilo je ukupno 360 trkača i trkačica,",
-      "link": "https://www.slavonski-brod.hr/vijesti/17160-cestitka-gradonacelnika-clanovima-ak-marsonia-na-sjajnim-rezultatima-na-sunset-runu-2026",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/ak_marsonia_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
