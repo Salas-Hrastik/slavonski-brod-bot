@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-28 17:44 UTC
+// Zadnje skrapanje: 2026-08-29 11:48 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-28T17:44:08.554Z",
+    "zadnje_azuriranje": "2026-08-29T11:48:42.084Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Prva večer CMC Slavonija Festa oduševila publiku na Tvrđavi Brod",
+      "datum": "29. 08. 2026.",
+      "kratki_opis": "Sinoć je na Tvrđavi Brod održana prva večer ovogodišnjeg CMC Slavonija Festa, uz odličnu atmosferu i raznolik program za sve generacije. Program je započeo prigodnim \"Warm Up\" dijelom kod Muzeja tambure, na zapadnoj kurtini Tvrđave. Tom je prilikom premijerno predstavljen video spot Brodskog tambura",
+      "link": "https://www.slavonski-brod.hr/vijesti/17172-prva-vecer-cmc-slavonija-festa-odusevila-publiku-na-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/787410299_1023271477408072_7443604402830808923_n.jpg"
+    },
     {
       "naslov": "Objavljen Javni poziv za prijavu štete od prirodne nepogode",
       "datum": "28. 08. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "KKK Marsonia ponovno je pokazao da pripada samom vrhu hrvatskog kajakaštva. Na Prvenstvu Republike Hrvatske, održanom 22. i 23. kolovoza na zagrebačkom Jarunu, članovi slavonskobrodskog kluba ostvarili su izniman rezultat – osvojili su čak 48 medalja, od čega 20 zlatnih, 14 srebrnih i 14 brončanih .",
       "link": "https://www.slavonski-brod.hr/vijesti/17164-gradonacelnik-uputio-cestitke-kkk-marsonia-na-sjajnom-rezultatu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/kkk_marsonia_resize.jpg"
-    },
-    {
-      "naslov": "Ovog vikenda stiže glazbeni spektakl u Tvrđavi Brod – ulaz je potpuno besplatan!",
-      "datum": "26. 08. 2026.",
-      "kratki_opis": "Slavonski Brod ovog će vikenda ponovno biti središte domaće i regionalne glazbene scene. U impresivnom ambijentu Tvrđave Brod u petak i subotu, 28. i 29. kolovoza, održava se jubilarno, deseto izdanje CMC 200 Slavonija festa. Dva festivalska dana donose raznovrstan glazbeni program, od popa i zabavn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17163-ovog-vikenda-stize-glazbeni-spektakl-u-tvrdavi-brod-ulaz-je-potpuno-besplatan",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/cmc_festival_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
