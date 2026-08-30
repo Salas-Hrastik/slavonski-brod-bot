@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-29 11:48 UTC
+// Zadnje skrapanje: 2026-08-30 10:45 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-29T11:48:42.084Z",
+    "zadnje_azuriranje": "2026-08-30T10:45:15.010Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Druga večer CMC Slavonija Festa donijela vrhunsku glazbenu zabavu na Tvrđavi Brod",
+      "datum": "30. 08. 2026.",
+      "kratki_opis": "Subotnja večer uTvrđavi Brod protekla je u znaku raznolike glazbe i sjajne atmosfere, u sklopu 10. izdanja Slavonija Fest CMC 200. Večer su otvorili Vever i Bobo Knežević, nakon čega se pozornicom prohujao Cro Dense feat. Sane, unijevši snažnu energiju u festivalski program. Nastavak je pripao sasta",
+      "link": "https://www.slavonski-brod.hr/vijesti/17173-druga-vecer-cmc-slavonija-festa-donijela-vrhunsku-glazbenu-zabavu-na-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/789301232_1394554076112793_8439254494326081940_n.jpg"
+    },
     {
       "naslov": "Prva večer CMC Slavonija Festa oduševila publiku na Tvrđavi Brod",
       "datum": "29. 08. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Obavještavmo građane da će u subotu, 5. rujna 2026. godine , u vremenu od 15:00 do 23:00 sati, biti privremeno zatvorena za promet Splavarska ulica u Slavonskom Brodu, od Športske dvorane Vijuš do Športsko-rekreacijskog centra Poloj, kao i pristupne ceste oko Športske dvorane Vijuš i Gradskih bazena",
       "link": "https://www.slavonski-brod.hr/vijesti/17165-obavijest-o-privremenoj-obustavi-prometa-u-splavarskoj-ulici",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0108_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnik uputio čestitke KKK Marsonia na sjajnom rezultatu",
-      "datum": "26. 08. 2026.",
-      "kratki_opis": "KKK Marsonia ponovno je pokazao da pripada samom vrhu hrvatskog kajakaštva. Na Prvenstvu Republike Hrvatske, održanom 22. i 23. kolovoza na zagrebačkom Jarunu, članovi slavonskobrodskog kluba ostvarili su izniman rezultat – osvojili su čak 48 medalja, od čega 20 zlatnih, 14 srebrnih i 14 brončanih .",
-      "link": "https://www.slavonski-brod.hr/vijesti/17164-gradonacelnik-uputio-cestitke-kkk-marsonia-na-sjajnom-rezultatu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/kkk_marsonia_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
