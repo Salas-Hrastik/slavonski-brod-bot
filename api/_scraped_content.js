@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-30 10:45 UTC
+// Zadnje skrapanje: 2026-08-31 11:53 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-30T10:45:15.010Z",
+    "zadnje_azuriranje": "2026-08-31T11:53:43.748Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Od sutra kino pod zvijezdama u Tvrđavi Brod",
+      "datum": "31. 08. 2026.",
+      "kratki_opis": "U sklopu programa „Ljeto u Tvrđavi Brod“, od sutra, 1. rujna, počinju „Večeri na bastionu uz ljetno kino“. Tijekom dvije večeri, u utorak i srijedu, 1. i 2. rujna 2026., bastion sv. Elizabete postat će mjesto susreta ljubitelja filma, dobre zabave i posebnog ugođaja kina na otvorenom. Program počinj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17176-od-sutra-kino-pod-zvijezdama-u-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/KINO.png"
+    },
+    {
+      "naslov": "Večeras počinje 19. Festival amaterskih kazališta – otvorite srce i uživajte u FAK19!",
+      "datum": "31. 08. 2026.",
+      "kratki_opis": "Večeras u Slavonskom Brodu počinje 19. Festival amaterskih kazališta (FAK), koji će od 31. kolovoza do 5. rujna donijeti šest kazališnih večeri ispunjenih predstavama, smijehom, emocijama i druženjem. Ovogodišnji festival nosi slogan „OPEN YOUR HEART AND SEE THIS IS FAK19“ , a građane Slavonskog Bro",
+      "link": "https://www.slavonski-brod.hr/vijesti/17175-veceras-pocinje-19-festival-amaterskih-kazalista-otvorite-srce-i-uzivajte-u-fak19",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Klaustrofob_21.jpg"
+    },
     {
       "naslov": "Druga večer CMC Slavonija Festa donijela vrhunsku glazbenu zabavu na Tvrđavi Brod",
       "datum": "30. 08. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U sklopu projekta „Helping – faza VII\", koji se provodi u okviru Natječaja „Osiguravanje pomoćnika u nastavi i stručnih komunikacijskih posrednika učenicima s teškoćama u razvoju u osnovnoškolskim i srednjoškolskim odgojno-obrazovnim ustanovama, faza VII\", a financira se u okviru Programa Učinkoviti",
       "link": "https://www.slavonski-brod.hr/vijesti/17167-pozivamo-na-prijavu-strucni-komunikacijski-posrednik-u-osnovnim-skolama",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/467310554_593501543097879_673896451514851275_n.jpg"
-    },
-    {
-      "naslov": "Danas edukativno predavanje o sunčanim elektranama za građane",
-      "datum": "27. 08. 2026.",
-      "kratki_opis": "Pozivamo sve zainteresirane građane da nam se pridruže već večeras na besplatnom edukativnom predavanju „Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?\", organiziranom u sklopu Natječaja za sufinanciranje izrade novog glavnog elektrotehničkog projekta sunčane elektrane u kućanstvima.",
-      "link": "https://www.slavonski-brod.hr/vijesti/17166-danas-edukativno-predavanje-o-suncanim-elektranama-za-gradane",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/ulleo-solar-system-2939560_1920.jpg"
-    },
-    {
-      "naslov": "Obavijest o privremenoj obustavi prometa u Splavarskoj ulici radi održavanja utrke &quot;Prevencijom do zdravlja&quot;",
-      "datum": "26. 08. 2026.",
-      "kratki_opis": "Obavještavmo građane da će u subotu, 5. rujna 2026. godine , u vremenu od 15:00 do 23:00 sati, biti privremeno zatvorena za promet Splavarska ulica u Slavonskom Brodu, od Športske dvorane Vijuš do Športsko-rekreacijskog centra Poloj, kao i pristupne ceste oko Športske dvorane Vijuš i Gradskih bazena",
-      "link": "https://www.slavonski-brod.hr/vijesti/17165-obavijest-o-privremenoj-obustavi-prometa-u-splavarskoj-ulici",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/IMG_0108_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
