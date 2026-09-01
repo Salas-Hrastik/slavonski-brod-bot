@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-08-31 11:53 UTC
+// Zadnje skrapanje: 2026-09-01 10:33 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-08-31T11:53:43.748Z",
+    "zadnje_azuriranje": "2026-09-01T10:33:21.786Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Otvoren FAK19: šest večeri kazališne čarolije pred nama",
+      "datum": "01. 09. 2026.",
+      "kratki_opis": "Sinoć je na platou ispred Kazališno-koncertne dvorane Ivana Brlić-Mažuranić svečano otvoren 19. Festival amaterskih kazališta (FAK), koji će do 5. rujna Slavonskom Brodu donijeti šest kazališnih večeri ispunjenih predstavama, smijehom i druženjem. Iako je neposredno pred sam početak otvorenja Slavon",
+      "link": "https://www.slavonski-brod.hr/vijesti/17179-otvoren-fak19-sest-veceri-kazalisne-carolije-pred-nama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0423_resize.jpeg"
+    },
+    {
+      "naslov": "Zaboravite privatno i brinite se za javno",
+      "datum": "31. 08. 2026.",
+      "kratki_opis": "Povodom javne objave gradske vijećnice Slavice Lemaić, u kojoj se dovodi u pitanje je li postupak prema tvrtki Royal Holding d.o.o. proveden zakonito i u razumnom roku, iznosimo činjenice koje u objavi nisu spomenute, a proizlaze iz same dokumentacije predmeta. Osnovnim rješenjem od 9. srpnja 2026. ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17177-zaboravite-privatno-i-brinite-se-za-javno",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/98c6ecc18081f18f4cd3.png"
+    },
     {
       "naslov": "Od sutra kino pod zvijezdama u Tvrđavi Brod",
       "datum": "31. 08. 2026.",
@@ -72,29 +86,9 @@ export const scrapedContent = {
       "kratki_opis": "Zbog velikog interesa javnosti za tvrtku Royal Holding d.o.o. u prostoru u vlasništvu Grada Slavonskog Broda, a kako bismo izbjegli svako pogrešno tumačenje ili iznošenje netočnih informacija, objavljujemo podatke vezane za ugovor o zakupu poslovnog prostora na adresi Aleja Miroslava Krleže 4. Tvrtk",
       "link": "https://www.slavonski-brod.hr/vijesti/17169-sto-je-prethodilo-raskidu-ugovora-o-zakupu-s-tvrtkom-royal-holding-d-o-o",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Snimka_zaslona_2026-08-24_135711.png"
-    },
-    {
-      "naslov": "Mjera koju je prvi uveo Slavonski Brod i danas donosi konkretnu pomoć obiteljima",
-      "datum": "27. 08. 2026.",
-      "kratki_opis": "Prvi mjeseci s novorođenčetom donose mnogo radosti, ali i brojne nove troškove. Upravo zato Grad Slavonski Brod već godinama roditeljima nastoji pomoći konkretnom potporom, paketom opreme koji pokriva dio onoga što je obiteljima potrebno od samog dolaska bebe. Danas je opremu za bebe dobilo još pet ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17168-mjera-koju-je-prvi-uveo-slavonski-brod-i-danas-donosi-konkretnu-pomoc-obiteljima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/bebe.png"
-    },
-    {
-      "naslov": "Pozivamo na prijavu: stručni komunikacijski posrednik u osnovnim školama",
-      "datum": "27. 08. 2026.",
-      "kratki_opis": "U sklopu projekta „Helping – faza VII\", koji se provodi u okviru Natječaja „Osiguravanje pomoćnika u nastavi i stručnih komunikacijskih posrednika učenicima s teškoćama u razvoju u osnovnoškolskim i srednjoškolskim odgojno-obrazovnim ustanovama, faza VII\", a financira se u okviru Programa Učinkoviti",
-      "link": "https://www.slavonski-brod.hr/vijesti/17167-pozivamo-na-prijavu-strucni-komunikacijski-posrednik-u-osnovnim-skolama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/467310554_593501543097879_673896451514851275_n.jpg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "CMC 200 - Slavonija FEST Festival se, uz brojne popratne programe, održava u kolovozu u baroknoj tvr",
-      "datum": "Kolovoz",
-      "opis": "đavi Brod, uz slobodan ulaz. U vrijeme festivala posjetitelji mogu uživati u vrhunskoj produkciji, od audio opreme do scenografije i rasvjete, uz nastup svih izvođača uživo. Naglašeni pop rock izričaj, kao sadašnja i buduća smjernica festivala, postiže se izborom koncertnih headlinera, s tim da se u",
-      "link": "https://www.tzgsb.hr/index.php?page=kolovoz"
-    },
     {
       "naziv": "Svila šuška, šlingeraj se širi Folklorna manifestacija koja se održava u Podvinju u spomen na običaj",
       "datum": "Rujan",
