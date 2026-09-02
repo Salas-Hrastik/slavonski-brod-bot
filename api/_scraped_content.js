@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-01 10:33 UTC
+// Zadnje skrapanje: 2026-09-02 09:59 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-01T10:33:21.786Z",
+    "zadnje_azuriranje": "2026-09-02T09:59:19.114Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Tvrđava Brod miriše na street food – sutra počinje treće izdanje festivala",
+      "datum": "02. 09. 2026.",
+      "kratki_opis": "Sutra, 3. rujna, u Tvrđavi Brod otvaramo vrata trećeg izdanja Street Food Weekenda, festivala koji četiri dana pretvara ovaj prostor u središte dobre hrane, glazbe i druženja, a traje do nedjelje, 6. rujna. Donosimo pregled zbivanja po danima. Četvrtak, 3. rujna – otvaranje Festival otvaramo u 16 sa",
+      "link": "https://www.slavonski-brod.hr/vijesti/17186-tvrdava-brod-mirise-na-street-food-sutra-pocinje-trece-izdanje-festivala",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/SB_fb_cover_2026_page-0001.jpg"
+    },
+    {
+      "naslov": "Od beba do odraslih: programi plivanja ponovno kreću u rujnu",
+      "datum": "02. 09. 2026.",
+      "kratki_opis": "Početak nove školske godine idealna je prilika za povratak zdravim životnim navikama i redovitoj tjelesnoj aktivnosti. Plivanje je jedan od najcjelovitijih oblika tjelesnog vježbanja, a redovito bavljenje plivanjem pozitivno utječe na zdravlje, razvoj motoričkih sposobnosti, tjelesnu kondiciju i opć",
+      "link": "https://www.slavonski-brod.hr/vijesti/17185-od-beba-do-odraslih-programi-plivanja-ponovno-krecu-u-rujnu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/PLIVANJE.png"
+    },
+    {
+      "naslov": "Dan koji pripada djeci: uz novu pedagošku godinu dodijeljeni i paketi dobrodošlice za najmlađe Brođane",
+      "datum": "01. 09. 2026.",
+      "kratki_opis": "Zamjenica gradonačelnika Marina Martić Puača i danas je petero brodskih obitelji obradovala paketima dobrodošlice za novorođenu djecu, u sklopu mjere koju Grad Slavonski Brod kontinuirano provodi već sedam godina. Svaki paket, vrijedan 700 eura, sadrži osnovnu opremu potrebnu roditeljima u prvim dan",
+      "link": "https://www.slavonski-brod.hr/vijesti/17182-dan-koji-pripada-djeci-uz-novu-pedagosku-godinu-dodijeljeni-i-paketi-dobrodoslice-za-najmlade-brodane",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Bebe.jpg"
+    },
+    {
+      "naslov": "Nova pedagoška godina započela za 1635 mališana u gradskim dječjim vrtićima",
+      "datum": "01. 09. 2026.",
+      "kratki_opis": "U svim dječjim vrtićima Grada Slavonskog Broda danas je otvorena nova pedagoška godina 2026./2027., a vrata su ponovno otvorena za ukupno 1635 djece koja pohađaju gradske vrtiće. U ovoj pedagoškoj godini u tri ustanove - Svarožić, Ivana Brlić-Mažuranić i Potjeh - upisano je 303 novoupisane djece, do",
+      "link": "https://www.slavonski-brod.hr/vijesti/17181-nova-pedagoska-godina-zapocela-za-1635-malisana-u-gradskim-djecjim-vrticima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/vrtic.jpg"
+    },
     {
       "naslov": "Otvoren FAK19: šest večeri kazališne čarolije pred nama",
       "datum": "01. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Sinoć je na Tvrđavi Brod održana prva večer ovogodišnjeg CMC Slavonija Festa, uz odličnu atmosferu i raznolik program za sve generacije. Program je započeo prigodnim \"Warm Up\" dijelom kod Muzeja tambure, na zapadnoj kurtini Tvrđave. Tom je prilikom premijerno predstavljen video spot Brodskog tambura",
       "link": "https://www.slavonski-brod.hr/vijesti/17172-prva-vecer-cmc-slavonija-festa-odusevila-publiku-na-tvrdavi-brod",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/787410299_1023271477408072_7443604402830808923_n.jpg"
-    },
-    {
-      "naslov": "Objavljen Javni poziv za prijavu štete od prirodne nepogode",
-      "datum": "28. 08. 2026.",
-      "kratki_opis": "Budući da je dana 28. kolovoza 2026. godine donesena Odluka o proglašenju prirodne nepogode izazvane SUŠOM na poljoprivrednim usjevima proljetne sjetve 2026. godine, postrnim usjevima, djetelinsko-travnim smjesama, ribnjačarskim površinama i višegodišnjim nasadima - voćnjacima i vinogradima na podru",
-      "link": "https://www.slavonski-brod.hr/vijesti/17174-objavljen-javni-poziv-za-prijavu-stete-od-prirodne-nepogode",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/prema_zapadu_grada_resize.jpg"
-    },
-    {
-      "naslov": "Održano besplatno predavanje na temu “Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?”",
-      "datum": "28. 08. 2026.",
-      "kratki_opis": "Dana 27. kolovoza 2026. godine , u Velikoj vijećnici Gradske uprave u Slavonskom Brodu, održana je besplatna radionica za građane pod nazivom “Zašto je baš sada pravo vrijeme za vlastitu solarnu elektranu?” . Građani su saznali sve o uvjetima ugradnje solarnih panela, isplativosti ulaganja u obnovlj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17171-odrzano-besplatno-predavanje-na-temu-zasto-je-bas-sada-pravo-vrijeme-za-vlastitu-solarnu-elektranu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Slika_1_resize.jpeg"
-    },
-    {
-      "naslov": "Dodijeljene nagrade za najuređenije okućnice, balkone, prozore i ugostiteljske objekte na području Slavonskog Broda i ok",
-      "datum": "28. 08. 2026.",
-      "kratki_opis": "Na prigodnoj svečanosti održanoj sinoć na terasi Kapelanova stana u Tvrđavi Brod dodijeljene su nagrade najuspješnijim sudionicima ovogodišnjeg izbora za najuređenije okućnice, balkone, prozore i ugostiteljske objekte na području Slavonskog Broda te općina Gornja Vrba, Podcrkavlje i Bukovlje. Tradic",
-      "link": "https://www.slavonski-brod.hr/vijesti/17170-dodijeljene-nagrade-za-najuredenije-okucnice-balkone-prozore-i-ugostiteljske-objekte-na-podrucju-slavonskog-broda-i-okolnih-opcina",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/NASNAG.jpeg"
-    },
-    {
-      "naslov": "Raskid ugovora s trenutnim učinkom",
-      "datum": "27. 08. 2026.",
-      "kratki_opis": "Zbog velikog interesa javnosti za tvrtku Royal Holding d.o.o. u prostoru u vlasništvu Grada Slavonskog Broda, a kako bismo izbjegli svako pogrešno tumačenje ili iznošenje netočnih informacija, objavljujemo podatke vezane za ugovor o zakupu poslovnog prostora na adresi Aleja Miroslava Krleže 4. Tvrtk",
-      "link": "https://www.slavonski-brod.hr/vijesti/17169-sto-je-prethodilo-raskidu-ugovora-o-zakupu-s-tvrtkom-royal-holding-d-o-o",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/Snimka_zaslona_2026-08-24_135711.png"
     }
   ],
   "manifestacije_aktualne": [
