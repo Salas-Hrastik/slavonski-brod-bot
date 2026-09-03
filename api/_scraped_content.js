@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-02 09:59 UTC
+// Zadnje skrapanje: 2026-09-03 10:09 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-02T09:59:19.114Z",
+    "zadnje_azuriranje": "2026-09-03T10:09:46.907Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Otvorene prijave za izlagače na 29. Katarinskom sajmu",
+      "datum": "03. 09. 2026.",
+      "kratki_opis": "Grad Slavonski Brod i ove godine organizira&nbsp; 29. Katarinski sajam – sajam obrtništva, malog i srednjeg poduzetništva , koji će se održati od&nbsp; 20. do 22. studenoga (petak – nedjelja) 2026. godine &nbsp;u unutarnjem i vanjskom prostoru Sportske dvorane Vijuš u Slavonskom Brodu. Izvršni organ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17191-otvorene-prijave-za-izlagace-na-29-katarinskom-sajmu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_2584_resize.jpeg"
+    },
+    {
+      "naslov": "Velika posjećenost potvrdila uspjeh ljetnog kina u Tvrđavi Brod",
+      "datum": "03. 09. 2026.",
+      "kratki_opis": "Tvrđava Brod protekla je dva dana ponovno bila mjesto susreta, druženja, zabave i filmskih priča. U sklopu programa „Ljeto u Tvrđavi Brod“, 1. i 2. rujna na Bastionu sv. Elizabete održane su „Večeri na bastionu uz ljetno kino“, koje su privukle velik broj posjetitelja i pokazale se kao više nego usp",
+      "link": "https://www.slavonski-brod.hr/vijesti/17189-velika-posjecenost-potvrdila-uspjeh-ljetnog-kina-u-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnakino.png"
+    },
+    {
+      "naslov": "Nova sportska dvorana u Slavonskom Brodu raste iz dana u dan",
+      "datum": "03. 09. 2026.",
+      "kratki_opis": "Gradilište male školske sportske dvorane uz Osnovnu školu Ivana Brlić-Mažuranić svakim je danom sve življe. Konstrukcija dvorane polako dobiva svoj konačni oblik. Na gradilištu je u tijeku izrada i postavljanje oplate za stupove, dok se usporedno zidaju pregradni i nosivi zidovi objekta. Riječ je o ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17190-nova-sportska-dvorana-u-slavonskom-brodu-raste-iz-dana-u-dan",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0511_resize.jpeg"
+    },
+    {
+      "naslov": "Film pod zvijezdama i program za sve generacije večeras na Tvrđavi Brod",
+      "datum": "02. 09. 2026.",
+      "kratki_opis": "Tvrđava Brod i večeras, 2. rujna postaje mjesto zabave, filma i druženja za sve generacije. Na Bastionu sv. Elizabete s početkom u 19:30 sati, održat će se bogat večernji program koji će posjetiteljima ponuditi sadržaj za najmlađe, projekcije popularnih filmova te zanimljivu tribinu posvećenu sportu",
+      "link": "https://www.slavonski-brod.hr/vijesti/17188-film-pod-zvijezdama-i-program-za-sve-generacije-veceras-na-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/kino_slika_resize.jpg"
+    },
     {
       "naslov": "Tvrđava Brod miriše na street food – sutra počinje treće izdanje festivala",
       "datum": "02. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Povodom javne objave gradske vijećnice Slavice Lemaić, u kojoj se dovodi u pitanje je li postupak prema tvrtki Royal Holding d.o.o. proveden zakonito i u razumnom roku, iznosimo činjenice koje u objavi nisu spomenute, a proizlaze iz same dokumentacije predmeta. Osnovnim rješenjem od 9. srpnja 2026. ",
       "link": "https://www.slavonski-brod.hr/vijesti/17177-zaboravite-privatno-i-brinite-se-za-javno",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/98c6ecc18081f18f4cd3.png"
-    },
-    {
-      "naslov": "Od sutra kino pod zvijezdama u Tvrđavi Brod",
-      "datum": "31. 08. 2026.",
-      "kratki_opis": "U sklopu programa „Ljeto u Tvrđavi Brod“, od sutra, 1. rujna, počinju „Večeri na bastionu uz ljetno kino“. Tijekom dvije večeri, u utorak i srijedu, 1. i 2. rujna 2026., bastion sv. Elizabete postat će mjesto susreta ljubitelja filma, dobre zabave i posebnog ugođaja kina na otvorenom. Program počinj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17176-od-sutra-kino-pod-zvijezdama-u-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/KINO.png"
-    },
-    {
-      "naslov": "Večeras počinje 19. Festival amaterskih kazališta – otvorite srce i uživajte u FAK19!",
-      "datum": "31. 08. 2026.",
-      "kratki_opis": "Večeras u Slavonskom Brodu počinje 19. Festival amaterskih kazališta (FAK), koji će od 31. kolovoza do 5. rujna donijeti šest kazališnih večeri ispunjenih predstavama, smijehom, emocijama i druženjem. Ovogodišnji festival nosi slogan „OPEN YOUR HEART AND SEE THIS IS FAK19“ , a građane Slavonskog Bro",
-      "link": "https://www.slavonski-brod.hr/vijesti/17175-veceras-pocinje-19-festival-amaterskih-kazalista-otvorite-srce-i-uzivajte-u-fak19",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/Klaustrofob_21.jpg"
-    },
-    {
-      "naslov": "Druga večer CMC Slavonija Festa donijela vrhunsku glazbenu zabavu na Tvrđavi Brod",
-      "datum": "30. 08. 2026.",
-      "kratki_opis": "Subotnja večer uTvrđavi Brod protekla je u znaku raznolike glazbe i sjajne atmosfere, u sklopu 10. izdanja Slavonija Fest CMC 200. Večer su otvorili Vever i Bobo Knežević, nakon čega se pozornicom prohujao Cro Dense feat. Sane, unijevši snažnu energiju u festivalski program. Nastavak je pripao sasta",
-      "link": "https://www.slavonski-brod.hr/vijesti/17173-druga-vecer-cmc-slavonija-festa-donijela-vrhunsku-glazbenu-zabavu-na-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/789301232_1394554076112793_8439254494326081940_n.jpg"
-    },
-    {
-      "naslov": "Prva večer CMC Slavonija Festa oduševila publiku na Tvrđavi Brod",
-      "datum": "29. 08. 2026.",
-      "kratki_opis": "Sinoć je na Tvrđavi Brod održana prva večer ovogodišnjeg CMC Slavonija Festa, uz odličnu atmosferu i raznolik program za sve generacije. Program je započeo prigodnim \"Warm Up\" dijelom kod Muzeja tambure, na zapadnoj kurtini Tvrđave. Tom je prilikom premijerno predstavljen video spot Brodskog tambura",
-      "link": "https://www.slavonski-brod.hr/vijesti/17172-prva-vecer-cmc-slavonija-festa-odusevila-publiku-na-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/787410299_1023271477408072_7443604402830808923_n.jpg"
     }
   ],
   "manifestacije_aktualne": [
