@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-03 10:09 UTC
+// Zadnje skrapanje: 2026-09-04 10:04 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-03T10:09:46.907Z",
+    "zadnje_azuriranje": "2026-09-04T10:04:59.997Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Održan sastanak Grada i APN-a o novim projektima priuštivog stanovanja",
+      "datum": "04. 09. 2026.",
+      "kratki_opis": "Gradonačelnik Mirko Duspara sa suradnicima održao je sastanak s ravnateljem Agencije za pravni promet i posredovanje nekretninama (APN) Draganom Hristovom i njegovom zamjenicom Josipom Tokić. Sastanak je održan nakon iskaza interesa Grada za uključivanje u programe izgradnje stanova za priuštivo sta",
+      "link": "https://www.slavonski-brod.hr/vijesti/17194-odrzan-sastanak-grada-i-apn-a-o-novim-projektima-priustivog-stanovanja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/fasada22.png"
+    },
+    {
+      "naslov": "Hrvatska juniorska triatlonska reprezentacija na pripremama u Slavonskom Brodu",
+      "datum": "04. 09. 2026.",
+      "kratki_opis": "Zamjenica gradonačelnika Marina Martić Puača i pročelnik Upravnog odjela za društvene djelatnosti Ivan Holik danas su u Velikoj vijećnici Gradske uprave ugostili hrvatsku juniorsku triatlonsku reprezentaciju, koja u Slavonskom Brodu od ponedjeljka do nedjelje provodi zajedničke pripreme za nastavak ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17192-gradonacelnik-primio-hrvatsku-junior-sku-reprezentaciju-u-triatlonu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0533_resize.jpeg"
+    },
     {
       "naslov": "Otvorene prijave za izlagače na 29. Katarinskom sajmu",
       "datum": "03. 09. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U svim dječjim vrtićima Grada Slavonskog Broda danas je otvorena nova pedagoška godina 2026./2027., a vrata su ponovno otvorena za ukupno 1635 djece koja pohađaju gradske vrtiće. U ovoj pedagoškoj godini u tri ustanove - Svarožić, Ivana Brlić-Mažuranić i Potjeh - upisano je 303 novoupisane djece, do",
       "link": "https://www.slavonski-brod.hr/vijesti/17181-nova-pedagoska-godina-zapocela-za-1635-malisana-u-gradskim-djecjim-vrticima",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/vrtic.jpg"
-    },
-    {
-      "naslov": "Otvoren FAK19: šest večeri kazališne čarolije pred nama",
-      "datum": "01. 09. 2026.",
-      "kratki_opis": "Sinoć je na platou ispred Kazališno-koncertne dvorane Ivana Brlić-Mažuranić svečano otvoren 19. Festival amaterskih kazališta (FAK), koji će do 5. rujna Slavonskom Brodu donijeti šest kazališnih večeri ispunjenih predstavama, smijehom i druženjem. Iako je neposredno pred sam početak otvorenja Slavon",
-      "link": "https://www.slavonski-brod.hr/vijesti/17179-otvoren-fak19-sest-veceri-kazalisne-carolije-pred-nama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0423_resize.jpeg"
-    },
-    {
-      "naslov": "Zaboravite privatno i brinite se za javno",
-      "datum": "31. 08. 2026.",
-      "kratki_opis": "Povodom javne objave gradske vijećnice Slavice Lemaić, u kojoj se dovodi u pitanje je li postupak prema tvrtki Royal Holding d.o.o. proveden zakonito i u razumnom roku, iznosimo činjenice koje u objavi nisu spomenute, a proizlaze iz same dokumentacije predmeta. Osnovnim rješenjem od 9. srpnja 2026. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17177-zaboravite-privatno-i-brinite-se-za-javno",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Kolovoz/98c6ecc18081f18f4cd3.png"
     }
   ],
   "manifestacije_aktualne": [
