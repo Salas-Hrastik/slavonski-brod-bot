@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-04 10:04 UTC
+// Zadnje skrapanje: 2026-09-05 09:29 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-04T10:04:59.997Z",
+    "zadnje_azuriranje": "2026-09-05T09:29:38.881Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Ispražnjen gradski poslovni prostor na Aleji Miroslava Krleže 4",
+      "datum": "04. 09. 2026.",
+      "kratki_opis": "Zbog interesa javnosti za razloge raskida ugovora o zakupu poslovnog prostora na adresi Aleja Miroslava Krleže 4, želimo javnost informirati o stvarnim okolnostima ovog slučaja, osobito nakon što je iz javnih istupa dosadašnjeg zakupnika stvoren dojam da razlog raskida leži negdje drugdje, a ne u ne",
+      "link": "https://www.slavonski-brod.hr/vijesti/17197-naslov-4",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnica.jpg"
+    },
+    {
+      "naslov": "Odana počast poginulim pripadnicima Specijalne policije, poginuloj djeci i braniteljima Domovinskog rata",
+      "datum": "04. 09. 2026.",
+      "kratki_opis": "U Slavonskom Brodu je danas, u organizaciji Moto kluba specijalne policije Republike Hrvatske, obilježeno sjećanje na poginule pripadnike Specijalne policije PU slavonsko-brodske, poginulu djecu tijekom Domovinskog rata te poginule branitelje. U ime Grada Slavonskog Broda počast je odala zamjenica g",
+      "link": "https://www.slavonski-brod.hr/vijesti/17193-odana-pocast-poginulim-pripadnicima-specijalne-policije-poginuloj-djeci-i-braniteljima-domovinskog-rata",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0563_resize.jpeg"
+    },
     {
       "naslov": "Održan sastanak Grada i APN-a o novim projektima priuštivog stanovanja",
       "datum": "04. 09. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Početak nove školske godine idealna je prilika za povratak zdravim životnim navikama i redovitoj tjelesnoj aktivnosti. Plivanje je jedan od najcjelovitijih oblika tjelesnog vježbanja, a redovito bavljenje plivanjem pozitivno utječe na zdravlje, razvoj motoričkih sposobnosti, tjelesnu kondiciju i opć",
       "link": "https://www.slavonski-brod.hr/vijesti/17185-od-beba-do-odraslih-programi-plivanja-ponovno-krecu-u-rujnu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/PLIVANJE.png"
-    },
-    {
-      "naslov": "Dan koji pripada djeci: uz novu pedagošku godinu dodijeljeni i paketi dobrodošlice za najmlađe Brođane",
-      "datum": "01. 09. 2026.",
-      "kratki_opis": "Zamjenica gradonačelnika Marina Martić Puača i danas je petero brodskih obitelji obradovala paketima dobrodošlice za novorođenu djecu, u sklopu mjere koju Grad Slavonski Brod kontinuirano provodi već sedam godina. Svaki paket, vrijedan 700 eura, sadrži osnovnu opremu potrebnu roditeljima u prvim dan",
-      "link": "https://www.slavonski-brod.hr/vijesti/17182-dan-koji-pripada-djeci-uz-novu-pedagosku-godinu-dodijeljeni-i-paketi-dobrodoslice-za-najmlade-brodane",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Bebe.jpg"
-    },
-    {
-      "naslov": "Nova pedagoška godina započela za 1635 mališana u gradskim dječjim vrtićima",
-      "datum": "01. 09. 2026.",
-      "kratki_opis": "U svim dječjim vrtićima Grada Slavonskog Broda danas je otvorena nova pedagoška godina 2026./2027., a vrata su ponovno otvorena za ukupno 1635 djece koja pohađaju gradske vrtiće. U ovoj pedagoškoj godini u tri ustanove - Svarožić, Ivana Brlić-Mažuranić i Potjeh - upisano je 303 novoupisane djece, do",
-      "link": "https://www.slavonski-brod.hr/vijesti/17181-nova-pedagoska-godina-zapocela-za-1635-malisana-u-gradskim-djecjim-vrticima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/vrtic.jpg"
     }
   ],
   "manifestacije_aktualne": [
