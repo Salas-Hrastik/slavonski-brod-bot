@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-06 09:43 UTC
+// Zadnje skrapanje: 2026-09-07 10:47 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-06T09:43:21.432Z",
+    "zadnje_azuriranje": "2026-09-07T10:47:32.940Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Velika posjećenost i odlična atmosfera obilježili treći Street Food Weekend",
+      "datum": "07. 09. 2026.",
+      "kratki_opis": "Treće izdanje Street Food Weekenda u Tvrđavi Brod uspješno je završeno, a iza organizatora i brojnih izlagača ostaju četiri dana ispunjena odličnom hranom, glazbom, druženjem i prije svega velikim brojem zadovoljnih posjetitelja. Od četvrtka do nedjelje Tvrđava Brod bila je jedno od središta društve",
+      "link": "https://www.slavonski-brod.hr/vijesti/17201-velika-posjecenost-i-odlicna-atmosfera-obiljezili-treci-street-food-weekend",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna_resize.jpeg"
+    },
+    {
+      "naslov": "Završena šesta večer 19. FAK-a uz predstavu, dodjelu nagrada i priznanja",
+      "datum": "06. 09. 2026.",
+      "kratki_opis": "Sinoć je u Slavonskom Brodu svečano zatvoren 19. Festival amaterskih kazališta – FAK, koji je od 31. kolovoza do 5. rujna donio šest kazališnih večeri ispunjenih predstavama, smijehom, emocijama i druženjem. Ovogodišnje izdanje festivala održano je pod sloganom „ OPEN YOUR HEART AND SEE THIS IS FAK1",
+      "link": "https://www.slavonski-brod.hr/vijesti/17199-zavrsena-sesta-vecer-19-fak-a-uz-predstavu-dodjelu-nagrada-i-priznanja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/fak19.png"
+    },
+    {
+      "naslov": "Deseta donacijska utrka „Znanjem i prevencijom do zdravlja“ okupila brojne Brođane",
+      "datum": "06. 09. 2026.",
+      "kratki_opis": "Ispred Sportske dvorane Vijuš u Slavonskom Brodu održana je deseta donacijska utrka „Znanjem i prevencijom do zdravlja“, koju zajednički organiziraju Liga protiv raka Brodsko-posavske županije i Ultramaraton klub Mazator. Ovogodišnje jubilarno izdanje održano je u posebnom, večernjem terminu, a broj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17198-deseta-donacijska-utrka-znanjem-i-prevencijom-do-zdravlja-okupila-brojne-brodane",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/NASLOVNATRKA.jpeg"
+    },
     {
       "naslov": "Ispražnjen gradski poslovni prostor na Aleji Miroslava Krleže 4",
       "datum": "04. 09. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Gradilište male školske sportske dvorane uz Osnovnu školu Ivana Brlić-Mažuranić svakim je danom sve življe. Konstrukcija dvorane polako dobiva svoj konačni oblik. Na gradilištu je u tijeku izrada i postavljanje oplate za stupove, dok se usporedno zidaju pregradni i nosivi zidovi objekta. Riječ je o ",
       "link": "https://www.slavonski-brod.hr/vijesti/17190-nova-sportska-dvorana-u-slavonskom-brodu-raste-iz-dana-u-dan",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0511_resize.jpeg"
-    },
-    {
-      "naslov": "Film pod zvijezdama i program za sve generacije večeras na Tvrđavi Brod",
-      "datum": "02. 09. 2026.",
-      "kratki_opis": "Tvrđava Brod i večeras, 2. rujna postaje mjesto zabave, filma i druženja za sve generacije. Na Bastionu sv. Elizabete s početkom u 19:30 sati, održat će se bogat večernji program koji će posjetiteljima ponuditi sadržaj za najmlađe, projekcije popularnih filmova te zanimljivu tribinu posvećenu sportu",
-      "link": "https://www.slavonski-brod.hr/vijesti/17188-film-pod-zvijezdama-i-program-za-sve-generacije-veceras-na-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/kino_slika_resize.jpg"
-    },
-    {
-      "naslov": "Tvrđava Brod miriše na street food – sutra počinje treće izdanje festivala",
-      "datum": "02. 09. 2026.",
-      "kratki_opis": "Sutra, 3. rujna, u Tvrđavi Brod otvaramo vrata trećeg izdanja Street Food Weekenda, festivala koji četiri dana pretvara ovaj prostor u središte dobre hrane, glazbe i druženja, a traje do nedjelje, 6. rujna. Donosimo pregled zbivanja po danima. Četvrtak, 3. rujna – otvaranje Festival otvaramo u 16 sa",
-      "link": "https://www.slavonski-brod.hr/vijesti/17186-tvrdava-brod-mirise-na-street-food-sutra-pocinje-trece-izdanje-festivala",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/SB_fb_cover_2026_page-0001.jpg"
-    },
-    {
-      "naslov": "Od beba do odraslih: programi plivanja ponovno kreću u rujnu",
-      "datum": "02. 09. 2026.",
-      "kratki_opis": "Početak nove školske godine idealna je prilika za povratak zdravim životnim navikama i redovitoj tjelesnoj aktivnosti. Plivanje je jedan od najcjelovitijih oblika tjelesnog vježbanja, a redovito bavljenje plivanjem pozitivno utječe na zdravlje, razvoj motoričkih sposobnosti, tjelesnu kondiciju i opć",
-      "link": "https://www.slavonski-brod.hr/vijesti/17185-od-beba-do-odraslih-programi-plivanja-ponovno-krecu-u-rujnu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/PLIVANJE.png"
     }
   ],
   "manifestacije_aktualne": [
