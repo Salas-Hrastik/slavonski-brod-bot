@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-07 10:47 UTC
+// Zadnje skrapanje: 2026-09-08 10:07 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-07T10:47:32.940Z",
+    "zadnje_azuriranje": "2026-09-08T10:07:32.890Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,48 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Disco u kazamatima zatvara „Ljeto u Tvrđavi Brod“",
+      "datum": "08. 09. 2026.",
+      "kratki_opis": "Ovoga petka, 11. rujna, Tvrđava Brod ugošćuje veliko finale ljetnog programa – Disco u kazamatima počinje u 20 sati u istočnim kazamatima i donosi glazbeni ispraćaj ovogodišnjeg „Ljeta u Tvrđavi Brod\". Za ples i dobru zabavu pobrinut će se DJ Bartek, čiji će mix glazbe zaokružiti ljeto kakvo pamtimo",
+      "link": "https://www.slavonski-brod.hr/vijesti/17204-message-collapsed-disco-u-kazamatima-zatvara-ljeto-u-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Disco_u_Kazamatima_resize.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod ponovno na vrhu hrvatskog kajakaštva i kanuizma",
+      "datum": "08. 09. 2026.",
+      "kratki_opis": "Na Prvenstvu Hrvatske za seniore, održanom u Zagrebu, sportaši Kajak-kanu kluba Marsonia još su jednom pokazali kvalitetu, predanost i snagu te ostvarili izniman uspjeh. Naime, naslov prvaka Hrvatske ponovno su vratili u Slavonski Brod nakon tri godine! &nbsp;Ovaj veliki rezultat potvrda je kvalitet",
+      "link": "https://www.slavonski-brod.hr/vijesti/17207-slavonski-brod-ponovno-na-vrhu-hrvatskog-kajakastva-i-kanuizma",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/kajak_resize.jpg"
+    },
+    {
+      "naslov": "1.050 djece ovog je ljeta boravilo u gradskom dječjem odmaralištu na Hvaru",
+      "datum": "08. 09. 2026.",
+      "kratki_opis": "Škola je ponovno otvorila svoja vrata, ljeto se polako privodi kraju, a s njim se zbrajaju i dojmovi s još jedne sezone na Hvaru. Slavonskobrodsko dječje odmaralište u Starom Gradu i ovog je ljeta bilo mjesto dječjeg smijeha, druženja, igre i novih iskustava, a kroz njegovih je jedanaest smjena proš",
+      "link": "https://www.slavonski-brod.hr/vijesti/17206-1-050-djece-ovog-je-ljeta-boravilo-u-gradskom-djecjem-odmaralistu-na-hvaru",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnahvar_resize.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod u crvenom svjetlu podrške oboljelima od Duchenneove mišićne distrofije",
+      "datum": "08. 09. 2026.",
+      "kratki_opis": "Povodom Svjetskog dana svjesnosti o Duchenneovoj mišićnoj distrofiji, koji se obilježava 7. rujna, sinoć su tri prepoznatljive zgrade u središtu Slavonskog Broda zasjale u crvenoj boji. Gradska uprava, Glazbena škola i Klasična gimnazija fra Marijana Lanosovića tako su se pridružile nizu gradova dil",
+      "link": "https://www.slavonski-brod.hr/vijesti/17203-slavonski-brod-u-crvenom-svjetlu-podrske-oboljelima-od-duchenneove-misicne-distrofije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image5_resize.jpeg"
+    },
+    {
+      "naslov": "Vanjski bazeni od danas zatvoreni, unutarnji nastavljaju s radom",
+      "datum": "07. 09. 2026.",
+      "kratki_opis": "Od danas su vanjski bazeni u Slavonskom Brodu zatvoreni za posjetitelje, a ponovno otvaranje planirano je sljedeće ljetnu sezonu. Aktivnosti se u međuvremenu sele na unutarnje bazene, gdje Ustanova za gospodarenje športskim objektima (UZGŠO) i dalje provodi niz sportskih i rekreativnih programa nami",
+      "link": "https://www.slavonski-brod.hr/vijesti/17202-vanjski-bazeni-od-danas-zatvoreni-unutarnji-nastavljaju-s-radom",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/sportski_centar_i_grad_resize.jpg"
+    },
+    {
+      "naslov": "Prvašići zasjeli u školske klupe – počela nova školska godina 2026./2027.",
+      "datum": "07. 09. 2026.",
+      "kratki_opis": "Učenici svih gradskih osnovnih škola danas su svečanim priredbama dočekali početak školske godine 2026./2027. Najveće uzbuđenje vladalo je među najmlađima – prvašićima, koji su prvi put zauzeli svoje mjesto u školskim klupama. Uz prigodne kulturno-umjetničke programe starijih učenika i riječi dobrod",
+      "link": "https://www.slavonski-brod.hr/vijesti/17200-prvasici-zasjeli-u-skolske-klupe-pocela-nova-skolska-godina-2026-2027",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Naslovnicaaaa.jpg"
+    },
     {
       "naslov": "Velika posjećenost i odlična atmosfera obilježili treći Street Food Weekend",
       "datum": "07. 09. 2026.",
@@ -44,48 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Zbog interesa javnosti za razloge raskida ugovora o zakupu poslovnog prostora na adresi Aleja Miroslava Krleže 4, želimo javnost informirati o stvarnim okolnostima ovog slučaja, osobito nakon što je iz javnih istupa dosadašnjeg zakupnika stvoren dojam da razlog raskida leži negdje drugdje, a ne u ne",
       "link": "https://www.slavonski-brod.hr/vijesti/17197-naslov-4",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnica.jpg"
-    },
-    {
-      "naslov": "Odana počast poginulim pripadnicima Specijalne policije, poginuloj djeci i braniteljima Domovinskog rata",
-      "datum": "04. 09. 2026.",
-      "kratki_opis": "U Slavonskom Brodu je danas, u organizaciji Moto kluba specijalne policije Republike Hrvatske, obilježeno sjećanje na poginule pripadnike Specijalne policije PU slavonsko-brodske, poginulu djecu tijekom Domovinskog rata te poginule branitelje. U ime Grada Slavonskog Broda počast je odala zamjenica g",
-      "link": "https://www.slavonski-brod.hr/vijesti/17193-odana-pocast-poginulim-pripadnicima-specijalne-policije-poginuloj-djeci-i-braniteljima-domovinskog-rata",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0563_resize.jpeg"
-    },
-    {
-      "naslov": "Održan sastanak Grada i APN-a o novim projektima priuštivog stanovanja",
-      "datum": "04. 09. 2026.",
-      "kratki_opis": "Gradonačelnik Mirko Duspara sa suradnicima održao je sastanak s ravnateljem Agencije za pravni promet i posredovanje nekretninama (APN) Draganom Hristovom i njegovom zamjenicom Josipom Tokić. Sastanak je održan nakon iskaza interesa Grada za uključivanje u programe izgradnje stanova za priuštivo sta",
-      "link": "https://www.slavonski-brod.hr/vijesti/17194-odrzan-sastanak-grada-i-apn-a-o-novim-projektima-priustivog-stanovanja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/fasada22.png"
-    },
-    {
-      "naslov": "Hrvatska juniorska triatlonska reprezentacija na pripremama u Slavonskom Brodu",
-      "datum": "04. 09. 2026.",
-      "kratki_opis": "Zamjenica gradonačelnika Marina Martić Puača i pročelnik Upravnog odjela za društvene djelatnosti Ivan Holik danas su u Velikoj vijećnici Gradske uprave ugostili hrvatsku juniorsku triatlonsku reprezentaciju, koja u Slavonskom Brodu od ponedjeljka do nedjelje provodi zajedničke pripreme za nastavak ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17192-gradonacelnik-primio-hrvatsku-junior-sku-reprezentaciju-u-triatlonu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0533_resize.jpeg"
-    },
-    {
-      "naslov": "Otvorene prijave za izlagače na 29. Katarinskom sajmu",
-      "datum": "03. 09. 2026.",
-      "kratki_opis": "Grad Slavonski Brod i ove godine organizira&nbsp; 29. Katarinski sajam – sajam obrtništva, malog i srednjeg poduzetništva , koji će se održati od&nbsp; 20. do 22. studenoga (petak – nedjelja) 2026. godine &nbsp;u unutarnjem i vanjskom prostoru Sportske dvorane Vijuš u Slavonskom Brodu. Izvršni organ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17191-otvorene-prijave-za-izlagace-na-29-katarinskom-sajmu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_2584_resize.jpeg"
-    },
-    {
-      "naslov": "Velika posjećenost potvrdila uspjeh ljetnog kina u Tvrđavi Brod",
-      "datum": "03. 09. 2026.",
-      "kratki_opis": "Tvrđava Brod protekla je dva dana ponovno bila mjesto susreta, druženja, zabave i filmskih priča. U sklopu programa „Ljeto u Tvrđavi Brod“, 1. i 2. rujna na Bastionu sv. Elizabete održane su „Večeri na bastionu uz ljetno kino“, koje su privukle velik broj posjetitelja i pokazale se kao više nego usp",
-      "link": "https://www.slavonski-brod.hr/vijesti/17189-velika-posjecenost-potvrdila-uspjeh-ljetnog-kina-u-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnakino.png"
-    },
-    {
-      "naslov": "Nova sportska dvorana u Slavonskom Brodu raste iz dana u dan",
-      "datum": "03. 09. 2026.",
-      "kratki_opis": "Gradilište male školske sportske dvorane uz Osnovnu školu Ivana Brlić-Mažuranić svakim je danom sve življe. Konstrukcija dvorane polako dobiva svoj konačni oblik. Na gradilištu je u tijeku izrada i postavljanje oplate za stupove, dok se usporedno zidaju pregradni i nosivi zidovi objekta. Riječ je o ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17190-nova-sportska-dvorana-u-slavonskom-brodu-raste-iz-dana-u-dan",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0511_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
