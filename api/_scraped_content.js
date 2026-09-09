@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-08 10:07 UTC
+// Zadnje skrapanje: 2026-09-09 10:09 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-08T10:07:32.890Z",
+    "zadnje_azuriranje": "2026-09-09T10:09:49.265Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Mala Gospa i osmi hodočasnički dan Gospi Brze Pomoći okupili tisuće vjernika",
+      "datum": "09. 09. 2026.",
+      "kratki_opis": "Blagdan Rođenja Blažene Djevice Marije – Mala Gospa i osmi hodočasnički dan Gospi Brze Pomoći svečano je u utorak, 8. rujna proslavljen u istoimenom brodskom Gospinom svetištu. Unatoč visokim temperaturama nekoliko tisuća vjernika od ranih je jutarnjih sati pristizalo u to Gospino svetište i sudjelo",
+      "link": "https://www.slavonski-brod.hr/vijesti/17210-mala-gospa-i-osmi-hodocasnicki-dan-gospi-brze-pomoci-okupili-tisuce-vjernika",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG-20260909-WA0000.jpg"
+    },
+    {
+      "naslov": "Besplatan upis u Gradsku knjižnicu za učenike prvih razreda osnovnih i srednjih škola",
+      "datum": "09. 09. 2026.",
+      "kratki_opis": "Gradska knjižnica Slavonski Brod od 7. rujna do 31. listopada 2026. godine omogućuje besplatan upis, odnosno besplatnu obnovu članarine, svim učenicima prvih razreda osnovnih i srednjih škola. Učenici prvih razreda osnovnih škola upis obavljaju na Dječjem odjelu, u pratnji roditelja, skrbnika ili st",
+      "link": "https://www.slavonski-brod.hr/vijesti/17208-besplatan-upis-u-gradsku-knjiznicu-za-ucenike-prvih-razreda-osnovnih-i-srednjih-skola",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/779755646_1074237768638944_5936648596551680114_n.jpg"
+    },
+    {
+      "naslov": "Uveden izvođač radova na projektu izgradnje državne ceste DC431 u Slavonskom Brodu",
+      "datum": "08. 09. 2026.",
+      "kratki_opis": "U Slavonskom Brodu je danas, uvođenjem izvođača radova u posao, službeno započela realizacija projekta izgradnje državne ceste DC431, dionice od DC3 (Sjeverna vezna cesta) do sjevernog ulaza u holding Đuro Đaković. Vrijednost radova iznosi 3,15 milijuna eura bez PDV-a, a rok za završetak je devet mj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17205-uveden-izvodac-radova-na-projektu-izgradnje-drzavne-ceste-dc431-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0838_resize.jpeg"
+    },
     {
       "naslov": "Disco u kazamatima zatvara „Ljeto u Tvrđavi Brod“",
       "datum": "08. 09. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Treće izdanje Street Food Weekenda u Tvrđavi Brod uspješno je završeno, a iza organizatora i brojnih izlagača ostaju četiri dana ispunjena odličnom hranom, glazbom, druženjem i prije svega velikim brojem zadovoljnih posjetitelja. Od četvrtka do nedjelje Tvrđava Brod bila je jedno od središta društve",
       "link": "https://www.slavonski-brod.hr/vijesti/17201-velika-posjecenost-i-odlicna-atmosfera-obiljezili-treci-street-food-weekend",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna_resize.jpeg"
-    },
-    {
-      "naslov": "Završena šesta večer 19. FAK-a uz predstavu, dodjelu nagrada i priznanja",
-      "datum": "06. 09. 2026.",
-      "kratki_opis": "Sinoć je u Slavonskom Brodu svečano zatvoren 19. Festival amaterskih kazališta – FAK, koji je od 31. kolovoza do 5. rujna donio šest kazališnih večeri ispunjenih predstavama, smijehom, emocijama i druženjem. Ovogodišnje izdanje festivala održano je pod sloganom „ OPEN YOUR HEART AND SEE THIS IS FAK1",
-      "link": "https://www.slavonski-brod.hr/vijesti/17199-zavrsena-sesta-vecer-19-fak-a-uz-predstavu-dodjelu-nagrada-i-priznanja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/fak19.png"
-    },
-    {
-      "naslov": "Deseta donacijska utrka „Znanjem i prevencijom do zdravlja“ okupila brojne Brođane",
-      "datum": "06. 09. 2026.",
-      "kratki_opis": "Ispred Sportske dvorane Vijuš u Slavonskom Brodu održana je deseta donacijska utrka „Znanjem i prevencijom do zdravlja“, koju zajednički organiziraju Liga protiv raka Brodsko-posavske županije i Ultramaraton klub Mazator. Ovogodišnje jubilarno izdanje održano je u posebnom, večernjem terminu, a broj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17198-deseta-donacijska-utrka-znanjem-i-prevencijom-do-zdravlja-okupila-brojne-brodane",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/NASLOVNATRKA.jpeg"
-    },
-    {
-      "naslov": "Ispražnjen gradski poslovni prostor na Aleji Miroslava Krleže 4",
-      "datum": "04. 09. 2026.",
-      "kratki_opis": "Zbog interesa javnosti za razloge raskida ugovora o zakupu poslovnog prostora na adresi Aleja Miroslava Krleže 4, želimo javnost informirati o stvarnim okolnostima ovog slučaja, osobito nakon što je iz javnih istupa dosadašnjeg zakupnika stvoren dojam da razlog raskida leži negdje drugdje, a ne u ne",
-      "link": "https://www.slavonski-brod.hr/vijesti/17197-naslov-4",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnica.jpg"
     }
   ],
   "manifestacije_aktualne": [
