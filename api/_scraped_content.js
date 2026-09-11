@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-10 10:05 UTC
+// Zadnje skrapanje: 2026-09-11 10:02 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-10T10:05:30.270Z",
+    "zadnje_azuriranje": "2026-09-11T10:02:49.307Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Od prvog do 1625. paketa – kontinuitet potpore roditeljima i dalje traje",
+      "datum": "11. 09. 2026.",
+      "kratki_opis": "Nastavljamo s provedbom mjere podrške obiteljima s novorođenom djecom, pa smo i danas uručili novih deset paketa opreme za bebe. Dodjelu je, kao i uobičajeno, predvodila zamjenica gradonačelnika Marina Martić Puača. Ovom dodjelom broj ukupno podijeljenih kompleta opreme od uvođenja mjere 2018. godin",
+      "link": "https://www.slavonski-brod.hr/vijesti/17217-od-prvog-do-1625-paketa-kontinuitet-potpore-roditeljima-i-dalje-traje",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Naslovna_joomla.jpg"
+    },
+    {
+      "naslov": "U tijeku novi radovi asfaltiranja u Slavonskom Brodu",
+      "datum": "10. 09. 2026.",
+      "kratki_opis": "I u rujnu nastavljamo s ulaganjima u prometnu infrastrukturu grada. Nakon intenzivnih radova tijekom ljeta, asfaltiranje cesta i ulica diljem Slavonskog Broda odvija se i dalje, kako bismo građanima osigurali kvalitetnije i sigurnije prometnice. U sklopu izgradnje pješačke staze na spoju Ulice Ivana",
+      "link": "https://www.slavonski-brod.hr/vijesti/17215-u-tijeku-novi-radovi-asfaltiranja-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG-0dd2fb5bf11460656b04448314ed08b1-V.jpg"
+    },
+    {
+      "naslov": "Poziv građanima na provjeru podataka u Središnjem registru stanovništva",
+      "datum": "10. 09. 2026.",
+      "kratki_opis": "Grad Slavonski Brod pridružuje se aktivnostima informiranja građana o Središnjem registru stanovništva (SRS), jednom od ključnih projekata digitalne transformacije javne uprave u Republici Hrvatskoj. Središnji registar stanovništva objedinjuje podatke iz službenih evidencija kako bi se osigurala jed",
+      "link": "https://www.slavonski-brod.hr/vijesti/17213-poziv-gradanima-na-provjeru-podataka-u-sredisnjem-registru-stanovnistva",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/woman-cafe-using-tablet-mobile_resize.jpg"
+    },
+    {
+      "naslov": "Pivo Fest se vraća u Tvrđavu – peto izdanje 16. listopada",
+      "datum": "09. 09. 2026.",
+      "kratki_opis": "Slavonski Brod ove jeseni po peti put otvara vrata istočnih kazamata Tvrđave ljubiteljima dobrog piva. Peto izdanje Pivo Festa održat će se u petak, 16. listopada 2026. godine, i do sada je izraslo u jedno od prepoznatljivijih jesenskih događanja u gradu. Manifestacija okuplja domaće proizvođače cra",
+      "link": "https://www.slavonski-brod.hr/vijesti/17209-pivo-fest-se-vraca-u-tvrdavu-peto-izdanje-16-listopada",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/DAN_PIVA-1.png"
+    },
     {
       "naslov": "Mala Gospa i osmi hodočasnički dan Gospi Brze Pomoći okupili tisuće vjernika",
       "datum": "09. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Škola je ponovno otvorila svoja vrata, ljeto se polako privodi kraju, a s njim se zbrajaju i dojmovi s još jedne sezone na Hvaru. Slavonskobrodsko dječje odmaralište u Starom Gradu i ovog je ljeta bilo mjesto dječjeg smijeha, druženja, igre i novih iskustava, a kroz njegovih je jedanaest smjena proš",
       "link": "https://www.slavonski-brod.hr/vijesti/17206-1-050-djece-ovog-je-ljeta-boravilo-u-gradskom-djecjem-odmaralistu-na-hvaru",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnahvar_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod u crvenom svjetlu podrške oboljelima od Duchenneove mišićne distrofije",
-      "datum": "08. 09. 2026.",
-      "kratki_opis": "Povodom Svjetskog dana svjesnosti o Duchenneovoj mišićnoj distrofiji, koji se obilježava 7. rujna, sinoć su tri prepoznatljive zgrade u središtu Slavonskog Broda zasjale u crvenoj boji. Gradska uprava, Glazbena škola i Klasična gimnazija fra Marijana Lanosovića tako su se pridružile nizu gradova dil",
-      "link": "https://www.slavonski-brod.hr/vijesti/17203-slavonski-brod-u-crvenom-svjetlu-podrske-oboljelima-od-duchenneove-misicne-distrofije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image5_resize.jpeg"
-    },
-    {
-      "naslov": "Vanjski bazeni od danas zatvoreni, unutarnji nastavljaju s radom",
-      "datum": "07. 09. 2026.",
-      "kratki_opis": "Od danas su vanjski bazeni u Slavonskom Brodu zatvoreni za posjetitelje, a ponovno otvaranje planirano je sljedeće ljetnu sezonu. Aktivnosti se u međuvremenu sele na unutarnje bazene, gdje Ustanova za gospodarenje športskim objektima (UZGŠO) i dalje provodi niz sportskih i rekreativnih programa nami",
-      "link": "https://www.slavonski-brod.hr/vijesti/17202-vanjski-bazeni-od-danas-zatvoreni-unutarnji-nastavljaju-s-radom",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/sportski_centar_i_grad_resize.jpg"
-    },
-    {
-      "naslov": "Prvašići zasjeli u školske klupe – počela nova školska godina 2026./2027.",
-      "datum": "07. 09. 2026.",
-      "kratki_opis": "Učenici svih gradskih osnovnih škola danas su svečanim priredbama dočekali početak školske godine 2026./2027. Najveće uzbuđenje vladalo je među najmlađima – prvašićima, koji su prvi put zauzeli svoje mjesto u školskim klupama. Uz prigodne kulturno-umjetničke programe starijih učenika i riječi dobrod",
-      "link": "https://www.slavonski-brod.hr/vijesti/17200-prvasici-zasjeli-u-skolske-klupe-pocela-nova-skolska-godina-2026-2027",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Naslovnicaaaa.jpg"
-    },
-    {
-      "naslov": "Velika posjećenost i odlična atmosfera obilježili treći Street Food Weekend",
-      "datum": "07. 09. 2026.",
-      "kratki_opis": "Treće izdanje Street Food Weekenda u Tvrđavi Brod uspješno je završeno, a iza organizatora i brojnih izlagača ostaju četiri dana ispunjena odličnom hranom, glazbom, druženjem i prije svega velikim brojem zadovoljnih posjetitelja. Od četvrtka do nedjelje Tvrđava Brod bila je jedno od središta društve",
-      "link": "https://www.slavonski-brod.hr/vijesti/17201-velika-posjecenost-i-odlicna-atmosfera-obiljezili-treci-street-food-weekend",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
