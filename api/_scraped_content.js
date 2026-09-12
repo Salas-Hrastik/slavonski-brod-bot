@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-11 10:02 UTC
+// Zadnje skrapanje: 2026-09-12 09:38 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-11T10:02:49.307Z",
+    "zadnje_azuriranje": "2026-09-12T09:38:50.650Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Znanje koje spašava živote – Svjetski dan prve pomoći",
+      "datum": "12. 09. 2026.",
+      "kratki_opis": "Druge subote u rujnu diljem svijeta obilježava se Svjetski dan prve pomoći, dan posvećen podsjećanju na to koliko je znanje osnovnih postupaka zbrinjavanja ozlijeđenih i iznenada oboljelih osoba važno za svakoga od nas. Ove godine dan pada na 12. rujna. Prva pomoć podrazumijeva niz jednostavnih, ali",
+      "link": "https://www.slavonski-brod.hr/vijesti/17221-znanje-koje-spasava-zivote-svjetski-dan-prve-pomoci",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/three-paramedics-taking-out-strecher-from-ambulance_resize.jpg"
+    },
+    {
+      "naslov": "Privremena obustava prometa 12. rujna zbog &quot;Hoda za život&quot;",
+      "datum": "11. 09. 2026.",
+      "kratki_opis": "Obavještavamo građane da će sutra, 12. rujna 2026. godine, u vremenu od 10:30 do 11:30 sati, doći do privremenog zatvaranja prometa na dijelu prometnica u gradu, zbog održavanja mirnog okupljanja \"Hod za život\" – miroljubivog hoda građana za život, obitelj i Hrvatsku, u organizaciji Udruge \"U ime ob",
+      "link": "https://www.slavonski-brod.hr/vijesti/17222-privremena-obustava-prometa-12-rujna-zbog-hoda-za-zivot",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/polojska_staza_resize.jpg"
+    },
+    {
+      "naslov": "Večeras plešemo u Tvrđavi – pridružite nam se na Disco u kazamatima!",
+      "datum": "11. 09. 2026.",
+      "kratki_opis": "Večeras, u petak, 11. rujna, Tvrđava Brod ugošćuje veliko finale ljetnog programa – Disco u kazamatima počinje u 20 sati u istočnim kazamatima i donosi glazbeni ispraćaj ovogodišnjeg „Ljeta u Tvrđavi Brod\". Za ples i dobru zabavu pobrinut će se DJ Bartek, čiji će mix glazbe zaokružiti ljeto kakvo pa",
+      "link": "https://www.slavonski-brod.hr/vijesti/17219-veceras-plesemo-u-tvrdavi-pridruzite-nam-se-na-disco-u-kazamatima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Disco_u_Kazamatima_resize.jpg"
+    },
     {
       "naslov": "Od prvog do 1625. paketa – kontinuitet potpore roditeljima i dalje traje",
       "datum": "11. 09. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U Slavonskom Brodu je danas, uvođenjem izvođača radova u posao, službeno započela realizacija projekta izgradnje državne ceste DC431, dionice od DC3 (Sjeverna vezna cesta) do sjevernog ulaza u holding Đuro Đaković. Vrijednost radova iznosi 3,15 milijuna eura bez PDV-a, a rok za završetak je devet mj",
       "link": "https://www.slavonski-brod.hr/vijesti/17205-uveden-izvodac-radova-na-projektu-izgradnje-drzavne-ceste-dc431-u-slavonskom-brodu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0838_resize.jpeg"
-    },
-    {
-      "naslov": "Disco u kazamatima zatvara „Ljeto u Tvrđavi Brod“",
-      "datum": "08. 09. 2026.",
-      "kratki_opis": "Ovoga petka, 11. rujna, Tvrđava Brod ugošćuje veliko finale ljetnog programa – Disco u kazamatima počinje u 20 sati u istočnim kazamatima i donosi glazbeni ispraćaj ovogodišnjeg „Ljeta u Tvrđavi Brod\". Za ples i dobru zabavu pobrinut će se DJ Bartek, čiji će mix glazbe zaokružiti ljeto kakvo pamtimo",
-      "link": "https://www.slavonski-brod.hr/vijesti/17204-message-collapsed-disco-u-kazamatima-zatvara-ljeto-u-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Disco_u_Kazamatima_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod ponovno na vrhu hrvatskog kajakaštva i kanuizma",
-      "datum": "08. 09. 2026.",
-      "kratki_opis": "Na Prvenstvu Hrvatske za seniore, održanom u Zagrebu, sportaši Kajak-kanu kluba Marsonia još su jednom pokazali kvalitetu, predanost i snagu te ostvarili izniman uspjeh. Naime, naslov prvaka Hrvatske ponovno su vratili u Slavonski Brod nakon tri godine! &nbsp;Ovaj veliki rezultat potvrda je kvalitet",
-      "link": "https://www.slavonski-brod.hr/vijesti/17207-slavonski-brod-ponovno-na-vrhu-hrvatskog-kajakastva-i-kanuizma",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/kajak_resize.jpg"
-    },
-    {
-      "naslov": "1.050 djece ovog je ljeta boravilo u gradskom dječjem odmaralištu na Hvaru",
-      "datum": "08. 09. 2026.",
-      "kratki_opis": "Škola je ponovno otvorila svoja vrata, ljeto se polako privodi kraju, a s njim se zbrajaju i dojmovi s još jedne sezone na Hvaru. Slavonskobrodsko dječje odmaralište u Starom Gradu i ovog je ljeta bilo mjesto dječjeg smijeha, druženja, igre i novih iskustava, a kroz njegovih je jedanaest smjena proš",
-      "link": "https://www.slavonski-brod.hr/vijesti/17206-1-050-djece-ovog-je-ljeta-boravilo-u-gradskom-djecjem-odmaralistu-na-hvaru",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnahvar_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
