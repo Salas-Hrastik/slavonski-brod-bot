@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-12 09:38 UTC
+// Zadnje skrapanje: 2026-09-13 10:40 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-12T09:38:50.650Z",
+    "zadnje_azuriranje": "2026-09-13T10:40:14.053Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Discom u Kazamatima zatvoreno ovogodišnje &quot;Ljeto u Tvrđavi Brod&quot;",
+      "datum": "12. 09. 2026.",
+      "kratki_opis": "Sinoć, u petak 11. rujna, u istočnim kazamatima Tvrđave Brod održano je veliko finale ovogodišnjeg ljetnog programa – Disco u kazamatima, kojim smo ispratili \"Ljeto u Tvrđavi Brod\". Zabava je počela u 20 sati, a za ples i dobru glazbu pobrinuo se DJ Bartek. Kazamati su i ovoga puta okupili brojne gr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17223-discom-u-kazamatima-zatvoreno-ovogodisnje-ljeto-u-tvrdavi-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna_disco.jpg"
+    },
     {
       "naslov": "Znanje koje spašava živote – Svjetski dan prve pomoći",
       "datum": "12. 09. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Gradska knjižnica Slavonski Brod od 7. rujna do 31. listopada 2026. godine omogućuje besplatan upis, odnosno besplatnu obnovu članarine, svim učenicima prvih razreda osnovnih i srednjih škola. Učenici prvih razreda osnovnih škola upis obavljaju na Dječjem odjelu, u pratnji roditelja, skrbnika ili st",
       "link": "https://www.slavonski-brod.hr/vijesti/17208-besplatan-upis-u-gradsku-knjiznicu-za-ucenike-prvih-razreda-osnovnih-i-srednjih-skola",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/779755646_1074237768638944_5936648596551680114_n.jpg"
-    },
-    {
-      "naslov": "Uveden izvođač radova na projektu izgradnje državne ceste DC431 u Slavonskom Brodu",
-      "datum": "08. 09. 2026.",
-      "kratki_opis": "U Slavonskom Brodu je danas, uvođenjem izvođača radova u posao, službeno započela realizacija projekta izgradnje državne ceste DC431, dionice od DC3 (Sjeverna vezna cesta) do sjevernog ulaza u holding Đuro Đaković. Vrijednost radova iznosi 3,15 milijuna eura bez PDV-a, a rok za završetak je devet mj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17205-uveden-izvodac-radova-na-projektu-izgradnje-drzavne-ceste-dc431-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0838_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
