@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-14 11:00 UTC
+// Zadnje skrapanje: 2026-09-15 10:30 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-14T11:00:36.718Z",
+    "zadnje_azuriranje": "2026-09-15T10:30:30.592Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "„Klasije&quot; – od srca brodskog sporta do suvremenog rekreacijskog centra",
+      "datum": "15. 09. 2026.",
+      "kratki_opis": "„Klasije\" su Brođanima oduvijek značile mjesto okupljanja. Dvorana je ovdje svečano otvorena davne 1960. godine i desetljećima je bila domaćin brojnih sportskih i kulturnih događanja, sve dok nije stradala tijekom Domovinskog rata. Dugi niz godina prostor je čekao svoju obnovu – a upravo tu priču ob",
+      "link": "https://www.slavonski-brod.hr/vijesti/17228-klasije-od-srca-brodskog-sporta-do-suvremenog-rekreacijskog-centra",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/klasije_joomla.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod domaćin 5. Parasportskih igara mladih – Memorijala „Anto Ćavar“",
+      "datum": "15. 09. 2026.",
+      "kratki_opis": "Slavonski Brod će u subotu, 19. rujna, ponovno biti mjesto okupljanja mladih parasportaša iz različitih krajeva Hrvatske. U ogranizaciji Parasportskog saveza grada Slavonskog Broda i Brodsko – posavske županije održat će se 5. Parasporstke igre mladih – Memorijal „Anto Ćavar“, sportska manifestacija",
+      "link": "https://www.slavonski-brod.hr/vijesti/17227-slavonski-brod-domacin-5-parasportskih-igara-mladih-memorijala-anto-cavar",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/djevojka_resize.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – Proveden 9. (deveti) larvicidni tretman i monitoring komaraca",
+      "datum": "14. 09. 2026.",
+      "kratki_opis": "Stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su u utorak, 01. rujna 2026. godine , deveti (9.) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Nakon toga je u utorak, 8. rujna 2026. godine , provedena i prva (1.) ko",
+      "link": "https://www.slavonski-brod.hr/vijesti/17226-ddd-mjere-2026-godine-proveden-9-deveti-larvicidni-tretman-i-monitoring-komaraca-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/komarac_resize.jpg"
+    },
+    {
+      "naslov": "Od bećarca do narodnih nošnji i potrage za blagom – BAŠTION vas poziva u Tvrđavu Brod!",
+      "datum": "14. 09. 2026.",
+      "kratki_opis": "U Edukacijsko-multimedijalnom centru u Tvrđavi Brod danas je održana medijska konferencija na kojoj je predstavljena programska sezona Centra za nematerijalnu kulturnu baštinu za 2026./2027. godinu. Programsku sezonu predstavili su pročelnik Upravnog odjela dr. sc. Ivan Holik i voditeljica Centra dr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17224-od-becarca-do-narodnih-nosnji-i-potrage-za-blagom-bastion-vas-poziva-u-tvrdavu-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/centar2.jpeg"
+    },
     {
       "naslov": "Discom u Kazamatima zatvoreno ovogodišnje &quot;Ljeto u Tvrđavi Brod&quot;",
       "datum": "12. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "I u rujnu nastavljamo s ulaganjima u prometnu infrastrukturu grada. Nakon intenzivnih radova tijekom ljeta, asfaltiranje cesta i ulica diljem Slavonskog Broda odvija se i dalje, kako bismo građanima osigurali kvalitetnije i sigurnije prometnice. U sklopu izgradnje pješačke staze na spoju Ulice Ivana",
       "link": "https://www.slavonski-brod.hr/vijesti/17215-u-tijeku-novi-radovi-asfaltiranja-u-slavonskom-brodu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG-0dd2fb5bf11460656b04448314ed08b1-V.jpg"
-    },
-    {
-      "naslov": "Poziv građanima na provjeru podataka u Središnjem registru stanovništva",
-      "datum": "10. 09. 2026.",
-      "kratki_opis": "Grad Slavonski Brod pridružuje se aktivnostima informiranja građana o Središnjem registru stanovništva (SRS), jednom od ključnih projekata digitalne transformacije javne uprave u Republici Hrvatskoj. Središnji registar stanovništva objedinjuje podatke iz službenih evidencija kako bi se osigurala jed",
-      "link": "https://www.slavonski-brod.hr/vijesti/17213-poziv-gradanima-na-provjeru-podataka-u-sredisnjem-registru-stanovnistva",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/woman-cafe-using-tablet-mobile_resize.jpg"
-    },
-    {
-      "naslov": "Pivo Fest se vraća u Tvrđavu – peto izdanje 16. listopada",
-      "datum": "09. 09. 2026.",
-      "kratki_opis": "Slavonski Brod ove jeseni po peti put otvara vrata istočnih kazamata Tvrđave ljubiteljima dobrog piva. Peto izdanje Pivo Festa održat će se u petak, 16. listopada 2026. godine, i do sada je izraslo u jedno od prepoznatljivijih jesenskih događanja u gradu. Manifestacija okuplja domaće proizvođače cra",
-      "link": "https://www.slavonski-brod.hr/vijesti/17209-pivo-fest-se-vraca-u-tvrdavu-peto-izdanje-16-listopada",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/DAN_PIVA-1.png"
-    },
-    {
-      "naslov": "Mala Gospa i osmi hodočasnički dan Gospi Brze Pomoći okupili tisuće vjernika",
-      "datum": "09. 09. 2026.",
-      "kratki_opis": "Blagdan Rođenja Blažene Djevice Marije – Mala Gospa i osmi hodočasnički dan Gospi Brze Pomoći svečano je u utorak, 8. rujna proslavljen u istoimenom brodskom Gospinom svetištu. Unatoč visokim temperaturama nekoliko tisuća vjernika od ranih je jutarnjih sati pristizalo u to Gospino svetište i sudjelo",
-      "link": "https://www.slavonski-brod.hr/vijesti/17210-mala-gospa-i-osmi-hodocasnicki-dan-gospi-brze-pomoci-okupili-tisuce-vjernika",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG-20260909-WA0000.jpg"
-    },
-    {
-      "naslov": "Besplatan upis u Gradsku knjižnicu za učenike prvih razreda osnovnih i srednjih škola",
-      "datum": "09. 09. 2026.",
-      "kratki_opis": "Gradska knjižnica Slavonski Brod od 7. rujna do 31. listopada 2026. godine omogućuje besplatan upis, odnosno besplatnu obnovu članarine, svim učenicima prvih razreda osnovnih i srednjih škola. Učenici prvih razreda osnovnih škola upis obavljaju na Dječjem odjelu, u pratnji roditelja, skrbnika ili st",
-      "link": "https://www.slavonski-brod.hr/vijesti/17208-besplatan-upis-u-gradsku-knjiznicu-za-ucenike-prvih-razreda-osnovnih-i-srednjih-skola",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/779755646_1074237768638944_5936648596551680114_n.jpg"
     }
   ],
   "manifestacije_aktualne": [
