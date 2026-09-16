@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-15 10:30 UTC
+// Zadnje skrapanje: 2026-09-16 10:20 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-15T10:30:30.592Z",
+    "zadnje_azuriranje": "2026-09-16T10:20:17.398Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Dana hrvatskih branitelja Brodsko-posavske županije",
+      "datum": "16. 09. 2026.",
+      "kratki_opis": "Drage Brođanke i Brođani, danas, 16. rujna, obilježavamo Dan hrvatskih branitelja Brodsko-posavske županije – dan kada je 1991. godine brodska vojarna prešla pod nadzor Hrvatske vojske, jedan od ključnih trenutaka u obrani našeg grada i županije. S dubokim poštovanjem prisjećamo se svih 768 branitel",
+      "link": "https://www.slavonski-brod.hr/vijesti/17229-gradonacelnikova-cestitka-povodom-dana-hrvatskih-branitelja-brodsko-posavske-zupanije-5",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Dan_hrvatskih_branitelja_Brodsko-posavske_upanije_resize.jpg"
+    },
     {
       "naslov": "„Klasije&quot; – od srca brodskog sporta do suvremenog rekreacijskog centra",
       "datum": "15. 09. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Nastavljamo s provedbom mjere podrške obiteljima s novorođenom djecom, pa smo i danas uručili novih deset paketa opreme za bebe. Dodjelu je, kao i uobičajeno, predvodila zamjenica gradonačelnika Marina Martić Puača. Ovom dodjelom broj ukupno podijeljenih kompleta opreme od uvođenja mjere 2018. godin",
       "link": "https://www.slavonski-brod.hr/vijesti/17217-od-prvog-do-1625-paketa-kontinuitet-potpore-roditeljima-i-dalje-traje",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Naslovna_joomla.jpg"
-    },
-    {
-      "naslov": "U tijeku novi radovi asfaltiranja u Slavonskom Brodu",
-      "datum": "10. 09. 2026.",
-      "kratki_opis": "I u rujnu nastavljamo s ulaganjima u prometnu infrastrukturu grada. Nakon intenzivnih radova tijekom ljeta, asfaltiranje cesta i ulica diljem Slavonskog Broda odvija se i dalje, kako bismo građanima osigurali kvalitetnije i sigurnije prometnice. U sklopu izgradnje pješačke staze na spoju Ulice Ivana",
-      "link": "https://www.slavonski-brod.hr/vijesti/17215-u-tijeku-novi-radovi-asfaltiranja-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG-0dd2fb5bf11460656b04448314ed08b1-V.jpg"
     }
   ],
   "manifestacije_aktualne": [
