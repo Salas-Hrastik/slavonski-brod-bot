@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-16 10:20 UTC
+// Zadnje skrapanje: 2026-09-17 10:29 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-16T10:20:17.398Z",
+    "zadnje_azuriranje": "2026-09-17T10:29:13.934Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Otvorena programska sezona Centra za nematerijalnu kulturnu baštinu",
+      "datum": "17. 09. 2026.",
+      "kratki_opis": "Edukacijsko-multimedijalni centar – Centar za nematerijalnu kulturnu baštinu u Slavonskom Brodu danas je otvorio svoju prvu programsku sezonu popularno-stručnim predavanjem „Ajde da te spremim u snašu! -&nbsp; prakse odijevanja narodnih nošnji kao nematerijalna kulturna baština“, koje je održano u E",
+      "link": "https://www.slavonski-brod.hr/vijesti/17237-otvorena-programska-sezona-centra-za-nematerijalnu-kulturnu-bastinu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/snasa.jpeg"
+    },
+    {
+      "naslov": "Šarene pruge, novi prostori – „Pčelica&quot; u završnoj fazi dogradnje",
+      "datum": "17. 09. 2026.",
+      "kratki_opis": "Predškolski odgoj i obrazovanje ostaju jedan od naših prioriteta, a to potvrđuje i napredak radova na dogradnji Dječjeg vrtića „Pčelica\". Vrtić, koji svoja vrata otvara još davne 1968. godine, kroz povijest je prolazio i teška razdoblja – bio je oštećen tijekom Domovinskog rata, a potom stradao i u ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17238-vise-mjesta-vise-prostora-za-igru-dogradnja-dv-pcelica-u-zavrsnici",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/pcelica_joomla.jpg"
+    },
+    {
+      "naslov": "In memoriam – Paula Vdovjak (1955.-2026.)",
+      "datum": "16. 09. 2026.",
+      "kratki_opis": "S velikom tugom primili smo vijest da nas je danas, na Dan hrvatskih branitelja Brodsko-posavske županije, zauvijek napustila Paula Vdovjak, hrvatska braniteljica, ratna medicinska djelatnica i dugogodišnja predsjednica Udruge 108. brigade ZNG RH. Rođena 1955. godine, Paula Vdovjak je početak Domovi",
+      "link": "https://www.slavonski-brod.hr/vijesti/17234-in-memoriam-paula-vdovjak-1955-2026",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/d4dc6a6401dfb35fe3f6.jpeg"
+    },
+    {
+      "naslov": "Slavonski Brod obilježio Dan hrvatskih branitelja Brodsko-posavske županije",
+      "datum": "16. 09. 2026.",
+      "kratki_opis": "I ove godine, 16. rujna, sjetili smo se dana kada je brodska vojarna prešla pod nadzor hrvatskih branitelja – jednog od prekretničkih trenutaka u obrani grada tijekom Domovinskog rata. Dan je započeo Svetom misom zadušnicom u kapeli sv. Ane u Tvrđavi Brod, posvećenom svim poginulim, nestalim i premi",
+      "link": "https://www.slavonski-brod.hr/vijesti/17231-slavonski-brod-obiljezio-dan-hrvatskih-branitelja-brodsko-posavske-zupanije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0995_resize.jpeg"
+    },
     {
       "naslov": "Gradonačelnikova čestitka povodom Dana hrvatskih branitelja Brodsko-posavske županije",
       "datum": "16. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Sinoć, u petak 11. rujna, u istočnim kazamatima Tvrđave Brod održano je veliko finale ovogodišnjeg ljetnog programa – Disco u kazamatima, kojim smo ispratili \"Ljeto u Tvrđavi Brod\". Zabava je počela u 20 sati, a za ples i dobru glazbu pobrinuo se DJ Bartek. Kazamati su i ovoga puta okupili brojne gr",
       "link": "https://www.slavonski-brod.hr/vijesti/17223-discom-u-kazamatima-zatvoreno-ovogodisnje-ljeto-u-tvrdavi-brod",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna_disco.jpg"
-    },
-    {
-      "naslov": "Znanje koje spašava živote – Svjetski dan prve pomoći",
-      "datum": "12. 09. 2026.",
-      "kratki_opis": "Druge subote u rujnu diljem svijeta obilježava se Svjetski dan prve pomoći, dan posvećen podsjećanju na to koliko je znanje osnovnih postupaka zbrinjavanja ozlijeđenih i iznenada oboljelih osoba važno za svakoga od nas. Ove godine dan pada na 12. rujna. Prva pomoć podrazumijeva niz jednostavnih, ali",
-      "link": "https://www.slavonski-brod.hr/vijesti/17221-znanje-koje-spasava-zivote-svjetski-dan-prve-pomoci",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/three-paramedics-taking-out-strecher-from-ambulance_resize.jpg"
-    },
-    {
-      "naslov": "Privremena obustava prometa 12. rujna zbog &quot;Hoda za život&quot;",
-      "datum": "11. 09. 2026.",
-      "kratki_opis": "Obavještavamo građane da će sutra, 12. rujna 2026. godine, u vremenu od 10:30 do 11:30 sati, doći do privremenog zatvaranja prometa na dijelu prometnica u gradu, zbog održavanja mirnog okupljanja \"Hod za život\" – miroljubivog hoda građana za život, obitelj i Hrvatsku, u organizaciji Udruge \"U ime ob",
-      "link": "https://www.slavonski-brod.hr/vijesti/17222-privremena-obustava-prometa-12-rujna-zbog-hoda-za-zivot",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/polojska_staza_resize.jpg"
-    },
-    {
-      "naslov": "Večeras plešemo u Tvrđavi – pridružite nam se na Disco u kazamatima!",
-      "datum": "11. 09. 2026.",
-      "kratki_opis": "Večeras, u petak, 11. rujna, Tvrđava Brod ugošćuje veliko finale ljetnog programa – Disco u kazamatima počinje u 20 sati u istočnim kazamatima i donosi glazbeni ispraćaj ovogodišnjeg „Ljeta u Tvrđavi Brod\". Za ples i dobru zabavu pobrinut će se DJ Bartek, čiji će mix glazbe zaokružiti ljeto kakvo pa",
-      "link": "https://www.slavonski-brod.hr/vijesti/17219-veceras-plesemo-u-tvrdavi-pridruzite-nam-se-na-disco-u-kazamatima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Disco_u_Kazamatima_resize.jpg"
-    },
-    {
-      "naslov": "Od prvog do 1625. paketa – kontinuitet potpore roditeljima i dalje traje",
-      "datum": "11. 09. 2026.",
-      "kratki_opis": "Nastavljamo s provedbom mjere podrške obiteljima s novorođenom djecom, pa smo i danas uručili novih deset paketa opreme za bebe. Dodjelu je, kao i uobičajeno, predvodila zamjenica gradonačelnika Marina Martić Puača. Ovom dodjelom broj ukupno podijeljenih kompleta opreme od uvođenja mjere 2018. godin",
-      "link": "https://www.slavonski-brod.hr/vijesti/17217-od-prvog-do-1625-paketa-kontinuitet-potpore-roditeljima-i-dalje-traje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Naslovna_joomla.jpg"
     }
   ],
   "manifestacije_aktualne": [
