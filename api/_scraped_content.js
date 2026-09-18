@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-17 10:29 UTC
+// Zadnje skrapanje: 2026-09-18 10:05 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-17T10:29:13.934Z",
+    "zadnje_azuriranje": "2026-09-18T10:05:41.991Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Zlatna generacija ponovno pleše: pridružite se plesnoj večeri u MO &quot;Andrija Hebrang&quot;",
+      "datum": "18. 09. 2026.",
+      "kratki_opis": "Tradicionalno jedne nedjelje u mjesecu Grad Slavonski Brod organizira plesne večeri za zlatnu generaciju i na kratko postaje središte plesnog druženja, radosti i dobrog raspoloženja za okupljene umirovljenike.&nbsp;Ovakve organizirane plesne večeri su postale omiljeni&nbsp; način okupljanja i družen",
+      "link": "https://www.slavonski-brod.hr/vijesti/17240-zlatna-generacija-ponovno-plese-pridruzite-se-plesnoj-veceri-u-mo-andrija-hebrang",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/umirovljenici_resize.jpg"
+    },
     {
       "naslov": "Otvorena programska sezona Centra za nematerijalnu kulturnu baštinu",
       "datum": "17. 09. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U Edukacijsko-multimedijalnom centru u Tvrđavi Brod danas je održana medijska konferencija na kojoj je predstavljena programska sezona Centra za nematerijalnu kulturnu baštinu za 2026./2027. godinu. Programsku sezonu predstavili su pročelnik Upravnog odjela dr. sc. Ivan Holik i voditeljica Centra dr",
       "link": "https://www.slavonski-brod.hr/vijesti/17224-od-becarca-do-narodnih-nosnji-i-potrage-za-blagom-bastion-vas-poziva-u-tvrdavu-brod",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/centar2.jpeg"
-    },
-    {
-      "naslov": "Discom u Kazamatima zatvoreno ovogodišnje &quot;Ljeto u Tvrđavi Brod&quot;",
-      "datum": "12. 09. 2026.",
-      "kratki_opis": "Sinoć, u petak 11. rujna, u istočnim kazamatima Tvrđave Brod održano je veliko finale ovogodišnjeg ljetnog programa – Disco u kazamatima, kojim smo ispratili \"Ljeto u Tvrđavi Brod\". Zabava je počela u 20 sati, a za ples i dobru glazbu pobrinuo se DJ Bartek. Kazamati su i ovoga puta okupili brojne gr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17223-discom-u-kazamatima-zatvoreno-ovogodisnje-ljeto-u-tvrdavi-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna_disco.jpg"
     }
   ],
   "manifestacije_aktualne": [
