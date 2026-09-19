@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-18 10:05 UTC
+// Zadnje skrapanje: 2026-09-19 09:46 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-18T10:05:41.991Z",
+    "zadnje_azuriranje": "2026-09-19T09:46:42.491Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Đuro Đaković Montaža obilježila sto godina tradicije, znanja i uspjeha",
+      "datum": "19. 09. 2026.",
+      "kratki_opis": "Svečanom proslavom u Hotelu Park jučer je obilježena velika i značajna obljetnica – 100 godina djelovanja Đuro Đaković Montaže, jedne od najprepoznatljivijih slavonskobrodskih tvrtki koja je tijekom stoljeća rada svojim projektima ostavila trag u Hrvatskoj, Europi i svijetu. Svečanosti je nazočio gr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17244-duro-dakovic-montaza-obiljezila-sto-godina-tradicije-znanja-i-uspjeha",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/NASLOVNAMONTAZA.jpeg"
+    },
+    {
+      "naslov": "Gradonačelnik Duspara primio predstavnike Hrvatskog paraolimpijskog odbora i Parasportskog saveza Grada Slavonskog Broda",
+      "datum": "18. 09. 2026.",
+      "kratki_opis": "U Velikoj vijećnici gradske uprave danas je održan radni sastanak s predstavnicima Hrvatskog paraolimpijskog odbora i Parasportskog saveza Grada Slavonskog Broda. Prijem su upriličili gradonačelnik Mirko Duspara i pročelnik Upravnog odjela za društvene djelatnosti Ivan Holik. Sastanku su nazočili pr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17243-gradonacelnik-duspara-primio-predstavnike-hrvatskog-paraolimpijskog-odbora-i-parasportskog-saveza-grada-slavonskog-broda",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1055_resize.jpeg"
+    },
+    {
+      "naslov": "Slavonski Brod pridružuje se Europskom tjednu mobilnosti – 21. rujna zatvaranje prometa u dijelu grada",
+      "datum": "18. 09. 2026.",
+      "kratki_opis": "U sklopu obilježavanja Europskog tjedna mobilnosti, u ponedjeljak, 21. rujna 2026. godine, u vremenu od 10,00 do 12,00 sati, obustavit će se promet u dijelu Šetališta braće Radića, u dionici od raskrižja s ulicom Tome Skalice do Trga Ivane Brlić Mažuranić. Za vrijeme trajanja aktivnosti, redoviti pr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17241-slavonski-brod-se-pridruzuje-europskom-tjednu-mobilnosti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/MOBILNOST.png"
+    },
+    {
+      "naslov": "Deset novih paketa opreme za bebe – ukupno ih do sada podijelili 1635",
+      "datum": "18. 09. 2026.",
+      "kratki_opis": "Nastavljamo s provedbom mjere podrške obiteljima s novorođenom djecom, pa smo danas uručili deset paketa opreme za bebe. Dodjelu je, već tradicionalno, predvodila zamjenica gradonačelnika Marina Martić Puača. Ovom smo dodjelom ukupan broj podijeljenih paketa opreme od početka provedbe mjere 2018. go",
+      "link": "https://www.slavonski-brod.hr/vijesti/17242-devet-novih-paketa-opreme-za-bebe-ukupno-ih-do-sada-podijelili-1634",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Bebe_joomla.jpg"
+    },
     {
       "naslov": "Zlatna generacija ponovno pleše: pridružite se plesnoj večeri u MO &quot;Andrija Hebrang&quot;",
       "datum": "18. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Drage Brođanke i Brođani, danas, 16. rujna, obilježavamo Dan hrvatskih branitelja Brodsko-posavske županije – dan kada je 1991. godine brodska vojarna prešla pod nadzor Hrvatske vojske, jedan od ključnih trenutaka u obrani našeg grada i županije. S dubokim poštovanjem prisjećamo se svih 768 branitel",
       "link": "https://www.slavonski-brod.hr/vijesti/17229-gradonacelnikova-cestitka-povodom-dana-hrvatskih-branitelja-brodsko-posavske-zupanije-5",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Dan_hrvatskih_branitelja_Brodsko-posavske_upanije_resize.jpg"
-    },
-    {
-      "naslov": "„Klasije&quot; – od srca brodskog sporta do suvremenog rekreacijskog centra",
-      "datum": "15. 09. 2026.",
-      "kratki_opis": "„Klasije\" su Brođanima oduvijek značile mjesto okupljanja. Dvorana je ovdje svečano otvorena davne 1960. godine i desetljećima je bila domaćin brojnih sportskih i kulturnih događanja, sve dok nije stradala tijekom Domovinskog rata. Dugi niz godina prostor je čekao svoju obnovu – a upravo tu priču ob",
-      "link": "https://www.slavonski-brod.hr/vijesti/17228-klasije-od-srca-brodskog-sporta-do-suvremenog-rekreacijskog-centra",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/klasije_joomla.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod domaćin 5. Parasportskih igara mladih – Memorijala „Anto Ćavar“",
-      "datum": "15. 09. 2026.",
-      "kratki_opis": "Slavonski Brod će u subotu, 19. rujna, ponovno biti mjesto okupljanja mladih parasportaša iz različitih krajeva Hrvatske. U ogranizaciji Parasportskog saveza grada Slavonskog Broda i Brodsko – posavske županije održat će se 5. Parasporstke igre mladih – Memorijal „Anto Ćavar“, sportska manifestacija",
-      "link": "https://www.slavonski-brod.hr/vijesti/17227-slavonski-brod-domacin-5-parasportskih-igara-mladih-memorijala-anto-cavar",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/djevojka_resize.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – Proveden 9. (deveti) larvicidni tretman i monitoring komaraca",
-      "datum": "14. 09. 2026.",
-      "kratki_opis": "Stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su u utorak, 01. rujna 2026. godine , deveti (9.) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Nakon toga je u utorak, 8. rujna 2026. godine , provedena i prva (1.) ko",
-      "link": "https://www.slavonski-brod.hr/vijesti/17226-ddd-mjere-2026-godine-proveden-9-deveti-larvicidni-tretman-i-monitoring-komaraca-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Srpanj/komarac_resize.jpg"
-    },
-    {
-      "naslov": "Od bećarca do narodnih nošnji i potrage za blagom – BAŠTION vas poziva u Tvrđavu Brod!",
-      "datum": "14. 09. 2026.",
-      "kratki_opis": "U Edukacijsko-multimedijalnom centru u Tvrđavi Brod danas je održana medijska konferencija na kojoj je predstavljena programska sezona Centra za nematerijalnu kulturnu baštinu za 2026./2027. godinu. Programsku sezonu predstavili su pročelnik Upravnog odjela dr. sc. Ivan Holik i voditeljica Centra dr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17224-od-becarca-do-narodnih-nosnji-i-potrage-za-blagom-bastion-vas-poziva-u-tvrdavu-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/centar2.jpeg"
     }
   ],
   "manifestacije_aktualne": [
