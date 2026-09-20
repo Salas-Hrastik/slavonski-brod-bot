@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-19 09:46 UTC
+// Zadnje skrapanje: 2026-09-20 10:08 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-19T09:46:42.491Z",
+    "zadnje_azuriranje": "2026-09-20T10:08:47.447Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Položeni vijenci povodom 35. obljetnice pogibije Luke Andrijanića",
+      "datum": "19. 09. 2026.",
+      "kratki_opis": "Na današnji dan, sjećamo se heroja Luke Andrijanića, heroja obrane grada Vukovara, koji je poginuo 1991. godine svega par dana prije svog 20. rođendana. Ovaj mladi hrvatski branitelj u lipnju 1991. godine otišao je iz svoje rodne Velike Brusnice u Bosni i Hercegovini kako bi pristupio 4. bojnoj 3. g",
+      "link": "https://www.slavonski-brod.hr/vijesti/17245-polozeni-vijenci-povodom-35-obljetnice-pogibije-luke-andrijanica",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnaluka_resize.jpeg"
+    },
+    {
+      "naslov": "Otvorene 5. parasportske igre mladih - Memorijal ,,Anto Ćavar''",
+      "datum": "19. 09. 2026.",
+      "kratki_opis": "U Slavonskom Brodu danas su otvorene 5. Parasportske igre mladih – Memorijal „Anto Ćavar“ , koje i ove godine okupljaju mlade parasportaše iz različitih krajeva Hrvatske. Svečanom otvorenju prisustvovali su gradonačelnik Slavonskog Broda Mirko Duspara i pročelnik Upravnog odjela za društvene djelatn",
+      "link": "https://www.slavonski-brod.hr/vijesti/17246-otvorene-5-parasportske-igre-mladih-memorijal-anto-cavar",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/clanaknas.jpeg"
+    },
     {
       "naslov": "Đuro Đaković Montaža obilježila sto godina tradicije, znanja i uspjeha",
       "datum": "19. 09. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "S velikom tugom primili smo vijest da nas je danas, na Dan hrvatskih branitelja Brodsko-posavske županije, zauvijek napustila Paula Vdovjak, hrvatska braniteljica, ratna medicinska djelatnica i dugogodišnja predsjednica Udruge 108. brigade ZNG RH. Rođena 1955. godine, Paula Vdovjak je početak Domovi",
       "link": "https://www.slavonski-brod.hr/vijesti/17234-in-memoriam-paula-vdovjak-1955-2026",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/d4dc6a6401dfb35fe3f6.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod obilježio Dan hrvatskih branitelja Brodsko-posavske županije",
-      "datum": "16. 09. 2026.",
-      "kratki_opis": "I ove godine, 16. rujna, sjetili smo se dana kada je brodska vojarna prešla pod nadzor hrvatskih branitelja – jednog od prekretničkih trenutaka u obrani grada tijekom Domovinskog rata. Dan je započeo Svetom misom zadušnicom u kapeli sv. Ane u Tvrđavi Brod, posvećenom svim poginulim, nestalim i premi",
-      "link": "https://www.slavonski-brod.hr/vijesti/17231-slavonski-brod-obiljezio-dan-hrvatskih-branitelja-brodsko-posavske-zupanije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_0995_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka povodom Dana hrvatskih branitelja Brodsko-posavske županije",
-      "datum": "16. 09. 2026.",
-      "kratki_opis": "Drage Brođanke i Brođani, danas, 16. rujna, obilježavamo Dan hrvatskih branitelja Brodsko-posavske županije – dan kada je 1991. godine brodska vojarna prešla pod nadzor Hrvatske vojske, jedan od ključnih trenutaka u obrani našeg grada i županije. S dubokim poštovanjem prisjećamo se svih 768 branitel",
-      "link": "https://www.slavonski-brod.hr/vijesti/17229-gradonacelnikova-cestitka-povodom-dana-hrvatskih-branitelja-brodsko-posavske-zupanije-5",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Dan_hrvatskih_branitelja_Brodsko-posavske_upanije_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
