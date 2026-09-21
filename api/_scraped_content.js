@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-20 10:08 UTC
+// Zadnje skrapanje: 2026-09-21 11:09 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-20T10:08:47.447Z",
+    "zadnje_azuriranje": "2026-09-21T11:09:47.235Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,11 +18,18 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Položeni vijenci povodom 35. obljetnice pogibije Luke Andrijanića",
-      "datum": "19. 09. 2026.",
-      "kratki_opis": "Na današnji dan, sjećamo se heroja Luke Andrijanića, heroja obrane grada Vukovara, koji je poginuo 1991. godine svega par dana prije svog 20. rođendana. Ovaj mladi hrvatski branitelj u lipnju 1991. godine otišao je iz svoje rodne Velike Brusnice u Bosni i Hercegovini kako bi pristupio 4. bojnoj 3. g",
-      "link": "https://www.slavonski-brod.hr/vijesti/17245-polozeni-vijenci-povodom-35-obljetnice-pogibije-luke-andrijanica",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnaluka_resize.jpeg"
+      "naslov": "Novo lice škole u Brodskom Vinogorju: dovršena dogradnja OŠ „Đuro Pilar&quot;",
+      "datum": "21. 09. 2026.",
+      "kratki_opis": "Škole su mjesta na kojima odrastaju generacije, a Osnovna škola „Đuro Pilar\" to je za Brodsko Vinogorje i Koloniju već više od stotinu godina. Osnovana je 1908. godine odlukom Kraljevske hrvatsko-slavonsko-dalmatinske vlade kao četverogodišnja škola u Slavonskom Brodu. Tijekom svoje povijesti mijenj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17248-novo-lice-skole-na-brodskom-vinogorju-dovrsena-dogradnja-os-duro-pilar",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/dp_joomla.jpg"
+    },
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Dana hrvatske carine",
+      "datum": "21. 09. 2026.",
+      "kratki_opis": "Poštovani pripadnici Carinske uprave Republike Hrvatske, u povodu Dana hrvatske carine i blagdana svetog Mateja, zaštitnika carinika, upućujem vam iskrene čestitke u svoje osobno ime i u ime svih nas u Gradu Slavonskom Brodu. Vaš posao, koji se često odvija izvan središta pozornosti, od iznimne je v",
+      "link": "https://www.slavonski-brod.hr/vijesti/17247-gradonacelnikova-cestitka-povodom-dana-hrvatske-carine-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/CARINA.png"
     },
     {
       "naslov": "Otvorene 5. parasportske igre mladih - Memorijal ,,Anto Ćavar''",
@@ -30,6 +37,13 @@ export const scrapedContent = {
       "kratki_opis": "U Slavonskom Brodu danas su otvorene 5. Parasportske igre mladih – Memorijal „Anto Ćavar“ , koje i ove godine okupljaju mlade parasportaše iz različitih krajeva Hrvatske. Svečanom otvorenju prisustvovali su gradonačelnik Slavonskog Broda Mirko Duspara i pročelnik Upravnog odjela za društvene djelatn",
       "link": "https://www.slavonski-brod.hr/vijesti/17246-otvorene-5-parasportske-igre-mladih-memorijal-anto-cavar",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/clanaknas.jpeg"
+    },
+    {
+      "naslov": "Položeni vijenci povodom 35. obljetnice pogibije Luke Andrijanića",
+      "datum": "19. 09. 2026.",
+      "kratki_opis": "Na današnji dan, sjećamo se heroja Luke Andrijanića, heroja obrane grada Vukovara, koji je poginuo 1991. godine svega par dana prije svog 20. rođendana. Ovaj mladi hrvatski branitelj u lipnju 1991. godine otišao je iz svoje rodne Velike Brusnice u Bosni i Hercegovini kako bi pristupio 4. bojnoj 3. g",
+      "link": "https://www.slavonski-brod.hr/vijesti/17245-polozeni-vijenci-povodom-35-obljetnice-pogibije-luke-andrijanica",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnaluka_resize.jpeg"
     },
     {
       "naslov": "Đuro Đaković Montaža obilježila sto godina tradicije, znanja i uspjeha",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Edukacijsko-multimedijalni centar – Centar za nematerijalnu kulturnu baštinu u Slavonskom Brodu danas je otvorio svoju prvu programsku sezonu popularno-stručnim predavanjem „Ajde da te spremim u snašu! -&nbsp; prakse odijevanja narodnih nošnji kao nematerijalna kulturna baština“, koje je održano u E",
       "link": "https://www.slavonski-brod.hr/vijesti/17237-otvorena-programska-sezona-centra-za-nematerijalnu-kulturnu-bastinu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/snasa.jpeg"
-    },
-    {
-      "naslov": "Šarene pruge, novi prostori – „Pčelica&quot; u završnoj fazi dogradnje",
-      "datum": "17. 09. 2026.",
-      "kratki_opis": "Predškolski odgoj i obrazovanje ostaju jedan od naših prioriteta, a to potvrđuje i napredak radova na dogradnji Dječjeg vrtića „Pčelica\". Vrtić, koji svoja vrata otvara još davne 1968. godine, kroz povijest je prolazio i teška razdoblja – bio je oštećen tijekom Domovinskog rata, a potom stradao i u ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17238-vise-mjesta-vise-prostora-za-igru-dogradnja-dv-pcelica-u-zavrsnici",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/pcelica_joomla.jpg"
-    },
-    {
-      "naslov": "In memoriam – Paula Vdovjak (1955.-2026.)",
-      "datum": "16. 09. 2026.",
-      "kratki_opis": "S velikom tugom primili smo vijest da nas je danas, na Dan hrvatskih branitelja Brodsko-posavske županije, zauvijek napustila Paula Vdovjak, hrvatska braniteljica, ratna medicinska djelatnica i dugogodišnja predsjednica Udruge 108. brigade ZNG RH. Rođena 1955. godine, Paula Vdovjak je početak Domovi",
-      "link": "https://www.slavonski-brod.hr/vijesti/17234-in-memoriam-paula-vdovjak-1955-2026",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/d4dc6a6401dfb35fe3f6.jpeg"
     }
   ],
   "manifestacije_aktualne": [
