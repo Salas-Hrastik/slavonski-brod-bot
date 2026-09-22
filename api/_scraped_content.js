@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-21 11:09 UTC
+// Zadnje skrapanje: 2026-09-22 10:23 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-21T11:09:47.235Z",
+    "zadnje_azuriranje": "2026-09-22T10:23:42.739Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Vijuš se vraća Gradu",
+      "datum": "22. 09. 2026.",
+      "kratki_opis": "",
+      "link": "https://www.slavonski-brod.hr/vijesti/17251-vijus-se-vraca-gradu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Snimka_zaslona_2026-09-22_092733.png"
+    },
+    {
+      "naslov": "Nacionalni dan borbe protiv nasilja nad ženama",
+      "datum": "22. 09. 2026.",
+      "kratki_opis": "Danas, 22. rujna, obilježava se Nacionalni dan borbe protiv nasilja nad ženama, ustanovljen Odlukom Hrvatskog sabora 2004. godine u znak sjećanja na tragični događaj od 22. rujna 1999. godine, kada su na zagrebačkom Općinskom sudu tijekom brakorazvodne parnice ubijene tri žene – stranka u postupku, ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17252-nacionalni-dan-borbe-protiv-nasilja-nad-zenama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/VIZUAL1.png"
+    },
+    {
+      "naslov": "Zlatna kuna 2025.: priznanja za najuspješnije gospodarstvenike Brodsko-posavske županije",
+      "datum": "21. 09. 2026.",
+      "kratki_opis": "U Hotelu Art danas je održana svečana sjednica Gospodarskog vijeća Hrvatske gospodarske komore – Županijske komore Slavonski Brod, na kojoj su dodijeljene plakete Zlatna kuna za 2025. godinu. Priznanja su dobila trgovačka društva Brodsko-posavske županije koja su se ove godine istaknula poslovnim re",
+      "link": "https://www.slavonski-brod.hr/vijesti/17249-zlatna-kuna-2025-priznanja-za-najuspjesnije-gospodarstvenike-brodsko-posavske-zupanije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1142_resize.jpeg"
+    },
     {
       "naslov": "Novo lice škole u Brodskom Vinogorju: dovršena dogradnja OŠ „Đuro Pilar&quot;",
       "datum": "21. 09. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U sklopu obilježavanja Europskog tjedna mobilnosti, u ponedjeljak, 21. rujna 2026. godine, u vremenu od 10,00 do 12,00 sati, obustavit će se promet u dijelu Šetališta braće Radića, u dionici od raskrižja s ulicom Tome Skalice do Trga Ivane Brlić Mažuranić. Za vrijeme trajanja aktivnosti, redoviti pr",
       "link": "https://www.slavonski-brod.hr/vijesti/17241-slavonski-brod-se-pridruzuje-europskom-tjednu-mobilnosti",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/MOBILNOST.png"
-    },
-    {
-      "naslov": "Deset novih paketa opreme za bebe – ukupno ih do sada podijelili 1635",
-      "datum": "18. 09. 2026.",
-      "kratki_opis": "Nastavljamo s provedbom mjere podrške obiteljima s novorođenom djecom, pa smo danas uručili deset paketa opreme za bebe. Dodjelu je, već tradicionalno, predvodila zamjenica gradonačelnika Marina Martić Puača. Ovom smo dodjelom ukupan broj podijeljenih paketa opreme od početka provedbe mjere 2018. go",
-      "link": "https://www.slavonski-brod.hr/vijesti/17242-devet-novih-paketa-opreme-za-bebe-ukupno-ih-do-sada-podijelili-1634",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Bebe_joomla.jpg"
-    },
-    {
-      "naslov": "Zlatna generacija ponovno pleše: pridružite se plesnoj večeri u MO &quot;Andrija Hebrang&quot;",
-      "datum": "18. 09. 2026.",
-      "kratki_opis": "Tradicionalno jedne nedjelje u mjesecu Grad Slavonski Brod organizira plesne večeri za zlatnu generaciju i na kratko postaje središte plesnog druženja, radosti i dobrog raspoloženja za okupljene umirovljenike.&nbsp;Ovakve organizirane plesne večeri su postale omiljeni&nbsp; način okupljanja i družen",
-      "link": "https://www.slavonski-brod.hr/vijesti/17240-zlatna-generacija-ponovno-plese-pridruzite-se-plesnoj-veceri-u-mo-andrija-hebrang",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/umirovljenici_resize.jpg"
-    },
-    {
-      "naslov": "Otvorena programska sezona Centra za nematerijalnu kulturnu baštinu",
-      "datum": "17. 09. 2026.",
-      "kratki_opis": "Edukacijsko-multimedijalni centar – Centar za nematerijalnu kulturnu baštinu u Slavonskom Brodu danas je otvorio svoju prvu programsku sezonu popularno-stručnim predavanjem „Ajde da te spremim u snašu! -&nbsp; prakse odijevanja narodnih nošnji kao nematerijalna kulturna baština“, koje je održano u E",
-      "link": "https://www.slavonski-brod.hr/vijesti/17237-otvorena-programska-sezona-centra-za-nematerijalnu-kulturnu-bastinu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/snasa.jpeg"
     }
   ],
   "manifestacije_aktualne": [
