@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-22 10:23 UTC
+// Zadnje skrapanje: 2026-09-23 10:18 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-22T10:23:42.739Z",
+    "zadnje_azuriranje": "2026-09-23T10:18:58.800Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Svjetski dan turizma uz spoj baštine, digitalnih sadržaja i umjetne inteligencije",
+      "datum": "23. 09. 2026.",
+      "kratki_opis": "Povodom Svjetskog dana turizma, koji se ove godine obilježava 27. rujna, Turistička zajednica područja „Slavonski Brod – Posavina“ organizira poseban turistički razgled namijenjen lokalnom stanovništvu i gostima destinacije. Ovogodišnja tema Svjetskog dana turizma je „Digitalna agenda i umjetna inte",
+      "link": "https://www.slavonski-brod.hr/vijesti/17259-svjetski-dan-turizma-uz-spoj-bastine-digitalnih-sadrzaja-i-umjetne-inteligencije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/TURIZAM.jpg"
+    },
+    {
+      "naslov": "Podsjetnik: provjerite svoje podatke u Središnjem registru stanovništva",
+      "datum": "23. 09. 2026.",
+      "kratki_opis": "Podsjećamo građane da smo se pridružili aktivnostima informiranja o Središnjem registru stanovništva (SRS), jednom od ključnih projekata digitalne transformacije javne uprave u Republici Hrvatskoj. Središnji registar stanovništva objedinjuje podatke iz službenih evidencija kako bi se osigurala jedin",
+      "link": "https://www.slavonski-brod.hr/vijesti/17258-podsjetnik-provjerite-svoje-podatke-u-sredisnjem-registru-stanovnistva-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Snimka_zaslona_2026-09-22_094204.png"
+    },
+    {
+      "naslov": "Vijuš – neotuđivo vlasništvo Grada Slavonskog Broda",
+      "datum": "22. 09. 2026.",
+      "kratki_opis": "Grad Slavonski Brod postao je vlasnik zemljišta na Vijušu te je time zaštitio imovinu i interese građana Slavonskog Broda. Riječ je o zemljištu površine gotovo sto hektara, koje se proteže uz rijeku Savu, od skate-parka do Poloja. Promjena vlasništva u zemljišnim knjigama danas je postala vidljiva i",
+      "link": "https://www.slavonski-brod.hr/vijesti/17255-vijus-neotudivo-vlasnistvo-grada-slavonskog-broda",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/polojske_sume_i_grad_resize.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod ugostio prvi dan pilot-programa &quot;People Powered Tourism&quot;",
+      "datum": "22. 09. 2026.",
+      "kratki_opis": "Danas, 22. rujna 2026. godine, u Slavonskom Brodu održan je prvi dan pilot-programa \"Brod kroz umjetnost i baštinu\", nastalog u okviru Interreg projekta People Powered Tourism za Dunavsku regiju. Program je rezultat suradnje s lokalnom zajednicom, u kojoj su lokalni dionici zajednički prepoznavali v",
+      "link": "https://www.slavonski-brod.hr/vijesti/17254-slavonski-brod-ugostio-prvi-dan-pilot-programa-people-powered-tourism",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna.jpg"
+    },
     {
       "naslov": "Vijuš se vraća Gradu",
       "datum": "22. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U Slavonskom Brodu danas su otvorene 5. Parasportske igre mladih – Memorijal „Anto Ćavar“ , koje i ove godine okupljaju mlade parasportaše iz različitih krajeva Hrvatske. Svečanom otvorenju prisustvovali su gradonačelnik Slavonskog Broda Mirko Duspara i pročelnik Upravnog odjela za društvene djelatn",
       "link": "https://www.slavonski-brod.hr/vijesti/17246-otvorene-5-parasportske-igre-mladih-memorijal-anto-cavar",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/clanaknas.jpeg"
-    },
-    {
-      "naslov": "Položeni vijenci povodom 35. obljetnice pogibije Luke Andrijanića",
-      "datum": "19. 09. 2026.",
-      "kratki_opis": "Na današnji dan, sjećamo se heroja Luke Andrijanića, heroja obrane grada Vukovara, koji je poginuo 1991. godine svega par dana prije svog 20. rođendana. Ovaj mladi hrvatski branitelj u lipnju 1991. godine otišao je iz svoje rodne Velike Brusnice u Bosni i Hercegovini kako bi pristupio 4. bojnoj 3. g",
-      "link": "https://www.slavonski-brod.hr/vijesti/17245-polozeni-vijenci-povodom-35-obljetnice-pogibije-luke-andrijanica",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovnaluka_resize.jpeg"
-    },
-    {
-      "naslov": "Đuro Đaković Montaža obilježila sto godina tradicije, znanja i uspjeha",
-      "datum": "19. 09. 2026.",
-      "kratki_opis": "Svečanom proslavom u Hotelu Park jučer je obilježena velika i značajna obljetnica – 100 godina djelovanja Đuro Đaković Montaže, jedne od najprepoznatljivijih slavonskobrodskih tvrtki koja je tijekom stoljeća rada svojim projektima ostavila trag u Hrvatskoj, Europi i svijetu. Svečanosti je nazočio gr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17244-duro-dakovic-montaza-obiljezila-sto-godina-tradicije-znanja-i-uspjeha",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/NASLOVNAMONTAZA.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnik Duspara primio predstavnike Hrvatskog paraolimpijskog odbora i Parasportskog saveza Grada Slavonskog Broda",
-      "datum": "18. 09. 2026.",
-      "kratki_opis": "U Velikoj vijećnici gradske uprave danas je održan radni sastanak s predstavnicima Hrvatskog paraolimpijskog odbora i Parasportskog saveza Grada Slavonskog Broda. Prijem su upriličili gradonačelnik Mirko Duspara i pročelnik Upravnog odjela za društvene djelatnosti Ivan Holik. Sastanku su nazočili pr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17243-gradonacelnik-duspara-primio-predstavnike-hrvatskog-paraolimpijskog-odbora-i-parasportskog-saveza-grada-slavonskog-broda",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1055_resize.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod pridružuje se Europskom tjednu mobilnosti – 21. rujna zatvaranje prometa u dijelu grada",
-      "datum": "18. 09. 2026.",
-      "kratki_opis": "U sklopu obilježavanja Europskog tjedna mobilnosti, u ponedjeljak, 21. rujna 2026. godine, u vremenu od 10,00 do 12,00 sati, obustavit će se promet u dijelu Šetališta braće Radića, u dionici od raskrižja s ulicom Tome Skalice do Trga Ivane Brlić Mažuranić. Za vrijeme trajanja aktivnosti, redoviti pr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17241-slavonski-brod-se-pridruzuje-europskom-tjednu-mobilnosti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/MOBILNOST.png"
     }
   ],
   "manifestacije_aktualne": [
