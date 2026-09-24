@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-23 10:18 UTC
+// Zadnje skrapanje: 2026-09-24 10:33 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-23T10:18:58.800Z",
+    "zadnje_azuriranje": "2026-09-24T10:33:13.127Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,41 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Rezidencija Sava donosi novu umjetničku energiju u Slavonski Brod",
+      "datum": "24. 09. 2026.",
+      "kratki_opis": "Galerija umjetnina grada Slavonskog Broda ove jeseni pokreće novi rezidencijalni program Rezidencija Sava, kojim se nastavlja tradicija okupljanja umjetnika posvećenih akvarelu. Program je osmišljen kao suvremeni nastavak dugogodišnje Akvarelističke kolonije Sava, koja je tijekom više od četiri dese",
+      "link": "https://www.slavonski-brod.hr/vijesti/17264-rezidencija-sava-donosi-novu-umjetnicku-energiju-u-slavonski-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/man_resize.jpeg"
+    },
+    {
+      "naslov": "Osnovna škola Đuro Pilar na Koloniji sve bliža novom izgledu i jednosmjenskoj nastavi",
+      "datum": "24. 09. 2026.",
+      "kratki_opis": "Na Koloniji već mjesecima raste nova dogradnja Područne škole Đuro Pilar, čiji obrisi sve jasnije oslikavaju budući izgled ove škole. Područna škola na Koloniji izgrađena je 1981. godine, a dogradnjom 2003. godine stvoreni su uvjeti da se u njoj od tada odvija nastava za svih osam razreda. Izgradnjo",
+      "link": "https://www.slavonski-brod.hr/vijesti/17263-osnovna-skola-duro-pilar-na-koloniji-sve-bliza-novom-izgledu-i-jednosmjenskoj-nastavi",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/dp_kolonija_joomla.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 1. tjedan provođenja jesenske deratizacije",
+      "datum": "24. 09. 2026.",
+      "kratki_opis": "U razdoblju od 28. rujna (ponedjeljak) do 02. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala vodo",
+      "link": "https://www.slavonski-brod.hr/vijesti/17262-ddd-mjere-2026-godine-1-tjedan-provodenja-jesenske-deratizacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/tvrdava_detalj_resize.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – Proveden 10. (deseti) larvicidni tretman i monitoring komaraca",
+      "datum": "24. 09. 2026.",
+      "kratki_opis": "Stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su u utorak, 21. rujna 2026. godine , deseti (10.) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju monitoringa otvorenih vodenih površina utvrđene su lokacije ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17261-ddd-mjere-2026-godine-proveden-10-deseti-larvicidni-tretman-i-monitoring-komaraca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/adinavoicu-mosquito-871913_1920_resize.jpg"
+    },
+    {
+      "naslov": "Obilježen Dan policije i blagdan sv. Mihovila u Podcrkavlju",
+      "datum": "23. 09. 2026.",
+      "kratki_opis": "U Podcrkavlju je danas svečano obilježen Dan policije, uz blagdan sv. Mihovila, zaštitnika policije. Prigodni program uključivao je polaganje vijenaca pred spomen-obilježjem poginulim hrvatskim braniteljima, kao znak trajnog sjećanja i poštovanja prema žrtvama Domovinskog rata, te obilazak policijsk",
+      "link": "https://www.slavonski-brod.hr/vijesti/17260-obiljezen-dan-policije-i-blagdan-sv-mihovila-u-podcrkavlju",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1198_resize.jpeg"
+    },
     {
       "naslov": "Svjetski dan turizma uz spoj baštine, digitalnih sadržaja i umjetne inteligencije",
       "datum": "23. 09. 2026.",
@@ -51,41 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "",
       "link": "https://www.slavonski-brod.hr/vijesti/17251-vijus-se-vraca-gradu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Snimka_zaslona_2026-09-22_092733.png"
-    },
-    {
-      "naslov": "Nacionalni dan borbe protiv nasilja nad ženama",
-      "datum": "22. 09. 2026.",
-      "kratki_opis": "Danas, 22. rujna, obilježava se Nacionalni dan borbe protiv nasilja nad ženama, ustanovljen Odlukom Hrvatskog sabora 2004. godine u znak sjećanja na tragični događaj od 22. rujna 1999. godine, kada su na zagrebačkom Općinskom sudu tijekom brakorazvodne parnice ubijene tri žene – stranka u postupku, ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17252-nacionalni-dan-borbe-protiv-nasilja-nad-zenama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/VIZUAL1.png"
-    },
-    {
-      "naslov": "Zlatna kuna 2025.: priznanja za najuspješnije gospodarstvenike Brodsko-posavske županije",
-      "datum": "21. 09. 2026.",
-      "kratki_opis": "U Hotelu Art danas je održana svečana sjednica Gospodarskog vijeća Hrvatske gospodarske komore – Županijske komore Slavonski Brod, na kojoj su dodijeljene plakete Zlatna kuna za 2025. godinu. Priznanja su dobila trgovačka društva Brodsko-posavske županije koja su se ove godine istaknula poslovnim re",
-      "link": "https://www.slavonski-brod.hr/vijesti/17249-zlatna-kuna-2025-priznanja-za-najuspjesnije-gospodarstvenike-brodsko-posavske-zupanije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1142_resize.jpeg"
-    },
-    {
-      "naslov": "Novo lice škole u Brodskom Vinogorju: dovršena dogradnja OŠ „Đuro Pilar&quot;",
-      "datum": "21. 09. 2026.",
-      "kratki_opis": "Škole su mjesta na kojima odrastaju generacije, a Osnovna škola „Đuro Pilar\" to je za Brodsko Vinogorje i Koloniju već više od stotinu godina. Osnovana je 1908. godine odlukom Kraljevske hrvatsko-slavonsko-dalmatinske vlade kao četverogodišnja škola u Slavonskom Brodu. Tijekom svoje povijesti mijenj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17248-novo-lice-skole-na-brodskom-vinogorju-dovrsena-dogradnja-os-duro-pilar",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/dp_joomla.jpg"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka povodom Dana hrvatske carine",
-      "datum": "21. 09. 2026.",
-      "kratki_opis": "Poštovani pripadnici Carinske uprave Republike Hrvatske, u povodu Dana hrvatske carine i blagdana svetog Mateja, zaštitnika carinika, upućujem vam iskrene čestitke u svoje osobno ime i u ime svih nas u Gradu Slavonskom Brodu. Vaš posao, koji se često odvija izvan središta pozornosti, od iznimne je v",
-      "link": "https://www.slavonski-brod.hr/vijesti/17247-gradonacelnikova-cestitka-povodom-dana-hrvatske-carine-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/CARINA.png"
-    },
-    {
-      "naslov": "Otvorene 5. parasportske igre mladih - Memorijal ,,Anto Ćavar''",
-      "datum": "19. 09. 2026.",
-      "kratki_opis": "U Slavonskom Brodu danas su otvorene 5. Parasportske igre mladih – Memorijal „Anto Ćavar“ , koje i ove godine okupljaju mlade parasportaše iz različitih krajeva Hrvatske. Svečanom otvorenju prisustvovali su gradonačelnik Slavonskog Broda Mirko Duspara i pročelnik Upravnog odjela za društvene djelatn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17246-otvorene-5-parasportske-igre-mladih-memorijal-anto-cavar",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/clanaknas.jpeg"
     }
   ],
   "manifestacije_aktualne": [
