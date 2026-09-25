@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-24 10:33 UTC
+// Zadnje skrapanje: 2026-09-25 10:36 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-24T10:33:13.127Z",
+    "zadnje_azuriranje": "2026-09-25T10:36:40.832Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Uz novu sportsku dvoranu, OŠ „Vladimir Nazor“ piše novo poglavlje svoje povijesti",
+      "datum": "25. 09. 2026.",
+      "kratki_opis": "Na području Osnovne škole „Vladimir Nazor“ u Slavonskom Brodu u tijeku je završna faza radova na dogradnji školske sportske dvorane i uređenju vanjskih sportskih terena. Riječ je o važnom ulaganju u obrazovnu infrastrukturu grada, kojim se stvaraju kvalitetniji uvjeti za učenike i nastavnike te osig",
+      "link": "https://www.slavonski-brod.hr/vijesti/17265-uz-novu-sportsku-dvoranu-os-vladimir-nazor-pise-novo-poglavlje-svoje-povijesti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/NAZOR.png"
+    },
     {
       "naslov": "Rezidencija Sava donosi novu umjetničku energiju u Slavonski Brod",
       "datum": "24. 09. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Danas, 22. rujna 2026. godine, u Slavonskom Brodu održan je prvi dan pilot-programa \"Brod kroz umjetnost i baštinu\", nastalog u okviru Interreg projekta People Powered Tourism za Dunavsku regiju. Program je rezultat suradnje s lokalnom zajednicom, u kojoj su lokalni dionici zajednički prepoznavali v",
       "link": "https://www.slavonski-brod.hr/vijesti/17254-slavonski-brod-ugostio-prvi-dan-pilot-programa-people-powered-tourism",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna.jpg"
-    },
-    {
-      "naslov": "Vijuš se vraća Gradu",
-      "datum": "22. 09. 2026.",
-      "kratki_opis": "",
-      "link": "https://www.slavonski-brod.hr/vijesti/17251-vijus-se-vraca-gradu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Snimka_zaslona_2026-09-22_092733.png"
     }
   ],
   "manifestacije_aktualne": [
