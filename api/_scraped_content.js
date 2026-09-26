@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-25 10:36 UTC
+// Zadnje skrapanje: 2026-09-26 10:19 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-25T10:36:40.832Z",
+    "zadnje_azuriranje": "2026-09-26T10:19:57.519Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod prvi put domaćin Simpozija pedijatrijskih alergologa",
+      "datum": "26. 09. 2026.",
+      "kratki_opis": "Slavonski Brod od 25. do 26. rujna ugošćuje Simpozij Sekcije za alergologiju i kliničku imunologiju Hrvatskog pedijatrijskog društva, koji se po prvi put održava izvan Zagreba. Simpozij je organiziran u suradnji s Odjelom za pedijatriju Opće bolnice „Dr. Josip Benčević\", a okuplja gotovo stotinjak s",
+      "link": "https://www.slavonski-brod.hr/vijesti/17268-slavonski-brod-prvi-put-domacin-simpozija-pedijatrijskih-alergologa",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00019_resize.jpeg"
+    },
+    {
+      "naslov": "Privremena regulacija prometa na križanju ulica Bečic - Veliki dol - Požeška",
+      "datum": "25. 09. 2026.",
+      "kratki_opis": "Obavještavamo građane da će od ponedjeljka, 28. rujna 2026. godine, zbog izvođenja radova na sanaciji mosta preko potoka P3 na autocesti A3 Bregana – Zagreb – Lipovac, biti uvedena privremena regulacija prometa na križanju podvožnjaka u Ulici Bečic – Veliki Dol – Požeška ulica. Promet će se odvijati",
+      "link": "https://www.slavonski-brod.hr/vijesti/17267-obavijest-o-privremenoj-regulaciji-prometa-od-ponedjeljka",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/varos_autocesta_resize.jpg"
+    },
+    {
+      "naslov": "Svečano obilježen Dan Sveučilišta u Slavonskom Brodu – 6. Dies Academicus",
+      "datum": "25. 09. 2026.",
+      "kratki_opis": "Sveučilište u Slavonskom Brodu danas je svečanom sjednicom obilježilo Dan Sveučilišta, odnosno 6. Dies Academicus, kojim se obilježava još jedna godina njegova djelovanja i razvoja. Svečanosti je nazočio pročelnik Upravnog odjela za društvene djelatnosti Grada Slavonskog Broda Ivan Holik, koji je u ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17266-svecano-obiljezen-dan-sveucilista-u-slavonskom-brodu-6-dies-academicus",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/dan_sveucilista_joomla.jpg"
+    },
     {
       "naslov": "Uz novu sportsku dvoranu, OŠ „Vladimir Nazor“ piše novo poglavlje svoje povijesti",
       "datum": "25. 09. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Povodom Svjetskog dana turizma, koji se ove godine obilježava 27. rujna, Turistička zajednica područja „Slavonski Brod – Posavina“ organizira poseban turistički razgled namijenjen lokalnom stanovništvu i gostima destinacije. Ovogodišnja tema Svjetskog dana turizma je „Digitalna agenda i umjetna inte",
       "link": "https://www.slavonski-brod.hr/vijesti/17259-svjetski-dan-turizma-uz-spoj-bastine-digitalnih-sadrzaja-i-umjetne-inteligencije",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/TURIZAM.jpg"
-    },
-    {
-      "naslov": "Podsjetnik: provjerite svoje podatke u Središnjem registru stanovništva",
-      "datum": "23. 09. 2026.",
-      "kratki_opis": "Podsjećamo građane da smo se pridružili aktivnostima informiranja o Središnjem registru stanovništva (SRS), jednom od ključnih projekata digitalne transformacije javne uprave u Republici Hrvatskoj. Središnji registar stanovništva objedinjuje podatke iz službenih evidencija kako bi se osigurala jedin",
-      "link": "https://www.slavonski-brod.hr/vijesti/17258-podsjetnik-provjerite-svoje-podatke-u-sredisnjem-registru-stanovnistva-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Snimka_zaslona_2026-09-22_094204.png"
-    },
-    {
-      "naslov": "Vijuš – neotuđivo vlasništvo Grada Slavonskog Broda",
-      "datum": "22. 09. 2026.",
-      "kratki_opis": "Grad Slavonski Brod postao je vlasnik zemljišta na Vijušu te je time zaštitio imovinu i interese građana Slavonskog Broda. Riječ je o zemljištu površine gotovo sto hektara, koje se proteže uz rijeku Savu, od skate-parka do Poloja. Promjena vlasništva u zemljišnim knjigama danas je postala vidljiva i",
-      "link": "https://www.slavonski-brod.hr/vijesti/17255-vijus-neotudivo-vlasnistvo-grada-slavonskog-broda",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/polojske_sume_i_grad_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod ugostio prvi dan pilot-programa &quot;People Powered Tourism&quot;",
-      "datum": "22. 09. 2026.",
-      "kratki_opis": "Danas, 22. rujna 2026. godine, u Slavonskom Brodu održan je prvi dan pilot-programa \"Brod kroz umjetnost i baštinu\", nastalog u okviru Interreg projekta People Powered Tourism za Dunavsku regiju. Program je rezultat suradnje s lokalnom zajednicom, u kojoj su lokalni dionici zajednički prepoznavali v",
-      "link": "https://www.slavonski-brod.hr/vijesti/17254-slavonski-brod-ugostio-prvi-dan-pilot-programa-people-powered-tourism",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/naslovna.jpg"
     }
   ],
   "manifestacije_aktualne": [
