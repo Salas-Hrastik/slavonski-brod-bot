@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-26 10:19 UTC
+// Zadnje skrapanje: 2026-09-27 10:52 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-26T10:19:57.519Z",
+    "zadnje_azuriranje": "2026-09-27T10:52:18.449Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "U Slavonskom Brodu održan Koncert kulturno-umjetničkog stvaralaštva u sklopu 19. Središnje manifestacije Ukrajinaca u Hr",
+      "datum": "26. 09. 2026.",
+      "kratki_opis": "U Sportskoj dvorani Osnovne škole „Bogoslav Šulek\" u Slavonskom Brodu održan je ove subote, 26. rujna, Koncert kulturno-umjetničkog stvaralaštva, u sklopu 19. Središnje manifestacije Ukrajinaca u Hrvatskoj koja se ove godine odvija upravo u našem gradu. Manifestaciju su organizirali Ukrajinska zajed",
+      "link": "https://www.slavonski-brod.hr/vijesti/17269-u-slavonskom-brodu-odrzan-koncert-kulturno-umjetnickog-stvaralastva-u-sklopu-19-sredisnje-manifestacije-ukrajinaca-u-hrvatskoj",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1384_resize.jpeg"
+    },
+    {
+      "naslov": "Folklorni ansambl Broda predstavlja Slavonski Brod i Hrvatsku na međunarodnom festivalu u Riccioneu",
+      "datum": "26. 09. 2026.",
+      "kratki_opis": "Folklorni ansambl Broda trenutno boravi u Riccioneu u Italiji, gdje sudjeluje na XXIII. međunarodnom festivalu plesa i glazbe „Le Spiagge d'Italia\". Festival se održava u samom središtu Riccionea, na Piazzale Ceccarini, a okuplja folklorne i umjetničke skupine iz šest europskih zemalja – Hrvatske, B",
+      "link": "https://www.slavonski-brod.hr/vijesti/17272-folklorni-ansambl-broda-predstavlja-slavonski-brod-i-hrvatsku-na-medunarodnom-festivalu-u-riccioneu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/WhatsApp_Image_2026-09-26_at_160701_3.jpeg"
+    },
     {
       "naslov": "Slavonski Brod prvi put domaćin Simpozija pedijatrijskih alergologa",
       "datum": "26. 09. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su u utorak, 21. rujna 2026. godine , deseti (10.) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju monitoringa otvorenih vodenih površina utvrđene su lokacije ",
       "link": "https://www.slavonski-brod.hr/vijesti/17261-ddd-mjere-2026-godine-proveden-10-deseti-larvicidni-tretman-i-monitoring-komaraca",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/adinavoicu-mosquito-871913_1920_resize.jpg"
-    },
-    {
-      "naslov": "Obilježen Dan policije i blagdan sv. Mihovila u Podcrkavlju",
-      "datum": "23. 09. 2026.",
-      "kratki_opis": "U Podcrkavlju je danas svečano obilježen Dan policije, uz blagdan sv. Mihovila, zaštitnika policije. Prigodni program uključivao je polaganje vijenaca pred spomen-obilježjem poginulim hrvatskim braniteljima, kao znak trajnog sjećanja i poštovanja prema žrtvama Domovinskog rata, te obilazak policijsk",
-      "link": "https://www.slavonski-brod.hr/vijesti/17260-obiljezen-dan-policije-i-blagdan-sv-mihovila-u-podcrkavlju",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1198_resize.jpeg"
-    },
-    {
-      "naslov": "Svjetski dan turizma uz spoj baštine, digitalnih sadržaja i umjetne inteligencije",
-      "datum": "23. 09. 2026.",
-      "kratki_opis": "Povodom Svjetskog dana turizma, koji se ove godine obilježava 27. rujna, Turistička zajednica područja „Slavonski Brod – Posavina“ organizira poseban turistički razgled namijenjen lokalnom stanovništvu i gostima destinacije. Ovogodišnja tema Svjetskog dana turizma je „Digitalna agenda i umjetna inte",
-      "link": "https://www.slavonski-brod.hr/vijesti/17259-svjetski-dan-turizma-uz-spoj-bastine-digitalnih-sadrzaja-i-umjetne-inteligencije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/TURIZAM.jpg"
     }
   ],
   "manifestacije_aktualne": [
