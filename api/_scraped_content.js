@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-27 10:52 UTC
+// Zadnje skrapanje: 2026-09-28 12:03 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-27T10:52:18.449Z",
+    "zadnje_azuriranje": "2026-09-28T12:03:25.802Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "U tijeku je 21. sjednica Savjeta za Slavoniju, Baranju i Srijem u Donjem Miholjcu",
+      "datum": "28. 09. 2026.",
+      "kratki_opis": "U Donjem Miholjcu je ovog ponedjeljka, 28. rujna 2026. godine, u Srednjoj školi Donji Miholjac održana 21. sjednica Savjeta za Slavoniju, Baranju i Srijem, kojoj je predsjedao predsjednik Vlade Republike Hrvatske Andrej Plenković. Sjednici je u ime našega grada nazočila zamjenica gradonačelnika Mari",
+      "link": "https://www.slavonski-brod.hr/vijesti/17276-u-donjem-miholjcu-odrzana-21-sjednica-savjeta-za-slavoniju-baranju-i-srijem",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/DSC_5215_resize.jpg"
+    },
+    {
+      "naslov": "Nakon obnove i dogradnje svečano otvoren Mjesni dom u naselju Jelasu",
+      "datum": "28. 09. 2026.",
+      "kratki_opis": "Na Jelasu je danas održano svečano otvorenje obnovljenog i dograđenog Mjesnog doma, čime je naselje dobilo prostor kakav je dugo trebalo. Obnovom Mjesnog doma mještani Jelasa dobili su prostor za susrete, priredbe i proslave, koji će služiti svim generacijama. Mjesni dom nalazi se u sklopu stadiona ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17274-nakon-obnove-i-dogradnje-svecano-otvoren-mjesni-dom-u-jelasu-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1402_resize.jpeg"
+    },
+    {
+      "naslov": "Trideset polaznika zakoračilo u svijet znakovnog jezika",
+      "datum": "28. 09. 2026.",
+      "kratki_opis": "U subotu, 26. rujna, u prostorijama Kuće tambure u Slavonskom Brodu započeo je tečaj hrvatskog znakovnog jezika (HZJ) u organizaciji Udruge gluhih i nagluhih. Interes sugrađana ponovno je bio velik pa će ove godine tečaj polaziti čak 30 polaznika. Tijekom idućih mjeseci polaznici će usvajati osnove ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17275-trideset-polaznika-zakoracilo-u-svijet-znakovnog-jezika",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Znakovni_joomla.jpg"
+    },
+    {
+      "naslov": "Obilježen Svjetski dan turizma turističkim razgledom kulturnim znamenitostima Slavonskog Broda",
+      "datum": "28. 09. 2026.",
+      "kratki_opis": "Povodom Svjetskog dana turizma, koji se ove godine obilježava pod motom „Digitalna agenda i umjetna inteligencija za redizajniranje turizma“, Turistička zajednica grada Slavonskog Broda organizirala je tematski turistički razgled za lokalno stanovništvo i goste destinacije. Sudionici su se okupili u",
+      "link": "https://www.slavonski-brod.hr/vijesti/17270-obiljezen-svjetski-dan-turizma-turistickim-razgledom-kulturnim-znamenitostima-slavonskog-broda",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00014_resize.jpeg"
+    },
     {
       "naslov": "U Slavonskom Brodu održan Koncert kulturno-umjetničkog stvaralaštva u sklopu 19. Središnje manifestacije Ukrajinaca u Hr",
       "datum": "26. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Na području Osnovne škole „Vladimir Nazor“ u Slavonskom Brodu u tijeku je završna faza radova na dogradnji školske sportske dvorane i uređenju vanjskih sportskih terena. Riječ je o važnom ulaganju u obrazovnu infrastrukturu grada, kojim se stvaraju kvalitetniji uvjeti za učenike i nastavnike te osig",
       "link": "https://www.slavonski-brod.hr/vijesti/17265-uz-novu-sportsku-dvoranu-os-vladimir-nazor-pise-novo-poglavlje-svoje-povijesti",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/NAZOR.png"
-    },
-    {
-      "naslov": "Rezidencija Sava donosi novu umjetničku energiju u Slavonski Brod",
-      "datum": "24. 09. 2026.",
-      "kratki_opis": "Galerija umjetnina grada Slavonskog Broda ove jeseni pokreće novi rezidencijalni program Rezidencija Sava, kojim se nastavlja tradicija okupljanja umjetnika posvećenih akvarelu. Program je osmišljen kao suvremeni nastavak dugogodišnje Akvarelističke kolonije Sava, koja je tijekom više od četiri dese",
-      "link": "https://www.slavonski-brod.hr/vijesti/17264-rezidencija-sava-donosi-novu-umjetnicku-energiju-u-slavonski-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/man_resize.jpeg"
-    },
-    {
-      "naslov": "Osnovna škola Đuro Pilar na Koloniji sve bliža novom izgledu i jednosmjenskoj nastavi",
-      "datum": "24. 09. 2026.",
-      "kratki_opis": "Na Koloniji već mjesecima raste nova dogradnja Područne škole Đuro Pilar, čiji obrisi sve jasnije oslikavaju budući izgled ove škole. Područna škola na Koloniji izgrađena je 1981. godine, a dogradnjom 2003. godine stvoreni su uvjeti da se u njoj od tada odvija nastava za svih osam razreda. Izgradnjo",
-      "link": "https://www.slavonski-brod.hr/vijesti/17263-osnovna-skola-duro-pilar-na-koloniji-sve-bliza-novom-izgledu-i-jednosmjenskoj-nastavi",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/dp_kolonija_joomla.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 1. tjedan provođenja jesenske deratizacije",
-      "datum": "24. 09. 2026.",
-      "kratki_opis": "U razdoblju od 28. rujna (ponedjeljak) do 02. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala vodo",
-      "link": "https://www.slavonski-brod.hr/vijesti/17262-ddd-mjere-2026-godine-1-tjedan-provodenja-jesenske-deratizacije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/tvrdava_detalj_resize.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – Proveden 10. (deseti) larvicidni tretman i monitoring komaraca",
-      "datum": "24. 09. 2026.",
-      "kratki_opis": "Stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su u utorak, 21. rujna 2026. godine , deseti (10.) larvicidni tretman te monitoring ličinki i odraslih jedinki (adulta) komaraca na području grada Slavonskog Broda. Na temelju monitoringa otvorenih vodenih površina utvrđene su lokacije ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17261-ddd-mjere-2026-godine-proveden-10-deseti-larvicidni-tretman-i-monitoring-komaraca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Lipanj/adinavoicu-mosquito-871913_1920_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
