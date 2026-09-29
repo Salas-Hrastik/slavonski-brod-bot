@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-28 12:03 UTC
+// Zadnje skrapanje: 2026-09-29 11:37 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-28T12:03:25.802Z",
+    "zadnje_azuriranje": "2026-09-29T11:37:21.957Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod među hrvatskim rekorderima u ulaganjima u zaštitu okoliša",
+      "datum": "29. 09. 2026.",
+      "kratki_opis": "Prema najnovijoj analizi portala Gradonačelnik.hr, Grad Slavonski Brod nalazi se među hrvatskim gradovima s najvećim izdvajanjima za zaštitu okoliša u 2025. godini. Za ovu je namjenu izdvojeno 6,12 milijuna eura, čime se Slavonski Brod svrstao u sam vrh hrvatskih gradova. Zaštita okoliša, odgovorno ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17280-slavonski-brod-medu-hrvatskim-rekorderima-u-ulaganjima-u-zastitu-okolisa",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/drvo_resize.jpg"
+    },
+    {
+      "naslov": "Gradonačelnik primio uspješne kajakaše KKK-a „Olimpik“: sezona koja se pamti",
+      "datum": "29. 09. 2026.",
+      "kratki_opis": "Gradonačelnik Mirko Duspara primio je danas u Velikoj vijećnici predstavnike, sportaše i stručni stožer Kajak kanu kluba „Olimpik“ Slavonski Brod, koji je iza sebe ostavio iznimno uspješnu natjecateljsku sezonu 2026. godine. Povod prijema bili su rezultati koje su brodski kajakaši ostvarili na domać",
+      "link": "https://www.slavonski-brod.hr/vijesti/17279-gradonacelnik-primio-uspjesne-kajakase-kkk-a-olimpik-sezona-koja-se-pamti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1545_resize.jpeg"
+    },
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Dana policije i blagdana sv. Mihovila",
+      "datum": "29. 09. 2026.",
+      "kratki_opis": "Dan policije koji obilježavamo na blagdan svetog Mihovila, zaštitnika policajaca i vojnika, prigoda je da se s poštovanjem prisjetimo truda i odgovornosti koju policijske službenice i službenici svakodnevno ugrađuju u sigurnost naših građana. Čestitam svim djelatnicima Policijske uprave brodsko-posa",
+      "link": "https://www.slavonski-brod.hr/vijesti/17278-gradonacelnikova-cestitka-povodom-dana-policije-i-blagdana-sv-mihovila-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/zastava_resize.jpg"
+    },
     {
       "naslov": "U tijeku je 21. sjednica Savjeta za Slavoniju, Baranju i Srijem u Donjem Miholjcu",
       "datum": "28. 09. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonski Brod od 25. do 26. rujna ugošćuje Simpozij Sekcije za alergologiju i kliničku imunologiju Hrvatskog pedijatrijskog društva, koji se po prvi put održava izvan Zagreba. Simpozij je organiziran u suradnji s Odjelom za pedijatriju Opće bolnice „Dr. Josip Benčević\", a okuplja gotovo stotinjak s",
       "link": "https://www.slavonski-brod.hr/vijesti/17268-slavonski-brod-prvi-put-domacin-simpozija-pedijatrijskih-alergologa",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00019_resize.jpeg"
-    },
-    {
-      "naslov": "Privremena regulacija prometa na križanju ulica Bečic - Veliki dol - Požeška",
-      "datum": "25. 09. 2026.",
-      "kratki_opis": "Obavještavamo građane da će od ponedjeljka, 28. rujna 2026. godine, zbog izvođenja radova na sanaciji mosta preko potoka P3 na autocesti A3 Bregana – Zagreb – Lipovac, biti uvedena privremena regulacija prometa na križanju podvožnjaka u Ulici Bečic – Veliki Dol – Požeška ulica. Promet će se odvijati",
-      "link": "https://www.slavonski-brod.hr/vijesti/17267-obavijest-o-privremenoj-regulaciji-prometa-od-ponedjeljka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/varos_autocesta_resize.jpg"
-    },
-    {
-      "naslov": "Svečano obilježen Dan Sveučilišta u Slavonskom Brodu – 6. Dies Academicus",
-      "datum": "25. 09. 2026.",
-      "kratki_opis": "Sveučilište u Slavonskom Brodu danas je svečanom sjednicom obilježilo Dan Sveučilišta, odnosno 6. Dies Academicus, kojim se obilježava još jedna godina njegova djelovanja i razvoja. Svečanosti je nazočio pročelnik Upravnog odjela za društvene djelatnosti Grada Slavonskog Broda Ivan Holik, koji je u ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17266-svecano-obiljezen-dan-sveucilista-u-slavonskom-brodu-6-dies-academicus",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/dan_sveucilista_joomla.jpg"
-    },
-    {
-      "naslov": "Uz novu sportsku dvoranu, OŠ „Vladimir Nazor“ piše novo poglavlje svoje povijesti",
-      "datum": "25. 09. 2026.",
-      "kratki_opis": "Na području Osnovne škole „Vladimir Nazor“ u Slavonskom Brodu u tijeku je završna faza radova na dogradnji školske sportske dvorane i uređenju vanjskih sportskih terena. Riječ je o važnom ulaganju u obrazovnu infrastrukturu grada, kojim se stvaraju kvalitetniji uvjeti za učenike i nastavnike te osig",
-      "link": "https://www.slavonski-brod.hr/vijesti/17265-uz-novu-sportsku-dvoranu-os-vladimir-nazor-pise-novo-poglavlje-svoje-povijesti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/NAZOR.png"
     }
   ],
   "manifestacije_aktualne": [
