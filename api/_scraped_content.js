@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-29 11:37 UTC
+// Zadnje skrapanje: 2026-09-30 11:24 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-29T11:37:21.957Z",
+    "zadnje_azuriranje": "2026-09-30T11:24:51.053Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Objavljen Poziv za predlaganje programa javnih potreba u kulturi Grada Slavonskog Broda za 2027. godinu",
+      "datum": "30. 09. 2026.",
+      "kratki_opis": "Objavljen je Poziv za predlaganje programa javnih potreba u kulturi Grada Slavonskog Broda za 2027. godinu. Pozivamo sve zainteresirane ustanove u kulturi, umjetničke organizacije, umjetnike, udruge te druge fizičke i pravne osobe koje se bave kulturnim djelatnostima da nam dostave svoje prijedloge ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17285-objavljen-poziv-za-predlaganje-programa-javnih-potreba-u-kulturi-grada-slavonskog-broda-za-2027-godinu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Grad2.jpeg"
+    },
+    {
+      "naslov": "Konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji“ u ponedjeljak, 5. listo",
+      "datum": "30. 09. 2026.",
+      "kratki_opis": "U sklopu Dana europske baštine, u ponedjeljak 5. listopada 2026. godine od 10 do 17 sati, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu u Slavonskom Brodu održat će se konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji“. ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17283-konferencija-kud-ide-nas-kud-bastinski-potencijali-suvremene-folklorne-produkcije-u-slavoniji-u-ponedjeljak-5-listopada-u-centru-za-nematerijalnu-kulturnu-bastinu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00001_resize.jpeg"
+    },
+    {
+      "naslov": "Slavonski Brod među gradovima s najvećim rastom izdvajanja za kulturu: ulaganja gotovo udvostručena",
+      "datum": "30. 09. 2026.",
+      "kratki_opis": "Prema najnovijoj analizi portala Gradonačelnik.hr, Grad Slavonski Brod nalazi se među hrvatskim gradovima koji su u 2025. godini najviše povećali izdvajanja za kulturu. Za ovu smo namjenu izdvojili 4,2 milijuna eura, što je 2,09 milijuna eura više nego godinu ranije, odnosno povećanje od 98,71 posto",
+      "link": "https://www.slavonski-brod.hr/vijesti/17282-slavonski-brod-medu-gradovima-s-najvecim-rastom-izdvajanja-za-kulturu-ulaganja-gotovo-udvostrucena",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/tvrdava_2_resize.jpg"
+    },
+    {
+      "naslov": "Besplatna pravna pomoć: saznajte imate li pravo i kome se obratiti",
+      "datum": "30. 09. 2026.",
+      "kratki_opis": "Ministarstvo pravosuđa, uprave i digitalne transformacije izradilo je promotivni letak o besplatnoj pravnoj pomoći na koju pravo&nbsp;imaju osobe čije su materijalne prilike takve da bi plaćanje stručne pravne pomoći moglo ugroziti njihovo uzdržavanje i uzdržavanje članova njihova kućanstva, a koje ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17281-besplatna-pravna-pomoc-saznajte-imate-li-pravo-i-kome-se-obratiti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/still-life-with-scales-justice_2_resize.jpg"
+    },
     {
       "naslov": "Slavonski Brod među hrvatskim rekorderima u ulaganjima u zaštitu okoliša",
       "datum": "29. 09. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U subotu, 26. rujna, u prostorijama Kuće tambure u Slavonskom Brodu započeo je tečaj hrvatskog znakovnog jezika (HZJ) u organizaciji Udruge gluhih i nagluhih. Interes sugrađana ponovno je bio velik pa će ove godine tečaj polaziti čak 30 polaznika. Tijekom idućih mjeseci polaznici će usvajati osnove ",
       "link": "https://www.slavonski-brod.hr/vijesti/17275-trideset-polaznika-zakoracilo-u-svijet-znakovnog-jezika",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Znakovni_joomla.jpg"
-    },
-    {
-      "naslov": "Obilježen Svjetski dan turizma turističkim razgledom kulturnim znamenitostima Slavonskog Broda",
-      "datum": "28. 09. 2026.",
-      "kratki_opis": "Povodom Svjetskog dana turizma, koji se ove godine obilježava pod motom „Digitalna agenda i umjetna inteligencija za redizajniranje turizma“, Turistička zajednica grada Slavonskog Broda organizirala je tematski turistički razgled za lokalno stanovništvo i goste destinacije. Sudionici su se okupili u",
-      "link": "https://www.slavonski-brod.hr/vijesti/17270-obiljezen-svjetski-dan-turizma-turistickim-razgledom-kulturnim-znamenitostima-slavonskog-broda",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00014_resize.jpeg"
-    },
-    {
-      "naslov": "U Slavonskom Brodu održan Koncert kulturno-umjetničkog stvaralaštva u sklopu 19. Središnje manifestacije Ukrajinaca u Hr",
-      "datum": "26. 09. 2026.",
-      "kratki_opis": "U Sportskoj dvorani Osnovne škole „Bogoslav Šulek\" u Slavonskom Brodu održan je ove subote, 26. rujna, Koncert kulturno-umjetničkog stvaralaštva, u sklopu 19. Središnje manifestacije Ukrajinaca u Hrvatskoj koja se ove godine odvija upravo u našem gradu. Manifestaciju su organizirali Ukrajinska zajed",
-      "link": "https://www.slavonski-brod.hr/vijesti/17269-u-slavonskom-brodu-odrzan-koncert-kulturno-umjetnickog-stvaralastva-u-sklopu-19-sredisnje-manifestacije-ukrajinaca-u-hrvatskoj",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1384_resize.jpeg"
-    },
-    {
-      "naslov": "Folklorni ansambl Broda predstavlja Slavonski Brod i Hrvatsku na međunarodnom festivalu u Riccioneu",
-      "datum": "26. 09. 2026.",
-      "kratki_opis": "Folklorni ansambl Broda trenutno boravi u Riccioneu u Italiji, gdje sudjeluje na XXIII. međunarodnom festivalu plesa i glazbe „Le Spiagge d'Italia\". Festival se održava u samom središtu Riccionea, na Piazzale Ceccarini, a okuplja folklorne i umjetničke skupine iz šest europskih zemalja – Hrvatske, B",
-      "link": "https://www.slavonski-brod.hr/vijesti/17272-folklorni-ansambl-broda-predstavlja-slavonski-brod-i-hrvatsku-na-medunarodnom-festivalu-u-riccioneu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/WhatsApp_Image_2026-09-26_at_160701_3.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod prvi put domaćin Simpozija pedijatrijskih alergologa",
-      "datum": "26. 09. 2026.",
-      "kratki_opis": "Slavonski Brod od 25. do 26. rujna ugošćuje Simpozij Sekcije za alergologiju i kliničku imunologiju Hrvatskog pedijatrijskog društva, koji se po prvi put održava izvan Zagreba. Simpozij je organiziran u suradnji s Odjelom za pedijatriju Opće bolnice „Dr. Josip Benčević\", a okuplja gotovo stotinjak s",
-      "link": "https://www.slavonski-brod.hr/vijesti/17268-slavonski-brod-prvi-put-domacin-simpozija-pedijatrijskih-alergologa",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00019_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
