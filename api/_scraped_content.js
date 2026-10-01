@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-09-30 11:24 UTC
+// Zadnje skrapanje: 2026-10-01 11:52 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-09-30T11:24:51.053Z",
+    "zadnje_azuriranje": "2026-10-01T11:52:17.850Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod domaćin četvrte međunarodne konferencije WASTE TO ENERGY",
+      "datum": "01. 10. 2026.",
+      "kratki_opis": "U Slavonskom Brodu danas je svečano otvorena četvrta međunarodna konferencija WASTE TO ENERGY IV – „Od otpada do održive energije: gorivo, tehnologija i ESG principi\", koja se održava 1. i 2. listopada 2026. godine. Skup okuplja stručnjake, predstavnike institucija, gospodarstva, komunalnog i energe",
+      "link": "https://www.slavonski-brod.hr/vijesti/17291-slavonski-brod-domacin-cetvrte-medunarodne-konferencije-waste-to-energy",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1596_resize.jpeg"
+    },
+    {
+      "naslov": "Odlični turistički rezultati u destinaciji &quot;Slavonski Brod-Posavina&quot;",
+      "datum": "01. 10. 2026.",
+      "kratki_opis": "Na području turističke destinacije „Slavonski Brod-Posavina“ koja obuhvaća područje grada Slavonskog Broda te općina Bukovlje, Gornja Vrba i Podcrkavlje je u prvih devet mjeseci 2026. ostvareno 51.197 noćenja, što je za 9,61% više u odnosu na isto razdoblje 2025. U strukturi turističkog prometa udio",
+      "link": "https://www.slavonski-brod.hr/vijesti/17290-odlicni-turisticki-rezultati-u-destinaciji-slavonski-brod-posavina",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/turizam.png"
+    },
+    {
+      "naslov": "Slavonski Brod potvrđuje predanost kvalitetnijem životu starijih sugrađana",
+      "datum": "01. 10. 2026.",
+      "kratki_opis": "Povodom Međunarodnog dana starijih osoba, koji se svake godine obilježava 1. listopada, Slavonski Brod i ove godine podsjeća na važnost stvaranja društva u kojemu godine nisu prepreka za aktivan, dostojanstven i ispunjen život. Starije generacije svojim su radom, iskustvom i životnim pričama desetlj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17289-slavonski-brod-potvrduje-predanost-kvalitetnijem-zivotu-starijih-sugradana",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/DOM.png"
+    },
     {
       "naslov": "Objavljen Poziv za predlaganje programa javnih potreba u kulturi Grada Slavonskog Broda za 2027. godinu",
       "datum": "30. 09. 2026.",
@@ -65,36 +86,9 @@ export const scrapedContent = {
       "kratki_opis": "Dan policije koji obilježavamo na blagdan svetog Mihovila, zaštitnika policajaca i vojnika, prigoda je da se s poštovanjem prisjetimo truda i odgovornosti koju policijske službenice i službenici svakodnevno ugrađuju u sigurnost naših građana. Čestitam svim djelatnicima Policijske uprave brodsko-posa",
       "link": "https://www.slavonski-brod.hr/vijesti/17278-gradonacelnikova-cestitka-povodom-dana-policije-i-blagdana-sv-mihovila-2",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/zastava_resize.jpg"
-    },
-    {
-      "naslov": "U tijeku je 21. sjednica Savjeta za Slavoniju, Baranju i Srijem u Donjem Miholjcu",
-      "datum": "28. 09. 2026.",
-      "kratki_opis": "U Donjem Miholjcu je ovog ponedjeljka, 28. rujna 2026. godine, u Srednjoj školi Donji Miholjac održana 21. sjednica Savjeta za Slavoniju, Baranju i Srijem, kojoj je predsjedao predsjednik Vlade Republike Hrvatske Andrej Plenković. Sjednici je u ime našega grada nazočila zamjenica gradonačelnika Mari",
-      "link": "https://www.slavonski-brod.hr/vijesti/17276-u-donjem-miholjcu-odrzana-21-sjednica-savjeta-za-slavoniju-baranju-i-srijem",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/DSC_5215_resize.jpg"
-    },
-    {
-      "naslov": "Nakon obnove i dogradnje svečano otvoren Mjesni dom u naselju Jelasu",
-      "datum": "28. 09. 2026.",
-      "kratki_opis": "Na Jelasu je danas održano svečano otvorenje obnovljenog i dograđenog Mjesnog doma, čime je naselje dobilo prostor kakav je dugo trebalo. Obnovom Mjesnog doma mještani Jelasa dobili su prostor za susrete, priredbe i proslave, koji će služiti svim generacijama. Mjesni dom nalazi se u sklopu stadiona ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17274-nakon-obnove-i-dogradnje-svecano-otvoren-mjesni-dom-u-jelasu-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1402_resize.jpeg"
-    },
-    {
-      "naslov": "Trideset polaznika zakoračilo u svijet znakovnog jezika",
-      "datum": "28. 09. 2026.",
-      "kratki_opis": "U subotu, 26. rujna, u prostorijama Kuće tambure u Slavonskom Brodu započeo je tečaj hrvatskog znakovnog jezika (HZJ) u organizaciji Udruge gluhih i nagluhih. Interes sugrađana ponovno je bio velik pa će ove godine tečaj polaziti čak 30 polaznika. Tijekom idućih mjeseci polaznici će usvajati osnove ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17275-trideset-polaznika-zakoracilo-u-svijet-znakovnog-jezika",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Znakovni_joomla.jpg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "Svila šuška, šlingeraj se širi Folklorna manifestacija koja se održava u Podvinju u spomen na običaj",
-      "datum": "Rujan",
-      "opis": "tkanja svile u podvinjskoj svilani tijekom 19. stoljeća.",
-      "link": "https://www.tzgsb.hr/index.php?page=rujan"
-    },
     {
       "naziv": "Pečenkijada Ovo jedinstveno natjecanje u pečenju odojaka održava se u Sportsko-rekreacijskom centru",
       "datum": "Listopad",
@@ -106,6 +100,12 @@ export const scrapedContent = {
       "datum": "Studeni",
       "opis": "d-Posavina\" O nama Kulturna baština Događanja Smještaj i ugostiteljstvo Konferencijske dvorane Turističke atrakcije Preporuke Informacije Moja Slavonija --> Skip to content Open toolbar Alati za pristupačnost Povećajte tekst Smanji tekst Sive nijanse Visoki kontrast Negativni kontrast Svijetla pozad",
       "link": "https://www.tzgsb.hr/index.php?page=studeni"
+    },
+    {
+      "naziv": "Vinkovita Ova vinska manifestacija se održava u općini Bukovlje, u čast svetom Vinku, zaštitniku vin",
+      "datum": "Siječanj",
+      "opis": "Tijekom smotre Više od stotinu vinara s područja cijele regije Slavonije predstavlja svoja vina, a provodi se i stručno ocjenjivanje i izbor najkvalitetnijih. Vinkovo Ova manifestacija održava se u čast svetom Vinku, zaštitniku vinara i vinogradara, na više lokacija slavonskobrodskog vinogorja smješ",
+      "link": "https://www.tzgsb.hr/index.php?page=sijecanj"
     }
   ],
   "restorani_tz": [
