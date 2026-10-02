@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-01 11:52 UTC
+// Zadnje skrapanje: 2026-10-02 11:24 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-01T11:52:17.850Z",
+    "zadnje_azuriranje": "2026-10-02T11:24:23.413Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,41 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Nova podjela opreme za bebe – deset obitelji dobilo paket podrške za novorođenče",
+      "datum": "02. 10. 2026.",
+      "kratki_opis": "U Slavonskom Brodu je danas uručeno deset novih paketa opreme za bebe obiteljima s novorođenom djecom. Dodjelu je predvodila zamjenica gradonačelnika Marina Martić Puača. Riječ je o mjeri koju provodimo od 2018. godine, s ciljem da roditeljima olakšamo prve mjesece s bebom. Svaka obitelj dobiva pake",
+      "link": "https://www.slavonski-brod.hr/vijesti/17296-nova-podjela-opreme-za-bebe-deset-obitelji-dobilo-paket-podrske-za-novorodence",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/joobla_bebe_21026.jpg"
+    },
+    {
+      "naslov": "Turistička zajednica organizira pješačku turu Dilj gorom uz jezero Petnja",
+      "datum": "02. 10. 2026.",
+      "kratki_opis": "Turistička zajednica u subotu, 10. listopada 2026. godine, organizira pješačku turu Dilj gorom uz jezero Petnja, uz osiguran i organiziran autobusni prijevoz iz Slavonskog Broda. Riječ je o šetnji koja je dio pilot programa „Dilj kroz prirodu i zajednicu“, koji se provodi u okviru europskog projekta",
+      "link": "https://www.slavonski-brod.hr/vijesti/17300-turisticka-zajednica-organizira-pjesacku-turu-dilj-gorom-uz-jezero-petnja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/GORA_SLIKA_resize.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod ponovno pleše u čast Miji Čorak Slavenskoj",
+      "datum": "02. 10. 2026.",
+      "kratki_opis": "U Slavonskom Brodu u ponedjeljak, 5. listopada, započinje 23. izdanje Dana plesa u čast Miji Čorak Slavenskoj , manifestacije posvećene jednoj od najznačajnijih hrvatskih baletnih umjetnica i prvoj hrvatskoj primabalerini. Do 13. listopada na nekoliko gradskih lokacija bit će predstavljene plesne pr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17298-slavonski-brod-ponovno-plese-u-cast-miji-corak-slavenskoj",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/mia_2026_resize.jpg"
+    },
+    {
+      "naslov": "Završena stručna analiza dodatnih mjerenja kvalitete zraka",
+      "datum": "02. 10. 2026.",
+      "kratki_opis": "Tijekom 2025. godine provodili smo dodatna mjerenja kvalitete zraka kako bismo što preciznije utvrdili što najviše utječe na zrak u našem gradu. Uz redovita državna mjerenja postavili smo dodatne mjerne postaje, među ostalim kod tvrtke Đuro Đaković i kod drvne industrije Slavonija DI. Mjerenja su pr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17297-zavrsena-strucna-analiza-dodatnih-mjerenja-kvalitete-zraka",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/tvrdava_resize.jpg"
+    },
+    {
+      "naslov": "Održana 8. sjednica Partnerskog vijeća i 9. sjednica Koordinacijskog vijeća za Urbano područje Slavonski Brod",
+      "datum": "01. 10. 2026.",
+      "kratki_opis": "Dana 1. listopada 2026. godine u Velikoj vijećnici Grada Slavonskog Broda&nbsp;održana je 8. sjednica Partnerskog vijeća i 9. sjednica Koordinacijskog vijeća za Urbano područje Slavonski Brod za financijsko razdoblje 2021.-2027. Cilj navedenih sjednica bio je donijeti odluke za buduću provedbu ITU m",
+      "link": "https://www.slavonski-brod.hr/vijesti/17293-odrzana-8-sjednica-partnerskog-vijeca-i-9-sjednica-koordinacijskog-vijeca-za-urbano-podrucje-slavonski-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1619_resize.jpeg"
+    },
     {
       "naslov": "Slavonski Brod domaćin četvrte međunarodne konferencije WASTE TO ENERGY",
       "datum": "01. 10. 2026.",
@@ -51,41 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U sklopu Dana europske baštine, u ponedjeljak 5. listopada 2026. godine od 10 do 17 sati, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu u Slavonskom Brodu održat će se konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji“. ",
       "link": "https://www.slavonski-brod.hr/vijesti/17283-konferencija-kud-ide-nas-kud-bastinski-potencijali-suvremene-folklorne-produkcije-u-slavoniji-u-ponedjeljak-5-listopada-u-centru-za-nematerijalnu-kulturnu-bastinu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00001_resize.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod među gradovima s najvećim rastom izdvajanja za kulturu: ulaganja gotovo udvostručena",
-      "datum": "30. 09. 2026.",
-      "kratki_opis": "Prema najnovijoj analizi portala Gradonačelnik.hr, Grad Slavonski Brod nalazi se među hrvatskim gradovima koji su u 2025. godini najviše povećali izdvajanja za kulturu. Za ovu smo namjenu izdvojili 4,2 milijuna eura, što je 2,09 milijuna eura više nego godinu ranije, odnosno povećanje od 98,71 posto",
-      "link": "https://www.slavonski-brod.hr/vijesti/17282-slavonski-brod-medu-gradovima-s-najvecim-rastom-izdvajanja-za-kulturu-ulaganja-gotovo-udvostrucena",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/tvrdava_2_resize.jpg"
-    },
-    {
-      "naslov": "Besplatna pravna pomoć: saznajte imate li pravo i kome se obratiti",
-      "datum": "30. 09. 2026.",
-      "kratki_opis": "Ministarstvo pravosuđa, uprave i digitalne transformacije izradilo je promotivni letak o besplatnoj pravnoj pomoći na koju pravo&nbsp;imaju osobe čije su materijalne prilike takve da bi plaćanje stručne pravne pomoći moglo ugroziti njihovo uzdržavanje i uzdržavanje članova njihova kućanstva, a koje ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17281-besplatna-pravna-pomoc-saznajte-imate-li-pravo-i-kome-se-obratiti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/still-life-with-scales-justice_2_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod među hrvatskim rekorderima u ulaganjima u zaštitu okoliša",
-      "datum": "29. 09. 2026.",
-      "kratki_opis": "Prema najnovijoj analizi portala Gradonačelnik.hr, Grad Slavonski Brod nalazi se među hrvatskim gradovima s najvećim izdvajanjima za zaštitu okoliša u 2025. godini. Za ovu je namjenu izdvojeno 6,12 milijuna eura, čime se Slavonski Brod svrstao u sam vrh hrvatskih gradova. Zaštita okoliša, odgovorno ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17280-slavonski-brod-medu-hrvatskim-rekorderima-u-ulaganjima-u-zastitu-okolisa",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/drvo_resize.jpg"
-    },
-    {
-      "naslov": "Gradonačelnik primio uspješne kajakaše KKK-a „Olimpik“: sezona koja se pamti",
-      "datum": "29. 09. 2026.",
-      "kratki_opis": "Gradonačelnik Mirko Duspara primio je danas u Velikoj vijećnici predstavnike, sportaše i stručni stožer Kajak kanu kluba „Olimpik“ Slavonski Brod, koji je iza sebe ostavio iznimno uspješnu natjecateljsku sezonu 2026. godine. Povod prijema bili su rezultati koje su brodski kajakaši ostvarili na domać",
-      "link": "https://www.slavonski-brod.hr/vijesti/17279-gradonacelnik-primio-uspjesne-kajakase-kkk-a-olimpik-sezona-koja-se-pamti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1545_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka povodom Dana policije i blagdana sv. Mihovila",
-      "datum": "29. 09. 2026.",
-      "kratki_opis": "Dan policije koji obilježavamo na blagdan svetog Mihovila, zaštitnika policajaca i vojnika, prigoda je da se s poštovanjem prisjetimo truda i odgovornosti koju policijske službenice i službenici svakodnevno ugrađuju u sigurnost naših građana. Čestitam svim djelatnicima Policijske uprave brodsko-posa",
-      "link": "https://www.slavonski-brod.hr/vijesti/17278-gradonacelnikova-cestitka-povodom-dana-policije-i-blagdana-sv-mihovila-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/zastava_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
