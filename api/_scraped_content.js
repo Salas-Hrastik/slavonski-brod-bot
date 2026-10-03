@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-02 11:24 UTC
+// Zadnje skrapanje: 2026-10-03 10:41 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-02T11:24:23.413Z",
+    "zadnje_azuriranje": "2026-10-03T10:41:55.909Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Bećarac kroz igru: djeca na prvoj radionici „Iskustvenog učenja o baštini&quot;",
+      "datum": "02. 10. 2026.",
+      "kratki_opis": "Ovog petka u Edukacijsko-multimedijalnom centru u Tvrđavi Brod održana je prva radionica za djecu osnovnoškolskog uzrasta iz programa „Iskustveno učenje o baštini\". Program provodi Centar za nematerijalnu kulturnu baštinu. Na radionici su djeca imala priliku doživjeti bećarac, hrvatsko nematerijalno",
+      "link": "https://www.slavonski-brod.hr/vijesti/17301-becarac-kroz-igru-djeca-na-prvoj-radionici-iskustvenog-ucenja-o-bastini",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/0b600236-6a9f-4c53-bca1-fe08bf4800d5.jpg"
+    },
     {
       "naslov": "Nova podjela opreme za bebe – deset obitelji dobilo paket podrške za novorođenče",
       "datum": "02. 10. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Objavljen je Poziv za predlaganje programa javnih potreba u kulturi Grada Slavonskog Broda za 2027. godinu. Pozivamo sve zainteresirane ustanove u kulturi, umjetničke organizacije, umjetnike, udruge te druge fizičke i pravne osobe koje se bave kulturnim djelatnostima da nam dostave svoje prijedloge ",
       "link": "https://www.slavonski-brod.hr/vijesti/17285-objavljen-poziv-za-predlaganje-programa-javnih-potreba-u-kulturi-grada-slavonskog-broda-za-2027-godinu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Grad2.jpeg"
-    },
-    {
-      "naslov": "Konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji“ u ponedjeljak, 5. listo",
-      "datum": "30. 09. 2026.",
-      "kratki_opis": "U sklopu Dana europske baštine, u ponedjeljak 5. listopada 2026. godine od 10 do 17 sati, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu u Slavonskom Brodu održat će se konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji“. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17283-konferencija-kud-ide-nas-kud-bastinski-potencijali-suvremene-folklorne-produkcije-u-slavoniji-u-ponedjeljak-5-listopada-u-centru-za-nematerijalnu-kulturnu-bastinu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/image00001_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
