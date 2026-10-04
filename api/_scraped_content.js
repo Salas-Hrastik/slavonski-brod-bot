@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-03 10:41 UTC
+// Zadnje skrapanje: 2026-10-04 11:21 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-03T10:41:55.909Z",
+    "zadnje_azuriranje": "2026-10-04T11:21:52.286Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "U Slavonskom Brodu obilježen Nacionalni tjedan dojenja",
+      "datum": "03. 10. 2026.",
+      "kratki_opis": "Na Trgu kralja Tomislava u Slavonskom Brodu obilježen je Nacionalni tjedan dojenja, s ciljem podizanja svijesti o važnosti dojenja te pružanja podrške majkama i obiteljima. Tom je prigodom postavljena i klupa za dojenje i presvlačenje, koja majkama pruža dodatnu mogućnost za ugodno i mirno hranjenje",
+      "link": "https://www.slavonski-brod.hr/vijesti/17303-u-slavonskom-brodu-obiljezen-nacionalni-tjedan-dojenja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1661_resize.jpeg"
+    },
+    {
+      "naslov": "Obilježen Dan ružičaste vrpce u Slavonskom Brodu",
+      "datum": "03. 10. 2026.",
+      "kratki_opis": "Na Gradskoj tržnici u Slavonskom Brodu obilježen je Dan ružičaste vrpce, posvećen podizanju svijesti o prevenciji i važnosti ranog otkrivanja raka dojke. Obilježavanje je organizirala Udruga žena liječenih od raka dojke „Nada“, koja svojim dugogodišnjim djelovanjem pruža podršku oboljelima i njihovi",
+      "link": "https://www.slavonski-brod.hr/vijesti/17302-obiljezen-dan-ruzicaste-vrpce-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1648_resize.jpeg"
+    },
     {
       "naslov": "Bećarac kroz igru: djeca na prvoj radionici „Iskustvenog učenja o baštini&quot;",
       "datum": "02. 10. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Na području turističke destinacije „Slavonski Brod-Posavina“ koja obuhvaća područje grada Slavonskog Broda te općina Bukovlje, Gornja Vrba i Podcrkavlje je u prvih devet mjeseci 2026. ostvareno 51.197 noćenja, što je za 9,61% više u odnosu na isto razdoblje 2025. U strukturi turističkog prometa udio",
       "link": "https://www.slavonski-brod.hr/vijesti/17290-odlicni-turisticki-rezultati-u-destinaciji-slavonski-brod-posavina",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/turizam.png"
-    },
-    {
-      "naslov": "Slavonski Brod potvrđuje predanost kvalitetnijem životu starijih sugrađana",
-      "datum": "01. 10. 2026.",
-      "kratki_opis": "Povodom Međunarodnog dana starijih osoba, koji se svake godine obilježava 1. listopada, Slavonski Brod i ove godine podsjeća na važnost stvaranja društva u kojemu godine nisu prepreka za aktivan, dostojanstven i ispunjen život. Starije generacije svojim su radom, iskustvom i životnim pričama desetlj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17289-slavonski-brod-potvrduje-predanost-kvalitetnijem-zivotu-starijih-sugradana",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/DOM.png"
-    },
-    {
-      "naslov": "Objavljen Poziv za predlaganje programa javnih potreba u kulturi Grada Slavonskog Broda za 2027. godinu",
-      "datum": "30. 09. 2026.",
-      "kratki_opis": "Objavljen je Poziv za predlaganje programa javnih potreba u kulturi Grada Slavonskog Broda za 2027. godinu. Pozivamo sve zainteresirane ustanove u kulturi, umjetničke organizacije, umjetnike, udruge te druge fizičke i pravne osobe koje se bave kulturnim djelatnostima da nam dostave svoje prijedloge ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17285-objavljen-poziv-za-predlaganje-programa-javnih-potreba-u-kulturi-grada-slavonskog-broda-za-2027-godinu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/Grad2.jpeg"
     }
   ],
   "manifestacije_aktualne": [
