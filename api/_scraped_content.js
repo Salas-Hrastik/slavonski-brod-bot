@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-04 11:21 UTC
+// Zadnje skrapanje: 2026-10-05 12:44 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-04T11:21:52.286Z",
+    "zadnje_azuriranje": "2026-10-05T12:44:16.991Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,62 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Dani europske baštine: konferencija o budućnosti folklornog amaterizma",
+      "datum": "05. 10. 2026.",
+      "kratki_opis": "U sklopu Dana europske baštine, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu u Slavonskom Brodu danas je na programu konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji\". Među sudionicima je i pročelnik Upravnog odjela za",
+      "link": "https://www.slavonski-brod.hr/vijesti/17311-odrzana-konferencija-kud-ide-nas-kud-bastinski-potencijali-suvremene-folklorne-produkcije-u-slavoniji",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00002_resize.jpeg"
+    },
+    {
+      "naslov": "Raspored rada mobilnih gradskih blagajni u listopadu",
+      "datum": "05. 10. 2026.",
+      "kratki_opis": "12. listopada 2026. (ponedjeljak) Mjesni dom Brodsko Vinogorje – od 9:30 do 11:30 sati Mjesni dom Podvinje – od 12:30 do 15:00 sati 13. listopada 2026. (utorak) Mjesni dom Kolonija – od 9:30 do 11:30 sati Mjesni dom Brodski Varoš – od 12:30 do 15:00 sati 14. listopada 2026. (srijeda) Mjesni dom Ante",
+      "link": "https://www.slavonski-brod.hr/vijesti/17310-raspored-rada-mobilnih-gradskih-blagajni-u-listopadu-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/blagajna_1.jpg"
+    },
+    {
+      "naslov": "Večeras počinju 23. Dani plesa u čast Miji Čorak Slavenskoj",
+      "datum": "05. 10. 2026.",
+      "kratki_opis": "Danas, 5. listopada, počinju 23. Dani plesa u čast Miji Čorak Slavenskoj, tradicionalna manifestacija posvećena našoj velikoj baletnoj umjetnici, rođenoj Brođanki čije je stvaralaštvo ostavilo dubok trag na hrvatskoj i svjetskoj plesnoj ssceni. Početak manifestacije upravo se poklapa s danom kada ob",
+      "link": "https://www.slavonski-brod.hr/vijesti/17309-veceras-pocinju-23-dani-plesa-u-cast-miji-corak-slavenskoj",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Screen_Shot_2015-01-28_at_53739_PM.png"
+    },
+    {
+      "naslov": "Dječji tjedan u Slavonskom Brodu donosi brojne aktivnosti za najmlađe",
+      "datum": "05. 10. 2026.",
+      "kratki_opis": "„Ljubav djeci prije svega! “ – poruka je koja i ove godine prati Dječji tjedan, koji se od 5. do 11. listopada obilježava diljem Hrvatske, pa tako i u Slavonskom Brodu. Tradicionalno je to vrijeme posvećeno djeci, njihovim pravima, potrebama i dobrobiti, ali i podsjetnik odraslima koliko su ljubav, ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17308-djecji-tjedan-u-slavonskom-brodu-donosi-brojne-aktivnosti-za-najmlade",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/TJEDAN.png"
+    },
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Svjetskog dana učitelja",
+      "datum": "05. 10. 2026.",
+      "kratki_opis": "Poštovane učiteljice i učitelji, nastavnice i nastavnici, profesorice i profesori, danas na Svjetski dan učitelja, želim vam u ime Grada Slavonskog Broda uputiti riječi zahvalnosti. Svatko od nas može se sjetiti barem jednog učitelja ili učiteljice koji su ostavili trag u našem odrastanju. Možda je ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17307-gradonacelnikova-cestitka-povodom-svjetskog-dana-ucitelja-3",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/front-view-teacher-with-stack-books_resize.jpg"
+    },
+    {
+      "naslov": "Žeravac proslavio svetkovinu sv. Franje Asiškog mladom misom vlč. Mate Zirduma",
+      "datum": "05. 10. 2026.",
+      "kratki_opis": "Svetkovinu svog nebeskog zaštitnika sv. Franje Asiškog proslavila je u nedjelju 4. listopada istoimena župa Žeravac u Bosanskoj Posavini. Svečano misno slavlje kojim je proslavio svoju mladu misu – sekundiciju uz geslo „Da Krista steknem i u njemu se nađem“ predvodio je ovogodišnji mladomisnik Zagre",
+      "link": "https://www.slavonski-brod.hr/vijesti/17306-zeravac-proslavio-svetkovinu-sv-franje-asiskog-mladom-misom-vlc-mate-zirduma",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/zeravac_grad_1.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 2. tjedan provođenja jesenske deratizacije",
+      "datum": "04. 10. 2026.",
+      "kratki_opis": "U razdoblju od 05. listopada (ponedjeljak) do 09. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17305-ddd-mjere-2026-godine-2-tjedan-provodenja-jesenske-deratizacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/fotka.jpg"
+    },
+    {
+      "naslov": "Gradonačelnik na blagoslovu crkve u Jarmini",
+      "datum": "04. 10. 2026.",
+      "kratki_opis": "U Jarmini je danas svečano proslavljen blagdan sv. Franje Asiškog, a tom je prigodom blagoslovljen i obnovljen toranj crkve sv. Vendelina, uređen park Gospino polje i blagoslovljen kip Gospe Bistričke. Svečano euharistijsko slavlje predvodio je đakovačko - osječki nadbiskup, koji je tom prigodom bla",
+      "link": "https://www.slavonski-brod.hr/vijesti/17304-gradonacelnik-mirko-duspara-na-blagoslovnu-obnovljene-obnovljene-crkve-u-jarmini",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00006_resize.jpeg"
+    },
     {
       "naslov": "U Slavonskom Brodu obilježen Nacionalni tjedan dojenja",
       "datum": "03. 10. 2026.",
@@ -30,62 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Na Gradskoj tržnici u Slavonskom Brodu obilježen je Dan ružičaste vrpce, posvećen podizanju svijesti o prevenciji i važnosti ranog otkrivanja raka dojke. Obilježavanje je organizirala Udruga žena liječenih od raka dojke „Nada“, koja svojim dugogodišnjim djelovanjem pruža podršku oboljelima i njihovi",
       "link": "https://www.slavonski-brod.hr/vijesti/17302-obiljezen-dan-ruzicaste-vrpce-u-slavonskom-brodu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1648_resize.jpeg"
-    },
-    {
-      "naslov": "Bećarac kroz igru: djeca na prvoj radionici „Iskustvenog učenja o baštini&quot;",
-      "datum": "02. 10. 2026.",
-      "kratki_opis": "Ovog petka u Edukacijsko-multimedijalnom centru u Tvrđavi Brod održana je prva radionica za djecu osnovnoškolskog uzrasta iz programa „Iskustveno učenje o baštini\". Program provodi Centar za nematerijalnu kulturnu baštinu. Na radionici su djeca imala priliku doživjeti bećarac, hrvatsko nematerijalno",
-      "link": "https://www.slavonski-brod.hr/vijesti/17301-becarac-kroz-igru-djeca-na-prvoj-radionici-iskustvenog-ucenja-o-bastini",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/0b600236-6a9f-4c53-bca1-fe08bf4800d5.jpg"
-    },
-    {
-      "naslov": "Nova podjela opreme za bebe – deset obitelji dobilo paket podrške za novorođenče",
-      "datum": "02. 10. 2026.",
-      "kratki_opis": "U Slavonskom Brodu je danas uručeno deset novih paketa opreme za bebe obiteljima s novorođenom djecom. Dodjelu je predvodila zamjenica gradonačelnika Marina Martić Puača. Riječ je o mjeri koju provodimo od 2018. godine, s ciljem da roditeljima olakšamo prve mjesece s bebom. Svaka obitelj dobiva pake",
-      "link": "https://www.slavonski-brod.hr/vijesti/17296-nova-podjela-opreme-za-bebe-deset-obitelji-dobilo-paket-podrske-za-novorodence",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/joobla_bebe_21026.jpg"
-    },
-    {
-      "naslov": "Turistička zajednica organizira pješačku turu Dilj gorom uz jezero Petnja",
-      "datum": "02. 10. 2026.",
-      "kratki_opis": "Turistička zajednica u subotu, 10. listopada 2026. godine, organizira pješačku turu Dilj gorom uz jezero Petnja, uz osiguran i organiziran autobusni prijevoz iz Slavonskog Broda. Riječ je o šetnji koja je dio pilot programa „Dilj kroz prirodu i zajednicu“, koji se provodi u okviru europskog projekta",
-      "link": "https://www.slavonski-brod.hr/vijesti/17300-turisticka-zajednica-organizira-pjesacku-turu-dilj-gorom-uz-jezero-petnja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/GORA_SLIKA_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod ponovno pleše u čast Miji Čorak Slavenskoj",
-      "datum": "02. 10. 2026.",
-      "kratki_opis": "U Slavonskom Brodu u ponedjeljak, 5. listopada, započinje 23. izdanje Dana plesa u čast Miji Čorak Slavenskoj , manifestacije posvećene jednoj od najznačajnijih hrvatskih baletnih umjetnica i prvoj hrvatskoj primabalerini. Do 13. listopada na nekoliko gradskih lokacija bit će predstavljene plesne pr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17298-slavonski-brod-ponovno-plese-u-cast-miji-corak-slavenskoj",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/mia_2026_resize.jpg"
-    },
-    {
-      "naslov": "Završena stručna analiza dodatnih mjerenja kvalitete zraka",
-      "datum": "02. 10. 2026.",
-      "kratki_opis": "Tijekom 2025. godine provodili smo dodatna mjerenja kvalitete zraka kako bismo što preciznije utvrdili što najviše utječe na zrak u našem gradu. Uz redovita državna mjerenja postavili smo dodatne mjerne postaje, među ostalim kod tvrtke Đuro Đaković i kod drvne industrije Slavonija DI. Mjerenja su pr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17297-zavrsena-strucna-analiza-dodatnih-mjerenja-kvalitete-zraka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/tvrdava_resize.jpg"
-    },
-    {
-      "naslov": "Održana 8. sjednica Partnerskog vijeća i 9. sjednica Koordinacijskog vijeća za Urbano područje Slavonski Brod",
-      "datum": "01. 10. 2026.",
-      "kratki_opis": "Dana 1. listopada 2026. godine u Velikoj vijećnici Grada Slavonskog Broda&nbsp;održana je 8. sjednica Partnerskog vijeća i 9. sjednica Koordinacijskog vijeća za Urbano područje Slavonski Brod za financijsko razdoblje 2021.-2027. Cilj navedenih sjednica bio je donijeti odluke za buduću provedbu ITU m",
-      "link": "https://www.slavonski-brod.hr/vijesti/17293-odrzana-8-sjednica-partnerskog-vijeca-i-9-sjednica-koordinacijskog-vijeca-za-urbano-podrucje-slavonski-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1619_resize.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod domaćin četvrte međunarodne konferencije WASTE TO ENERGY",
-      "datum": "01. 10. 2026.",
-      "kratki_opis": "U Slavonskom Brodu danas je svečano otvorena četvrta međunarodna konferencija WASTE TO ENERGY IV – „Od otpada do održive energije: gorivo, tehnologija i ESG principi\", koja se održava 1. i 2. listopada 2026. godine. Skup okuplja stručnjake, predstavnike institucija, gospodarstva, komunalnog i energe",
-      "link": "https://www.slavonski-brod.hr/vijesti/17291-slavonski-brod-domacin-cetvrte-medunarodne-konferencije-waste-to-energy",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/IMG_1596_resize.jpeg"
-    },
-    {
-      "naslov": "Odlični turistički rezultati u destinaciji &quot;Slavonski Brod-Posavina&quot;",
-      "datum": "01. 10. 2026.",
-      "kratki_opis": "Na području turističke destinacije „Slavonski Brod-Posavina“ koja obuhvaća područje grada Slavonskog Broda te općina Bukovlje, Gornja Vrba i Podcrkavlje je u prvih devet mjeseci 2026. ostvareno 51.197 noćenja, što je za 9,61% više u odnosu na isto razdoblje 2025. U strukturi turističkog prometa udio",
-      "link": "https://www.slavonski-brod.hr/vijesti/17290-odlicni-turisticki-rezultati-u-destinaciji-slavonski-brod-posavina",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Rujan/turizam.png"
     }
   ],
   "manifestacije_aktualne": [
