@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-05 12:44 UTC
+// Zadnje skrapanje: 2026-10-06 12:15 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-05T12:44:16.991Z",
+    "zadnje_azuriranje": "2026-10-06T12:15:31.554Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Dogradnja vrtića „Kosjenka“ privedena kraju, uskoro nova mjesta za najmlađe Brođane",
+      "datum": "06. 10. 2026.",
+      "kratki_opis": "Dječji vrtić „Kosjenka“ u Slavonskom Brodu dobio je novo ruho. Radovi na njegovoj dogradnji privedeni su kraju, a upravo tu priču želimo ispričati kroz povijest vrtića i projekt koji mu donosi nove prostore. Vrtić je djeci otvorio vrata 1975. godine u Runjaninovoj ulici. Kako je naselje raslo, tako ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17314-dogradnja-vrtica-kosjenka-privedena-kraju-uskoro-nova-mjesta-za-najmlade-brodane",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/kosjenka_joomla.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 11. (jedanaesti) larvicidni tretman i monitoring komaraca",
+      "datum": "06. 10. 2026.",
+      "kratki_opis": "U razdoblju od 6. do 7. listopada 2026. godine (utorak i srijeda), stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba provest će 11. (jedanaesti) larvicidni tretman te monitoring ličinki i odraslih komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17315-ddd-mjere-2026-godine-11-jedanaesti-larvicidni-tretman-i-monitoring-komaraca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/komarac.png"
+    },
+    {
+      "naslov": "Svečano otvoreni 23. Dani plesa: Brod odao počast svojoj primabalerini",
+      "datum": "06. 10. 2026.",
+      "kratki_opis": "Sinoć su svečano otvoreni 23. Dani plesa u čast Miji Čorak Slavenskoj, tradicionalna manifestacija posvećena našoj velikoj baletnoj umjetnici. Početak manifestacije poklopio se s obilježavanjem 24 godine od smrti rođene Brođanke koja je ostavila dubok trag na hrvatskoj i svjetskoj plesnoj sceni. Pro",
+      "link": "https://www.slavonski-brod.hr/vijesti/17313-svecano-otvoreni-23-dani-plesa-brod-odao-pocast-svojoj-primabalerini",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Dani_plesa_2026_018_resize.jpg"
+    },
     {
       "naslov": "Dani europske baštine: konferencija o budućnosti folklornog amaterizma",
       "datum": "05. 10. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U razdoblju od 05. listopada (ponedjeljak) do 09. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala ",
       "link": "https://www.slavonski-brod.hr/vijesti/17305-ddd-mjere-2026-godine-2-tjedan-provodenja-jesenske-deratizacije",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/fotka.jpg"
-    },
-    {
-      "naslov": "Gradonačelnik na blagoslovu crkve u Jarmini",
-      "datum": "04. 10. 2026.",
-      "kratki_opis": "U Jarmini je danas svečano proslavljen blagdan sv. Franje Asiškog, a tom je prigodom blagoslovljen i obnovljen toranj crkve sv. Vendelina, uređen park Gospino polje i blagoslovljen kip Gospe Bistričke. Svečano euharistijsko slavlje predvodio je đakovačko - osječki nadbiskup, koji je tom prigodom bla",
-      "link": "https://www.slavonski-brod.hr/vijesti/17304-gradonacelnik-mirko-duspara-na-blagoslovnu-obnovljene-obnovljene-crkve-u-jarmini",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00006_resize.jpeg"
-    },
-    {
-      "naslov": "U Slavonskom Brodu obilježen Nacionalni tjedan dojenja",
-      "datum": "03. 10. 2026.",
-      "kratki_opis": "Na Trgu kralja Tomislava u Slavonskom Brodu obilježen je Nacionalni tjedan dojenja, s ciljem podizanja svijesti o važnosti dojenja te pružanja podrške majkama i obiteljima. Tom je prigodom postavljena i klupa za dojenje i presvlačenje, koja majkama pruža dodatnu mogućnost za ugodno i mirno hranjenje",
-      "link": "https://www.slavonski-brod.hr/vijesti/17303-u-slavonskom-brodu-obiljezen-nacionalni-tjedan-dojenja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1661_resize.jpeg"
-    },
-    {
-      "naslov": "Obilježen Dan ružičaste vrpce u Slavonskom Brodu",
-      "datum": "03. 10. 2026.",
-      "kratki_opis": "Na Gradskoj tržnici u Slavonskom Brodu obilježen je Dan ružičaste vrpce, posvećen podizanju svijesti o prevenciji i važnosti ranog otkrivanja raka dojke. Obilježavanje je organizirala Udruga žena liječenih od raka dojke „Nada“, koja svojim dugogodišnjim djelovanjem pruža podršku oboljelima i njihovi",
-      "link": "https://www.slavonski-brod.hr/vijesti/17302-obiljezen-dan-ruzicaste-vrpce-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1648_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
