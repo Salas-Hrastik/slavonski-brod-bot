@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-06 12:15 UTC
+// Zadnje skrapanje: 2026-10-07 12:06 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-06T12:15:31.554Z",
+    "zadnje_azuriranje": "2026-10-07T12:06:25.157Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Upaljeni lampioni na keju u spomen na pad Bosanskog Broda i Bosanske Posavine",
+      "datum": "07. 10. 2026.",
+      "kratki_opis": "Slavonski Brod je i ove godine, na keju uz Savu, obilježio Dan sjećanja na 34. obljetnicu pada Bosanskog Broda i većeg dijela Bosanske Posavine. Za sve poginule i nestale branitelje i civile upaljeno je 500 lampiona, kao znak trajnog sjećanja i zahvalnosti. Obilježavanje je organizirala Udruga drago",
+      "link": "https://www.slavonski-brod.hr/vijesti/17316-upaljeni-lampioni-na-keju-u-spomen-na-pad-bosanskog-broda-i-bosanske-posavine",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00008_resize.jpeg"
+    },
     {
       "naslov": "Dogradnja vrtića „Kosjenka“ privedena kraju, uskoro nova mjesta za najmlađe Brođane",
       "datum": "06. 10. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Svetkovinu svog nebeskog zaštitnika sv. Franje Asiškog proslavila je u nedjelju 4. listopada istoimena župa Žeravac u Bosanskoj Posavini. Svečano misno slavlje kojim je proslavio svoju mladu misu – sekundiciju uz geslo „Da Krista steknem i u njemu se nađem“ predvodio je ovogodišnji mladomisnik Zagre",
       "link": "https://www.slavonski-brod.hr/vijesti/17306-zeravac-proslavio-svetkovinu-sv-franje-asiskog-mladom-misom-vlc-mate-zirduma",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/zeravac_grad_1.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 2. tjedan provođenja jesenske deratizacije",
-      "datum": "04. 10. 2026.",
-      "kratki_opis": "U razdoblju od 05. listopada (ponedjeljak) do 09. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17305-ddd-mjere-2026-godine-2-tjedan-provodenja-jesenske-deratizacije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/fotka.jpg"
     }
   ],
   "manifestacije_aktualne": [
