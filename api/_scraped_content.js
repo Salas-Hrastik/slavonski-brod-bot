@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-07 12:06 UTC
+// Zadnje skrapanje: 2026-10-08 12:16 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-07T12:06:25.157Z",
+    "zadnje_azuriranje": "2026-10-08T12:16:46.828Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Obilježen Nacionalni dan oboljelih od multiple skleroze",
+      "datum": "08. 10. 2026.",
+      "kratki_opis": "Društvo multiple skleroze Brodsko-posavske županije jučer je organiziralo okupljanje u sklopu obilježavanja Nacionalnog dana oboljelih od multiple skleroze. Pravobranitelj za osobe s invaliditetom Darijo Jurišić održao je predavanje o zapošljavanju i radu osoba s invaliditetom, a obilježavanju je na",
+      "link": "https://www.slavonski-brod.hr/vijesti/17318-obiljezen-nacionalni-dan-oboljelih-od-multiple-skleroze",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00001_resize.jpeg"
+    },
     {
       "naslov": "Upaljeni lampioni na keju u spomen na pad Bosanskog Broda i Bosanske Posavine",
       "datum": "07. 10. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Poštovane učiteljice i učitelji, nastavnice i nastavnici, profesorice i profesori, danas na Svjetski dan učitelja, želim vam u ime Grada Slavonskog Broda uputiti riječi zahvalnosti. Svatko od nas može se sjetiti barem jednog učitelja ili učiteljice koji su ostavili trag u našem odrastanju. Možda je ",
       "link": "https://www.slavonski-brod.hr/vijesti/17307-gradonacelnikova-cestitka-povodom-svjetskog-dana-ucitelja-3",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/front-view-teacher-with-stack-books_resize.jpg"
-    },
-    {
-      "naslov": "Žeravac proslavio svetkovinu sv. Franje Asiškog mladom misom vlč. Mate Zirduma",
-      "datum": "05. 10. 2026.",
-      "kratki_opis": "Svetkovinu svog nebeskog zaštitnika sv. Franje Asiškog proslavila je u nedjelju 4. listopada istoimena župa Žeravac u Bosanskoj Posavini. Svečano misno slavlje kojim je proslavio svoju mladu misu – sekundiciju uz geslo „Da Krista steknem i u njemu se nađem“ predvodio je ovogodišnji mladomisnik Zagre",
-      "link": "https://www.slavonski-brod.hr/vijesti/17306-zeravac-proslavio-svetkovinu-sv-franje-asiskog-mladom-misom-vlc-mate-zirduma",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/zeravac_grad_1.jpg"
     }
   ],
   "manifestacije_aktualne": [
