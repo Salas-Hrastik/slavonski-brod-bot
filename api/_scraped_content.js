@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-08 12:16 UTC
+// Zadnje skrapanje: 2026-10-09 12:07 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-08T12:16:46.828Z",
+    "zadnje_azuriranje": "2026-10-09T12:07:53.012Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Pridružite nam se na Svjetski dan kravate u Slavonskom Brodu!",
+      "datum": "09. 10. 2026.",
+      "kratki_opis": "Uživajte u „aktivnom vikendu” i rezervirajte nedjelju, 18. listopada 2026., za posebnu turu kojom Slavonski Brod obilježava Svjetski dan kravate. Pozivamo vas da upoznate naš grad kao Cravatten Statt! Slavonski Brod prigodno obilježava Dan kravate, podsjećajući na važan simbol hrvatskog i europskog ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17319-pridruzite-nam-se-na-svjetski-dan-kravate-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/KRAVATA.jpg"
+    },
     {
       "naslov": "Obilježen Nacionalni dan oboljelih od multiple skleroze",
       "datum": "08. 10. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "„Ljubav djeci prije svega! “ – poruka je koja i ove godine prati Dječji tjedan, koji se od 5. do 11. listopada obilježava diljem Hrvatske, pa tako i u Slavonskom Brodu. Tradicionalno je to vrijeme posvećeno djeci, njihovim pravima, potrebama i dobrobiti, ali i podsjetnik odraslima koliko su ljubav, ",
       "link": "https://www.slavonski-brod.hr/vijesti/17308-djecji-tjedan-u-slavonskom-brodu-donosi-brojne-aktivnosti-za-najmlade",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/TJEDAN.png"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka povodom Svjetskog dana učitelja",
-      "datum": "05. 10. 2026.",
-      "kratki_opis": "Poštovane učiteljice i učitelji, nastavnice i nastavnici, profesorice i profesori, danas na Svjetski dan učitelja, želim vam u ime Grada Slavonskog Broda uputiti riječi zahvalnosti. Svatko od nas može se sjetiti barem jednog učitelja ili učiteljice koji su ostavili trag u našem odrastanju. Možda je ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17307-gradonacelnikova-cestitka-povodom-svjetskog-dana-ucitelja-3",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/front-view-teacher-with-stack-books_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
