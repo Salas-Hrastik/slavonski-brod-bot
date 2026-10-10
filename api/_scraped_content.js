@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-09 12:07 UTC
+// Zadnje skrapanje: 2026-10-10 11:25 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-09T12:07:53.012Z",
+    "zadnje_azuriranje": "2026-10-10T11:25:18.875Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod domaćin Godišnjeg sastanka otorinolaringologa",
+      "datum": "09. 10. 2026.",
+      "kratki_opis": "Slavonski Brod je 9. i 10. listopada domaćin Godišnjeg sastanka Hrvatskog društva za otorinolaringologiju i kirurgiju glave i vrata (HDORL i KGV). Skup stručnjaka iz cijele Hrvatske organizira HDORL u suradnji s ORL odjelom Opće bolnice Dr. Josip Benčević Slavonski Brod. Skupu je u ime Grada Slavons",
+      "link": "https://www.slavonski-brod.hr/vijesti/17324-slavonski-brod-domacin-godisnjeg-sastanka-otorinolaringologa",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovna.jpeg"
+    },
+    {
+      "naslov": "Potpisan ugovor vrijedan 120,2 milijuna eura za vodnokomunalnu infrastrukturu Slavonskog Broda i okolnih općina",
+      "datum": "09. 10. 2026.",
+      "kratki_opis": "Danas je u Velikoj vijećnici Brodsko-posavske županije svečano potpisan Ugovor o sufinanciranju za projekt „Izgradnja vodnokomunalne infrastrukture aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji Andrijevci”. Potpisivanju su nazočili gradonačelnik Slavonskog Broda Mirko Duspara, direkto",
+      "link": "https://www.slavonski-brod.hr/vijesti/17323-potpisan-ugovor-vrijedan-120-2-milijuna-eura-za-vodnokomunalnu-infrastrukturu-slavonskog-broda-i-okolnih-opcina",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovna_resize.jpeg"
+    },
+    {
+      "naslov": "Održana 10. sjednica Gradskog vijeća Grada Slavonskog Broda",
+      "datum": "09. 10. 2026.",
+      "kratki_opis": "Održana je 10. sjednica Gradskog vijeća Grada Slavonskog Broda kojoj je prisustvovalo 20 vijećnika. Sjednica je započela Aktualnim satom, nakon čega su vijećnici prešli na raspravu o točkama dnevnog reda. Vijećnici su razmatrali Izvješće o radu i financijsko izvješće trgovačkih društava u potpunom i",
+      "link": "https://www.slavonski-brod.hr/vijesti/17320-odrzana-10-sjednica-gradskog-vijeca-grada-slavonskog-broda",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/NASG.jpeg"
+    },
     {
       "naslov": "Pridružite nam se na Svjetski dan kravate u Slavonskom Brodu!",
       "datum": "09. 10. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U sklopu Dana europske baštine, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu u Slavonskom Brodu danas je na programu konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji\". Među sudionicima je i pročelnik Upravnog odjela za",
       "link": "https://www.slavonski-brod.hr/vijesti/17311-odrzana-konferencija-kud-ide-nas-kud-bastinski-potencijali-suvremene-folklorne-produkcije-u-slavoniji",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00002_resize.jpeg"
-    },
-    {
-      "naslov": "Raspored rada mobilnih gradskih blagajni u listopadu",
-      "datum": "05. 10. 2026.",
-      "kratki_opis": "12. listopada 2026. (ponedjeljak) Mjesni dom Brodsko Vinogorje – od 9:30 do 11:30 sati Mjesni dom Podvinje – od 12:30 do 15:00 sati 13. listopada 2026. (utorak) Mjesni dom Kolonija – od 9:30 do 11:30 sati Mjesni dom Brodski Varoš – od 12:30 do 15:00 sati 14. listopada 2026. (srijeda) Mjesni dom Ante",
-      "link": "https://www.slavonski-brod.hr/vijesti/17310-raspored-rada-mobilnih-gradskih-blagajni-u-listopadu-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/blagajna_1.jpg"
-    },
-    {
-      "naslov": "Večeras počinju 23. Dani plesa u čast Miji Čorak Slavenskoj",
-      "datum": "05. 10. 2026.",
-      "kratki_opis": "Danas, 5. listopada, počinju 23. Dani plesa u čast Miji Čorak Slavenskoj, tradicionalna manifestacija posvećena našoj velikoj baletnoj umjetnici, rođenoj Brođanki čije je stvaralaštvo ostavilo dubok trag na hrvatskoj i svjetskoj plesnoj ssceni. Početak manifestacije upravo se poklapa s danom kada ob",
-      "link": "https://www.slavonski-brod.hr/vijesti/17309-veceras-pocinju-23-dani-plesa-u-cast-miji-corak-slavenskoj",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Screen_Shot_2015-01-28_at_53739_PM.png"
-    },
-    {
-      "naslov": "Dječji tjedan u Slavonskom Brodu donosi brojne aktivnosti za najmlađe",
-      "datum": "05. 10. 2026.",
-      "kratki_opis": "„Ljubav djeci prije svega! “ – poruka je koja i ove godine prati Dječji tjedan, koji se od 5. do 11. listopada obilježava diljem Hrvatske, pa tako i u Slavonskom Brodu. Tradicionalno je to vrijeme posvećeno djeci, njihovim pravima, potrebama i dobrobiti, ali i podsjetnik odraslima koliko su ljubav, ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17308-djecji-tjedan-u-slavonskom-brodu-donosi-brojne-aktivnosti-za-najmlade",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/TJEDAN.png"
     }
   ],
   "manifestacije_aktualne": [
