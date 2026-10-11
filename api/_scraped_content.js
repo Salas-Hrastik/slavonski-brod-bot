@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-10 11:25 UTC
+// Zadnje skrapanje: 2026-10-11 11:38 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-10T11:25:18.875Z",
+    "zadnje_azuriranje": "2026-10-11T11:38:51.067Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Privremena izmjena u prometovanju u javnom gradskom i školskom prijevozu",
+      "datum": "11. 10. 2026.",
+      "kratki_opis": "Obavještavamo građane, učenike i roditelje da će u ponedjeljak i utorak doći do privremene izmjene u prometovanju javnog gradskog i školskog prijevoza.&nbsp; Zbog radova na asfaltiranju dijela Osječke ulice (od Ulice Mirka Turčinovića do pješačkog mosta za Bukovlje), školski prijevoz u navedenim dan",
+      "link": "https://www.slavonski-brod.hr/vijesti/17326-privremena-izmjena-u-prometovanju-skolskih-autobusa",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/skola_resize.jpg"
+    },
+    {
+      "naslov": "Održan treći Pogača Fest u Slavonskom Brodu",
+      "datum": "10. 10. 2026.",
+      "kratki_opis": "Slavonski Brod danas je bio središte slavonske tradicije i običaja. Na Trgu Ivane Brlić-Mažuranić održan je treći Pogača Fest, manifestacija koja pod geslom „Kruh naš svagdanji” slavi bogatu kulturnu baštinu i povezuje prošlost sa sadašnjošću. Manifestaciju je svečano otvorio gradonačelnik Mirko Dus",
+      "link": "https://www.slavonski-brod.hr/vijesti/17325-odrzan-treci-pogaca-fest-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/pog.jpeg"
+    },
     {
       "naslov": "Slavonski Brod domaćin Godišnjeg sastanka otorinolaringologa",
       "datum": "09. 10. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U razdoblju od 6. do 7. listopada 2026. godine (utorak i srijeda), stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba provest će 11. (jedanaesti) larvicidni tretman te monitoring ličinki i odraslih komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih ",
       "link": "https://www.slavonski-brod.hr/vijesti/17315-ddd-mjere-2026-godine-11-jedanaesti-larvicidni-tretman-i-monitoring-komaraca",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/komarac.png"
-    },
-    {
-      "naslov": "Svečano otvoreni 23. Dani plesa: Brod odao počast svojoj primabalerini",
-      "datum": "06. 10. 2026.",
-      "kratki_opis": "Sinoć su svečano otvoreni 23. Dani plesa u čast Miji Čorak Slavenskoj, tradicionalna manifestacija posvećena našoj velikoj baletnoj umjetnici. Početak manifestacije poklopio se s obilježavanjem 24 godine od smrti rođene Brođanke koja je ostavila dubok trag na hrvatskoj i svjetskoj plesnoj sceni. Pro",
-      "link": "https://www.slavonski-brod.hr/vijesti/17313-svecano-otvoreni-23-dani-plesa-brod-odao-pocast-svojoj-primabalerini",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Dani_plesa_2026_018_resize.jpg"
-    },
-    {
-      "naslov": "Dani europske baštine: konferencija o budućnosti folklornog amaterizma",
-      "datum": "05. 10. 2026.",
-      "kratki_opis": "U sklopu Dana europske baštine, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu u Slavonskom Brodu danas je na programu konferencija „Kud ide naš KUD? Baštinski potencijali suvremene folklorne produkcije u Slavoniji\". Među sudionicima je i pročelnik Upravnog odjela za",
-      "link": "https://www.slavonski-brod.hr/vijesti/17311-odrzana-konferencija-kud-ide-nas-kud-bastinski-potencijali-suvremene-folklorne-produkcije-u-slavoniji",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00002_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
