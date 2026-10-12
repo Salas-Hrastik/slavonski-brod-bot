@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-11 11:38 UTC
+// Zadnje skrapanje: 2026-10-12 13:35 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-11T11:38:51.067Z",
+    "zadnje_azuriranje": "2026-10-12T13:35:23.858Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Nova tribina i travnjak: radovi na Stadionu kraj Save privedeni kraju",
+      "datum": "12. 10. 2026.",
+      "kratki_opis": "Tko je posljednjih mjeseci prolazio pokraj Stadiona kraj Save, mogao je gotovo iz tjedna u tjedan vidjeti kako se mijenja njegov izgled. Ono što je počelo kao gradilište danas je zapadni dio južne tribine koji izgleda onako kako smo ga zamislili, a pogled na zeleni travnjak koji je sada postavljen u",
+      "link": "https://www.slavonski-brod.hr/vijesti/17328-nova-tribina-i-travnjak-radovi-na-stadionu-kraj-save-privedeni-kraju",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1026_resize.jpeg"
+    },
+    {
+      "naslov": "Završio Dječji tjedan: „Srce mi je puno sreće, volontiranje me pokreće!&quot;",
+      "datum": "12. 10. 2026.",
+      "kratki_opis": "Dječji tjedan, koji se od 5. do 11. listopada pod porukom „Ljubav djeci prije svega!” obilježavao diljem Hrvatske, a tako i u Slavonskom Brodu, ostao je iza nas. Ovaj tjedan, posvećen dječjim pravima, potrebama i dobrobiti, u slavonskobrodskim vrtićima protekao je u znaku igre, kreativnosti, druženj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17329-zavrsio-djecji-tjedan-srce-mi-je-puno-srece-volontiranje-me-pokrece",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/TJEDAAN.png"
+    },
+    {
+      "naslov": "Peti Pivo Fest u Slavonskom Brodu: craft pivo, glazba i besplatan ulaz",
+      "datum": "12. 10. 2026.",
+      "kratki_opis": "Kad jesen stigne u Slavonski Brod, jesna stvar se zna: u kazamatima Tvrđave opet će se točiti pivo. Peto izdanje Pivo Festa održat će se u petak, 16. listopada 2026., a istočni kazamati ponovno će postati središte dobrog društva, zlatnih okusa i jesenskog raspoloženja. Što je počelo kao simpatično d",
+      "link": "https://www.slavonski-brod.hr/vijesti/17327-peti-pivo-fest-u-slavonskom-brodu-craft-pivo-glazba-i-besplatan-ulaz",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/PIVO_2026.png"
+    },
     {
       "naslov": "Privremena izmjena u prometovanju u javnom gradskom i školskom prijevozu",
       "datum": "11. 10. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Društvo multiple skleroze Brodsko-posavske županije jučer je organiziralo okupljanje u sklopu obilježavanja Nacionalnog dana oboljelih od multiple skleroze. Pravobranitelj za osobe s invaliditetom Darijo Jurišić održao je predavanje o zapošljavanju i radu osoba s invaliditetom, a obilježavanju je na",
       "link": "https://www.slavonski-brod.hr/vijesti/17318-obiljezen-nacionalni-dan-oboljelih-od-multiple-skleroze",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00001_resize.jpeg"
-    },
-    {
-      "naslov": "Upaljeni lampioni na keju u spomen na pad Bosanskog Broda i Bosanske Posavine",
-      "datum": "07. 10. 2026.",
-      "kratki_opis": "Slavonski Brod je i ove godine, na keju uz Savu, obilježio Dan sjećanja na 34. obljetnicu pada Bosanskog Broda i većeg dijela Bosanske Posavine. Za sve poginule i nestale branitelje i civile upaljeno je 500 lampiona, kao znak trajnog sjećanja i zahvalnosti. Obilježavanje je organizirala Udruga drago",
-      "link": "https://www.slavonski-brod.hr/vijesti/17316-upaljeni-lampioni-na-keju-u-spomen-na-pad-bosanskog-broda-i-bosanske-posavine",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00008_resize.jpeg"
-    },
-    {
-      "naslov": "Dogradnja vrtića „Kosjenka“ privedena kraju, uskoro nova mjesta za najmlađe Brođane",
-      "datum": "06. 10. 2026.",
-      "kratki_opis": "Dječji vrtić „Kosjenka“ u Slavonskom Brodu dobio je novo ruho. Radovi na njegovoj dogradnji privedeni su kraju, a upravo tu priču želimo ispričati kroz povijest vrtića i projekt koji mu donosi nove prostore. Vrtić je djeci otvorio vrata 1975. godine u Runjaninovoj ulici. Kako je naselje raslo, tako ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17314-dogradnja-vrtica-kosjenka-privedena-kraju-uskoro-nova-mjesta-za-najmlade-brodane",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/kosjenka_joomla.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 11. (jedanaesti) larvicidni tretman i monitoring komaraca",
-      "datum": "06. 10. 2026.",
-      "kratki_opis": "U razdoblju od 6. do 7. listopada 2026. godine (utorak i srijeda), stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba provest će 11. (jedanaesti) larvicidni tretman te monitoring ličinki i odraslih komaraca na području grada Slavonskog Broda. Na temelju provedenog monitoringa otvorenih vodenih ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17315-ddd-mjere-2026-godine-11-jedanaesti-larvicidni-tretman-i-monitoring-komaraca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/komarac.png"
     }
   ],
   "manifestacije_aktualne": [
