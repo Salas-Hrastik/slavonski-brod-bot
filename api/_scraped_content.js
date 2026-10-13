@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-12 13:35 UTC
+// Zadnje skrapanje: 2026-10-13 12:59 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-12T13:35:23.858Z",
+    "zadnje_azuriranje": "2026-10-13T12:59:18.638Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Mjesec hrvatske knjige 2026.: Od priča do otkrića",
+      "datum": "13. 10. 2026.",
+      "kratki_opis": "Od 15. listopada do 15. studenoga u Slavonskom Brodu slavimo Mjesec hrvatske knjige. Pod geslom „Od priča do otkrića” Gradska knjižnica Slavonski Brod pripremila je mjesec dana ispunjen izložbama, promocijama knjiga, susretima s autorima i predavanjima. Sve nas podsjeća koliko je lijepo i važno čita",
+      "link": "https://www.slavonski-brod.hr/vijesti/17332-mjesec-hrvatske-knjige-2026-od-prica-do-otkrica",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/web_500x300_ljubicasta_resize.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 3. tjedan provođenja jesenske deratizacije",
+      "datum": "13. 10. 2026.",
+      "kratki_opis": "U razdoblju od 12. listopada (ponedjeljak) do 16. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provest će deratizaciju stambenih objekata, javnih zelenih površina, obala v",
+      "link": "https://www.slavonski-brod.hr/vijesti/17331-ddd-mjere-2026-godine-3-tjedan-provodenja-jesenske-deratizacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/centar_grada_iz_daljeg_resize.jpg"
+    },
+    {
+      "naslov": "Memorijalna hodnja „bojnik Alfred Hill – za žrtve Vukovara” stigla u Slavonski Brod",
+      "datum": "13. 10. 2026.",
+      "kratki_opis": "Pukovnija vojne policije Ministarstva obrane Republike Hrvatske i ove je godine organizirala pješačku hodnju „5. Memorijalna hodnja bojnik Alfred Hill – za žrtve Vukovara”, kojom se odaje počast svim poginulim i preminulim pripadnicima vojne policije te svim hrvatskim braniteljima koji su u Domovins",
+      "link": "https://www.slavonski-brod.hr/vijesti/17330-memorijalna-hodnja-bojnik-alfred-hill-za-zrtve-vukovara-stigla-u-slavonski-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1713_resize.jpeg"
+    },
     {
       "naslov": "Nova tribina i travnjak: radovi na Stadionu kraj Save privedeni kraju",
       "datum": "12. 10. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Danas je u Velikoj vijećnici Brodsko-posavske županije svečano potpisan Ugovor o sufinanciranju za projekt „Izgradnja vodnokomunalne infrastrukture aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji Andrijevci”. Potpisivanju su nazočili gradonačelnik Slavonskog Broda Mirko Duspara, direkto",
       "link": "https://www.slavonski-brod.hr/vijesti/17323-potpisan-ugovor-vrijedan-120-2-milijuna-eura-za-vodnokomunalnu-infrastrukturu-slavonskog-broda-i-okolnih-opcina",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovna_resize.jpeg"
-    },
-    {
-      "naslov": "Održana 10. sjednica Gradskog vijeća Grada Slavonskog Broda",
-      "datum": "09. 10. 2026.",
-      "kratki_opis": "Održana je 10. sjednica Gradskog vijeća Grada Slavonskog Broda kojoj je prisustvovalo 20 vijećnika. Sjednica je započela Aktualnim satom, nakon čega su vijećnici prešli na raspravu o točkama dnevnog reda. Vijećnici su razmatrali Izvješće o radu i financijsko izvješće trgovačkih društava u potpunom i",
-      "link": "https://www.slavonski-brod.hr/vijesti/17320-odrzana-10-sjednica-gradskog-vijeca-grada-slavonskog-broda",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/NASG.jpeg"
-    },
-    {
-      "naslov": "Pridružite nam se na Svjetski dan kravate u Slavonskom Brodu!",
-      "datum": "09. 10. 2026.",
-      "kratki_opis": "Uživajte u „aktivnom vikendu” i rezervirajte nedjelju, 18. listopada 2026., za posebnu turu kojom Slavonski Brod obilježava Svjetski dan kravate. Pozivamo vas da upoznate naš grad kao Cravatten Statt! Slavonski Brod prigodno obilježava Dan kravate, podsjećajući na važan simbol hrvatskog i europskog ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17319-pridruzite-nam-se-na-svjetski-dan-kravate-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/KRAVATA.jpg"
-    },
-    {
-      "naslov": "Obilježen Nacionalni dan oboljelih od multiple skleroze",
-      "datum": "08. 10. 2026.",
-      "kratki_opis": "Društvo multiple skleroze Brodsko-posavske županije jučer je organiziralo okupljanje u sklopu obilježavanja Nacionalnog dana oboljelih od multiple skleroze. Pravobranitelj za osobe s invaliditetom Darijo Jurišić održao je predavanje o zapošljavanju i radu osoba s invaliditetom, a obilježavanju je na",
-      "link": "https://www.slavonski-brod.hr/vijesti/17318-obiljezen-nacionalni-dan-oboljelih-od-multiple-skleroze",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/image00001_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
