@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-13 12:59 UTC
+// Zadnje skrapanje: 2026-10-14 10:39 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-13T12:59:18.638Z",
+    "zadnje_azuriranje": "2026-10-14T10:39:48.077Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Mlađi naraštaji plesom čuvaju sjećanje na Miju Čorak Slavensku",
+      "datum": "14. 10. 2026.",
+      "kratki_opis": "Na završnici 23. Dana plesa u čast Miji Čorak Slavenskoj, sinoć je u Osnovnoj školi „Đuro Pilar” održana smotra plesnog stvaralaštva učenika osnovnih škola Brodsko-posavske županije „Radost pokreta”. Smotra se ove godine održala osmi put, a na pozornici je zaplesalo 154 učenika, od kojih su mnogi na",
+      "link": "https://www.slavonski-brod.hr/vijesti/17334-mladi-narastaji-plesom-cuvaju-sjecanje-na-miju-corak-slavensku",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/viber_slika_2026-10-14_08-54-38-856.jpg"
+    },
+    {
+      "naslov": "Radovi na izgradnji državne ceste DC431 su u tijeku",
+      "datum": "13. 10. 2026.",
+      "kratki_opis": "Na dionici državne ceste DC431 od Sjeverne vezne ceste do sjevernog ulaza u Industrijsku zonu „Đuro Đaković“ radovi su u tijeku. Građevinski strojevi na gradilištu rade već mjesec dana, otkako je izvođač radova, tvrtka STRABAG d.o.o., službeno uveden u posao. Nova prometnica bit će duljine oko 420 m",
+      "link": "https://www.slavonski-brod.hr/vijesti/17333-radovi-na-izgradnji-drzavne-ceste-dc431-su-u-tijeku",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1717_resize.jpeg"
+    },
     {
       "naslov": "Mjesec hrvatske knjige 2026.: Od priča do otkrića",
       "datum": "13. 10. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonski Brod danas je bio središte slavonske tradicije i običaja. Na Trgu Ivane Brlić-Mažuranić održan je treći Pogača Fest, manifestacija koja pod geslom „Kruh naš svagdanji” slavi bogatu kulturnu baštinu i povezuje prošlost sa sadašnjošću. Manifestaciju je svečano otvorio gradonačelnik Mirko Dus",
       "link": "https://www.slavonski-brod.hr/vijesti/17325-odrzan-treci-pogaca-fest-u-slavonskom-brodu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/pog.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod domaćin Godišnjeg sastanka otorinolaringologa",
-      "datum": "09. 10. 2026.",
-      "kratki_opis": "Slavonski Brod je 9. i 10. listopada domaćin Godišnjeg sastanka Hrvatskog društva za otorinolaringologiju i kirurgiju glave i vrata (HDORL i KGV). Skup stručnjaka iz cijele Hrvatske organizira HDORL u suradnji s ORL odjelom Opće bolnice Dr. Josip Benčević Slavonski Brod. Skupu je u ime Grada Slavons",
-      "link": "https://www.slavonski-brod.hr/vijesti/17324-slavonski-brod-domacin-godisnjeg-sastanka-otorinolaringologa",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovna.jpeg"
-    },
-    {
-      "naslov": "Potpisan ugovor vrijedan 120,2 milijuna eura za vodnokomunalnu infrastrukturu Slavonskog Broda i okolnih općina",
-      "datum": "09. 10. 2026.",
-      "kratki_opis": "Danas je u Velikoj vijećnici Brodsko-posavske županije svečano potpisan Ugovor o sufinanciranju za projekt „Izgradnja vodnokomunalne infrastrukture aglomeracije Slavonski Brod, Brodski Stupnik, Garčin i Donji Andrijevci”. Potpisivanju su nazočili gradonačelnik Slavonskog Broda Mirko Duspara, direkto",
-      "link": "https://www.slavonski-brod.hr/vijesti/17323-potpisan-ugovor-vrijedan-120-2-milijuna-eura-za-vodnokomunalnu-infrastrukturu-slavonskog-broda-i-okolnih-opcina",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovna_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
