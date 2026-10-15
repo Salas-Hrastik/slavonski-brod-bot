@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-14 10:39 UTC
+// Zadnje skrapanje: 2026-10-15 10:23 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-14T10:39:48.077Z",
+    "zadnje_azuriranje": "2026-10-15T10:23:32.037Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "U nedjelju u šetnju Brodom kravate: nemojte propustiti Cravatten Statt turu",
+      "datum": "14. 10. 2026.",
+      "kratki_opis": "Ovog vikenda rezervirajte nedjelju, 18. listopada 2026., za posebnu turu kojom Slavonski Brod obilježava Svjetski dan kravate. Podsjećamo sugrađane i goste da su dobrodošli upoznati naš grad kao Cravatten Statt, uz pratnju licenciranog turističkog vodiča. Slavonski Brod ponosno njeguje titulu grada ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17336-u-nedjelju-u-setnju-brodom-kravate-nemojte-propustiti-cravatten-statt-turu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/KRAVATA_3.jpg"
+    },
     {
       "naslov": "Mlađi naraštaji plesom čuvaju sjećanje na Miju Čorak Slavensku",
       "datum": "14. 10. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Obavještavamo građane, učenike i roditelje da će u ponedjeljak i utorak doći do privremene izmjene u prometovanju javnog gradskog i školskog prijevoza.&nbsp; Zbog radova na asfaltiranju dijela Osječke ulice (od Ulice Mirka Turčinovića do pješačkog mosta za Bukovlje), školski prijevoz u navedenim dan",
       "link": "https://www.slavonski-brod.hr/vijesti/17326-privremena-izmjena-u-prometovanju-skolskih-autobusa",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/skola_resize.jpg"
-    },
-    {
-      "naslov": "Održan treći Pogača Fest u Slavonskom Brodu",
-      "datum": "10. 10. 2026.",
-      "kratki_opis": "Slavonski Brod danas je bio središte slavonske tradicije i običaja. Na Trgu Ivane Brlić-Mažuranić održan je treći Pogača Fest, manifestacija koja pod geslom „Kruh naš svagdanji” slavi bogatu kulturnu baštinu i povezuje prošlost sa sadašnjošću. Manifestaciju je svečano otvorio gradonačelnik Mirko Dus",
-      "link": "https://www.slavonski-brod.hr/vijesti/17325-odrzan-treci-pogaca-fest-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/pog.jpeg"
     }
   ],
   "manifestacije_aktualne": [
