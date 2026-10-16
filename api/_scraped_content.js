@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-15 10:23 UTC
+// Zadnje skrapanje: 2026-10-16 10:10 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-15T10:23:32.037Z",
+    "zadnje_azuriranje": "2026-10-16T10:10:55.172Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Novi paketi stigli u deset domova: obitelji s najmlađima dobile opremu za prve mjesece",
+      "datum": "16. 10. 2026.",
+      "kratki_opis": "Deset obitelji iz Slavonskog Broda danas je preuzelo pakete opreme za svoju novorođenčad. Mjeru provodimo od 2018. godine, a cilj nam je da roditeljima barem malo olakšamo početak života s bebom, kad se potreba za novim stvarima nakuplja brže nego što se stigne razmisliti. Pakete je uručila zamjenic",
+      "link": "https://www.slavonski-brod.hr/vijesti/17340-novi-paketi-stigli-u-deset-domova-obitelji-s-najmladima-dobile-opremu-za-prve-mjesece",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1750_resize.jpeg"
+    },
+    {
+      "naslov": "Održan radni sastanak s predstavnicima Policijske uprave brodsko-posavske o sigurnosti u prometu",
+      "datum": "15. 10. 2026.",
+      "kratki_opis": "Na inicijativu Grada Slavonskog Broda danas je održan redovan radni sastanak s predstavnicima Policijske uprave brodsko-posavske. Gradonačelnik Mirko Duspara i pročelnici upravnih odjela razgovarali su s predstavnicima o općenitom stanju u gradu, javnom redu i miru, prometu te o ostalim čimbenicima ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17337-odrzan-radni-sastanak-s-predstavnicima-policijske-uprave-brodsko-posavske-o-sigurnosti-u-prometu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1727_resize.jpeg"
+    },
+    {
+      "naslov": "Bijeli štap, simbol samostalnosti: obilježen Međunarodni dan bijelog štapa",
+      "datum": "15. 10. 2026.",
+      "kratki_opis": "Udruga slijepih Brodsko-posavske županije ovoga četvrtka u svojim je prostorima obilježila Međunarodni dan bijelog štapa. Taj se dan svake godine u cijelom svijetu koristi kako bismo se podsjetili na prava, potrebe i svakodnevicu slijepih i slabovidnih osoba. Članove Udruge, njihove obitelji i prija",
+      "link": "https://www.slavonski-brod.hr/vijesti/17338-bijeli-stap-simbol-samostalnosti-obiljezen-medunarodni-dan-bijelog-stapa",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1742_resize.jpeg"
+    },
     {
       "naslov": "U nedjelju u šetnju Brodom kravate: nemojte propustiti Cravatten Statt turu",
       "datum": "14. 10. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Tko je posljednjih mjeseci prolazio pokraj Stadiona kraj Save, mogao je gotovo iz tjedna u tjedan vidjeti kako se mijenja njegov izgled. Ono što je počelo kao gradilište danas je zapadni dio južne tribine koji izgleda onako kako smo ga zamislili, a pogled na zeleni travnjak koji je sada postavljen u",
       "link": "https://www.slavonski-brod.hr/vijesti/17328-nova-tribina-i-travnjak-radovi-na-stadionu-kraj-save-privedeni-kraju",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1026_resize.jpeg"
-    },
-    {
-      "naslov": "Završio Dječji tjedan: „Srce mi je puno sreće, volontiranje me pokreće!&quot;",
-      "datum": "12. 10. 2026.",
-      "kratki_opis": "Dječji tjedan, koji se od 5. do 11. listopada pod porukom „Ljubav djeci prije svega!” obilježavao diljem Hrvatske, a tako i u Slavonskom Brodu, ostao je iza nas. Ovaj tjedan, posvećen dječjim pravima, potrebama i dobrobiti, u slavonskobrodskim vrtićima protekao je u znaku igre, kreativnosti, druženj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17329-zavrsio-djecji-tjedan-srce-mi-je-puno-srece-volontiranje-me-pokrece",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/TJEDAAN.png"
-    },
-    {
-      "naslov": "Peti Pivo Fest u Slavonskom Brodu: craft pivo, glazba i besplatan ulaz",
-      "datum": "12. 10. 2026.",
-      "kratki_opis": "Kad jesen stigne u Slavonski Brod, jesna stvar se zna: u kazamatima Tvrđave opet će se točiti pivo. Peto izdanje Pivo Festa održat će se u petak, 16. listopada 2026., a istočni kazamati ponovno će postati središte dobrog društva, zlatnih okusa i jesenskog raspoloženja. Što je počelo kao simpatično d",
-      "link": "https://www.slavonski-brod.hr/vijesti/17327-peti-pivo-fest-u-slavonskom-brodu-craft-pivo-glazba-i-besplatan-ulaz",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/PIVO_2026.png"
-    },
-    {
-      "naslov": "Privremena izmjena u prometovanju u javnom gradskom i školskom prijevozu",
-      "datum": "11. 10. 2026.",
-      "kratki_opis": "Obavještavamo građane, učenike i roditelje da će u ponedjeljak i utorak doći do privremene izmjene u prometovanju javnog gradskog i školskog prijevoza.&nbsp; Zbog radova na asfaltiranju dijela Osječke ulice (od Ulice Mirka Turčinovića do pješačkog mosta za Bukovlje), školski prijevoz u navedenim dan",
-      "link": "https://www.slavonski-brod.hr/vijesti/17326-privremena-izmjena-u-prometovanju-skolskih-autobusa",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/skola_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
