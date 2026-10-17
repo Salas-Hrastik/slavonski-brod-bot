@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-16 10:10 UTC
+// Zadnje skrapanje: 2026-10-17 09:44 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-16T10:10:55.172Z",
+    "zadnje_azuriranje": "2026-10-17T09:44:52.572Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,48 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Šahovski festival mladih ponovno okupio male šahiste u Slavonskom Brodu",
+      "datum": "17. 10. 2026.",
+      "kratki_opis": "Ove subote u hotelu Park u središtu Slavonskog Broda održava se 2. međunarodni šahovski festival mladih „Šahovski Brod”. Nakon 30 godina bez ovakve manifestacije, festival je prošle godine ponovno vraćen u naš grad, a ove godine organizatori nastavljaju tamo gdje su stali. U Slavonski Brod stigla su",
+      "link": "https://www.slavonski-brod.hr/vijesti/17347-sahovski-festival-mladih-nakon-30-godina-postaje-tradicija",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1908_resize.jpeg"
+    },
+    {
+      "naslov": "Peti Pivo Fest u punom jeku u istočnim kazamatima Tvrđave Brod",
+      "datum": "16. 10. 2026.",
+      "kratki_opis": "Ovog petka u istočnim kazamatima Tvrđave Brod održava se peto izdanje Pivo Festa. Jesenska večer ponovno okuplja ljubitelje craft piva, dobre glazbe i druženja, a ulaz je slobodan za sve posjetitelje. Večer je otvorila Gradska limena glazba „Željezničar“ Slavonski Brod, koja je svojim nastupom podig",
+      "link": "https://www.slavonski-brod.hr/vijesti/17346-zlatni-okusi-u-kazamatima-peti-pivo-fest-okupio-ljubitelje-craft-piva",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1865_resize.jpeg"
+    },
+    {
+      "naslov": "Liječnici i medicinske sestre dva dana u Brodu o prevenciji srčanih bolesti i dijabetesa",
+      "datum": "16. 10. 2026.",
+      "kratki_opis": "U Edukacijsko-multimedijalnom centru u Slavonskom Brodu 16. i 17. listopada 2026. održava se 7. MRAKK simpozij s međunarodnim sudjelovanjem, posvećen kardiovaskularnim rizicima i šećernoj bolesti, njihovoj prevenciji i liječenju. Uz simpozij se održava i 4. tečaj prve kategorije za liječnike i medic",
+      "link": "https://www.slavonski-brod.hr/vijesti/17345-lijecnici-i-medicinske-sestre-dva-dana-u-brodu-o-prevenciji-srcanih-bolesti-i-dijabetesa",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1831_resize.jpeg"
+    },
+    {
+      "naslov": "Ispunite anketu i pomozite u kreiranju novih mjera za čišći zrak",
+      "datum": "16. 10. 2026.",
+      "kratki_opis": "U cilju provedbe daljnjih aktivnosti unapređenja kvalitete zraka i energetske učinkovitosti, ovih dana građani su na kućne adrese zaprimili anketne listiće. Anketa je rezultat sastanka o poboljšanju kvalitete zraka, održanog u veljači 2026. godine između predstavnika Ministarstva zaštite okoliša i z",
+      "link": "https://www.slavonski-brod.hr/vijesti/17339-anketni-listici-o-nacinu-grijanja-stigli-na-adrese-gradana",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/jerzygorecki-smog-3125312_resize.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod ugostio veleposlanika Indije: uvaženi gost iz daleke zemlje posjetio naš grad",
+      "datum": "16. 10. 2026.",
+      "kratki_opis": "Ovoga petka u posjet Slavonskom Brodu stigao je Njegova Ekscelencija veleposlanik Indije u Republici Hrvatskoj, g. Arun Goel, u pratnji supruge, gđe Anite Goel. Dočekani su u Velikoj vijećnici Grada Slavonskog Broda, gdje ih je primio gradonačelnik Mirko Duspara. Na prijemu su, uz gradonačelnika i n",
+      "link": "https://www.slavonski-brod.hr/vijesti/17341-slavonski-brod-ugostio-veleposlanika-indije-uvazeni-gost-iz-daleke-zemlje-posjetio-nas-grad",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1783_resize.jpeg"
+    },
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Svjetskog dana anestezije",
+      "datum": "16. 10. 2026.",
+      "kratki_opis": "Svjetski dan anestezije obilježavamo 16. listopada, u spomen na dan 1846. godine kada je u Bostonu prvi put javno i uspješno izvedena operacija u općoj anesteziji. Taj je događaj zauvijek promijenio medicinu. Operacije koje su prije bile mučne i opasne postale su moguće i sigurnije za pacijente. Ane",
+      "link": "https://www.slavonski-brod.hr/vijesti/17342-gradonacelnikova-cestitka-povodom-svjetskog-dana-anestezije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Svjetski_dan_anesteziologa_resize.jpg"
+    },
     {
       "naslov": "Novi paketi stigli u deset domova: obitelji s najmlađima dobile opremu za prve mjesece",
       "datum": "16. 10. 2026.",
@@ -44,48 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Ovog vikenda rezervirajte nedjelju, 18. listopada 2026., za posebnu turu kojom Slavonski Brod obilježava Svjetski dan kravate. Podsjećamo sugrađane i goste da su dobrodošli upoznati naš grad kao Cravatten Statt, uz pratnju licenciranog turističkog vodiča. Slavonski Brod ponosno njeguje titulu grada ",
       "link": "https://www.slavonski-brod.hr/vijesti/17336-u-nedjelju-u-setnju-brodom-kravate-nemojte-propustiti-cravatten-statt-turu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/KRAVATA_3.jpg"
-    },
-    {
-      "naslov": "Mlađi naraštaji plesom čuvaju sjećanje na Miju Čorak Slavensku",
-      "datum": "14. 10. 2026.",
-      "kratki_opis": "Na završnici 23. Dana plesa u čast Miji Čorak Slavenskoj, sinoć je u Osnovnoj školi „Đuro Pilar” održana smotra plesnog stvaralaštva učenika osnovnih škola Brodsko-posavske županije „Radost pokreta”. Smotra se ove godine održala osmi put, a na pozornici je zaplesalo 154 učenika, od kojih su mnogi na",
-      "link": "https://www.slavonski-brod.hr/vijesti/17334-mladi-narastaji-plesom-cuvaju-sjecanje-na-miju-corak-slavensku",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/viber_slika_2026-10-14_08-54-38-856.jpg"
-    },
-    {
-      "naslov": "Radovi na izgradnji državne ceste DC431 su u tijeku",
-      "datum": "13. 10. 2026.",
-      "kratki_opis": "Na dionici državne ceste DC431 od Sjeverne vezne ceste do sjevernog ulaza u Industrijsku zonu „Đuro Đaković“ radovi su u tijeku. Građevinski strojevi na gradilištu rade već mjesec dana, otkako je izvođač radova, tvrtka STRABAG d.o.o., službeno uveden u posao. Nova prometnica bit će duljine oko 420 m",
-      "link": "https://www.slavonski-brod.hr/vijesti/17333-radovi-na-izgradnji-drzavne-ceste-dc431-su-u-tijeku",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1717_resize.jpeg"
-    },
-    {
-      "naslov": "Mjesec hrvatske knjige 2026.: Od priča do otkrića",
-      "datum": "13. 10. 2026.",
-      "kratki_opis": "Od 15. listopada do 15. studenoga u Slavonskom Brodu slavimo Mjesec hrvatske knjige. Pod geslom „Od priča do otkrića” Gradska knjižnica Slavonski Brod pripremila je mjesec dana ispunjen izložbama, promocijama knjiga, susretima s autorima i predavanjima. Sve nas podsjeća koliko je lijepo i važno čita",
-      "link": "https://www.slavonski-brod.hr/vijesti/17332-mjesec-hrvatske-knjige-2026-od-prica-do-otkrica",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/web_500x300_ljubicasta_resize.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 3. tjedan provođenja jesenske deratizacije",
-      "datum": "13. 10. 2026.",
-      "kratki_opis": "U razdoblju od 12. listopada (ponedjeljak) do 16. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provest će deratizaciju stambenih objekata, javnih zelenih površina, obala v",
-      "link": "https://www.slavonski-brod.hr/vijesti/17331-ddd-mjere-2026-godine-3-tjedan-provodenja-jesenske-deratizacije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/centar_grada_iz_daljeg_resize.jpg"
-    },
-    {
-      "naslov": "Memorijalna hodnja „bojnik Alfred Hill – za žrtve Vukovara” stigla u Slavonski Brod",
-      "datum": "13. 10. 2026.",
-      "kratki_opis": "Pukovnija vojne policije Ministarstva obrane Republike Hrvatske i ove je godine organizirala pješačku hodnju „5. Memorijalna hodnja bojnik Alfred Hill – za žrtve Vukovara”, kojom se odaje počast svim poginulim i preminulim pripadnicima vojne policije te svim hrvatskim braniteljima koji su u Domovins",
-      "link": "https://www.slavonski-brod.hr/vijesti/17330-memorijalna-hodnja-bojnik-alfred-hill-za-zrtve-vukovara-stigla-u-slavonski-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1713_resize.jpeg"
-    },
-    {
-      "naslov": "Nova tribina i travnjak: radovi na Stadionu kraj Save privedeni kraju",
-      "datum": "12. 10. 2026.",
-      "kratki_opis": "Tko je posljednjih mjeseci prolazio pokraj Stadiona kraj Save, mogao je gotovo iz tjedna u tjedan vidjeti kako se mijenja njegov izgled. Ono što je počelo kao gradilište danas je zapadni dio južne tribine koji izgleda onako kako smo ga zamislili, a pogled na zeleni travnjak koji je sada postavljen u",
-      "link": "https://www.slavonski-brod.hr/vijesti/17328-nova-tribina-i-travnjak-radovi-na-stadionu-kraj-save-privedeni-kraju",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1026_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
