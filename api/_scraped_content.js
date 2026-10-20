@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-19 11:19 UTC
+// Zadnje skrapanje: 2026-10-20 10:28 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-19T11:19:18.897Z",
+    "zadnje_azuriranje": "2026-10-20T10:28:10.943Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,11 +18,32 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
+      "naslov": "Podsjećamo: besplatan upis u Gradsku knjižnicu za prvašiće još do 31. listopada",
+      "datum": "20. 10. 2026.",
+      "kratki_opis": "Podsjećamo roditelje i učenike da je besplatan upis u Gradsku knjižnicu Slavonski Brod za sve učenike prvih razreda osnovnih i srednjih škola moguć još samo do 31. listopada 2026. godine. Besplatan je i upis i obnova članarine. Učenici prvih razreda osnovnih škola upisuju se na Dječjem odjelu knjižn",
+      "link": "https://www.slavonski-brod.hr/vijesti/17354-podsjecamo-besplatan-upis-u-gradsku-knjiznicu-za-prvasice-jos-do-31-listopada",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/779755646_1074237768638944_5936648596551680114_n.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 4. tjedan provođenja jesenske deratizacije",
+      "datum": "20. 10. 2026.",
+      "kratki_opis": "U razdoblju od 19. listopada (ponedjeljak) do 23. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17355-ddd-mjere-2026-godine-4-tjedan-provodenja-jesenske-deratizacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/prema_podvinju_i_brodskom_brdu_resize.jpg"
+    },
+    {
+      "naslov": "Plivanje za sve generacije na Gradskim bazenima",
+      "datum": "20. 10. 2026.",
+      "kratki_opis": "Na unutarnjim Gradskim bazenima Ustanova za gospodarenje športskim objektima provodi niz programa za djecu, odrasle i umirovljenike, a sve sugrađane pozivamo da ih iskoriste i uz plivanje i vježbanje u vodi brinu o svome zdravlju. Bazeni su otvoreni radnim danima od 6.30 do 22 sata, a vikendom i bla",
+      "link": "https://www.slavonski-brod.hr/vijesti/17353-plivanje-za-sve-generacije-na-gradskim-bazenima",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_0957_resize.jpeg"
+    },
+    {
       "naslov": "Slavonski Brod u 2027. ulazi uz pjesme Tomislava Bralića i klape Intrade",
       "datum": "19. 10. 2026.",
       "kratki_opis": "Središnji gradski trg u Slavonskom Brodu i ove će godine biti mjesto okupljanja u najljepšoj noći u godini. Na Trgu Ivane Brlić-Mažuranić Novu 2027. godinu Brođani i njihovi gosti dočekat će uz Tomislava Bralića i klapu Intrade. Malo je izvođača koji su klapsku pjesmu približili tako širokoj publici",
       "link": "https://www.slavonski-brod.hr/vijesti/17352-slavonski-brod-u-2027-ulazi-uz-pjesme-tomislava-bralica-i-klape-intrade",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Doek_nove_resize.jpg"
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Tomislav_Bralic_i_klapa_Intrade_-_2026_Danijela_Pedisic_1_resize.jpg"
     },
     {
       "naslov": "Svjetski dan kravate u Brodu: priča o hrvatskom simbolu identiteta",
@@ -58,27 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "U cilju provedbe daljnjih aktivnosti unapređenja kvalitete zraka i energetske učinkovitosti, ovih dana građani su na kućne adrese zaprimili anketne listiće. Anketa je rezultat sastanka o poboljšanju kvalitete zraka, održanog u veljači 2026. godine između predstavnika Ministarstva zaštite okoliša i z",
       "link": "https://www.slavonski-brod.hr/vijesti/17339-anketni-listici-o-nacinu-grijanja-stigli-na-adrese-gradana",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/jerzygorecki-smog-3125312_resize.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod ugostio veleposlanika Indije: uvaženi gost iz daleke zemlje posjetio naš grad",
-      "datum": "16. 10. 2026.",
-      "kratki_opis": "Ovoga petka u posjet Slavonskom Brodu stigao je Njegova Ekscelencija veleposlanik Indije u Republici Hrvatskoj, g. Arun Goel, u pratnji supruge, gđe Anite Goel. Dočekani su u Velikoj vijećnici Grada Slavonskog Broda, gdje ih je primio gradonačelnik Mirko Duspara. Na prijemu su, uz gradonačelnika i n",
-      "link": "https://www.slavonski-brod.hr/vijesti/17341-slavonski-brod-ugostio-veleposlanika-indije-uvazeni-gost-iz-daleke-zemlje-posjetio-nas-grad",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1783_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka povodom Svjetskog dana anestezije",
-      "datum": "16. 10. 2026.",
-      "kratki_opis": "Svjetski dan anestezije obilježavamo 16. listopada, u spomen na dan 1846. godine kada je u Bostonu prvi put javno i uspješno izvedena operacija u općoj anesteziji. Taj je događaj zauvijek promijenio medicinu. Operacije koje su prije bile mučne i opasne postale su moguće i sigurnije za pacijente. Ane",
-      "link": "https://www.slavonski-brod.hr/vijesti/17342-gradonacelnikova-cestitka-povodom-svjetskog-dana-anestezije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Svjetski_dan_anesteziologa_resize.jpg"
-    },
-    {
-      "naslov": "Novi paketi stigli u deset domova: obitelji s najmlađima dobile opremu za prve mjesece",
-      "datum": "16. 10. 2026.",
-      "kratki_opis": "Deset obitelji iz Slavonskog Broda danas je preuzelo pakete opreme za svoju novorođenčad. Mjeru provodimo od 2018. godine, a cilj nam je da roditeljima barem malo olakšamo početak života s bebom, kad se potreba za novim stvarima nakuplja brže nego što se stigne razmisliti. Pakete je uručila zamjenic",
-      "link": "https://www.slavonski-brod.hr/vijesti/17340-novi-paketi-stigli-u-deset-domova-obitelji-s-najmladima-dobile-opremu-za-prve-mjesece",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1750_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
