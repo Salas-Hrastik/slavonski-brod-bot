@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-20 10:28 UTC
+// Zadnje skrapanje: 2026-10-21 10:38 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-20T10:28:10.943Z",
+    "zadnje_azuriranje": "2026-10-21T10:38:58.091Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Tvrđava Brod ove subote u znaku znanstvene fantastike: X-e-con u Edukacijsko-multimedijalnom centru",
+      "datum": "21. 10. 2026.",
+      "kratki_opis": "Slavonski Brod ovaj tjedan ugošćuje šestu konvenciju znanstvene fantastike i fantastike X-e-con. Konvenciju organiziraju Astronomsko društvo Gea x i SF skupina Orion, a ovogodišnja tema su poznate znanstvenofantastične franšize. Program traje od utorka do subote na više lokacija u Slavonskom Brodu i",
+      "link": "https://www.slavonski-brod.hr/vijesti/17359-tvrdava-brod-ove-subote-u-znaku-znanstvene-fantastike-x-e-con-u-edukacijsko-multimedijalnom-centru",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_5128_resize.jpeg"
+    },
+    {
+      "naslov": "Slavonski Brod u TOP 10 gradova po ulaganju u obitelj i djecu",
+      "datum": "21. 10. 2026.",
+      "kratki_opis": "Briga o obiteljima i djeci jedan je od temelja razvoja svakoga grada, a Slavonski Brod tom području već godinama posvećuje posebnu pažnju. Da taj smjer daje rezultate, potvrđuje i najnovija analiza portala Gradonačelnik.hr, prema kojoj je Slavonski Brod među deset hrvatskih gradova koji najviše izdv",
+      "link": "https://www.slavonski-brod.hr/vijesti/17358-slavonski-brod-u-top-10-gradova-po-ulaganju-u-obitelj-i-djecu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/familija1.png"
+    },
+    {
+      "naslov": "U tijeku izrada Akcijskog plana za poboljšanje kvalitete zraka",
+      "datum": "20. 10. 2026.",
+      "kratki_opis": "Kvaliteta zraka u našem gradu proces je na kojem kontinuirano radimo. U sklopu toga u tijeku je izrada Akcijskog plana za poboljšanje kvalitete zraka, dokumenta u kojem se navodi što treba učiniti da zrak bude čišći na području gdje su prekoračene dopuštene granične vrijednosti onečišćujućih tvari. ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17356-akcijski-plan-za-poboljsanje-kvalitete-zraka-cekamo-mjere-drzavnog-inspektorata",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/grad_sa_brda_resize.jpg"
+    },
     {
       "naslov": "Podsjećamo: besplatan upis u Gradsku knjižnicu za prvašiće još do 31. listopada",
       "datum": "20. 10. 2026.",
@@ -58,27 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Ove subote u hotelu Park u središtu Slavonskog Broda održava se 2. međunarodni šahovski festival mladih „Šahovski Brod”. Nakon 30 godina bez ovakve manifestacije, festival je prošle godine ponovno vraćen u naš grad, a ove godine organizatori nastavljaju tamo gdje su stali. U Slavonski Brod stigla su",
       "link": "https://www.slavonski-brod.hr/vijesti/17347-sahovski-festival-mladih-nakon-30-godina-postaje-tradicija",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1908_resize.jpeg"
-    },
-    {
-      "naslov": "Peti Pivo Fest u punom jeku u istočnim kazamatima Tvrđave Brod",
-      "datum": "16. 10. 2026.",
-      "kratki_opis": "Ovog petka u istočnim kazamatima Tvrđave Brod održava se peto izdanje Pivo Festa. Jesenska večer ponovno okuplja ljubitelje craft piva, dobre glazbe i druženja, a ulaz je slobodan za sve posjetitelje. Večer je otvorila Gradska limena glazba „Željezničar“ Slavonski Brod, koja je svojim nastupom podig",
-      "link": "https://www.slavonski-brod.hr/vijesti/17346-zlatni-okusi-u-kazamatima-peti-pivo-fest-okupio-ljubitelje-craft-piva",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1865_resize.jpeg"
-    },
-    {
-      "naslov": "Liječnici i medicinske sestre dva dana u Brodu o prevenciji srčanih bolesti i dijabetesa",
-      "datum": "16. 10. 2026.",
-      "kratki_opis": "U Edukacijsko-multimedijalnom centru u Slavonskom Brodu 16. i 17. listopada 2026. održava se 7. MRAKK simpozij s međunarodnim sudjelovanjem, posvećen kardiovaskularnim rizicima i šećernoj bolesti, njihovoj prevenciji i liječenju. Uz simpozij se održava i 4. tečaj prve kategorije za liječnike i medic",
-      "link": "https://www.slavonski-brod.hr/vijesti/17345-lijecnici-i-medicinske-sestre-dva-dana-u-brodu-o-prevenciji-srcanih-bolesti-i-dijabetesa",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1831_resize.jpeg"
-    },
-    {
-      "naslov": "Ispunite anketu i pomozite u kreiranju novih mjera za čišći zrak",
-      "datum": "16. 10. 2026.",
-      "kratki_opis": "U cilju provedbe daljnjih aktivnosti unapređenja kvalitete zraka i energetske učinkovitosti, ovih dana građani su na kućne adrese zaprimili anketne listiće. Anketa je rezultat sastanka o poboljšanju kvalitete zraka, održanog u veljači 2026. godine između predstavnika Ministarstva zaštite okoliša i z",
-      "link": "https://www.slavonski-brod.hr/vijesti/17339-anketni-listici-o-nacinu-grijanja-stigli-na-adrese-gradana",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/jerzygorecki-smog-3125312_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
