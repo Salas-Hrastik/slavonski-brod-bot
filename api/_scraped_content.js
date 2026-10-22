@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-21 10:38 UTC
+// Zadnje skrapanje: 2026-10-22 10:42 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-21T10:38:58.091Z",
+    "zadnje_azuriranje": "2026-10-22T10:42:07.253Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Gradonačelnik primio prvake Hrvatske iz Kajak kanu kluba Marsonia",
+      "datum": "22. 10. 2026.",
+      "kratki_opis": "Gradonačelnik Mirko Duspara primio je danas u Velikoj vijećnici sportaše, trenere i članove Kajak kanu kluba Marsonia povodom njihovih izvrsnih rezultata na Prvenstvu Hrvatske za seniore. Marsonia je osvojila naslov seniorskog prvaka Hrvatske, koji se nakon tri godine vratio u Slavonski Brod. Brodsk",
+      "link": "https://www.slavonski-brod.hr/vijesti/17362-gradonacelnik-primio-prvake-hrvatske-iz-kajak-kanu-kluba-marsonia",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1990_resize.jpeg"
+    },
+    {
+      "naslov": "Učenici Osnovne škole „Đuro Pilar“ na radionicama programa „Baštion EDU“",
+      "datum": "21. 10. 2026.",
+      "kratki_opis": "U Edukacijsko-multimedijalnom centru u Tvrđavi Brod danas smo održali još dvije radionice programa „Baštion EDU“, na kojima su sudjelovali učenici Osnovne škole „Đuro Pilar“. „Baštion EDU“ program je iskustvenog učenja o baštini namijenjen djeci osnovnoškolske dobi. Provodimo ga kroz Centar za nemat",
+      "link": "https://www.slavonski-brod.hr/vijesti/17361-ucenici-os-duro-pilar-na-radionicama-programa-bastion-edu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/WhatsApp_Image_2026-10-21_at_111331_3.jpeg"
+    },
     {
       "naslov": "Tvrđava Brod ove subote u znaku znanstvene fantastike: X-e-con u Edukacijsko-multimedijalnom centru",
       "datum": "21. 10. 2026.",
@@ -65,20 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Središnji gradski trg u Slavonskom Brodu i ove će godine biti mjesto okupljanja u najljepšoj noći u godini. Na Trgu Ivane Brlić-Mažuranić Novu 2027. godinu Brođani i njihovi gosti dočekat će uz Tomislava Bralića i klapu Intrade. Malo je izvođača koji su klapsku pjesmu približili tako širokoj publici",
       "link": "https://www.slavonski-brod.hr/vijesti/17352-slavonski-brod-u-2027-ulazi-uz-pjesme-tomislava-bralica-i-klape-intrade",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Tomislav_Bralic_i_klapa_Intrade_-_2026_Danijela_Pedisic_1_resize.jpg"
-    },
-    {
-      "naslov": "Svjetski dan kravate u Brodu: priča o hrvatskom simbolu identiteta",
-      "datum": "18. 10. 2026.",
-      "kratki_opis": "Šetnja gradom, razgled izložbe i projekcija filma bili su program kojim je ove nedjelje obilježen Svjetski dan kravate. Sugrađani i gosti grad su upoznali kao Cravatten Statt, uz pratnju licenciranog turističkog vodiča. Okupljanje je bilo ispred Turističko-informativnog centra na Trgu Ivane Brlić Ma",
-      "link": "https://www.slavonski-brod.hr/vijesti/17348-setnjom-kroz-cravatten-statt-obiljezen-svjetski-dan-kravate",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_5655.jpeg"
-    },
-    {
-      "naslov": "Šahovski festival mladih ponovno okupio male šahiste u Slavonskom Brodu",
-      "datum": "17. 10. 2026.",
-      "kratki_opis": "Ove subote u hotelu Park u središtu Slavonskog Broda održava se 2. međunarodni šahovski festival mladih „Šahovski Brod”. Nakon 30 godina bez ovakve manifestacije, festival je prošle godine ponovno vraćen u naš grad, a ove godine organizatori nastavljaju tamo gdje su stali. U Slavonski Brod stigla su",
-      "link": "https://www.slavonski-brod.hr/vijesti/17347-sahovski-festival-mladih-nakon-30-godina-postaje-tradicija",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1908_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
