@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-22 10:42 UTC
+// Zadnje skrapanje: 2026-10-23 10:34 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-22T10:42:07.253Z",
+    "zadnje_azuriranje": "2026-10-23T10:34:11.523Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,55 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Njihova hrabrost živi i danas: 35. obljetnica osnutka „Šiminih anđela pakla”",
+      "datum": "23. 10. 2026.",
+      "kratki_opis": "Prije 35 godina, u najtežim danima za našu domovinu, osnovana je Specijalna jedinica policije „Šimini anđeli pakla” Policijske uprave brodsko-posavske. Njezini su pripadnici bili među prvima koji su stali u obranu Slavonskog Broda i Hrvatske. Mnogi od njih ugradili su svoje živote u slobodu koju dan",
+      "link": "https://www.slavonski-brod.hr/vijesti/17371-njihova-hrabrost-zivi-i-danas-35-obljetnica-osnutka-siminih-andela-pakla",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2061_resize.jpeg"
+    },
+    {
+      "naslov": "Za najmlađe Brođane spremni smo od prvog dana: još pet obitelji preuzelo opremu za bebe",
+      "datum": "23. 10. 2026.",
+      "kratki_opis": "Ova godina u Slavonskom Brodu donosi više beba nego što smo navikli, pa se gotovo svaki tjedan susrećemo s novim mamama i tatama. Danas je opremu za svoju novorođenčad preuzelo još pet obitelji, a pakete im je uručila zamjenica gradonačelnika Marina Martić Puača. Svaka obitelj dobila je opremu vrije",
+      "link": "https://www.slavonski-brod.hr/vijesti/17370-za-najmlade-brodane-spremni-smo-od-prvog-dana-jos-pet-obitelji-preuzelo-opremu-za-bebe",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/joomla_bebe.jpg"
+    },
+    {
+      "naslov": "Objavljeni javni pozivi za izbor poslodavca godine za osobe s invaliditetom i za godišnju volontersku nagradu",
+      "datum": "23. 10. 2026.",
+      "kratki_opis": "Objavili smo dva javna poziva kojima želimo zahvaliti onima koji svojim radom i zalaganjem čine naš grad otvorenijim i boljim mjestom za sve. Prvi je javni poziv za izbor poslodavca godine za osobe s invaliditetom za 2026. godinu. Ovaj izbor provodimo od 2011. godine kako bismo istaknuli poslodavce ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17368-objavljeni-javni-pozivi-za-izbor-poslodavca-godine-za-osobe-s-invaliditetom-i-za-godisnju-volontersku-nagradu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/poslodavac.png"
+    },
+    {
+      "naslov": "Slike bračnog para Premuž u čast 80. obljetnice Matice hrvatskih umirovljenika",
+      "datum": "23. 10. 2026.",
+      "kratki_opis": "U izložbenoj dvorani Muzeja Brodskog Posavlja otvorena je izložba slika bračnog i umjetničkog para Vlatke i Antuna Premuža. Izložba je priređena povodom 80. obljetnice osnutka Matice hrvatskih umirovljenika grada Slavonskog Broda, koja djeluje od 1946. godine. Otvorenju izložbe nazočila je zamjenica",
+      "link": "https://www.slavonski-brod.hr/vijesti/17369-slike-bracnog-para-premuz-u-cast-80-obljetnice-matice-hrvatskih-umirovljenika",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovna22.jpeg"
+    },
+    {
+      "naslov": "Večeras prva europska košarkaška utakmica u Slavonskom Brodu – pozivamo vas da podržite naše košarkašice",
+      "datum": "22. 10. 2026.",
+      "kratki_opis": "Večeras, 22. listopada, Slavonski Brod dobiva novu stranicu svoje sportske povijesti. Ženski košarkaški klub „Brod na Savi“ igra prvu europsku košarkašku utakmicu u našem gradu, a protivnice će im biti košarkašice mađarskog kluba DVTK. Utakmica počinje u 20 sati u Sportskoj dvorani „Vijuš“, Stanka V",
+      "link": "https://www.slavonski-brod.hr/vijesti/17367-veceras-prva-europska-kosarkaska-utakmica-u-slavonskom-brodu-pozivamo-vas-da-podrzite-nase-kosarkasice",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/858075327_1779424864183793_5580330440053869237_n.jpg"
+    },
+    {
+      "naslov": "Borba za čist zrak",
+      "datum": "22. 10. 2026.",
+      "kratki_opis": "Zbog velikog interesa javnosti za kvalitetu zraka u našem gradu objavljujemo cjelovitu dokumentaciju dodatnih mjerenja koja smo provodili tijekom 2025. godine. Sažetak stručne analize tih mjerenja objavili smo 2. listopada ove godine. Budući da je cjelovita analiza opsežna i pisana stručnim jezikom,",
+      "link": "https://www.slavonski-brod.hr/vijesti/17366-borba-za-cist-zrak",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/tvrdava_resize.jpg"
+    },
+    {
+      "naslov": "Najam velikih dvorana preuzima gradsko društvo Brod-Turist, a vijeća mjesnih odbora, udruge i građani zadržavaju svoj pr",
+      "datum": "22. 10. 2026.",
+      "kratki_opis": "Grad Slavonski Brod pokrenuo je reorganizaciju sustava upravljanja, održavanja i korištenja mjesnih domova, kojom nastavlja politiku sustavnog ulaganja u prostore u kojima se okuplja lokalna zajednica. Cilj je da mjesni domovi u svakom dijelu grada budu uređeni, redovito održavani i dostupni svim Br",
+      "link": "https://www.slavonski-brod.hr/vijesti/17363-najam-velikih-dvorana-preuzima-gradsko-drustvo-brod-turist-a-vijeca-mjesnih-odbora-udruge-i-gradani-zadrzavaju-svoj-prostor-za-sastanke-zborove-i-aktivnosti-u-zajednici",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1402_resize.jpeg"
+    },
     {
       "naslov": "Gradonačelnik primio prvake Hrvatske iz Kajak kanu kluba Marsonia",
       "datum": "22. 10. 2026.",
@@ -37,48 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonski Brod ovaj tjedan ugošćuje šestu konvenciju znanstvene fantastike i fantastike X-e-con. Konvenciju organiziraju Astronomsko društvo Gea x i SF skupina Orion, a ovogodišnja tema su poznate znanstvenofantastične franšize. Program traje od utorka do subote na više lokacija u Slavonskom Brodu i",
       "link": "https://www.slavonski-brod.hr/vijesti/17359-tvrdava-brod-ove-subote-u-znaku-znanstvene-fantastike-x-e-con-u-edukacijsko-multimedijalnom-centru",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_5128_resize.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod u TOP 10 gradova po ulaganju u obitelj i djecu",
-      "datum": "21. 10. 2026.",
-      "kratki_opis": "Briga o obiteljima i djeci jedan je od temelja razvoja svakoga grada, a Slavonski Brod tom području već godinama posvećuje posebnu pažnju. Da taj smjer daje rezultate, potvrđuje i najnovija analiza portala Gradonačelnik.hr, prema kojoj je Slavonski Brod među deset hrvatskih gradova koji najviše izdv",
-      "link": "https://www.slavonski-brod.hr/vijesti/17358-slavonski-brod-u-top-10-gradova-po-ulaganju-u-obitelj-i-djecu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/familija1.png"
-    },
-    {
-      "naslov": "U tijeku izrada Akcijskog plana za poboljšanje kvalitete zraka",
-      "datum": "20. 10. 2026.",
-      "kratki_opis": "Kvaliteta zraka u našem gradu proces je na kojem kontinuirano radimo. U sklopu toga u tijeku je izrada Akcijskog plana za poboljšanje kvalitete zraka, dokumenta u kojem se navodi što treba učiniti da zrak bude čišći na području gdje su prekoračene dopuštene granične vrijednosti onečišćujućih tvari. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17356-akcijski-plan-za-poboljsanje-kvalitete-zraka-cekamo-mjere-drzavnog-inspektorata",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/grad_sa_brda_resize.jpg"
-    },
-    {
-      "naslov": "Podsjećamo: besplatan upis u Gradsku knjižnicu za prvašiće još do 31. listopada",
-      "datum": "20. 10. 2026.",
-      "kratki_opis": "Podsjećamo roditelje i učenike da je besplatan upis u Gradsku knjižnicu Slavonski Brod za sve učenike prvih razreda osnovnih i srednjih škola moguć još samo do 31. listopada 2026. godine. Besplatan je i upis i obnova članarine. Učenici prvih razreda osnovnih škola upisuju se na Dječjem odjelu knjižn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17354-podsjecamo-besplatan-upis-u-gradsku-knjiznicu-za-prvasice-jos-do-31-listopada",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/779755646_1074237768638944_5936648596551680114_n.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 4. tjedan provođenja jesenske deratizacije",
-      "datum": "20. 10. 2026.",
-      "kratki_opis": "U razdoblju od 19. listopada (ponedjeljak) do 23. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provesti će deratizaciju stambenih objekata, javnih zelenih površina, obala ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17355-ddd-mjere-2026-godine-4-tjedan-provodenja-jesenske-deratizacije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/prema_podvinju_i_brodskom_brdu_resize.jpg"
-    },
-    {
-      "naslov": "Plivanje za sve generacije na Gradskim bazenima",
-      "datum": "20. 10. 2026.",
-      "kratki_opis": "Na unutarnjim Gradskim bazenima Ustanova za gospodarenje športskim objektima provodi niz programa za djecu, odrasle i umirovljenike, a sve sugrađane pozivamo da ih iskoriste i uz plivanje i vježbanje u vodi brinu o svome zdravlju. Bazeni su otvoreni radnim danima od 6.30 do 22 sata, a vikendom i bla",
-      "link": "https://www.slavonski-brod.hr/vijesti/17353-plivanje-za-sve-generacije-na-gradskim-bazenima",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_0957_resize.jpeg"
-    },
-    {
-      "naslov": "Slavonski Brod u 2027. ulazi uz pjesme Tomislava Bralića i klape Intrade",
-      "datum": "19. 10. 2026.",
-      "kratki_opis": "Središnji gradski trg u Slavonskom Brodu i ove će godine biti mjesto okupljanja u najljepšoj noći u godini. Na Trgu Ivane Brlić-Mažuranić Novu 2027. godinu Brođani i njihovi gosti dočekat će uz Tomislava Bralića i klapu Intrade. Malo je izvođača koji su klapsku pjesmu približili tako širokoj publici",
-      "link": "https://www.slavonski-brod.hr/vijesti/17352-slavonski-brod-u-2027-ulazi-uz-pjesme-tomislava-bralica-i-klape-intrade",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Tomislav_Bralic_i_klapa_Intrade_-_2026_Danijela_Pedisic_1_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
