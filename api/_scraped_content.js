@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-23 10:34 UTC
+// Zadnje skrapanje: 2026-10-24 09:51 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-23T10:34:11.523Z",
+    "zadnje_azuriranje": "2026-10-24T09:51:38.860Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Otvorene prijave za zakup kućica na 18. Božićnom sajmu",
+      "datum": "23. 10. 2026.",
+      "kratki_opis": "Ovogodišnji, 18. Božićni sajam u sklopu Adventa u Slavonskom Brodu bit će održan od 28. studenoga do 31. prosinca 2026. godine na Trgu Ivane Brlić-Mažuranić i na Tvrđavi Brod. Izvršni organizator sajma, Brod-Turist, objavio je poziv za zakup kućica za ugostiteljstvo i prigodnu prodaju. Pozivamo sve ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17373-otvorene-prijave-za-zakup-kucica-na-18-bozicnom-sajmu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/bozicni_sajam_izlagaci_resize.jpg"
+    },
     {
       "naslov": "Njihova hrabrost živi i danas: 35. obljetnica osnutka „Šiminih anđela pakla”",
       "datum": "23. 10. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "U Edukacijsko-multimedijalnom centru u Tvrđavi Brod danas smo održali još dvije radionice programa „Baštion EDU“, na kojima su sudjelovali učenici Osnovne škole „Đuro Pilar“. „Baštion EDU“ program je iskustvenog učenja o baštini namijenjen djeci osnovnoškolske dobi. Provodimo ga kroz Centar za nemat",
       "link": "https://www.slavonski-brod.hr/vijesti/17361-ucenici-os-duro-pilar-na-radionicama-programa-bastion-edu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/WhatsApp_Image_2026-10-21_at_111331_3.jpeg"
-    },
-    {
-      "naslov": "Tvrđava Brod ove subote u znaku znanstvene fantastike: X-e-con u Edukacijsko-multimedijalnom centru",
-      "datum": "21. 10. 2026.",
-      "kratki_opis": "Slavonski Brod ovaj tjedan ugošćuje šestu konvenciju znanstvene fantastike i fantastike X-e-con. Konvenciju organiziraju Astronomsko društvo Gea x i SF skupina Orion, a ovogodišnja tema su poznate znanstvenofantastične franšize. Program traje od utorka do subote na više lokacija u Slavonskom Brodu i",
-      "link": "https://www.slavonski-brod.hr/vijesti/17359-tvrdava-brod-ove-subote-u-znaku-znanstvene-fantastike-x-e-con-u-edukacijsko-multimedijalnom-centru",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_5128_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
