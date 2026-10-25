@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-24 09:51 UTC
+// Zadnje skrapanje: 2026-10-25 10:12 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-24T09:51:38.860Z",
+    "zadnje_azuriranje": "2026-10-25T10:12:19.979Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Lička večer po 29. put spojila Liku i Slavoniju",
+      "datum": "24. 10. 2026.",
+      "kratki_opis": "Slavonski Brod ovog je petka ponovno ugostio „Ličku večer“, tradicionalnu manifestaciju koju Zavičajna udruga Ličana „Vrilo mudrosti“ organizira već 29. godinu zaredom. Dvorana „Prestige“ bila je i ovaj put ispunjena do posljednjeg mjesta, a Brođani i njihovi gosti iz raznih dijelova Hrvatske okupil",
+      "link": "https://www.slavonski-brod.hr/vijesti/17376-licka-vecer-po-29-put-spojila-liku-i-slavoniju",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnalicka_resize.jpg"
+    },
     {
       "naslov": "Otvorene prijave za zakup kućica na 18. Božićnom sajmu",
       "datum": "23. 10. 2026.",
@@ -79,13 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Gradonačelnik Mirko Duspara primio je danas u Velikoj vijećnici sportaše, trenere i članove Kajak kanu kluba Marsonia povodom njihovih izvrsnih rezultata na Prvenstvu Hrvatske za seniore. Marsonia je osvojila naslov seniorskog prvaka Hrvatske, koji se nakon tri godine vratio u Slavonski Brod. Brodsk",
       "link": "https://www.slavonski-brod.hr/vijesti/17362-gradonacelnik-primio-prvake-hrvatske-iz-kajak-kanu-kluba-marsonia",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1990_resize.jpeg"
-    },
-    {
-      "naslov": "Učenici Osnovne škole „Đuro Pilar“ na radionicama programa „Baštion EDU“",
-      "datum": "21. 10. 2026.",
-      "kratki_opis": "U Edukacijsko-multimedijalnom centru u Tvrđavi Brod danas smo održali još dvije radionice programa „Baštion EDU“, na kojima su sudjelovali učenici Osnovne škole „Đuro Pilar“. „Baštion EDU“ program je iskustvenog učenja o baštini namijenjen djeci osnovnoškolske dobi. Provodimo ga kroz Centar za nemat",
-      "link": "https://www.slavonski-brod.hr/vijesti/17361-ucenici-os-duro-pilar-na-radionicama-programa-bastion-edu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/WhatsApp_Image_2026-10-21_at_111331_3.jpeg"
     }
   ],
   "manifestacije_aktualne": [
