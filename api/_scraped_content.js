@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-25 10:12 UTC
+// Zadnje skrapanje: 2026-10-26 11:35 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-25T10:12:19.979Z",
+    "zadnje_azuriranje": "2026-10-26T11:35:26.783Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Veleposlanik Savezne Republike Njemačke posjetio Slavonski Brod",
+      "datum": "26. 10. 2026.",
+      "kratki_opis": "Ovog ponedjeljka u Slavonskom Brodu ugostili smo veleposlanika Savezne Republike Njemačke u Republici Hrvatskoj, prof. dr. Pascala Hectora. Veleposlanika i članove njegove delegacije u Velikoj vijećnici Grada primio je gradonačelnik Mirko Duspara. Uz gradonačelnika, na sastanku su sudjelovali zamjen",
+      "link": "https://www.slavonski-brod.hr/vijesti/17379-veleposlanik-savezne-republike-njemacke-posjetio-slavonski-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2196_resize.jpeg"
+    },
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Dana dobrovoljnih darivatelja krvi",
+      "datum": "25. 10. 2026.",
+      "kratki_opis": "Poštovane dobrovoljne darivateljice i dobrovoljni darivatelji krvi, današnji dan podsjeća nas na 1953. godinu, kada je Hrvatski Crveni križ proveo prvu akciju dobrovoljnog darivanja krvi. Od tada do danas darivanje krvi ostalo je jedan od najljepših primjera humanosti, čin kojim se izravno spašavaju",
+      "link": "https://www.slavonski-brod.hr/vijesti/17377-gradonacelnikova-cestitka-povodom-dana-dobrovoljnih-darivatelja-krvi",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/FINAL_KRV.png"
+    },
+    {
+      "naslov": "Udruga „Nada“ proslavila 25 godina djelovanja donatorskom večeri",
+      "datum": "24. 10. 2026.",
+      "kratki_opis": "Udruga žena operiranih od raka dojke „Nada“ u subotu 24. listopada, u Svečanoj dvorani Kristal u Slavonskom Brodu priredila je večer za pamćenje. Donatorskom zabavom obilježeno je 25 godina osnutka i djelovanja Udruge, koja svoj rad provodi pod okriljem Lige protiv raka Brodsko-posavske županije. Ve",
+      "link": "https://www.slavonski-brod.hr/vijesti/17378-udruga-nada-proslavila-25-godina-djelovanja-donatorskom-veceri",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/NADANASLOVNA_resize.jpeg"
+    },
     {
       "naslov": "Lička večer po 29. put spojila Liku i Slavoniju",
       "datum": "24. 10. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Večeras, 22. listopada, Slavonski Brod dobiva novu stranicu svoje sportske povijesti. Ženski košarkaški klub „Brod na Savi“ igra prvu europsku košarkašku utakmicu u našem gradu, a protivnice će im biti košarkašice mađarskog kluba DVTK. Utakmica počinje u 20 sati u Sportskoj dvorani „Vijuš“, Stanka V",
       "link": "https://www.slavonski-brod.hr/vijesti/17367-veceras-prva-europska-kosarkaska-utakmica-u-slavonskom-brodu-pozivamo-vas-da-podrzite-nase-kosarkasice",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/858075327_1779424864183793_5580330440053869237_n.jpg"
-    },
-    {
-      "naslov": "Borba za čist zrak",
-      "datum": "22. 10. 2026.",
-      "kratki_opis": "Zbog velikog interesa javnosti za kvalitetu zraka u našem gradu objavljujemo cjelovitu dokumentaciju dodatnih mjerenja koja smo provodili tijekom 2025. godine. Sažetak stručne analize tih mjerenja objavili smo 2. listopada ove godine. Budući da je cjelovita analiza opsežna i pisana stručnim jezikom,",
-      "link": "https://www.slavonski-brod.hr/vijesti/17366-borba-za-cist-zrak",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/tvrdava_resize.jpg"
-    },
-    {
-      "naslov": "Najam velikih dvorana preuzima gradsko društvo Brod-Turist, a vijeća mjesnih odbora, udruge i građani zadržavaju svoj pr",
-      "datum": "22. 10. 2026.",
-      "kratki_opis": "Grad Slavonski Brod pokrenuo je reorganizaciju sustava upravljanja, održavanja i korištenja mjesnih domova, kojom nastavlja politiku sustavnog ulaganja u prostore u kojima se okuplja lokalna zajednica. Cilj je da mjesni domovi u svakom dijelu grada budu uređeni, redovito održavani i dostupni svim Br",
-      "link": "https://www.slavonski-brod.hr/vijesti/17363-najam-velikih-dvorana-preuzima-gradsko-drustvo-brod-turist-a-vijeca-mjesnih-odbora-udruge-i-gradani-zadrzavaju-svoj-prostor-za-sastanke-zborove-i-aktivnosti-u-zajednici",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1402_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnik primio prvake Hrvatske iz Kajak kanu kluba Marsonia",
-      "datum": "22. 10. 2026.",
-      "kratki_opis": "Gradonačelnik Mirko Duspara primio je danas u Velikoj vijećnici sportaše, trenere i članove Kajak kanu kluba Marsonia povodom njihovih izvrsnih rezultata na Prvenstvu Hrvatske za seniore. Marsonia je osvojila naslov seniorskog prvaka Hrvatske, koji se nakon tri godine vratio u Slavonski Brod. Brodsk",
-      "link": "https://www.slavonski-brod.hr/vijesti/17362-gradonacelnik-primio-prvake-hrvatske-iz-kajak-kanu-kluba-marsonia",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_1990_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
