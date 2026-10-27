@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-26 11:35 UTC
+// Zadnje skrapanje: 2026-10-27 11:06 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-26T11:35:26.783Z",
+    "zadnje_azuriranje": "2026-10-27T11:06:15.789Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Grad dodjeljuje 29 stipendija učenicima koji se školuju za deficitarna zanimanja",
+      "datum": "27. 10. 2026.",
+      "kratki_opis": "Grad Slavonski Brod i ove godine ulaže u mlade koji su odabrali zanimanja koja su našem gradu i gospodarstvu najpotrebnija. Raspisan je Natječaj za dodjelu stipendija učenicima koji se obrazuju za deficitarna zanimanja za školsku 2026./2027. godinu, a budući da je rok za prijavu 31. listopada 2026. ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17384-grad-dodjeljuje-29-stipendija-ucenicima-koji-se-skoluju-za-deficitarna-zanimanja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/stipendije-ucenici-deficitarna-zanimanja-obrtnici.jpg"
+    },
+    {
+      "naslov": "Kazalište otvoreno svima: počeo projekt „Inkluzivna kazališna bajka”",
+      "datum": "27. 10. 2026.",
+      "kratki_opis": "U Hrvatskom domu danas je održana uvodna konferencija projekta „Inkluzivna kazališna bajka”. Projekt provodi Kazališno-koncertna dvorana Ivana Brlić-Mažuranić u partnerstvu s Udrugom osoba s intelektualnim teškoćama Regoč Slavonski Brod. Konferenciji je nazočila zamjenica gradonačelnika Marina Marti",
+      "link": "https://www.slavonski-brod.hr/vijesti/17383-predstavljen-projekt-inkluzivna-kazalisna-bajka",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2239_resize.jpeg"
+    },
     {
       "naslov": "Veleposlanik Savezne Republike Njemačke posjetio Slavonski Brod",
       "datum": "26. 10. 2026.",
@@ -72,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Objavili smo dva javna poziva kojima želimo zahvaliti onima koji svojim radom i zalaganjem čine naš grad otvorenijim i boljim mjestom za sve. Prvi je javni poziv za izbor poslodavca godine za osobe s invaliditetom za 2026. godinu. Ovaj izbor provodimo od 2011. godine kako bismo istaknuli poslodavce ",
       "link": "https://www.slavonski-brod.hr/vijesti/17368-objavljeni-javni-pozivi-za-izbor-poslodavca-godine-za-osobe-s-invaliditetom-i-za-godisnju-volontersku-nagradu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/poslodavac.png"
-    },
-    {
-      "naslov": "Slike bračnog para Premuž u čast 80. obljetnice Matice hrvatskih umirovljenika",
-      "datum": "23. 10. 2026.",
-      "kratki_opis": "U izložbenoj dvorani Muzeja Brodskog Posavlja otvorena je izložba slika bračnog i umjetničkog para Vlatke i Antuna Premuža. Izložba je priređena povodom 80. obljetnice osnutka Matice hrvatskih umirovljenika grada Slavonskog Broda, koja djeluje od 1946. godine. Otvorenju izložbe nazočila je zamjenica",
-      "link": "https://www.slavonski-brod.hr/vijesti/17369-slike-bracnog-para-premuz-u-cast-80-obljetnice-matice-hrvatskih-umirovljenika",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovna22.jpeg"
-    },
-    {
-      "naslov": "Večeras prva europska košarkaška utakmica u Slavonskom Brodu – pozivamo vas da podržite naše košarkašice",
-      "datum": "22. 10. 2026.",
-      "kratki_opis": "Večeras, 22. listopada, Slavonski Brod dobiva novu stranicu svoje sportske povijesti. Ženski košarkaški klub „Brod na Savi“ igra prvu europsku košarkašku utakmicu u našem gradu, a protivnice će im biti košarkašice mađarskog kluba DVTK. Utakmica počinje u 20 sati u Sportskoj dvorani „Vijuš“, Stanka V",
-      "link": "https://www.slavonski-brod.hr/vijesti/17367-veceras-prva-europska-kosarkaska-utakmica-u-slavonskom-brodu-pozivamo-vas-da-podrzite-nase-kosarkasice",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/858075327_1779424864183793_5580330440053869237_n.jpg"
     }
   ],
   "manifestacije_aktualne": [
