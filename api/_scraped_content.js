@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-27 11:06 UTC
+// Zadnje skrapanje: 2026-10-28 11:42 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-27T11:06:15.789Z",
+    "zadnje_azuriranje": "2026-10-28T11:42:05.383Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Učenici u Edukacijsko - multimedijalnom centru otkrivaju bogatstvo nematerijalne kulturne baštine",
+      "datum": "28. 10. 2026.",
+      "kratki_opis": "U Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu ovaj se tjedan održava niz edukativnih radionica za učenike osnovnih škola, kroz koje djeca na zanimljiv i zabavan način upoznaju nematerijalna kulturna dobra našega kraja. Prva radionica održana je u ponedjeljak, 26. li",
+      "link": "https://www.slavonski-brod.hr/vijesti/17391-ucenici-u-edukacijsko-multimedijalnom-centru-otkrivaju-bogatstvo-nematerijalne-kulturne-bastine",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnaemc.jpg"
+    },
+    {
+      "naslov": "Prijave za 29. Katarinski sajam otvorene su do 6. studenoga",
+      "datum": "28. 10. 2026.",
+      "kratki_opis": "Podsjećamo sve zainteresirane izlagače da su prijave za 29. Katarinski sajam, sajam obrtništva, malog i srednjeg poduzetništva, još uvijek u tijeku, i to do petka, 6. studenoga 2026. godine. Sajam će se održati od 20. do 22. studenoga (petak-nedjelja) u unutarnjem i vanjskom prostoru Sportske dvoran",
+      "link": "https://www.slavonski-brod.hr/vijesti/17390-prijave-za-29-katarinski-sajam-otvorene-su-do-6-studenoga",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2584_resize.jpeg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 5. tjedan provođenja jesenske deratizacije",
+      "datum": "27. 10. 2026.",
+      "kratki_opis": "U razdoblju od 26. listopada (ponedjeljak) do 30. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provest će deratizaciju stambenih objekata, javnih zelenih površina, obala v",
+      "link": "https://www.slavonski-brod.hr/vijesti/17386-ddd-mjere-2026-godine-5-tjedan-provodenja-jesenske-deratizacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/park_i_skola_resize.jpg"
+    },
     {
       "naslov": "Grad dodjeljuje 29 stipendija učenicima koji se školuju za deficitarna zanimanja",
       "datum": "27. 10. 2026.",
@@ -58,34 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Slavonski Brod ovog je petka ponovno ugostio „Ličku večer“, tradicionalnu manifestaciju koju Zavičajna udruga Ličana „Vrilo mudrosti“ organizira već 29. godinu zaredom. Dvorana „Prestige“ bila je i ovaj put ispunjena do posljednjeg mjesta, a Brođani i njihovi gosti iz raznih dijelova Hrvatske okupil",
       "link": "https://www.slavonski-brod.hr/vijesti/17376-licka-vecer-po-29-put-spojila-liku-i-slavoniju",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnalicka_resize.jpg"
-    },
-    {
-      "naslov": "Otvorene prijave za zakup kućica na 18. Božićnom sajmu",
-      "datum": "23. 10. 2026.",
-      "kratki_opis": "Ovogodišnji, 18. Božićni sajam u sklopu Adventa u Slavonskom Brodu bit će održan od 28. studenoga do 31. prosinca 2026. godine na Trgu Ivane Brlić-Mažuranić i na Tvrđavi Brod. Izvršni organizator sajma, Brod-Turist, objavio je poziv za zakup kućica za ugostiteljstvo i prigodnu prodaju. Pozivamo sve ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17373-otvorene-prijave-za-zakup-kucica-na-18-bozicnom-sajmu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/bozicni_sajam_izlagaci_resize.jpg"
-    },
-    {
-      "naslov": "Njihova hrabrost živi i danas: 35. obljetnica osnutka „Šiminih anđela pakla”",
-      "datum": "23. 10. 2026.",
-      "kratki_opis": "Prije 35 godina, u najtežim danima za našu domovinu, osnovana je Specijalna jedinica policije „Šimini anđeli pakla” Policijske uprave brodsko-posavske. Njezini su pripadnici bili među prvima koji su stali u obranu Slavonskog Broda i Hrvatske. Mnogi od njih ugradili su svoje živote u slobodu koju dan",
-      "link": "https://www.slavonski-brod.hr/vijesti/17371-njihova-hrabrost-zivi-i-danas-35-obljetnica-osnutka-siminih-andela-pakla",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2061_resize.jpeg"
-    },
-    {
-      "naslov": "Za najmlađe Brođane spremni smo od prvog dana: još pet obitelji preuzelo opremu za bebe",
-      "datum": "23. 10. 2026.",
-      "kratki_opis": "Ova godina u Slavonskom Brodu donosi više beba nego što smo navikli, pa se gotovo svaki tjedan susrećemo s novim mamama i tatama. Danas je opremu za svoju novorođenčad preuzelo još pet obitelji, a pakete im je uručila zamjenica gradonačelnika Marina Martić Puača. Svaka obitelj dobila je opremu vrije",
-      "link": "https://www.slavonski-brod.hr/vijesti/17370-za-najmlade-brodane-spremni-smo-od-prvog-dana-jos-pet-obitelji-preuzelo-opremu-za-bebe",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/joomla_bebe.jpg"
-    },
-    {
-      "naslov": "Objavljeni javni pozivi za izbor poslodavca godine za osobe s invaliditetom i za godišnju volontersku nagradu",
-      "datum": "23. 10. 2026.",
-      "kratki_opis": "Objavili smo dva javna poziva kojima želimo zahvaliti onima koji svojim radom i zalaganjem čine naš grad otvorenijim i boljim mjestom za sve. Prvi je javni poziv za izbor poslodavca godine za osobe s invaliditetom za 2026. godinu. Ovaj izbor provodimo od 2011. godine kako bismo istaknuli poslodavce ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17368-objavljeni-javni-pozivi-za-izbor-poslodavca-godine-za-osobe-s-invaliditetom-i-za-godisnju-volontersku-nagradu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/poslodavac.png"
     }
   ],
   "manifestacije_aktualne": [
