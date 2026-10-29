@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-28 11:42 UTC
+// Zadnje skrapanje: 2026-10-29 11:49 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-28T11:42:05.383Z",
+    "zadnje_azuriranje": "2026-10-29T11:49:43.149Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Privremena regulacija prometa povodom blagdana Svih svetih",
+      "datum": "29. 10. 2026.",
+      "kratki_opis": "Povodom obilježavanja blagdana Svih svetih, u cilju osiguranja nesmetanog i sigurnog prometovanja te pristupa Gradskom groblju, na području Grada Slavonskog Broda uspostavit će se privremena regulacija prometa. Privremena regulacija vrijedit će u sljedećim terminima: petak, 30. listopada 2026. godin",
+      "link": "https://www.slavonski-brod.hr/vijesti/17393-privremena-regulacija-prometa-povodom-blagdana-svih-svetih-3",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/groblje_resize.jpg"
+    },
+    {
+      "naslov": "Obavijest o trajnom zatvranju dijela Ulice Svetog Lovre",
+      "datum": "29. 10. 2026.",
+      "kratki_opis": "Obavještavamo javnost da se izvode radovi na trajnom zatvaranju dijela Ulice Svetog Lovre u zoni Gradskog groblja. Radovi se izvode na temelju Rješenja o suglasnosti Ministarstva unutarnjih poslova, Policijske uprave brodsko-posavske. Za promet se zatvara dionica Ulice Svetog Lovre od glavnog ulaza ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17392-obavijest-o-trajnom-zatvranju-dijela-ulice-svetog-lovre",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/centar_grada_iz_daljeg_resize.jpg"
+    },
     {
       "naslov": "Učenici u Edukacijsko - multimedijalnom centru otkrivaju bogatstvo nematerijalne kulturne baštine",
       "datum": "28. 10. 2026.",
@@ -65,20 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "Poštovane dobrovoljne darivateljice i dobrovoljni darivatelji krvi, današnji dan podsjeća nas na 1953. godinu, kada je Hrvatski Crveni križ proveo prvu akciju dobrovoljnog darivanja krvi. Od tada do danas darivanje krvi ostalo je jedan od najljepših primjera humanosti, čin kojim se izravno spašavaju",
       "link": "https://www.slavonski-brod.hr/vijesti/17377-gradonacelnikova-cestitka-povodom-dana-dobrovoljnih-darivatelja-krvi",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/FINAL_KRV.png"
-    },
-    {
-      "naslov": "Udruga „Nada“ proslavila 25 godina djelovanja donatorskom večeri",
-      "datum": "24. 10. 2026.",
-      "kratki_opis": "Udruga žena operiranih od raka dojke „Nada“ u subotu 24. listopada, u Svečanoj dvorani Kristal u Slavonskom Brodu priredila je večer za pamćenje. Donatorskom zabavom obilježeno je 25 godina osnutka i djelovanja Udruge, koja svoj rad provodi pod okriljem Lige protiv raka Brodsko-posavske županije. Ve",
-      "link": "https://www.slavonski-brod.hr/vijesti/17378-udruga-nada-proslavila-25-godina-djelovanja-donatorskom-veceri",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/NADANASLOVNA_resize.jpeg"
-    },
-    {
-      "naslov": "Lička večer po 29. put spojila Liku i Slavoniju",
-      "datum": "24. 10. 2026.",
-      "kratki_opis": "Slavonski Brod ovog je petka ponovno ugostio „Ličku večer“, tradicionalnu manifestaciju koju Zavičajna udruga Ličana „Vrilo mudrosti“ organizira već 29. godinu zaredom. Dvorana „Prestige“ bila je i ovaj put ispunjena do posljednjeg mjesta, a Brođani i njihovi gosti iz raznih dijelova Hrvatske okupil",
-      "link": "https://www.slavonski-brod.hr/vijesti/17376-licka-vecer-po-29-put-spojila-liku-i-slavoniju",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnalicka_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
