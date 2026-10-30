@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-29 11:49 UTC
+// Zadnje skrapanje: 2026-10-30 11:42 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-29T11:49:43.149Z",
+    "zadnje_azuriranje": "2026-10-30T11:42:23.132Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,18 +18,32 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
+      "naslov": "Gradsko groblje napokon je postala jedinstvena i dostojanstvena cjelina",
+      "datum": "30. 10. 2026.",
+      "kratki_opis": "Nakon više od dva stoljeća čekanja, Slavonski Brod dočekao je trenutak od iznimne važnosti za cijeli grad i sve njegove građane. Izgradnjom nove spojne ceste između Naselja Andrije Hebranga i Ulice Svetog Lovre, Gradsko groblje spojeno je u jedinstvenu cjelinu. &nbsp;&nbsp; Ovo je trenutak koji su m",
+      "link": "https://www.slavonski-brod.hr/vijesti/17399-gradsko-groblje-napokon-je-postala-jedinstvena-i-dostojanstvena-cjelina",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Sv_Lovre.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod odao počast braniteljima i civilnim žrtvama Domovinskog rata",
+      "datum": "30. 10. 2026.",
+      "kratki_opis": "Danas je, uoči blagdana Svih svetih, na Gradskom groblju u Slavonskom Brodu odana počast svim hrvatskim braniteljima i civilnim žrtvama Domovinskog rata. Kod Središnjeg križa položeni su vijenci i zapaljene svijeće. Ispred Grada Slavonskoga Broda obilježavanju su prisustvovali gradonačelnik Mirko Du",
+      "link": "https://www.slavonski-brod.hr/vijesti/17398-slavonski-brod-odao-pocast-braniteljima-i-civilnim-zrtvama-domovinskog-rata",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnabranitelji_resize.jpeg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 12. (dvanaesti) larvicidni tretman i monitoring komaraca",
+      "datum": "29. 10. 2026.",
+      "kratki_opis": "U razdoblju od 27. do 28. listopada 2026. godine (utorak i srijeda), stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 12. (dvanaesti) larvicidni tretman te monitoring ličinki i odraslih komaraca na području grada Slavonskog Broda. Na temelju monitoringa otvorenih vodenih površina u",
+      "link": "https://www.slavonski-brod.hr/vijesti/17395-ddd-mjere-2026-godine-12-dvanaesti-larvicidni-tretman-i-monitoring-komaraca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/komarac.png"
+    },
+    {
       "naslov": "Privremena regulacija prometa povodom blagdana Svih svetih",
       "datum": "29. 10. 2026.",
       "kratki_opis": "Povodom obilježavanja blagdana Svih svetih, u cilju osiguranja nesmetanog i sigurnog prometovanja te pristupa Gradskom groblju, na području Grada Slavonskog Broda uspostavit će se privremena regulacija prometa. Privremena regulacija vrijedit će u sljedećim terminima: petak, 30. listopada 2026. godin",
       "link": "https://www.slavonski-brod.hr/vijesti/17393-privremena-regulacija-prometa-povodom-blagdana-svih-svetih-3",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/groblje_resize.jpg"
-    },
-    {
-      "naslov": "Obavijest o trajnom zatvranju dijela Ulice Svetog Lovre",
-      "datum": "29. 10. 2026.",
-      "kratki_opis": "Obavještavamo javnost da se izvode radovi na trajnom zatvaranju dijela Ulice Svetog Lovre u zoni Gradskog groblja. Radovi se izvode na temelju Rješenja o suglasnosti Ministarstva unutarnjih poslova, Policijske uprave brodsko-posavske. Za promet se zatvara dionica Ulice Svetog Lovre od glavnog ulaza ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17392-obavijest-o-trajnom-zatvranju-dijela-ulice-svetog-lovre",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/centar_grada_iz_daljeg_resize.jpg"
     },
     {
       "naslov": "Učenici u Edukacijsko - multimedijalnom centru otkrivaju bogatstvo nematerijalne kulturne baštine",
@@ -65,20 +79,6 @@ export const scrapedContent = {
       "kratki_opis": "U Hrvatskom domu danas je održana uvodna konferencija projekta „Inkluzivna kazališna bajka”. Projekt provodi Kazališno-koncertna dvorana Ivana Brlić-Mažuranić u partnerstvu s Udrugom osoba s intelektualnim teškoćama Regoč Slavonski Brod. Konferenciji je nazočila zamjenica gradonačelnika Marina Marti",
       "link": "https://www.slavonski-brod.hr/vijesti/17383-predstavljen-projekt-inkluzivna-kazalisna-bajka",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2239_resize.jpeg"
-    },
-    {
-      "naslov": "Veleposlanik Savezne Republike Njemačke posjetio Slavonski Brod",
-      "datum": "26. 10. 2026.",
-      "kratki_opis": "Ovog ponedjeljka u Slavonskom Brodu ugostili smo veleposlanika Savezne Republike Njemačke u Republici Hrvatskoj, prof. dr. Pascala Hectora. Veleposlanika i članove njegove delegacije u Velikoj vijećnici Grada primio je gradonačelnik Mirko Duspara. Uz gradonačelnika, na sastanku su sudjelovali zamjen",
-      "link": "https://www.slavonski-brod.hr/vijesti/17379-veleposlanik-savezne-republike-njemacke-posjetio-slavonski-brod",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2196_resize.jpeg"
-    },
-    {
-      "naslov": "Gradonačelnikova čestitka povodom Dana dobrovoljnih darivatelja krvi",
-      "datum": "25. 10. 2026.",
-      "kratki_opis": "Poštovane dobrovoljne darivateljice i dobrovoljni darivatelji krvi, današnji dan podsjeća nas na 1953. godinu, kada je Hrvatski Crveni križ proveo prvu akciju dobrovoljnog darivanja krvi. Od tada do danas darivanje krvi ostalo je jedan od najljepših primjera humanosti, čin kojim se izravno spašavaju",
-      "link": "https://www.slavonski-brod.hr/vijesti/17377-gradonacelnikova-cestitka-povodom-dana-dobrovoljnih-darivatelja-krvi",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/FINAL_KRV.png"
     }
   ],
   "manifestacije_aktualne": [
