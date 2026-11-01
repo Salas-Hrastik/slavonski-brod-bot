@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-10-31 11:16 UTC
+// Zadnje skrapanje: 2026-11-01 12:05 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-10-31T11:16:13.476Z",
+    "zadnje_azuriranje": "2026-11-01T12:05:36.662Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Svi sveti – dan sjećanja i zahvalnosti",
+      "datum": "01. 11. 2026.",
+      "kratki_opis": "Blagdan Svih svetih, koji obilježavamo 1. studenoga, poziva nas da na trenutak zastanemo i usporimo. U danima kada je život često užurban, ovaj blagdan vraća nas onome što je najvažnije: ljudima koje volimo i vrijednostima koje su nam ostavili. Svi sveti blagdan je svih koji su živjeli dobro i pošte",
+      "link": "https://www.slavonski-brod.hr/vijesti/17401-svi-sveti-dan-sjecanja-i-zahvalnosti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/goranh-stop-adult-suicide-3790894_resize.jpg"
+    },
     {
       "naslov": "Gradsko groblje napokon je postala jedinstvena i dostojanstvena cjelina",
       "datum": "30. 10. 2026.",
@@ -72,22 +79,9 @@ export const scrapedContent = {
       "kratki_opis": "Grad Slavonski Brod i ove godine ulaže u mlade koji su odabrali zanimanja koja su našem gradu i gospodarstvu najpotrebnija. Raspisan je Natječaj za dodjelu stipendija učenicima koji se obrazuju za deficitarna zanimanja za školsku 2026./2027. godinu, a budući da je rok za prijavu 31. listopada 2026. ",
       "link": "https://www.slavonski-brod.hr/vijesti/17384-grad-dodjeljuje-29-stipendija-ucenicima-koji-se-skoluju-za-deficitarna-zanimanja",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/stipendije-ucenici-deficitarna-zanimanja-obrtnici.jpg"
-    },
-    {
-      "naslov": "Kazalište otvoreno svima: počeo projekt „Inkluzivna kazališna bajka”",
-      "datum": "27. 10. 2026.",
-      "kratki_opis": "U Hrvatskom domu danas je održana uvodna konferencija projekta „Inkluzivna kazališna bajka”. Projekt provodi Kazališno-koncertna dvorana Ivana Brlić-Mažuranić u partnerstvu s Udrugom osoba s intelektualnim teškoćama Regoč Slavonski Brod. Konferenciji je nazočila zamjenica gradonačelnika Marina Marti",
-      "link": "https://www.slavonski-brod.hr/vijesti/17383-predstavljen-projekt-inkluzivna-kazalisna-bajka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2239_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
-    {
-      "naziv": "Pečenkijada Ovo jedinstveno natjecanje u pečenju odojaka održava se u Sportsko-rekreacijskom centru",
-      "datum": "Listopad",
-      "opis": "\"Poloj\" i, uz prigodni zabavni program, okuplja više od stotinu natjecatelja iz Hrvatske i iz inozemstva. Međunarodni Festival harmonike \"Bela pl. Panthy\" Jedini festival harmonike takvog tipa u Republici Hrvatskoj. Prvi je put održan 2010. na inicijativu nekoliko entuzijasta i članova Brodskog harm",
-      "link": "https://www.tzgsb.hr/index.php?page=listopad"
-    },
     {
       "naziv": "Turistička zajednica područja \"Slavonski Brod-Posavina\" Turistička zajednica područja \"Slavonski Bro",
       "datum": "Studeni",
@@ -99,6 +93,12 @@ export const scrapedContent = {
       "datum": "Siječanj",
       "opis": "Tijekom smotre Više od stotinu vinara s područja cijele regije Slavonije predstavlja svoja vina, a provodi se i stručno ocjenjivanje i izbor najkvalitetnijih. Vinkovo Ova manifestacija održava se u čast svetom Vinku, zaštitniku vinara i vinogradara, na više lokacija slavonskobrodskog vinogorja smješ",
       "link": "https://www.tzgsb.hr/index.php?page=sijecanj"
+    },
+    {
+      "naziv": "Slavonska trka Ova međunarodna cestovna atletska utrka ima start i cilj u tvđravi Brod",
+      "datum": "Veljača",
+      "opis": "Okuplja više od 1.000 natjecatelja koji za trčanje mogu izabrati neku od sljedećih disciplina: na 5 ili 10 km, polumaraton, štafete te dječje utrke. Adresa: Stadionska 3 Telefon: E-mail:",
+      "link": "https://www.tzgsb.hr/index.php?page=veljaca"
     }
   ],
   "restorani_tz": [
