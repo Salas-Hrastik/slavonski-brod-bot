@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-01 12:05 UTC
+// Zadnje skrapanje: 2026-11-02 13:54 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-01T12:05:36.662Z",
+    "zadnje_azuriranje": "2026-11-02T13:54:18.172Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Otvorene VIII. „Tadijine jeseni”: izložbom o Tadijanoviću na esperantu počela književna manifestacija",
+      "datum": "02. 11. 2026.",
+      "kratki_opis": "Ovog ponedjeljka, otvorena je VIII. književna manifestacija „Tadijine jeseni”, posvećena životu i djelu našeg velikog pjesnika Dragutina Tadijanovića. Manifestacija je počela svečanim otvorenjem izložbe „Kanto al mia koro (1936.): Tadijanović na esperantu” u Spomen-domu Dragutina Tadijanovića, a otv",
+      "link": "https://www.slavonski-brod.hr/vijesti/17405-otvorene-viii-tadijine-jeseni-izlozbom-o-tadijanovicu-na-esperantu-pocela-knjizevna-manifestacija",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2247_resize.jpeg"
+    },
+    {
+      "naslov": "Na Dušni dan sjećamo se Josipa Stanića, Brođanina čija priča trajno živi u našem gradu",
+      "datum": "02. 11. 2026.",
+      "kratki_opis": "Na Dušni dan s poštovanjem i zahvalnošću sjećamo se Josipa Stanića, Brođanina čija je životna priča trajno obilježila naš grad. 3. svibnja 1992. Toga dana na Slavonski Brod palo je 70 bombi od 250 kilograma, 24 navođene bombe i 60 raketa. Djeca, žene i drugi civili sklonili su se u podrum kuće u Kuh",
+      "link": "https://www.slavonski-brod.hr/vijesti/17404-na-dusni-dan-sjecamo-se-josipa-stanica-brodanina-cija-prica-trajno-zivi-u-nasem-gradu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/flaming-candles-like-small-bulbs_resize.jpg"
+    },
+    {
+      "naslov": "Raspored mobilnih blagajni za studeni",
+      "datum": "02. 11. 2026.",
+      "kratki_opis": "Obavještavaju se građani i građanke kako će mobilne gradske blagajne u studenom raditi prema sljedećem rasporedu: 10. studenoga 2026. (utorak) Mjesni dom Brodsko Vinogorje – od 9.30 do 11.30 sati Mjesni dom Podvinje – od 12.30 do 15.00 sati 11. studenoga 2026. (srijeda) Mjesni dom Ante Starčević – o",
+      "link": "https://www.slavonski-brod.hr/vijesti/17403-raspored-mobilnih-blagajni-za-studeni",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Sijecanj/blagajna_resize-1.jpg"
+    },
     {
       "naslov": "Svi sveti – dan sjećanja i zahvalnosti",
       "datum": "01. 11. 2026.",
@@ -65,20 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Podsjećamo sve zainteresirane izlagače da su prijave za 29. Katarinski sajam, sajam obrtništva, malog i srednjeg poduzetništva, još uvijek u tijeku, i to do petka, 6. studenoga 2026. godine. Sajam će se održati od 20. do 22. studenoga (petak-nedjelja) u unutarnjem i vanjskom prostoru Sportske dvoran",
       "link": "https://www.slavonski-brod.hr/vijesti/17390-prijave-za-29-katarinski-sajam-otvorene-su-do-6-studenoga",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2584_resize.jpeg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 5. tjedan provođenja jesenske deratizacije",
-      "datum": "27. 10. 2026.",
-      "kratki_opis": "U razdoblju od 26. listopada (ponedjeljak) do 30. listopada (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provest će deratizaciju stambenih objekata, javnih zelenih površina, obala v",
-      "link": "https://www.slavonski-brod.hr/vijesti/17386-ddd-mjere-2026-godine-5-tjedan-provodenja-jesenske-deratizacije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/park_i_skola_resize.jpg"
-    },
-    {
-      "naslov": "Grad dodjeljuje 29 stipendija učenicima koji se školuju za deficitarna zanimanja",
-      "datum": "27. 10. 2026.",
-      "kratki_opis": "Grad Slavonski Brod i ove godine ulaže u mlade koji su odabrali zanimanja koja su našem gradu i gospodarstvu najpotrebnija. Raspisan je Natječaj za dodjelu stipendija učenicima koji se obrazuju za deficitarna zanimanja za školsku 2026./2027. godinu, a budući da je rok za prijavu 31. listopada 2026. ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17384-grad-dodjeljuje-29-stipendija-ucenicima-koji-se-skoluju-za-deficitarna-zanimanja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/stipendije-ucenici-deficitarna-zanimanja-obrtnici.jpg"
     }
   ],
   "manifestacije_aktualne": [
