@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-02 13:54 UTC
+// Zadnje skrapanje: 2026-11-03 13:03 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-02T13:54:18.172Z",
+    "zadnje_azuriranje": "2026-11-03T13:03:17.907Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Simbolima mržnje nije mjesto u našem gradu",
+      "datum": "03. 11. 2026.",
+      "kratki_opis": "U našem gradu, kao i u drugim sredinama, povremeno se na zgradama, javnim površinama, pa i na spomen-obilježjima pojavljuju grafiti s porukama mržnje i simbolima totalitarnih režima. Svaki takav čin oštro osuđujemo, bez obzira na to gdje se dogodio, čija je imovina oštećena i kome je poruka namijenj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17411-simbolima-mrznje-nije-mjesto-u-nasem-gradu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/tvrdava_i_grad_2_resize.jpg"
+    },
+    {
+      "naslov": "In memoriam -  mons. Marin Srakić, đakovačko-osječki nadbiskup u miru i počasni građanin Slavonskog Broda",
+      "datum": "03. 11. 2026.",
+      "kratki_opis": "Zauvijek nas je napustio mons. Marin Srakić, đakovačko-osječki nadbiskup u miru, prvi nadbiskup i metropolit Đakovačko-osječke nadbiskupije, bivši predsjednik Hrvatske biskupske konferencije i počasni građanin Slavonskog Broda. Bio je pastir, učitelj i čovjek koji je više od šest desetljeća svoj živ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17410-in-memoriam-mons-marin-srakic-dakovacko-osjecki-nadbiskup-u-miru-i-pocasni-gradanin-slavonskog-broda",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/MS.jpg"
+    },
+    {
+      "naslov": "Tri nagrade za HPD „Davor” na međunarodnom natjecanju u Pragu",
+      "datum": "03. 11. 2026.",
+      "kratki_opis": "Hrvatsko pjevačko društvo „Davor” vratilo se s međunarodnog zborskog natjecanja u Pragu s tri vrijedna priznanja. Naši pjevači nastupili su u jakoj konkurenciji zborova iz Estonije, Litve, Belgije, Austrije, Slovačke i Mađarske. Mješoviti zbor osvojio je srebrnu nagradu u svojoj kategoriji, a ženski",
+      "link": "https://www.slavonski-brod.hr/vijesti/17408-tri-nagrade-za-hpd-davor-na-medunarodnom-natjecanju-u-pragu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/868405502_1790023336460354_6938899021819389759_n.jpg"
+    },
+    {
+      "naslov": "Podsjetnik: sutra ističe rok za prijave za volontersku nagradu i izbor poslodavca godine za osobe s invaliditetom",
+      "datum": "03. 11. 2026.",
+      "kratki_opis": "Podsjećamo sve zainteresirane da sutra, u srijedu, 4. studenoga 2026. godine, ističe rok za prijave na dva javna poziva koja smo raspisali na prijedlog gradskog Povjerenstva za osobe s invaliditetom. Riječ je o Javnom pozivu za dodjelu godišnje volonterske nagrade za 2026. godinu i Javnom pozivu za ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17407-podsjetnik-sutra-istice-rok-za-prijave-za-volontersku-nagradu-i-izbor-poslodavca-godine-za-osobe-s-invaliditetom",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Facebook_vizual_za_javne_pozive_resize.jpg"
+    },
     {
       "naslov": "Otvorene VIII. „Tadijine jeseni”: izložbom o Tadijanoviću na esperantu počela književna manifestacija",
       "datum": "02. 11. 2026.",
@@ -58,42 +86,20 @@ export const scrapedContent = {
       "kratki_opis": "Danas je, uoči blagdana Svih svetih, na Gradskom groblju u Slavonskom Brodu odana počast svim hrvatskim braniteljima i civilnim žrtvama Domovinskog rata. Kod Središnjeg križa položeni su vijenci i zapaljene svijeće. Ispred Grada Slavonskoga Broda obilježavanju su prisustvovali gradonačelnik Mirko Du",
       "link": "https://www.slavonski-brod.hr/vijesti/17398-slavonski-brod-odao-pocast-braniteljima-i-civilnim-zrtvama-domovinskog-rata",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnabranitelji_resize.jpeg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 12. (dvanaesti) larvicidni tretman i monitoring komaraca",
-      "datum": "29. 10. 2026.",
-      "kratki_opis": "U razdoblju od 27. do 28. listopada 2026. godine (utorak i srijeda), stručni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba proveli su 12. (dvanaesti) larvicidni tretman te monitoring ličinki i odraslih komaraca na području grada Slavonskog Broda. Na temelju monitoringa otvorenih vodenih površina u",
-      "link": "https://www.slavonski-brod.hr/vijesti/17395-ddd-mjere-2026-godine-12-dvanaesti-larvicidni-tretman-i-monitoring-komaraca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/komarac.png"
-    },
-    {
-      "naslov": "Privremena regulacija prometa povodom blagdana Svih svetih",
-      "datum": "29. 10. 2026.",
-      "kratki_opis": "Povodom obilježavanja blagdana Svih svetih, u cilju osiguranja nesmetanog i sigurnog prometovanja te pristupa Gradskom groblju, na području Grada Slavonskog Broda uspostavit će se privremena regulacija prometa. Privremena regulacija vrijedit će u sljedećim terminima: petak, 30. listopada 2026. godin",
-      "link": "https://www.slavonski-brod.hr/vijesti/17393-privremena-regulacija-prometa-povodom-blagdana-svih-svetih-3",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/groblje_resize.jpg"
-    },
-    {
-      "naslov": "Učenici u Edukacijsko - multimedijalnom centru otkrivaju bogatstvo nematerijalne kulturne baštine",
-      "datum": "28. 10. 2026.",
-      "kratki_opis": "U Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu ovaj se tjedan održava niz edukativnih radionica za učenike osnovnih škola, kroz koje djeca na zanimljiv i zabavan način upoznaju nematerijalna kulturna dobra našega kraja. Prva radionica održana je u ponedjeljak, 26. li",
-      "link": "https://www.slavonski-brod.hr/vijesti/17391-ucenici-u-edukacijsko-multimedijalnom-centru-otkrivaju-bogatstvo-nematerijalne-kulturne-bastine",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnaemc.jpg"
-    },
-    {
-      "naslov": "Prijave za 29. Katarinski sajam otvorene su do 6. studenoga",
-      "datum": "28. 10. 2026.",
-      "kratki_opis": "Podsjećamo sve zainteresirane izlagače da su prijave za 29. Katarinski sajam, sajam obrtništva, malog i srednjeg poduzetništva, još uvijek u tijeku, i to do petka, 6. studenoga 2026. godine. Sajam će se održati od 20. do 22. studenoga (petak-nedjelja) u unutarnjem i vanjskom prostoru Sportske dvoran",
-      "link": "https://www.slavonski-brod.hr/vijesti/17390-prijave-za-29-katarinski-sajam-otvorene-su-do-6-studenoga",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2584_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
     {
-      "naziv": "Turistička zajednica područja \"Slavonski Brod-Posavina\" Turistička zajednica područja \"Slavonski Bro",
+      "naziv": "Tadijine jeseni Ova književna manifestacija se održava u čast velikom hrvatskom književniku Dragutin",
       "datum": "Studeni",
-      "opis": "d-Posavina\" O nama Kulturna baština Događanja Smještaj i ugostiteljstvo Konferencijske dvorane Turističke atrakcije Preporuke Informacije Moja Slavonija --> Skip to content Open toolbar Alati za pristupačnost Povećajte tekst Smanji tekst Sive nijanse Visoki kontrast Negativni kontrast Svijetla pozad",
+      "opis": "u Tadijanoviću rođenom u Rastušju pored grada Slavonskog Broda. U okviru iste se održavaju književne večeri, izložbe, glazbeni programi te susreti osnovnih škola koje nose ime pjesnika. Katarinski sajam Sajam, čija tradicija održavanja seže u daleku 1769., prodajnog je i izložbenog karaktera. Održav",
       "link": "https://www.tzgsb.hr/index.php?page=studeni"
+    },
+    {
+      "naziv": "Advent u Slavonskom Brodu Manifestacija se odvija na dvije lokacije",
+      "datum": "Prosinac",
+      "opis": "Na središnjem gradskom trgu se održava adventski sajam, uz bogatu gastro ponudu te popratni zabavni program na središnjoj pozornici u večernjim satima i interaktivne sadržaje za djecu u Snježnoj Kupoli. Posebna atrakcija u tvrđavi Brod u vrijeme Adventa su Kuća Djeda Božićnjaka i klizalište. Vukovar",
+      "link": "https://www.tzgsb.hr/index.php?page=prosinac"
     },
     {
       "naziv": "Vinkovita Ova vinska manifestacija se održava u općini Bukovlje, u čast svetom Vinku, zaštitniku vin",
@@ -286,12 +292,12 @@ export const scrapedContent = {
       "karta": "https://www.google.com/maps/search/?api=1&query=Konoba%20Glembay%20Slavonski%20Brod"
     },
     {
-      "naziv": "Konoba Brešić",
+      "naziv": "Konoba Šokac",
       "adresa": "Vinogorska 77, 35000 Slavonski Brod",
       "telefon": "+385 35 492 414",
       "web": "",
-      "slika": "https://www.tzgsb.hr/static/images/restorani/konoba_bresic_170.jpg",
-      "karta": "https://www.google.com/maps/search/?api=1&query=Konoba%20Bre%C5%A1i%C4%87%20Slavonski%20Brod"
+      "slika": "https://www.tzgsb.hr/static/images/restorani/Konoba Šokac.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=Konoba%20%C5%A0okac%20Slavonski%20Brod"
     },
     {
       "naziv": "Bistro ShpajZ",
@@ -2061,6 +2067,10 @@ export const scrapedContent = {
       "url": "https://www.tzgsb.hr/static/pdf/2026/Godisnje_izvjesce_2025.pdf"
     },
     {
+      "naslov": "Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2027. godinu",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/ODLUKA o visini turističke pristojbe na području Brodsko-posavske županije za 2027. godinu.pdf"
+    },
+    {
       "naslov": "Odluka o visini turističke pristojbe na području Brodsko-posavske županije za 2026. godinu",
       "url": "https://www.tzgsb.hr/static/pdf/2025/odluka_o_visini_turisticke_pristojbe_na_podrucju_brodsko_posavske_zupanije_za_2026.pdf"
     },
@@ -2093,8 +2103,8 @@ export const scrapedContent = {
       "url": "https://www.tzgsb.hr/static/pdf/Poslovnik o radu Turističkog vijeća TZP Slavonski Brod-Posavina.PDF"
     },
     {
-      "naslov": "Pravilnik o provodenju postupka jednostavne nabave",
-      "url": "https://www.tzgsb.hr/static/pdf/2026/Pravilnik_o_provodenju_postupka_jednostavne_nabave.pdf"
+      "naslov": "Pravilnik. javna nabava",
+      "url": "https://www.tzgsb.hr/static/pdf/2026/Pravilnik.-javna nabava.PDF"
     },
     {
       "naslov": "Pravilnik o oznacavanju projekta dobar gazda",
