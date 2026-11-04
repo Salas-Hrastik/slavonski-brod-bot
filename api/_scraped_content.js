@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-03 13:03 UTC
+// Zadnje skrapanje: 2026-11-04 13:18 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-03T13:03:17.907Z",
+    "zadnje_azuriranje": "2026-11-04T13:18:47.854Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,27 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Slavonski Brod s ponosom čuva uspomenu na Dragutina Tadijanovića – 121 godina od rođenja velikog pjesnika",
+      "datum": "04. 11. 2026.",
+      "kratki_opis": "Dragutin Tadijanović , jedan od najznačajnijih hrvatskih pjesnika i jedan od najvećih književnih velikana našega kraja, danas bi proslavio svoj 121. rođendan . Rođen 4. studenoga 1905. godine u Rastušju pokraj Slavonskog Broda, cijeloga je života ostao duboko povezan sa svojim zavičajem, koji je ima",
+      "link": "https://www.slavonski-brod.hr/vijesti/17414-slavonski-brod-s-ponosom-cuva-uspomenu-na-dragutina-tadijanovica-121-godina-od-rodenja-velikog-pjesnika",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Tadijanovic_naslovnica_s_tekstom.jpg"
+    },
+    {
+      "naslov": "Plesne večeri za umirovljenike vraćaju se u studenome",
+      "datum": "04. 11. 2026.",
+      "kratki_opis": "Nakon pauze od lipnja plesne večeri za umirovljenike ponovno počinju. Sljedeća je u nedjelju, 15. studenoga, od 19 do 21 sat u Mjesnom domu Naselja Andrije Hebranga (Osječka ulica 24). Na tim su se večerima mnogi naši sugrađani upoznali i zaplesali uz pjesme svoje mladosti. Za neke je to postao stal",
+      "link": "https://www.slavonski-brod.hr/vijesti/17413-plesne-veceri-za-umirovljenike-vracaju-se-u-studenome-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/1000005190_plesnjak_hebrang.jpg"
+    },
+    {
+      "naslov": "DDD mjere 2026. godine – 6. tjedan provođenja jesenske deratizacije",
+      "datum": "04. 11. 2026.",
+      "kratki_opis": "U razdoblju od 04. studenog (srijeda) do 06. studenog (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provest će deratizaciju stambenih objekata, javnih zelenih površina, obala vodotok",
+      "link": "https://www.slavonski-brod.hr/vijesti/17412-ddd-mjere-2026-godine-6-tjedan-provodenja-jesenske-deratizacije",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/jugoistocni_dio_grada_resize.jpg"
+    },
     {
       "naslov": "Simbolima mržnje nije mjesto u našem gradu",
       "datum": "03. 11. 2026.",
@@ -65,27 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Obavještavaju se građani i građanke kako će mobilne gradske blagajne u studenom raditi prema sljedećem rasporedu: 10. studenoga 2026. (utorak) Mjesni dom Brodsko Vinogorje – od 9.30 do 11.30 sati Mjesni dom Podvinje – od 12.30 do 15.00 sati 11. studenoga 2026. (srijeda) Mjesni dom Ante Starčević – o",
       "link": "https://www.slavonski-brod.hr/vijesti/17403-raspored-mobilnih-blagajni-za-studeni",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Sijecanj/blagajna_resize-1.jpg"
-    },
-    {
-      "naslov": "Svi sveti – dan sjećanja i zahvalnosti",
-      "datum": "01. 11. 2026.",
-      "kratki_opis": "Blagdan Svih svetih, koji obilježavamo 1. studenoga, poziva nas da na trenutak zastanemo i usporimo. U danima kada je život često užurban, ovaj blagdan vraća nas onome što je najvažnije: ljudima koje volimo i vrijednostima koje su nam ostavili. Svi sveti blagdan je svih koji su živjeli dobro i pošte",
-      "link": "https://www.slavonski-brod.hr/vijesti/17401-svi-sveti-dan-sjecanja-i-zahvalnosti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/goranh-stop-adult-suicide-3790894_resize.jpg"
-    },
-    {
-      "naslov": "Gradsko groblje napokon je postala jedinstvena i dostojanstvena cjelina",
-      "datum": "30. 10. 2026.",
-      "kratki_opis": "Nakon više od dva stoljeća čekanja, Slavonski Brod dočekao je trenutak od iznimne važnosti za cijeli grad i sve njegove građane. Izgradnjom nove spojne ceste između Naselja Andrije Hebranga i Ulice Svetog Lovre, Gradsko groblje spojeno je u jedinstvenu cjelinu. &nbsp;&nbsp; Ovo je trenutak koji su m",
-      "link": "https://www.slavonski-brod.hr/vijesti/17399-gradsko-groblje-napokon-je-postala-jedinstvena-i-dostojanstvena-cjelina",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Sv_Lovre.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod odao počast braniteljima i civilnim žrtvama Domovinskog rata",
-      "datum": "30. 10. 2026.",
-      "kratki_opis": "Danas je, uoči blagdana Svih svetih, na Gradskom groblju u Slavonskom Brodu odana počast svim hrvatskim braniteljima i civilnim žrtvama Domovinskog rata. Kod Središnjeg križa položeni su vijenci i zapaljene svijeće. Ispred Grada Slavonskoga Broda obilježavanju su prisustvovali gradonačelnik Mirko Du",
-      "link": "https://www.slavonski-brod.hr/vijesti/17398-slavonski-brod-odao-pocast-braniteljima-i-civilnim-zrtvama-domovinskog-rata",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/naslovnabranitelji_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
