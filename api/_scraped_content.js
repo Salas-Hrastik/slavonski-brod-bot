@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-04 13:18 UTC
+// Zadnje skrapanje: 2026-11-05 13:31 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-04T13:18:47.854Z",
+    "zadnje_azuriranje": "2026-11-05T13:31:50.012Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,41 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
+      "naslov": "Održan sastanak o prometnoj sigurnosti u blizini škola i prevenciji nasilja u školama",
+      "datum": "05. 11. 2026.",
+      "kratki_opis": "U Velikoj vijećnici Grada Slavonskog Broda danas je održan sastanak predstavnika Policijske uprave brodsko-posavske te ravnatelja osnovnih škola i dječjih vrtića s područja grada Slavonskog Broda. Tema sastanka bila je unapređenje prometne sigurnosti u neposrednoj blizini odgojno-obrazovnih ustanova",
+      "link": "https://www.slavonski-brod.hr/vijesti/17423-odrzan-sastanak-o-prometnoj-sigurnosti-u-blizini-skola-i-prevenciji-nasilja-u-skolama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Joomla51126.jpg"
+    },
+    {
+      "naslov": "Slavonski Brod obilježava Svjetski dan romskog jezika radionicom za djecu u Društvenom domu „5. studeni”",
+      "datum": "05. 11. 2026.",
+      "kratki_opis": "Danas obilježavamo Svjetski dan romskog jezika. Opća konferencija UNESCO-a službeno ga je proglasila 2015. godine, na inicijativu Republike Hrvatske. Datum je odabran u čast 5. studenoga 2008., kada je u Zagrebu predstavljen prvi Romsko-hrvatski i hrvatsko-romski rječnik autora Veljka Kajtazija, u i",
+      "link": "https://www.slavonski-brod.hr/vijesti/17420-slavonski-brod-obiljezava-svjetski-dan-romskog-jezika-radionicom-za-djecu-u-drustvenom-domu-5-studeni",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/RADIONICA_ROMI.png"
+    },
+    {
+      "naslov": "Uručena priznanja višestrukim darivateljima krvi",
+      "datum": "05. 11. 2026.",
+      "kratki_opis": "U povodu Dana darivatelja krvi, koji se obilježava 25. listopada, u srijedu, 4. studenoga, održan je svečani prijem višestrukih darivatelja krvi. Prijem je organiziralo Gradsko društvo Crvenog križa Slavonski Brod, a na njemu je nazočila i zamjenica gradonačelnika Marina Martić Puača. Darivateljima ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17419-urucena-priznanja-visestrukim-darivateljima-krvi",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/photo-collagepng.jpg"
+    },
+    {
+      "naslov": "Održan radni sastanak s predstavnicima Udruge Eko-Integral na temu onečišćenja zraka",
+      "datum": "04. 11. 2026.",
+      "kratki_opis": "U Gradskoj upravi Grada Slavonskog Broda danas je održan novi radni sastanak s predstavnicima Udruge Eko-Integral, posvećen nastavku razgovora i aktivnostima usmjerenima na poboljšanje kvalitete zraka na području grada. Na sastanku su, uz predstavnike Udruge Eko-Integral, sudjelovali gradonačelnik M",
+      "link": "https://www.slavonski-brod.hr/vijesti/17417-nastavljeni-razgovori-o-poboljsanju-kvalitete-zraka-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/grad_sa_brda_resize.jpg"
+    },
+    {
+      "naslov": "Sudjelujte u kreiranju gradskog proračuna za 2027. godinu!",
+      "datum": "04. 11. 2026.",
+      "kratki_opis": "Pozivamo građane Slavonskog Broda da sudjeluju u kreiranju novog gradskog proračuna za 2027. godinu. S obzirom na to da je tekuća godina pri izmaku, svoje ideje i prijedloge o projektima za koje smatrate da su važni za daljnji razvoj Slavonskog Broda možete dostaviti putem elektroničke pošte na adre",
+      "link": "https://www.slavonski-brod.hr/vijesti/17416-sudjelujte-u-kreiranju-gradskog-proracuna-za-2027-godinu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Proracun.jpg"
+    },
+    {
       "naslov": "Slavonski Brod s ponosom čuva uspomenu na Dragutina Tadijanovića – 121 godina od rođenja velikog pjesnika",
       "datum": "04. 11. 2026.",
       "kratki_opis": "Dragutin Tadijanović , jedan od najznačajnijih hrvatskih pjesnika i jedan od najvećih književnih velikana našega kraja, danas bi proslavio svoj 121. rođendan . Rođen 4. studenoga 1905. godine u Rastušju pokraj Slavonskog Broda, cijeloga je života ostao duboko povezan sa svojim zavičajem, koji je ima",
@@ -27,7 +62,7 @@ export const scrapedContent = {
     {
       "naslov": "Plesne večeri za umirovljenike vraćaju se u studenome",
       "datum": "04. 11. 2026.",
-      "kratki_opis": "Nakon pauze od lipnja plesne večeri za umirovljenike ponovno počinju. Sljedeća je u nedjelju, 15. studenoga, od 19 do 21 sat u Mjesnom domu Naselja Andrije Hebranga (Osječka ulica 24). Na tim su se večerima mnogi naši sugrađani upoznali i zaplesali uz pjesme svoje mladosti. Za neke je to postao stal",
+      "kratki_opis": "Plesne večeri za umirovljenike vraćaju se u studenome. Sljedeća je u nedjelju, 15. studenoga, od 19 do 21 sat u Mjesnom domu Naselja Andrije Hebranga (Osječka ulica 24). Na tim su se večerima mnogi naši sugrađani upoznali i zaplesali uz pjesme svoje mladosti. Za neke je to postao stalni nedjeljni iz",
       "link": "https://www.slavonski-brod.hr/vijesti/17413-plesne-veceri-za-umirovljenike-vracaju-se-u-studenome-2",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/1000005190_plesnjak_hebrang.jpg"
     },
@@ -51,41 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Zauvijek nas je napustio mons. Marin Srakić, đakovačko-osječki nadbiskup u miru, prvi nadbiskup i metropolit Đakovačko-osječke nadbiskupije, bivši predsjednik Hrvatske biskupske konferencije i počasni građanin Slavonskog Broda. Bio je pastir, učitelj i čovjek koji je više od šest desetljeća svoj živ",
       "link": "https://www.slavonski-brod.hr/vijesti/17410-in-memoriam-mons-marin-srakic-dakovacko-osjecki-nadbiskup-u-miru-i-pocasni-gradanin-slavonskog-broda",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/MS.jpg"
-    },
-    {
-      "naslov": "Tri nagrade za HPD „Davor” na međunarodnom natjecanju u Pragu",
-      "datum": "03. 11. 2026.",
-      "kratki_opis": "Hrvatsko pjevačko društvo „Davor” vratilo se s međunarodnog zborskog natjecanja u Pragu s tri vrijedna priznanja. Naši pjevači nastupili su u jakoj konkurenciji zborova iz Estonije, Litve, Belgije, Austrije, Slovačke i Mađarske. Mješoviti zbor osvojio je srebrnu nagradu u svojoj kategoriji, a ženski",
-      "link": "https://www.slavonski-brod.hr/vijesti/17408-tri-nagrade-za-hpd-davor-na-medunarodnom-natjecanju-u-pragu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/868405502_1790023336460354_6938899021819389759_n.jpg"
-    },
-    {
-      "naslov": "Podsjetnik: sutra ističe rok za prijave za volontersku nagradu i izbor poslodavca godine za osobe s invaliditetom",
-      "datum": "03. 11. 2026.",
-      "kratki_opis": "Podsjećamo sve zainteresirane da sutra, u srijedu, 4. studenoga 2026. godine, ističe rok za prijave na dva javna poziva koja smo raspisali na prijedlog gradskog Povjerenstva za osobe s invaliditetom. Riječ je o Javnom pozivu za dodjelu godišnje volonterske nagrade za 2026. godinu i Javnom pozivu za ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17407-podsjetnik-sutra-istice-rok-za-prijave-za-volontersku-nagradu-i-izbor-poslodavca-godine-za-osobe-s-invaliditetom",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/Facebook_vizual_za_javne_pozive_resize.jpg"
-    },
-    {
-      "naslov": "Otvorene VIII. „Tadijine jeseni”: izložbom o Tadijanoviću na esperantu počela književna manifestacija",
-      "datum": "02. 11. 2026.",
-      "kratki_opis": "Ovog ponedjeljka, otvorena je VIII. književna manifestacija „Tadijine jeseni”, posvećena životu i djelu našeg velikog pjesnika Dragutina Tadijanovića. Manifestacija je počela svečanim otvorenjem izložbe „Kanto al mia koro (1936.): Tadijanović na esperantu” u Spomen-domu Dragutina Tadijanovića, a otv",
-      "link": "https://www.slavonski-brod.hr/vijesti/17405-otvorene-viii-tadijine-jeseni-izlozbom-o-tadijanovicu-na-esperantu-pocela-knjizevna-manifestacija",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/IMG_2247_resize.jpeg"
-    },
-    {
-      "naslov": "Na Dušni dan sjećamo se Josipa Stanića, Brođanina čija priča trajno živi u našem gradu",
-      "datum": "02. 11. 2026.",
-      "kratki_opis": "Na Dušni dan s poštovanjem i zahvalnošću sjećamo se Josipa Stanića, Brođanina čija je životna priča trajno obilježila naš grad. 3. svibnja 1992. Toga dana na Slavonski Brod palo je 70 bombi od 250 kilograma, 24 navođene bombe i 60 raketa. Djeca, žene i drugi civili sklonili su se u podrum kuće u Kuh",
-      "link": "https://www.slavonski-brod.hr/vijesti/17404-na-dusni-dan-sjecamo-se-josipa-stanica-brodanina-cija-prica-trajno-zivi-u-nasem-gradu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/flaming-candles-like-small-bulbs_resize.jpg"
-    },
-    {
-      "naslov": "Raspored mobilnih blagajni za studeni",
-      "datum": "02. 11. 2026.",
-      "kratki_opis": "Obavještavaju se građani i građanke kako će mobilne gradske blagajne u studenom raditi prema sljedećem rasporedu: 10. studenoga 2026. (utorak) Mjesni dom Brodsko Vinogorje – od 9.30 do 11.30 sati Mjesni dom Podvinje – od 12.30 do 15.00 sati 11. studenoga 2026. (srijeda) Mjesni dom Ante Starčević – o",
-      "link": "https://www.slavonski-brod.hr/vijesti/17403-raspored-mobilnih-blagajni-za-studeni",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Sijecanj/blagajna_resize-1.jpg"
     }
   ],
   "manifestacije_aktualne": [
@@ -2274,7 +2274,7 @@ export const scrapedContent = {
   "o_nama": {
     "grad_opis": "Slavonski Brod Grad Slavonski Brod, po veličini sedmi grad u Republici Hrvatskoj s 59.141 stanovnika, nalazi se na obali rijeka Save te proteže na blage padine Dilj-gore. Zauzima površinu od 54,45 kvadratnih kilometara. Izgrađen je na mjestu rimske Marsonie, na raskrižju najvažnijih međunarodnih pravaca koji povezuju zemlje Europe s Bliskim istokom, uz granicu sa Bosnom i Hercegovinom. Najveći je grad slavonske Posavine. Kroz Slavonski Brod prolazi najvažnija prometnica, autocesta Zagreb - Lipovac koja povezuje zemlje Europe s Bliskim istokom i dalje, a planira se izgradnja i međunarodne ceste E-73 Budimpešta - Beli Manastir - Osijek - Slavonski Brod - susjedna Republika Bosna i Hercegovina sa završetkom u Pločama. Željeznička pruga koja povezuje Zapadnu Europu s Istokom bitno određuje razvoj grada s prostornog i gospodarskog stajališta. Kroz grad prolazi naftovod JANAF koji prebacuje sirovu naftu od Jadrana do pojedinih mjesta u našoj i susjednim zemljama gdje se prerađuje, a prisutan je i naftovod Opatovac - Slavonski Brod koji je opskrbljivao naftom rafineriju nafte u susjednoj Bosni i Hercegovini (Bosanskom Brodu). Grad je povezan plinovodima Našice - Bokšić, Lug - Slavonski Brod koji opskrbljuju Grad prirodnim zemnim plinom, a predviđa se i izgradnja plinovoda Kutina - Slavonski Brod - Vukovar koji će zasigurno utjecati na razvoj grada. Prokopavanjem kanala Vukovar - Šamac, rijeka Sava dobiva veliko značenje u prometnoj povezanosti Europe i Jadrana, a ta činjenica je veo",
     "zupanija": "Brodsko-posavska županija Općenito Brodsko-posavska županija nalazi se na istoku Hrvatske, u regiji Slavoniji, u južnom dijelu Panonske nizine. Grad Slavonski Brod središte je županije. Neki geografski i populacijski podaci Županija se prostire od 45&deg;02' do 45&deg;23' sjeverne zemlj. širine i od 17&deg;04' do 18&deg;55' istočne zemlj. dužine. Najviša nadmorska visina (Psunj-Brezovo polje) je 985 m, a najniža (u području Gundinaca) je 83 m, prosječna nadmorska visina iznosi 90 m. Površina Županija 2.034 kv. km (3,5 % Hrvatske), gradovi i naselja 52,4 kv. km, oranice i vrtovi 88.016 ha, voćnjaci 2.766 ha, vinogradi 1.195 ha, livade 11.984 ha, pašnjaci 13.128 ha, ribnjaci 2.432 ha i šume 60.255 ha. Broj stanovnika Cijela županija 172.993, grad Slavonski Brod 64.612, grad Nova Gradiška 15.833 (popis iz 2001.). Gustoća 84,68 stanovnika po kv. km. --> Grb Brodsko-posavske županije Više informacija: Hrvatska gospodarska komora Županijska komora Slavonski Brod tel./fax:+385 35 448 583 e-mail: hgksb@hgk.hr Obrtnička komora Brodsko-posavske županije Slavonski Brod tel/fax:+385 35 447 017 e-mail: ok-sl.brod@sb.htnet.hr",
-    "rijec_gradonacelnika": "Riječ gradonačelnika Grada Slavonskog Broda Povijesne znamenitosti Prirodni rezervati Manifestacije Sajmovanja Smještaj Restorani Preporuke Izletišta Rekreacija Lov i ribolov Living history Informacije i zaštita podataka, Dokumenti i Pravni okvir Kontakti Centar za posjetitelje Turističke agencije Hrvatski English Deutsch Italiano --> 3D slika Muzej tambura Mural Slavonski Brod i okolica Županija Riječ gradonačelnika grada Slavonskog Broda Gradski vodič - siječanj/veljača 2012. Riječ gradonačelnika Poštovani i dragi prijatelji! Za razvoj grada Slavonskog Broda koji obuhvaća naselja Slavonski Brod, Brodski Varoš i Podvinje od presudnog je značaja uvijek bio strateški zemljopisni položaj uz autocestu i željezničku prugu – poveznice Europe s Istokom. O dugoj povijesti i bogatoj tradiciji grada svjedoči originalna rimska diploma iz 71. godine s prvim zapisom antičkog imena Broda, a iz vremena Vojne krajine na granici austrijskog i turskog carstva – srednjovjekovna tvrđava Brod koju Austrija gradi 1715. Ukinućem Vojne granice 1871. Brod dobiva status grada srednjovjekovne arhitekture s palačama bogatih trgovaca i industrijalaca u stilu historicizma i secesije i Trgom Ivane Brlić-Mažuranić koji je površinom najveći gradski trg u Hrvatskoj. Iako prvenstveno industrijski grad, Slavonski Brod je i poslovno središte te mjesto održavanja brojnih poslovnih skupova. Turistima su na raspolaganju i brojne uslužne djelatnosti, dok, kad je o ugostiteljsko-turističkom sektoru riječ, treba izdv",
+    "rijec_gradonacelnika": "Riječ gradonačelnika Grada Slavonskog Broda Povijesne znamenitosti Prirodni rezervati Manifestacije Smještaj Restorani Preporuke Izletišta Rekreacija Lov i ribolov Living history Informacije i zaštita podataka, Dokumenti i Pravni okvir Kontakti Centar za posjetitelje Turističke agencije Hrvatski English Deutsch Italiano --> 3D slika Muzej tambura Mural Slavonski Brod i okolica Županija Riječ gradonačelnika grada Slavonskog Broda Gradski vodič - siječanj/veljača 2012. Riječ gradonačelnika Poštovani i dragi prijatelji! Za razvoj grada Slavonskog Broda koji obuhvaća naselja Slavonski Brod, Brodski Varoš i Podvinje od presudnog je značaja uvijek bio strateški zemljopisni položaj uz autocestu i željezničku prugu – poveznice Europe s Istokom. O dugoj povijesti i bogatoj tradiciji grada svjedoči originalna rimska diploma iz 71. godine s prvim zapisom antičkog imena Broda, a iz vremena Vojne krajine na granici austrijskog i turskog carstva – srednjovjekovna tvrđava Brod koju Austrija gradi 1715. Ukinućem Vojne granice 1871. Brod dobiva status grada srednjovjekovne arhitekture s palačama bogatih trgovaca i industrijalaca u stilu historicizma i secesije i Trgom Ivane Brlić-Mažuranić koji je površinom najveći gradski trg u Hrvatskoj. Iako prvenstveno industrijski grad, Slavonski Brod je i poslovno središte te mjesto održavanja brojnih poslovnih skupova. Turistima su na raspolaganju i brojne uslužne djelatnosti, dok, kad je o ugostiteljsko-turističkom sektoru riječ, treba izdvojiti četir",
     "kontakti": "Turističke zajednice Turistička zajednica područja Slavonski Brod-Posavina Trg pobjede 28/I, HR-35000 Slavonski Brod tel.: +385 35 447 721 web: www.tzgsb.hr e-mail: info@tzgsb.hr Turistička zajednica Brodsko-posavske županije Petra Krešimira IV br. 2, HR-35000 Slavonski Brod tel.: +385 35 408 393; fax: +385 35 408 392 web: www.tzbpz.hr e-mail: info@tzbpz.hr Turističko informativni centar Radno vrijeme: svaki dan od 10:00 do 17:00 srpanj i kolovoz: od 10,00 do 19,00 sati Trg Ivane Brlić-Mažuranić 7a, HR-35000 Slavonski Brod tel.: +385 35 203 696 e-mail: tic@tzgsb.hr Služba turističkih vodiča grada Slavonskog Broda Trg pobjede 28/1, HR-35000 Slavonski Brod tel: +385 35 447 721 e-mail: info@tzgsb.hr Važne adrese i telefoni Za telefon i telefax predbroj iz Hrvatske 035, a iz svijeta +385 35. Detaljnije informacije o telekomunikacijama vidjeti na on-line telefonskom imeniku Hrvatske: Čitav niz drugih korisnih informacija možete naći na najvećem hrvatskom Internet portalu: Bolnica Opća bolnica \"Dr. Josip Benčević\" A. Štampara 42 centrala: +385 35 201 201 Hitna medicinska pomoć Plavo polje, Borovska 7 tel.: 194 Državna uprava za zaštitu i spašavanje tel.: 112 Dežurne bolnice i ljekarne (u cijeloj Hrvatskoj) tel.: +385 60 334 334 Policija Dežurna služba: 192 Policijska uprava Slavonski Brod Ivana Mažuranića 7 centrala: +385 35 211 111 prometna policija: +385 35 211 500 Autobusni kolodvor Slavonski Brod Trg hrvatskog proljeća informacije: +385 60 810 810 Željeznički kolodvor Slavonski",
     "tic": "Turističko-informativni centar Turističko-informativni centar Turističke zajednice područja Slavonski Brod-Posavina nalazi se u samom središtu grada, na adresi Trg Ivane Brlić-Mažuranić 7a. U centru za posjetitelje mogu se dobiti turističke informacije i promotivne brošure; kupiti suveniri s lokalnim obilježjima te razgledati izložbeni eksponati. Telefon: +385 35 203 696 E-mail: tic@tzgsb.hr Radno vrijeme: svaki dan, od 10,00 do 17,00 sati; srpanj i kolovoz: od 10,00 do 19,00 sati",
     "turisticke_agencije": "Turističke agencije Hrvatski English Deutsch Italiano --> 3D slika Muzej tambura Mural Informacije i zaštita podataka Kontakti Centar za posjetitelje Turističke agencije Integrirani program Interpretacijski centar Ivana Brlić Mažuranić Integrirani program Kuća Tambure Slavonska notna bajka Integrirani program Obnova tvrđave Brod Integrirani program People Powered Tourism Gradski vodič - siječanj/veljača 2012. Turističke agencije Atlantis travel d.o.o. nas. Slavonija I/3 HR-35000 Slavonski Brod tel.: +385 35 442 411 fax: +385 35 441 276 e-mail: croatia@atlantis-travel.hr Brod tours M. Mesića 60 HR-35000 Slavonski Brod tel.: +385 35 444 111 fax: +385 35 444 035 e-mail: info@brod-tours.hr Kompas Brod Petra Krešimira IV 36 HR-35000 Slavonski Brod tel.: +385 35 409 060 fax: +385 35 449 760 mob: +385 91 1002 221 e-mail: kompas@vip.hr Mystical TRAVEL Trg Hrvatskog Proljeća 12 HR-35000 Slavonski Brod tel.: +385 99 856 8444 e-mail: info@mystical-travel.hr Slavonija bus d.o.o. Trg hrvatskog proljeća b.b. HR-35000 Slavonski Brod tel.: +385 35 415 165 fax: +385 35 475 301 e-mail: info@slavonija-bus.hr VB Tours P. Krešimira IV 49 HR-35000 Slavonski Brod tel./fax: +385 35 449 911, 449 922 mob: +385 98 263 992, +385 98 550 201, e-mail: vbtours@sb.htnet.hr , vbtours.hr@gmail.com eHolidays Vatroslava Jagića 17 HR-35000 Slavonski Brod tel: +385 (0)35 628 777 e-mail: info@eholidays.hr"
