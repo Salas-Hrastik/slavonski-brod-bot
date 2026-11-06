@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-05 13:31 UTC
+// Zadnje skrapanje: 2026-11-06 13:17 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-05T13:31:50.012Z",
+    "zadnje_azuriranje": "2026-11-06T13:17:09.970Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -17,6 +17,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "PRIUŠTIVO STANOVANJE - što je i zašto je važno?",
+      "datum": "06. 11. 2026.",
+      "kratki_opis": "Stanovanje je jedna od osnovnih ljudskih potreba. Svatko treba imati sigurno mjesto za život, prostor u kojem može živjeti sa svojom obitelji, odgajati djecu i planirati budućnost. Međutim, u posljednjih nekoliko godina sve je teže doći do vlastitog stana ili pronaći stan za najam po cijeni koju si ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17421-priustivo-stanovanje-sto-je-i",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/young-woman-holding-key-new-home-street_resize.jpg"
+    },
+    {
+      "naslov": "Predstavljeno kulturno dobro „Tradicija uzgoja i suživota s hrvatskim ovčarom“",
+      "datum": "06. 11. 2026.",
+      "kratki_opis": "Hrvatski ovčar, bujo, bujtar, pulin, ćuko… U četvrtak, 5. studenoga, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu predstavljeno je kulturno dobro „Tradicija uzgoja i suživota s hrvatskim ovčarom“. U fokusu večeri bio je suživot čovjeka i hrvatskog ovčara, psa koji ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17429-predstavljeno-kulturno-dobro-tradicija-uzgoja-i-suzivota-s-hrvatskim-ovcarom",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/WhatsApp_Image_2026-11-05_at_200854.jpeg"
+    },
+    {
+      "naslov": "Krevetić, pelene i puno dobrih želja za pet novih obitelji",
+      "datum": "06. 11. 2026.",
+      "kratki_opis": "Prvi dani s bebom donose mnogo radosti, ali i brojne pripreme. Kako bismo roditeljima olakšali taj dio, danas smo uručili pet novih paketa opreme za bebe. Paketi su obiteljima predani u nazočnosti zamjenice gradonačelnika Marine Martić Puače. Svaki paket vrijedan je 700 eura i sadrži sve što je potr",
+      "link": "https://www.slavonski-brod.hr/vijesti/17427-krevetic-pelene-i-puno-dobrih-zelja-za-pet-novih-obitelji",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Bebe61126.jpg"
+    },
+    {
+      "naslov": "Obavijest korisnicima o odvozu glomaznog otpada u MO Centar, Plavo Polje i Antun Mihanović",
+      "datum": "06. 11. 2026.",
+      "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 7. studenoga 2026., glomazni otpad prikuplja se u mjesnim odborima Centar, Plavo Polje i A. Mihanović . Prikupljanje će se nastaviti i u ostalim mjesnim odborima, a o rasporedu ćemo pravodobno",
+      "link": "https://www.slavonski-brod.hr/vijesti/17424-obavijest-korisnicima-o-odvozu-glomaznog-otpada-u-mo-centar-plavo-polje-i-antun-mihanovic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09294-scaled.jpg"
+    },
     {
       "naslov": "Održan sastanak o prometnoj sigurnosti u blizini škola i prevenciji nasilja u školama",
       "datum": "05. 11. 2026.",
@@ -58,34 +86,6 @@ export const scrapedContent = {
       "kratki_opis": "Dragutin Tadijanović , jedan od najznačajnijih hrvatskih pjesnika i jedan od najvećih književnih velikana našega kraja, danas bi proslavio svoj 121. rođendan . Rođen 4. studenoga 1905. godine u Rastušju pokraj Slavonskog Broda, cijeloga je života ostao duboko povezan sa svojim zavičajem, koji je ima",
       "link": "https://www.slavonski-brod.hr/vijesti/17414-slavonski-brod-s-ponosom-cuva-uspomenu-na-dragutina-tadijanovica-121-godina-od-rodenja-velikog-pjesnika",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Tadijanovic_naslovnica_s_tekstom.jpg"
-    },
-    {
-      "naslov": "Plesne večeri za umirovljenike vraćaju se u studenome",
-      "datum": "04. 11. 2026.",
-      "kratki_opis": "Plesne večeri za umirovljenike vraćaju se u studenome. Sljedeća je u nedjelju, 15. studenoga, od 19 do 21 sat u Mjesnom domu Naselja Andrije Hebranga (Osječka ulica 24). Na tim su se večerima mnogi naši sugrađani upoznali i zaplesali uz pjesme svoje mladosti. Za neke je to postao stalni nedjeljni iz",
-      "link": "https://www.slavonski-brod.hr/vijesti/17413-plesne-veceri-za-umirovljenike-vracaju-se-u-studenome-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/1000005190_plesnjak_hebrang.jpg"
-    },
-    {
-      "naslov": "DDD mjere 2026. godine – 6. tjedan provođenja jesenske deratizacije",
-      "datum": "04. 11. 2026.",
-      "kratki_opis": "U razdoblju od 04. studenog (srijeda) do 06. studenog (petak) 2026. godine na području grada Slavonskog Broda, stručni i osposobljeni djelatnici tvrtke ADRIA GRUPA d.o.o. iz Zagreba (dalje u tekstu: „Izvođači radova“) provest će deratizaciju stambenih objekata, javnih zelenih površina, obala vodotok",
-      "link": "https://www.slavonski-brod.hr/vijesti/17412-ddd-mjere-2026-godine-6-tjedan-provodenja-jesenske-deratizacije",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/jugoistocni_dio_grada_resize.jpg"
-    },
-    {
-      "naslov": "Simbolima mržnje nije mjesto u našem gradu",
-      "datum": "03. 11. 2026.",
-      "kratki_opis": "U našem gradu, kao i u drugim sredinama, povremeno se na zgradama, javnim površinama, pa i na spomen-obilježjima pojavljuju grafiti s porukama mržnje i simbolima totalitarnih režima. Svaki takav čin oštro osuđujemo, bez obzira na to gdje se dogodio, čija je imovina oštećena i kome je poruka namijenj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17411-simbolima-mrznje-nije-mjesto-u-nasem-gradu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/tvrdava_i_grad_2_resize.jpg"
-    },
-    {
-      "naslov": "In memoriam -  mons. Marin Srakić, đakovačko-osječki nadbiskup u miru i počasni građanin Slavonskog Broda",
-      "datum": "03. 11. 2026.",
-      "kratki_opis": "Zauvijek nas je napustio mons. Marin Srakić, đakovačko-osječki nadbiskup u miru, prvi nadbiskup i metropolit Đakovačko-osječke nadbiskupije, bivši predsjednik Hrvatske biskupske konferencije i počasni građanin Slavonskog Broda. Bio je pastir, učitelj i čovjek koji je više od šest desetljeća svoj živ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17410-in-memoriam-mons-marin-srakic-dakovacko-osjecki-nadbiskup-u-miru-i-pocasni-gradanin-slavonskog-broda",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/MS.jpg"
     }
   ],
   "manifestacije_aktualne": [
