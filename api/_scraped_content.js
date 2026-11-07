@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-06 13:17 UTC
+// Zadnje skrapanje: 2026-11-07 11:57 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-06T13:17:09.970Z",
+    "zadnje_azuriranje": "2026-11-07T11:57:07.850Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -21,13 +21,13 @@ export const scrapedContent = {
       "naslov": "PRIUŠTIVO STANOVANJE - što je i zašto je važno?",
       "datum": "06. 11. 2026.",
       "kratki_opis": "Stanovanje je jedna od osnovnih ljudskih potreba. Svatko treba imati sigurno mjesto za život, prostor u kojem može živjeti sa svojom obitelji, odgajati djecu i planirati budućnost. Međutim, u posljednjih nekoliko godina sve je teže doći do vlastitog stana ili pronaći stan za najam po cijeni koju si ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17421-priustivo-stanovanje-sto-je-i",
+      "link": "https://www.slavonski-brod.hr/vijesti/17421-priustivo-stanovanje-sto-je-i-zasto-je-vazno",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/young-woman-holding-key-new-home-street_resize.jpg"
     },
     {
       "naslov": "Predstavljeno kulturno dobro „Tradicija uzgoja i suživota s hrvatskim ovčarom“",
       "datum": "06. 11. 2026.",
-      "kratki_opis": "Hrvatski ovčar, bujo, bujtar, pulin, ćuko… U četvrtak, 5. studenoga, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu predstavljeno je kulturno dobro „Tradicija uzgoja i suživota s hrvatskim ovčarom“. U fokusu večeri bio je suživot čovjeka i hrvatskog ovčara, psa koji ",
+      "kratki_opis": "Hrvatski ovčar, bujo, bujtar, pulin, ćuko,… U četvrtak, 5. studenoga, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu predstavljeno je kulturno dobro „Tradicija uzgoja i suživota s hrvatskim ovčarom“. U fokusu večeri bio je suživot čovjeka i hrvatskog ovčara, psa koji",
       "link": "https://www.slavonski-brod.hr/vijesti/17429-predstavljeno-kulturno-dobro-tradicija-uzgoja-i-suzivota-s-hrvatskim-ovcarom",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/WhatsApp_Image_2026-11-05_at_200854.jpeg"
     },
