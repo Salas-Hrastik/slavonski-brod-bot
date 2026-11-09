@@ -311,7 +311,8 @@ function buildScrapedSection(category, message = '') {
     lines.push(`PRAVILA ZA DVORANE (STROGO):
 - Kapacitet je najveći broj osoba po dvorani. Ako postoji popis "ODGOVARAJUĆE DVORANE", navedi SVE dvorane s njega, TOČNO tim redom, bez preskakanja i bez dodavanja dvorana manjeg kapaciteta. Dvorane označene [IZVAN GRADA] navedi u zasebnom odlomku "Izvan grada", uz napomenu da su prvenstveno svečane dvorane (svadbe, proslave) — osim ako je upit upravo o svadbi/proslavi.
 - Navodi SAMO podatke iz popisa: naziv, dvoranu, kapacitet, adresu, telefon, e-mail, web i napomenu u zagradi (ako postoji). NE izmišljaj i NE pretpostavljaj opremu, catering, tehničku podršku, parking, cijene ni slobodne termine — za to uputi na kontakt objekta. Jedina poznata cijena: Hotel Savus — najam dvorane za sastanke s opremom 65,00 €/sat.
-- Ne piši uvodne rečenice o sezoni ili vremenu kod pitanja o dvoranama — odmah navedi dvorane.`);
+- Ne piši uvodne rečenice o sezoni ili vremenu kod pitanja o dvoranama — odmah navedi dvorane.
+- Sažet zapis: po dvorani najviše DVA retka — 1) ikona + **naziv** — kapacitet (napomena); 2) 📍 adresa · 📞 telefon · ✉️ e-mail (web samo ako nije Facebook).`);
   }
 
 
@@ -1109,7 +1110,7 @@ ${scrapedSection}`;
 
     const completion = await anthropic.messages.create({
       model: "claude-sonnet-5",
-      max_tokens: 1100,
+      max_tokens: resolvedCat === 'konferencije' ? 2000 : 1100, // popisi dvorana su dugi — inače se odgovor odreže
       thinking: { type: "disabled" }, // turistički bot: prioritet je brzina odgovora
       system: [
         { type: "text", text: systemStable, cache_control: { type: "ephemeral" } },
