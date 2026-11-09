@@ -6,9 +6,12 @@
         "node": "24.x"
     },
     "scripts": {
-        "scrape": "node scripts/scrape-brod.js"
+        "scrape": "node scripts/scrape-brod.js",
+        "scrape:cjenici": "node scripts/scrape-cjenici.js",
+        "scrape:hoteli": "node scripts/scrape-hoteli.js"
     },
     "dependencies": {
-        "@anthropic-ai/sdk": "^0.109.1"
+        "@anthropic-ai/sdk": "^0.109.1",
+        "node-html-parser": "^6.1.13"
     }
 }

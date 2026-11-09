@@ -2,6 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { db } from "./_database.js";
 import { scrapedContent } from "./_scraped_content.js";
 import { cjenici } from "./_cjenici.js";
+import { hoteliWeb } from "./_hoteli.js";
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY?.trim()
@@ -193,6 +194,40 @@ function wantsCjenik(msgLower, category) {
   if (category === 'gastronomija') return true;
   return isPriceQuestion(msgLower)
     || CJENIK_TERMS.some(w => w.length >= 6 && msgLower.includes(w)) && /koliko|cijen|price|preis|kost/.test(msgLower);
+}
+
+// ─── Podaci s web stranica hotela (scripts/scrape-hoteli.js → api/_hoteli.js) ──
+const SMJESTAJ_WORDS = ['smješt', 'smjest', 'noćen', 'nocen', 'noćenj', 'prenoć', 'soba', 'sobe', 'sobu', 'apartman', 'hotel', 'hostel', 'pansion', 'doručak', 'polupansion', 'puni pansion', 'boravišn', 'pristojb', 'wellness', 'saun', 'masaž', 'kupk', 'parking', 'parkir', 'check-in', 'prijava', 'odjava', 'ljubim', 'kućni', 'accommodation', 'room', 'night', 'stay', 'breakfast', 'unterkunft', 'zimmer', 'übernacht', 'frühstück'];
+function spomenutiHoteli(msgLower) {
+  return Object.entries(hoteliWeb?.hoteli || {})
+    .filter(([, h]) => (h.kljucevi || []).some(k => msgLower.includes(k)))
+    .map(([ime]) => ime);
+}
+function isHotelPriceQuestion(msgLower) {
+  return PRICE_WORDS.some(w => msgLower.includes(w)) && SMJESTAJ_WORDS.some(w => msgLower.includes(w));
+}
+function buildHoteliSection(msgLower, category) {
+  if (!hoteliWeb?.hoteli) return '';
+  const spomenuti = spomenutiHoteli(msgLower);
+  const cjenovno = isHotelPriceQuestion(msgLower);
+  if (!spomenuti.length && !cjenovno && category !== 'smjestaj') return '';
+  const lines = [`\nPODACI SA SLUŽBENIH WEB STRANICA SMJEŠTAJNIH OBJEKATA (cjenici, sobe, sadržaji):`];
+  const hoteliZaIspis = spomenuti.length ? spomenuti : Object.keys(hoteliWeb.hoteli);
+  for (const ime of hoteliZaIspis) {
+    const h = hoteliWeb.hoteli[ime];
+    // Spomenuti hotel → sve stranice; općenito pitanje → samo stranica s cjenikom (prva)
+    const stranice = spomenuti.length ? h.stranice : h.stranice.slice(0, 1);
+    lines.push(`\n### ${ime} — ${h.web} (preuzeto ${h.preuzeto})`);
+    (h.napomene || []).forEach(n => lines.push(`⚠️ ${n}`));
+    stranice.forEach(st => lines.push(`[${st.tema}] ${st.url}\n${st.tekst}`));
+  }
+  if (hoteliWeb.nedostupni?.length)
+    lines.push(`\nBez dostupne web stranice (nema online cjenika): ${hoteliWeb.nedostupni.map(n => `${n.naziv} (${n.razlog})`).join(', ')}.`);
+  lines.push(`PRAVILA ZA SMJEŠTAJ: cijene i podatke o sobama/sadržajima navodi SAMO iz ovih tekstova, točno kako pišu, uz naziv objekta i napomenu da su prema web stranici objekta (datum preuzimanja) te da se za rezervaciju i potvrdu cijene treba javiti objektu. Pazi što je uključeno (doručak, PDV, boravišna pristojba) — to navedi. Poštuj ⚠️ napomene. Ne izmišljaj cijene ni sadržaje kojih nema u tekstu.`);
+  let out = lines.join('\n');
+  const MAX = 24000;
+  if (out.length > MAX) out = out.slice(0, MAX) + '\n… (skraćeno)';
+  return out;
 }
 
 function buildCjenikSection() {
@@ -720,13 +755,15 @@ export default async function handler(req, res) {
     // Konverzacijski mod: history >= 2 ILI activity pitanje — ali NE ako je direktno listanje
     // Pitanje o cijeni jela (npr. "Koliko košta pizza u Orozu?") mora ići AI-ju s cjenikom,
     // ne na instant popis svih restorana.
-    const isPriceQuery = isPriceQuestion(msgLower);
-    const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery || isPriceQuery) && !isDirectListingRequest;
+    const isPriceQuery = isPriceQuestion(msgLower) || isHotelPriceQuestion(msgLower);
+    // Pitanje o konkretnom hotelu (npr. "Ima li Hotel Central parking?") → AI s podacima s weba hotela
+    const isHotelDetailQuery = spomenutiHoteli(msgLower).length > 0;
+    const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery || isPriceQuery || isHotelDetailQuery) && !isDirectListingRequest;
 
     const isGeneralKnowledgeQuery = ['kako se priprema', 'kako se kuha', 'recept', 'recepti', 'sastojci', 'kultura', 'tradicija', 'običaj', 'folklor', 'porijeklo', 'legenda', 'kako doći', 'how to make', 'how to cook', 'recipe', 'ingredients', 'tradition', 'culture', 'how to get', 'wie macht man', 'wie kommt man', 'rezept', 'klima', 'valuta', 'govore li', 'koji jezik', 'vegetar', 'vegan'].some(k => msgLower.includes(k));
 
     // FAQ pre-gen blokovi (preskaču se za pitanja o cijenama jela/pića — njih odgovara AI s cjenikom)
-    if (!isPriceQuery) {
+    if (!isPriceQuery && !isHotelDetailQuery) {
       const ml = msgLower;
       let faqReply = null;
 
@@ -995,7 +1032,8 @@ export default async function handler(req, res) {
       contextStr = contextStr.slice(0, MAX_CTX_CHARS) + '\n… (skraćeno radi brzine)';
     }
     const scrapedSection = buildScrapedSection(resolvedCat, message)
-      + (wantsCjenik(message.toLowerCase(), resolvedCat) ? buildCjenikSection() : '');
+      + (wantsCjenik(message.toLowerCase(), resolvedCat) && !isHotelPriceQuestion(message.toLowerCase()) ? buildCjenikSection() : '')
+      + buildHoteliSection(message.toLowerCase(), resolvedCat);
 
     const langInstruction = lang === 'en'
       ? 'The user is writing in English. Respond in English.'
