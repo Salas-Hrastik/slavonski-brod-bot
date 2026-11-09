@@ -199,7 +199,10 @@ function buildCjenikSection() {
   const fmt = n => n.toFixed(2).replace('.', ',') + ' €';
   const lines = [`\nCJENICI JELA (s web stranica restorana; ${cjenici.napomena})`];
   for (const [ime, r] of Object.entries(cjenici.restorani)) {
-    lines.push(`\n## ${ime} — cjenik preuzet ${r.preuzeto} s ${r.izvor}${r.napomena ? ` (${r.napomena})` : ''}`);
+    const kljuc = ime.toLowerCase().split(' ')[0];
+    const info = (db.gastronomija?.restorani || []).find(x => x.naziv.toLowerCase().includes(kljuc));
+    const kontakt = info ? ` | ${info.adresa}${info.telefon ? ` | Tel: ${info.telefon}` : ''}${info.mobitel ? ` | Mob: ${info.mobitel}` : ''}` : '';
+    lines.push(`\n## ${ime}${kontakt} — cjenik preuzet ${r.preuzeto} s ${r.izvor}${r.napomena ? ` (${r.napomena})` : ''}`);
     for (const k of r.kategorije) {
       lines.push(`${k.kategorija}: ` + k.stavke.map(s => {
         let t = s.naziv + (s.opis ? ` (${s.opis})` : '');
