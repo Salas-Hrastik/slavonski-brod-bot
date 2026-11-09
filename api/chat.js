@@ -1,6 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { db } from "./_database.js";
 import { scrapedContent } from "./_scraped_content.js";
+import { cjenici } from "./_cjenici.js";
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY?.trim()
@@ -164,6 +165,54 @@ function findRelevantItems(text, category) {
   });
 
   return matched.slice(0, 6).map(item);
+}
+
+// ─── Cjenici jela (scripts/scrape-cjenici.js → api/_cjenici.js) ─────────────
+// Dodaje se u kontekst samo kad je pitanje o hrani/cijenama ili spominje
+// restoran/jelo s cjenika (~10k znakova — ne šaljemo ga uz svaki upit).
+const PRICE_WORDS = ['cijen', 'cjen', 'košta', 'kosta', 'koštaju', 'koliko je', 'koliko su', 'koliko plać', 'skup', 'jeftin', 'povolj', '€', 'eur', 'jelovnik', 'meni', 'menu', 'price', 'cost', 'how much', 'cheap', 'expensive', 'preis', 'kostet', 'wie viel', 'speisekarte', 'billig', 'teuer'];
+const CJENIK_TERMS = (() => {
+  const t = new Set();
+  for (const [ime, r] of Object.entries(cjenici?.restorani || {})) {
+    t.add(ime.toLowerCase().split(' ')[0]);
+    r.kategorije.forEach(k => k.stavke.forEach(s =>
+      s.naziv.toLowerCase().split(/[\s,()/]+/).filter(w => w.length >= 5 && !/^\d/.test(w)).forEach(w => t.add(w))));
+  }
+  ['kom.', 'osobe', 'umaku', 'sirom', 'žaru', 'pommes'].forEach(w => t.delete(w));
+  return [...t];
+})();
+
+const FOOD_DRINK_WORDS = ['jel', 'hran', 'piz', 'pić', 'pic', 'piv', 'vin', 'kav', 'sok', 'food', 'dish', 'drink', 'beer', 'wine', 'coffee', 'essen', 'gericht', 'getränk', 'bier', 'wein', 'kaffee'];
+function isPriceQuestion(msgLower) {
+  return PRICE_WORDS.some(w => msgLower.includes(w))
+    && (CJENIK_TERMS.some(w => msgLower.includes(w)) || FOOD_DRINK_WORDS.some(w => msgLower.includes(w)));
+}
+
+function wantsCjenik(msgLower, category) {
+  if (!cjenici?.restorani) return false;
+  if (category === 'gastronomija') return true;
+  return isPriceQuestion(msgLower)
+    || CJENIK_TERMS.some(w => w.length >= 6 && msgLower.includes(w)) && /koliko|cijen|price|preis|kost/.test(msgLower);
+}
+
+function buildCjenikSection() {
+  const fmt = n => n.toFixed(2).replace('.', ',') + ' €';
+  const lines = [`\nCJENICI JELA (s web stranica restorana; ${cjenici.napomena})`];
+  for (const [ime, r] of Object.entries(cjenici.restorani)) {
+    lines.push(`\n## ${ime} — cjenik preuzet ${r.preuzeto} s ${r.izvor}${r.napomena ? ` (${r.napomena})` : ''}`);
+    for (const k of r.kategorije) {
+      lines.push(`${k.kategorija}: ` + k.stavke.map(s => {
+        let t = s.naziv + (s.opis ? ` (${s.opis})` : '');
+        if (s.cijena != null) t += ` ${fmt(s.cijena)}`;
+        if (s.varijante) t += ` [${s.varijante.map(v => `${v.naziv} ${fmt(v.cijena)}`).join(' / ')}]`;
+        if (s.cijena_referentna != null) t += ` (ref. ${fmt(s.cijena_referentna)})`;
+        return t;
+      }).join('; '));
+    }
+  }
+  lines.push(`\nRestorani BEZ online cjenika: ${cjenici.bez_online_cjenika.join(', ')}. Karte pića nijedan restoran ne objavljuje online.`);
+  lines.push(`PRAVILA ZA CIJENE: navodi samo cijene iz ovog popisa, točno kako pišu, uz naziv restorana; NIKAD ne izmišljaj ni procjenjuj cijene (ni pića). Ako stavka ili restoran nema cijenu, reci to i uputi na telefon restorana. Kod cijena s [Normal/Jumbo/Velika] navedi veličine. Dodaj kratku napomenu da su cijene informativne (prema web stranici restorana, datum preuzimanja).`);
+  return lines.join('\n');
 }
 
 function buildScrapedSection(category) {
@@ -621,12 +670,15 @@ export default async function handler(req, res) {
 
     const conversationHistory = Array.isArray(history) ? history : [];
     // Konverzacijski mod: history >= 2 ILI activity pitanje — ali NE ako je direktno listanje
-    const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery) && !isDirectListingRequest;
+    // Pitanje o cijeni jela (npr. "Koliko košta pizza u Orozu?") mora ići AI-ju s cjenikom,
+    // ne na instant popis svih restorana.
+    const isPriceQuery = isPriceQuestion(msgLower);
+    const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery || isPriceQuery) && !isDirectListingRequest;
 
     const isGeneralKnowledgeQuery = ['kako se priprema', 'kako se kuha', 'recept', 'recepti', 'sastojci', 'kultura', 'tradicija', 'običaj', 'folklor', 'porijeklo', 'legenda', 'kako doći', 'how to make', 'how to cook', 'recipe', 'ingredients', 'tradition', 'culture', 'how to get', 'wie macht man', 'wie kommt man', 'rezept', 'klima', 'valuta', 'govore li', 'koji jezik', 'vegetar', 'vegan'].some(k => msgLower.includes(k));
 
-    // FAQ pre-gen blokovi
-    {
+    // FAQ pre-gen blokovi (preskaču se za pitanja o cijenama jela/pića — njih odgovara AI s cjenikom)
+    if (!isPriceQuery) {
       const ml = msgLower;
       let faqReply = null;
 
@@ -894,7 +946,8 @@ export default async function handler(req, res) {
     if (contextStr.length > MAX_CTX_CHARS) {
       contextStr = contextStr.slice(0, MAX_CTX_CHARS) + '\n… (skraćeno radi brzine)';
     }
-    const scrapedSection = buildScrapedSection(resolvedCat);
+    const scrapedSection = buildScrapedSection(resolvedCat)
+      + (wantsCjenik(message.toLowerCase(), resolvedCat) ? buildCjenikSection() : '');
 
     const langInstruction = lang === 'en'
       ? 'The user is writing in English. Respond in English.'
