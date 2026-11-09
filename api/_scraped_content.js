@@ -1,15 +1,16 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-08 12:15 UTC
+// Zadnje skrapanje: 2026-11-09 08:27 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-08T12:15:33.269Z",
+    "zadnje_azuriranje": "2026-11-09T08:27:51.271Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
       "https://www.tzgsb.hr/static/json/smjestaj.json",
+      "https://www.tzgsb.hr/static/json/konferencijske_dvorane.json",
       "https://www.tzgsb.hr/index.php?page=manifestacije",
       "https://www.tzgsb.hr/index.php?page=kulturna-bastina",
       "https://www.tzgsb.hr/index.php?page=rekreacija",
@@ -17,6 +18,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Humanitarnim koncertom obilježeno 10 godina djelovanja Marijinih obroka",
+      "datum": "08. 11. 2026.",
+      "kratki_opis": "Volonteri Marijinih obroka Slavonski Brod obilježili su 10 godina djelovanja humanitarnim koncertom održanim u subotu, 7. studenoga, u dvorani Vijuš. Oko 1500 posjetitelja svojim je dolaskom podržalo ovu humanitarnu inicijativu. U glazbenom programu nastupili su Marko Kutlić, sestre Halužan, Matej G",
+      "link": "https://www.slavonski-brod.hr/vijesti/17430-humanitarnim-koncertom-obiljezeno-10-godina-djelovanja-marijinih-obroka",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG-20261108-WA0030_resize.jpg"
+    },
     {
       "naslov": "PRIUŠTIVO STANOVANJE - što je i zašto je važno?",
       "datum": "06. 11. 2026.",
@@ -79,13 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "Pozivamo građane Slavonskog Broda da sudjeluju u kreiranju novog gradskog proračuna za 2027. godinu. S obzirom na to da je tekuća godina pri izmaku, svoje ideje i prijedloge o projektima za koje smatrate da su važni za daljnji razvoj Slavonskog Broda možete dostaviti putem elektroničke pošte na adre",
       "link": "https://www.slavonski-brod.hr/vijesti/17416-sudjelujte-u-kreiranju-gradskog-proracuna-za-2027-godinu",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Proracun.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod s ponosom čuva uspomenu na Dragutina Tadijanovića – 121 godina od rođenja velikog pjesnika",
-      "datum": "04. 11. 2026.",
-      "kratki_opis": "Dragutin Tadijanović , jedan od najznačajnijih hrvatskih pjesnika i jedan od najvećih književnih velikana našega kraja, danas bi proslavio svoj 121. rođendan . Rođen 4. studenoga 1905. godine u Rastušju pokraj Slavonskog Broda, cijeloga je života ostao duboko povezan sa svojim zavičajem, koji je ima",
-      "link": "https://www.slavonski-brod.hr/vijesti/17414-slavonski-brod-s-ponosom-cuva-uspomenu-na-dragutina-tadijanovica-121-godina-od-rodenja-velikog-pjesnika",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Tadijanovic_naslovnica_s_tekstom.jpg"
     }
   ],
   "manifestacije_aktualne": [
@@ -119,6 +120,7 @@ export const scrapedContent = {
       "naziv": "Eden",
       "adresa": "J. J. Strossmayera 1, 35000 Slavonski Brod",
       "telefon": "+385 35 440 406",
+      "web": "",
       "slika": "https://www.tzgsb.hr/static/images/re-eden170x120-1.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Eden%20Slavonski%20Brod"
     },
@@ -150,6 +152,7 @@ export const scrapedContent = {
       "naziv": "Onyx",
       "adresa": "N. Zrinskog 50, 35000 Slavonski Brod",
       "telefon": "+385 35 445 555",
+      "web": "",
       "slika": "https://www.tzgsb.hr/static/images/restorani/onyx_170.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Onyx%20Slavonski%20Brod"
     },
@@ -165,6 +168,7 @@ export const scrapedContent = {
       "naziv": "Uno",
       "adresa": "N. Zrinskog 7, 35000 Slavonski Brod",
       "telefon": "+385 35 442 107",
+      "web": "",
       "slika": "https://www.tzgsb.hr/static/images/re-uno170x120-1.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Uno%20Slavonski%20Brod"
     },
@@ -188,6 +192,7 @@ export const scrapedContent = {
       "naziv": "Gurman",
       "adresa": "Ul. Matije Mesića 47, 35000 Slavonski Brod",
       "telefon": "+385 35 427 841",
+      "web": "",
       "slika": "https://www.tzgsb.hr/static/images/restorani/gurman_170.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Gurman%20Slavonski%20Brod"
     },
@@ -203,6 +208,7 @@ export const scrapedContent = {
       "naziv": "Zdenac",
       "adresa": "Dr. Mile Budaka 1A, 35000 Slavonski Brod",
       "telefon": "+385 98 265 724",
+      "web": "",
       "slika": "https://www.tzgsb.hr/static/images/zdenac.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Zdenac%20Slavonski%20Brod"
     },
@@ -341,6 +347,380 @@ export const scrapedContent = {
       "web": "",
       "slika": "https://www.tzgsb.hr/static/images/restorani/wok_by_matija_170.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Wok%20by%20Matija%20Slavonski%20Brod"
+    }
+  ],
+  "konferencijske_dvorane": [
+    {
+      "objekt": "CENTAR MLADIH",
+      "dvorana": "",
+      "naziv_en": "YOUTH CENTER",
+      "kapacitet": 20,
+      "adresa": "Ante Starčevića 11, 35 000 Slavonski Brod",
+      "telefon": "+385 35 492 595, +385 99 251 94 22 (Kazališno - koncertna dvorana Ivana Brlić Mažuranić)",
+      "email": "kkd-ibm@kkd-ibm.hr",
+      "web": "https://www.kkd-ibm.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Centar%20mladih.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=CENTAR%20MLADIH%20Ante%20Star%C4%8Devi%C4%87a%2011%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "DRŽAVNI ARHIV U SLAVONSKOM BRODU",
+      "dvorana": "",
+      "naziv_en": "STATE ARCHIVE IN SLAVONSKI BROD",
+      "kapacitet": 60,
+      "adresa": "Augusta Cesarca 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 446 573",
+      "email": "dasb@dasb.hr",
+      "web": "https://dasb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Drzavni%20arhiv%20sb.jpeg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=DR%C5%BDAVNI%20ARHIV%20U%20SLAVONSKOM%20BRODU%20Augusta%20Cesarca%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "GRADSKA KNJIŽNICA SLAVONSKI BROD",
+      "dvorana": "Velika dvorana",
+      "naziv_en": "SLAVONSKI BROD CITY LIBRARY — Big conference room",
+      "kapacitet": 100,
+      "adresa": "Trg Stjepana Miletića 2, 35 000 Slavonski Brod",
+      "telefon": "+385 91 613 77 44",
+      "email": "ravnatelj@gksb.hr",
+      "web": "https://gksb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Gradska%20knjiznica%20SB%20-%20Velika%20dvorana.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=GRADSKA%20KNJI%C5%BDNICA%20SLAVONSKI%20BROD%20Trg%20Stjepana%20Mileti%C4%87a%202%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "GRADSKA KNJIŽNICA SLAVONSKI BROD",
+      "dvorana": "Multimedijalna dvorana",
+      "naziv_en": "SLAVONSKI BROD CITY LIBRARY — Multimedia conference room",
+      "kapacitet": 50,
+      "adresa": "Trg Stjepana Miletića 2, 35 000 Slavonski Brod",
+      "telefon": "+385 91 613 77 44",
+      "email": "ravnatelj@gksb.hr",
+      "web": "https://gksb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Gradska%20knjiznica%20SB%20-%20multimedijalna%20dvorana.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=GRADSKA%20KNJI%C5%BDNICA%20SLAVONSKI%20BROD%20Trg%20Stjepana%20Mileti%C4%87a%202%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "GRADSKA KNJIŽNICA SLAVONSKI BROD",
+      "dvorana": "Mala dvorana",
+      "naziv_en": "SLAVONSKI BROD CITY LIBRARY — Small conference room",
+      "kapacitet": 20,
+      "adresa": "Trg Stjepana Miletića 2, 35 000 Slavonski Brod",
+      "telefon": "+385 91 613 77 44",
+      "email": "ravnatelj@gksb.hr",
+      "web": "https://gksb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Gradska%20knjiznica%20sb%20-%20mala%20dvorana.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=GRADSKA%20KNJI%C5%BDNICA%20SLAVONSKI%20BROD%20Trg%20Stjepana%20Mileti%C4%87a%202%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HOTEL ART",
+      "dvorana": "",
+      "naziv_en": "HOTEL ART",
+      "kapacitet": 80,
+      "adresa": "Nikole Zrinskog 44, 35 000 Slavonski Brod",
+      "telefon": "+385 35 638 950",
+      "email": "info@art-hotel.eu",
+      "web": "https://www.art-hotel.eu",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Art.JPG",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20ART%20Nikole%20Zrinskog%2044%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HOTEL CENTRAL",
+      "dvorana": "",
+      "naziv_en": "HOTEL CENTRAL",
+      "kapacitet": 80,
+      "adresa": "Petra Krešimira IV 45, 35 000 Slavonski Brod",
+      "telefon": "+385 35 492 030",
+      "email": "info@hotelcentralsb.hr",
+      "web": "https://www.hotelcentralsb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Central.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20CENTRAL%20Petra%20Kre%C5%A1imira%20IV%2045%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HOTEL PARK",
+      "dvorana": "Dvorana 1 (Atrij 1)",
+      "naziv_en": "HOTEL PARK — Conference room 1 (Atrium 1)",
+      "kapacitet": 80,
+      "adresa": "Trg pobjede 1, 35 000 Slavonski Brod",
+      "telefon": "+385 91 788 59 19, +385 99 709 68 85",
+      "email": "filip@hotelparksb.hr, valentina@hotelparksb.hr",
+      "web": "https://www.hotelparksb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Park%20-%20dvorana%201%20(atrij%201).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20PARK%20Trg%20pobjede%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HOTEL PARK",
+      "dvorana": "Dvorana 2 (Ovalna dvorana)",
+      "naziv_en": "HOTEL PARK — Conference room 2 (Oval conference room)",
+      "kapacitet": 300,
+      "adresa": "Trg pobjede 1, 35 000 Slavonski Brod",
+      "telefon": "+385 91 788 59 19, +385 99 709 68 85",
+      "email": "filip@hotelparksb.hr, valentina@hotelparksb.hr",
+      "web": "https://www.hotelparksb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Park%20-%20dvorana%202%20(Ovalna%20dvorana).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20PARK%20Trg%20pobjede%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HOTEL PARK",
+      "dvorana": "Dvorana 3 (Anex dvorana)",
+      "naziv_en": "HOTEL PARK — Conference room 3 (Annex conference room)",
+      "kapacitet": 210,
+      "adresa": "Trg pobjede 1, 35 000 Slavonski Brod",
+      "telefon": "+385 91 788 59 19, +385 99 709 68 85",
+      "email": "filip@hotelparksb.hr, valentina@hotelparksb.hr",
+      "web": "https://www.hotelparksb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Park%20-%20dvorana%203%20(anex%20dvorana).jpeg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20PARK%20Trg%20pobjede%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HOTEL PARK",
+      "dvorana": "Dvorana 4 (Atrij 2)",
+      "naziv_en": "HOTEL PARK — Conference room 4 (Atrium 2)",
+      "kapacitet": 80,
+      "adresa": "Trg pobjede 1, 35 000 Slavonski Brod",
+      "telefon": "+385 91 788 59 19, +385 99 709 68 85",
+      "email": "filip@hotelparksb.hr, valentina@hotelparksb.hr",
+      "web": "https://www.hotelparksb.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Park%20-%20dvorana%204%20(atrij%202).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20PARK%20Trg%20pobjede%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HOTEL SAVUS",
+      "dvorana": "",
+      "naziv_en": "HOTEL SAVUS",
+      "kapacitet": 70,
+      "adresa": "Ante Starčevića 2a, 35 000 Slavonski Brod",
+      "telefon": "+385 35 405 888",
+      "email": "info@savus-hotel.com",
+      "web": "https://savus-hotel.com",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Savus.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20SAVUS%20Ante%20Star%C4%8Devi%C4%87a%202a%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HRVATSKI DOM",
+      "dvorana": "",
+      "naziv_en": "CROATIAN HOME",
+      "kapacitet": 244,
+      "adresa": "Ulica Matije Mesića 11, 35 000 Slavonski Brod",
+      "telefon": "+385 35 492 595, +385 99 251 94 22 (Kazališno koncertna dvorana Ivana Brlić Mažuranić)",
+      "email": "kkd-ibm@kkd-ibm.hr",
+      "web": "https://www.kkd-ibm.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Hrvatski%20dom.jpeg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HRVATSKI%20DOM%20Ulica%20Matije%20Mesi%C4%87a%2011%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "INFINITY, DVORANA ZA SVEČANE PRIGODE",
+      "dvorana": "",
+      "naziv_en": "INFINITY, BANQUET HALL",
+      "kapacitet": 200,
+      "adresa": "Šestinac 2/10A, 35 000 Slavonski Brod",
+      "telefon": "+385 95 512 82 78",
+      "email": "sandrapajkovic.agencija@gmail.com",
+      "web": "https://www.facebook.com/p/Infinity-dvorana-za-svečane-prigode-61577150080038",
+      "slika": "https://www.tzgsb.hr/static/images/Dvorana%20Infinity.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=INFINITY%2C%20DVORANA%20ZA%20SVE%C4%8CANE%20PRIGODE%20%C5%A0estinac%202%2F10A%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HRVATSKA GOSPODARSKA KOMORA - ŽUPANIJSKA KOMORA SLAVONSKI BROD",
+      "dvorana": "Velika dvorana",
+      "naziv_en": "CROATIAN CHAMBER OF COMMERCE - COUNTY CHAMBER SLAVONSKI BROD — Big conference room",
+      "kapacitet": 90,
+      "adresa": "Matije Mesića 9, 35 000 Slavonski Brod",
+      "telefon": "+385 35 448 583",
+      "email": "hgksb@hgk.hr",
+      "web": "https://hgk.hr/zupanijska-komora-slavonski-brod",
+      "slika": "https://www.tzgsb.hr/static/images/Zupanijska%20komora%20SB%20-%20velika%20dvorana.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HRVATSKA%20GOSPODARSKA%20KOMORA%20-%20%C5%BDUPANIJSKA%20KOMORA%20SLAVONSKI%20BROD%20Matije%20Mesi%C4%87a%209%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HRVATSKA GOSPODARSKA KOMORA - ŽUPANIJSKA KOMORA SLAVONSKI BROD",
+      "dvorana": "Mala dvorana 1",
+      "naziv_en": "CROATIAN CHAMBER OF COMMERCE - COUNTY CHAMBER SLAVONSKI BROD — Small conference room 1",
+      "kapacitet": 40,
+      "adresa": "Matije Mesića 9, 35 000 Slavonski Brod",
+      "telefon": "+385 35 448 583",
+      "email": "hgksb@hgk.hr",
+      "web": "https://hgk.hr/zupanijska-komora-slavonski-brod",
+      "slika": "https://www.tzgsb.hr/static/images/Zupanijska%20komora%20SB%20-%20mala%20dvorana%201%20(40%20mjesta).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HRVATSKA%20GOSPODARSKA%20KOMORA%20-%20%C5%BDUPANIJSKA%20KOMORA%20SLAVONSKI%20BROD%20Matije%20Mesi%C4%87a%209%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "HRVATSKA GOSPODARSKA KOMORA - ŽUPANIJSKA KOMORA SLAVONSKI BROD",
+      "dvorana": "Mala dvorana 2",
+      "naziv_en": "CROATIAN CHAMBER OF COMMERCE - COUNTY CHAMBER SLAVONSKI BROD — Small conference room 2",
+      "kapacitet": 20,
+      "adresa": "Matije Mesića 9, 35 000 Slavonski Brod",
+      "telefon": "+385 35 448 583",
+      "email": "hgksb@hgk.hr",
+      "web": "https://hgk.hr/zupanijska-komora-slavonski-brod",
+      "slika": "https://www.tzgsb.hr/static/images/Zupanijska%20komora%20SB%20-%20mala%20dvorana%202%20(20%20mjesta).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HRVATSKA%20GOSPODARSKA%20KOMORA%20-%20%C5%BDUPANIJSKA%20KOMORA%20SLAVONSKI%20BROD%20Matije%20Mesi%C4%87a%209%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "KAZALIŠNO KONCERTNA DVORANA IVANA BRLIĆ MAŽURANIĆ",
+      "dvorana": "Amfiteatar",
+      "naziv_en": "THEATRE AND CONCERT HALL IVANA BRLIĆ MAŽURANIĆ — Amphitheater",
+      "kapacitet": 133,
+      "adresa": "Trg Stjepana Miletića 2, 35 000 Slavonski Brod",
+      "telefon": "+385 35 492 595, +385 99 251 94 22",
+      "email": "kkd-ibm@kkd-ibm.hr",
+      "web": "https://www.kkd-ibm.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Kazalisno%20koncertna%20dvorana%20-%20Amfiteatar.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=KAZALI%C5%A0NO%20KONCERTNA%20DVORANA%20IVANA%20BRLI%C4%86%20MA%C5%BDURANI%C4%86%20Trg%20Stjepana%20Mileti%C4%87a%202%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "KUĆA BRLIĆ",
+      "dvorana": "",
+      "naziv_en": "BRLIĆ HOUSE",
+      "kapacitet": 80,
+      "adresa": "Trg Ivane Brlić Mažuranić 8, 35 000 Slavonski Brod",
+      "telefon": "+385 35 256 084",
+      "email": "kucabrlic@gmail.com",
+      "web": "https://www.kucabrlic.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Kuca%20Brlic.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=KU%C4%86A%20BRLI%C4%86%20Trg%20Ivane%20Brli%C4%87%20Ma%C5%BEurani%C4%87%208%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "NIGHT SKY, DVORANA ZA RAZLIČITE PRIGODE",
+      "dvorana": "",
+      "naziv_en": "NIGHT SKY, HALL FOR VARIOUS OCCASIONS",
+      "kapacitet": 70,
+      "adresa": "Šestinac 2/39, 35 000 Slavonski Brod",
+      "telefon": "+385 95 512 82 78",
+      "email": "sandrapajkovic.agencija@gmail.com",
+      "web": "https://www.facebook.com/p/Prostor-za-najam-Night-Sky-100070971769379",
+      "slika": "https://www.tzgsb.hr/static/images/Night%20sky.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=NIGHT%20SKY%2C%20DVORANA%20ZA%20RAZLI%C4%8CITE%20PRIGODE%20%C5%A0estinac%202%2F39%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "RADNIČKI DOM",
+      "dvorana": "",
+      "naziv_en": "WORKER’S HOME",
+      "kapacitet": 200,
+      "adresa": "Radnički trg 5, 35 000 Slavonski Brod",
+      "telefon": "+385 91 534 56 48 (Folklorni ansambl Broda)",
+      "email": "info@fa-broda.hr, folklorni-ansambl-broda@sb.t-com.hr",
+      "web": "https://fa-broda.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Radnicki%20dom.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=RADNI%C4%8CKI%20DOM%20Radni%C4%8Dki%20trg%205%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "SVEČANA DVORANA ARENA GORNJA VRBA",
+      "dvorana": "",
+      "naziv_en": "CEREMONIAL HALL ARENA GORNJA VRBA",
+      "kapacitet": 340,
+      "adresa": "105. Brigade 50, 35 207 Gornja Vrba",
+      "telefon": "+385 99 337 75 28",
+      "email": "svecanadvorana@gmail.com",
+      "web": "https://www.facebook.com/p/Svečana-dvorana-Arena-100063661208951",
+      "slika": "https://www.tzgsb.hr/static/images/Svecana%20dvorana%20Arena.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=SVE%C4%8CANA%20DVORANA%20ARENA%20GORNJA%20VRBA%20105.%20Brigade%2050%2035%20207%20Gornja%20Vrba"
+    },
+    {
+      "objekt": "SVEČANA DVORANA AURELIA PODCRKAVLJE",
+      "dvorana": "",
+      "naziv_en": "CEREMONIAL HALL AURELIA PODCRKAVLJE",
+      "kapacitet": 350,
+      "adresa": "Diljska ulica 39, 35 201 Podcrkavlje",
+      "telefon": "+385 91 609 63 87",
+      "email": "aureliadvorana@gmail.com",
+      "web": "https://www.facebook.com/p/Svečana-dvorana-Aurelia-61576331526949",
+      "slika": "https://www.tzgsb.hr/static/images/Svecana%20dvorana%20Aurelia.jpeg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=SVE%C4%8CANA%20DVORANA%20AURELIA%20PODCRKAVLJE%20Diljska%20ulica%2039%2035%20201%20Podcrkavlje"
+    },
+    {
+      "objekt": "SVEČANA DVORANA BUKOVLJE",
+      "dvorana": "",
+      "naziv_en": "CEREMONIAL HALL BUKOVLJE",
+      "kapacitet": 378,
+      "adresa": "Josipa Kozarca 20, 35 209 Bukovlje",
+      "telefon": "+385 99 807 30 41",
+      "email": "bukovljedoo@gmail.com",
+      "web": "https://bukovlje.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Svecana%20dvorana%20Bukovlje.JPG",
+      "karta": "https://www.google.com/maps/search/?api=1&query=SVE%C4%8CANA%20DVORANA%20BUKOVLJE%20Josipa%20Kozarca%2020%2035%20209%20Bukovlje"
+    },
+    {
+      "objekt": "TVRĐAVA BROD, HORNWERK, KAPELANOV STAN",
+      "dvorana": "",
+      "naziv_en": "BROD FORTRESS, HORNWERK, CHAPLAIN’S APARTMENT",
+      "kapacitet": 40,
+      "adresa": "Vukovarska 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 445 765",
+      "email": "info@brod-turist.hr",
+      "web": "https://brod-turist.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Tvrdava%20Brod%20-%20Kapelanov%20stan.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=TVR%C4%90AVA%20BROD%2C%20HORNWERK%2C%20KAPELANOV%20STAN%20Vukovarska%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "TVRĐAVA BROD, SJEVERNI DIO KAVALIRA",
+      "dvorana": "Edukacijsko-multimedijalni centar - Dvorana 1",
+      "naziv_en": "BROD FORTRESS, NORTHHERN PART OF THE CAVALIER — Educational and multimedia center - Room 1",
+      "kapacitet": 40,
+      "adresa": "Vukovarska 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 217 009 (Grad Slavonski Brod)",
+      "email": "kontakt@slavonski-brod.hr",
+      "web": "http://tvrdava-brod-edu.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Tvrdava%20Brod%20-%20Videokonferencijska%20i%20prezentacijska%20dvorana%201%20(40%20mjesta).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=TVR%C4%90AVA%20BROD%2C%20SJEVERNI%20DIO%20KAVALIRA%20Vukovarska%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "TVRĐAVA BROD, SJEVERNI DIO KAVALIRA",
+      "dvorana": "Edukacijsko-multimedijalni centar - Dvorana 2",
+      "naziv_en": "BROD FORTRESS, NORTHHERN PART OF THE CAVALIER — Educational and multimedia center - Room 2",
+      "kapacitet": 70,
+      "adresa": "Vukovarska 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 217 009 (Grad Slavonski Brod)",
+      "email": "kontakt@slavonski-brod.hr",
+      "web": "http://tvrdava-brod-edu.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Tvrdava%20Brod%20-%20Videokonferencijska%20i%20prezentacijska%20dvorana%202%20(70%20mjesta).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=TVR%C4%90AVA%20BROD%2C%20SJEVERNI%20DIO%20KAVALIRA%20Vukovarska%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "TVRĐAVA BROD, SJEVERNI DIO KAVALIRA",
+      "dvorana": "Edukacijsko-multimedijalni centar - Dvorana 3",
+      "naziv_en": "BROD FORTRESS, NORTHHERN PART OF THE CAVALIER — Educational and multimedia center - Room 3",
+      "kapacitet": 22,
+      "adresa": "Vukovarska 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 217 009 (Grad Slavonski Brod)",
+      "email": "kontakt@slavonski-brod.hr",
+      "web": "http://tvrdava-brod-edu.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Tvrdava%20Brod%20-%20Konferencijska%20dvorana%203%20(22%20mjesta).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=TVR%C4%90AVA%20BROD%2C%20SJEVERNI%20DIO%20KAVALIRA%20Vukovarska%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "TVRĐAVA BROD, SJEVERNI DIO KAVALIRA",
+      "dvorana": "Edukacijsko-multimedijalni centar - Dvorana 4",
+      "naziv_en": "BROD FORTRESS, NORTHHERN PART OF THE CAVALIER — Educational and multimedia center - Room 4",
+      "kapacitet": 24,
+      "adresa": "Vukovarska 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 217 009 (Grad Slavonski Brod)",
+      "email": "kontakt@slavonski-brod.hr",
+      "web": "http://tvrdava-brod-edu.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Tvrdava%20Brod%20-%20Konferencijska%20dvorana%20za%20predavanja%20i%20%20radionice%204%20(24%20mjesta).jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=TVR%C4%90AVA%20BROD%2C%20SJEVERNI%20DIO%20KAVALIRA%20Vukovarska%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "TVRĐAVA BROD, ZAPADNI DIO KAVALIRA",
+      "dvorana": "Kuća tambure",
+      "naziv_en": "BROD FORTRESS, WESTERN PART OF THE CAVALIER — House of Tambura",
+      "kapacitet": 80,
+      "adresa": "Vukovarska 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 324 043",
+      "email": "galerijaumjetninagradasb@gmail.com",
+      "web": "https://www.kucatambure.hr",
+      "slika": "https://www.tzgsb.hr/static/images/Kuca%20tambure.JPG",
+      "karta": "https://www.google.com/maps/search/?api=1&query=TVR%C4%90AVA%20BROD%2C%20ZAPADNI%20DIO%20KAVALIRA%20Vukovarska%201%2035%20000%20Slavonski%20Brod"
+    },
+    {
+      "objekt": "TVRĐAVA BROD, ZAPADNI DIO KAVALIRA",
+      "dvorana": "Tradicijska kuhinja s vinotekom",
+      "naziv_en": "BROD FORTRESS, WESTERN PART OF THE CAVALIER — Traditional cuisine with wine cellar",
+      "kapacitet": 66,
+      "adresa": "Vukovarska 1, 35 000 Slavonski Brod",
+      "telefon": "+385 35 217 075 (Grad Slavonski Brod)",
+      "email": "mara.aracic@slavonski-brod.hr",
+      "web": "https://www.slavonski-brod.hr/index.php",
+      "slika": "https://www.tzgsb.hr/static/images/Tvrdava%20Brod%20-%20tradicijska%20kuhinja%20s%20vinotekom.jpg",
+      "karta": "https://www.google.com/maps/search/?api=1&query=TVR%C4%90AVA%20BROD%2C%20ZAPADNI%20DIO%20KAVALIRA%20Vukovarska%201%2035%20000%20Slavonski%20Brod"
     }
   ],
   "smjestaj_hoteli": [

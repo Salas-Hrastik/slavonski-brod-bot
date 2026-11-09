@@ -279,6 +279,19 @@ function buildScrapedSection(category) {
     }
   }
 
+  if (category === 'konferencije' && s.konferencijske_dvorane?.length) {
+    const dv = s.konferencijske_dvorane;
+    lines.push(`\nKONFERENCIJSKE DVORANE I PROSTORI ZA DOGAĐANJA — službeni popis TZ (tzgsb.hr/index.php?page=konferencijske_dvorane), ${dv.length} dvorana:`);
+    const poObjektu = new Map();
+    dv.forEach(d => { if (!poObjektu.has(d.objekt)) poObjektu.set(d.objekt, []); poObjektu.get(d.objekt).push(d); });
+    for (const [objekt, ds] of poObjektu) {
+      const d0 = ds[0];
+      const kap = ds.map(d => `${d.dvorana ? d.dvorana + ': ' : ''}do ${d.kapacitet} osoba`).join('; ');
+      lines.push(`• **${objekt}** — ${kap} | ${d0.adresa}${d0.telefon ? ` | Tel: ${d0.telefon}` : ''}${d0.email ? ` | ${d0.email}` : ''}${d0.web ? ` | ${d0.web}` : ''}`);
+    }
+    lines.push(`PRAVILA ZA DVORANE: kapacitet je najveći broj osoba po dvorani. Za upit s brojem sudionika predloži dvorane dovoljnog kapaciteta (od najprikladnije), s kontaktom. Opremu, cijene najma i slobodne termine popis NE sadrži — uputi na kontakt objekta (iznimka: Hotel Savus objavljuje najam dvorane za sastanke s opremom 65,00 €/sat).`);
+  }
+
   if (category === 'dogadanja') {
     if (s.manifestacije_aktualne?.length) {
       lines.push('\nAktualne manifestacije:');
@@ -395,6 +408,7 @@ const CATEGORY_CONTEXTS = {
   priroda:      (db) => ({ grad: db.grad, priroda: db.priroda }),
   okolica:      (db) => ({ grad: db.grad, okolica: db.okolica }),
   dokumenti:    (db) => ({ grad: db.grad }),
+  konferencije: (db) => ({ grad: db.grad }),
 };
 
 function detectLang(msg) {
@@ -506,6 +520,12 @@ const TR = {
 function getRelevantContext(message, db, lastCategory) {
   const msg = message.toLowerCase();
 
+  // Konferencijske dvorane / prostori za događanja (TZ popis) — prije smještaja,
+  // da "hotel s konferencijskom dvoranom" ne završi kao pitanje o smještaju.
+  const dvoranaUpit = /dvoran|\bsala\b|\bsale\b|saal|säle|venue|hall\b/.test(msg) && !/sportsk|vijuš|vijus|teretan|bazen|sports hall|sporthalle|program|predstav|repertoar|ulaznic|koncert u|što se igra/.test(msg);
+  if (/konferenc|kongres|seminar|simpozij|sastan|poslovn[a-z]* (skup|događ|event)|predavanj|domjen|prezentacij|meeting|conference|congress|workshop|radionic|konferenz|tagung|besprechung|svečan[a-z]* dvoran|proslav|svadb|vjenčanj|wedding|hochzeit/.test(msg) || dvoranaUpit)
+    return { context: CATEGORY_CONTEXTS.konferencije(db), category: 'konferencije' };
+
   if (msg.includes('povijest') || msg.includes('histori') || msg.includes('osnovan') || msg.includes('općenito') || msg.includes('o gradu') || msg.includes('o slavonskom') || msg.includes('o brodu') || msg.includes('stanovic') || msg.includes('stanovništv') || msg.includes('geografij') || msg.includes('gospodarsk') || msg.includes('industrij') || msg.includes('poznat') || msg.includes('zanimljiv') || msg.includes('marsonia') || msg.includes('đuro đaković') || msg.includes('duro dakovic') || msg.includes('rimsk') || msg.includes('osmansk') || msg.includes('gradonačelnik') || msg.includes('udaljenost') || msg.includes('vojnokrajiš') || msg.includes('vojna krajina') || msg.includes('domovinski rat') || msg.includes('brodogradnja')
     || msg.includes('history') || msg.includes('about') || msg.includes('general') || msg.includes('population') || msg.includes('founded') || msg.includes('economy') || msg.includes('industry') || msg.includes('famous')
     || msg.includes('geschichte') || msg.includes('über') || msg.includes('einwohner') || msg.includes('wirtschaft'))
@@ -579,6 +599,7 @@ function getRelevantContext(message, db, lastCategory) {
 
 function getSuggestions(category) {
   const map = {
+    konferencije: ['🎤 Dvorana za 100+ osoba?', '🏨 Smještaj za sudionike?', '🍽️ Restorani za domjenak?'],
     smjestaj:     ['🍽️ Gdje ručati?', '🏰 Tvrđava Brod?', '🅿️ Parkiranje?'],
     gastronomija: ['🏨 Smještaj u gradu?', '🏰 Što vidjeti?', '📅 Događaji?'],
     dogadanja:    ['🏨 Smještaj za tu noć?', '🍽️ Gdje ručati?', '🏰 Što vidjeti?'],

@@ -8,6 +8,7 @@
  *   - Manifestacije s TZ (HTML po mjesecima)
  *   - Restorani iz TZ JSON API-ja (tzgsb.hr/static/json/restorani.json)
  *   - Smještaj iz TZ JSON API-ja (tzgsb.hr/static/json/smjestaj.json)
+ *   - Konferencijske dvorane iz TZ JSON API-ja (tzgsb.hr/static/json/konferencijske_dvorane.json)
  */
 
 import { writeFileSync, readFileSync } from 'fs';
@@ -286,6 +287,37 @@ async function scrapeRestorani() {
   }).filter(r => r.naziv);
 
   console.log(`✅ Restorani TZ: ${result.length} stavki`);
+  return result;
+}
+
+// ─── Konferencijske dvorane iz TZ JSON API-ja ───────────────────────────────
+
+async function scrapeKonferencijskeDvorane() {
+  const text = await fetchHtml('https://www.tzgsb.hr/static/json/konferencijske_dvorane.json');
+  if (!text) return [];
+
+  let data;
+  try { data = JSON.parse(text); } catch { return []; }
+
+  const result = (data.records || []).map(r => {
+    const objekt = r.name?.hr || r.name?.en || '';
+    const dvorana = r.location?.hr || '';
+    const telefoni = (r.phone || []).map(p => p.number + (p.comment?.hr ? ` (${p.comment.hr})` : '')).filter(Boolean);
+    return {
+      objekt,
+      dvorana,                                      // naziv konkretne dvorane (ako objekt ima više)
+      naziv_en: [r.name?.en, r.location?.en].filter(Boolean).join(' — '),
+      kapacitet: r.capacity ?? null,                // broj osoba
+      adresa: (r.address || []).join(', '),
+      telefon: telefoni.join(', '),
+      email: (r.email || []).join(', '),
+      web: (r.web || [])[0] || '',
+      slika: r.image ? `https://www.tzgsb.hr/static/images/${encodeURI(r.image)}` : '',
+      karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(objekt + ' ' + (r.address || []).join(' '))}`,
+    };
+  }).filter(d => d.objekt);
+
+  console.log(`✅ Konferencijske dvorane TZ: ${result.length} stavki`);
   return result;
 }
 
@@ -758,7 +790,7 @@ export const scrapedContent = ${JSON.stringify(data, null, 2)};
 async function main() {
   console.log('🔍 Pokrećem scraping za Slavonski Brod...\n');
 
-  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije, dokumenti, onama, poi] = await Promise.all([
+  const [vijesti, manifestacije, restorani, smjestajData, bastina, atrakcije, dokumenti, onama, poi, dvorane] = await Promise.all([
     scrapeVijesti(),
     scrapeManifestacije(),
     scrapeRestorani(),
@@ -768,6 +800,7 @@ async function main() {
     scrapeDokumenti(),
     scrapeONama(),
     scrapePOI(),
+    scrapeKonferencijskeDvorane(),
   ]);
 
   const data = {
@@ -777,6 +810,7 @@ async function main() {
         'https://www.slavonski-brod.hr/vijesti?format=feed&type=rss',
         'https://www.tzgsb.hr/static/json/restorani.json',
         'https://www.tzgsb.hr/static/json/smjestaj.json',
+        'https://www.tzgsb.hr/static/json/konferencijske_dvorane.json',
         'https://www.tzgsb.hr/index.php?page=manifestacije',
         'https://www.tzgsb.hr/index.php?page=kulturna-bastina',
         'https://www.tzgsb.hr/index.php?page=rekreacija',
@@ -786,6 +820,7 @@ async function main() {
     novosti_grad: vijesti,
     manifestacije_aktualne: manifestacije,
     restorani_tz: restorani,
+    konferencijske_dvorane: dvorane,
     smjestaj_hoteli: smjestajData.hoteli || [],
     smjestaj_apartmani: smjestajData.apartmani || [],
     kulturna_bastina: bastina,
@@ -796,7 +831,7 @@ async function main() {
     poi: poi,
   };
 
-  const total = vijesti.length + manifestacije.length + restorani.length +
+  const total = vijesti.length + manifestacije.length + restorani.length + dvorane.length +
     (smjestajData.hoteli?.length || 0) + (smjestajData.apartmani?.length || 0) +
     bastina.length + atrakcije.length +
     dokumenti.strategije.length + dokumenti.ostali.length;
@@ -816,7 +851,7 @@ async function main() {
     const LIST_KEYS = [
       'novosti_grad', 'manifestacije_aktualne', 'restorani_tz',
       'smjestaj_hoteli', 'smjestaj_apartmani', 'kulturna_bastina',
-      'atrakcije_tz', 'dokumenti_strategije', 'dokumenti_ostali',
+      'atrakcije_tz', 'dokumenti_strategije', 'dokumenti_ostali', 'konferencijske_dvorane',
     ];
     for (const key of LIST_KEYS) {
       const novo = data[key];
@@ -844,6 +879,7 @@ async function main() {
   console.log('  📰 Vijesti:', vijesti.length);
   console.log('  📅 Manifestacije:', manifestacije.length);
   console.log('  🍽️  Restorani:', restorani.length);
+  console.log('  🎤  Konferencijske dvorane:', dvorane.length);
   console.log('  🏨 Hoteli/hosteli/pansioni:', smjestajData.hoteli?.length || 0);
   console.log('  🏠 Apartmani/sobe/vile:', smjestajData.apartmani?.length || 0);
   console.log('  🏛️  Kulturna baština:', bastina.length);
