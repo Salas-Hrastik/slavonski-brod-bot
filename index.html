@@ -1128,6 +1128,57 @@ function addMessage(text, type, suggestions, images, items){
 }
 
 // ===== SEND MESSAGE =====
+// ===== POSTUPNI ISPIS ODGOVORA (kao Biograd) =====
+// Tekst se ispisuje u privremeni oblačić čim stigne; na kraju ga zamjenjuje gotov
+// odgovor s karticama i prijedlozima. Završni redak "SUGGESTIONS:[...]" se ne prikazuje
+// ni dok se piše (skriva se i njegov još nedovršeni početak).
+function hideSuggestionsTail(text){
+  return text
+    .replace(/\[?:?\s*SUGGESTIONS:[\s\S]*$/, '')
+    .replace(/(^|\n)[ \t\[:]*S(?:U(?:G(?:G(?:E(?:S(?:T(?:I(?:O(?:N(?:S)?)?)?)?)?)?)?)?)?)?$/, '$1')
+    .trimEnd();
+}
+
+async function readStream(response, typing){
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  const chatMessages = document.getElementById("chat-messages");
+  let buffer = "", text = "", bubble = null, done = null, lastPaint = 0;
+  const paint = () => {
+    const shown = hideSuggestionsTail(text);
+    if(!shown) return;
+    if(!bubble){
+      typing.remove();
+      bubble = document.createElement("div");
+      bubble.className = "bot-message";
+      chatMessages.appendChild(bubble);
+      bubble.innerHTML = formatReply(shown);
+      bubble.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    bubble.innerHTML = formatReply(shown);
+  };
+  while(true){
+    const { value, done: end } = await reader.read();
+    if(end) break;
+    buffer += decoder.decode(value, { stream: true });
+    let nl;
+    while((nl = buffer.indexOf("\n")) >= 0){
+      const line = buffer.slice(0, nl).trim();
+      buffer = buffer.slice(nl + 1);
+      if(!line) continue;
+      let ev;
+      try { ev = JSON.parse(line); } catch { continue; }
+      if(ev.type === "delta") text += ev.text;
+      else if(ev.type === "done") done = ev;
+    }
+    // Najviše jedno iscrtavanje svakih 50 ms, da dugi odgovori ne usporavaju stranicu.
+    if(text && Date.now() - lastPaint > 50){ paint(); lastPaint = Date.now(); }
+  }
+  if(bubble) bubble.remove();
+  return done || { reply: hideSuggestionsTail(text) };
+}
+
 async function sendMessage(){
   const input = document.getElementById("user-input");
   const message = input.value.trim();
@@ -1172,23 +1223,30 @@ async function sendMessage(){
         history: chatHistory.slice(-10),
         category: currentCategory,
         weather: currentWeather,
-        lang: currentLang
+        lang: currentLang,
+        stream: true
       })
     });
 
     clearTimeout(timeout);
-    typing.remove();
 
-    // Robusno parsiranje: ako server ne vrati JSON (timeout/pad funkcije),
-    // pokaži HTTP status i djelić odgovora umjesto generičke poruke.
-    const bodyText = await response.text();
     let data;
-    try {
-      data = JSON.parse(bodyText);
-    } catch {
-      pendingTab = null;
-      addMessage(`⚠️ ${t('err_http')} (HTTP ${response.status}). ${(bodyText || '').replace(/<[^>]+>/g,' ').trim().slice(0,160)}`, "bot");
-      return;
+    if((response.headers.get("content-type") || "").includes("ndjson")){
+      // Odgovor modela stiže postupno (NDJSON) — ispisuje se čim stigne
+      data = await readStream(response, typing);
+      typing.remove();
+    } else {
+      typing.remove();
+      // Robusno parsiranje: ako server ne vrati JSON (timeout/pad funkcije),
+      // pokaži HTTP status i djelić odgovora umjesto generičke poruke.
+      const bodyText = await response.text();
+      try {
+        data = JSON.parse(bodyText);
+      } catch {
+        pendingTab = null;
+        addMessage(`⚠️ ${t('err_http')} (HTTP ${response.status}). ${(bodyText || '').replace(/<[^>]+>/g,' ').trim().slice(0,160)}`, "bot");
+        return;
+      }
     }
 
     // Rekonsilijacija jezika: ako je server prepoznao drugi jezik nego sučelje — prebaci

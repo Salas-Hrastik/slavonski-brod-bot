@@ -230,6 +230,11 @@ function buildHoteliSection(msgLower, category) {
   return out;
 }
 
+function cutToLastSentence(text) {
+  const m = text.match(/^[\s\S]*[.!?…)](?=\s|$)/);
+  return m && m[0].length > text.length / 2 ? m[0].trim() : text.trim() + '…';
+}
+
 function buildCjenikSection() {
   const fmt = n => n.toFixed(2).replace('.', ',') + ' €';
   const lines = [`\nCJENICI JELA (s web stranica restorana; ${cjenici.napomena})`];
@@ -682,7 +687,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, history, category: lastCategory, weather, lang: clientLang } = req.body;
+    const { message, history, category: lastCategory, weather, lang: clientLang, stream: wantsStream } = req.body;
 
     if (!message) {
       return res.status(400).json({ reply: "Poruka je prazna." });
@@ -1146,16 +1151,33 @@ ${scrapedSection}`;
       : [...historyMsgs, { role: "user", content: message }];
     if (!anthropicMessages.length) anthropicMessages.push({ role: "user", content: message });
 
-    const completion = await anthropic.messages.create({
-      model: "claude-sonnet-5",
-      max_tokens: resolvedCat === 'konferencije' ? 2000 : 1100, // popisi dvorana su dugi — inače se odgovor odreže
-      thinking: { type: "disabled" }, // turistički bot: prioritet je brzina odgovora
+    const params = {
+      // Sonnet 5.5 (11/2026): ista cijena kao Sonnet 5, bolja kvaliteta; isto korišteno u Biogradu.
+      model: "claude-sonnet-5-5",
+      // Sonnet 5.5 piše nešto dulje; popisi dvorana su dugi — inače se odgovor odreže
+      max_tokens: resolvedCat === 'konferencije' ? 2200 : 1400,
+      // Turistički bot: prioritet je brzina. Sonnet 5.5 odbija 'disabled';
+      // 'between_tools' bez alata = odgovor bez razmišljanja (dopušteno do effort 'high').
+      thinking: { type: "between_tools" },
       system: [
         { type: "text", text: systemStable, cache_control: { type: "ephemeral" } },
         { type: "text", text: systemDynamic },
       ],
       messages: anthropicMessages,
-    });
+    };
+
+    // Postupni ispis (kao Biograd): stranica šalje stream:true → NDJSON, redak po događaju
+    // ({type:'start'}, {type:'delta', text}, na kraju {type:'done', ...isti JSON kao inače}).
+    let completion;
+    if (wantsStream) {
+      res.writeHead(200, { 'Content-Type': 'application/x-ndjson; charset=utf-8', 'Cache-Control': 'no-cache, no-transform', 'X-Accel-Buffering': 'no' });
+      res.write(JSON.stringify({ type: 'start' }) + '\n');
+      const stream = anthropic.messages.stream(params);
+      stream.on('text', text => res.write(JSON.stringify({ type: 'delta', text }) + '\n'));
+      completion = await stream.finalMessage();
+    } else {
+      completion = await anthropic.messages.create(params);
+    }
 
     // Mjerenje prompt cachinga (vidljivo u Vercel logovima): ako je cache_read > 0,
     // keširani sustavski prompt se ponovno koristi (~10x jeftinije i brže).
@@ -1169,6 +1191,7 @@ ${scrapedSection}`;
       .map(b => b.text)
       .join("")
       || "Nije moguće generirati odgovor.";
+    if (completion.stop_reason === 'refusal') raw = "Na ovo pitanje ne mogu odgovoriti. Za dodatne informacije obratite se Turističkoj zajednici: +385 35 447 721.";
 
     // Izvuci SUGGESTIONS — tolerira bilo koji prefix ([: , \n, razmak itd.)
     let aiSuggestions = null;
@@ -1188,14 +1211,22 @@ ${scrapedSection}`;
       aiItems = getItemsForCategory(resolvedCat, 6);
     }
 
-    return res.status(200).json({
+    // Odgovor odrezan na granici duljine završava na zadnjoj cijeloj rečenici, ne usred riječi.
+    if (completion.stop_reason === 'max_tokens') raw = cutToLastSentence(raw);
+
+    const payload = {
       reply: raw,
       category: resolvedCat || null,
       suggestions: aiSuggestions || (lang === 'hr' ? getSuggestions(resolvedCat) : []),
       items: aiItems,
       lang,
       images: []
-    });
+    };
+    if (wantsStream) {
+      res.write(JSON.stringify({ type: 'done', ...payload }) + '\n');
+      return res.end();
+    }
+    return res.status(200).json(payload);
 
   } catch (err) {
     // Detaljan log za Vercel Functions (status + tip + poruka Anthropic SDK-a)
@@ -1215,6 +1246,10 @@ ${scrapedSection}`;
       reply = "Trenutačno je previše upita — pričekajte trenutak pa pokušajte ponovno.";
     } else if (status >= 500) {
       reply = "AI servis je trenutačno preopterećen. Pokušajte za koji trenutak.";
+    }
+    if (res.headersSent) {
+      res.write(JSON.stringify({ type: 'done', reply, category: null, suggestions: [], items: [], images: [] }) + '\n');
+      return res.end();
     }
     return res.status(200).json({ reply, category: null, suggestions: [], items: [], images: [] });
   }
