@@ -119,7 +119,6 @@ export const scrapedContent = {
       "naziv": "Eden",
       "adresa": "J. J. Strossmayera 1, 35000 Slavonski Brod",
       "telefon": "+385 35 440 406",
-      "web": "https://www.krcma-eden.com",
       "slika": "https://www.tzgsb.hr/static/images/re-eden170x120-1.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Eden%20Slavonski%20Brod"
     },
@@ -151,7 +150,6 @@ export const scrapedContent = {
       "naziv": "Onyx",
       "adresa": "N. Zrinskog 50, 35000 Slavonski Brod",
       "telefon": "+385 35 445 555",
-      "web": "https://www.onyx-restaurant-pizzeria.com",
       "slika": "https://www.tzgsb.hr/static/images/restorani/onyx_170.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Onyx%20Slavonski%20Brod"
     },
@@ -167,7 +165,6 @@ export const scrapedContent = {
       "naziv": "Uno",
       "adresa": "N. Zrinskog 7, 35000 Slavonski Brod",
       "telefon": "+385 35 442 107",
-      "web": "https://www.uno-brod.hr",
       "slika": "https://www.tzgsb.hr/static/images/re-uno170x120-1.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Uno%20Slavonski%20Brod"
     },
@@ -191,7 +188,6 @@ export const scrapedContent = {
       "naziv": "Gurman",
       "adresa": "Ul. Matije Mesića 47, 35000 Slavonski Brod",
       "telefon": "+385 35 427 841",
-      "web": "https://www.gurmansb.com",
       "slika": "https://www.tzgsb.hr/static/images/restorani/gurman_170.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Gurman%20Slavonski%20Brod"
     },
@@ -207,7 +203,6 @@ export const scrapedContent = {
       "naziv": "Zdenac",
       "adresa": "Dr. Mile Budaka 1A, 35000 Slavonski Brod",
       "telefon": "+385 98 265 724",
-      "web": "https://zdenac.hr",
       "slika": "https://www.tzgsb.hr/static/images/zdenac.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Zdenac%20Slavonski%20Brod"
     },

@@ -255,6 +255,12 @@ async function scrapeManifestacije() {
 
 // ─── Restorani iz TZ JSON API-ja ────────────────────────────────────────────
 
+// Neispravne web adrese iz TZ popisa (provjereno 9.11.2026.) — ne nudimo ih korisnicima:
+// krcma-eden.com preusmjerava na kockarsku stranicu; onyx/uno/gurman domene ne postoje
+// (NXDOMAIN); zdenac.hr vraća 404. Ukloni domenu s popisa kad stranica ponovno proradi.
+const NEISPRAVNI_WEBOVI = ['krcma-eden.com', 'onyx-restaurant-pizzeria.com', 'uno-brod.hr', 'gurmansb.com', 'zdenac.hr'];
+const cistiWeb = url => (url && NEISPRAVNI_WEBOVI.some(d => url.toLowerCase().includes(d)) ? '' : url);
+
 async function scrapeRestorani() {
   const text = await fetchHtml('https://www.tzgsb.hr/static/json/restorani.json');
   if (!text) return [];
@@ -273,7 +279,7 @@ async function scrapeRestorani() {
       naziv: name,
       adresa: addr,
       telefon: phone,
-      web: webUrl,
+      web: cistiWeb(webUrl),
       slika: r.image ? `https://www.tzgsb.hr/static/images/${r.image}` : '',
       karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + ' Slavonski Brod')}`,
     };
