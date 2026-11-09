@@ -289,7 +289,7 @@ function buildScrapedSection(category) {
       const kap = ds.map(d => `${d.dvorana ? d.dvorana + ': ' : ''}do ${d.kapacitet} osoba`).join('; ');
       lines.push(`• **${objekt}** — ${kap} | ${d0.adresa}${d0.telefon ? ` | Tel: ${d0.telefon}` : ''}${d0.email ? ` | ${d0.email}` : ''}${d0.web ? ` | ${d0.web}` : ''}`);
     }
-    lines.push(`PRAVILA ZA DVORANE: kapacitet je najveći broj osoba po dvorani. Za upit s brojem sudionika predloži dvorane dovoljnog kapaciteta (od najprikladnije), s kontaktom. Opremu, cijene najma i slobodne termine popis NE sadrži — uputi na kontakt objekta (iznimka: Hotel Savus objavljuje najam dvorane za sastanke s opremom 65,00 €/sat).`);
+    lines.push(`PRAVILA ZA DVORANE: kapacitet je najveći broj osoba po dvorani. Za upit s brojem sudionika navedi SAMO dvorane s kapacitetom ≥ tog broja, poredane UZLAZNO po kapacitetu (prva je ona čiji je kapacitet najbliži traženom broju), s kontaktom. Za konferencije/seminare/sastanke prednost daj prostorima u gradu (hoteli, HGK, knjižnica, Hrvatski dom, Tvrđava); svečane dvorane u Bukovlju, Podcrkavlju i Gornjoj Vrbi su izvan grada i namijenjene prvenstveno svadbama i proslavama — za seminar ih spomeni tek na kraju kao alternativu. Opremu, cijene najma i slobodne termine popis NE sadrži — uputi na kontakt objekta (iznimka: Hotel Savus objavljuje najam dvorane za sastanke s opremom 65,00 €/sat).`);
   }
 
   if (category === 'dogadanja') {
