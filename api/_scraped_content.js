@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-09 08:42 UTC
+// Zadnje skrapanje: 2026-11-09 14:25 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-09T08:42:01.071Z",
+    "zadnje_azuriranje": "2026-11-09T14:25:25.100Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Obavijest o proglašenju sajamskih dana",
+      "datum": "09. 11. 2026.",
+      "kratki_opis": "U svrhu sajamskih i turističkih aktivnosti, sve nedjelje i blagdani za vrijeme trajanja manifestacije Advent u Slavonskom Brodu, u razdoblju od 29. studenog 2026. do 6. siječnja 2027. godine, proglašavaju se sajamskim danima na području grada Slavonskog Broda.&nbsp; Radno vrijeme ugostiteljskih obje",
+      "link": "https://www.slavonski-brod.hr/vijesti/17434-obavijest-o-proglasenju-sajamskih-dana-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/advent.jpg"
+    },
+    {
+      "naslov": "GLOMAZNI OTPAD - što smijemo, a što ne smijemo odlagati?",
+      "datum": "09. 11. 2026.",
+      "kratki_opis": "Pravilno odvajanje i zbrinjavanje otpada važan je korak u očuvanju okoliša, čistoće i kvalitete života u našem gradu. Kako bi se otpad pravilno zbrinuo i kako bi se spriječilo njegovo nepropisno odlaganje na javnim površinama, važno je znati što se smatra glomaznim otpadom, a što je potrebno odvojen",
+      "link": "https://www.slavonski-brod.hr/vijesti/17431-glomazni-otpad-sto-smijemo-a-sto-ne-smijemo-odlagati",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/retro-furniture-being-sold-yard-sale_resize.jpg"
+    },
     {
       "naslov": "Humanitarnim koncertom obilježeno 10 godina djelovanja Marijinih obroka",
       "datum": "08. 11. 2026.",
@@ -73,20 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "U povodu Dana darivatelja krvi, koji se obilježava 25. listopada, u srijedu, 4. studenoga, održan je svečani prijem višestrukih darivatelja krvi. Prijem je organiziralo Gradsko društvo Crvenog križa Slavonski Brod, a na njemu je nazočila i zamjenica gradonačelnika Marina Martić Puača. Darivateljima ",
       "link": "https://www.slavonski-brod.hr/vijesti/17419-urucena-priznanja-visestrukim-darivateljima-krvi",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/photo-collagepng.jpg"
-    },
-    {
-      "naslov": "Održan radni sastanak s predstavnicima Udruge Eko-Integral na temu onečišćenja zraka",
-      "datum": "04. 11. 2026.",
-      "kratki_opis": "U Gradskoj upravi Grada Slavonskog Broda danas je održan novi radni sastanak s predstavnicima Udruge Eko-Integral, posvećen nastavku razgovora i aktivnostima usmjerenima na poboljšanje kvalitete zraka na području grada. Na sastanku su, uz predstavnike Udruge Eko-Integral, sudjelovali gradonačelnik M",
-      "link": "https://www.slavonski-brod.hr/vijesti/17417-nastavljeni-razgovori-o-poboljsanju-kvalitete-zraka-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/grad_sa_brda_resize.jpg"
-    },
-    {
-      "naslov": "Sudjelujte u kreiranju gradskog proračuna za 2027. godinu!",
-      "datum": "04. 11. 2026.",
-      "kratki_opis": "Pozivamo građane Slavonskog Broda da sudjeluju u kreiranju novog gradskog proračuna za 2027. godinu. S obzirom na to da je tekuća godina pri izmaku, svoje ideje i prijedloge o projektima za koje smatrate da su važni za daljnji razvoj Slavonskog Broda možete dostaviti putem elektroničke pošte na adre",
-      "link": "https://www.slavonski-brod.hr/vijesti/17416-sudjelujte-u-kreiranju-gradskog-proracuna-za-2027-godinu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Proracun.jpg"
     }
   ],
   "manifestacije_aktualne": [
