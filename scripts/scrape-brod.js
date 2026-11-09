@@ -260,7 +260,47 @@ async function scrapeManifestacije() {
 // krcma-eden.com preusmjerava na kockarsku stranicu; onyx/uno/gurman domene ne postoje
 // (NXDOMAIN); zdenac.hr vraća 404. Ukloni domenu s popisa kad stranica ponovno proradi.
 const NEISPRAVNI_WEBOVI = ['krcma-eden.com', 'onyx-restaurant-pizzeria.com', 'uno-brod.hr', 'gurmansb.com', 'zdenac.hr'];
-const cistiWeb = url => (url && NEISPRAVNI_WEBOVI.some(d => url.toLowerCase().includes(d)) ? '' : url);
+// Zastarjele web adrese u TZ podacima → ispravna nova adresa (provjereno 9.11.2026.).
+const ISPRAVCI_WEBA = {
+  'art-hotel.hr': 'https://www.art-hotel.eu',   // Hotel Art / restoran Zrinski — stara domena ne radi
+};
+const cistiWeb = url => {
+  if (!url) return url;
+  const u = url.toLowerCase();
+  if (NEISPRAVNI_WEBOVI.some(d => u.includes(d))) return '';
+  const zamjena = Object.entries(ISPRAVCI_WEBA).find(([d]) => u.includes(d));
+  return zamjena ? zamjena[1] : url;
+};
+
+// Ispravci popisa konferencijskih dvorana TZ-a prema službenim stranicama objekata.
+// TZ za Hotel Art navodi jednu dvoranu za 80 osoba; art-hotel.eu (9.11.2026.) navodi
+// 3 kongresne dvorane (100, 50, 30 mjesta, s informatičkom opremom) i restoran
+// Vidikovac na 5. katu za događanja do 150 osoba.
+const ISPRAVCI_DVORANA = {
+  'HOTEL ART': {
+    izvor: 'https://www.art-hotel.eu',
+    email: 'info@art-hotel.eu',
+    web: 'https://www.art-hotel.eu',
+    dvorane: [
+      { dvorana: 'Kongresna dvorana (100 mjesta)', kapacitet: 100, napomena: 'informatička oprema' },
+      { dvorana: 'Kongresna dvorana (50 mjesta)', kapacitet: 50, napomena: 'informatička oprema' },
+      { dvorana: 'Kongresna dvorana (30 mjesta)', kapacitet: 30, napomena: 'informatička oprema' },
+      { dvorana: 'Restoran Vidikovac (5. kat, pogled na grad)', kapacitet: 150, napomena: 'poslovni ručkovi, sastanci, team building, svadbe i proslave' },
+    ],
+  },
+};
+function primijeniIspravkeDvorana(lista) {
+  const out = [];
+  const obradeni = new Set();
+  for (const d of lista) {
+    const isp = ISPRAVCI_DVORANA[d.objekt];
+    if (!isp) { out.push(d); continue; }
+    if (obradeni.has(d.objekt)) continue;
+    obradeni.add(d.objekt);
+    for (const x of isp.dvorane) out.push({ ...d, ...x, email: isp.email || d.email, web: isp.web || d.web, izvor: isp.izvor });
+  }
+  return out;
+}
 
 async function scrapeRestorani() {
   const text = await fetchHtml('https://www.tzgsb.hr/static/json/restorani.json');
@@ -311,14 +351,15 @@ async function scrapeKonferencijskeDvorane() {
       adresa: (r.address || []).join(', '),
       telefon: telefoni.join(', '),
       email: (r.email || []).join(', '),
-      web: (r.web || [])[0] || '',
+      web: cistiWeb((r.web || [])[0] || ''),
       slika: r.image ? `https://www.tzgsb.hr/static/images/${encodeURI(r.image)}` : '',
       karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(objekt + ' ' + (r.address || []).join(' '))}`,
     };
   }).filter(d => d.objekt);
 
-  console.log(`✅ Konferencijske dvorane TZ: ${result.length} stavki`);
-  return result;
+  const ispravljeno = primijeniIspravkeDvorana(result);
+  console.log(`✅ Konferencijske dvorane TZ: ${result.length} stavki (nakon ispravaka: ${ispravljeno.length})`);
+  return ispravljeno;
 }
 
 // ─── Smještaj iz TZ JSON API-ja ─────────────────────────────────────────────
@@ -348,7 +389,7 @@ async function scrapeSmjestaj() {
       tip: r.type || 'OSTALO',
       adresa: addr,
       telefon: phone,
-      web: webUrl,
+      web: cistiWeb(webUrl),
       slika: r.image ? `https://www.tzgsb.hr/static/images/${r.image}` : '',
       karta: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + ' Slavonski Brod')}`,
     };

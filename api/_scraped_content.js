@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-09 08:27 UTC
+// Zadnje skrapanje: 2026-11-09 08:42 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-09T08:27:51.271Z",
+    "zadnje_azuriranje": "2026-11-09T08:42:01.071Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -176,7 +176,7 @@ export const scrapedContent = {
       "naziv": "Zrinski (Hotel Art)",
       "adresa": "Nikole Zrinskog 44, 35000 Slavonski Brod",
       "telefon": "+385 35 638 950",
-      "web": "https://www.art-hotel.hr",
+      "web": "https://www.art-hotel.eu",
       "slika": "https://www.tzgsb.hr/static/images/zrinski170x120.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Zrinski%20(Hotel%20Art)%20Slavonski%20Brod"
     },
@@ -412,15 +412,59 @@ export const scrapedContent = {
     },
     {
       "objekt": "HOTEL ART",
-      "dvorana": "",
+      "dvorana": "Kongresna dvorana (100 mjesta)",
       "naziv_en": "HOTEL ART",
-      "kapacitet": 80,
+      "kapacitet": 100,
       "adresa": "Nikole Zrinskog 44, 35 000 Slavonski Brod",
       "telefon": "+385 35 638 950",
       "email": "info@art-hotel.eu",
       "web": "https://www.art-hotel.eu",
       "slika": "https://www.tzgsb.hr/static/images/Hotel%20Art.JPG",
-      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20ART%20Nikole%20Zrinskog%2044%2035%20000%20Slavonski%20Brod"
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20ART%20Nikole%20Zrinskog%2044%2035%20000%20Slavonski%20Brod",
+      "napomena": "informatička oprema",
+      "izvor": "https://www.art-hotel.eu"
+    },
+    {
+      "objekt": "HOTEL ART",
+      "dvorana": "Kongresna dvorana (50 mjesta)",
+      "naziv_en": "HOTEL ART",
+      "kapacitet": 50,
+      "adresa": "Nikole Zrinskog 44, 35 000 Slavonski Brod",
+      "telefon": "+385 35 638 950",
+      "email": "info@art-hotel.eu",
+      "web": "https://www.art-hotel.eu",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Art.JPG",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20ART%20Nikole%20Zrinskog%2044%2035%20000%20Slavonski%20Brod",
+      "napomena": "informatička oprema",
+      "izvor": "https://www.art-hotel.eu"
+    },
+    {
+      "objekt": "HOTEL ART",
+      "dvorana": "Kongresna dvorana (30 mjesta)",
+      "naziv_en": "HOTEL ART",
+      "kapacitet": 30,
+      "adresa": "Nikole Zrinskog 44, 35 000 Slavonski Brod",
+      "telefon": "+385 35 638 950",
+      "email": "info@art-hotel.eu",
+      "web": "https://www.art-hotel.eu",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Art.JPG",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20ART%20Nikole%20Zrinskog%2044%2035%20000%20Slavonski%20Brod",
+      "napomena": "informatička oprema",
+      "izvor": "https://www.art-hotel.eu"
+    },
+    {
+      "objekt": "HOTEL ART",
+      "dvorana": "Restoran Vidikovac (5. kat, pogled na grad)",
+      "naziv_en": "HOTEL ART",
+      "kapacitet": 150,
+      "adresa": "Nikole Zrinskog 44, 35 000 Slavonski Brod",
+      "telefon": "+385 35 638 950",
+      "email": "info@art-hotel.eu",
+      "web": "https://www.art-hotel.eu",
+      "slika": "https://www.tzgsb.hr/static/images/Hotel%20Art.JPG",
+      "karta": "https://www.google.com/maps/search/?api=1&query=HOTEL%20ART%20Nikole%20Zrinskog%2044%2035%20000%20Slavonski%20Brod",
+      "napomena": "poslovni ručkovi, sastanci, team building, svadbe i proslave",
+      "izvor": "https://www.art-hotel.eu"
     },
     {
       "objekt": "HOTEL CENTRAL",
@@ -756,7 +800,7 @@ export const scrapedContent = {
       "tip": "HOTEL",
       "adresa": "Nikole Zrinskog 44, 35000 Slavonski Brod",
       "telefon": "+385 35 638 950",
-      "web": "https://www.art-hotel.hr",
+      "web": "https://www.art-hotel.eu",
       "slika": "https://www.tzgsb.hr/static/images/hotel-art170-1.jpg",
       "karta": "https://www.google.com/maps/search/?api=1&query=Art%20Slavonski%20Brod"
     },

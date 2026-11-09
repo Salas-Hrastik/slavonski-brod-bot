@@ -218,7 +218,7 @@ function buildCjenikSection() {
   return lines.join('\n');
 }
 
-function buildScrapedSection(category) {
+function buildScrapedSection(category, message = '') {
   const s = scrapedContent;
   if (!s) return '';
   const lines = [];
@@ -281,16 +281,39 @@ function buildScrapedSection(category) {
 
   if (category === 'konferencije' && s.konferencijske_dvorane?.length) {
     const dv = s.konferencijske_dvorane;
+    const uGradu = d => /35 000 Slavonski Brod|35000 Slavonski Brod/.test(d.adresa || '');
+    const opisDv = d => `${d.dvorana ? d.dvorana + ': ' : ''}do ${d.kapacitet} osoba${d.napomena ? ` (${d.napomena})` : ''}`;
+    const kontakt = d => `${d.adresa}${d.telefon ? ` | Tel: ${d.telefon}` : ''}${d.email ? ` | ${d.email}` : ''}${d.web ? ` | ${d.web}` : ''}`;
     lines.push(`\nKONFERENCIJSKE DVORANE I PROSTORI ZA DOGAĐANJA — službeni popis TZ (tzgsb.hr/index.php?page=konferencijske_dvorane), ${dv.length} dvorana:`);
     const poObjektu = new Map();
     dv.forEach(d => { if (!poObjektu.has(d.objekt)) poObjektu.set(d.objekt, []); poObjektu.get(d.objekt).push(d); });
     for (const [objekt, ds] of poObjektu) {
-      const d0 = ds[0];
-      const kap = ds.map(d => `${d.dvorana ? d.dvorana + ': ' : ''}do ${d.kapacitet} osoba`).join('; ');
-      lines.push(`• **${objekt}** — ${kap} | ${d0.adresa}${d0.telefon ? ` | Tel: ${d0.telefon}` : ''}${d0.email ? ` | ${d0.email}` : ''}${d0.web ? ` | ${d0.web}` : ''}`);
+      lines.push(`• **${objekt}**${uGradu(ds[0]) ? '' : ' [IZVAN GRADA]'} — ${ds.map(opisDv).join('; ')} | ${kontakt(ds[0])}`);
     }
-    lines.push(`PRAVILA ZA DVORANE: kapacitet je najveći broj osoba po dvorani. Za upit s brojem sudionika navedi SAMO dvorane s kapacitetom ≥ tog broja, poredane UZLAZNO po kapacitetu (prva je ona čiji je kapacitet najbliži traženom broju), s kontaktom. Za konferencije/seminare/sastanke prednost daj prostorima u gradu (hoteli, HGK, knjižnica, Hrvatski dom, Tvrđava); svečane dvorane u Bukovlju, Podcrkavlju i Gornjoj Vrbi su izvan grada i namijenjene prvenstveno svadbama i proslavama — za seminar ih spomeni tek na kraju kao alternativu. Opremu, cijene najma i slobodne termine popis NE sadrži — uputi na kontakt objekta (iznimka: Hotel Savus objavljuje najam dvorane za sastanke s opremom 65,00 €/sat).`);
+
+    // Broj sudionika iz upita → odgovarajuće dvorane izračunate u kodu (model ih ne smije preskočiti)
+    const m = (message || '').toLowerCase().match(/(\d{1,4})\s*(?:\+\s*)?(osob|ljud|gost|sudion|uzvan|mjest|people|person|guest|participant|attendee|seat|pax|leute|gäst|teilnehm|personen)/)
+      || (message || '').toLowerCase().match(/\bza\s+(\d{2,4})\b|\bfor\s+(\d{2,4})\b|\bfür\s+(\d{2,4})\b/);
+    const n = m ? parseInt(m[1] || m[2] || m[3], 10) : null;
+    if (n) {
+      const svecano = /svadb|vjenčanj|wedding|hochzeit|proslav|svečan|rođendan|krstitk|krizm|pričest|domjen/.test((message || '').toLowerCase());
+      const ok = dv.filter(d => d.kapacitet >= n).sort((a, b) => a.kapacitet - b.kapacitet);
+      const grad = ok.filter(uGradu), izvan = ok.filter(d => !uGradu(d));
+      const red = svecano ? ok : [...grad, ...izvan];
+      const MAX = 10;
+      const prikaz = red.slice(0, MAX);
+      lines.push(`\nODGOVARAJUĆE DVORANE ZA ${n} OSOBA (izračunato iz popisa, kapacitet ≥ ${n}) — navedi IH SVE, ovim redom:`);
+      prikaz.forEach((d, i) => lines.push(`${i + 1}. ${d.objekt} — ${opisDv(d)}${uGradu(d) ? '' : ' [IZVAN GRADA]'} | ${kontakt(d)}`));
+      if (red.length > MAX) lines.push(`(+ još ${red.length - MAX} dvorana većeg kapaciteta — spomeni da postoje i ponudi ih na upit, NE nabrajaj ih.)`);
+      if (!red.length) lines.push(`(Nijedna dvorana s popisa nema kapacitet za ${n} osoba — reci to i navedi najveće dvorane.)`);
+    }
+
+    lines.push(`PRAVILA ZA DVORANE (STROGO):
+- Kapacitet je najveći broj osoba po dvorani. Ako postoji popis "ODGOVARAJUĆE DVORANE", navedi SVE dvorane s njega, TOČNO tim redom, bez preskakanja i bez dodavanja dvorana manjeg kapaciteta. Dvorane označene [IZVAN GRADA] navedi u zasebnom odlomku "Izvan grada", uz napomenu da su prvenstveno svečane dvorane (svadbe, proslave) — osim ako je upit upravo o svadbi/proslavi.
+- Navodi SAMO podatke iz popisa: naziv, dvoranu, kapacitet, adresu, telefon, e-mail, web i napomenu u zagradi (ako postoji). NE izmišljaj i NE pretpostavljaj opremu, catering, tehničku podršku, parking, cijene ni slobodne termine — za to uputi na kontakt objekta. Jedina poznata cijena: Hotel Savus — najam dvorane za sastanke s opremom 65,00 €/sat.
+- Ne piši uvodne rečenice o sezoni ili vremenu kod pitanja o dvoranama — odmah navedi dvorane.`);
   }
+
 
   if (category === 'dogadanja') {
     if (s.manifestacije_aktualne?.length) {
@@ -970,7 +993,7 @@ export default async function handler(req, res) {
     if (contextStr.length > MAX_CTX_CHARS) {
       contextStr = contextStr.slice(0, MAX_CTX_CHARS) + '\n… (skraćeno radi brzine)';
     }
-    const scrapedSection = buildScrapedSection(resolvedCat)
+    const scrapedSection = buildScrapedSection(resolvedCat, message)
       + (wantsCjenik(message.toLowerCase(), resolvedCat) ? buildCjenikSection() : '');
 
     const langInstruction = lang === 'en'
