@@ -63,7 +63,13 @@ function getCategoryItems(category) {
 
   if (category === 'barovi') {
     // Kafići i barovi — fotografije, ocjene i linkovi s Google Mapsa (db.gastronomija.kafici_barovi)
-    return (db.gastronomija?.kafici_barovi || []).map(b => ({
+    const ocj = b => {
+      const m = (b.google_ocjena || '').match(/([\d,]+)\s*\(([\d.]+)\)/);
+      if (!m) return 0;
+      const r = parseFloat(m[1].replace(',', '.')), n = parseInt(m[2].replace(/\./g, ''), 10);
+      return (r * n + 4.3 * 30) / (n + 30);
+    };
+    return [...(db.gastronomija?.kafici_barovi || [])].sort((a, b) => ocj(b) - ocj(a)).map(b => ({
       naziv: b.naziv, slika: b.slika || '', adresa: b.adresa || '', telefon: b.telefon || '',
       web: b.web || '', karta: b.karta || '', radno_vrijeme: b.radno_vrijeme || '',
       ocjena: b.google_ocjena ? `${b.google_ocjena} na Google Mapsu` : '',
@@ -175,11 +181,24 @@ function findRelevantItems(text, category) {
   });
 
   // Kafići i barovi spomenuti u pitanju ili odgovoru → kartice s fotografijom s Google Mapsa
-  const GENERIC = /\b(caffe|cafe|bar|kavana|gradska)\b|[()]/g;
+  // Kratki ili česti nazivi (Lipa, Arena, City, Rupa…) broje se samo ako je napisan puni naziv lokala.
+  const GENERIC = /\b(caffe|cafe|bar|kavana|gradska|klub|buffet|rock|i sala)\b|\([^)]*\)|[()'’]/g;
+  const COMMON = new Set(['lipa', 'arena', 'city', 'rupa', 'sens', 'elite', 'royal', 'virus', 'sport', 'rondo', 'kum', 'as', 'antonio', 'odeon', 'imperia', 'kristian', 'navigator', 'stars', 'sofa', 'derby', 'green park']);
+  const rijec = k => new RegExp(`(^|[^\\p{L}])${k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^\\p{L}]|$)`, 'iu');
   const barovi = getCategoryItems('barovi').filter(b => {
-    const kljucevi = [b.naziv.toLowerCase().replace(GENERIC, ' ').replace(/\s+/g, ' ').trim()];
+    const pun = b.naziv.toLowerCase().replace(/\s*\([^)]*\)/g, '').trim();
+    const kljuc = b.naziv.toLowerCase().replace(GENERIC, ' ').replace(/\s+/g, ' ').trim();
+    const kljucevi = [pun];
+    if (kljuc.length >= 4 && !COMMON.has(kljuc)) kljucevi.push(kljuc);
     if (/kuća piva/i.test(b.naziv)) kljucevi.push('kuća piva', 'kuca piva', 'beer house');
-    return kljucevi.some(k => k.length >= 4 && t.includes(k));
+    return kljucevi.some(k => rijec(k).test(t));
+  }).filter((b, _, sve) => {
+    // Isti naziv na dvije lokacije (Green Park): ako tekst navodi lokaciju iz zagrade, zadrži samo nju
+    const loc = (b.naziv.match(/\(([^)]+)\)/) || [])[1]?.toLowerCase();
+    const bratski = sve.filter(x => x !== b && x.naziv.replace(/\s*\(.*\)/, '') === b.naziv.replace(/\s*\(.*\)/, ''));
+    if (!loc || !bratski.length) return true;
+    const navedenaNeka = [b, ...bratski].some(x => t.includes(((x.naziv.match(/\(([^)]+)\)/) || [])[1] || '§').toLowerCase()));
+    return !navedenaNeka || t.includes(loc);
   });
 
   return [...barovi, ...matched.map(item)].slice(0, 6);
@@ -250,6 +269,20 @@ function buildHoteliSection(msgLower, category) {
 function cutToLastSentence(text) {
   const m = text.match(/^[\s\S]*[.!?…)](?=\s|$)/);
   return m && m[0].length > text.length / 2 ? m[0].trim() : text.trim() + '…';
+}
+
+// Kafići i barovi (db.gastronomija.kafici_barovi) — jedan redak po lokalu, sortirano po ocjeni
+function buildBaroviSection() {
+  const b = getCategoryItems('barovi');
+  if (!b.length) return '';
+  const src = Object.fromEntries((db.gastronomija?.kafici_barovi || []).map(x => [x.naziv, x]));
+  const lines = b.map(x => {
+    const o = src[x.naziv] || {};
+    return `• **${x.naziv}** (${o.tip || 'kafić'}) — ${x.adresa}${x.telefon ? ` | ${x.telefon}` : ''}`
+      + `${x.radno_vrijeme ? ` | 🕐 ${x.radno_vrijeme}` : ''} | ⭐ ${o.google_ocjena || '-'}${o.napomena ? ` | ${o.napomena}` : ''}`;
+  });
+  return `\n\nKAFIĆI I BAROVI (${b.length}, Google Maps, studeni 2026., sortirano po ocjeni):\n${lines.join('\n')}\n`
+    + `Pravila: preporučuj samo kafiće s ovog popisa; radno vrijeme navodi točno kako piše; lokali u Podvinju, Brodskom Varošu i Vinogorju su izvan centra — reci to.`;
 }
 
 function buildCjenikSection() {
@@ -477,8 +510,7 @@ function buildScrapedSection(category, message = '') {
 
 const CATEGORY_CONTEXTS = {
   smjestaj:     (db) => ({ grad: db.grad }),
-  gastronomija: (db) => ({ grad: db.grad, lokalna_kuhinja: db.lokalna_kuhinja,
-    kafici_barovi: (db.gastronomija?.kafici_barovi || []).map(({ slika, karta, ...b }) => b) }),
+  gastronomija: (db) => ({ grad: db.grad, lokalna_kuhinja: db.lokalna_kuhinja }),
   dogadanja:    (db) => ({ grad: db.grad, dogadanja: db.dogadanja }),
   znamenitosti: (db) => ({ grad: db.grad, znamenitosti: db.znamenitosti }),
   sport:        (db) => ({ grad: db.grad, sport: db.sport }),
@@ -796,11 +828,14 @@ export default async function handler(req, res) {
     // Kafići i barovi → instant popis s fotografijama s Google Mapsa
     // (složena/konverzacijska pitanja, npr. "koji kafić blizu Tvrđave radi nedjeljom", idu AI-ju)
     const isBarQuery = /\bbar(ovi|ova|u|a|om)?\b|kafić|kafic|kavan|caffe|\bcafe\b|kafe\b|na kavu|na kavicu|na piće|na pice|pivnic|\bpub\b|craft|coffee|\bbars?\b|kneipe|\bkaffee/.test(msgLower);
-    if (isBarQuery && !isConversationalMode && !isPriceQuery && lang === 'hr') {
-      const items = getCategoryItems('barovi');
+    // Pitanje s uvjetom (lokacija, radno vrijeme, terasa…) traži izbor, ne cijeli popis → AI s popisom kafića
+    const isBarFilterQuery = /uz savu|savu|korz|\bkej|blizu|u blizini|centr|tvrđav|tvrdav|do kasno|kasno|radi |rade |otvoren|nedjelj|subot|petk|teras|djec|podvinj|varoš|vinogor|utakmic|prijenos|kuglan|pikado|rock|kviz|mirn|tih/.test(msgLower);
+    if (isBarQuery && !isBarFilterQuery && !isConversationalMode && !isPriceQuery && lang === 'hr') {
+      const sviBarovi = getCategoryItems('barovi');
+      const items = sviBarovi.slice(0, 15);
       if (items.length) {
         return res.status(200).json({
-          reply: `☕🍺 **Kafići i barovi u Slavonskom Brodu** (${items.length})\n\nNajbolje ocijenjeni na Google Mapsu — s radnim vremenom. Kliknite 🗺 Karta za navigaciju:`,
+          reply: `☕🍺 **Kafići i barovi u Slavonskom Brodu**\n\n${items.length} najbolje ocijenjenih na Google Mapsu (od ${sviBarovi.length} u bazi) — s radnim vremenom. Kliknite 🗺 Karta za navigaciju.\n\nTražite nešto određeno? Pitajte npr. *„kafić na Korzu“*, *„gdje do kasno subotom“* ili *„kafić uz Savu“*.`,
           category: 'gastronomija',
           suggestions: getSuggestions('barovi'),
           items,
@@ -1026,7 +1061,7 @@ export default async function handler(req, res) {
 
     const items = getCategoryItems(resolvedCat);
 
-    if (items.length > 0 && !isConversationalMode && !isGeneralKnowledgeQuery && lang === 'hr') {
+    if (items.length > 0 && !isConversationalMode && !(isBarQuery && isBarFilterQuery) && !isGeneralKnowledgeQuery && lang === 'hr') {
       const intros = {
         gastronomija: `🍽️ **Restorani u Slavonskom Brodu** (${items.length} registriranih objekata pri TZ)\n\nSlavonski Brod poznata je po bogatoj slavonskoj kuhinji — kulenu, čobancu i fiš-paprikašu. Evo svih restorana:`,
         smjestaj:     `🏨 **Smještaj u Slavonskom Brodu** (${items.length} objekata)\n\nHoteli, pansioni i apartmani registrirani pri Turističkoj zajednici — s fotografijama:`,
@@ -1077,6 +1112,7 @@ export default async function handler(req, res) {
     const scrapedSection = buildScrapedSection(resolvedCat, message)
       + (wantsCjenik(message.toLowerCase(), resolvedCat) && !isHotelPriceQuestion(message.toLowerCase()) ? buildCjenikSection() : '')
       + buildHoteliSection(message.toLowerCase(), resolvedCat)
+      + ((resolvedCat === 'gastronomija' || isBarQuery || isActivityQuery) ? buildBaroviSection() : '')
       // Planiranje večeri/dana uz drugu kategoriju (npr. večera) → dodaj i aktualna događanja
       + (resolvedCat !== 'dogadanja' && /večeras|veceras|noćas|nocas|danas|sutra|vikend|aktivnost|izać|izlaz|zabav|tonight|today|weekend|heute|wochenende/.test(message.toLowerCase())
           ? buildScrapedSection('dogadanja', message) : '');
@@ -1141,7 +1177,7 @@ STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 - **Dan grada Slavonskog Broda** = 16. svibnja (blagdan sv. Ivana Nepomuka, zaštitnika grada); povodom Dana grada održavaju se Moto susreti, Regata i Florafest
 - **Advent u Slavonskom Brodu ("Advent iz davnina")** = održava se na Trgu Ivane Brlić-Mažuranić i u Tvrđavi Brod (NE na Trgu pobjede)
 - **Tržni centri**: City Colosseum i Supernova; uz to: Kaufland, Lidl, Konzum, gradska tržnica
-- **Kafići i barovi u SB**: puni podaci (adresa, telefon, radno vrijeme, Google ocjena) su u kontekstu pod "kafici_barovi" — Pipabar (craft pivo), Bon Voyage, Kavana Likaj, Navigator, Lutvinka, Come Back, Sofa Bar, Derby, Soho bar, Stars, De Croy gradska kavana, Beer House (Kuća Piva)
+- **Kafići i barovi u SB**: puni popis (59 lokala, adresa, telefon, radno vrijeme, Google ocjena) dobivaš u odjeljku "KAFIĆI I BAROVI" kad je pitanje o njima
 - **Noćni klubovi u SB**: Klub Rupa, Alfa Club, Hedonic Club, Prohibition Bar, Central Club, Sens Bar Night
 - **Smještaj u prirodi / vikendice**: Matanovi Dvori, Bakina Divljaka, Kuća za odmor Mladen i Martina
 - **Izletišta u okolici SB**: Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora
@@ -1247,7 +1283,7 @@ ${scrapedSection}`;
     // Pronađi relevantne stavke sa slikom za AI odgovor
     // Za vizualne kategorije — uvijek prikaži minijature, neovisno o kontekstu pitanja
     let aiItems = findRelevantItems(message + ' ' + raw, resolvedCat);
-    if (VISUAL_CATS.includes(resolvedCat) && aiItems.length < 2) {
+    if (VISUAL_CATS.includes(resolvedCat) && aiItems.length < 2 && !aiItems.some(i => i.slika?.startsWith('/img/barovi/'))) {
       // Nema dovoljno keyword matcheva — uzmi prvih N stavki s fotografijom iz kategorije
       aiItems = getItemsForCategory(resolvedCat, 6);
     }
