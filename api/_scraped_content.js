@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-09 14:25 UTC
+// Zadnje skrapanje: 2026-11-10 13:48 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-09T14:25:25.100Z",
+    "zadnje_azuriranje": "2026-11-10T13:48:43.295Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Stečaj tvrtke Đuro Đaković Aparati: Gradonačelnik zatražio informacije o sudbini radnika i budućnosti tvrtke",
+      "datum": "10. 11. 2026.",
+      "kratki_opis": "Otvaranje stečajnog postupka nad tvrtkom Đuro Đaković Aparati d.d. i prestanak njezina poslovanja otvorili su pitanje budućnosti ove dugogodišnje slavonskobrodske tvrtke, ali i sudbine njezinih zaposlenika. Riječ je o tvrtki s dugom industrijskom tradicijom, koja je desetljećima bila dio gospodarsko",
+      "link": "https://www.slavonski-brod.hr/vijesti/17433-gradonacelnik-duspara-duro-dakovic-vazna-je-i-povijesna-tvrtka-apeliramo-na-vladu-da-preispita-svoje-odluke",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Grad2.jpeg"
+    },
+    {
+      "naslov": "PRIUŠTIVO STANOVANJE - Slavonski Brod među prvima u Hrvatskoj osigurao stanove za priuštivi najam",
+      "datum": "10. 11. 2026.",
+      "kratki_opis": "U trenutku kad je postalo jasno da sve veći broj mladih ljudi odlazi iz Hrvatske, između ostalog i zbog nemogućnosti rješavanja stambenog pitanja, Grad Slavonski Brod odlučio je djelovati konkretno. Umjesto čekanja na nacionalne programe i mjere, još je 2017. godine pokrenuo program dodjele gradskog",
+      "link": "https://www.slavonski-brod.hr/vijesti/17435-priustivo-stanovanje-slavonski-brod-medu-prvima-u-hrvatskoj-osigurao-stanove-za-priustivi-najam",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Blage-Zadre-17.jpg"
+    },
     {
       "naslov": "Obavijest o proglašenju sajamskih dana",
       "datum": "09. 11. 2026.",
@@ -66,27 +80,6 @@ export const scrapedContent = {
       "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 7. studenoga 2026., glomazni otpad prikuplja se u mjesnim odborima Centar, Plavo Polje i A. Mihanović . Prikupljanje će se nastaviti i u ostalim mjesnim odborima, a o rasporedu ćemo pravodobno",
       "link": "https://www.slavonski-brod.hr/vijesti/17424-obavijest-korisnicima-o-odvozu-glomaznog-otpada-u-mo-centar-plavo-polje-i-antun-mihanovic",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09294-scaled.jpg"
-    },
-    {
-      "naslov": "Održan sastanak o prometnoj sigurnosti u blizini škola i prevenciji nasilja u školama",
-      "datum": "05. 11. 2026.",
-      "kratki_opis": "U Velikoj vijećnici Grada Slavonskog Broda danas je održan sastanak predstavnika Policijske uprave brodsko-posavske te ravnatelja osnovnih škola i dječjih vrtića s područja grada Slavonskog Broda. Tema sastanka bila je unapređenje prometne sigurnosti u neposrednoj blizini odgojno-obrazovnih ustanova",
-      "link": "https://www.slavonski-brod.hr/vijesti/17423-odrzan-sastanak-o-prometnoj-sigurnosti-u-blizini-skola-i-prevenciji-nasilja-u-skolama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Joomla51126.jpg"
-    },
-    {
-      "naslov": "Slavonski Brod obilježava Svjetski dan romskog jezika radionicom za djecu u Društvenom domu „5. studeni”",
-      "datum": "05. 11. 2026.",
-      "kratki_opis": "Danas obilježavamo Svjetski dan romskog jezika. Opća konferencija UNESCO-a službeno ga je proglasila 2015. godine, na inicijativu Republike Hrvatske. Datum je odabran u čast 5. studenoga 2008., kada je u Zagrebu predstavljen prvi Romsko-hrvatski i hrvatsko-romski rječnik autora Veljka Kajtazija, u i",
-      "link": "https://www.slavonski-brod.hr/vijesti/17420-slavonski-brod-obiljezava-svjetski-dan-romskog-jezika-radionicom-za-djecu-u-drustvenom-domu-5-studeni",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Listopad/RADIONICA_ROMI.png"
-    },
-    {
-      "naslov": "Uručena priznanja višestrukim darivateljima krvi",
-      "datum": "05. 11. 2026.",
-      "kratki_opis": "U povodu Dana darivatelja krvi, koji se obilježava 25. listopada, u srijedu, 4. studenoga, održan je svečani prijem višestrukih darivatelja krvi. Prijem je organiziralo Gradsko društvo Crvenog križa Slavonski Brod, a na njemu je nazočila i zamjenica gradonačelnika Marina Martić Puača. Darivateljima ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17419-urucena-priznanja-visestrukim-darivateljima-krvi",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/photo-collagepng.jpg"
     }
   ],
   "manifestacije_aktualne": [
