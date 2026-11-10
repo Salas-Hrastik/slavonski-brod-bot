@@ -733,7 +733,7 @@ export default async function handler(req, res) {
       return res.status(200).json({ reply, category: lastCategory || null, suggestions: getSuggestions(lastCategory), images: [] });
     }
 
-    const isRecommendationQuery = ['preporuč', 'savjetuješ', 'savjet', 'što bi', 'sto bi', 'koji bi', 'predloži', 'recommend', 'suggest', 'advice', 'what would you', 'empfehl', 'vorschlag'].some(k => msgLower.includes(k));
+    const isRecommendationQuery = ['preporuč', 'savjetuješ', 'savjet', 'što bi', 'sto bi', 'koji bi', 'predloži', 'predlaž', 'predlož', 'preporuk', 'recommend', 'suggest', 'advice', 'what would you', 'empfehl', 'vorschlag'].some(k => msgLower.includes(k));
     const isDetailQuery = ['zanima me više', 'reci mi više', 'više o', 'više informacij', 'detaljn', 'tko je', 'što je to', 'govori mi o', 'ispričaj mi', 'objasni mi', 'tell me more', 'more about', 'details about', 'who is', 'what is', 'explain', 'erzähl mir mehr', 'mehr über'].some(k => msgLower.includes(k));
 
     // Direktno listanje (tabovi, brzi gumbi) → uvijek template s karticama
@@ -753,7 +753,11 @@ export default async function handler(req, res) {
     const isActivityQuery = [
       'mogu li', 'da li', 'je li', 'hoće li', 'može li', 'vrijedi li', 'isplati li',
       'što raditi', 'što posjetiti', 'što preporučuješ', 'za vikend', 'sutra', 'ovaj tjedan',
-      'can i', 'is it', 'will it', 'should i', 'worth it', 'what to do'
+      'can i', 'is it', 'will it', 'should i', 'worth it', 'what to do',
+      // Planiranje dana/večeri i budžet → AI (ne instant popis)
+      'večeras', 'veceras', 'noćas', 'nocas', 'danas', 'aktivnost', 'izać', 'izlaz', 'zabav',
+      'razumn', 'povolj', 'jeftin', 'budžet', 'budzet', 'tonight', 'today', 'cheap', 'budget',
+      'heute', 'günstig', 'guenstig'
     ].some(k => msgLower.includes(k));
 
     const conversationHistory = Array.isArray(history) ? history : [];
@@ -763,7 +767,10 @@ export default async function handler(req, res) {
     const isPriceQuery = isPriceQuestion(msgLower) || isHotelPriceQuestion(msgLower);
     // Pitanje o konkretnom hotelu (npr. "Ima li Hotel Central parking?") → AI s podacima s weba hotela
     const isHotelDetailQuery = spomenutiHoteli(msgLower).length > 0;
-    const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery || isPriceQuery || isHotelDetailQuery) && !isDirectListingRequest;
+    // Slobodno napisano, složeno pitanje (npr. "Koju aktivnost predlažeš za večeras i gdje da večeram
+    // po razumnoj cijeni?") traži odgovor, ne popis — čak i kad je kategorija ostala aktivna od klika na tab.
+    const isFreeFormQuestion = msgLower.split(/\s+/).filter(Boolean).length >= 7;
+    const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery || isRecommendationQuery || isFreeFormQuestion || isPriceQuery || isHotelDetailQuery) && !isDirectListingRequest;
 
     const isGeneralKnowledgeQuery = ['kako se priprema', 'kako se kuha', 'recept', 'recepti', 'sastojci', 'kultura', 'tradicija', 'običaj', 'folklor', 'porijeklo', 'legenda', 'kako doći', 'how to make', 'how to cook', 'recipe', 'ingredients', 'tradition', 'culture', 'how to get', 'wie macht man', 'wie kommt man', 'rezept', 'klima', 'valuta', 'govore li', 'koji jezik', 'vegetar', 'vegan'].some(k => msgLower.includes(k));
 
@@ -1038,7 +1045,10 @@ export default async function handler(req, res) {
     }
     const scrapedSection = buildScrapedSection(resolvedCat, message)
       + (wantsCjenik(message.toLowerCase(), resolvedCat) && !isHotelPriceQuestion(message.toLowerCase()) ? buildCjenikSection() : '')
-      + buildHoteliSection(message.toLowerCase(), resolvedCat);
+      + buildHoteliSection(message.toLowerCase(), resolvedCat)
+      // Planiranje večeri/dana uz drugu kategoriju (npr. večera) → dodaj i aktualna događanja
+      + (resolvedCat !== 'dogadanja' && /večeras|veceras|noćas|nocas|danas|sutra|vikend|aktivnost|izać|izlaz|zabav|tonight|today|weekend|heute|wochenende/.test(message.toLowerCase())
+          ? buildScrapedSection('dogadanja', message) : '');
 
     const langInstruction = lang === 'en'
       ? 'The user is writing in English. Respond in English.'
