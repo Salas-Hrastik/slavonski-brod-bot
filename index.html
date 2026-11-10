@@ -1051,6 +1051,12 @@ function addMessage(text, type, suggestions, images, items){
         m.textContent = "📍 " + it.adresa;
         info.appendChild(m);
       }
+      if(it.radno_vrijeme){
+        const m = document.createElement("div");
+        m.className = "item-card-meta";
+        m.textContent = "🕐 " + it.radno_vrijeme;
+        info.appendChild(m);
+      }
 
       const links = document.createElement("div");
       links.className = "item-card-links";

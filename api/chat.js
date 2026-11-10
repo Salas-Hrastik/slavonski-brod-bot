@@ -61,6 +61,15 @@ function getCategoryItems(category) {
              ...extra };
   }
 
+  if (category === 'barovi') {
+    // Kafići i barovi — fotografije, ocjene i linkovi s Google Mapsa (db.gastronomija.kafici_barovi)
+    return (db.gastronomija?.kafici_barovi || []).map(b => ({
+      naziv: b.naziv, slika: b.slika || '', adresa: b.adresa || '', telefon: b.telefon || '',
+      web: b.web || '', karta: b.karta || '', radno_vrijeme: b.radno_vrijeme || '',
+      ocjena: b.google_ocjena ? `${b.google_ocjena} na Google Mapsu` : '',
+      recenzija: '', recenzija_izvor: '', recenzija_url: '',
+    }));
+  }
   if (category === 'gastronomija') {
     // Svi restorani s TZ popisa — bez rezanja (TZ primjedba: moraju biti navedeni svi)
     return (s.restorani_tz || []).map(r => item(r));
@@ -165,7 +174,15 @@ function findRelevantItems(text, category) {
     return words.some(w => t.includes(w));
   });
 
-  return matched.slice(0, 6).map(item);
+  // Kafići i barovi spomenuti u pitanju ili odgovoru → kartice s fotografijom s Google Mapsa
+  const GENERIC = /\b(caffe|cafe|bar|kavana|gradska)\b|[()]/g;
+  const barovi = getCategoryItems('barovi').filter(b => {
+    const kljucevi = [b.naziv.toLowerCase().replace(GENERIC, ' ').replace(/\s+/g, ' ').trim()];
+    if (/kuća piva/i.test(b.naziv)) kljucevi.push('kuća piva', 'kuca piva', 'beer house');
+    return kljucevi.some(k => k.length >= 4 && t.includes(k));
+  });
+
+  return [...barovi, ...matched.map(item)].slice(0, 6);
 }
 
 // ─── Cjenici jela (scripts/scrape-cjenici.js → api/_cjenici.js) ─────────────
@@ -460,7 +477,8 @@ function buildScrapedSection(category, message = '') {
 
 const CATEGORY_CONTEXTS = {
   smjestaj:     (db) => ({ grad: db.grad }),
-  gastronomija: (db) => ({ grad: db.grad, lokalna_kuhinja: db.lokalna_kuhinja }),
+  gastronomija: (db) => ({ grad: db.grad, lokalna_kuhinja: db.lokalna_kuhinja,
+    kafici_barovi: (db.gastronomija?.kafici_barovi || []).map(({ slika, karta, ...b }) => b) }),
   dogadanja:    (db) => ({ grad: db.grad, dogadanja: db.dogadanja }),
   znamenitosti: (db) => ({ grad: db.grad, znamenitosti: db.znamenitosti }),
   sport:        (db) => ({ grad: db.grad, sport: db.sport }),
@@ -666,6 +684,7 @@ function getSuggestions(category) {
     konferencije: ['🎤 Dvorana za 100+ osoba?', '🏨 Smještaj za sudionike?', '🍽️ Restorani za domjenak?'],
     smjestaj:     ['🍽️ Gdje ručati?', '🏰 Tvrđava Brod?', '🅿️ Parkiranje?'],
     gastronomija: ['🏨 Smještaj u gradu?', '🏰 Što vidjeti?', '📅 Događaji?'],
+    barovi:       ['🍺 Gdje na craft pivo?', '☕ Kavana na Korzu?', '🍽️ Gdje večerati?'],
     dogadanja:    ['🏨 Smještaj za tu noć?', '🍽️ Gdje ručati?', '🏰 Što vidjeti?'],
     znamenitosti: ['🍽️ Gdje ručati?', '🏨 Smještaj?', '📅 Događaji?'],
     sport:        ['🍽️ Gdje ručati?', '🌿 Priroda i šetnice?', '🏨 Smještaj?'],
@@ -773,6 +792,22 @@ export default async function handler(req, res) {
     const isConversationalMode = (conversationHistory.length >= 2 || isActivityQuery || isRecommendationQuery || isFreeFormQuestion || isPriceQuery || isHotelDetailQuery) && !isDirectListingRequest;
 
     const isGeneralKnowledgeQuery = ['kako se priprema', 'kako se kuha', 'recept', 'recepti', 'sastojci', 'kultura', 'tradicija', 'običaj', 'folklor', 'porijeklo', 'legenda', 'kako doći', 'how to make', 'how to cook', 'recipe', 'ingredients', 'tradition', 'culture', 'how to get', 'wie macht man', 'wie kommt man', 'rezept', 'klima', 'valuta', 'govore li', 'koji jezik', 'vegetar', 'vegan'].some(k => msgLower.includes(k));
+
+    // Kafići i barovi → instant popis s fotografijama s Google Mapsa
+    // (složena/konverzacijska pitanja, npr. "koji kafić blizu Tvrđave radi nedjeljom", idu AI-ju)
+    const isBarQuery = /\bbar(ovi|ova|u|a|om)?\b|kafić|kafic|kavan|caffe|\bcafe\b|kafe\b|na kavu|na kavicu|na piće|na pice|pivnic|\bpub\b|craft|coffee|\bbars?\b|kneipe|\bkaffee/.test(msgLower);
+    if (isBarQuery && !isConversationalMode && !isPriceQuery && lang === 'hr') {
+      const items = getCategoryItems('barovi');
+      if (items.length) {
+        return res.status(200).json({
+          reply: `☕🍺 **Kafići i barovi u Slavonskom Brodu** (${items.length})\n\nNajbolje ocijenjeni na Google Mapsu — s radnim vremenom. Kliknite 🗺 Karta za navigaciju:`,
+          category: 'gastronomija',
+          suggestions: getSuggestions('barovi'),
+          items,
+          images: []
+        });
+      }
+    }
 
     // FAQ pre-gen blokovi (preskaču se za pitanja o cijenama jela/pića — njih odgovara AI s cjenikom)
     if (!isPriceQuery && !isHotelDetailQuery) {
@@ -917,18 +952,14 @@ export default async function handler(req, res) {
       }
 
       // 12. NOĆNI ŽIVOT — barovi i klubovi
-      if (!faqReply && (ml.includes('bar') || ml.includes('noćni') || ml.includes('nocni') || ml.includes('klub') || ml.includes('izlaz') || ml.includes('provod') || ml.includes('party') || ml.includes('nightlife') || ml.includes('disco') || ml.includes('pivo') || ml.includes('cocktail') || ml.includes('kokteli'))) {
+      if (!faqReply && (ml.includes('noćni') || ml.includes('nocni') || ml.includes('klub') || ml.includes('izlaz') || ml.includes('provod') || ml.includes('party') || ml.includes('nightlife') || ml.includes('disco') || ml.includes('cocktail') || ml.includes('kokteli'))) {
         faqReply =
           '🍺 **Noćni život u Slavonskom Brodu**\n\n' +
-          '**Barovi:**\n' +
-          '🍻 Navigator\n' +
-          '🍸 Soho Bar\n' +
-          '🍺 Beerc\n' +
-          '🥂 Imperia\n' +
-          '🎵 BoomBar\n' +
-          '⚽ Derby\n' +
-          '🍺 Pipa bar\n' +
-          '🏠 Kuća Piva\n\n' +
+          '**Barovi do kasno:**\n' +
+          '🍺 Beer House (Kuća Piva) — Ul. Ante Starčevića 17, pet–sub do 03 h\n' +
+          '🍻 Pipabar (craft pivo) — Ul. Petra Krešimira IV 12, pet–sub do 01 h\n' +
+          '🍸 Soho bar — Trg I. B. Mažuranić 3, subotom do 02 h\n' +
+          '⚓ Navigator — Trg I. B. Mažuranić 13Z, pet–sub do 01 h\n\n' +
           '**Noćni klubovi:**\n' +
           '🎶 Klub Rupa\n' +
           '🎭 Alfa Club\n' +
@@ -1110,7 +1141,7 @@ STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 - **Dan grada Slavonskog Broda** = 16. svibnja (blagdan sv. Ivana Nepomuka, zaštitnika grada); povodom Dana grada održavaju se Moto susreti, Regata i Florafest
 - **Advent u Slavonskom Brodu ("Advent iz davnina")** = održava se na Trgu Ivane Brlić-Mažuranić i u Tvrđavi Brod (NE na Trgu pobjede)
 - **Tržni centri**: City Colosseum i Supernova; uz to: Kaufland, Lidl, Konzum, gradska tržnica
-- **Barovi u SB**: Navigator, Soho Bar, Beerc, Imperia, BoomBar, Derby, Pipa bar, Kuća Piva
+- **Kafići i barovi u SB**: puni podaci (adresa, telefon, radno vrijeme, Google ocjena) su u kontekstu pod "kafici_barovi" — Pipabar (craft pivo), Bon Voyage, Kavana Likaj, Navigator, Lutvinka, Come Back, Sofa Bar, Derby, Soho bar, Stars, De Croy gradska kavana, Beer House (Kuća Piva)
 - **Noćni klubovi u SB**: Klub Rupa, Alfa Club, Hedonic Club, Prohibition Bar, Central Club, Sens Bar Night
 - **Smještaj u prirodi / vikendice**: Matanovi Dvori, Bakina Divljaka, Kuća za odmor Mladen i Martina
 - **Izletišta u okolici SB**: Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora
