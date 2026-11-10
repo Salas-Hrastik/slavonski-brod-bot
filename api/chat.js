@@ -526,12 +526,15 @@ const CATEGORY_CONTEXTS = {
 };
 
 function detectLang(msg) {
-  const words = msg.toLowerCase().split(/[\s,?.!;:()\-]+/);
-  const has = (list) => list.some(w => words.includes(w));
-  if (has(['what','where','how','which','when','is','are','can','do','have','show','find','tell','give','any','some','the','and','but','not','open','map','near','best','visit','see','eat','drink','stay','sleep','book','ticket','price','time','hour']))
-    return 'en';
-  if (has(['was','wo','wie','welche','wann','ist','sind','kann','haben','zeig','gibt','bitte','ich','ein','eine','der','die','das','und','oder','nicht','hier','mit','für','von','nach','beim','zum','zur']))
-    return 'de';
+  const words = msg.toLowerCase().split(/[\s,?.!;:()\-]+/).filter(Boolean);
+  const count = (list) => words.filter(w => list.includes(w)).length;
+  // Bodovanje umjesto prvog pogotka: "do" je i hrvatski ("do kasno", "do centra") pa ne odlučuje sam.
+  const hr = count(['koji','koja','koje','gdje','kako','kada','što','sto','ima','li','je','su','na','za','iz','uz','od','se','mi','me','mogu','može','radi','rade','kafić','kafic','grad','gradu'])
+    + (/[čćžšđ]/i.test(msg) ? 2 : 0);
+  const en = count(['what','where','how','which','when','is','are','can','have','show','find','tell','give','any','some','the','and','but','not','open','map','near','best','visit','see','eat','drink','stay','sleep','book','ticket','price','time','hour','i','a','to','in','need','want','there']);
+  const de = count(['was','wo','wie','welche','wann','ist','sind','kann','haben','zeig','gibt','bitte','ich','ein','eine','der','die','das','und','oder','nicht','hier','mit','für','von','nach','beim','zum','zur','man']);
+  if (en > hr && en >= de) return 'en';
+  if (de > hr && de > en) return 'de';
   return 'hr';
 }
 
