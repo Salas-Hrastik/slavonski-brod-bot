@@ -177,7 +177,8 @@ function findRelevantItems(text, category) {
     if (!o.slika) return false;
     const name = (o.naziv || '').toLowerCase();
     const words = name.split(/[\s\-—/]+/).filter(w => w.length > 3);
-    return words.some(w => t.includes(w));
+    // Riječ mora počinjati na granici riječi ("Orozu" da, "sjedenje" ≠ "Eden")
+    return words.some(w => new RegExp(`(^|[^\\p{L}])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'iu').test(t));
   });
 
   // Kafići i barovi spomenuti u pitanju ili odgovoru → kartice s fotografijom s Google Mapsa
