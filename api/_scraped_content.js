@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-10 13:48 UTC
+// Zadnje skrapanje: 2026-11-11 12:59 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-10T13:48:43.295Z",
+    "zadnje_azuriranje": "2026-11-11T12:59:38.288Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Obavijest o odvozu glomaznog otpada u mjesnim odborima A. Hebrang, Lutvinka, Mali Pariz i Zrinski Frankopan",
+      "datum": "11. 11. 2026.",
+      "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 14. studenoga 2026. godine, glomazni otpad prikuplja se u mjesnim odborima: MO A. HEBRANG, MO LUTVINKA, MO MALI PARIZ, MO ZRINSKI FRANKOPAN Prikupljanje će se nastaviti i u ostalim mjesnim odb",
+      "link": "https://www.slavonski-brod.hr/vijesti/17443-obavijest-o-odvozu-glomaznog-otpada-u-mjesnim-odborima-a-hebrang-lutvinka-mali-pariz-i-zrinski-frankopan",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09294-scaled.jpg"
+    },
+    {
+      "naslov": "Obavijest o proglašenju sajamskog dana na 29. Katarinskom sajmu",
+      "datum": "11. 11. 2026.",
+      "kratki_opis": "Nedjelja, 22. studenog 2026. godine, proglašava se sajamskim danom na 29. Katarinskom sajmu na unutarnjem i vanjskom prostoru Sportske dvorane „Vijuš“ u Slavonskom Brodu. Odluka u cijelosti dostupna je OVDJE .&nbsp;",
+      "link": "https://www.slavonski-brod.hr/vijesti/17442-obavijest-o-proglasenju-sajamskog-dana-na-29-katarinskom-sajmu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_1602_resize.jpg"
+    },
+    {
+      "naslov": "Novčana pomoć umirovljenicima i starijim osobama povodom božićnih blagdana",
+      "datum": "11. 11. 2026.",
+      "kratki_opis": "Grad Slavonski Brod nastavlja brinuti o svojim starijim sugrađanima te će i ove godine dodijeliti jednokratnu novčanu pomoć umirovljenicima i starijim osobama slabijeg imovinskog statusa s područja grada, povodom nadolazećih božićnih blagdana. Pravo na novčanu pomoć mogu ostvariti umirovljenici koji",
+      "link": "https://www.slavonski-brod.hr/vijesti/17440-novcana-pomoc-umirovljenicima-i-starijim-osobama-povodom-bozicnih-blagdana",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/close-up-grandparents-giving-christmas-presents_resize.jpg"
+    },
+    {
+      "naslov": "Jednokratna novčana pomoć povodom Božića za djecu i mlade korisnike inkluzivnog dodatka",
+      "datum": "11. 11. 2026.",
+      "kratki_opis": "Grad Slavonski Brod nastavlja pružati podršku djeci i mladim osobama s invaliditetom te će i ove godine povodom božićnih blagdana dodijeliti jednokratnu novčanu pomoć djeci i mlađim punoljetnim osobama korisnicima inkluzivnog dodatka s područja Grada Slavonskog Broda, sukladno uvjetima utvrđenima Ja",
+      "link": "https://www.slavonski-brod.hr/vijesti/17441-jednokratna-novcana-pomoc-povodom-bozica-za-djecu-i-mlade-korisnike-inkluzivnog-dodatka",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/four-pairs-hands-christmas-balls_resize.jpg"
+    },
     {
       "naslov": "Stečaj tvrtke Đuro Đaković Aparati: Gradonačelnik zatražio informacije o sudbini radnika i budućnosti tvrtke",
       "datum": "10. 11. 2026.",
@@ -52,34 +80,6 @@ export const scrapedContent = {
       "kratki_opis": "Volonteri Marijinih obroka Slavonski Brod obilježili su 10 godina djelovanja humanitarnim koncertom održanim u subotu, 7. studenoga, u dvorani Vijuš. Oko 1500 posjetitelja svojim je dolaskom podržalo ovu humanitarnu inicijativu. U glazbenom programu nastupili su Marko Kutlić, sestre Halužan, Matej G",
       "link": "https://www.slavonski-brod.hr/vijesti/17430-humanitarnim-koncertom-obiljezeno-10-godina-djelovanja-marijinih-obroka",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG-20261108-WA0030_resize.jpg"
-    },
-    {
-      "naslov": "PRIUŠTIVO STANOVANJE - što je i zašto je važno?",
-      "datum": "06. 11. 2026.",
-      "kratki_opis": "Stanovanje je jedna od osnovnih ljudskih potreba. Svatko treba imati sigurno mjesto za život, prostor u kojem može živjeti sa svojom obitelji, odgajati djecu i planirati budućnost. Međutim, u posljednjih nekoliko godina sve je teže doći do vlastitog stana ili pronaći stan za najam po cijeni koju si ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17421-priustivo-stanovanje-sto-je-i-zasto-je-vazno",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/young-woman-holding-key-new-home-street_resize.jpg"
-    },
-    {
-      "naslov": "Predstavljeno kulturno dobro „Tradicija uzgoja i suživota s hrvatskim ovčarom“",
-      "datum": "06. 11. 2026.",
-      "kratki_opis": "Hrvatski ovčar, bujo, bujtar, pulin, ćuko,… U četvrtak, 5. studenoga, u Edukacijsko-multimedijalnom centru – Centru za nematerijalnu kulturnu baštinu predstavljeno je kulturno dobro „Tradicija uzgoja i suživota s hrvatskim ovčarom“. U fokusu večeri bio je suživot čovjeka i hrvatskog ovčara, psa koji",
-      "link": "https://www.slavonski-brod.hr/vijesti/17429-predstavljeno-kulturno-dobro-tradicija-uzgoja-i-suzivota-s-hrvatskim-ovcarom",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/WhatsApp_Image_2026-11-05_at_200854.jpeg"
-    },
-    {
-      "naslov": "Krevetić, pelene i puno dobrih želja za pet novih obitelji",
-      "datum": "06. 11. 2026.",
-      "kratki_opis": "Prvi dani s bebom donose mnogo radosti, ali i brojne pripreme. Kako bismo roditeljima olakšali taj dio, danas smo uručili pet novih paketa opreme za bebe. Paketi su obiteljima predani u nazočnosti zamjenice gradonačelnika Marine Martić Puače. Svaki paket vrijedan je 700 eura i sadrži sve što je potr",
-      "link": "https://www.slavonski-brod.hr/vijesti/17427-krevetic-pelene-i-puno-dobrih-zelja-za-pet-novih-obitelji",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Bebe61126.jpg"
-    },
-    {
-      "naslov": "Obavijest korisnicima o odvozu glomaznog otpada u MO Centar, Plavo Polje i Antun Mihanović",
-      "datum": "06. 11. 2026.",
-      "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 7. studenoga 2026., glomazni otpad prikuplja se u mjesnim odborima Centar, Plavo Polje i A. Mihanović . Prikupljanje će se nastaviti i u ostalim mjesnim odborima, a o rasporedu ćemo pravodobno",
-      "link": "https://www.slavonski-brod.hr/vijesti/17424-obavijest-korisnicima-o-odvozu-glomaznog-otpada-u-mo-centar-plavo-polje-i-antun-mihanovic",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09294-scaled.jpg"
     }
   ],
   "manifestacije_aktualne": [
