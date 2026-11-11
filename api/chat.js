@@ -286,7 +286,8 @@ function buildBaroviSection() {
       + `${x.radno_vrijeme ? ` | 🕐 ${x.radno_vrijeme}` : ''} | ⭐ ${o.google_ocjena || '-'}${o.napomena ? ` | ${o.napomena}` : ''}`;
   });
   return `\n\nKAFIĆI I BAROVI (${b.length}, Google Maps, studeni 2026., sortirano po ocjeni):\n${lines.join('\n')}\n`
-    + `Pravila: preporučuj samo kafiće s ovog popisa; radno vrijeme navodi točno kako piše; lokali u Podvinju, Brodskom Varošu i Vinogorju su izvan centra — reci to.`;
+    + `Pravila: preporučuj samo kafiće s ovog popisa; radno vrijeme navodi točno kako piše; lokali u Podvinju, Brodskom Varošu i Vinogorju su izvan centra — reci to. `
+    + `Kad se pita koji radi određeni dan ili do kasno: za svaki lokal pročitaj vrijeme za taj dan (pon, uto, sri, čet, pet, sub, ned), poredaj ih od najkasnijeg zatvaranja (01 i 02 su kasnije od 24) i ne tvrdi ništa što se kosi s tim redoslijedom.`;
 }
 
 function buildCjenikSection() {
