@@ -184,7 +184,7 @@ function findRelevantItems(text, category) {
   // Kafići i barovi spomenuti u pitanju ili odgovoru → kartice s fotografijom s Google Mapsa
   // Kratki ili česti nazivi (Lipa, Arena, City, Rupa…) broje se samo ako je napisan puni naziv lokala.
   const GENERIC = /\b(caffe|cafe|bar|kavana|gradska|klub|buffet|rock|i sala)\b|\([^)]*\)|[()'’]/g;
-  const COMMON = new Set(['lipa', 'arena', 'city', 'rupa', 'sens', 'elite', 'royal', 'virus', 'sport', 'rondo', 'kum', 'as', 'antonio', 'odeon', 'imperia', 'kristian', 'navigator', 'stars', 'sofa', 'derby', 'green park']);
+  const COMMON = new Set(['lipa', 'arena', 'city', 'rupa', 'sens', 'elite', 'royal', 'virus', 'sport', 'rondo', 'kum', 'as', 'antonio', 'odeon', 'imperia', 'kristian', 'navigator', 'stars', 'sofa', 'derby', 'green park', 'stil', 'square']);
   const rijec = k => new RegExp(`(^|[^\\p{L}])${k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^\\p{L}]|$)`, 'iu');
   const barovi = getCategoryItems('barovi').filter(b => {
     const pun = b.naziv.toLowerCase().replace(/\s*\([^)]*\)/g, '').trim();
@@ -192,6 +192,9 @@ function findRelevantItems(text, category) {
     const kljucevi = [pun];
     if (kljuc.length >= 4 && !COMMON.has(kljuc)) kljucevi.push(kljuc);
     if (/kuća piva/i.test(b.naziv)) kljucevi.push('kuća piva', 'kuca piva', 'beer house');
+    if (/zodato/i.test(b.naziv)) kljucevi.push('zodato');
+    if (/disco club alfa/i.test(b.naziv)) kljucevi.push('club alfa', 'klub alfa', 'alfa club', 'alfa klub');
+    if (/^square bar$/i.test(b.naziv)) kljucevi.push('square bar');
     return kljucevi.some(k => rijec(k).test(t));
   }).filter((b, _, sve) => {
     // Isti naziv na dvije lokacije (Green Park): ako tekst navodi lokaciju iz zagrade, zadrži samo nju
@@ -1000,12 +1003,12 @@ export default async function handler(req, res) {
           '🍸 Soho bar — Trg I. B. Mažuranić 3, subotom do 02 h\n' +
           '⚓ Navigator — Trg I. B. Mažuranić 13Z, pet–sub do 01 h\n\n' +
           '**Noćni klubovi:**\n' +
-          '🎶 Klub Rupa\n' +
-          '🎭 Alfa Club\n' +
-          '💃 Hedonic Club\n' +
-          '🥃 Prohibition Bar\n' +
-          '🎪 Central Club\n' +
-          '🌙 Sens Bar Night\n\n' +
+          '🎭 Disco Club Alfa — Ul. Ante Starčevića 19, čet–sub do 05 h\n' +
+          '💥 BoomBar — Ul. Ivana Filipovića 8, pet–sub do 02 h\n' +
+          '🌙 Sens — Trg I. B. Mažuranić 3 (Korzo), pet–sub do 04 h\n' +
+          '🎶 Klub Rupa — Trg I. B. Mažuranić 5 (Korzo), pet–sub do 02 h\n' +
+          '💃 HedonicCLUB — Ul. Matije Mesića 8\n' +
+          '🎪 Central Club\n\n' +
           'Za aktualni program pratite stranice klubova na društvenim mrežama ili upitajte TIC:\n' +
           '📞 +385 35 203 696 | tic@tzgsb.hr';
       }
@@ -1181,7 +1184,7 @@ STROGI FAKTOGRAFSKI PODACI — NIKAD NE IZMIŠLJAJ, KORISTI SAMO OVO:
 - **Dan grada Slavonskog Broda** = 16. svibnja (blagdan sv. Ivana Nepomuka, zaštitnika grada); povodom Dana grada održavaju se Moto susreti, Regata i Florafest
 - **Advent u Slavonskom Brodu ("Advent iz davnina")** = održava se na Trgu Ivane Brlić-Mažuranić i u Tvrđavi Brod (NE na Trgu pobjede)
 - **Tržni centri**: City Colosseum i Supernova; uz to: Kaufland, Lidl, Konzum, gradska tržnica
-- **Kafići i barovi u SB**: puni popis (59 lokala, adresa, telefon, radno vrijeme, Google ocjena) dobivaš u odjeljku "KAFIĆI I BAROVI" kad je pitanje o njima
+- **Kafići i barovi u SB**: puni popis (${(db.gastronomija?.kafici_barovi || []).length} lokala, adresa, telefon, radno vrijeme, Google ocjena) dobivaš u odjeljku "KAFIĆI I BAROVI" kad je pitanje o njima
 - **Noćni klubovi u SB**: Klub Rupa, Alfa Club, Hedonic Club, Prohibition Bar, Central Club, Sens Bar Night
 - **Smještaj u prirodi / vikendice**: Matanovi Dvori, Bakina Divljaka, Kuća za odmor Mladen i Martina
 - **Izletišta u okolici SB**: Lijeskove vode, Šuma Striborova, Ranč Ramarin, Dilj gora
