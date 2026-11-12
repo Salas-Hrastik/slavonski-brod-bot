@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-11 12:59 UTC
+// Zadnje skrapanje: 2026-11-12 14:01 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-11T12:59:38.288Z",
+    "zadnje_azuriranje": "2026-11-12T14:01:15.409Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Brođani sada dvorane mjesnih domova mogu rezervirati online, uz jedinstven cjenik za cijeli grad",
+      "datum": "12. 11. 2026.",
+      "kratki_opis": "Slavonski Brod dobio je jedinstven i pregledan sustav najma mjesnih domova. Građani, udruge i tvrtke koji planiraju svadbu, rođendan, obiteljsko slavlje, skup ili manifestaciju više ne moraju tražiti predsjednike mjesnih odbora ni obilaziti mjesne odbore. Dovoljno je otvoriti stranicu Brod-Turist , ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17444-brodani-sada-dvorane-mjesnih-domova-mogu-rezervirati-online-uz-jedinstven-cjenik-za-cijeli-grad",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_1402_resize.jpeg"
+    },
     {
       "naslov": "Obavijest o odvozu glomaznog otpada u mjesnim odborima A. Hebrang, Lutvinka, Mali Pariz i Zrinski Frankopan",
       "datum": "11. 11. 2026.",
@@ -73,13 +80,6 @@ export const scrapedContent = {
       "kratki_opis": "Pravilno odvajanje i zbrinjavanje otpada važan je korak u očuvanju okoliša, čistoće i kvalitete života u našem gradu. Kako bi se otpad pravilno zbrinuo i kako bi se spriječilo njegovo nepropisno odlaganje na javnim površinama, važno je znati što se smatra glomaznim otpadom, a što je potrebno odvojen",
       "link": "https://www.slavonski-brod.hr/vijesti/17431-glomazni-otpad-sto-smijemo-a-sto-ne-smijemo-odlagati",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/retro-furniture-being-sold-yard-sale_resize.jpg"
-    },
-    {
-      "naslov": "Humanitarnim koncertom obilježeno 10 godina djelovanja Marijinih obroka",
-      "datum": "08. 11. 2026.",
-      "kratki_opis": "Volonteri Marijinih obroka Slavonski Brod obilježili su 10 godina djelovanja humanitarnim koncertom održanim u subotu, 7. studenoga, u dvorani Vijuš. Oko 1500 posjetitelja svojim je dolaskom podržalo ovu humanitarnu inicijativu. U glazbenom programu nastupili su Marko Kutlić, sestre Halužan, Matej G",
-      "link": "https://www.slavonski-brod.hr/vijesti/17430-humanitarnim-koncertom-obiljezeno-10-godina-djelovanja-marijinih-obroka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG-20261108-WA0030_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
