@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-12 14:01 UTC
+// Zadnje skrapanje: 2026-11-13 13:28 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-12T14:01:15.409Z",
+    "zadnje_azuriranje": "2026-11-13T13:28:04.354Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,13 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Iz svijeta bajki u božićnu pustolovinu: Jaglenac i Rutvica stižu na Advent iz davnina",
+      "datum": "13. 11. 2026.",
+      "kratki_opis": "Nakon što su svladali opasnosti Kitež-planine, Jaglenac i Rutvica stižu u Slavonski Brod s posebnom misijom – pomoći Djedu Božićnjaku vratiti izgubljenu božićnu čaroliju! Omiljeni likovi iz bajke Ivane Brlić-Mažuranić postat će glavni junaci ovogodišnjeg Adventa iz davnina te će najmlađe posjetitelj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17445-advent-iz-davnina-ove-godine-u-znaku-jaglenca-i-rutvice",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_3103_resize.jpeg"
+    },
     {
       "naslov": "Brođani sada dvorane mjesnih domova mogu rezervirati online, uz jedinstven cjenik za cijeli grad",
       "datum": "12. 11. 2026.",
@@ -73,13 +80,6 @@ export const scrapedContent = {
       "kratki_opis": "U svrhu sajamskih i turističkih aktivnosti, sve nedjelje i blagdani za vrijeme trajanja manifestacije Advent u Slavonskom Brodu, u razdoblju od 29. studenog 2026. do 6. siječnja 2027. godine, proglašavaju se sajamskim danima na području grada Slavonskog Broda.&nbsp; Radno vrijeme ugostiteljskih obje",
       "link": "https://www.slavonski-brod.hr/vijesti/17434-obavijest-o-proglasenju-sajamskih-dana-2",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/advent.jpg"
-    },
-    {
-      "naslov": "GLOMAZNI OTPAD - što smijemo, a što ne smijemo odlagati?",
-      "datum": "09. 11. 2026.",
-      "kratki_opis": "Pravilno odvajanje i zbrinjavanje otpada važan je korak u očuvanju okoliša, čistoće i kvalitete života u našem gradu. Kako bi se otpad pravilno zbrinuo i kako bi se spriječilo njegovo nepropisno odlaganje na javnim površinama, važno je znati što se smatra glomaznim otpadom, a što je potrebno odvojen",
-      "link": "https://www.slavonski-brod.hr/vijesti/17431-glomazni-otpad-sto-smijemo-a-sto-ne-smijemo-odlagati",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/retro-furniture-being-sold-yard-sale_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
