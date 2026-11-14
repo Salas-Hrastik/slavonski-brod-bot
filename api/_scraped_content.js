@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-13 13:28 UTC
+// Zadnje skrapanje: 2026-11-14 12:33 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-13T13:28:04.354Z",
+    "zadnje_azuriranje": "2026-11-14T12:33:02.690Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -19,11 +19,32 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
+      "naslov": "Grad nastavlja podršku mladim obiteljima: uručeni novi paketi opreme za bebe",
+      "datum": "13. 11. 2026.",
+      "kratki_opis": "Grad Slavonski Brod nastavlja s provedbom pronatalitetnih mjera kojima pomaže roditeljima i najmlađim sugrađanima. Zamjenica gradonačelnika Marina Martić Puača danas je posjetila brodske obitelji koje su nedavno dobile prvo dijete i uručila im pakete opreme za bebe. Paketi su osmišljeni kako bi rodi",
+      "link": "https://www.slavonski-brod.hr/vijesti/17448-grad-slavonski-brod-nastavlja-podrsku-mladim-obiteljima-uruceni-novi-paketi-opreme-za-bebe",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/naslovnabebe.jpeg"
+    },
+    {
+      "naslov": "„Sjetimo ih se s ponosom i tugom“: Slavonski Brod 34 godine poslije čuva sjećanje na nevine žrtve",
+      "datum": "13. 11. 2026.",
+      "kratki_opis": "Danas je u Slavonskom Brodu obilježena 34. obljetnica stradanja grada u Domovinskom ratu. Obilježavanje je održano pod nazivom „Sjetimo ih se s ponosom i tugom“. Posvećeno je poginuloj djeci, civilnim žrtvama i svima koji su izgubili život u ratnim razaranjima grada. Ispred Grada Slavonskog Broda u ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17446-sjetimo-ih-se-s-ponosom-i-tugom-slavonski-brod-34-godine-poslije-cuva-sjecanje-na-nevine-zrtve",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/naslovna_resize.jpeg"
+    },
+    {
       "naslov": "Iz svijeta bajki u božićnu pustolovinu: Jaglenac i Rutvica stižu na Advent iz davnina",
       "datum": "13. 11. 2026.",
       "kratki_opis": "Nakon što su svladali opasnosti Kitež-planine, Jaglenac i Rutvica stižu u Slavonski Brod s posebnom misijom – pomoći Djedu Božićnjaku vratiti izgubljenu božićnu čaroliju! Omiljeni likovi iz bajke Ivane Brlić-Mažuranić postat će glavni junaci ovogodišnjeg Adventa iz davnina te će najmlađe posjetitelj",
       "link": "https://www.slavonski-brod.hr/vijesti/17445-advent-iz-davnina-ove-godine-u-znaku-jaglenca-i-rutvice",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_3103_resize.jpeg"
+    },
+    {
+      "naslov": "Predstavljen program 29. Katarinskog sajma",
+      "datum": "13. 11. 2026.",
+      "kratki_opis": "Program ovogodišnjeg 29. Katarinskog sajma predstavljen je danas u 11:00 sati na konferenciji za medije u Velikoj vijećnici Gradske uprave. Sajam će se održati od 20. do 22. studenoga 2026. godine u Sportskoj dvorani Vijuš , a uz ponudu na izlagačkim štandovima donosi raznovrsne sadržaje za sve gene",
+      "link": "https://www.slavonski-brod.hr/vijesti/17447-predstavljen-program-29-katarinskog-sajma",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/katarinski-2026_resize.jpg"
     },
     {
       "naslov": "Brođani sada dvorane mjesnih domova mogu rezervirati online, uz jedinstven cjenik za cijeli grad",
@@ -66,20 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "Otvaranje stečajnog postupka nad tvrtkom Đuro Đaković Aparati d.d. i prestanak njezina poslovanja otvorili su pitanje budućnosti ove dugogodišnje slavonskobrodske tvrtke, ali i sudbine njezinih zaposlenika. Riječ je o tvrtki s dugom industrijskom tradicijom, koja je desetljećima bila dio gospodarsko",
       "link": "https://www.slavonski-brod.hr/vijesti/17433-gradonacelnik-duspara-duro-dakovic-vazna-je-i-povijesna-tvrtka-apeliramo-na-vladu-da-preispita-svoje-odluke",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Grad2.jpeg"
-    },
-    {
-      "naslov": "PRIUŠTIVO STANOVANJE - Slavonski Brod među prvima u Hrvatskoj osigurao stanove za priuštivi najam",
-      "datum": "10. 11. 2026.",
-      "kratki_opis": "U trenutku kad je postalo jasno da sve veći broj mladih ljudi odlazi iz Hrvatske, između ostalog i zbog nemogućnosti rješavanja stambenog pitanja, Grad Slavonski Brod odlučio je djelovati konkretno. Umjesto čekanja na nacionalne programe i mjere, još je 2017. godine pokrenuo program dodjele gradskog",
-      "link": "https://www.slavonski-brod.hr/vijesti/17435-priustivo-stanovanje-slavonski-brod-medu-prvima-u-hrvatskoj-osigurao-stanove-za-priustivi-najam",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Blage-Zadre-17.jpg"
-    },
-    {
-      "naslov": "Obavijest o proglašenju sajamskih dana",
-      "datum": "09. 11. 2026.",
-      "kratki_opis": "U svrhu sajamskih i turističkih aktivnosti, sve nedjelje i blagdani za vrijeme trajanja manifestacije Advent u Slavonskom Brodu, u razdoblju od 29. studenog 2026. do 6. siječnja 2027. godine, proglašavaju se sajamskim danima na području grada Slavonskog Broda.&nbsp; Radno vrijeme ugostiteljskih obje",
-      "link": "https://www.slavonski-brod.hr/vijesti/17434-obavijest-o-proglasenju-sajamskih-dana-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/advent.jpg"
     }
   ],
   "manifestacije_aktualne": [
