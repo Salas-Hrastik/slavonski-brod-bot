@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-15 12:59 UTC
+// Zadnje skrapanje: 2026-11-16 14:02 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-15T12:59:46.557Z",
+    "zadnje_azuriranje": "2026-11-16T14:02:48.427Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Obilježavanje Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje u Slavonskom Brodu",
+      "datum": "16. 11. 2026.",
+      "kratki_opis": "Povodom obilježavanja Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje Grad Slavonski Brod u suradnji sa Župom Gospe Brze Pomoći i Udrugom civilnih stradalnika Domovinskoga rata organizira molitvu i paljenje lampiona u utorak 17. studenoga 2026. godine. Za tu će p",
+      "link": "https://www.slavonski-brod.hr/vijesti/17451-obiljezavanje-dana-sjecanja-na-zrtve-domovinskog-rata-i-dana-sjecanja-na-zrtvu-vukovara-i-skabrnje-u-slavonskom-brodu-2",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/vukovar_i_skabrnja.jpg"
+    },
+    {
+      "naslov": "Objavljena privremena lista učenika - dobitnika stipendija za deficitarna zanimanja za školsku godinu 2026./2027.",
+      "datum": "16. 11. 2026.",
+      "kratki_opis": "Temeljem članka 16. Odluke o stipendiji Grada Slavonskog Broda za učenike koji se obrazuju za deficitarna zanimanja (Službeni glasnik Grada Slavonskog Broda, br. 8/23, 14/2026) i provedenog Natječaja za dodjelu stipendija učenicima koji se obrazuju za deficitarna zanimanja, Povjerenstvo za dodjelu S",
+      "link": "https://www.slavonski-brod.hr/vijesti/17450-objavljena-privremena-lista-ucenika-dobitnika-stipendija-za-deficitarna-zanimanja-za-skolsku-godinu-2026-2027",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/search-library-mobility-modern-vintage-reading_resize.jpg"
+    },
     {
       "naslov": "Grad nastavlja podršku mladim obiteljima: uručeni novi paketi opreme za bebe",
       "datum": "13. 11. 2026.",
@@ -73,20 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "Grad Slavonski Brod nastavlja brinuti o svojim starijim sugrađanima te će i ove godine dodijeliti jednokratnu novčanu pomoć umirovljenicima i starijim osobama slabijeg imovinskog statusa s područja grada, povodom nadolazećih božićnih blagdana. Pravo na novčanu pomoć mogu ostvariti umirovljenici koji",
       "link": "https://www.slavonski-brod.hr/vijesti/17440-novcana-pomoc-umirovljenicima-i-starijim-osobama-povodom-bozicnih-blagdana",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/close-up-grandparents-giving-christmas-presents_resize.jpg"
-    },
-    {
-      "naslov": "Jednokratna novčana pomoć povodom Božića za djecu i mlade korisnike inkluzivnog dodatka",
-      "datum": "11. 11. 2026.",
-      "kratki_opis": "Grad Slavonski Brod nastavlja pružati podršku djeci i mladim osobama s invaliditetom te će i ove godine povodom božićnih blagdana dodijeliti jednokratnu novčanu pomoć djeci i mlađim punoljetnim osobama korisnicima inkluzivnog dodatka s područja Grada Slavonskog Broda, sukladno uvjetima utvrđenima Ja",
-      "link": "https://www.slavonski-brod.hr/vijesti/17441-jednokratna-novcana-pomoc-povodom-bozica-za-djecu-i-mlade-korisnike-inkluzivnog-dodatka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/four-pairs-hands-christmas-balls_resize.jpg"
-    },
-    {
-      "naslov": "Stečaj tvrtke Đuro Đaković Aparati: Gradonačelnik zatražio informacije o sudbini radnika i budućnosti tvrtke",
-      "datum": "10. 11. 2026.",
-      "kratki_opis": "Otvaranje stečajnog postupka nad tvrtkom Đuro Đaković Aparati d.d. i prestanak njezina poslovanja otvorili su pitanje budućnosti ove dugogodišnje slavonskobrodske tvrtke, ali i sudbine njezinih zaposlenika. Riječ je o tvrtki s dugom industrijskom tradicijom, koja je desetljećima bila dio gospodarsko",
-      "link": "https://www.slavonski-brod.hr/vijesti/17433-gradonacelnik-duspara-duro-dakovic-vazna-je-i-povijesna-tvrtka-apeliramo-na-vladu-da-preispita-svoje-odluke",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Grad2.jpeg"
     }
   ],
   "manifestacije_aktualne": [
