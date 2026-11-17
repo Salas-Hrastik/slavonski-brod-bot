@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-16 14:02 UTC
+// Zadnje skrapanje: 2026-11-17 14:56 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-16T14:02:48.427Z",
+    "zadnje_azuriranje": "2026-11-17T14:56:49.983Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,41 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Gradonačelnikova čestitka povodom Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje",
+      "datum": "17. 11. 2026.",
+      "kratki_opis": "Sutra će ulicama Vukovara ponovno proći Kolona sjećanja. U njoj će hodati branitelji koji su preživjeli opsadu, ljudi koji su kao djeca mjesecima živjeli u podrumima i obitelji koje i nakon 35 godina traže svoje nestale. Uz njih će hodati i mladi koji su rođeni dugo nakon rata, a među njima bit će, ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17456-gradonacelnikova-cestitka-povodom-dana-sjecanja-na-zrtve-domovinskog-rata-i-dana-sjecanja-na-zrtvu-vukovara-i-skabrnje",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/vukovar_vizual.jpg"
+    },
+    {
+      "naslov": "Prepoznaj, reagiraj, zaštiti – obilježavanje Međunarodnog dana borbe protiv nasilja nad ženama",
+      "datum": "17. 11. 2026.",
+      "kratki_opis": "I ove godine Povjerenstvo za ravnopravnost Grada Slavonskog Broda obilježava Međunarodni dan borbe protiv nasilja nad ženama. Tim povodom organizirana je tribina u srijedu, 25. studenog 2026. godine, s početkom u 18 sati u Gradskoj knjižnici Slavonski Brod. Međunarodni dan borbe protiv nasilja nad ž",
+      "link": "https://www.slavonski-brod.hr/vijesti/17457-prepoznaj-reagiraj-zastiti-obiljezavanje-medunarodnog-dana-borbe-protiv-nasilja-nad-zenama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Tribina_2026_16x9.jpg"
+    },
+    {
+      "naslov": "Moto karavana na putu prema Vukovaru odala počast žrtvama Domovinskog rata u Slavonskom Brodu",
+      "datum": "17. 11. 2026.",
+      "kratki_opis": "Uoči Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje, Slavonskim Brodom danas je prošla tradicionalna moto karavana Prevlaka-Vukovar. Ove se godine karavana vozi u povodu 35. obljetnice stradanja Vukovara. Organizira je Moto klub Korčula u suradnji s udrugama pro",
+      "link": "https://www.slavonski-brod.hr/vijesti/17455-moto-karavana-na-putu-prema-vukovaru-odala-pocast-zrtvama-domovinskog-rata-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/image03833_resize.jpeg"
+    },
+    {
+      "naslov": "Obavijest o privremenom zatvaranju prometa u dijelu Vukovarske ulice",
+      "datum": "17. 11. 2026.",
+      "kratki_opis": "Povodom obilježavanja Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje, danas, 17. studenoga 2026., u Vukovarskoj ulici održat će se tradicionalno paljenje lampiona. Zbog toga će od 17.30 do 18.30 sati promet biti zatvoren u dijelu Vukovarske ulice, od kružnog tok",
+      "link": "https://www.slavonski-brod.hr/vijesti/17454-obavijest-o-privremenom-zatvaranju-prometa-u-dijelu-vukovarske-ulice",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/tvrdava_i_grad_2_resize.jpg"
+    },
+    {
+      "naslov": "Obavijest građanima: radno vrijeme TD Komunalac na Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukova",
+      "datum": "17. 11. 2026.",
+      "kratki_opis": "TD Komunalac d.o.o. obavještava korisnike svojih usluga, da na blagdan – Dan sjećanja na žrtve Domovinskog rata, &nbsp; srijeda 18.11.2026.,&nbsp; reciklažna dvorišta 1, 2 i 3, kao i odlagalište Vijuš – jug (S. Vraza 2c),&nbsp; neće raditi . Odvoz komunalnog otpada, korisnog otpada te biootpada vrši",
+      "link": "https://www.slavonski-brod.hr/vijesti/17453-obavijest-gradanima-radno-vrijeme-td-komunalac-na-dan-sjecanja-na-zrtve-domovinskog-rata-i-dan-sjecanja-na-zrtvu-vukovara-i-skabrnje-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09280cr.jpg"
+    },
     {
       "naslov": "Obilježavanje Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje u Slavonskom Brodu",
       "datum": "16. 11. 2026.",
@@ -52,41 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "Nakon što su svladali opasnosti Kitež-planine, Jaglenac i Rutvica stižu u Slavonski Brod s posebnom misijom – pomoći Djedu Božićnjaku vratiti izgubljenu božićnu čaroliju! Omiljeni likovi iz bajke Ivane Brlić-Mažuranić postat će glavni junaci ovogodišnjeg Adventa iz davnina te će najmlađe posjetitelj",
       "link": "https://www.slavonski-brod.hr/vijesti/17445-advent-iz-davnina-ove-godine-u-znaku-jaglenca-i-rutvice",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_3103_resize.jpeg"
-    },
-    {
-      "naslov": "Predstavljen program 29. Katarinskog sajma",
-      "datum": "13. 11. 2026.",
-      "kratki_opis": "Program ovogodišnjeg 29. Katarinskog sajma predstavljen je danas u 11:00 sati na konferenciji za medije u Velikoj vijećnici Gradske uprave. Sajam će se održati od 20. do 22. studenoga 2026. godine u Sportskoj dvorani Vijuš , a uz ponudu na izlagačkim štandovima donosi raznovrsne sadržaje za sve gene",
-      "link": "https://www.slavonski-brod.hr/vijesti/17447-predstavljen-program-29-katarinskog-sajma",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/katarinski-2026_resize.jpg"
-    },
-    {
-      "naslov": "Brođani sada dvorane mjesnih domova mogu rezervirati online, uz jedinstven cjenik za cijeli grad",
-      "datum": "12. 11. 2026.",
-      "kratki_opis": "Slavonski Brod dobio je jedinstven i pregledan sustav najma mjesnih domova. Građani, udruge i tvrtke koji planiraju svadbu, rođendan, obiteljsko slavlje, skup ili manifestaciju više ne moraju tražiti predsjednike mjesnih odbora ni obilaziti mjesne odbore. Dovoljno je otvoriti stranicu Brod-Turist , ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17444-brodani-sada-dvorane-mjesnih-domova-mogu-rezervirati-online-uz-jedinstven-cjenik-za-cijeli-grad",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_1402_resize.jpeg"
-    },
-    {
-      "naslov": "Obavijest o odvozu glomaznog otpada u mjesnim odborima A. Hebrang, Lutvinka, Mali Pariz i Zrinski Frankopan",
-      "datum": "11. 11. 2026.",
-      "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 14. studenoga 2026. godine, glomazni otpad prikuplja se u mjesnim odborima: MO A. HEBRANG, MO LUTVINKA, MO MALI PARIZ, MO ZRINSKI FRANKOPAN Prikupljanje će se nastaviti i u ostalim mjesnim odb",
-      "link": "https://www.slavonski-brod.hr/vijesti/17443-obavijest-o-odvozu-glomaznog-otpada-u-mjesnim-odborima-a-hebrang-lutvinka-mali-pariz-i-zrinski-frankopan",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09294-scaled.jpg"
-    },
-    {
-      "naslov": "Obavijest o proglašenju sajamskog dana na 29. Katarinskom sajmu",
-      "datum": "11. 11. 2026.",
-      "kratki_opis": "Nedjelja, 22. studenog 2026. godine, proglašava se sajamskim danom na 29. Katarinskom sajmu na unutarnjem i vanjskom prostoru Sportske dvorane „Vijuš“ u Slavonskom Brodu. Odluka u cijelosti dostupna je OVDJE .&nbsp;",
-      "link": "https://www.slavonski-brod.hr/vijesti/17442-obavijest-o-proglasenju-sajamskog-dana-na-29-katarinskom-sajmu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_1602_resize.jpg"
-    },
-    {
-      "naslov": "Novčana pomoć umirovljenicima i starijim osobama povodom božićnih blagdana",
-      "datum": "11. 11. 2026.",
-      "kratki_opis": "Grad Slavonski Brod nastavlja brinuti o svojim starijim sugrađanima te će i ove godine dodijeliti jednokratnu novčanu pomoć umirovljenicima i starijim osobama slabijeg imovinskog statusa s područja grada, povodom nadolazećih božićnih blagdana. Pravo na novčanu pomoć mogu ostvariti umirovljenici koji",
-      "link": "https://www.slavonski-brod.hr/vijesti/17440-novcana-pomoc-umirovljenicima-i-starijim-osobama-povodom-bozicnih-blagdana",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/close-up-grandparents-giving-christmas-presents_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
