@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-17 14:56 UTC
+// Zadnje skrapanje: 2026-11-18 14:37 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-17T14:56:49.983Z",
+    "zadnje_azuriranje": "2026-11-18T14:37:14.329Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -19,7 +19,7 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
-      "naslov": "Gradonačelnikova čestitka povodom Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje",
+      "naslov": "Gradonačelnikova poruka povodom Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje",
       "datum": "17. 11. 2026.",
       "kratki_opis": "Sutra će ulicama Vukovara ponovno proći Kolona sjećanja. U njoj će hodati branitelji koji su preživjeli opsadu, ljudi koji su kao djeca mjesecima živjeli u podrumima i obitelji koje i nakon 35 godina traže svoje nestale. Uz njih će hodati i mladi koji su rođeni dugo nakon rata, a među njima bit će, ",
       "link": "https://www.slavonski-brod.hr/vijesti/17456-gradonacelnikova-cestitka-povodom-dana-sjecanja-na-zrtve-domovinskog-rata-i-dana-sjecanja-na-zrtvu-vukovara-i-skabrnje",
