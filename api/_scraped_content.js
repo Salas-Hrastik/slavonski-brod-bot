@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-18 14:37 UTC
+// Zadnje skrapanje: 2026-11-19 14:44 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-18T14:37:14.329Z",
+    "zadnje_azuriranje": "2026-11-19T14:44:03.273Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -19,10 +19,24 @@ export const scrapedContent = {
   },
   "novosti_grad": [
     {
+      "naslov": "Sutra počinje 29. Katarinski sajam – vidimo se na Vijušu!",
+      "datum": "19. 11. 2026.",
+      "kratki_opis": "Program ovogodišnjeg sajma predstavljen je ovaj tjedan, a sve je spremno da 29. Katarinski sajam sutra, 20. studenoga, otvori vrata u Sportskoj dvorani Vijuš. Sajam traje do nedjelje, 22. studenoga, a posjetitelje očekuju tri dana druženja, bogate ponude i programa za sve generacije. Dvorana se za p",
+      "link": "https://www.slavonski-brod.hr/vijesti/17461-sutra-pocinje-29-katarinski-sajam-vidimo-se-na-vijusu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/katarinski-2026_resize.jpg"
+    },
+    {
+      "naslov": "Obavijest o odvozu glomaznog otpada u mjesnim odborima Podvinje i Brodsko Vinogorje",
+      "datum": "19. 11. 2026.",
+      "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 21. studenoga 2026., glomazni otpad prikupljat će se u mjesnim odborima Podvinje i Brodsko Vinogorje . Prikupljanje će se poslije nastaviti i u ostalim mjesnim odborima, a raspored će biti obj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17460-obavijest-o-odvozu-glomaznog-otpada-u-mjesnim-odborima-podvinje-i-brodsko-vinogorje",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09280cr.jpg"
+    },
+    {
       "naslov": "Gradonačelnikova poruka povodom Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje",
       "datum": "17. 11. 2026.",
       "kratki_opis": "Sutra će ulicama Vukovara ponovno proći Kolona sjećanja. U njoj će hodati branitelji koji su preživjeli opsadu, ljudi koji su kao djeca mjesecima živjeli u podrumima i obitelji koje i nakon 35 godina traže svoje nestale. Uz njih će hodati i mladi koji su rođeni dugo nakon rata, a među njima bit će, ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17456-gradonacelnikova-cestitka-povodom-dana-sjecanja-na-zrtve-domovinskog-rata-i-dana-sjecanja-na-zrtvu-vukovara-i-skabrnje",
+      "link": "https://www.slavonski-brod.hr/vijesti/17456-gradonacelnikova-poruka-povodom-dana-sjecanja-na-zrtve-domovinskog-rata-i-dana-sjecanja-na-zrtvu-vukovara-i-skabrnje",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/vukovar_vizual.jpg"
     },
     {
@@ -73,20 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "Grad Slavonski Brod nastavlja s provedbom pronatalitetnih mjera kojima pomaže roditeljima i najmlađim sugrađanima. Zamjenica gradonačelnika Marina Martić Puača danas je posjetila brodske obitelji koje su nedavno dobile prvo dijete i uručila im pakete opreme za bebe. Paketi su osmišljeni kako bi rodi",
       "link": "https://www.slavonski-brod.hr/vijesti/17448-grad-slavonski-brod-nastavlja-podrsku-mladim-obiteljima-uruceni-novi-paketi-opreme-za-bebe",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/naslovnabebe.jpeg"
-    },
-    {
-      "naslov": "„Sjetimo ih se s ponosom i tugom“: Slavonski Brod 34 godine poslije čuva sjećanje na nevine žrtve",
-      "datum": "13. 11. 2026.",
-      "kratki_opis": "Danas je u Slavonskom Brodu obilježena 34. obljetnica stradanja grada u Domovinskom ratu. Obilježavanje je održano pod nazivom „Sjetimo ih se s ponosom i tugom“. Posvećeno je poginuloj djeci, civilnim žrtvama i svima koji su izgubili život u ratnim razaranjima grada. Ispred Grada Slavonskog Broda u ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17446-sjetimo-ih-se-s-ponosom-i-tugom-slavonski-brod-34-godine-poslije-cuva-sjecanje-na-nevine-zrtve",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/naslovna_resize.jpeg"
-    },
-    {
-      "naslov": "Iz svijeta bajki u božićnu pustolovinu: Jaglenac i Rutvica stižu na Advent iz davnina",
-      "datum": "13. 11. 2026.",
-      "kratki_opis": "Nakon što su svladali opasnosti Kitež-planine, Jaglenac i Rutvica stižu u Slavonski Brod s posebnom misijom – pomoći Djedu Božićnjaku vratiti izgubljenu božićnu čaroliju! Omiljeni likovi iz bajke Ivane Brlić-Mažuranić postat će glavni junaci ovogodišnjeg Adventa iz davnina te će najmlađe posjetitelj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17445-advent-iz-davnina-ove-godine-u-znaku-jaglenca-i-rutvice",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_3103_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
