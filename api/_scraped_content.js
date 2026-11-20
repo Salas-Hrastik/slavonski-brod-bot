@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-19 14:44 UTC
+// Zadnje skrapanje: 2026-11-20 14:25 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-19T14:44:03.273Z",
+    "zadnje_azuriranje": "2026-11-20T14:25:14.369Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Katarinski sajam otvorio vrata: tri dana tradicije, okusa i druženja",
+      "datum": "20. 11. 2026.",
+      "kratki_opis": "U Sportskoj dvorani Vijuš danas je svečano otvoren 29. Katarinski sajam, koji traje do nedjelje, 22. studenoga. Sajam je otvorio gradonačelnik Mirko Duspara. Otvorenje je uz svoj nastup uveličao Folklorni ansambl Broda. Nakon otvorenja gradonačelnik je s uzvanicima obišao štandove i porazgovarao s i",
+      "link": "https://www.slavonski-brod.hr/vijesti/17465-katarinski-sajam-otvorio-vrata-tri-dana-tradicije-okusa-i-druzenja",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_2372_resize.jpeg"
+    },
+    {
+      "naslov": "Svjetski dan djece: ulaganje u najmlađe od prvog dana života",
+      "datum": "20. 11. 2026.",
+      "kratki_opis": "Svjetski dan djece obilježava se 20. studenoga, na dan kada je 1989. godine usvojena Konvencija o pravima djeteta. Taj međunarodni ugovor o ljudskim pravima ratificiralo je najviše država u povijesti, i to najbrže. Ove godine Konvencija obilježava 37. obljetnicu. Ovogodišnja poruka glasi „Moj dan. M",
+      "link": "https://www.slavonski-brod.hr/vijesti/17464-svjetski-dan-djece-ulaganje-u-najmlade-od-prvog-dana-zivota",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Svjetski_dan_djece__Grad_Slavonski_Brod.jpeg"
+    },
+    {
+      "naslov": "Večeras počinje 16. Međunarodni festival harmonike &quot;Bela pl. Panthy&quot; koncertom &quot;Tragom crvene niti&quot;",
+      "datum": "20. 11. 2026.",
+      "kratki_opis": "Od 20. do 22. studenoga 2026. godine Slavonski Brod bit će domaćin 16. međunarodnog festivala harmonike \"Bela pl. Panthy\", koji će i ove godine okupiti ponajbolje harmonikaške orkestre iz Hrvatske te ponuditi bogat trodnevni program posvećen harmonikaškoj glazbi i njezinoj tradiciji. Ovogodišnji fes",
+      "link": "https://www.slavonski-brod.hr/vijesti/17466-veceras-pocinje-16-medunarodni-festival-harmonike-bela-pl-panthy-koncertom-tragom-crvene-niti",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/1000002789_resize.jpg"
+    },
+    {
+      "naslov": "Noć kazališta u Hrvatskom domu: dvije predstave i slobodan ulaz",
+      "datum": "20. 11. 2026.",
+      "kratki_opis": "U subotu, 21. studenoga 2026., održava se 18. Noć kazališta. Ta jedinstvena kulturna manifestacija već osamnaest godina okuplja profesionalna i amaterska kazališta, kulturne centre, umjetničke organizacije i nezavisne kazališne skupine diljem Hrvatske. Pokrenuta je 2008. godine kako bi promovirala s",
+      "link": "https://www.slavonski-brod.hr/vijesti/17463-noc-kazalista-u-hrvatskom-domu-dvije-predstave-i-slobodan-ulaz",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/KAZALISTE.png"
+    },
     {
       "naslov": "Sutra počinje 29. Katarinski sajam – vidimo se na Vijušu!",
       "datum": "19. 11. 2026.",
@@ -59,34 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "Povodom obilježavanja Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje, danas, 17. studenoga 2026., u Vukovarskoj ulici održat će se tradicionalno paljenje lampiona. Zbog toga će od 17.30 do 18.30 sati promet biti zatvoren u dijelu Vukovarske ulice, od kružnog tok",
       "link": "https://www.slavonski-brod.hr/vijesti/17454-obavijest-o-privremenom-zatvaranju-prometa-u-dijelu-vukovarske-ulice",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/tvrdava_i_grad_2_resize.jpg"
-    },
-    {
-      "naslov": "Obavijest građanima: radno vrijeme TD Komunalac na Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukova",
-      "datum": "17. 11. 2026.",
-      "kratki_opis": "TD Komunalac d.o.o. obavještava korisnike svojih usluga, da na blagdan – Dan sjećanja na žrtve Domovinskog rata, &nbsp; srijeda 18.11.2026.,&nbsp; reciklažna dvorišta 1, 2 i 3, kao i odlagalište Vijuš – jug (S. Vraza 2c),&nbsp; neće raditi . Odvoz komunalnog otpada, korisnog otpada te biootpada vrši",
-      "link": "https://www.slavonski-brod.hr/vijesti/17453-obavijest-gradanima-radno-vrijeme-td-komunalac-na-dan-sjecanja-na-zrtve-domovinskog-rata-i-dan-sjecanja-na-zrtvu-vukovara-i-skabrnje-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09280cr.jpg"
-    },
-    {
-      "naslov": "Obilježavanje Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje u Slavonskom Brodu",
-      "datum": "16. 11. 2026.",
-      "kratki_opis": "Povodom obilježavanja Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje Grad Slavonski Brod u suradnji sa Župom Gospe Brze Pomoći i Udrugom civilnih stradalnika Domovinskoga rata organizira molitvu i paljenje lampiona u utorak 17. studenoga 2026. godine. Za tu će p",
-      "link": "https://www.slavonski-brod.hr/vijesti/17451-obiljezavanje-dana-sjecanja-na-zrtve-domovinskog-rata-i-dana-sjecanja-na-zrtvu-vukovara-i-skabrnje-u-slavonskom-brodu-2",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/vukovar_i_skabrnja.jpg"
-    },
-    {
-      "naslov": "Objavljena privremena lista učenika - dobitnika stipendija za deficitarna zanimanja za školsku godinu 2026./2027.",
-      "datum": "16. 11. 2026.",
-      "kratki_opis": "Temeljem članka 16. Odluke o stipendiji Grada Slavonskog Broda za učenike koji se obrazuju za deficitarna zanimanja (Službeni glasnik Grada Slavonskog Broda, br. 8/23, 14/2026) i provedenog Natječaja za dodjelu stipendija učenicima koji se obrazuju za deficitarna zanimanja, Povjerenstvo za dodjelu S",
-      "link": "https://www.slavonski-brod.hr/vijesti/17450-objavljena-privremena-lista-ucenika-dobitnika-stipendija-za-deficitarna-zanimanja-za-skolsku-godinu-2026-2027",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/search-library-mobility-modern-vintage-reading_resize.jpg"
-    },
-    {
-      "naslov": "Grad nastavlja podršku mladim obiteljima: uručeni novi paketi opreme za bebe",
-      "datum": "13. 11. 2026.",
-      "kratki_opis": "Grad Slavonski Brod nastavlja s provedbom pronatalitetnih mjera kojima pomaže roditeljima i najmlađim sugrađanima. Zamjenica gradonačelnika Marina Martić Puača danas je posjetila brodske obitelji koje su nedavno dobile prvo dijete i uručila im pakete opreme za bebe. Paketi su osmišljeni kako bi rodi",
-      "link": "https://www.slavonski-brod.hr/vijesti/17448-grad-slavonski-brod-nastavlja-podrsku-mladim-obiteljima-uruceni-novi-paketi-opreme-za-bebe",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/naslovnabebe.jpeg"
     }
   ],
   "manifestacije_aktualne": [
