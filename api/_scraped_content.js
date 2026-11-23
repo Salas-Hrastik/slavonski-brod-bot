@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-22 13:38 UTC
+// Zadnje skrapanje: 2026-11-23 16:33 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-22T13:38:44.690Z",
+    "zadnje_azuriranje": "2026-11-23T16:33:26.836Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Hrvatski gitarski kvartet večeras nastupa u Slavonskom Brodu",
+      "datum": "23. 11. 2026.",
+      "kratki_opis": "Ljubitelje klasične glazbe u ponedjeljak, 23. studenoga 2026. godine, očekuje poseban glazbeni doživljaj u Slavonskom Brodu. U Glazbenoj školi Slavonski Brod, s početkom u 19:30 sati , nastupit će Hrvatski gitarski kvartet , jedan od istaknutih hrvatskih komornih ansambala, poznat po virtuoznosti, u",
+      "link": "https://www.slavonski-brod.hr/vijesti/17470-hrvatski-gitarski-kvartet-veceras-nastupa-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/913809727_30454804147442458_163996597625907310_n_resize.jpg"
+    },
+    {
+      "naslov": "Darivanjem Kata ispraćen 29. Katarinski sajam",
+      "datum": "23. 11. 2026.",
+      "kratki_opis": "Nakon tri dana bogatog programa, u Sportskoj dvorani Vijuš jučer je svečano zatvoren 29. Katarinski sajam. I ove je godine okupio velik broj izlagača i posjetitelja te pokazao zašto je jedna od najdražih brodskih tradicija. Zatvaranju je prisustvovala zamjenica gradonačelnika Marina Martić Puača koj",
+      "link": "https://www.slavonski-brod.hr/vijesti/17469-darivanjem-kata-ispracen-29-katarinski-sajam",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/923257674_1121213584061151_5633743874508642858_n.jpg"
+    },
+    {
+      "naslov": "U Slavonskom Brodu održana prva &quot;Noć HNK BSK-a&quot;",
+      "datum": "23. 11. 2026.",
+      "kratki_opis": "U subotu, 21. studenoga 2026., u svečanoj dvorani Prestige u Slavonskom Brodu održana je prva „Noć HNK BSK Slavonski Brod“. Klub je ovu večer organizirao prvi put, a održana je uz potporu gradonačelnika Grada Slavonskog Broda Mirka Duspare, koji je bio i među uzvanicima. Večeri je nazočilo više od 3",
+      "link": "https://www.slavonski-brod.hr/vijesti/17468-u-slavonskom-brodu-odrzana-prva-noc-hnk-bsk-a",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/BSK_NASLOVNA_resize.jpg"
+    },
+    {
+      "naslov": "Održan 16. međunarodni festival harmonike „Bela pl. Panthy”",
+      "datum": "23. 11. 2026.",
+      "kratki_opis": "Slavonski Brod je od 20. do 22. studenoga bio domaćin 16. međunarodnog festivala harmonike „Bela pl. Panthy”. Ovogodišnji festival održan je u posebno važnoj godini za brodsku glazbenu scenu. Brodski harmonikaški orkestar „Bela pl. Panthy” obilježava 60 godina djelovanja, a navršava se i 100 godina ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17467-odrzan-16-medunarodni-festival-harmonike-bela-pl-panthy",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/914661427_1440933157665648_7643801120702892288_n.jpg"
+    },
     {
       "naslov": "Katarinski sajam otvorio vrata: tri dana tradicije, okusa i druženja",
       "datum": "20. 11. 2026.",
@@ -59,34 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 21. studenoga 2026., glomazni otpad prikupljat će se u mjesnim odborima Podvinje i Brodsko Vinogorje . Prikupljanje će se poslije nastaviti i u ostalim mjesnim odborima, a raspored će biti obj",
       "link": "https://www.slavonski-brod.hr/vijesti/17460-obavijest-o-odvozu-glomaznog-otpada-u-mjesnim-odborima-podvinje-i-brodsko-vinogorje",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09280cr.jpg"
-    },
-    {
-      "naslov": "Gradonačelnikova poruka povodom Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje",
-      "datum": "17. 11. 2026.",
-      "kratki_opis": "Sutra će ulicama Vukovara ponovno proći Kolona sjećanja. U njoj će hodati branitelji koji su preživjeli opsadu, ljudi koji su kao djeca mjesecima živjeli u podrumima i obitelji koje i nakon 35 godina traže svoje nestale. Uz njih će hodati i mladi koji su rođeni dugo nakon rata, a među njima bit će, ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17456-gradonacelnikova-poruka-povodom-dana-sjecanja-na-zrtve-domovinskog-rata-i-dana-sjecanja-na-zrtvu-vukovara-i-skabrnje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/vukovar_vizual.jpg"
-    },
-    {
-      "naslov": "Prepoznaj, reagiraj, zaštiti – obilježavanje Međunarodnog dana borbe protiv nasilja nad ženama",
-      "datum": "17. 11. 2026.",
-      "kratki_opis": "I ove godine Povjerenstvo za ravnopravnost Grada Slavonskog Broda obilježava Međunarodni dan borbe protiv nasilja nad ženama. Tim povodom organizirana je tribina u srijedu, 25. studenog 2026. godine, s početkom u 18 sati u Gradskoj knjižnici Slavonski Brod. Međunarodni dan borbe protiv nasilja nad ž",
-      "link": "https://www.slavonski-brod.hr/vijesti/17457-prepoznaj-reagiraj-zastiti-obiljezavanje-medunarodnog-dana-borbe-protiv-nasilja-nad-zenama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Tribina_2026_16x9.jpg"
-    },
-    {
-      "naslov": "Moto karavana na putu prema Vukovaru odala počast žrtvama Domovinskog rata u Slavonskom Brodu",
-      "datum": "17. 11. 2026.",
-      "kratki_opis": "Uoči Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje, Slavonskim Brodom danas je prošla tradicionalna moto karavana Prevlaka-Vukovar. Ove se godine karavana vozi u povodu 35. obljetnice stradanja Vukovara. Organizira je Moto klub Korčula u suradnji s udrugama pro",
-      "link": "https://www.slavonski-brod.hr/vijesti/17455-moto-karavana-na-putu-prema-vukovaru-odala-pocast-zrtvama-domovinskog-rata-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/image03833_resize.jpeg"
-    },
-    {
-      "naslov": "Obavijest o privremenom zatvaranju prometa u dijelu Vukovarske ulice",
-      "datum": "17. 11. 2026.",
-      "kratki_opis": "Povodom obilježavanja Dana sjećanja na žrtve Domovinskog rata i Dana sjećanja na žrtvu Vukovara i Škabrnje, danas, 17. studenoga 2026., u Vukovarskoj ulici održat će se tradicionalno paljenje lampiona. Zbog toga će od 17.30 do 18.30 sati promet biti zatvoren u dijelu Vukovarske ulice, od kružnog tok",
-      "link": "https://www.slavonski-brod.hr/vijesti/17454-obavijest-o-privremenom-zatvaranju-prometa-u-dijelu-vukovarske-ulice",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/tvrdava_i_grad_2_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
