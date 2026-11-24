@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-23 16:33 UTC
+// Zadnje skrapanje: 2026-11-24 16:31 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-23T16:33:26.836Z",
+    "zadnje_azuriranje": "2026-11-24T16:31:37.194Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,41 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Uklonjen nepropisno odloženi medicinski otpad s Poloja, slučaj prijavljen nadležnim službama",
+      "datum": "24. 11. 2026.",
+      "kratki_opis": "Povodom pronalaska nepropisno odloženog medicinskog otpada na području Sportsko-rekreacijskog centra Poloj, o kojem su danas izvijestili i lokalni mediji, Grad Slavonski Brod obavještava građane da su poduzete potrebne mjere radi zaštite njihova zdravlja i sigurnosti. Iako zbrinjavanje medicinskog o",
+      "link": "https://www.slavonski-brod.hr/vijesti/17477-uklonjen-nepropisno-odlozeni-medicinski-otpad-s-poloja-slucaj-prijavljen-nadleznim-sluzbama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/cdbdf97cf5664a81de8c_resize.png"
+    },
+    {
+      "naslov": "Podsjetnik: sutra tribina povodom Međunarodnog dana borbe protiv nasilja nad ženama",
+      "datum": "24. 11. 2026.",
+      "kratki_opis": "Povjerenstvo za ravnopravnost Grada Slavonskog Broda i ove godine obilježava Međunarodni dan borbe protiv nasilja nad ženama. Tim povodom podsjećamo da se tribina održava sutra, u srijedu, 25. studenog 2026. godine, s početkom u 18 sati u Gradskoj knjižnici Slavonski Brod. Ovaj dan obilježava se u s",
+      "link": "https://www.slavonski-brod.hr/vijesti/17474-podsjetnik-sutra-tribina-povodom-medunarodnog-dana-borbe-protiv-nasilja-nad-zenama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Tribina_2026_16x9.jpg"
+    },
+    {
+      "naslov": "Zahtjevi za dodjelu božićnica umirovljenicima i starijim osobama mogu se podnijeti do 4. prosinca",
+      "datum": "24. 11. 2026.",
+      "kratki_opis": "Javni poziv Grada Slavonskog Broda za dodjelu jednokratne novčane pomoći umirovljenicima i starijim osobama povodom božićnih blagdana otvoren je do&nbsp;petka, 4. prosinca 2026. godine. Pravo na novčanu pomoć mogu ostvariti umirovljenici koji ispunjavaju propisane uvjete vezane uz visinu mirovine i ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17472-zahtjevi-za-dodjelu-bozicnica-umirovljenicima-i-starijim-osobama-mogu-se-podnijeti-do-4-prosinca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/close-up-grandparents-giving-christmas-presents_resize.jpg"
+    },
+    {
+      "naslov": "Zahtjevi za dodjelu božićnica djeci i mladima korisnicima inkluzivnog dodatka mogu se podnijeti do 4. prosinca",
+      "datum": "24. 11. 2026.",
+      "kratki_opis": "Javni poziv Grada Slavonskog Broda za dodjelu jednokratne novčane pomoći povodom božićnih blagdana djeci i mlađim punoljetnim osobama koje su korisnici inkluzivnog dodatka otvoren je do&nbsp;petka, 4. prosinca 2026. godine. Pravo na novčanu pomoć mogu ostvariti korisnici inkluzivnog dodatka koji nis",
+      "link": "https://www.slavonski-brod.hr/vijesti/17473-zahtjevi-za-dodjelu-bozicnica-djeci-i-mladima-korisnicima-inkluzivnog-dodatka-mogu-se-podnijeti-do-4-prosinca",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/four-pairs-hands-christmas-balls_resize.jpg"
+    },
+    {
+      "naslov": "PRIUŠTIVO STANOVANJE – što priuštivi najam znači za mlade obitelji?",
+      "datum": "24. 11. 2026.",
+      "kratki_opis": "Rješavanje stambenog pitanja jedan je od najvećih izazova s kojima se danas suočavaju mladi ljudi i obitelji. Visoke cijene nekretnina, skupi tržišni najam i rastući životni troškovi mnogima otežavaju osamostaljivanje, zasnivanje obitelji i planiranje budućnosti. Upravo zato Grad Slavonski Brod kont",
+      "link": "https://www.slavonski-brod.hr/vijesti/17462-priustivo-stanovanje-sto-priustivi-najam-znaci-za-mlade-obitelji",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/family-moving-using-boxes_resize.jpg"
+    },
     {
       "naslov": "Hrvatski gitarski kvartet večeras nastupa u Slavonskom Brodu",
       "datum": "23. 11. 2026.",
@@ -52,41 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "U Sportskoj dvorani Vijuš danas je svečano otvoren 29. Katarinski sajam, koji traje do nedjelje, 22. studenoga. Sajam je otvorio gradonačelnik Mirko Duspara. Otvorenje je uz svoj nastup uveličao Folklorni ansambl Broda. Nakon otvorenja gradonačelnik je s uzvanicima obišao štandove i porazgovarao s i",
       "link": "https://www.slavonski-brod.hr/vijesti/17465-katarinski-sajam-otvorio-vrata-tri-dana-tradicije-okusa-i-druzenja",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_2372_resize.jpeg"
-    },
-    {
-      "naslov": "Svjetski dan djece: ulaganje u najmlađe od prvog dana života",
-      "datum": "20. 11. 2026.",
-      "kratki_opis": "Svjetski dan djece obilježava se 20. studenoga, na dan kada je 1989. godine usvojena Konvencija o pravima djeteta. Taj međunarodni ugovor o ljudskim pravima ratificiralo je najviše država u povijesti, i to najbrže. Ove godine Konvencija obilježava 37. obljetnicu. Ovogodišnja poruka glasi „Moj dan. M",
-      "link": "https://www.slavonski-brod.hr/vijesti/17464-svjetski-dan-djece-ulaganje-u-najmlade-od-prvog-dana-zivota",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Svjetski_dan_djece__Grad_Slavonski_Brod.jpeg"
-    },
-    {
-      "naslov": "Večeras počinje 16. Međunarodni festival harmonike &quot;Bela pl. Panthy&quot; koncertom &quot;Tragom crvene niti&quot;",
-      "datum": "20. 11. 2026.",
-      "kratki_opis": "Od 20. do 22. studenoga 2026. godine Slavonski Brod bit će domaćin 16. međunarodnog festivala harmonike \"Bela pl. Panthy\", koji će i ove godine okupiti ponajbolje harmonikaške orkestre iz Hrvatske te ponuditi bogat trodnevni program posvećen harmonikaškoj glazbi i njezinoj tradiciji. Ovogodišnji fes",
-      "link": "https://www.slavonski-brod.hr/vijesti/17466-veceras-pocinje-16-medunarodni-festival-harmonike-bela-pl-panthy-koncertom-tragom-crvene-niti",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/1000002789_resize.jpg"
-    },
-    {
-      "naslov": "Noć kazališta u Hrvatskom domu: dvije predstave i slobodan ulaz",
-      "datum": "20. 11. 2026.",
-      "kratki_opis": "U subotu, 21. studenoga 2026., održava se 18. Noć kazališta. Ta jedinstvena kulturna manifestacija već osamnaest godina okuplja profesionalna i amaterska kazališta, kulturne centre, umjetničke organizacije i nezavisne kazališne skupine diljem Hrvatske. Pokrenuta je 2008. godine kako bi promovirala s",
-      "link": "https://www.slavonski-brod.hr/vijesti/17463-noc-kazalista-u-hrvatskom-domu-dvije-predstave-i-slobodan-ulaz",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/KAZALISTE.png"
-    },
-    {
-      "naslov": "Sutra počinje 29. Katarinski sajam – vidimo se na Vijušu!",
-      "datum": "19. 11. 2026.",
-      "kratki_opis": "Program ovogodišnjeg sajma predstavljen je ovaj tjedan, a sve je spremno da 29. Katarinski sajam sutra, 20. studenoga, otvori vrata u Sportskoj dvorani Vijuš. Sajam traje do nedjelje, 22. studenoga, a posjetitelje očekuju tri dana druženja, bogate ponude i programa za sve generacije. Dvorana se za p",
-      "link": "https://www.slavonski-brod.hr/vijesti/17461-sutra-pocinje-29-katarinski-sajam-vidimo-se-na-vijusu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/katarinski-2026_resize.jpg"
-    },
-    {
-      "naslov": "Obavijest o odvozu glomaznog otpada u mjesnim odborima Podvinje i Brodsko Vinogorje",
-      "datum": "19. 11. 2026.",
-      "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U subotu, 21. studenoga 2026., glomazni otpad prikupljat će se u mjesnim odborima Podvinje i Brodsko Vinogorje . Prikupljanje će se poslije nastaviti i u ostalim mjesnim odborima, a raspored će biti obj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17460-obavijest-o-odvozu-glomaznog-otpada-u-mjesnim-odborima-podvinje-i-brodsko-vinogorje",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09280cr.jpg"
     }
   ],
   "manifestacije_aktualne": [
