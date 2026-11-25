@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-24 16:31 UTC
+// Zadnje skrapanje: 2026-11-25 16:11 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-24T16:31:37.194Z",
+    "zadnje_azuriranje": "2026-11-25T16:11:59.379Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,20 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Konačna lista prvenstva za dodjelu potpore studentima Grada Slavonskog Broda za akademsku godinu 2026./2027.",
+      "datum": "25. 11. 2026.",
+      "kratki_opis": "Temeljem Odluke o stipendiji Grada Slavonskog Broda za učenike koji se obrazuju za deficitarna zanimanja i provedenog natječaja za školsku godinu 2026./2027., Povjerenstvo za dodjelu stipendije utvrdilo je konačnu listu prvenstva koja je&nbsp;zbog zaštite osobnih podataka objavljena pod šiframa. Izn",
+      "link": "https://www.slavonski-brod.hr/vijesti/17481-konacna-lista-prvenstva-za-dodjelu-potpore-studentima-grada-slavonskog-broda-za-akademsku-godinu-2026-2027",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/KOLAZ.png"
+    },
+    {
+      "naslov": "Književna šetnja stazama Ivane Brlić-Mažuranić i Dragutina Tadijanovića – prijave do petka",
+      "datum": "25. 11. 2026.",
+      "kratki_opis": "Slavonski Brod ponosan je na to što su upravo u njemu živjeli i stvarali Ivana Brlić-Mažuranić, koju zovu „hrvatskim Andersenom”, i Dragutin Tadijanović, jedan od najvećih hrvatskih pjesnika. Turistička zajednica grada Slavonskog Broda želi njihove tragove u gradu približiti sugrađanima i posjetitel",
+      "link": "https://www.slavonski-brod.hr/vijesti/17478-knjizevna-setnja-stazama-ivane-brlic-mazuranic-i-dragutina-tadijanovica-prijave-do-petka",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/naslovnica-knjizevna-setnja.jpg"
+    },
     {
       "naslov": "Uklonjen nepropisno odloženi medicinski otpad s Poloja, slučaj prijavljen nadležnim službama",
       "datum": "24. 11. 2026.",
@@ -73,20 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "U subotu, 21. studenoga 2026., u svečanoj dvorani Prestige u Slavonskom Brodu održana je prva „Noć HNK BSK Slavonski Brod“. Klub je ovu večer organizirao prvi put, a održana je uz potporu gradonačelnika Grada Slavonskog Broda Mirka Duspare, koji je bio i među uzvanicima. Večeri je nazočilo više od 3",
       "link": "https://www.slavonski-brod.hr/vijesti/17468-u-slavonskom-brodu-odrzana-prva-noc-hnk-bsk-a",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/BSK_NASLOVNA_resize.jpg"
-    },
-    {
-      "naslov": "Održan 16. međunarodni festival harmonike „Bela pl. Panthy”",
-      "datum": "23. 11. 2026.",
-      "kratki_opis": "Slavonski Brod je od 20. do 22. studenoga bio domaćin 16. međunarodnog festivala harmonike „Bela pl. Panthy”. Ovogodišnji festival održan je u posebno važnoj godini za brodsku glazbenu scenu. Brodski harmonikaški orkestar „Bela pl. Panthy” obilježava 60 godina djelovanja, a navršava se i 100 godina ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17467-odrzan-16-medunarodni-festival-harmonike-bela-pl-panthy",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/914661427_1440933157665648_7643801120702892288_n.jpg"
-    },
-    {
-      "naslov": "Katarinski sajam otvorio vrata: tri dana tradicije, okusa i druženja",
-      "datum": "20. 11. 2026.",
-      "kratki_opis": "U Sportskoj dvorani Vijuš danas je svečano otvoren 29. Katarinski sajam, koji traje do nedjelje, 22. studenoga. Sajam je otvorio gradonačelnik Mirko Duspara. Otvorenje je uz svoj nastup uveličao Folklorni ansambl Broda. Nakon otvorenja gradonačelnik je s uzvanicima obišao štandove i porazgovarao s i",
-      "link": "https://www.slavonski-brod.hr/vijesti/17465-katarinski-sajam-otvorio-vrata-tri-dana-tradicije-okusa-i-druzenja",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_2372_resize.jpeg"
     }
   ],
   "manifestacije_aktualne": [
