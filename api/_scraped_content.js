@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-25 16:11 UTC
+// Zadnje skrapanje: 2026-11-26 15:51 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-25T16:11:59.379Z",
+    "zadnje_azuriranje": "2026-11-26T15:51:14.371Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,34 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Usvojen proračun Grada Slavonskog Broda za 2027. godinu vrijedan 106.080.800,00 eura",
+      "datum": "26. 11. 2026.",
+      "kratki_opis": "Na današnjoj, 11. sjednici Gradskog vijeća Grada Slavonskog Broda, kojoj je prisustvovalo 18 gradskih vijećnica i vijećnika, usvojen je Proračun Grada Slavonskog Broda za 2027. godinu s projekcijama za 2028. i 2029. godinu. Sjednica je započela Aktualnim satom, tijekom kojega su gradske vijećnice i ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17483-usvojen-proracun-grada-slavonskog-broda-za-2027-godinu-vrijedan-106-080-800-00-eura",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_2472_resize.jpeg"
+    },
+    {
+      "naslov": "Javni poziv za pomoćnika u nastavi u Područnoj školi Donja Bebrina",
+      "datum": "26. 11. 2026.",
+      "kratki_opis": "U sklopu projekta „Helping – faza VII”, kojim se učenicima s teškoćama u razvoju u brodskim osnovnim školama osiguravaju pomoćnici u nastavi, objavljen je javni poziv za prijavu kandidata za posao pomoćnika u nastavi. Traži se jedna osoba za rad u Osnovnoj školi „Vladimir Nazor”, Područnoj školi Don",
+      "link": "https://www.slavonski-brod.hr/vijesti/17485-javni-poziv-za-pomocnika-u-nastavi-u-podrucnoj-skoli-donja-bebrina",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/creative-girl-using-highlighter_resize.jpg"
+    },
+    {
+      "naslov": "U subotu 47. međužupanijska izložba malih životinja u Slavonskom Brodu",
+      "datum": "26. 11. 2026.",
+      "kratki_opis": "U subotu i nedjelju, 28. i 29. studenoga, Slavonski Brod bit će domaćin 47. međužupanijske izložbe malih životinja. Izložbu organizira Društvo uzgajivača malih životinja Slavonski Brod, a održava se pod pokroviteljstvom Ministarstva poljoprivrede, šumarstva i ribarstva. Posjetitelji će moći razgleda",
+      "link": "https://www.slavonski-brod.hr/vijesti/17480-u-subotu-47-meduzupanijska-izlozba-malih-zivotinja-u-slavonskom-brodu",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Male_zivotinje.png"
+    },
+    {
+      "naslov": "Tribinom u Gradskoj knjižnici obilježen Međunarodni dan borbe protiv nasilja nad ženama",
+      "datum": "26. 11. 2026.",
+      "kratki_opis": "Povjerenstvo za ravnopravnost Grada Slavonskog Broda i ove je godine obilježilo Međunarodni dan borbe protiv nasilja nad ženama. Tim povodom u srijedu, 25. studenoga, u Gradskoj knjižnici Slavonski Brod održana je tribina. Ovaj se dan obilježava u spomen na sestre Mirabal: Patriju, Minervu i Mariju ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17482-tribinom-u-gradskoj-knjiznici-obiljezen-medunarodni-dan-borbe-protiv-nasilja-nad-zenama",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_2463.jpeg"
+    },
     {
       "naslov": "Konačna lista prvenstva za dodjelu potpore studentima Grada Slavonskog Broda za akademsku godinu 2026./2027.",
       "datum": "25. 11. 2026.",
@@ -59,34 +87,6 @@ export const scrapedContent = {
       "kratki_opis": "Javni poziv Grada Slavonskog Broda za dodjelu jednokratne novčane pomoći povodom božićnih blagdana djeci i mlađim punoljetnim osobama koje su korisnici inkluzivnog dodatka otvoren je do&nbsp;petka, 4. prosinca 2026. godine. Pravo na novčanu pomoć mogu ostvariti korisnici inkluzivnog dodatka koji nis",
       "link": "https://www.slavonski-brod.hr/vijesti/17473-zahtjevi-za-dodjelu-bozicnica-djeci-i-mladima-korisnicima-inkluzivnog-dodatka-mogu-se-podnijeti-do-4-prosinca",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/four-pairs-hands-christmas-balls_resize.jpg"
-    },
-    {
-      "naslov": "PRIUŠTIVO STANOVANJE – što priuštivi najam znači za mlade obitelji?",
-      "datum": "24. 11. 2026.",
-      "kratki_opis": "Rješavanje stambenog pitanja jedan je od najvećih izazova s kojima se danas suočavaju mladi ljudi i obitelji. Visoke cijene nekretnina, skupi tržišni najam i rastući životni troškovi mnogima otežavaju osamostaljivanje, zasnivanje obitelji i planiranje budućnosti. Upravo zato Grad Slavonski Brod kont",
-      "link": "https://www.slavonski-brod.hr/vijesti/17462-priustivo-stanovanje-sto-priustivi-najam-znaci-za-mlade-obitelji",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/family-moving-using-boxes_resize.jpg"
-    },
-    {
-      "naslov": "Hrvatski gitarski kvartet večeras nastupa u Slavonskom Brodu",
-      "datum": "23. 11. 2026.",
-      "kratki_opis": "Ljubitelje klasične glazbe u ponedjeljak, 23. studenoga 2026. godine, očekuje poseban glazbeni doživljaj u Slavonskom Brodu. U Glazbenoj školi Slavonski Brod, s početkom u 19:30 sati , nastupit će Hrvatski gitarski kvartet , jedan od istaknutih hrvatskih komornih ansambala, poznat po virtuoznosti, u",
-      "link": "https://www.slavonski-brod.hr/vijesti/17470-hrvatski-gitarski-kvartet-veceras-nastupa-u-slavonskom-brodu",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/913809727_30454804147442458_163996597625907310_n_resize.jpg"
-    },
-    {
-      "naslov": "Darivanjem Kata ispraćen 29. Katarinski sajam",
-      "datum": "23. 11. 2026.",
-      "kratki_opis": "Nakon tri dana bogatog programa, u Sportskoj dvorani Vijuš jučer je svečano zatvoren 29. Katarinski sajam. I ove je godine okupio velik broj izlagača i posjetitelja te pokazao zašto je jedna od najdražih brodskih tradicija. Zatvaranju je prisustvovala zamjenica gradonačelnika Marina Martić Puača koj",
-      "link": "https://www.slavonski-brod.hr/vijesti/17469-darivanjem-kata-ispracen-29-katarinski-sajam",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/923257674_1121213584061151_5633743874508642858_n.jpg"
-    },
-    {
-      "naslov": "U Slavonskom Brodu održana prva &quot;Noć HNK BSK-a&quot;",
-      "datum": "23. 11. 2026.",
-      "kratki_opis": "U subotu, 21. studenoga 2026., u svečanoj dvorani Prestige u Slavonskom Brodu održana je prva „Noć HNK BSK Slavonski Brod“. Klub je ovu večer organizirao prvi put, a održana je uz potporu gradonačelnika Grada Slavonskog Broda Mirka Duspare, koji je bio i među uzvanicima. Večeri je nazočilo više od 3",
-      "link": "https://www.slavonski-brod.hr/vijesti/17468-u-slavonskom-brodu-odrzana-prva-noc-hnk-bsk-a",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/BSK_NASLOVNA_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
