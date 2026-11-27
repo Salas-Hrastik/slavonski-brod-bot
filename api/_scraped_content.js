@@ -1,11 +1,11 @@
 // AUTO-GENERATED — ne editiraj ručno!
-// Zadnje skrapanje: 2026-11-26 15:51 UTC
+// Zadnje skrapanje: 2026-11-27 15:39 UTC
 // Izvor: slavonski-brod.hr (RSS), tzgsb.hr (JSON API + HTML)
 // GitHub Actions job: scrape-brod (dnevno u 06:00 UTC)
 
 export const scrapedContent = {
   "meta": {
-    "zadnje_azuriranje": "2026-11-26T15:51:14.371Z",
+    "zadnje_azuriranje": "2026-11-27T15:39:36.357Z",
     "izvori": [
       "https://www.slavonski-brod.hr/vijesti?format=feed&type=rss",
       "https://www.tzgsb.hr/static/json/restorani.json",
@@ -18,6 +18,48 @@ export const scrapedContent = {
     ]
   },
   "novosti_grad": [
+    {
+      "naslov": "Panoramski kotač ponovno na Korzu – prve vožnje od 28. studenoga",
+      "datum": "27. 11. 2026.",
+      "kratki_opis": "Blagdanski ugođaj u Slavonskom Brodu i ove će godine upotpuniti jedna od omiljenih adventskih atrakcija – panoramski kotač. Smješten na Trgu Ivane Brlić-Mažuranić, svojim će posjetiteljima pružiti poseban pogled na grad obasjan blagdanskim svjetlima te priliku za stvaranje nezaboravnih uspomena s ob",
+      "link": "https://www.slavonski-brod.hr/vijesti/17492-panoramski-kotac-ponovno-na-korzu-prve-voznje-od-28-studenoga",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_3128_resize.jpeg"
+    },
+    {
+      "naslov": "Veleposlanik Kazahstana posjetio Slavonski Brod",
+      "datum": "27. 11. 2026.",
+      "kratki_opis": "U sklopu posjeta istočnoj Hrvatskoj, Slavonski Brod danas je posjetio veleposlanik Republike Kazahstana u Republici Hrvatskoj, Nj. E. Daulet Batrašev. U Velikoj vijećnici Grada Slavonskog Broda veleposlanika su primili zamjenica gradonačelnika Marina Martić Puača i pročelnik Upravnog odjela za društ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17491-veleposlanik-kazahstana-posjetio-slavonski-brod",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_2640_resize.jpeg"
+    },
+    {
+      "naslov": "Ususret blagdanima nastavljamo pripremati dobrodošlicu za najmlađe Brođane",
+      "datum": "27. 11. 2026.",
+      "kratki_opis": "Blagdani su sve bliže, a za pet brodskih obitelji ovo je razdoblje posebno jer s radošću iščekuju dolazak prinove. Kako bi sve bilo spremno za prve dane s bebom, danas smo budućim roditeljima uručili pakete opreme za bebe. Pakete je obiteljima predala zamjenica gradonačelnika Marina Martić Puača. U ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17489-ususret-blagdanima-nastavljamo-pripremati-dobrodoslicu-za-najmlade-brodane",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/original-56E3BACC-4238-435F-A569-6DD8B8A6FEAE_resize.jpeg"
+    },
+    {
+      "naslov": "Upalimo čaroliju Božića zajedno - pridružite nam se na paljenju prve adventske svijeće!",
+      "datum": "27. 11. 2026.",
+      "kratki_opis": "Pred nama je najljepše doba godine, vrijeme iščekivanja, radosti, darivanja i zajedništva. Slavonski Brod i ove će godine zakoračiti u blagdansko razdoblje tradicionalnim paljenjem prve adventske svijeće, kojim će započeti ovogodišnja manifestacija Advent iz davnina. Grad Slavonski Brod poziva sve s",
+      "link": "https://www.slavonski-brod.hr/vijesti/17490-upalimo-caroliju-bozica-zajedno-pridruzite-nam-se-na-paljenju-prve-adventske-svijece",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Paljenje_prve_adventske_svijece.png"
+    },
+    {
+      "naslov": "Raspored mobilnih blagajni za prosinac",
+      "datum": "27. 11. 2026.",
+      "kratki_opis": "Obavještavaju se građani i građanke kako će mobilne gradske blagajne u prosincu raditi prema sljedećem rasporedu: 8. prosinca 2026. (utorak) Mjesni dom Brodsko Vinogorje – od 9.30 do 11.30 sati Mjesni dom Podvinje – od 12.30 do 15.00 sati 9. prosinca 2026. (srijeda) Mjesni dom Ante Starčević – od 10",
+      "link": "https://www.slavonski-brod.hr/vijesti/17488-raspored-mobilnih-blagajni-za-prosinac",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/blagajna_resize-1.jpg"
+    },
+    {
+      "naslov": "Obavijest o odvozu glomaznog otpada u mjesnom odboru Ante Starčević",
+      "datum": "27. 11. 2026.",
+      "kratki_opis": "TD Komunalac d.o.o. Slavonski Brod obavještava korisnike svojih usluga o odvozu glomaznog otpada. U ponedjeljak, 30. studenoga 2026. godine, glomazni otpad prikuplja se u mjesnom odboru Ante Starčević. &nbsp; Prikupljanje će se nastaviti i u ostalim mjesnim odborima, a o rasporedu ćemo pravovremeno ",
+      "link": "https://www.slavonski-brod.hr/vijesti/17487-obavijest-o-odvozu-glomaznog-otpada-u-mjesnom-odboru-ante-starcevic",
+      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/ZV_09294-scaled.jpg"
+    },
     {
       "naslov": "Usvojen proračun Grada Slavonskog Broda za 2027. godinu vrijedan 106.080.800,00 eura",
       "datum": "26. 11. 2026.",
@@ -42,51 +84,9 @@ export const scrapedContent = {
     {
       "naslov": "Tribinom u Gradskoj knjižnici obilježen Međunarodni dan borbe protiv nasilja nad ženama",
       "datum": "26. 11. 2026.",
-      "kratki_opis": "Povjerenstvo za ravnopravnost Grada Slavonskog Broda i ove je godine obilježilo Međunarodni dan borbe protiv nasilja nad ženama. Tim povodom u srijedu, 25. studenoga, u Gradskoj knjižnici Slavonski Brod održana je tribina. Ovaj se dan obilježava u spomen na sestre Mirabal: Patriju, Minervu i Mariju ",
+      "kratki_opis": "Povjerenstvo za ravnopravnost spolova Grada Slavonskog Broda i ove je godine obilježilo Međunarodni dan borbe protiv nasilja nad ženama. Tim povodom u srijedu, 25. studenoga, u Gradskoj knjižnici Slavonski Brod održana je tribina. Ovaj se dan obilježava u spomen na sestre Mirabal: Patriju, Minervu i",
       "link": "https://www.slavonski-brod.hr/vijesti/17482-tribinom-u-gradskoj-knjiznici-obiljezen-medunarodni-dan-borbe-protiv-nasilja-nad-zenama",
       "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/IMG_2463.jpeg"
-    },
-    {
-      "naslov": "Konačna lista prvenstva za dodjelu potpore studentima Grada Slavonskog Broda za akademsku godinu 2026./2027.",
-      "datum": "25. 11. 2026.",
-      "kratki_opis": "Temeljem Odluke o stipendiji Grada Slavonskog Broda za učenike koji se obrazuju za deficitarna zanimanja i provedenog natječaja za školsku godinu 2026./2027., Povjerenstvo za dodjelu stipendije utvrdilo je konačnu listu prvenstva koja je&nbsp;zbog zaštite osobnih podataka objavljena pod šiframa. Izn",
-      "link": "https://www.slavonski-brod.hr/vijesti/17481-konacna-lista-prvenstva-za-dodjelu-potpore-studentima-grada-slavonskog-broda-za-akademsku-godinu-2026-2027",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/KOLAZ.png"
-    },
-    {
-      "naslov": "Književna šetnja stazama Ivane Brlić-Mažuranić i Dragutina Tadijanovića – prijave do petka",
-      "datum": "25. 11. 2026.",
-      "kratki_opis": "Slavonski Brod ponosan je na to što su upravo u njemu živjeli i stvarali Ivana Brlić-Mažuranić, koju zovu „hrvatskim Andersenom”, i Dragutin Tadijanović, jedan od najvećih hrvatskih pjesnika. Turistička zajednica grada Slavonskog Broda želi njihove tragove u gradu približiti sugrađanima i posjetitel",
-      "link": "https://www.slavonski-brod.hr/vijesti/17478-knjizevna-setnja-stazama-ivane-brlic-mazuranic-i-dragutina-tadijanovica-prijave-do-petka",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/naslovnica-knjizevna-setnja.jpg"
-    },
-    {
-      "naslov": "Uklonjen nepropisno odloženi medicinski otpad s Poloja, slučaj prijavljen nadležnim službama",
-      "datum": "24. 11. 2026.",
-      "kratki_opis": "Povodom pronalaska nepropisno odloženog medicinskog otpada na području Sportsko-rekreacijskog centra Poloj, o kojem su danas izvijestili i lokalni mediji, Grad Slavonski Brod obavještava građane da su poduzete potrebne mjere radi zaštite njihova zdravlja i sigurnosti. Iako zbrinjavanje medicinskog o",
-      "link": "https://www.slavonski-brod.hr/vijesti/17477-uklonjen-nepropisno-odlozeni-medicinski-otpad-s-poloja-slucaj-prijavljen-nadleznim-sluzbama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/cdbdf97cf5664a81de8c_resize.png"
-    },
-    {
-      "naslov": "Podsjetnik: sutra tribina povodom Međunarodnog dana borbe protiv nasilja nad ženama",
-      "datum": "24. 11. 2026.",
-      "kratki_opis": "Povjerenstvo za ravnopravnost Grada Slavonskog Broda i ove godine obilježava Međunarodni dan borbe protiv nasilja nad ženama. Tim povodom podsjećamo da se tribina održava sutra, u srijedu, 25. studenog 2026. godine, s početkom u 18 sati u Gradskoj knjižnici Slavonski Brod. Ovaj dan obilježava se u s",
-      "link": "https://www.slavonski-brod.hr/vijesti/17474-podsjetnik-sutra-tribina-povodom-medunarodnog-dana-borbe-protiv-nasilja-nad-zenama",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/Tribina_2026_16x9.jpg"
-    },
-    {
-      "naslov": "Zahtjevi za dodjelu božićnica umirovljenicima i starijim osobama mogu se podnijeti do 4. prosinca",
-      "datum": "24. 11. 2026.",
-      "kratki_opis": "Javni poziv Grada Slavonskog Broda za dodjelu jednokratne novčane pomoći umirovljenicima i starijim osobama povodom božićnih blagdana otvoren je do&nbsp;petka, 4. prosinca 2026. godine. Pravo na novčanu pomoć mogu ostvariti umirovljenici koji ispunjavaju propisane uvjete vezane uz visinu mirovine i ",
-      "link": "https://www.slavonski-brod.hr/vijesti/17472-zahtjevi-za-dodjelu-bozicnica-umirovljenicima-i-starijim-osobama-mogu-se-podnijeti-do-4-prosinca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/close-up-grandparents-giving-christmas-presents_resize.jpg"
-    },
-    {
-      "naslov": "Zahtjevi za dodjelu božićnica djeci i mladima korisnicima inkluzivnog dodatka mogu se podnijeti do 4. prosinca",
-      "datum": "24. 11. 2026.",
-      "kratki_opis": "Javni poziv Grada Slavonskog Broda za dodjelu jednokratne novčane pomoći povodom božićnih blagdana djeci i mlađim punoljetnim osobama koje su korisnici inkluzivnog dodatka otvoren je do&nbsp;petka, 4. prosinca 2026. godine. Pravo na novčanu pomoć mogu ostvariti korisnici inkluzivnog dodatka koji nis",
-      "link": "https://www.slavonski-brod.hr/vijesti/17473-zahtjevi-za-dodjelu-bozicnica-djeci-i-mladima-korisnicima-inkluzivnog-dodatka-mogu-se-podnijeti-do-4-prosinca",
-      "IMAGE_URL": "https://www.slavonski-brod.hr/images/2026_Studeni/four-pairs-hands-christmas-balls_resize.jpg"
     }
   ],
   "manifestacije_aktualne": [
